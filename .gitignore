@@ -1,0 +1,12 @@
+*.pidb
+*.userprefs
+*.swp
+*.DS_Store
+*.nib
+*.suo
+
+packages/
+Components/
+
+bin/
+obj/
