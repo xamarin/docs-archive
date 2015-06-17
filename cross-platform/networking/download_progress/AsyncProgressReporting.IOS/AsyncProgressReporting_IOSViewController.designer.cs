@@ -4,7 +4,7 @@
 // actions made in the UI designer. If it is removed, they will be lost.
 // Manual changes to this file may not be handled correctly.
 //
-using MonoTouch.Foundation;
+using Foundation;
 using System.CodeDom.Compiler;
 
 namespace AsyncProgressReporting.IOS
@@ -13,10 +13,10 @@ namespace AsyncProgressReporting.IOS
 	partial class AsyncProgressReporting_IOSViewController
 	{
 		[Outlet]
-		MonoTouch.UIKit.UIProgressView ProgressBar { get; set; }
+		UIKit.UIProgressView ProgressBar { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UIButton StartDownloadButton { get; set; }
+		UIKit.UIButton StartDownloadButton { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{

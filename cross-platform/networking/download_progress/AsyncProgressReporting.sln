@@ -54,7 +54,4 @@ Global
 		{445C72CA-2A97-4245-BACA-AE6FABFF6308}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{445C72CA-2A97-4245-BACA-AE6FABFF6308}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = AsyncProgressReporting.Droid\AsyncProgressReporting.Droid.csproj
-	EndGlobalSection
 EndGlobal
