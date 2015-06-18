@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyframeAnimationSample", "KeyframeAnimationSample\KeyframeAnimationSample.csproj", "{7C090FE3-2135-4F93-9206-3BF331B6D5A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C090FE3-2135-4F93-9206-3BF331B6D5A0}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{7C090FE3-2135-4F93-9206-3BF331B6D5A0}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{7C090FE3-2135-4F93-9206-3BF331B6D5A0}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{7C090FE3-2135-4F93-9206-3BF331B6D5A0}.Debug|iPhone.Build.0 = Debug|iPhone
+		{7C090FE3-2135-4F93-9206-3BF331B6D5A0}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{7C090FE3-2135-4F93-9206-3BF331B6D5A0}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{7C090FE3-2135-4F93-9206-3BF331B6D5A0}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{7C090FE3-2135-4F93-9206-3BF331B6D5A0}.Release|Any CPU.Build.0 = Release|iPhone
+		{7C090FE3-2135-4F93-9206-3BF331B6D5A0}.Release|iPhone.ActiveCfg = Release|iPhone
+		{7C090FE3-2135-4F93-9206-3BF331B6D5A0}.Release|iPhone.Build.0 = Release|iPhone
+		{7C090FE3-2135-4F93-9206-3BF331B6D5A0}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{7C090FE3-2135-4F93-9206-3BF331B6D5A0}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal

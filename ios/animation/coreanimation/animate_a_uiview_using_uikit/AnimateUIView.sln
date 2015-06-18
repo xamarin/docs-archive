@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimateUIView", "AnimateUIView\AnimateUIView.csproj", "{6528EF27-54E5-4FAA-87D9-7FB40832A45E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6528EF27-54E5-4FAA-87D9-7FB40832A45E}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{6528EF27-54E5-4FAA-87D9-7FB40832A45E}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{6528EF27-54E5-4FAA-87D9-7FB40832A45E}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{6528EF27-54E5-4FAA-87D9-7FB40832A45E}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{6528EF27-54E5-4FAA-87D9-7FB40832A45E}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{6528EF27-54E5-4FAA-87D9-7FB40832A45E}.Debug|iPhone.Build.0 = Debug|iPhone
+		{6528EF27-54E5-4FAA-87D9-7FB40832A45E}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{6528EF27-54E5-4FAA-87D9-7FB40832A45E}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{6528EF27-54E5-4FAA-87D9-7FB40832A45E}.Release|iPhone.ActiveCfg = Release|iPhone
+		{6528EF27-54E5-4FAA-87D9-7FB40832A45E}.Release|iPhone.Build.0 = Release|iPhone
+		{6528EF27-54E5-4FAA-87D9-7FB40832A45E}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{6528EF27-54E5-4FAA-87D9-7FB40832A45E}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
