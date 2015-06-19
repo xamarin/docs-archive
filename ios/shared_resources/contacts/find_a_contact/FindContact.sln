@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindContact", "FindContact\FindContact.csproj", "{DEDE6519-5FEC-4D05-9ED9-F2FA0EC0E188}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEDE6519-5FEC-4D05-9ED9-F2FA0EC0E188}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{DEDE6519-5FEC-4D05-9ED9-F2FA0EC0E188}.Debug|iPhone.Build.0 = Debug|iPhone
+		{DEDE6519-5FEC-4D05-9ED9-F2FA0EC0E188}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{DEDE6519-5FEC-4D05-9ED9-F2FA0EC0E188}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{DEDE6519-5FEC-4D05-9ED9-F2FA0EC0E188}.Release|iPhone.ActiveCfg = Release|iPhone
+		{DEDE6519-5FEC-4D05-9ED9-F2FA0EC0E188}.Release|iPhone.Build.0 = Release|iPhone
+		{DEDE6519-5FEC-4D05-9ED9-F2FA0EC0E188}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{DEDE6519-5FEC-4D05-9ED9-F2FA0EC0E188}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = FindContact\FindContact.csproj
+	EndGlobalSection
+EndGlobal

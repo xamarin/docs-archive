@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChooseContact", "ChooseContact\ChooseContact.csproj", "{E5CDA1C3-3326-4543-A035-D390CDC558C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5CDA1C3-3326-4543-A035-D390CDC558C7}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E5CDA1C3-3326-4543-A035-D390CDC558C7}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E5CDA1C3-3326-4543-A035-D390CDC558C7}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E5CDA1C3-3326-4543-A035-D390CDC558C7}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E5CDA1C3-3326-4543-A035-D390CDC558C7}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E5CDA1C3-3326-4543-A035-D390CDC558C7}.Release|iPhone.Build.0 = Release|iPhone
+		{E5CDA1C3-3326-4543-A035-D390CDC558C7}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E5CDA1C3-3326-4543-A035-D390CDC558C7}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ChooseContact\ChooseContact.csproj
+	EndGlobalSection
+EndGlobal
