@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionSheetDatePicker", "ActionSheetDatePicker.csproj", "{83F74907-47F6-47A6-8499-436D755BD65A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83F74907-47F6-47A6-8499-436D755BD65A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{83F74907-47F6-47A6-8499-436D755BD65A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{83F74907-47F6-47A6-8499-436D755BD65A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{83F74907-47F6-47A6-8499-436D755BD65A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{83F74907-47F6-47A6-8499-436D755BD65A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{83F74907-47F6-47A6-8499-436D755BD65A}.Release|iPhone.Build.0 = Release|iPhone
+		{83F74907-47F6-47A6-8499-436D755BD65A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{83F74907-47F6-47A6-8499-436D755BD65A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ActionSheetDatePicker.csproj
+	EndGlobalSection
+EndGlobal
