@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabBar", "TabBar\TabBar.csproj", "{5307B3EC-43F2-4D22-BB27-7D2522135AE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5307B3EC-43F2-4D22-BB27-7D2522135AE7}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{5307B3EC-43F2-4D22-BB27-7D2522135AE7}.Debug|iPhone.Build.0 = Debug|iPhone
+		{5307B3EC-43F2-4D22-BB27-7D2522135AE7}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{5307B3EC-43F2-4D22-BB27-7D2522135AE7}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{5307B3EC-43F2-4D22-BB27-7D2522135AE7}.Release|iPhone.ActiveCfg = Release|iPhone
+		{5307B3EC-43F2-4D22-BB27-7D2522135AE7}.Release|iPhone.Build.0 = Release|iPhone
+		{5307B3EC-43F2-4D22-BB27-7D2522135AE7}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{5307B3EC-43F2-4D22-BB27-7D2522135AE7}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal

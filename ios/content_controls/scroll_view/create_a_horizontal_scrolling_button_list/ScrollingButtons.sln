@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollingButtons", "ScrollingButtons\ScrollingButtons.csproj", "{176D38A8-AA35-47A4-972F-B107ED21D3A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{176D38A8-AA35-47A4-972F-B107ED21D3A9}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{176D38A8-AA35-47A4-972F-B107ED21D3A9}.Debug|iPhone.Build.0 = Debug|iPhone
+		{176D38A8-AA35-47A4-972F-B107ED21D3A9}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{176D38A8-AA35-47A4-972F-B107ED21D3A9}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{176D38A8-AA35-47A4-972F-B107ED21D3A9}.Release|iPhone.ActiveCfg = Release|iPhone
+		{176D38A8-AA35-47A4-972F-B107ED21D3A9}.Release|iPhone.Build.0 = Release|iPhone
+		{176D38A8-AA35-47A4-972F-B107ED21D3A9}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{176D38A8-AA35-47A4-972F-B107ED21D3A9}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ScrollingButtons\ScrollingButtons.csproj
+	EndGlobalSection
+EndGlobal

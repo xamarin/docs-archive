@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitMultiDetailDemo", "SplitMultiDetailDemo\SplitMultiDetailDemo.csproj", "{53BC16FE-64F9-494B-B365-211659CB992A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53BC16FE-64F9-494B-B365-211659CB992A}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{53BC16FE-64F9-494B-B365-211659CB992A}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{53BC16FE-64F9-494B-B365-211659CB992A}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{53BC16FE-64F9-494B-B365-211659CB992A}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{53BC16FE-64F9-494B-B365-211659CB992A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{53BC16FE-64F9-494B-B365-211659CB992A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{53BC16FE-64F9-494B-B365-211659CB992A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{53BC16FE-64F9-494B-B365-211659CB992A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{53BC16FE-64F9-494B-B365-211659CB992A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{53BC16FE-64F9-494B-B365-211659CB992A}.Release|iPhone.Build.0 = Release|iPhone
+		{53BC16FE-64F9-494B-B365-211659CB992A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{53BC16FE-64F9-494B-B365-211659CB992A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SplitMultiDetailDemo\SplitMultiDetailDemo.csproj
+	EndGlobalSection
+EndGlobal
