@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddNewView", "AddNewView\AddNewView.csproj", "{FB8B2A0C-A09E-424B-995E-EB7FEF75AFA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB8B2A0C-A09E-424B-995E-EB7FEF75AFA5}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{FB8B2A0C-A09E-424B-995E-EB7FEF75AFA5}.Debug|iPhone.Build.0 = Debug|iPhone
+		{FB8B2A0C-A09E-424B-995E-EB7FEF75AFA5}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{FB8B2A0C-A09E-424B-995E-EB7FEF75AFA5}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{FB8B2A0C-A09E-424B-995E-EB7FEF75AFA5}.Release|iPhone.ActiveCfg = Release|iPhone
+		{FB8B2A0C-A09E-424B-995E-EB7FEF75AFA5}.Release|iPhone.Build.0 = Release|iPhone
+		{FB8B2A0C-A09E-424B-995E-EB7FEF75AFA5}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{FB8B2A0C-A09E-424B-995E-EB7FEF75AFA5}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = AddNewView\AddNewView.csproj
+	EndGlobalSection
+EndGlobal
