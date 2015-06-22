@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendEmail", "SendEmail\SendEmail.csproj", "{0E748C47-28AA-4983-B749-D36558F7CC8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E748C47-28AA-4983-B749-D36558F7CC8E}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{0E748C47-28AA-4983-B749-D36558F7CC8E}.Debug|iPhone.Build.0 = Debug|iPhone
+		{0E748C47-28AA-4983-B749-D36558F7CC8E}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{0E748C47-28AA-4983-B749-D36558F7CC8E}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{0E748C47-28AA-4983-B749-D36558F7CC8E}.Release|iPhone.ActiveCfg = Release|iPhone
+		{0E748C47-28AA-4983-B749-D36558F7CC8E}.Release|iPhone.Build.0 = Release|iPhone
+		{0E748C47-28AA-4983-B749-D36558F7CC8E}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{0E748C47-28AA-4983-B749-D36558F7CC8E}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SendEmail\SendEmail.csproj
+	EndGlobalSection
+EndGlobal

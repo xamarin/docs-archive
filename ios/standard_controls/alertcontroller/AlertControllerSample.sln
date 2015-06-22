@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlertControllerSample", "AlertControllerSample\AlertControllerSample.csproj", "{36A6D58E-5EB2-4547-864F-95469374B710}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36A6D58E-5EB2-4547-864F-95469374B710}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{36A6D58E-5EB2-4547-864F-95469374B710}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{36A6D58E-5EB2-4547-864F-95469374B710}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{36A6D58E-5EB2-4547-864F-95469374B710}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{36A6D58E-5EB2-4547-864F-95469374B710}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{36A6D58E-5EB2-4547-864F-95469374B710}.Debug|iPhone.Build.0 = Debug|iPhone
+		{36A6D58E-5EB2-4547-864F-95469374B710}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{36A6D58E-5EB2-4547-864F-95469374B710}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{36A6D58E-5EB2-4547-864F-95469374B710}.Release|iPhone.ActiveCfg = Release|iPhone
+		{36A6D58E-5EB2-4547-864F-95469374B710}.Release|iPhone.Build.0 = Release|iPhone
+		{36A6D58E-5EB2-4547-864F-95469374B710}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{36A6D58E-5EB2-4547-864F-95469374B710}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal

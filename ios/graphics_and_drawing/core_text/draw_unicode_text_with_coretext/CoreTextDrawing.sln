@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreTextDrawing", "CoreTextDrawing\CoreTextDrawing.csproj", "{899386D3-8E44-42A4-9FED-CAAF6F979160}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{899386D3-8E44-42A4-9FED-CAAF6F979160}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{899386D3-8E44-42A4-9FED-CAAF6F979160}.Debug|iPhone.Build.0 = Debug|iPhone
+		{899386D3-8E44-42A4-9FED-CAAF6F979160}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{899386D3-8E44-42A4-9FED-CAAF6F979160}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{899386D3-8E44-42A4-9FED-CAAF6F979160}.Release|iPhone.ActiveCfg = Release|iPhone
+		{899386D3-8E44-42A4-9FED-CAAF6F979160}.Release|iPhone.Build.0 = Release|iPhone
+		{899386D3-8E44-42A4-9FED-CAAF6F979160}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{899386D3-8E44-42A4-9FED-CAAF6F979160}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = CoreTextDrawing\CoreTextDrawing.csproj
+	EndGlobalSection
+EndGlobal
