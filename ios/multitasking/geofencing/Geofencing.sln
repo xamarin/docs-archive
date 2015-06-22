@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geofencing", "Geofencing\Geofencing.csproj", "{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}.Release|iPhone.Build.0 = Release|iPhone
+		{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E1760C9D-3DEA-4C41-A8C7-7B1ACA900DFF}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Geofencing\Geofencing.csproj
+	EndGlobalSection
+EndGlobal
