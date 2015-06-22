@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayMovieRecipe", "PlayMovieRecipe\PlayMovieRecipe.csproj", "{00FDFDB6-2480-429B-86F7-2352CE30438A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00FDFDB6-2480-429B-86F7-2352CE30438A}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{00FDFDB6-2480-429B-86F7-2352CE30438A}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{00FDFDB6-2480-429B-86F7-2352CE30438A}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{00FDFDB6-2480-429B-86F7-2352CE30438A}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{00FDFDB6-2480-429B-86F7-2352CE30438A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{00FDFDB6-2480-429B-86F7-2352CE30438A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{00FDFDB6-2480-429B-86F7-2352CE30438A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{00FDFDB6-2480-429B-86F7-2352CE30438A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{00FDFDB6-2480-429B-86F7-2352CE30438A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{00FDFDB6-2480-429B-86F7-2352CE30438A}.Release|iPhone.Build.0 = Release|iPhone
+		{00FDFDB6-2480-429B-86F7-2352CE30438A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{00FDFDB6-2480-429B-86F7-2352CE30438A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PlayMovieRecipe\PlayMovieRecipe.csproj
+	EndGlobalSection
+EndGlobal
