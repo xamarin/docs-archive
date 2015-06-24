@@ -1,3 +1,0 @@
-Android Controls Recipes
-===============
-
