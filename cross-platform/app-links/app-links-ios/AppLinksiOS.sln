@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLinksiOS", "AppLinksiOS\AppLinksiOS.csproj", "{890237A4-7D7B-46F6-99BA-542185B92116}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5C58279B-76C4-427D-A371-058C89D2C34B}"
+	ProjectSection(SolutionItems) = preProject
+		applinks-metadata-sample.html = applinks-metadata-sample.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{890237A4-7D7B-46F6-99BA-542185B92116}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{890237A4-7D7B-46F6-99BA-542185B92116}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{890237A4-7D7B-46F6-99BA-542185B92116}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{890237A4-7D7B-46F6-99BA-542185B92116}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{890237A4-7D7B-46F6-99BA-542185B92116}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{890237A4-7D7B-46F6-99BA-542185B92116}.Debug|iPhone.Build.0 = Debug|iPhone
+		{890237A4-7D7B-46F6-99BA-542185B92116}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{890237A4-7D7B-46F6-99BA-542185B92116}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{890237A4-7D7B-46F6-99BA-542185B92116}.Release|iPhone.ActiveCfg = Release|iPhone
+		{890237A4-7D7B-46F6-99BA-542185B92116}.Release|iPhone.Build.0 = Release|iPhone
+		{890237A4-7D7B-46F6-99BA-542185B92116}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{890237A4-7D7B-46F6-99BA-542185B92116}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = AppLinksiOS\AppLinksiOS.csproj
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLinksAndroid", "AppLinksAndroid\AppLinksAndroid.csproj", "{2D79C5BF-9919-4934-8130-3CF4BA19E138}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E886E312-F5B2-4C06-896B-76E0CEAAE526}"
+	ProjectSection(SolutionItems) = preProject
+		applinks-metadata-sample.html = applinks-metadata-sample.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D79C5BF-9919-4934-8130-3CF4BA19E138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D79C5BF-9919-4934-8130-3CF4BA19E138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D79C5BF-9919-4934-8130-3CF4BA19E138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D79C5BF-9919-4934-8130-3CF4BA19E138}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = AppLinksAndroid\AppLinksAndroid.csproj
+	EndGlobalSection
+EndGlobal

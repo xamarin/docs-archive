@@ -5,7 +5,7 @@ In order to retain a responsive UI, mobile applications should perform network t
 There are two main parts to this recipe:
 
 1.  **Downloading the File** - Downloading the file should be performed asynchronously and not block the UI thread. The code for download the file can be shared between Android and iOS.
-1.  **Display Progress** - Display download progress to the user is platform specific. This recipe has two separate projects (one for Xamarin.Android and another for Xamarin.iOS) that demonstrate how to display download progress to the user. 
+1.  **Display Progress** - Display download progress to the user is platform specific. This recipe has two separate projects (one for Xamarin.Android and another for Xamarin.iOS) that demonstrate how to display download progress to the user.
 
 
 The following screen shots show this recipe running on an Android and iOS device, respectively:
@@ -126,7 +126,7 @@ async void StartDownloadHandler(object sender, EventArgs e)
 }
 ```
 
-This code snippet is very similar to the Xamarin.Android example that was used in the previous section - the most noticable difference is that `UIProgressView` displays a `float` value for progress while Android's `ProgressBar` displays an `int` value.
+This code snippet is very similar to the Xamarin.Android example that was used in the previous section - the most noticeable difference is that `UIProgressView` displays a `float` value for progress while Android's `ProgressBar` displays an `int` value.
 
 
 # Summary
