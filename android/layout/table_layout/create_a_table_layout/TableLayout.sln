@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableLayout", "TableLayout\TableLayout.csproj", "{DBD84958-B472-46B8-878D-434A21F992D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBD84958-B472-46B8-878D-434A21F992D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD84958-B472-46B8-878D-434A21F992D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD84958-B472-46B8-878D-434A21F992D8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DBD84958-B472-46B8-878D-434A21F992D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD84958-B472-46B8-878D-434A21F992D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBD84958-B472-46B8-878D-434A21F992D8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
