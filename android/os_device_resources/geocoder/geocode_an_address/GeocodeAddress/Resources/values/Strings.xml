@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="geocodeButtonText">Geocode Address</string>
+    <string name="app_name">GeocodeAddress</string>
+</resources>
