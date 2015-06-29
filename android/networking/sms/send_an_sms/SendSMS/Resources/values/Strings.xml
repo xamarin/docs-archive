@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sendSMSTitle">Send SMS</string>
+    <string name="sendSMSIntentTitle">Send SMS using Intent</string>  
+    <string name="app_name">SendSMS</string>
+</resources>
