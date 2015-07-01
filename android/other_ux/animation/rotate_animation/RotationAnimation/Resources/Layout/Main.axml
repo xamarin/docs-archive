@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+  <Button
+      android:id="@+id/rotate_center_button"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Rotate around center"/>
+  <Button
+      android:id="@+id/rotate_corner_button"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Rotate around corner"/>
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical"
+      android:gravity="center">
+
+    <ImageView
+        android:id="@+id/floating_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon" />
+
+  </LinearLayout>
+
+</LinearLayout>

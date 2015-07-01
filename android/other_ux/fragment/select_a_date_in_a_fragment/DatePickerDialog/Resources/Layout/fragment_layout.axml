@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/add_vehicle_layout"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              >
+  <TextView android:id="@+id/display_date_text"
+            android:layout_width ="wrap_content"
+            android:layout_height ="wrap_content"
+            android:textSize="60dp"
+            android:text="Pick a date!"
+            />
+    <Button android:id="@+id/pick_date_button"
+            android:layout_height ="wrap_content"
+            android:layout_width ="wrap_content"
+            android:textSize="45dp"
+            android:text="Click me to pick a date!"/>
+</LinearLayout>

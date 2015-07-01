@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/fragment_container"		
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<fragment class="createafragment.MyFragment"
+          android:id="@+id/my_fragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+</LinearLayout>

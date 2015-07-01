@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<resources>
+  <string name="app_name" >BlurImage</string>
+  <string name="clear_image_button" >Load Clear Image</string>
+  <string name="blur_image_button" >Load Blurred Image</string>
+  <string name="blur_image_wait" >Please Wait - Blurring</string>
+</resources>
