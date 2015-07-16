@@ -5,8 +5,6 @@
     android:layout_height="fill_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <TextView
-        android:id="@id/helloLabel" />
     <Button
         android:id="@+id/showSecond"
         android:layout_width="fill_parent"
