@@ -40,7 +40,7 @@ namespace MapView {
 				return circleRenderer;
 			};
 
-			circleOverlay = MKCircle.Circle (coords, 200);
+			circleOverlay = MKCircle.Circle (coords, 400);
 			mapView.AddOverlay (circleOverlay);
 
 			#region Not related to this sample
