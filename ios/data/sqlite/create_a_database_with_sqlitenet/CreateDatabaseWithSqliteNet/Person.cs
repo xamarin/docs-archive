@@ -1,5 +1,5 @@
 using System;
-using Sqlite;
+using SQLite;
 
 namespace CreateDatabaseWithSqliteNet
 {
