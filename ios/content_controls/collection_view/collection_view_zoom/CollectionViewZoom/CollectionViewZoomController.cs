@@ -1,15 +1,15 @@
 ﻿using System;
-using MonoTouch.UIKit;
-using MonoTouch.Foundation;
-using System.Drawing;
+using UIKit;
+using Foundation;
+using CoreGraphics;
 
 namespace CollectionViewZoom
 {
 	public class CollectionViewZoomController : UICollectionViewController
 	{
 		public const int MAX_COUNT = 35;
-		float scaleStart;
-		float scale;
+		nfloat scaleStart;
+		nfloat scale;
 
 		public CollectionViewZoomController (UICollectionViewLayout layout) : base (layout)
 		{
@@ -27,12 +27,12 @@ namespace CollectionViewZoom
 			this.CollectionView.AddGestureRecognizer (pinch);
 		}
 
-		public override int NumberOfSections (UICollectionView collectionView)
+		public override nint NumberOfSections (UICollectionView collectionView)
 		{
 			return 1;
 		}
 
-		public override int GetItemsCount (UICollectionView collectionView, int section)
+		public override nint GetItemsCount (UICollectionView collectionView, nint section)
 		{
 			return MAX_COUNT;
 		}
@@ -65,9 +65,9 @@ namespace CollectionViewZoom
 				this.parent = parent;
 			}
 
-			public override System.Drawing.SizeF GetSizeForItem (UICollectionView collectionView, UICollectionViewLayout layout, NSIndexPath indexPath)
+			public override CGSize GetSizeForItem (UICollectionView collectionView, UICollectionViewLayout layout, NSIndexPath indexPath)
 			{
-				return new System.Drawing.SizeF (50 * parent.scale, 50 * parent.scale);
+				return new CGSize (50 * parent.scale, 50 * parent.scale);
 			}
 		}
 	}

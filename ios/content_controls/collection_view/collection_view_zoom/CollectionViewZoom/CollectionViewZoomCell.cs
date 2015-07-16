@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Drawing;
-using MonoTouch.CoreAnimation;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using CoreAnimation;
+using Foundation;
+using UIKit;
 
 namespace CollectionViewZoom {
 
@@ -11,7 +11,7 @@ namespace CollectionViewZoom {
 		public static readonly NSString Key = new NSString ("CollectionViewZoomCell");
 
 		[Export ("initWithFrame:")]
-		public CollectionViewZoomCell (RectangleF frame) : base (frame)
+		public CollectionViewZoomCell (CGRect frame) : base (frame)
 		{
 			BackgroundColor = UIColor.Cyan;
 			ImageView = new UIImageView (Bounds);
