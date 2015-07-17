@@ -47,19 +47,21 @@ namespace TapGesture
 
 		void TapThat (UITapGestureRecognizer tap)
 		{
-			UIAlertView alert;
+			UIAlertController alert;
 
 			if (!tapped) {
 				tap.View.Transform *= CGAffineTransform.MakeRotation ((float)Math.PI / 2);
 				tapped = true;
-				alert = new UIAlertView ("Card Tapped", "This card has been tapped", null, "OK", null);
+				alert = UIAlertController.Create ("Card Tapped", "This card has been tapped", UIAlertControllerStyle.Alert);
+				alert.AddAction (UIAlertAction.Create ("OK", UIAlertActionStyle.Default, null));
+				PresentViewController (alert, true, null);
 			} else {
 				tap.View.Transform *= CGAffineTransform.MakeRotation ((float)-Math.PI / 2);
 				tapped = false;
-				alert = new UIAlertView ("Card Uptapped", "This card has been untapped", null, "OK", null);
+				alert = UIAlertController.Create ("Card Untapped", "This card has been untapped", UIAlertControllerStyle.Alert);
+				alert.AddAction (UIAlertAction.Create ("OK", UIAlertActionStyle.Default, null));
+				PresentViewController (alert, true, null);
 			}
-
-			alert.Show ();
 		}
 
 		public override void ViewWillAppear (bool animated)
