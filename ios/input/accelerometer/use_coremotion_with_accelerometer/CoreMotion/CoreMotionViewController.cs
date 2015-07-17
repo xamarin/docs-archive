@@ -24,6 +24,24 @@ namespace CoreMotion
 		{
 			base.ViewDidLoad ();
 			motionManager = new CMMotionManager ();
+
+//			NSOperationQueue.CurrentQueue ((data, error) => {
+//				if(error != null && error.Code == (int) CMError.MotionActivityNotAuthorized)
+//				{
+//					motionStatus = "Not Authorized";
+//					UpdateStatus();
+//				}
+//				else
+//				{
+//					motionStatus = "Available";
+//					var stepMsg = String.Format("You have taken {0} steps in the past 24 hours", steps);
+//					InvokeOnMainThread(() => {
+//						stepsMessage.Text = stepMsg;
+//						UpdateStatus();
+//					});
+//				}
+//			}
+				
 			motionManager.StartAccelerometerUpdates (NSOperationQueue.CurrentQueue, (data, error) => 
 			{
 				this.lblX.Text = data.Acceleration.X.ToString ("0.00000000");
