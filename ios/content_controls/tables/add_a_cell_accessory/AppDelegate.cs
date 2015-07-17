@@ -1,6 +1,6 @@
 using System;
-using MonoTouch.UIKit;
-using MonoTouch.Foundation;
+using UIKit;
+using Foundation;
 
 namespace BasicTable {
 	public class Application {
@@ -25,7 +25,7 @@ namespace BasicTable {
 			window.MakeKeyAndVisible ();
 						
 			iPhoneHome = new HomeScreen();
-			iPhoneHome.View.Frame = new System.Drawing.RectangleF(0
+			iPhoneHome.View.Frame = new CoreGraphics.CGRect(0
 						, UIApplication.SharedApplication.StatusBarFrame.Height
 						, UIScreen.MainScreen.ApplicationFrame.Width
 						, UIScreen.MainScreen.ApplicationFrame.Height);

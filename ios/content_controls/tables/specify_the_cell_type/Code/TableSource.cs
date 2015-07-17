@@ -8,10 +8,12 @@ namespace BasicTable {
 	public class TableSource : UITableViewSource {
 		List<TableItem> tableItems;
 		 string cellIdentifier = "TableCell";
+		HomeScreen owner;
 	
-		public TableSource (List<TableItem> items)
+		public TableSource (List<TableItem> items, HomeScreen owner)
 		{
 			tableItems = items;
+			this.owner = owner;
 		}
 	
 		/// <summary>
@@ -27,8 +29,10 @@ namespace BasicTable {
 		/// </summary>
 		public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 		{
-			new UIAlertView("Row Selected"
-				, tableItems[indexPath.Row].Heading, null, "OK", null).Show();
+			UIAlertController okAlertController = UIAlertController.Create ("Row Selected", tableItems[indexPath.Row].Heading, UIAlertControllerStyle.Alert);
+			okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+			owner.PresentViewController (okAlertController, true, null);
+
 			tableView.DeselectRow (indexPath, true);
 		}
 		

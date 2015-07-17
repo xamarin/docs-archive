@@ -1,7 +1,7 @@
 using System;
-using System.Drawing;
+using CoreGraphics;
 using System.Collections.Generic;
-using MonoTouch.UIKit;
+using UIKit;
 
 namespace BasicTable {
 	public class HomeScreen : UIViewController {
@@ -14,7 +14,7 @@ namespace BasicTable {
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			table = new UITableView(new RectangleF(0, 20, View.Bounds.Width, View.Bounds.Height - 20)); // defaults to Plain style
+			table = new UITableView(new CGRect(0, 20, View.Bounds.Width, View.Bounds.Height - 20)); // defaults to Plain style
 			table.AutoresizingMask = UIViewAutoresizing.All;
 			List<TableItem> tableItems = new List<TableItem>();
 			
@@ -26,7 +26,7 @@ namespace BasicTable {
 			tableItems.Add (new TableItem("Legumes") { SubHeading="33 items", ImageName="Legumes.jpg"});
 			tableItems.Add (new TableItem("Bulbs") { SubHeading="18 items", ImageName="Bulbs.jpg"});
 			tableItems.Add (new TableItem("Tubers") { SubHeading="43 items", ImageName="Tubers.jpg"});
-			table.Source = new TableSource(tableItems);
+			table.Source = new TableSource(tableItems, this);
 			Add (table);
 		}
 	}
