@@ -22,8 +22,8 @@
 // THE SOFTWARE.
 
 using System;
-using MonoTouch.UIKit;
-using MonoTouch.Foundation;
+using UIKit;
+using Foundation;
 
 namespace TweetStation
 {
@@ -53,7 +53,7 @@ namespace TweetStation
 				var cb = _callback;
 				_callback = null;
 				
-				picker.DismissModalViewControllerAnimated (true);
+				picker.DismissModalViewController (true);
 				cb (info);
 			}
 		}
