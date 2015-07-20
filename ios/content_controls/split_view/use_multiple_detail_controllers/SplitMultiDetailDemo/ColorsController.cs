@@ -2,8 +2,8 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using MonoTouch.Dialog;
-using MonoTouch.UIKit;
-using MonoTouch.CoreFoundation;
+using UIKit;
+using CoreFoundation;
 
 namespace SplitMultiDetailDemo
 {

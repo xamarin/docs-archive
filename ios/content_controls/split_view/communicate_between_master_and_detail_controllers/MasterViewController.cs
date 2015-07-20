@@ -1,8 +1,8 @@
 using System;
 using System.Linq;
 using MonoTouch.Dialog;
-using MonoTouch.UIKit;
-using MonoTouch.CoreFoundation;
+using UIKit;
+using CoreFoundation;
 
 namespace SplitView {
 	public class MasterViewController : DialogViewController {

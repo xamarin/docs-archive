@@ -24,6 +24,7 @@ namespace CoreMotion
 		{
 			base.ViewDidLoad ();
 			motionManager = new CMMotionManager ();
+				
 			motionManager.StartAccelerometerUpdates (NSOperationQueue.CurrentQueue, (data, error) => 
 			{
 				this.lblX.Text = data.Acceleration.X.ToString ("0.00000000");

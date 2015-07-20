@@ -14,5 +14,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>MinimumOSVersion</key>
+	<string>5.1.1</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon-60@2x</string>
+		<string>Icon@2x</string>
+		<string>Icon</string>
+		<string>Icon-Small-40@2x</string>
+		<string>Icon-Small@2x</string>
+		<string>Icon-Small</string>
+	</array>
 </dict>
 </plist>

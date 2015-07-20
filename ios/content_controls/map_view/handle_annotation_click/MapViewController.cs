@@ -1,9 +1,9 @@
 using System;
-using System.Drawing;
-using MonoTouch.CoreLocation;
-using MonoTouch.MapKit;
-using MonoTouch.UIKit;
-using MonoTouch.Foundation;
+using CoreGraphics;
+using CoreLocation;
+using MapKit;
+using UIKit;
+using Foundation;
 
 namespace MapView {
 
@@ -30,7 +30,7 @@ namespace MapView {
 			mapView.Region = new MKCoordinateRegion (coords, span);
 
 			// assign the delegate, which handles annotation layout and clicking
-			mapView.Delegate = new MapDelegate();
+			mapView.Delegate = new MapDelegate(this);
 
 			// add a basic annotation
 			var annotation = new BasicMapAnnotation (new CLLocationCoordinate2D (48.857, 2.351), "Paris", "City of Light");
@@ -39,7 +39,7 @@ namespace MapView {
 
 			#region Not related to this sample
 			int typesWidth=260, typesHeight=30, distanceFromBottom=60;
-			mapTypes = new UISegmentedControl(new RectangleF((View.Bounds.Width-typesWidth)/2, View.Bounds.Height-distanceFromBottom, typesWidth, typesHeight));
+			mapTypes = new UISegmentedControl(new CGRect((View.Bounds.Width-typesWidth)/2, View.Bounds.Height-distanceFromBottom, typesWidth, typesHeight));
 			mapTypes.InsertSegment("Road", 0, false);
 			mapTypes.InsertSegment("Satellite", 1, false);
 			mapTypes.InsertSegment("Hybrid", 2, false);
@@ -92,11 +92,19 @@ namespace MapView {
 		{
 			protected string annotationIdentifier = "BasicAnnotation";
 			UIButton detailButton;
+			MapViewController parent;
+
+			public MapDelegate(MapViewController parent)
+			{
+				this.parent = parent;
+			}
+
 			/// <summary>
 			/// This is very much like the GetCell method on the table delegate
 			/// </summary>
-			public override MKAnnotationView GetViewForAnnotation (MKMapView mapView, NSObject annotation)
+			public override MKAnnotationView GetViewForAnnotation (MKMapView mapView, IMKAnnotation annotation)
 			{
+
 				// try and dequeue the annotation view
 				MKAnnotationView annotationView = mapView.DequeueReusableAnnotation(annotationIdentifier);
 				
@@ -117,9 +125,12 @@ namespace MapView {
 
 				detailButton.TouchUpInside += (s, e) => { 
 					Console.WriteLine ("Clicked");
-					new UIAlertView("Annotation Clicked", "You clicked on " +
-					(annotation as MKAnnotation).Coordinate.Latitude.ToString() + ", " +
-					(annotation as MKAnnotation).Coordinate.Longitude.ToString() , null, "OK", null).Show(); 
+					//Create Alert
+					var detailAlert = UIAlertController.Create ("Annotation Clicked", "You clicked on " + 
+						(annotation as MKAnnotation).Coordinate.Latitude.ToString() + ", " +
+						(annotation as MKAnnotation).Coordinate.Longitude.ToString(), UIAlertControllerStyle.Alert);
+					detailAlert.AddAction (UIAlertAction.Create ("OK", UIAlertActionStyle.Default, null));
+					parent.PresentViewController (detailAlert, true, null); 
 				};
 				annotationView.RightCalloutAccessoryView = detailButton;
 				
@@ -138,7 +149,14 @@ namespace MapView {
 			/// <summary>
 			/// The location of the annotation
 			/// </summary>
-			public override CLLocationCoordinate2D Coordinate { get; set; }
+			CLLocationCoordinate2D coord; 
+
+			public override CLLocationCoordinate2D Coordinate {
+				get {
+					return coord;
+				}
+			}
+
 			protected string title;
 			protected string subtitle;
 			
@@ -155,10 +173,10 @@ namespace MapView {
 			public override string Subtitle
 			{ get { return subtitle; } }
 			
-			public BasicMapAnnotation (CLLocationCoordinate2D coordinate, string title, string subTitle)
+			public BasicMapAnnotation (CLLocationCoordinate2D coord, string title, string subTitle)
 				: base()
 			{
-				this.Coordinate = coordinate;
+				this.coord = coord;
 				this.title = title;
 				this.subtitle = subTitle;
 			}

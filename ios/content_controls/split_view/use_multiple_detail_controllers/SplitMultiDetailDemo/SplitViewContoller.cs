@@ -1,7 +1,7 @@
 using System;
-using MonoTouch.UIKit;
-using MonoTouch.CoreFoundation;
-using System.Drawing;
+using UIKit;
+using CoreFoundation;
+using CoreGraphics;
 
 namespace SplitMultiDetailDemo
 {

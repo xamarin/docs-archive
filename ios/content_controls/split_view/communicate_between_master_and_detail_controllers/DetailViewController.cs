@@ -1,7 +1,7 @@
 using System;
-using System.Drawing;
-using MonoTouch.UIKit;
-using MonoTouch.CoreFoundation;
+using CoreGraphics;
+using UIKit;
+using CoreFoundation;
 namespace SplitView
 {
 	public class DetailViewController : UIViewController
@@ -16,12 +16,12 @@ namespace SplitView
 		{
 			View.BackgroundColor = UIColor.White;
 
-			label = new UILabel(new RectangleF(100,100,450,60));
+			label = new UILabel(new CGRect(100,100,450,60));
 			label.Font = UIFont.SystemFontOfSize(24f);
 			Update (1); // defaults to "1"
 			View.AddSubview (label);
 			// add a toolbar to host the master view popover (when it is required, in portrait)
-			toolbar = new UIToolbar(new RectangleF(0, 0, View.Frame.Width, 30));
+			toolbar = new UIToolbar(new CGRect(0, 0, View.Frame.Width, 30));
 			toolbar.AutoresizingMask = UIViewAutoresizing.FlexibleWidth;
 			View.AddSubview(toolbar);
 		}

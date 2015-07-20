@@ -26,7 +26,7 @@ namespace BasicTable {
 			tableItems.Add (new TableItem("Legumes") { SubHeading="33 items", ImageName="Legumes.jpg"});
 			tableItems.Add (new TableItem("Bulbs") { SubHeading="18 items", ImageName="Bulbs.jpg"});
 			tableItems.Add (new TableItem("Tubers") { SubHeading="43 items", ImageName="Tubers.jpg"});
-			table.Source = new TableSource(tableItems);
+			table.Source = new TableSource(tableItems, this);
 			Add (table);
 		}
 	}

@@ -1,23 +1,26 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 
 namespace BasicTable {
 	public class TableSource : UITableViewSource {
+		
 		protected string[] tableItems;
 		protected string cellIdentifier = "TableCell";
+		HomeScreen owner;
 	
-		public TableSource (string[] items)
+		public TableSource (string[] items, HomeScreen owner)
 		{
 			tableItems = items;
+			this.owner = owner;
 		}
 	
 		/// <summary>
 		/// Called by the TableView to determine how many cells to create for that particular section.
 		/// </summary>
-		public override int RowsInSection (UITableView tableview, int section)
+		public override nint RowsInSection (UITableView tableview, nint section)
 		{
 			return tableItems.Length;
 		}
@@ -27,15 +30,17 @@ namespace BasicTable {
 		/// </summary>
 		public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 		{
-			new UIAlertView("Row Selected"
-				, tableItems[indexPath.Row], null, "OK", null).Show();
+			UIAlertController okAlertController = UIAlertController.Create ("Row Selected", tableItems[indexPath.Row], UIAlertControllerStyle.Alert);
+			okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+			owner.PresentViewController (okAlertController, true, null);
+		
 			tableView.DeselectRow (indexPath, true);
 		}
 		
 		/// <summary>
 		/// Called by the TableView to get the actual UITableViewCell to render for the particular row
 		/// </summary>
-		public override UITableViewCell GetCell (UITableView tableView, MonoTouch.Foundation.NSIndexPath indexPath)
+		public override UITableViewCell GetCell (UITableView tableView, NSIndexPath indexPath)
 		{
 			// request a recycled cell to save memory
 			UITableViewCell cell = tableView.DequeueReusableCell (cellIdentifier);

@@ -4,7 +4,7 @@
 // actions made in the Xcode designer. If it is removed, they will be lost.
 // Manual changes to this file may not be handled correctly.
 //
-using MonoTouch.Foundation;
+using Foundation;
 
 namespace PlayMovieRecipe
 {
@@ -12,7 +12,7 @@ namespace PlayMovieRecipe
 	partial class PlayMovieRecipeViewController
 	{
 		[Outlet]
-		MonoTouch.UIKit.UIButton playMovie { get; set; }
+		UIKit.UIButton playMovie { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{

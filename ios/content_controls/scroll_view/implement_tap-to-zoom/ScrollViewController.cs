@@ -1,5 +1,5 @@
-using System.Drawing;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using UIKit;
 
 namespace ScrollView {
 
@@ -25,7 +25,7 @@ namespace ScrollView {
 			
 			// create our scroll view
 			scrollView = new UIScrollView (
-				new RectangleF (0, 0, View.Frame.Width
+				new CGRect (0, 0, View.Frame.Width
 				, View.Frame.Height - NavigationController.NavigationBar.Frame.Height));
 			View.AddSubview (scrollView);
 			

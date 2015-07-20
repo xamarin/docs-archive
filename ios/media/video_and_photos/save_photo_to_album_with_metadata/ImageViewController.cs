@@ -1,8 +1,8 @@
 using System;
-using System.Drawing;
-using MonoTouch.AssetsLibrary;
-using MonoTouch.UIKit;
-using MonoTouch.Foundation;
+using CoreGraphics;
+using AssetsLibrary;
+using UIKit;
+using Foundation;
 
 namespace ImageView {
 
@@ -17,7 +17,7 @@ namespace ImageView {
 			View.BackgroundColor = UIColor.White;
 
 			cameraButton = UIButton.FromType (UIButtonType.RoundedRect);
-			cameraButton.Frame = new RectangleF(10, 20, 100,40);
+			cameraButton.Frame = new CGRect(10, 20, 100,40);
 			cameraButton.SetTitle ("Camera", UIControlState.Normal);
 			cameraButton.TouchUpInside += (sender, e) => {
 			

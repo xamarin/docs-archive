@@ -1,6 +1,6 @@
 using System;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 using System.CodeDom.Compiler;
 
 
@@ -30,6 +30,7 @@ namespace StoryboardTable
 			DeleteButton.TouchUpInside += (sender, e) => {
 				Delegate.DeleteTask(currentTask);
 			};
+				
 		}
 
 		public override void ViewWillAppear (bool animated)

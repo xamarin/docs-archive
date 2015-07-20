@@ -1,8 +1,8 @@
 using System;
 
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
-using MonoTouch.AVFoundation;
+using Foundation;
+using UIKit;
+using AVFoundation;
 
 namespace AVPlayerDemo
 {

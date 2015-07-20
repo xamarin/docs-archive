@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using System.Drawing;
+using CoreGraphics;
 using System.Linq;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 
 namespace NavBarTrans
 {
@@ -19,13 +19,14 @@ namespace NavBarTrans
 		{
 			base.ViewDidLoad ();
 			
-			View.BackgroundColor = UIColor.White;
+			View.BackgroundColor = UIColor.Blue;
 
 			NavigationItem.Title = "Translucent Nav Bar";
 			
-			lblTransparent = new UILabel  (new RectangleF(10,40, 200, 40));
+			lblTransparent = new UILabel  (new CGRect(10,40, 200, 40));
 			lblTransparent.Text = "Nav Bar Transparency";
-			swchTransparent = new UISwitch (new RectangleF(220,45, 50, 40));
+			lblTransparent.TextColor = UIColor.Yellow;
+			swchTransparent = new UISwitch (new CGRect(220,45, 50, 40));
 			View.AddSubview(lblTransparent);
 			View.AddSubview(swchTransparent);
 

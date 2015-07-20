@@ -4,7 +4,6 @@ using AssetsLibrary;
 using UIKit;
 using Foundation;
 using CoreImage;
-using CoreGraphics;
 
 /*
 "Sunrise near Atkeison Plateau" © 2012 Charles Atkeison, 

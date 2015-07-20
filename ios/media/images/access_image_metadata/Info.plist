@@ -17,5 +17,7 @@
 	</array>
 	<key>XSLaunchImageAssets</key>
 	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.xamarin.imagemetadata</string>
 </dict>
 </plist>

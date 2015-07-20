@@ -29,7 +29,7 @@
     <MtouchI18n>
     </MtouchI18n>
     <MtouchArch>i386</MtouchArch>
-    <MtouchSdkVersion>8.2</MtouchSdkVersion>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
