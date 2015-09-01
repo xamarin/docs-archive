@@ -17,7 +17,7 @@ namespace ImageView {
 			View.BackgroundColor = UIColor.White;
 
 			cameraButton = UIButton.FromType (UIButtonType.RoundedRect);
-			cameraButton.Frame = new CGRect(10, 20, 100,40);
+			cameraButton.Frame = new CGRect(50, 70, 100,40);
 			cameraButton.SetTitle ("Camera", UIControlState.Normal);
 			cameraButton.TouchUpInside += (sender, e) => {
 			
