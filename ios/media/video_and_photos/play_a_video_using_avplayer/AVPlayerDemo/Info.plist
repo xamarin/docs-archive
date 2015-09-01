@@ -9,7 +9,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>5.1.1</string>
+	<string>8.3</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.xamarin.avplayerdemo</string>
 	<key>CFBundleIconFiles</key>
@@ -18,5 +18,12 @@
 		<string>Icon@2x</string>
 		<string>Icon</string>
 	</array>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+	</array>
+	<key>XSLaunchImageAssets</key>
+	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
 </dict>
 </plist>

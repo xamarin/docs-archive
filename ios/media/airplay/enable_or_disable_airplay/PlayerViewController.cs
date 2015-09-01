@@ -22,7 +22,7 @@ namespace AVPlayerDemo
 			moviePlayer.View.AutoresizingMask = UIViewAutoresizing.All;
 			moviePlayer.ShouldAutoplay = true;
 			moviePlayer.ControlStyle = MPMovieControlStyle.Default;
-
+			moviePlayer.PrepareToPlay ();
 
 			moviePlayer.AllowsAirPlay = true; // AirPlay button will appear in controls
 
