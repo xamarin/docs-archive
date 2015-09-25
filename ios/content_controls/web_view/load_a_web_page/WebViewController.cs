@@ -21,11 +21,15 @@ namespace WebView {
 			webView = new UIWebView(View.Bounds);			
 			View.AddSubview(webView);
 
-			string url = "http://xamarin.com";
+			var url = "https://xamarin.com"; // NOTE: https required for iOS 9 ATS
 			webView.LoadRequest (new NSUrlRequest (new NSUrl (url)));
 			
 			// if this is false, page will be 'zoomed in' to normal size
 			//webView.ScalesPageToFit = true;
+
+
+			// iOS 9 ATS docs
+			// http://developer.xamarin.com/guides/ios/platform_features/introduction_to_ios9/ats/
 		}
 	}
 }

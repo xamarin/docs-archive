@@ -19,5 +19,7 @@
 	<string>8.3</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
+	<key>CFBundleDisplayName</key>
+	<string>WebPage</string>
 </dict>
 </plist>
