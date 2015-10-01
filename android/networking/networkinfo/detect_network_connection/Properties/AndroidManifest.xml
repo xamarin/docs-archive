@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="NetworkDetection.NetworkDetection">
-	<uses-sdk />
-	<application android:label="NetworkDetection">
+	<uses-sdk android:minSdkVersion="17" android:targetSdkVersion="22" />
+	<application android:label="NetworkDetection" android:icon="@drawable/icon">
 	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>

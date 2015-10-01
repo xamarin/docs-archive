@@ -66,6 +66,9 @@ namespace NetworkDetection
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050008
+			public const int connection_type_text = 2131034120;
+			
 			// aapt resource value: 0x7f050002
 			public const int is_connected_image = 2131034114;
 			
@@ -83,6 +86,9 @@ namespace NetworkDetection
 			
 			// aapt resource value: 0x7f050005
 			public const int tableRow2 = 2131034117;
+			
+			// aapt resource value: 0x7f050007
+			public const int textView3 = 2131034119;
 			
 			// aapt resource value: 0x7f050004
 			public const int wifi_image = 2131034116;

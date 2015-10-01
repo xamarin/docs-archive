@@ -5,50 +5,66 @@
     p1:layout_width="fill_parent"
     p1:layout_height="fill_parent"
     p1:id="@+id/tableLayout1">
-
-  <TableRow
-    p1:id="@+id/tableRow0"
-        >
-    <TextView
-        p1:text="Is Connected?"
-        p1:textAppearance="?android:attr/textAppearanceMedium"
-        p1:layout_column="0"
-        p1:layout_gravity="center_vertical"
-        p1:layout_weight="2" />
-    <ImageView
-        p1:src="@drawable/red_square"
-        p1:layout_column="1"
-        p1:layout_weight="1"
-        p1:id="@+id/is_connected_image" />
-  </TableRow>
-  <TableRow
-        p1:id="@+id/tableRow1"
-        >
-    <TextView
-        p1:text="WiFi"
-        p1:textAppearance="?android:attr/textAppearanceMedium"
-        p1:layout_column="0"
-        p1:layout_gravity="center_vertical"
-        p1:layout_weight="2" />
-    <ImageView
-        p1:src="@drawable/red_square"
-        p1:layout_column="1"
-        p1:layout_weight="1"
-        p1:id="@+id/wifi_image" />
-  </TableRow>
-  <TableRow
-      p1:id="@+id/tableRow2"
-        >
-    <TextView
-        p1:text="Roaming"
-        p1:textAppearance="?android:attr/textAppearanceMedium"
-        p1:layout_column="0"
-        p1:layout_gravity="center_vertical"
-        p1:layout_weight="2" />
-    <ImageView
-        p1:src="@drawable/red_square"
-        p1:layout_column="1"
-        p1:layout_weight="1"
-        p1:id="@+id/roaming_image" />
-  </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow0">
+        <TextView
+            p1:text="Is Online?"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_column="0"
+            p1:layout_gravity="center_vertical"
+            p1:layout_weight="2"
+            p1:layout_marginLeft="6dp" />
+        <ImageView
+            p1:src="@drawable/red_square"
+            p1:layout_column="1"
+            p1:layout_weight="1"
+            p1:id="@+id/is_connected_image" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow1">
+        <TextView
+            p1:text="WiFi"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_marginLeft="6dp"
+            p1:layout_column="0"
+            p1:layout_gravity="center_vertical"
+            p1:layout_weight="2" />
+        <ImageView
+            p1:src="@drawable/red_square"
+            p1:layout_column="1"
+            p1:layout_weight="1"
+            p1:id="@+id/wifi_image" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow2">
+        <TextView
+            p1:text="Roaming"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_marginLeft="6dp"
+            p1:layout_column="0"
+            p1:layout_gravity="center_vertical"
+            p1:layout_weight="2" />
+        <ImageView
+            p1:src="@drawable/red_square"
+            p1:layout_column="1"
+            p1:layout_weight="1"
+            p1:id="@+id/roaming_image" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            p1:text="Connection Type"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_marginLeft="6dp"
+            p1:layout_column="0"
+            p1:layout_weight="2"
+            p1:id="@+id/textView3" />
+        <TextView
+            p1:text=""
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_weight="1"
+            p1:layout_gravity="center_vertical"
+            p1:layout_column="1"
+            p1:id="@+id/connection_type_text"
+            p1:gravity="center" />
+    </TableRow>
 </TableLayout>
