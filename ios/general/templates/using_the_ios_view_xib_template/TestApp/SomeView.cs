@@ -1,26 +1,40 @@
-using System;
-using UIKit;
 using Foundation;
+using System;
+using System.CodeDom.Compiler;
+using UIKit;
 using ObjCRuntime;
-using CoreGraphics;
 
 namespace TestApp
 {
-	[Register("SomeView")]
-	public partial class SomeView : UIView
+	partial class SomeView : UIView
 	{
-		public SomeView(IntPtr h): base(h)
+		//We can make the control public so that it can be controlled on a per-instance basis in the ViewController.
+		public UILabel label {get {return MyLabel;}}
+
+		public SomeView (IntPtr handle) : base (handle)
 		{
+			
 		}
 
-		public SomeView ()
+		public static SomeView Create()
 		{
-		    var arr = NSBundle.MainBundle.LoadNib("SomeView", this, null);			
-			var v = Runtime.GetNSObject(arr.ValueAt(0)) as UIView;
-			v.Frame = new CGRect(0, 0, Frame.Width, Frame.Height);
-			AddSubview(v);
+			
+			var arr = NSBundle.MainBundle.LoadNib ("SomeView", null, null);
+			var v = Runtime.GetNSObject<SomeView> (arr.ValueAt(0));
+
+			return v;
+
+
+		}
+
+		//To set the text for all instances of SomeView, do it in the AwakeFromNib method.
+		//If you would rather set the label text on a per-instance basis, comment the method below
+		//and uncomment the line `v.label.Text = "Hello from label!";` in the ViewController.cs
+		public override void AwakeFromNib()
+		{
 
 			MyLabel.Text = "hello from the SomeView class";
 		}
 	}
+
 }
