@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace TestApp
+namespace LaunchScreenExample
 {
 	public class Application
 	{

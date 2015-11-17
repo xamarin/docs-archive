@@ -11,19 +11,11 @@ using UIKit;
 
 namespace TestApp
 {
-	[Register ("SomeView")]
-	partial class SomeView
+	[Register ("ViewController")]
+	partial class ViewController
 	{
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel MyLabel { get; set; }
-
 		void ReleaseDesignerOutlets ()
 		{
-			if (MyLabel != null) {
-				MyLabel.Dispose ();
-				MyLabel = null;
-			}
 		}
 	}
 }
