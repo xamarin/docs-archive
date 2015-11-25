@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Monkey Selector View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="5" customClass="MonkeySelectorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2"/>
+                        <viewControllerLayoutGuide type="bottom" id="3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" placeholderIntrinsicWidth="1800" placeholderIntrinsicHeight="450" id="6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shv-fm-6az">
+                                <rect key="frame" x="0.0" y="0.0" width="1800" height="450"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0308.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="ffi-fR-jiK">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="600" id="MEC-JY-31T"/>
+                                            <constraint firstAttribute="height" constant="450" id="QZl-Zy-nsR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0078.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="11">
+                                        <rect key="frame" x="600" y="0.0" width="600" height="450"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="600" id="Ly4-UR-dXO"/>
+                                            <constraint firstAttribute="height" constant="450" id="xO7-fW-pbE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="IMG_0074.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="15">
+                                        <rect key="frame" x="1200" y="0.0" width="600" height="450"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="600" id="4WI-3w-jEf"/>
+                                            <constraint firstAttribute="height" constant="450" id="g4v-Ux-aPv"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="ffi-fR-jiK" firstAttribute="leading" secondItem="shv-fm-6az" secondAttribute="leading" id="9ke-r3-S2D"/>
+                                    <constraint firstItem="11" firstAttribute="top" secondItem="shv-fm-6az" secondAttribute="top" id="AC7-fI-64Z"/>
+                                    <constraint firstAttribute="width" constant="600" id="Muo-ij-66P"/>
+                                    <constraint firstItem="11" firstAttribute="leading" secondItem="ffi-fR-jiK" secondAttribute="trailing" id="hmO-TD-dX9"/>
+                                    <constraint firstAttribute="height" constant="450" id="nT2-Xs-SAg"/>
+                                    <constraint firstItem="15" firstAttribute="top" secondItem="shv-fm-6az" secondAttribute="top" id="sfV-TM-w5b"/>
+                                    <constraint firstItem="15" firstAttribute="leading" secondItem="11" secondAttribute="trailing" id="tJl-67-dfl"/>
+                                    <constraint firstItem="ffi-fR-jiK" firstAttribute="top" secondItem="shv-fm-6az" secondAttribute="top" id="wIg-Cs-YsJ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="shv-fm-6az" firstAttribute="leading" secondItem="6" secondAttribute="leadingMargin" id="3OU-oy-bsb"/>
+                            <constraint firstItem="shv-fm-6az" firstAttribute="top" secondItem="6" secondAttribute="topMargin" id="HeM-JN-3uM"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="1800" height="600"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="scrollView" destination="shv-fm-6az" id="name-outlet-shv-fm-6az"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="111"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_0074.JPG" width="600" height="450"/>
+        <image name="IMG_0078.JPG" width="600" height="450"/>
+        <image name="IMG_0308.JPG" width="600" height="450"/>
+    </resources>
+</document>
