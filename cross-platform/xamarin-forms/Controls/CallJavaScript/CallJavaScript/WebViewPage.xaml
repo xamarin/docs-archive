@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="CallJavaScript.WebViewPage"
+			 Padding="0,40,0,0">
+	<ContentPage.Content>
+		<StackLayout>
+			<Label Text="Multiplication Table" FontSize="Medium" HorizontalOptions="Center" />
+			<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+				<Label Text="Number: " VerticalOptions="Center" />
+				<Entry x:Name="numberEntry" Text="5" WidthRequest="40" />
+				<Label Text="Stop:" VerticalOptions="Center" />
+				<Entry x:Name="stopEntry" Text="10" WidthRequest="40" />
+			</StackLayout>
+			<Button x:Name="callJavaScriptButton" Text="Call JavaScript" Clicked="OnCallJavaScriptButtonClicked" />
+			<WebView x:Name="webView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
