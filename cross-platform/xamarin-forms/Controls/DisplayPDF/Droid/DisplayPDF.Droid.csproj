@@ -359,7 +359,6 @@
     <AndroidAsset Include="Assets\pdfjs\web\images\toolbarButton-zoomIn%402x.png" />
     <AndroidAsset Include="Assets\pdfjs\web\images\toolbarButton-zoomOut.png" />
     <AndroidAsset Include="Assets\pdfjs\web\images\toolbarButton-zoomOut%402x.png" />
-    <AndroidAsset Include="Assets\pdfjs\web\locale\.DS_Store" />
     <AndroidAsset Include="Assets\pdfjs\web\locale\locale.properties" />
     <AndroidAsset Include="Assets\pdfjs\web\locale\ach\viewer.properties" />
     <AndroidAsset Include="Assets\pdfjs\web\locale\af\viewer.properties" />

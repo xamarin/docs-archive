@@ -207,7 +207,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Content\BookPreview2-Ch18-Rel0417.pdf" />
-    <None Include="Assets\pdfjs\web\cmaps\.DS_Store" />
     <None Include="Assets\pdfjs\web\cmaps\78-EUC-H.bcmap" />
     <None Include="Assets\pdfjs\web\cmaps\78-EUC-V.bcmap" />
     <None Include="Assets\pdfjs\web\cmaps\78-H.bcmap" />
@@ -378,7 +377,6 @@
     <None Include="Assets\pdfjs\web\cmaps\V.bcmap" />
     <None Include="Assets\pdfjs\web\cmaps\WP-Symbol.bcmap" />
     <None Include="Assets\pdfjs\web\compressed.tracemonkey-pldi-09.pdf" />
-    <None Include="Assets\pdfjs\web\locale\.DS_Store" />
     <None Include="Assets\pdfjs\web\locale\ach\viewer.properties" />
     <None Include="Assets\pdfjs\web\locale\af\viewer.properties" />
     <None Include="Assets\pdfjs\web\locale\ak\viewer.properties" />
