@@ -22,8 +22,7 @@ namespace ColorControl {
 		UISlider sliderC, sliderS, sliderB;
 		UILabel labelC, labelS, labelB;
 
-		// the CoreImage filter		
-		CIColorControls colorCtrls;
+
 
 		public override void ViewDidLoad ()
 		{
@@ -106,10 +105,11 @@ namespace ColorControl {
 			sliderC.MaxValue = 4;
 			sliderC.Value = 1;
 			
-			sliderC.TouchUpInside += HandleValueChanged;
-			sliderS.TouchUpInside += HandleValueChanged;
-			sliderB.TouchUpInside += HandleValueChanged;
-			
+			// update the image in 'real time' as the sliders are moved
+			sliderC.ValueChanged += HandleValueChanged;
+			sliderS.ValueChanged += HandleValueChanged;
+			sliderB.ValueChanged += HandleValueChanged;
+
 			View.Add (sliderC);
 			View.Add (sliderS);
 			View.Add (sliderB);
@@ -132,21 +132,28 @@ namespace ColorControl {
 			imageView.Image = AdjustImage (displayImage);
 		}
 
-		UIImage AdjustImage (UIImage image) {
+		CIContext context;
+		CIColorControls colorCtrls; //CIFilter
+		CIImage beginImage;
+
+		UIImage AdjustImage (UIImage image) 
+		{
 			if (colorCtrls == null)
 				colorCtrls = new CIColorControls () { Image = CIImage.FromCGImage (image.CGImage) };
 			else
 				colorCtrls.Image = CIImage.FromCGImage(image.CGImage);
 
+			if (context == null)
+				context = CIContext.FromOptions (null);
+
 			colorCtrls.Brightness = sliderB.Value; 
 			colorCtrls.Saturation = sliderS.Value; 
 			colorCtrls.Contrast = sliderC.Value;
 
-			var output = colorCtrls.OutputImage;
-			var context = CIContext.FromOptions (null);
-			var result = context.CreateCGImage (output, output.Extent);
-
-			return UIImage.FromImage(result);
+			using (var outputImage = colorCtrls.OutputImage) {
+				var result = context.CreateCGImage (outputImage, outputImage.Extent);
+				return UIImage.FromImage (result);
+			}
 		}
 	}
 }
