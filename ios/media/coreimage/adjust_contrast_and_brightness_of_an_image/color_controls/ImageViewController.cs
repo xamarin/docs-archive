@@ -21,9 +21,6 @@ namespace ColorControl {
 		UISlider sliderContrast, sliderSaturation, sliderBrightness;
 		UILabel labelC, labelS, labelB;
 
-		// the CoreImage filter		
-		CIColorControls colorCtrls;
-
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
@@ -70,10 +67,16 @@ namespace ColorControl {
 			sliderSaturation.Value = 1;
 			sliderBrightness.Value = 0;
 			sliderContrast.Value = 1;
-			
-			sliderContrast.TouchUpInside += HandleValueChanged;
-			sliderSaturation.TouchUpInside += HandleValueChanged;
-			sliderBrightness.TouchUpInside += HandleValueChanged;
+
+			// update the image in 'real time' as the sliders are moved
+			sliderContrast.ValueChanged += HandleValueChanged;
+			sliderSaturation.ValueChanged += HandleValueChanged;
+			sliderBrightness.ValueChanged += HandleValueChanged;
+
+			// using TouchUpInside ONLY applies the filter once the slider has stopped moving
+//			sliderContrast.TouchUpInside += HandleValueChanged;
+//			sliderSaturation.TouchUpInside += HandleValueChanged;
+//			sliderBrightness.TouchUpInside += HandleValueChanged;
 			
 			View.Add (sliderContrast);
 			View.Add (sliderSaturation);
@@ -85,30 +88,39 @@ namespace ColorControl {
 			View.Add (imageView);
 		}
 
+		CIContext context;
+		CIColorControls colorCtrls; //CIFilter
+
 		void HandleValueChanged (object sender, EventArgs e)
 		{	// use the low-res version
 			if (colorCtrls == null)
-				colorCtrls = new CIColorControls () {
-					Image = CIImage.FromCGImage (sourceImage.CGImage),
-				};
-		
+				colorCtrls = new CIColorControls () { Image = CIImage.FromCGImage (sourceImage.CGImage) };
+			else
+				colorCtrls.Image = CIImage.FromCGImage(sourceImage.CGImage);
+
+			if (context == null)
+				context = CIContext.FromOptions (null);
+
 			colorCtrls.Brightness = sliderBrightness.Value; 
 			colorCtrls.Saturation = sliderSaturation.Value; 
 			colorCtrls.Contrast = sliderContrast.Value;
-			
-			var output = colorCtrls.OutputImage;
-			var context = CIContext.FromOptions (null);
-			var result = context.CreateCGImage (output, output.Extent);
 
-			imageView.Image = UIImage.FromImage(result);
+			using (var outputImage = colorCtrls.OutputImage) {
+				var result = context.CreateCGImage (outputImage, outputImage.Extent);
+				imageView.Image = UIImage.FromImage (result);
+			}
+		}
 
-			// UNCOMMENT to save the image each time it is generated
+		// UNCOMMENT and use to save the image to the photo album
+//		void Save() 
+//		{
 //			var someImage = imageView.Image;
 //			someImage.SaveToPhotosAlbum((image, error) => {
 //				// Called on completion...
-//				//new UIAlertView("Saved", "Photo saved to Camera Roll", null, "OK", null).Show ();
+//				//new UIAlertView("Saved", "Photo saved", null, "OK", null).Show ();
 //			    Console.WriteLine("CIColorControls image saved to Photos");
 //			});
-		}
+//		}
+
 	}
 }

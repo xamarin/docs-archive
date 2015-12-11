@@ -134,7 +134,6 @@ namespace ColorControl {
 
 		CIContext context;
 		CIColorControls colorCtrls; //CIFilter
-		CIImage beginImage;
 
 		UIImage AdjustImage (UIImage image) 
 		{
