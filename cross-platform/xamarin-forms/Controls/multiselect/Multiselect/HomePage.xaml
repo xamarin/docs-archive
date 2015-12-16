@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="Multiselect.HomePage"
+		Title="Multi-select"
+		Padding="10,20,10,10">
+
+	<StackLayout>
+		<Label FontAttributes="Bold">How did you hear about Xamarin.Forms?</Label>
+		<Button Text="Answer" Clicked="OnClick" />
+		<Label x:Name="results" />
+	</StackLayout>
+</ContentPage>
