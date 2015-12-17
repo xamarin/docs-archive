@@ -27,8 +27,8 @@ namespace MultiThreading {
 				var bounds = UIScreen.MainScreen.Bounds; // portrait bounds
 
 				// show the loading overlay on the UI thread using the correct orientation sizing
-				this.loadPop = new LoadingOverlay (bounds);
-				this.View.Add ( this.loadPop );
+				loadPop = new LoadingOverlay (bounds);
+				View.Add (loadPop);
 
 				// spin up a new thread to do some long running work using StartNew
 				Task.Factory.StartNew (
@@ -46,7 +46,7 @@ namespace MultiThreading {
 				// but we don't want to update the UI from a background thread.
 				).ContinueWith ( 
 					t => {
-						this.loadPop.Hide ();
+						loadPop.Hide ();
 						Console.WriteLine ( "Finished, hiding our loading overlay from the UI thread." );
 					}, TaskScheduler.FromCurrentSynchronizationContext()
 				);
