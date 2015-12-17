@@ -8,7 +8,7 @@ using MultiThreading.Controls;
 namespace MultiThreading {
 	public partial class MainScreen_iPhone : UIViewController {
 
-		protected LoadingOverlay _loadPop = null;
+		protected LoadingOverlay loadPop = null;
 
 		public MainScreen_iPhone () : base ("MainScreen_iPhone", null)
 		{
@@ -27,8 +27,8 @@ namespace MultiThreading {
 				var bounds = UIScreen.MainScreen.Bounds; // portrait bounds
 
 				// show the loading overlay on the UI thread using the correct orientation sizing
-				this._loadPop = new LoadingOverlay (bounds);
-				this.View.Add ( this._loadPop );
+				this.loadPop = new LoadingOverlay (bounds);
+				this.View.Add ( this.loadPop );
 
 				// spin up a new thread to do some long running work using StartNew
 				Task.Factory.StartNew (
@@ -46,7 +46,7 @@ namespace MultiThreading {
 				// but we don't want to update the UI from a background thread.
 				).ContinueWith ( 
 					t => {
-						this._loadPop.Hide ();
+						this.loadPop.Hide ();
 						Console.WriteLine ( "Finished, hiding our loading overlay from the UI thread." );
 					}, TaskScheduler.FromCurrentSynchronizationContext()
 				);
