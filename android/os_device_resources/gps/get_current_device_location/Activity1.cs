@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 using Android.App;
 using Android.Locations;
 using Android.OS;
@@ -14,7 +14,7 @@ namespace com.xamarin.recipes.getlocation
     [Activity(Label = "Get Location", MainLauncher = true, Icon = "@drawable/icon")]
     public class Activity1 : Activity, ILocationListener
     {
-        static readonly string LogTag = "GetLocation";
+        static readonly string TAG = "X:" + typeof (Activity1).Name;
         TextView _addressText;
         Location _currentLocation;
         LocationManager _locationManager;
@@ -22,30 +22,29 @@ namespace com.xamarin.recipes.getlocation
         string _locationProvider;
         TextView _locationText;
 
-        public void OnLocationChanged(Location location)
+        public async void OnLocationChanged(Location location)
         {
             _currentLocation = location;
             if (_currentLocation == null)
             {
-                _locationText.Text = "Unable to determine your location.";
+                _locationText.Text = "Unable to determine your location. Try again in a short while.";
             }
             else
             {
-                _locationText.Text = String.Format("{0},{1}", _currentLocation.Latitude, _currentLocation.Longitude);
+                _locationText.Text = string.Format("{0:f6},{1:f6}", _currentLocation.Latitude, _currentLocation.Longitude);
+                Address address = await ReverseGeocodeCurrentLocation();
+                DisplayAddress(address);
+
             }
         }
 
-        public void OnProviderDisabled(string provider)
-        {
-        }
+        public void OnProviderDisabled(string provider) {}
 
-        public void OnProviderEnabled(string provider)
-        {
-        }
+        public void OnProviderEnabled(string provider) {}
 
         public void OnStatusChanged(string provider, Availability status, Bundle extras)
         {
-            Log.Debug(LogTag, "{0}, {1}", provider, status);
+            Log.Debug(TAG, "{0}, {1}", provider, status);
         }
 
         protected override void OnCreate(Bundle bundle)
@@ -62,7 +61,7 @@ namespace com.xamarin.recipes.getlocation
 
         void InitializeLocationManager()
         {
-            _locationManager = (LocationManager)GetSystemService(LocationService);
+            _locationManager = (LocationManager) GetSystemService(LocationService);
             Criteria criteriaForLocationService = new Criteria
                                                   {
                                                       Accuracy = Accuracy.Fine
@@ -75,50 +74,62 @@ namespace com.xamarin.recipes.getlocation
             }
             else
             {
-                _locationProvider = String.Empty;
+                _locationProvider = string.Empty;
             }
-            Log.Debug(LogTag, "Using " + _locationProvider + ".");
+            Log.Debug(TAG, "Using " + _locationProvider + ".");
         }
 
         protected override void OnResume()
         {
             base.OnResume();
             _locationManager.RequestLocationUpdates(_locationProvider, 0, 0, this);
-            Log.Debug(LogTag, "Listening for location updates using " + _locationProvider + ".");
+            Log.Debug(TAG, "Listening for location updates using " + _locationProvider + ".");
         }
 
         protected override void OnPause()
         {
             base.OnPause();
             _locationManager.RemoveUpdates(this);
-            Log.Debug(LogTag, "No longer listening for location updates.");
+            Log.Debug(TAG, "No longer listening for location updates.");
         }
 
         async void AddressButton_OnClick(object sender, EventArgs eventArgs)
         {
             if (_currentLocation == null)
             {
-                _addressText.Text = "Can't determine the current address.";
+                _addressText.Text = "Can't determine the current address. Try again in a few minutes.";
                 return;
             }
 
+            Address address = await ReverseGeocodeCurrentLocation();
+            DisplayAddress(address);
+        }
+
+        async Task<Address> ReverseGeocodeCurrentLocation()
+        {
             Geocoder geocoder = new Geocoder(this);
-            IList<Address> addressList = geocoder.GetFromLocation(_currentLocation.Latitude, _currentLocation.Longitude, 10);
+            IList<Address> addressList =
+                await geocoder.GetFromLocationAsync(_currentLocation.Latitude, _currentLocation.Longitude, 10);
 
             Address address = addressList.FirstOrDefault();
+            return address;
+        }
+
+        void DisplayAddress(Address address)
+        {
             if (address != null)
             {
                 StringBuilder deviceAddress = new StringBuilder();
                 for (int i = 0; i < address.MaxAddressLineIndex; i++)
                 {
-                    deviceAddress.Append(address.GetAddressLine(i))
-                                 .AppendLine(",");
+                    deviceAddress.AppendLine(address.GetAddressLine(i));
                 }
+                // Remove the last comma from the end of the address.
                 _addressText.Text = deviceAddress.ToString();
             }
             else
             {
-                _addressText.Text = "Unable to determine the address.";
+                _addressText.Text = "Unable to determine the address. Try again in a few minutes.";
             }
         }
     }
