@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
-        android:orientation="vertical" 
-        android:layout_width="fill_parent" 
-        android:layout_height="fill_parent">
- <Button 
-        android:id="@+id/startService" 
-        android:layout_width="fill_parent" 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Button
+        android:id="@+id/startService"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/start" />
- <Button 
-        android:id="@+id/stopService" 
-        android:layout_width="fill_parent" 
-        android:layout_height="wrap_content" 
-        android:text="@string/stop" />
+        android:text="@string/start"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+    <Button
+        android:id="@+id/stopService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
 </LinearLayout>

@@ -11,17 +11,20 @@ namespace SimpleService
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
             Button start = FindViewById<Button>(Resource.Id.startService);
-
-            start.Click += delegate { StartService(new Intent(this, typeof (SimpleService))); };
+            start.Click += (sender, args) => { StartService(new Intent(this, typeof(SimpleService))); };
 
             Button stop = FindViewById<Button>(Resource.Id.stopService);
+            stop.Click += (sender, args) => { StopService(new Intent(this, typeof(SimpleService))); };
+        }
 
-            stop.Click += delegate { StopService(new Intent(this, typeof (SimpleService))); };
+        protected override void OnStop()
+        {
+            base.OnStop();
+            // Clean up: shut down the service when the Activity is no longer visible.
+            StopService(new Intent(this, typeof (SimpleService)));
         }
     }
 }
