@@ -1,6 +1,4 @@
-﻿using System.Text;
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.Hardware;
 using Android.OS;
 using Android.Widget;
@@ -10,9 +8,22 @@ namespace MotionDetector
     [Activity(Label = "MotionDetector", MainLauncher = true, Icon = "@drawable/icon")]
     public class Activity1 : Activity, ISensorEventListener
     {
-        private static readonly object _syncLock = new object();
-        private SensorManager _sensorManager;
-        private TextView _sensorTextView;
+        static readonly object _syncLock = new object();
+        SensorManager _sensorManager;
+        TextView _sensorTextView;
+
+        public void OnAccuracyChanged(Sensor sensor, SensorStatus accuracy)
+        {
+            // We don't want to do anything here.
+        }
+
+        public void OnSensorChanged(SensorEvent e)
+        {
+            lock (_syncLock)
+            {
+                _sensorTextView.Text = string.Format("x={0:f}, y={1:f}, y={2:f}", e.Values[0], e.Values[1], e.Values[2]);
+            }
+        }
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -25,32 +36,15 @@ namespace MotionDetector
         protected override void OnResume()
         {
             base.OnResume();
-            _sensorManager.RegisterListener(this, _sensorManager.GetDefaultSensor(SensorType.Accelerometer), SensorDelay.Ui);
+            _sensorManager.RegisterListener(this,
+                                            _sensorManager.GetDefaultSensor(SensorType.Accelerometer),
+                                            SensorDelay.Ui);
         }
 
         protected override void OnPause()
         {
             base.OnPause();
             _sensorManager.UnregisterListener(this);
-        }
-
-        public void OnAccuracyChanged(Sensor sensor, SensorStatus accuracy)
-        {
-            // We don't want to do anything here.
-        }
-
-        public void OnSensorChanged(SensorEvent e)
-        {
-            lock (_syncLock)
-            {
-                var text = new StringBuilder("x = ")
-                    .Append(e.Values[0])
-                    .Append(", y=")
-                    .Append(e.Values[1])
-                    .Append(", z=")
-                    .Append(e.Values[2]);
-                _sensorTextView.Text = text.ToString();
-            }
         }
     }
 }
