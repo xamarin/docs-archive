@@ -1,43 +1,46 @@
 using System;
-using Android.App;
-using Android.Util;
 using System.Threading;
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Util;
 
 namespace SimpleService
 {
     [Service]
     public class SimpleService : Service
     {
-        System.Threading.Timer _timer;
-        
-        public override void OnStart (Android.Content.Intent intent, int startId)
+        Timer _timer;
+
+
+
+        public override void OnStart(Intent intent, int startId)
         {
-            base.OnStart (intent, startId);
-            
-            Log.Debug ("SimpleService", "SimpleService started");
-            
-            DoStuff ();
-        }
-        
-        public override void OnDestroy ()
-        {
-            base.OnDestroy ();
-            
-            _timer.Dispose ();
-            
-            Log.Debug ("SimpleService", "SimpleService stopped");       
+            base.OnStart(intent, startId);
+
+            Log.Debug("SimpleService", "SimpleService started");
+
+            DoStuff();
         }
 
-        public void DoStuff ()
+        public override void OnDestroy()
         {
-            _timer = new System.Threading.Timer ((o) => {
-                Log.Debug ("SimpleService", "hello from simple service");}
-            , null, 0, 4000);
+            base.OnDestroy();
+
+            _timer.Dispose();
+
+            Log.Debug("SimpleService", "SimpleService stopped");
         }
 
-        public override Android.OS.IBinder OnBind (Android.Content.Intent intent)
+        public void DoStuff()
         {
-            throw new NotImplementedException ();
+            _timer = new Timer(o => { Log.Debug("SimpleService", "hello from simple service"); }
+                               , null, 0, 4000);
+        }
+
+        public override IBinder OnBind(Intent intent)
+        {
+            throw new NotImplementedException();
         }
     }
 }
