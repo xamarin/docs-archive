@@ -37,6 +37,7 @@ namespace ImageView {
 			window.AddSubview (navigationController.View);
 			
 			// make the window visible
+			window.RootViewController = navigationController;
 			window.MakeKeyAndVisible ();
 			
 			return true;
