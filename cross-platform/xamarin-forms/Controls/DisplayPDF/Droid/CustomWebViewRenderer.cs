@@ -1,4 +1,5 @@
-﻿using DisplayPDF;
+﻿using System.Net;
+using DisplayPDF;
 using DisplayPDF.Droid;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -14,7 +15,8 @@ namespace DisplayPDF.Droid
 
 			if (e.NewElement != null) {
 				var customWebView = Element as CustomWebView;
-				Control.LoadUrl (string.Format ("file:///android_asset/pdfjs/web/viewer.html?file={0}", string.Format ("file:///android_asset/Content/{0}", customWebView.Uri)));
+				Control.Settings.AllowUniversalAccessFromFileURLs = true;
+				Control.LoadUrl (string.Format ("file:///android_asset/pdfjs/web/viewer.html?file={0}", string.Format ("file:///android_asset/Content/{0}", WebUtility.UrlEncode (customWebView.Uri))));
 			}
 		}
 	}
