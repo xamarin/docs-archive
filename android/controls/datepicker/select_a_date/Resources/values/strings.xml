@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DatePicker DialogFragment Example</string>
+    <string name="selected_date_text">Select Date</string>
+    <string name="pick_date_text">Pick Date</string>
+</resources>
