@@ -17,7 +17,9 @@
 	</array>
 	<key>MinimumOSVersion</key>
 	<string>8.3</string>
-	<key>XSLaunchImageAssets</key>
-	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
+	<key>XSAppIconAssets</key>
+	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
 </dict>
 </plist>

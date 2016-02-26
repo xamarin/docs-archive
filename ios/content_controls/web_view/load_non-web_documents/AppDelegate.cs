@@ -5,16 +5,17 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace WebView {
+namespace WebView
+{
 	// The UIApplicationDelegate for the application. This class is responsible for launching the 
 	// User Interface of the application, as well as listening (and optionally responding) to 
 	// application events from iOS.
 	[Register ("AppDelegate")]
-	public partial class AppDelegate : UIApplicationDelegate {
+	public partial class AppDelegate : UIApplicationDelegate
+	{
 		// class-level declarations
 		UIWindow window;
-		UINavigationController navigationController;
-		UIViewController viewController;
+
 
 		//
 		// This method is invoked when the application has loaded and is ready to run. In this 
@@ -27,18 +28,17 @@ namespace WebView {
 		{
 			// create a new window instance based on the screen size
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
-			
-			viewController = new WebViewController();
-			
-			navigationController = new UINavigationController();
-			navigationController.PushViewController (viewController, false);
+
+			var viewController = new WebViewController ();
+
+			var navigationController = new UINavigationController (viewController);
 
 			// If you have defined a view, add it here:
-			window.AddSubview (navigationController.View);
-			
+			window.RootViewController = navigationController;
+
 			// make the window visible
 			window.MakeKeyAndVisible ();
-			
+
 			return true;
 		}
 	}

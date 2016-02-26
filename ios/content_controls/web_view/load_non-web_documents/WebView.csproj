@@ -79,12 +79,17 @@
     <Compile Include="WebViewController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Loading a Web Page.docx" />
-    <Content Include="Loading a Web Page.pdf" />
-    <Content Include="Loading a Web Page.xlsx" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default.png" />
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Loading a Web Page.docx" />
+    <BundleResource Include="Loading a Web Page.pdf" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
