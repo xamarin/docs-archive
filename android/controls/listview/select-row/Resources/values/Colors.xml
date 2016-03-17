@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="row_background">#FFFFFF</color>
+  <color name="row_pressed_start">#03A9F4</color>
+  <color name="row_pressed_end">#B3E5FC</color>
+  <color name="row_selected">#FF5722</color>
+  <color name="row_text1">#212121</color>
+  <color name="row_text2">#727272</color>
+</resources>
