@@ -10,7 +10,7 @@ namespace SelectRow
     public class MainActivity : Activity
     {
         static readonly string TAG = "SelectARow";
-        static readonly int FIRST_ITEM_TO_SELECT = 4;
+		static readonly int INITIAL_SELECTION = 4;
 
         readonly List<TableItem> tableItems = new List<TableItem>();
         ArrayAdapter<string> listAdapter;
@@ -24,24 +24,15 @@ namespace SelectRow
             LoadTableItems();
             InitializeListView();
 
-            SelectInitialItem();
+			listView.SetItemChecked(INITIAL_SELECTION, true);
+			Log.Debug(TAG, "Selecting listview item #" + INITIAL_SELECTION);
         }
-
-        void SelectInitialItem()
-        {
-            listView.SetItemChecked(FIRST_ITEM_TO_SELECT, true);
-            Log.Debug(TAG, "Selecting listview item #" + FIRST_ITEM_TO_SELECT);
-        }
-
-        protected override void OnResume()
-        {
-            base.OnResume();
-//            listView.Post(() =>
-//                          {
-//                              listView.SetItemChecked(FIRST_ITEM_TO_SELECT, true);
-//                              Log.Debug(TAG, "Selecting listview item #" + FIRST_ITEM_TO_SELECT);
-//                          });
-        }
+		void InitializeListView()
+		{
+			listView = FindViewById<ListView>(Resource.Id.listView1);
+			listView.ChoiceMode = ChoiceMode.Single;
+			listView.Adapter = new HomeScreenAdapter(this, tableItems);
+		}
 
         void LoadTableItems()
         {
@@ -83,18 +74,5 @@ namespace SelectRow
                            });
         }
 
-        void InitializeListView()
-        {
-            listView = FindViewById<ListView>(Resource.Id.listView1);
-            listView.ChoiceMode = ChoiceMode.Single;
-            listView.Adapter = new HomeScreenAdapter(this, tableItems);
-            listView.ItemClick += ListViewOnItemClick;
-        }
-
-        void ListViewOnItemClick(object sender, AdapterView.ItemClickEventArgs itemClickEventArgs)
-        {
-            itemClickEventArgs.View.Selected = true;
-            Log.Debug(TAG, "item clicked " + itemClickEventArgs.Position);
-        }
     }
 }
