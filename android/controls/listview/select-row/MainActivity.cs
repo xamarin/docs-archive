@@ -29,9 +29,12 @@ namespace SelectRow
         }
 		void InitializeListView()
 		{
+			// Initialize the ListView with the data first.
 			listView = FindViewById<ListView>(Resource.Id.listView1);
-			listView.ChoiceMode = ChoiceMode.Single;
 			listView.Adapter = new HomeScreenAdapter(this, tableItems);
+
+			// Important - Set the ChoiceMode
+			listView.ChoiceMode = ChoiceMode.Single;
 		}
 
         void LoadTableItems()
