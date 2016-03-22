@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.geocode">
 	<uses-sdk android:minSdkVersion="15" />
 	<application android:label="Geocode">
-		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAttdHMG-YIASWeyX4Gcy0rOwewdXGrDf4" />
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="API_KEY_GOES_HERE" />
 		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />		
 	</application>
 	<uses-permission android:name="android.permission.INTERNET" />
