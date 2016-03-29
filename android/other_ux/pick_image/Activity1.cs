@@ -1,19 +1,17 @@
-﻿namespace PickImageFromGallery
+﻿using System;
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Widget;
+using Uri = Android.Net.Uri;
+
+namespace PickImageFromGallery
 {
-    using System;
-
-    using Android.App;
-    using Android.Content;
-    using Android.OS;
-    using Android.Widget;
-
-    using Uri = Android.Net.Uri;
-
     [Activity(Label = "PickImageFromGallery", MainLauncher = true, Icon = "@drawable/icon")]
     public class Activity1 : Activity
     {
         public static readonly int PickImageId = 1000;
-        private ImageView _imageView;
+        ImageView _imageView;
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
@@ -34,7 +32,7 @@
             button.Click += ButtonOnClick;
         }
 
-        private void ButtonOnClick(object sender, EventArgs eventArgs)
+        void ButtonOnClick(object sender, EventArgs eventArgs)
         {
             Intent = new Intent();
             Intent.SetType("image/*");
