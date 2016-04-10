@@ -11,7 +11,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1</string>
 	<key>MinimumOSVersion</key>
-	<string>8.2</string>
+	<string>9.0</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 </dict>
