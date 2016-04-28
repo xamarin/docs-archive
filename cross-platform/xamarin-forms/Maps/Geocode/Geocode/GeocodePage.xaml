@@ -5,7 +5,7 @@
 	<ContentPage.Content>
 		<StackLayout Padding="0,20,0,0">
 			<Label Text="Geocode:" />
-			<Entry x:Name="inputEntry" Text="394 Pacific Ave, San Francisco, California" />
+			<Entry x:Name="inputEntry" Text="Pacific Ave, San Francisco, California" />
 			<Button Text="Geocode" Clicked="OnGeocodeButtonClicked" />
 			<Label x:Name="geocodedOutputLabel" />
 		</StackLayout>	
