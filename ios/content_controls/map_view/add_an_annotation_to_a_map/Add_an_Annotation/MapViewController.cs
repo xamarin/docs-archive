@@ -89,29 +89,38 @@ namespace MapView {
 			/// <summary>
 			/// The location of the annotation
 			/// </summary>
-			private CLLocationCoordinate2D coord;
-			protected string title;
-			protected string subtitle;
-			public override CLLocationCoordinate2D Coordinate { get { return coord; } }
+			CLLocationCoordinate2D coord;
+			string title, subtitle;
 
+			public override CLLocationCoordinate2D Coordinate 
+			{ 
+				get { return coord; } 
+			}
+			public override void SetCoordinate(CLLocationCoordinate2D value)
+			{
+				coord = value;
+			}
 
 			/// <summary>
 			/// The title text
 			/// </summary>
 			public override string Title
-			{ get { return title; } }
-			
+			{
+				get { return title; } 
+			}
 			
 			/// <summary>
 			/// The subtitle text
 			/// </summary>
 			public override string Subtitle
-			{ get { return subtitle; } }
+			{ 
+				get { return subtitle; } 
+			}
 			
 			public BasicMapAnnotation (CLLocationCoordinate2D coordinate, string title, string subTitle)
 				: base()
 			{
-				this.coord = coordinate;
+				coord = coordinate;
 				this.title = title;
 				this.subtitle = subTitle;
 			}
