@@ -2,7 +2,7 @@
 <resources>
 	<string name="blur_image_text">Blur!</string>
 	<string name="app_name">Blur Example</string>
-
-  <string name="dialogtitle">Blur Image</string>
-  <string name="dialogmessage">Working</string>
+	<string name="dialogtitle">Blur Image</string>
+	<string name="dialogmessage">Working</string>
+	<string name="blur_radius_text">Blur Radius:</string>
 </resources>
