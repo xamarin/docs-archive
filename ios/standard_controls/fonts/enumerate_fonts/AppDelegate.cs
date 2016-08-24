@@ -5,12 +5,14 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace MapView {
+namespace MapView
+{
 	// The UIApplicationDelegate for the application. This class is responsible for launching the 
 	// User Interface of the application, as well as listening (and optionally responding) to 
 	// application events from iOS.
 	[Register ("AppDelegate")]
-	public partial class AppDelegate : UIApplicationDelegate {
+	public partial class AppDelegate : UIApplicationDelegate
+	{
 		// class-level declarations
 		UIWindow window;
 		UINavigationController navigationController;
@@ -27,18 +29,17 @@ namespace MapView {
 		{
 			// create a new window instance based on the screen size
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
-			
-			viewController = new FontViewController();
-			
-			navigationController = new UINavigationController();
+
+			viewController = new FontViewController ();
+
+			navigationController = new UINavigationController ();
 			navigationController.PushViewController (viewController, false);
 
-			// If you have defined a view, add it here:
-			window.AddSubview (navigationController.View);
-			
+			window.RootViewController = navigationController;
+
 			// make the window visible
 			window.MakeKeyAndVisible ();
-			
+
 			return true;
 		}
 	}
