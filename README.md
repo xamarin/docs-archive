@@ -6,7 +6,7 @@ Recipes for completing simple tasks with Xamarin products.
 Code of Conduct
 ---------------
 
-This project uses the [Microsoft Open Source Code of Contact](https://github.com/xamarin/recipes/blob/master/code-of-conduct.md).
+This project uses the [Microsoft Open Source Code of Conduct](https://github.com/xamarin/recipes/blob/master/code-of-conduct.md).
 
 For more information see the Code of Conduct FAQ or contact opencode@microsoft.com with any additional questions or comments.
 
