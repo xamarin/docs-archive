@@ -1,0 +1,11 @@
+{
+  "order":{
+    "call-javascript":"Call JavaScript from C#",
+    "choose-keyboard-for-entry": "Choose a Keyboard for an Entry",
+    "screen-orientation":"Display an Image based on Screen Orientation",
+    "display-pdf":"Display a Local PDF File in a WebView",
+    "listview-hide-separator-line": "Hide Separator Lines in TableView",
+    "multiselect":"Multiple Selection in a ListView",
+    "rotation":"Rotate Views"
+  }
+}

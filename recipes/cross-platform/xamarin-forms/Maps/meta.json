@@ -1,0 +1,10 @@
+{
+  "order":{
+    "geocode": "Geocode a Street Address",
+    "reverse-geocode": "Reverse Geocode a Street Address",
+    "map-navigation": "Perform Map-Based Navigation",
+    "map-overlay/circle":"Highlight a Circular Area on a Map",
+    "map-overlay/polygon":"Highlight a Region on a Map",
+    "map-overlay/polyline":"Highlight a Route on a Map"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "order":{
+	"collection_view":"Collection View",
+    "map_view":"Map View",
+    "navigation_controller":"Navigation Controller",
+    "other_ux":"Other UX",
+    "scroll_view":"Scroll View",
+	"search-controller":"Search Controller",
+    "split_view":"Split View",
+    "tables":"Tables",
+    "tab_bar":"Tab Bar",
+    "web_view":"Web View"
+  }
+}

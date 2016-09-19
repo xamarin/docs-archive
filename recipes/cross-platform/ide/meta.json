@@ -1,0 +1,7 @@
+{
+  "order":{
+    "launch_sdk_manager.html": "Launch SDK Manager",
+    "change_updates_channel.html": "Change the Updates Channel",
+    "debugging": "Debugging"
+  }
+}

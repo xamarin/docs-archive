@@ -1,0 +1,11 @@
+{
+  "order":{
+    "autocomplete_text_view":"Autocomplete Text View",
+    "edittext":"EditText",
+    "imagebutton":"ImageButton",
+    "imageview":"ImageView",
+    "listview": "ListView",
+    "seekbar":"SeekBar",
+    "webview":"WebView"
+  }
+}

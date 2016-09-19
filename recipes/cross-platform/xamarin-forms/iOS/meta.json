@@ -1,0 +1,9 @@
+{
+  "order":{
+    "add-done-to-keyboard":"Add 'Done' to Keyboard",
+    "customize-tabs":"Customize Tab color and font",
+    "prevent-keyboard-suggestions":"Prevent keyboard suggestions",
+    "core-spotlight-search":"Search a Xamarin.Forms App with Core Spotlight",
+    "nsuseractivity-search":"Search a Xamarin.Forms App with Activities"
+  }
+}

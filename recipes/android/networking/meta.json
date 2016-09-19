@@ -1,0 +1,8 @@
+{
+  "order":{
+    "gsm_strength":"Detect Strength of GSM Signal",
+    "email":"Email",
+    "networkinfo":"NetworkInfo",
+    "sms":"SMS"
+  }
+}

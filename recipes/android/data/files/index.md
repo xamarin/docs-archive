@@ -1,0 +1,10 @@
+id:{321736F6-9B74-80D7-8FF1-5984439EEB71}  
+title:Files  
+
+Working with different file types, including loading, saving and displaying
+them.
+
+ [ ![](Images/PickGalleryImage.png)](Images/PickGalleryImage.png)
+
+-   [Browse Files](/recipes/android/data/files/browse_files) 
+-   [Selecting a Gallery Image](/recipes/android/data/files/selecting_a_gallery_image)

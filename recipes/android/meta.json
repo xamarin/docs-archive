@@ -1,0 +1,15 @@
+{
+  "order":{
+    "controls":"Controls",
+    "data":"Data",
+    "fundamentals":"Fundamentals",
+    "general":"General",
+    "layout":"Layout",
+    "media":"Media",
+    "networking":"Networking",
+    "os_device_resources":"OS/Device Resources",
+    "other_ux":"Other UX",
+    "resources":"Resources",
+    "web_services":"Web Services"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "order":{
+    "airplay":"Airplay",
+    "coreimage":"CoreImage",
+    "images":"Images",
+    "sound":"Sound",
+    "video_and_photos":"Video and Photos"
+  }
+}

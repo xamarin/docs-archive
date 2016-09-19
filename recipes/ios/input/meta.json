@@ -1,0 +1,7 @@
+{
+  "order":{
+    "accelerometer":"Accelerometer",
+    "keyboards":"Keyboards",
+    "touch":"Touch"
+  }
+}
