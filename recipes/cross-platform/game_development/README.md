@@ -1,3 +1,0 @@
-Games Development Recipes
-===============
-
