@@ -3,6 +3,14 @@ Xamarin Recipes
 
 Recipes for completing simple tasks with Xamarin products.
 
+Contents
+---------
+
+What is a recipe and how does it differ from other types of documentation? 
+--------------------------------------------------------------------------
+ 
+At Xamarin we are passionate about empowering developers to make beautiful cross-platform apps and having great education is one way in which we do that. We also realize that everyone learns in a different way–some prefer classes and videos, some prefer to get hands on with samples, and some prefer to read. That's where recipes come in. We have two types of guides available at Xamarin, conceptual guides and recipes. As you can see from the linked examples conceptual guides are long-form articles that cover various topics in depth, they explain the _why_ as well as the _how_. In contrast, recipes tend to be much shorter. **They usually only explain the _how_, through a mixture of step-by-step points, screenshots, and code blocks.**
+
 Code of Conduct
 ---------------
 
@@ -13,23 +21,61 @@ For more information see the Code of Conduct FAQ or contact opencode@microsoft.c
 License
 -------
 
-The Apache License 2.0 applies to all samples in this repository.
-
-   Copyright 2015 Xamarin Inc
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+The MIT License applies to all recipes in this repository.
 
 Contributing
-------------
+============
 
-TO COME.
+Thank you for taking the time to contribute, we appreciate your help in helping the Xamarin community to learn and grow! All content submitted **must** be your own work.
+
+The information below will guide you through the organisation of this repository and will advise of the structure needed for naming folders, and how your recipe directory should be organised.
+
+Please also visit the articles in the [Contibutor guide](), which will give detailed and practical help with the following:
+
+* [Content Layout]()
+* [Style Guide]()
+* [Markdown and metadata]()
+* [Templates]()
+
+Repository Structure
+---------------------
+
+All recipes are contained within with \recipes directory. The structure follows the organization of recipes on https://developer.xamarin.com/recipes/, splitting content into Platform, General topic, and then providing the recipe. For example, the recipe at this location: ()[], will be displayed in the navigation as follows:
+
+
+The repository structure will look like the following: 
+\recipes 
+    \xamarin-forms
+        \maps 
+            \recipe-name-here 
+                README.md 
+                \Images 
+                \source 
+
+Folder naming standards 
+-----------------------
+
+The folder name will be used as the URL slug and therefore it is important to use the suggestions below. This ensure it will be SEO optimized and relevant for other users: 
+
+* Try to keep the folder name between 1-3 words.  
+* If more than one word, use hyphens (-), rather than underscores(_) 
+* Use only lowercase letters, numbers, and hyphens 
+* Make sure it is relevant to the recipe.
+
+Recipe Contents 
+----------------
+
+Each recipe that is submitted should include the following: 
+
+* A markdown file named **README.md** containing recipe instructions.
+* Recipe sample code. This should be placed inside a folder named **source**.
+* Images. These should be placed inside a folder named **Images**.
+
+
+
+
+
+
+
+
+
