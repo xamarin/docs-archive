@@ -1,12 +1,12 @@
 ---
-id:{A61CF22F-B15D-4824-A472-48DBF4DBF185}  
-title:App Links for Android  
-subtitle:How to Link to other apps and Handle Incoming links using App Links  
-brief:This recipe will show you how to link to other apps using App Links, as well as register your app to receive and parse incoming App Links.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/cross-platform/app-links/app-links-android)  
-article:[Creating Connected App Experiences with App Links](http://blog.xamarin.com/creating-connected-app-experiences-with-app-links-and-rivets-with-xamarin/)  
-article:[Rivets Xamarin Component](http://components.xamarin.com/view/rivets)  
-article:[Official App Links Documentation](http://applinks.org/documentation/)  
+id: {A61CF22F-B15D-4824-A472-48DBF4DBF185}  
+title: App Links for Android  
+subtitle: How to Link to other apps and Handle Incoming links using App Links  
+brief: This recipe will show you how to link to other apps using App Links, as well as register your app to receive and parse incoming App Links.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/cross-platform/app-links/app-links-android)  
+article: [Creating Connected App Experiences with App Links](http: //blog.xamarin.com/creating-connected-app-experiences-with-app-links-and-rivets-with-xamarin/)  
+article: [Rivets Xamarin Component](http: //components.xamarin.com/view/rivets)  
+article: [Official App Links Documentation](http: //applinks.org/documentation/)  
 ---
 
 <a name="Overview" class="injected"></a>
@@ -28,11 +28,11 @@ There are two main parts to implementing App Links in your apps
 # Linking to other apps
 
 -  Install the  **Rivets** component from the Component Store.
--  Find any instances where you navigate to a URL in your app (either by starting an Activity with an  `Intent.ActionView` Intent or by loading the page into a custom web view) and replace them with this:
+-  Find any instances where you navigate to a URL in your app (either by starting an Activity with an  `Intent.ActionView` Intent or by loading the page into a custom web view) and replace them with this: 
 
 
 ```
-Rivets.AppLinks.Navigator.Navigate(&quot;http://any.old.url&quot;)
+Rivets.AppLinks.Navigator.Navigate(&quot;http: //any.old.url&quot;)
 ```
 
 -  Your app will now attempt to Navigate to another installed app for the URL using App Links, or will fall back to using an intent with a view action if no App Link meta data is found, or no apps for the metadata are installed.
@@ -43,34 +43,34 @@ Rivets.AppLinks.Navigator.Navigate(&quot;http://any.old.url&quot;)
 -  Install the  **Rivets** component from the Component Store if you have not already done so.
 
 
--  Create the following Layout Resource named  `ProductLayout.axml` :
+-  Create the following Layout Resource named  `ProductLayout.axml` : 
 
 
 
 
 ```
 <?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?>
-<LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-    android:orientation=&quot;vertical&quot;
-    android:layout_width=&quot;fill_parent&quot;
-    android:layout_height=&quot;fill_parent&quot;
-    android:padding=&quot;10dp&quot;>
+<LinearLayout xmlns: android=&quot;http: //schemas.android.com/apk/res/android&quot;
+    android: orientation=&quot;vertical&quot;
+    android: layout_width=&quot;fill_parent&quot;
+    android: layout_height=&quot;fill_parent&quot;
+    android: padding=&quot;10dp&quot;>
     <TextView
-        android:text=&quot;Product ID:&quot;
-        android:textAppearance=&quot;?android:attr/textAppearanceMedium&quot;
-        android:layout_width=&quot;match_parent&quot;
-        android:layout_height=&quot;wrap_content&quot;
-        android:id=&quot;@+id/textView1&quot; />
+        android: text=&quot;Product ID: &quot;
+        android: textAppearance=&quot;?android: attr/textAppearanceMedium&quot;
+        android: layout_width=&quot;match_parent&quot;
+        android: layout_height=&quot;wrap_content&quot;
+        android: id=&quot;@+id/textView1&quot; />
     <TextView
-        android:text=&quot;Large Text&quot;
-        android:textAppearance=&quot;?android:attr/textAppearanceLarge&quot;
-        android:layout_width=&quot;match_parent&quot;
-        android:layout_height=&quot;wrap_content&quot;
-        android:id=&quot;@+id/textViewProductId&quot; />
+        android: text=&quot;Large Text&quot;
+        android: textAppearance=&quot;?android: attr/textAppearanceLarge&quot;
+        android: layout_width=&quot;match_parent&quot;
+        android: layout_height=&quot;wrap_content&quot;
+        android: id=&quot;@+id/textViewProductId&quot; />
 </LinearLayout>
 ```
 
--  Add the following  `Activity` to your app:
+-  Add the following  `Activity` to your app: 
 
 
 ```
@@ -79,7 +79,7 @@ Rivets.AppLinks.Navigator.Navigate(&quot;http://any.old.url&quot;)
     DataScheme=&quot;example&quot;,
     DataHost=&quot;products&quot;,
     Categories=new [] { Android.Content.Intent.CategoryDefault })]
-public class ProductActivity : Activity
+public class ProductActivity :  Activity
 {
     protected override void OnCreate (Bundle bundle)
     {
@@ -105,10 +105,10 @@ public class ProductActivity : Activity
 }
 ```
 
--  When your app is opened with the url  `example://products?id=12345` the product Activity will be displayed and you should see the id  `12345` from the query string displayed.
+-  When your app is opened with the url  `example: //products?id=12345` the product Activity will be displayed and you should see the id  `12345` from the query string displayed.
 
 
--  Create an HTML page with the following HTML:
+-  Create an HTML page with the following HTML: 
 
 
 
@@ -117,7 +117,7 @@ public class ProductActivity : Activity
 <html>
  <head>
   <title>Product 12345</title>
-  <meta property=&quot;al:android:url&quot; content=&quot;example://products?id=12345&quot; />
+  <meta property=&quot;al: android: url&quot; content=&quot;example: //products?id=12345&quot; />
  </head>
  <body>
   <h1>Product 12345</h1>
@@ -129,13 +129,13 @@ public class ProductActivity : Activity
 -  Publish this page somewhere on the internet, or at a location your Android app can reach.
 
 
--  Test navigating using App Links from your Android app by calling this method somewhere:
+-  Test navigating using App Links from your Android app by calling this method somewhere: 
 
 
 
 
 ```
-Rivets.AppLinks.Navigator.Navigate(&quot;http://location/of/your/html/file.html&quot;);
+Rivets.AppLinks.Navigator.Navigate(&quot;http: //location/of/your/html/file.html&quot;);
 ```
 
  <a name="Summary" class="injected"></a>

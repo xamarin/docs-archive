@@ -1,11 +1,11 @@
 ---
-id:{D6D866A3-95F9-9005-A018-A6A1345D5D5C}  
-title:Save Documents  
-brief:This recipe shows how to save a text file to the Documents folder.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/general/file_system/save_documents)  
-article:[Load a File](/recipes/ios/general/file_system/load_a_file)  
-article:[Enumerate Directories](/recipes/ios/general/file_system/enumerate_directories)  
-article:[Load an Image](/recipes/ios/standard_controls/image_view/load_an_image)  
+id: {D6D866A3-95F9-9005-A018-A6A1345D5D5C}  
+title: Save Documents  
+brief: This recipe shows how to save a text file to the Documents folder.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/general/file_system/save_documents)  
+article: [Load a File](/recipes/ios/general/file_system/load_a_file)  
+article: [Enumerate Directories](/recipes/ios/general/file_system/enumerate_directories)  
+article: [Load an Image](/recipes/ios/standard_controls/image_view/load_an_image)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -22,21 +22,21 @@ To save a string value to a text file
 using System.IO;
 ```
 
-<ol start="2"><li>Determine the path for the **Documents** folder:</li></ol>
+<ol start="2"><li>Determine the path for the **Documents** folder: </li></ol>
 
 
 ```
 var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
 ```
 
-<ol start="3"><li>Construct a filename to save the document to:</li></ol>
+<ol start="3"><li>Construct a filename to save the document to: </li></ol>
 
 
 ```
 var filename = Path.Combine (documents, "Write.txt");
 ```
 
-<ol start="4"><li>Write to the file:</li></ol>
+<ol start="4"><li>Write to the file: </li></ol>
 
 
 ```
@@ -54,7 +54,7 @@ File.WriteAllText(filename, "Write this text into a file!");
 ## iTunes File Access
 
 Users can access files in the Documents folder via iTunes if you add the
-following key to your **Info.plist** file:
+following key to your **Info.plist** file: 
 
 ```
 <key>UIFileSharingEnabled</key>  <true />
@@ -69,23 +69,23 @@ they cannot “browse” directories via the iTunes user interface).
 
 ## Read the File
 
-To read the same text file from the Documents folder:
+To read the same text file from the Documents folder: 
 
-<ol start="1"><li>Determine the path for the Documents folder:</li></ol>
+<ol start="1"><li>Determine the path for the Documents folder: </li></ol>
 
 
 ```
 var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
 ```
 
-<ol start="2"><li>Construct the filename to read from:</li></ol>
+<ol start="2"><li>Construct the filename to read from: </li></ol>
 
 
 ```
 var filename = Path.Combine (documents, "Write.txt");
 ```
 
-<ol start="3"><li>Read the file’s contents into a variable:</li></ol>
+<ol start="3"><li>Read the file’s contents into a variable: </li></ol>
 
 
 ```

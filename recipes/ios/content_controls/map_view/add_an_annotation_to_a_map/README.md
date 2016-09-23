@@ -1,11 +1,11 @@
 ---
-id:{E5EEB812-C303-3B50-5C05-929C66B41390}
-title:Add an Annotation to a Map
-brief:This recipe shows how to add an annotation to a map.
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/add_an_annotation_to_a_map)
-article:[Displaying a Location](/recipes/ios/content_controls/map_view/display_device_location)
-sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)
-sdk:[MKAnnotation Protocol Reference](https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKAnnotation_Protocol/)
+id: {E5EEB812-C303-3B50-5C05-929C66B41390}
+title: Add an Annotation to a Map
+brief: This recipe shows how to add an annotation to a map.
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/add_an_annotation_to_a_map)
+article: [Displaying a Location](/recipes/ios/content_controls/map_view/display_device_location)
+sdk: [MKMapView Class Reference](https: //developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)
+sdk: [MKAnnotation Protocol Reference](https: //developer.apple.com/library/ios/documentation/MapKit/Reference/MKAnnotation_Protocol/)
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -15,9 +15,9 @@ sdk:[MKAnnotation Protocol Reference](https://developer.apple.com/library/ios/do
 
 A basic annotation consists of a pin marker added to map. When touched, the
 pin displays a small popup with more information. To add an annotation to a
-MKMapView:
+MKMapView: 
 
-1. Start with an existing MKMapView or review the  [Displaying a Location (MapView)](http://docs.xamarin.com/recipes/ios/content_controls/map_view/display_a_location) recipe.
+1. Start with an existing MKMapView or review the  [Displaying a Location (MapView)](http: //docs.xamarin.com/recipes/ios/content_controls/map_view/display_a_location) recipe.
 
 <ol start="2">
 	<li>Create a subclass of MKAnnotation</li>
@@ -25,7 +25,7 @@ MKMapView:
 
 
 ```
-class BasicMapAnnotation : MKAnnotation {
+class BasicMapAnnotation :  MKAnnotation {
 
     CLLocationCoordinate2D coord;
     string title, subtitle
@@ -45,7 +45,7 @@ class BasicMapAnnotation : MKAnnotation {
 ```
 
 <ol start="3">
-	<li>Create the annotation and add it to the map: </li>
+	<li>Create the annotation and add it to the map:  </li>
 </ol>
 
 
@@ -55,7 +55,7 @@ mapView.AddAnnotation(annotation);
 ```
 
 <ol start="4">
-	<li>Finally, ensure the map is centered to show the annotation:</li>
+	<li>Finally, ensure the map is centered to show the annotation: </li>
 </ol>
 
 

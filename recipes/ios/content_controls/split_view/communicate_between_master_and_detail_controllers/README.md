@@ -1,12 +1,12 @@
 ---
-id:{47A7FC7B-30FB-227E-0A67-4CD7134FA34B}  
-title:Communicate Between Master and Detail Controllers  
-brief:This recipe shows how to wire up the master view in a UISplitViewController so that a new selection will change the contents of the detail view.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/split_view/communicate_between_master_and_detail_controllers)  
-article:[Using a Split View to Show Two Controllers](/recipes/ios/content_controls/split_view/use_split_view_to_show_two_controllers)  
-article:[Showing and Hiding the Master View Button](/recipes/ios/content_controls/split_view/show_and_hide_the_master_view_button)  
-sdk:[UISplitViewController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UISplitViewController_class/Reference/Reference.html)  
-sdk:[Split View Controllers](https://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/SplitViewControllers.html)  
+id: {47A7FC7B-30FB-227E-0A67-4CD7134FA34B}  
+title: Communicate Between Master and Detail Controllers  
+brief: This recipe shows how to wire up the master view in a UISplitViewController so that a new selection will change the contents of the detail view.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/split_view/communicate_between_master_and_detail_controllers)  
+article: [Using a Split View to Show Two Controllers](/recipes/ios/content_controls/split_view/use_split_view_to_show_two_controllers)  
+article: [Showing and Hiding the Master View Button](/recipes/ios/content_controls/split_view/show_and_hide_the_master_view_button)  
+sdk: [UISplitViewController Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UISplitViewController_class/Reference/Reference.html)  
+sdk: [Split View Controllers](https: //developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/SplitViewControllers.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -19,24 +19,24 @@ accordingly (and if the master view is in a popover, the popover should be
 automatically dismissed). This recipe shows how to communicate between the
 master and detail views to make that happen.
 
-To get row selection in the master view to change the detail view:
+To get row selection in the master view to change the detail view: 
 
 <ol start="1">
-  <li>Start with an existing implementation of <code>UISplitViewController</code> (such as the <a href="http://developer.xamarin.com/recipes/ios/content_controls/split_view/use_split_view_to_show_two_controllers/">Using a Split View to Show Two Controllers</a> recipe).</li>
+  <li>Start with an existing implementation of <code>UISplitViewController</code> (such as the <a href="http: //developer.xamarin.com/recipes/ios/content_controls/split_view/use_split_view_to_show_two_controllers/">Using a Split View to Show Two Controllers</a> recipe).</li>
 </ol>
 <ol start="2">
-  <li>Add an event handler and an <code>EventArgs</code> subclass to the <code>MasterViewController</code> which will be used to communicate with the detail view:</li>
+  <li>Add an event handler and an <code>EventArgs</code> subclass to the <code>MasterViewController</code> which will be used to communicate with the detail view: </li>
 </ol>
 
 
 ```
 public event EventHandler<RowClickedEventArgs> RowClicked;
 
-public class RowClickedEventArgs : EventArgs
+public class RowClickedEventArgs :  EventArgs
 {
        public int Item { get; set; }
 
-       public RowClickedEventArgs(int item) : base()
+       public RowClickedEventArgs(int item) :  base()
        { this.Item = item; }
 }
 ```
@@ -60,7 +60,7 @@ Root = new RootElement ("Items") {
 ```
 
 <ol start="4">
-  <li>Add a public property <code>Popover</code> to the <code>DetailViewController</code> so that we can track when it is showing and hide it when a selection is made:</li>
+  <li>Add a public property <code>Popover</code> to the <code>DetailViewController</code> so that we can track when it is showing and hide it when a selection is made: </li>
 </ol>
 
 
@@ -69,7 +69,7 @@ public UIPopoverController Popover {get;set;}
 ```
 
 <ol start="5">
-  <li>Create an <code>Update()</code> method in the <code>DetailViewController</code> which will be called when a new selection is made in the master view:</li>
+  <li>Create an <code>Update()</code> method in the <code>DetailViewController</code> which will be called when a new selection is made in the master view: </li>
 </ol>
 
 
@@ -85,7 +85,7 @@ public void Update (string text) {
 ```
 
 <ol start="6">
-  <li>Attach a handler to the <code>RowClicked</code> event to the <code>MasterViewController</code> in the <code>SplitViewController</code>. This lets the <code>SplitViewController</code> act as the go-between, listening for <code>RowClicked</code> events that happen in the master view, and calling the <code>Update()</code> method in the detail view:</li>
+  <li>Attach a handler to the <code>RowClicked</code> event to the <code>MasterViewController</code> in the <code>SplitViewController</code>. This lets the <code>SplitViewController</code> act as the go-between, listening for <code>RowClicked</code> events that happen in the master view, and calling the <code>Update()</code> method in the detail view: </li>
 </ol>
 
 
@@ -96,7 +96,7 @@ masterView.RowClicked += (object sender, MasterViewController.RowClickedEventArg
 ```
 
 <ol start="7">
-  <li>Finally, set the new <code>DetailViewController</code> <code>Popover</code> property whenever the <code>SplitViewController</code> shows or hides the popover. This will allow the <code>DetailViewController</code> to dismiss the popover when a selection is made: </li>
+  <li>Finally, set the new <code>DetailViewController</code> <code>Popover</code> property whenever the <code>SplitViewController</code> shows or hides the popover. This will allow the <code>DetailViewController</code> to dismiss the popover when a selection is made:  </li>
 </ol>
 
 

@@ -1,16 +1,16 @@
 ---
-id:{E5C73826-9DDF-2EDB-DA9B-2AD93BBBA825}  
-title:Browse Files  
-brief:This recipe shows how to create a simple file browser using Xamarin.Android. When the application is run, a ListView will display the contents of a directory on the device, starting with the root directory. When the user taps on an item in the list, one of two things will happen: If the item is a file, then a Toast will appear showing the name of the file that was selected. If the item is a directory, then the ListView will be repopulated to show the contents of the selected directory.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/data/files/browse_files)  
-article:[ListViews and Adapters](/guides/android/user_interface/working_with_listviews_and_adapters)  
-article:[Fragments](/guides/android/platform_features/fragments)  
-article:[Fragments Walkthrough](/guides/android/platform_features/fragments/fragments_walkthrough)  
-sdk:[ArrayAdapter](http://developer.android.com/reference/android/widget/ArrayAdapter.html)  
-sdk:[ListFragment](http://developer.android.com/reference/android/app/ListFragment.html)  
-sdk:[ListView](http://developer.android.com/reference/android/widget/ListView.html)  
-sdk:[DirectoryInfo](http://msdn.microsoft.com/en-us/library/system.io.directoryinfo.aspx)  
-sdk:[FileSystemInfo](http://msdn.microsoft.com/en-us/library/system.io.filesysteminfo.aspx)  
+id: {E5C73826-9DDF-2EDB-DA9B-2AD93BBBA825}  
+title: Browse Files  
+brief: This recipe shows how to create a simple file browser using Xamarin.Android. When the application is run, a ListView will display the contents of a directory on the device, starting with the root directory. When the user taps on an item in the list, one of two things will happen:  If the item is a file, then a Toast will appear showing the name of the file that was selected. If the item is a directory, then the ListView will be repopulated to show the contents of the selected directory.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/data/files/browse_files)  
+article: [ListViews and Adapters](/guides/android/user_interface/working_with_listviews_and_adapters)  
+article: [Fragments](/guides/android/platform_features/fragments)  
+article: [Fragments Walkthrough](/guides/android/platform_features/fragments/fragments_walkthrough)  
+sdk: [ArrayAdapter](http: //developer.android.com/reference/android/widget/ArrayAdapter.html)  
+sdk: [ListFragment](http: //developer.android.com/reference/android/app/ListFragment.html)  
+sdk: [ListView](http: //developer.android.com/reference/android/widget/ListView.html)  
+sdk: [DirectoryInfo](http: //msdn.microsoft.com/en-us/library/system.io.directoryinfo.aspx)  
+sdk: [FileSystemInfo](http: //msdn.microsoft.com/en-us/library/system.io.filesysteminfo.aspx)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -18,8 +18,8 @@ sdk:[FileSystemInfo](http://msdn.microsoft.com/en-us/library/system.io.filesyste
 
 # Recipe
 
-<div class="note"><b>Note:</b> This recipe requires a reference to Xamarin.Android.Support.V4, which is available in nuget.</div>
-This recipe has two key architectural components:
+<div class="note"><b>Note: </b> This recipe requires a reference to Xamarin.Android.Support.V4, which is available in nuget.</div>
+This recipe has two key architectural components: 
 
 1.  A  `ListFragment` subclass called  `FileListFragment` .
 1.  An  `ArrayAdapter` subclass called  `FileListAdapter` .
@@ -54,23 +54,23 @@ and makes it easier to adapt an application to different screen sizes and
 orientations.
 
 The fragment is created automatically when the Activity is loaded, as shown
-in the following layout file:
+in the following layout file: 
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<FrameLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: layout_width="match_parent"
+             android: layout_height="match_parent">
   <fragment class="com.xamarin.recipes.filepicker.FileListFragment"
-          android:id="@+id/file_list_fragment"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent" />
+          android: id="@+id/file_list_fragment"
+          android: layout_width="match_parent"
+          android: layout_height="match_parent" />
 </FrameLayout>
 ```
 
 When the fragment is created the lifecycle method `OnCreate` will
 be called. This is a simple method that will instantiate a `FileListAdapter` with an empty array of `FileSystemInfo`
-objects, and set the `ListAdapter` property on `FileListFragment`:
+objects, and set the `ListAdapter` property on `FileListFragment`: 
 
 ```
 public override void OnCreate(Bundle savedInstanceState)
@@ -82,7 +82,7 @@ public override void OnCreate(Bundle savedInstanceState)
 ```
 
 The next lifecycle method that is implemented on the fragment is `OnResume`. This method will create a list of files and subdirectories
-in the current directory and provide that list to the `FileListAdapter`:
+in the current directory and provide that list to the `FileListAdapter`: 
 
 ```
 public override void OnResume()
@@ -92,7 +92,7 @@ public override void OnResume()
 }
 ```
 
-The logic for updating the adapter is in the method `RefreshFileList`, shown below:
+The logic for updating the adapter is in the method `RefreshFileList`, shown below: 
 
 ```
 public void RefreshFilesList(string directory)
@@ -125,7 +125,7 @@ public void RefreshFilesList(string directory)
 ```
 
 The next method that needs to be overridden is `OnListItemClick`.
-This method will be invoked each time the user taps on a row in the `ListView`. The code for this method can be seen below:
+This method will be invoked each time the user taps on a row in the `ListView`. The code for this method can be seen below: 
 
 ```
 public override void OnListItemClick(ListView l, View v, int position, long id)
@@ -160,7 +160,7 @@ The next important component is the `FileListAdapter`, a subclass of
 `ArrayAdapter`. The `ArrayAdapter` base class is an excellent choice when dealing
 with dynamic lists that need to be displayed. It takes care of much of the work
 that needs to be done in manage the list. An example of the rows that have
-been populated by `FileListAdapter` can be seen in the following screenshot:
+been populated by `FileListAdapter` can be seen in the following screenshot: 
 
  [ ![](Images/image2.png)](Images/image2.png)
 
@@ -169,39 +169,39 @@ second row shows an icon for a file, and the name of the file. In order to
 create a view for these rows, the method `GetView` will be overridden.
 
 The layout for the row, regardless if it is a file or a directory, is
-displayed using the same XML layout:
+displayed using the same XML layout: 
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="wrap_content"
-  android:orientation="horizontal">
+  xmlns: android="http: //schemas.android.com/apk/res/android"
+  android: layout_width="fill_parent"
+  android: layout_height="wrap_content"
+  android: orientation="horizontal">
   <ImageView
-         android:id="@+id/file_picker_image"
-         android:layout_width="40dip"
-         android:layout_height="40dip"
-         android:layout_marginTop="5dip"
-         android:layout_marginBottom="5dip"
-         android:layout_marginLeft="5dip"
-         android:src="@drawable/file"
-         android:scaleType="centerCrop"/>
+         android: id="@+id/file_picker_image"
+         android: layout_width="40dip"
+         android: layout_height="40dip"
+         android: layout_marginTop="5dip"
+         android: layout_marginBottom="5dip"
+         android: layout_marginLeft="5dip"
+         android: src="@drawable/file"
+         android: scaleType="centerCrop"/>
   <TextView
-         android:id="@+id/file_picker_text"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:layout_weight="1"
-         android:layout_gravity="left|center_vertical"
-         android:textSize="28sp"
-         android:layout_marginLeft="10dip"
-         android:singleLine="true"
-         android:text="filename"/>
+         android: id="@+id/file_picker_text"
+         android: layout_width="fill_parent"
+         android: layout_height="wrap_content"
+         android: layout_weight="1"
+         android: layout_gravity="left|center_vertical"
+         android: textSize="28sp"
+         android: layout_marginLeft="10dip"
+         android: singleLine="true"
+         android: text="filename"/>
 </LinearLayout>
 ```
 
 The implementation of `GetView`, is shown next, followed by an
-explanation:
+explanation: 
 
 ```
 public override View GetView(int position, View convertView, ViewGroup parent)
@@ -220,7 +220,7 @@ public override View GetView(int position, View convertView, ViewGroup parent)
         row = convertView;
         viewHolder = (FileListRowViewHolder)row.Tag;
     }
-    viewHolder.Update(fileSystemEntry.Name, fileSystemEntry.IsDirectory() ? Resource.Drawable.folder : Resource.Drawable.file);
+    viewHolder.Update(fileSystemEntry.Name, fileSystemEntry.IsDirectory() ? Resource.Drawable.folder :  Resource.Drawable.file);
     return row;
 }
 ```
@@ -254,10 +254,10 @@ and `TextView` each time. The `.Tag` property on the view holds an
 instance of `FileListRowViewHolder` already has the references to the
 two widgets.
 
-The code for `FileListRowHolder` can be seen below:
+The code for `FileListRowHolder` can be seen below: 
 
 ```
-public class FileListRowViewHolder : Java.Lang.Object
+public class FileListRowViewHolder :  Java.Lang.Object
 {
     public FileListRowViewHolder(TextView textView, ImageView imageView)
     {
@@ -276,17 +276,17 @@ public class FileListRowViewHolder : Java.Lang.Object
 
 Notice as well that `FileListRowHolder` subclasses `Java.Lang.Object`. That is because the datatype of `View.Tag` is not a `System.Object`, but is `Java.Lang.Object`.
 
-When the application is run, the [ListView](http://developer.android.com/reference/android/widget/ListView.html) will display the contents of the root directory on
-the device as show below:
+When the application is run, the [ListView](http: //developer.android.com/reference/android/widget/ListView.html) will display the contents of the root directory on
+the device as show below: 
 
  [ ![](Images/image1.png)](Images/image1.png)
 
 Note the icon distinguishing between a directory and a file. When the
-user taps on a directory, the contents of the [ListView](http://developer.android.com/reference/android/widget/ListView.html)will change to reflect what is in the new directory.
+user taps on a directory, the contents of the [ListView](http: //developer.android.com/reference/android/widget/ListView.html)will change to reflect what is in the new directory.
 
 When the user selects a file, then a Toast will pop up showing the full path
 and filename of the file that was selected, as shown in the screen shot
-below:
+below: 
 
  [ ![](Images/image3.png)](Images/image3.png)
 

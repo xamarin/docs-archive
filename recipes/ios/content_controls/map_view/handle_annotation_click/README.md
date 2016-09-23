@@ -1,12 +1,12 @@
 ---
-id:{EDB7429B-839E-7E9F-19A2-133E442C145C}  
-title:Handle Annotation Click  
-brief:This recipe shows how to add an annotation with a clickable button to a map.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/handle_annotation_click)  
-article:[Add an Annotation](/recipes/ios/content_controls/map_view/add_an_annotation_to_a_map)  
-article:[Displaying a Location](/recipes/ios/content_controls/map_view/display_device_location)  
-sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)  
-sdk:[MKAnnotation Protocol Reference](https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKAnnotation_Protocol/)  
+id: {EDB7429B-839E-7E9F-19A2-133E442C145C}  
+title: Handle Annotation Click  
+brief: This recipe shows how to add an annotation with a clickable button to a map.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/handle_annotation_click)  
+article: [Add an Annotation](/recipes/ios/content_controls/map_view/add_an_annotation_to_a_map)  
+article: [Displaying a Location](/recipes/ios/content_controls/map_view/display_device_location)  
+sdk: [MKMapView Class Reference](https: //developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)  
+sdk: [MKAnnotation Protocol Reference](https: //developer.apple.com/library/ios/documentation/MapKit/Reference/MKAnnotation_Protocol/)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -15,10 +15,10 @@ sdk:[MKAnnotation Protocol Reference](https://developer.apple.com/library/ios/do
 # Recipe
 
 To add an annotation and respond to touching a button within the
-annotation:
+annotation: 
 
 1.  Start with an existing `MKMapView` or review the  [Displaying a Location](/recipes/ios/content_controls/map_view/display_device_location) and  [Add an Annotation](/recipes/ios/content_controls/map_view/add_an_annotation_to_a_map) recipes.
-2.  Add an annotation as you normally would:
+2.  Add an annotation as you normally would: 
 
 
 ```
@@ -32,7 +32,7 @@ mapView.AddAnnotation (annotation);
 
 
 ```
-protected class MapDelegate : MKMapViewDelegate
+protected class MapDelegate :  MKMapViewDelegate
 {
 	protected string annotationIdentifier = "BasicAnnotation";
 	UIButton detailButton;
@@ -90,7 +90,7 @@ protected class MapDelegate : MKMapViewDelegate
 ```
 
 <ol start="4">
-	<li>Finally, assign the delegate (prior to the code added earlier to add the annotation to the MKMapView instance): </li>
+	<li>Finally, assign the delegate (prior to the code added earlier to add the annotation to the MKMapView instance):  </li>
 </ol>
 
 

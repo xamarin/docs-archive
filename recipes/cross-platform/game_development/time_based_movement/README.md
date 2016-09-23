@@ -1,21 +1,21 @@
 ---
-id:{2acfc981-107f-4cab-9d68-9f090a9fa533}  
-title:Time Based Movement in CocosSharp  
-brief:How to move an object independent of frame rate  
+id: {2acfc981-107f-4cab-9d68-9f090a9fa533}  
+title: Time Based Movement in CocosSharp  
+brief: How to move an object independent of frame rate  
 ---
 
 # Recipe
 
 Moving game objects should use time when calculating how far to move each frame so that behavior is consistent regardless of frame rate.
 
-Movement can be handled through a `Schedule` call, which expects an `Action<float>`. The `float` parameter is the number of seconds since last frame, so it can be used to perform time based movement. First `Schedule` must be called:
+Movement can be handled through a `Schedule` call, which expects an `Action<float>`. The `float` parameter is the number of seconds since last frame, so it can be used to perform time based movement. First `Schedule` must be called: 
 
 ```
-// assuming this is called in an object that inherits from CCNode, such as an entity:
+// assuming this is called in an object that inherits from CCNode, such as an entity: 
 this.Schedule(PerformMovement);
 ```
 
-`PerformMovement` implements the movement logic as follows:
+`PerformMovement` implements the movement logic as follows: 
 
 ```
 void PerformMovement(float timeInSeconds)

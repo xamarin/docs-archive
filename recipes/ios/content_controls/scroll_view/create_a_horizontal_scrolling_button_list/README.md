@@ -1,10 +1,10 @@
 ---
-id:{C956274D-BD3A-D353-26EA-1C30097BF44A}  
-title:Create a Horizontal Scrolling Button List  
-brief:This recipe shows how to create a horizontal scrolling list of buttons.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/scroll_view/create_a_horizontal_scrolling_button_list))  
-article:[MonoTouch.UIKit.UIScrollView Class](http://iosapi.xamarin.com/?link=T%3aMonoTouch.UIKit.UIScrollView)  
-sdk:[UIScrollView Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIScrollView_Class/Reference/UIScrollView.html)  
+id: {C956274D-BD3A-D353-26EA-1C30097BF44A}  
+title: Create a Horizontal Scrolling Button List  
+brief: This recipe shows how to create a horizontal scrolling list of buttons.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/scroll_view/create_a_horizontal_scrolling_button_list))  
+article: [MonoTouch.UIKit.UIScrollView Class](http: //iosapi.xamarin.com/?link=T%3aMonoTouch.UIKit.UIScrollView)  
+sdk: [UIScrollView Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UIScrollView_Class/Reference/UIScrollView.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -15,7 +15,7 @@ sdk:[UIScrollView Class Reference](https://developer.apple.com/library/ios/#docu
  [ ![](Images/scrollingbuttons.png)](Images/scrollingbuttons.png)
 
  Follow these steps to create a scrolling list of buttons in a
-`UIViewController` subclass:
+`UIViewController` subclass: 
 
 1.  Declare `UIScrollView` and `List<UIButton>` class variables.
 

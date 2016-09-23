@@ -1,13 +1,13 @@
 ---
-id:{2A2483B6-A8D4-4B2D-E874-AD1FBC9814F9}
-title:Adjust Contrast and Brightness of an Image
-brief:This recipe shows how to use a CoreImage filter to adjust the contrast, saturation and brightness of an image.
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image/color_controls)
-samplecode:[Browse Pro on GitHub](https://github.com/xamarin/recipes/tree/master/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image/color_controls_pro)
-article:[Save Photo to Album with Metadata](/recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata)
-article:[Introduction to Core Image](/guides/ios/platform_features/introduction_to_coreimage)
-sdk:[CIFilter Class Reference](http://developer.apple.com/library/ios/#documentation/GraphicsImaging/Reference/QuartzCoreFramework/Classes/CIFilter_Class/Reference/Reference.html)
-dateupdated:2015-12-11
+id: {2A2483B6-A8D4-4B2D-E874-AD1FBC9814F9}
+title: Adjust Contrast and Brightness of an Image
+brief: This recipe shows how to use a CoreImage filter to adjust the contrast, saturation and brightness of an image.
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image/color_controls)
+samplecode: [Browse Pro on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image/color_controls_pro)
+article: [Save Photo to Album with Metadata](/recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata)
+article: [Introduction to Core Image](/guides/ios/platform_features/introduction_to_coreimage)
+sdk: [CIFilter Class Reference](http: //developer.apple.com/library/ios/#documentation/GraphicsImaging/Reference/QuartzCoreFramework/Classes/CIFilter_Class/Reference/Reference.html)
+dateupdated: 2015-12-11
 ---
 
 # Recipe
@@ -20,9 +20,9 @@ filters that can be applied to images. This recipe shows how to implement the
 
  [ ![](Images/ColorControls.png)](Images/ColorControls.png)
 
-To implement the `CIColorControls` filter:
+To implement the `CIColorControls` filter: 
 
--  Make sure your code file references `CoreImage` and `CoreGraphics` namespaces:
+-  Make sure your code file references `CoreImage` and `CoreGraphics` namespaces: 
 
 
 ```
@@ -30,7 +30,7 @@ using CoreImage;
 using CoreGraphics;
 ```
 
--  Add an image view and load an image (ensure the image has been added to your project with Build Action: BundleResource):
+-  Add an image view and load an image (ensure the image has been added to your project with Build Action:  BundleResource): 
 
 
 ```
@@ -40,7 +40,7 @@ imageView.Image = sourceImage;
 View.Add (imageView);
 ```
 
--  Add three sliders that will change the value of the brightness, saturation and contrast parameters:
+-  Add three sliders that will change the value of the brightness, saturation and contrast parameters: 
 
 
 ```
@@ -52,7 +52,7 @@ View.Add (sliderSaturation);
 View.Add (sliderBrightness);
 ```
 
--  Set the minimum and maximum values for the sliders based on the `CIColorControls` filter documentation :
+-  Set the minimum and maximum values for the sliders based on the `CIColorControls` filter documentation : 
 
 
 ```
@@ -71,7 +71,7 @@ sliderBrightness.Value = 0;
 sliderContrast.Value = 1;
 ```
 
--  Attach a handler to each slider so that the image can be updated when the sliders are changed:
+-  Attach a handler to each slider so that the image can be updated when the sliders are changed: 
 
 
 ```
@@ -80,7 +80,7 @@ sliderSaturation.ValueChanged += HandleValueChanged;
 sliderBrightness.ValueChanged += HandleValueChanged;
 ```
 
--  Implement the `HandleValueChanged` method to adjust the colors of the image and assign the output to the `UIImageView`:
+-  Implement the `HandleValueChanged` method to adjust the colors of the image and assign the output to the `UIImageView`: 
 
 
 ```
@@ -109,7 +109,7 @@ void HandleValueChanged (object sender, EventArgs e)
 
 # Additional Information
 
-The transformed image can be saved to the photo album using this code:
+The transformed image can be saved to the photo album using this code: 
 
 ```
 var someImage = imageView.Image;
@@ -120,7 +120,7 @@ someImage.SaveToPhotosAlbum((image, error) => {
 });
 ```
 
-The [Adjust Image Pro](https://github.com/xamarin/recipes/tree/master/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image/color_controls_pro)
+The [Adjust Image Pro](https: //github.com/xamarin/recipes/tree/master/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image/color_controls_pro)
 recipe sample includes additional code to take an picture with
 the camera, resize it for manipulation then save the original size with the
 color changes applied.

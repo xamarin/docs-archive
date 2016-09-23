@@ -1,9 +1,9 @@
 ---
-id:{F8D057EB-A890-4831-952C-3538862F04C5}  
-title:Use an ArrayAdapter  
-brief:This recipe shows how to bind an array to a list using an ArrayAdapter.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/data/adapters/use_an_arrayadapter)  
-sdk:[ArrayAdapter Class Reference](http://developer.android.com/reference/android/widget/ArrayAdapter.html)  
+id: {F8D057EB-A890-4831-952C-3538862F04C5}  
+title: Use an ArrayAdapter  
+brief: This recipe shows how to bind an array to a list using an ArrayAdapter.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/data/adapters/use_an_arrayadapter)  
+sdk: [ArrayAdapter Class Reference](http: //developer.android.com/reference/android/widget/ArrayAdapter.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -18,18 +18,18 @@ Follow these steps to display an array of strings in a ListView, which have been
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/textItem"
-    android:textSize="44sp"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content" />
+<TextView xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: id="@+id/textItem"
+    android: textSize="44sp"
+    android: layout_width="fill_parent"
+    android: layout_height="wrap_content" />
 ```
 
 -  In a `ListActivity` subclass, add the following code.
 
 
 ```
-public class Activity1 : ListActivity
+public class Activity1 :  ListActivity
 {
 string[] data = {"one", "two", "three", "four", "five"} ;
 

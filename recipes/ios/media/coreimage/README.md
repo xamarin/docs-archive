@@ -1,6 +1,6 @@
 ---
-id:{893EB6C6-3A11-9EE9-DBCC-915C9393A002}  
-title:CoreImage  
+id: {893EB6C6-3A11-9EE9-DBCC-915C9393A002}  
+title: CoreImage  
 ---
 
 The Core Image framework provides high-performance image and video

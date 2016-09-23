@@ -1,6 +1,6 @@
 ---
-id:{D1B4F312-30C0-6B06-D804-785AC676A9E7}  
-title:Airplay  
+id: {D1B4F312-30C0-6B06-D804-785AC676A9E7}  
+title: Airplay  
 ---
 
 Airplay is a technology that allows iOS to wirelessly stream music and video

@@ -1,10 +1,10 @@
 ---
-id:{959DD891-9C05-6D5E-1AB5-DFDA09D9D845}  
-title:Change Map Modes  
-brief:This recipe shows how to change the type of map being displayed in an MKMapView to either Road, Satellite or Hybrid.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/change_map_modes)  
-article:[Displaying a Location](/recipes/ios/content_controls/map_view/display_device_location)  
-sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)  
+id: {959DD891-9C05-6D5E-1AB5-DFDA09D9D845}  
+title: Change Map Modes  
+brief: This recipe shows how to change the type of map being displayed in an MKMapView to either Road, Satellite or Hybrid.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/change_map_modes)  
+article: [Displaying a Location](/recipes/ios/content_controls/map_view/display_device_location)  
+sdk: [MKMapView Class Reference](https: //developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -12,10 +12,10 @@ sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documen
 
 # Recipe
 
-To change the mode of a MKMapView:
+To change the mode of a MKMapView: 
 
 1.  Start with an existing MKMapView or review the  [Displaying a Location](/recipes/ios/content_controls/map_view/display_device_location) recipe.
-1.  Change the map type in code using one of these statements:
+1.  Change the map type in code using one of these statements: 
 
 
 ```
@@ -27,7 +27,7 @@ mapView.MapType = MKMapType.Hybrid;
  [ ![](Images/MapView_Types.png)](Images/MapView_Types.png)
 
 <ol start="3">
-	<li>To add a segment control to allow the user to switch between modes, add the following code: </li>
+	<li>To add a segment control to allow the user to switch between modes, add the following code:  </li>
 </ol>
 
 
@@ -41,13 +41,13 @@ mapTypes.SelectedSegment = 0; // Road is the default
 mapTypes.AutoresizingMask = UIViewAutoresizing.FlexibleTopMargin;
 mapTypes.ValueChanged += (s, e) => {
     switch(mapTypes.SelectedSegment) {
-    case 0:
+    case 0: 
         mapView.MapType = MKMapType.Standard;
         break;
-    case 1:
+    case 1: 
         mapView.MapType = MKMapType.Satellite;
         break;
-    case 2:
+    case 2: 
         mapView.MapType = MKMapType.Hybrid;
         break;
     }

@@ -1,6 +1,6 @@
 ---
-id:{6F4EFBA8-3857-6E96-0C92-9C0B2C6F5F86}  
-title:Image View  
+id: {6F4EFBA8-3857-6E96-0C92-9C0B2C6F5F86}  
+title: Image View  
 ---
 
 The UIImageView control allows displaying an image from a UIImage.

@@ -1,10 +1,10 @@
 ---
-id:{EC009100-EAE0-0BDA-3AC9-60BBF78854EB}  
-title:Capture User Input Text  
-brief:This recipe shows how to use EditText control to capture text entered by a user.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/controls/edittext/capture_user_input_text)  
-article:[EditText Tutorial](/guides/android/user_interface/form_elements/edit_text)  
-sdk:[EditText Class Reference](http://developer.android.com/reference/android/widget/EditText.html)  
+id: {EC009100-EAE0-0BDA-3AC9-60BBF78854EB}  
+title: Capture User Input Text  
+brief: This recipe shows how to use EditText control to capture text entered by a user.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/controls/edittext/capture_user_input_text)  
+article: [EditText Tutorial](/guides/android/user_interface/form_elements/edit_text)  
+sdk: [EditText Class Reference](http: //developer.android.com/reference/android/widget/EditText.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -19,29 +19,29 @@ sdk:[EditText Class Reference](http://developer.android.com/reference/android/wi
 ```
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
 
-    android:orientation="vertical"
+    android: orientation="vertical"
 
-    android:layout_width="fill_parent"
+    android: layout_width="fill_parent"
 
-    android:layout_height="fill_parent">
+    android: layout_height="fill_parent">
 
     <EditText
 
-        android:id="@+id/editText"
+        android: id="@+id/editText"
 
-        android:layout_width="fill_parent"
+        android: layout_width="fill_parent"
 
-        android:layout_height="wrap_content"/>
+        android: layout_height="wrap_content"/>
 
     <TextView
 
-        android:id="@+id/textView"
+        android: id="@+id/textView"
 
-        android:layout_width="fill_parent"
+        android: layout_width="fill_parent"
 
-        android:layout_height="wrap_content"/>  
+        android: layout_height="wrap_content"/>  
 
 </LinearLayout>
 ```

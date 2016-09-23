@@ -1,9 +1,9 @@
 ---
-id:{cd0ee2d2-f5dc-48f1-b859-37200a39abd0}
-title:Dialing the Phone by URI
-brief:iOS apps utilize uniform resource locators (URLs), a form of uniform resource identifiers (URIs), to access schemes that integrate with system apps. The tel URL scheme launches the Phone app and dials the number contained in the NSUrl.
-sdk:[NSUrl Class Reference](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/Reference/Reference.html)
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/shared_resources/phone/dial-phone-uri)
+id: {cd0ee2d2-f5dc-48f1-b859-37200a39abd0}
+title: Dialing the Phone by URI
+brief: iOS apps utilize uniform resource locators (URLs), a form of uniform resource identifiers (URIs), to access schemes that integrate with system apps. The tel URL scheme launches the Phone app and dials the number contained in the NSUrl.
+sdk: [NSUrl Class Reference](https: //developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/Reference/Reference.html)
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/shared_resources/phone/dial-phone-uri)
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -14,24 +14,24 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios
 ![Dial By URI](Images/Screenshot.png)
 
 <ol>
-  <li>First, we must generate a <code>NSUrl</code> from the string <code>"tel:"</code> appended to the number we want to dial. For this example, lets place the following code in the <code>CallButton</code> <code>TouchUpInside</code> event handler:</li>
+  <li>First, we must generate a <code>NSUrl</code> from the string <code>"tel: "</code> appended to the number we want to dial. For this example, lets place the following code in the <code>CallButton</code> <code>TouchUpInside</code> event handler: </li>
 </ol>
 ```
-var url = new NSUrl ("tel:" + PhoneTextField.Text);
+var url = new NSUrl ("tel: " + PhoneTextField.Text);
 ```
 <ol start="2">
-  <li>To create a scheme to access the Phone app, we would place the following code after we generate our <code>NSUrl</code> variable:</li>
+  <li>To create a scheme to access the Phone app, we would place the following code after we generate our <code>NSUrl</code> variable: </li>
 </ol>
 ```
     UIApplication.SharedApplication.OpenUrl (url);
 ```
 <ol start="3">
-  <li>Since emulators don't support the system Phone app, we should instead attempt to create our scheme inside the following conditional statement:</li>
+  <li>Since emulators don't support the system Phone app, we should instead attempt to create our scheme inside the following conditional statement: </li>
 </ol>
 ```
     if (!UIApplication.SharedApplication.OpenUrl (url)) {
     	var av = new UIAlertView ("Not supported",
-	      "Scheme 'tel:' is not supported on this device",
+	      "Scheme 'tel: ' is not supported on this device",
           null,
 	      "OK",
 		  null);

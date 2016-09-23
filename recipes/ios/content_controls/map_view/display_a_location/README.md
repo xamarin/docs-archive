@@ -1,9 +1,9 @@
 ---
-id:{DF2AC5D0-D400-A876-7480-810A76E819C2}  
-title:Display a Location  
-brief:This recipe shows how to display a location on a map.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/display_a_location)  
-sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)  
+id: {DF2AC5D0-D400-A876-7480-810A76E819C2}  
+title: Display a Location  
+brief: This recipe shows how to display a location on a map.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/display_a_location)  
+sdk: [MKMapView Class Reference](https: //developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -11,12 +11,12 @@ sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documen
 
 # Recipe
 
-To show a location on a map in a <span class="s2">MKMapView</span>:
+To show a location on a map in a <span class="s2">MKMapView</span>: 
 
 <ol start="1">
 	<li>Create a <span class="s2">MKMapView</span> and add it to a view.
 Setting the AutoresizingMask ensures the control fits nicely in the screen
-(adjusting for the navigation bar that is added in the sample):</li>
+(adjusting for the navigation bar that is added in the sample): </li>
 </ol>
 ```
 mapView = new MKMapView (View.Bounds);
@@ -26,7 +26,7 @@ View.AddSubview(mapView);
 
 <ol start="2">
 	<li>Add these helper methods to calculate the area to show on the
-map:</li>
+map: </li>
 </ol>
 
 
@@ -53,7 +53,7 @@ public double MilesToLongitudeDegrees(double miles, double atLatitude)
 
 <ol start="3">
 	<li>Create a location coordinate (for example, the latitude &amp;
-longitude of Paris):</li>
+longitude of Paris): </li>
 </ol>
 
 ```
@@ -61,7 +61,7 @@ CLLocationCoordinate2D coords = new CLLocationCoordinate2D(48.857, 2.351);
 ```
 
 <ol start="4">
-	<li>Determine the area to display (20 miles in this example):</li>
+	<li>Determine the area to display (20 miles in this example): </li>
 </ol>
 
 ```
@@ -69,7 +69,7 @@ MKCoordinateSpan span = new MKCoordinateSpan(MilesToLatitudeDegrees(20), MilesTo
 ```
 
 <ol start="5">
-	<li>Set the <span class="s2">Region</span> property on the map:</li>
+	<li>Set the <span class="s2">Region</span> property on the map: </li>
 </ol>
 
 ```
@@ -89,7 +89,7 @@ type (which is the street map).</li>
 # Additional Information
 
 If you prefer to work in kilometres, it is trivial to convert the helper
-functions:
+functions: 
 
 ```
 /// <summary>Converts kilometres to latitude degrees</summary>

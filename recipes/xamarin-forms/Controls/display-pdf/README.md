@@ -1,25 +1,25 @@
 ---
-id:833fd59d-1aea-46e7-9478-003c576d813c
-title:Display a Local PDF File in a WebView
-subtitle:Rendering a PDF using the HTML5 canvas element
-brief:This recipe shows how to display a local PDF file in a WebView control on each platform.
-samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/DisplayPDF/)
-article:[WebView](/guides/xamarin-forms/user-interface/webview/)
-article:[Implementing a View](/guides/xamarin-forms/custom-renderer/view/)
-article:[Implementing a HybridWebView](/guides/xamarin-forms/custom-renderer/hybridwebview/)
-api:[WebView](/api/type/Xamarin.Forms.WebView/)
-dateupdated:2016-01-18
+id: 833fd59d-1aea-46e7-9478-003c576d813c
+title: Display a Local PDF File in a WebView
+subtitle: Rendering a PDF using the HTML5 canvas element
+brief: This recipe shows how to display a local PDF file in a WebView control on each platform.
+samplecode: [Browse on Github](https: //github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/DisplayPDF/)
+article: [WebView](/guides/xamarin-forms/user-interface/webview/)
+article: [Implementing a View](/guides/xamarin-forms/custom-renderer/view/)
+article: [Implementing a HybridWebView](/guides/xamarin-forms/custom-renderer/hybridwebview/)
+api: [WebView](/api/type/Xamarin.Forms.WebView/)
+dateupdated: 2016-01-18
 ---
 
 # Overview
 
 The Xamarin.Forms [`WebView`](/api/type/Xamarin.Forms.WebView/) control displays HTML and other web content in an app. Unlike [`Device.OpenUri`](/api/member/Xamarin.Forms.Device.OpenUri/p/System.Uri/), which takes the user to the web browser on the device, the `WebView` control displays the web content inside the app. For more information about the `WebView` control, see [WebView](/api/type/Xamarin.Forms.WebView/).
 
-The [`WebView`](/api/type/Xamarin.Forms.WebView/) control can display PDF files on the iOS platform, but not on the Android and Windows Phone platforms due to lack of platform support. On the Android and Windows Phone platforms, Mozilla's [`pdf.js`](https://mozilla.github.io/pdf.js/) can be used to add this support. `pdf.js` is a JavaScript library for parsing and rendering PDFs using the HTML5 `canvas` element. The following screenshots show the result of displaying a PDF file in the `WebView` control on each platform:
+The [`WebView`](/api/type/Xamarin.Forms.WebView/) control can display PDF files on the iOS platform, but not on the Android and Windows Phone platforms due to lack of platform support. On the Android and Windows Phone platforms, Mozilla's [`pdf.js`](https: //mozilla.github.io/pdf.js/) can be used to add this support. `pdf.js` is a JavaScript library for parsing and rendering PDFs using the HTML5 `canvas` element. The following screenshots show the result of displaying a PDF file in the `WebView` control on each platform: 
 
 ![](Images/screenshots.png)
 
-When a [`WebView`](/api/type/Xamarin.Forms.WebView/) control is rendered by a Xamarin.Forms application, in iOS the `WebViewRenderer` class is instantiated, which in turns instantiates a native `UIWebView` control. On the Android platform, the `WebViewRenderer` class instantiates a native `WebView` control. On the Windows Phone platform, the `WebViewRenderer` class instantiates a native `WebView` control. The rendering process can be taken advantage of, in order to display a local PDF file in a `WebView`, by creating a custom renderer for the `WebView` on each platform. The process for doing this is as follows:
+When a [`WebView`](/api/type/Xamarin.Forms.WebView/) control is rendered by a Xamarin.Forms application, in iOS the `WebViewRenderer` class is instantiated, which in turns instantiates a native `UIWebView` control. On the Android platform, the `WebViewRenderer` class instantiates a native `WebView` control. On the Windows Phone platform, the `WebViewRenderer` class instantiates a native `WebView` control. The rendering process can be taken advantage of, in order to display a local PDF file in a `WebView`, by creating a custom renderer for the `WebView` on each platform. The process for doing this is as follows: 
 
 1. [Create](#Creating_the_Custom_WebView_Control) a Xamarin.Forms custom control.
 1. [Consume](#Consuming_the_Custom_Control) the custom control from Xamarin.Forms.
@@ -29,15 +29,15 @@ For information about customizing a [`WebView`](/api/type/Xamarin.Forms.WebView/
 
 ## Creating the Custom WebView Control
 
-Create a `CustomWebView` class which has a `Uri` property:
+Create a `CustomWebView` class which has a `Uri` property: 
 
 ```
-public class CustomWebView : WebView
+public class CustomWebView :  WebView
 {
-	public static readonly BindableProperty UriProperty = BindableProperty.Create (propertyName:"Uri",
-			returnType:typeof(string),
-			declaringType:typeof(CustomWebView),
-			defaultValue:default(string));
+	public static readonly BindableProperty UriProperty = BindableProperty.Create (propertyName: "Uri",
+			returnType: typeof(string),
+			declaringType: typeof(CustomWebView),
+			defaultValue: default(string));
 			
 	public string Uri {
 		get { return (string)GetValue (UriProperty); }
@@ -50,24 +50,24 @@ The `Uri` property will be populated with the filename of the PDF file to be dis
 
 ## Consuming the Custom Control
 
-Consume the `CustomWebView` control by declaring an instance of it in the XAML page instance:
+Consume the `CustomWebView` control by declaring an instance of it in the XAML page instance: 
 
 ```
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-			 xmlns:local="clr-namespace:DisplayPDF;assembly=DisplayPDF"
-			 x:Class="DisplayPDF.WebViewPage"
+<ContentPage xmlns="http: //xamarin.com/schemas/2014/forms"
+			 xmlns: x="http: //schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns: local="clr-namespace: DisplayPDF;assembly=DisplayPDF"
+			 x: Class="DisplayPDF.WebViewPage"
 			 Padding="0,20,0,0">
 	<ContentPage.Content>
-		<local:CustomWebView Uri="BookPreview2-Ch18-Rel0417.pdf" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+		<local: CustomWebView Uri="BookPreview2-Ch18-Rel0417.pdf" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
 	</ContentPage.Content>
 </ContentPage>
 ```
 
-Alternatively, consume the `CustomWebView` control by declaring an instance of it in the C# page instance:
+Alternatively, consume the `CustomWebView` control by declaring an instance of it in the C# page instance: 
 
 ```
-public class WebViewPageCS : ContentPage
+public class WebViewPageCS :  ContentPage
 {
 	public WebViewPageCS ()
 	{
@@ -91,13 +91,13 @@ A custom renderer must now be added to each application project in order to add 
 
 ### Creating the Custom Renderer on iOS
 
-Create a subclass of the `ViewRenderer<T1, T2>` class and override its `OnElementChanged` method, in order to display the local PDF file in a native `UIWebView` control:
+Create a subclass of the `ViewRenderer<T1, T2>` class and override its `OnElementChanged` method, in order to display the local PDF file in a native `UIWebView` control: 
 
 ```
-[assembly: ExportRenderer (typeof(CustomWebView), typeof(CustomWebViewRenderer))]
+[assembly:  ExportRenderer (typeof(CustomWebView), typeof(CustomWebViewRenderer))]
 namespace DisplayPDF.iOS
 {
-	public class CustomWebViewRenderer : ViewRenderer<CustomWebView, UIWebView>
+	public class CustomWebViewRenderer :  ViewRenderer<CustomWebView, UIWebView>
 	{
 		protected override void OnElementChanged (ElementChangedEventArgs<CustomWebView> e)
 		{
@@ -126,17 +126,17 @@ For more information about subclassing the `ViewRenderer<T1, T2>` class, see [Im
 
 ### Creating the Custom Renderer on Android
 
-Add [`pdf.js`](https://mozilla.github.io/pdf.js/) to the `Assets` folder in the Android project. The `Assets` folder should contain the following folder structure:
+Add [`pdf.js`](https: //mozilla.github.io/pdf.js/) to the `Assets` folder in the Android project. The `Assets` folder should contain the following folder structure: 
 
 ![](Images/android-assets.png)
 
-Then, create a subclass of the `WebViewRenderer` class and override its `OnElementChanged` method, in order to display the local PDF file in a native `WebView` control:
+Then, create a subclass of the `WebViewRenderer` class and override its `OnElementChanged` method, in order to display the local PDF file in a native `WebView` control: 
 
 ```
-[assembly: ExportRenderer (typeof(CustomWebView), typeof(CustomWebViewRenderer))]
+[assembly:  ExportRenderer (typeof(CustomWebView), typeof(CustomWebViewRenderer))]
 namespace DisplayPDF.Droid
 {
-	public class CustomWebViewRenderer : WebViewRenderer
+	public class CustomWebViewRenderer :  WebViewRenderer
 	{
 		protected override void OnElementChanged (ElementChangedEventArgs<WebView> e)
 		{
@@ -145,7 +145,7 @@ namespace DisplayPDF.Droid
 			if (e.NewElement != null) {
 				var customWebView = Element as CustomWebView;
 				Control.Settings.AllowUniversalAccessFromFileURLs = true;
-				Control.LoadUrl (string.Format ("file:///android_asset/pdfjs/web/viewer.html?file={0}", string.Format ("file:///android_asset/Content/{0}", WebUtility.UrlEncode (customWebView.Uri))));
+				Control.LoadUrl (string.Format ("file: ///android_asset/pdfjs/web/viewer.html?file={0}", string.Format ("file: ///android_asset/Content/{0}", WebUtility.UrlEncode (customWebView.Uri))));
 			}
 		}
 	}
@@ -158,17 +158,17 @@ Provided that the custom renderer is attached to a new Xamarin.Forms element, th
 
 ### Creating the Custom Renderer on Windows Phone
 
-Add [`pdf.js`](https://mozilla.github.io/pdf.js/) to the `Assets` folder in the Android project. The `Assets` folder should contain the following folder structure:
+Add [`pdf.js`](https: //mozilla.github.io/pdf.js/) to the `Assets` folder in the Android project. The `Assets` folder should contain the following folder structure: 
 
 ![](Images/winphone-assets.png)
 
-Then, create a subclass of the `WebViewRenderer` class and override its `OnElementChanged` method, in order to display the local PDF file in a native `WebView` control:
+Then, create a subclass of the `WebViewRenderer` class and override its `OnElementChanged` method, in order to display the local PDF file in a native `WebView` control: 
 
 ```
-[assembly: ExportRenderer(typeof(CustomWebView), typeof(CustomWebViewRenderer))]
+[assembly:  ExportRenderer(typeof(CustomWebView), typeof(CustomWebViewRenderer))]
 namespace DisplayPDF.WinPhone81
 {
-    public class CustomWebViewRenderer : WebViewRenderer
+    public class CustomWebViewRenderer :  WebViewRenderer
     {
         protected override void OnElementChanged(ElementChangedEventArgs<WebView> e)
         {
@@ -177,7 +177,7 @@ namespace DisplayPDF.WinPhone81
             if (e.NewElement != null)
             {
                 var customWebView = Element as CustomWebView;
-                Control.Source = new Uri(string.Format("ms-appx-web:///Assets/pdfjs/web/viewer.html?file={0}", string.Format ("ms-appx-web:///Assets/Content/{0}", WebUtility.UrlEncode(customWebView.Uri))));
+                Control.Source = new Uri(string.Format("ms-appx-web: ///Assets/pdfjs/web/viewer.html?file={0}", string.Format ("ms-appx-web: ///Assets/Content/{0}", WebUtility.UrlEncode(customWebView.Uri))));
             }
         }
     }

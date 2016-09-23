@@ -1,9 +1,9 @@
 ---
-id:{D454FB2C-4676-C01B-F1F6-297BB226A28D}  
-title:Create a Grid View  
-brief:This tutorial will show how to create a Grid View.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/layout/grid_view/create_a_grid_view)  
-sdk:[GridView](http://developer.android.com/reference/android/widget/GridView.html)  
+id: {D454FB2C-4676-C01B-F1F6-297BB226A28D}  
+title: Create a Grid View  
+brief: This tutorial will show how to create a Grid View.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/layout/grid_view/create_a_grid_view)  
+sdk: [GridView](http: //developer.android.com/reference/android/widget/GridView.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -12,25 +12,25 @@ sdk:[GridView](http://developer.android.com/reference/android/widget/GridView.ht
 
 -  Create a new Xamarin.Android project named HelloGridView.
 -  Find some photos to display, or download these sample images. Add the image files to the project’s Resources/Drawable directory. In the Properties window, each image should have its build action set to `AndroidResource`.
--  Open the file Resources/Layout/Main.axml and change the layout such that it creates a `GridView` that occupies the entire screen:
+-  Open the file Resources/Layout/Main.axml and change the layout such that it creates a `GridView` that occupies the entire screen: 
 
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<GridView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/gridview"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:columnWidth="90dp"
-    android:numColumns="auto_fit"
-    android:verticalSpacing="10dp"
-    android:horizontalSpacing="10dp"
-    android:stretchMode="columnWidth"
-    android:gravity="center"
+<GridView xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: id="@+id/gridview"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent"
+    android: columnWidth="90dp"
+    android: numColumns="auto_fit"
+    android: verticalSpacing="10dp"
+    android: horizontalSpacing="10dp"
+    android: stretchMode="columnWidth"
+    android: gravity="center"
 />
 ```
 
--  Open HelloGridView.cs, and insert the following code for the `OnCreate()` method:
+-  Open HelloGridView.cs, and insert the following code for the `OnCreate()` method: 
 
 
 ```
@@ -49,11 +49,11 @@ protected override void OnCreate (Bundle bundle)
 This code will use a custom adapter (created in the next step) for the grid view. This custom adapter will act as the source of data for the `GridView`,
 displaying the drawable resources that were added.
 
--  Create a new class called `ImageAdapter` that will subclass `BaseAdapter`:
+-  Create a new class called `ImageAdapter` that will subclass `BaseAdapter`: 
 
 
 ```
-public class ImageAdapter : BaseAdapter
+public class ImageAdapter :  BaseAdapter
 {
     private readonly Context context;
 
@@ -141,7 +141,7 @@ each image added to the `ImageAdapter`. When this is called, a `View` is passed 
 which is normally a recycled object (at least after this has been called once),
 so there’s a check to see if the object is null. If the object is null, an
 `ImageView` is instantiated and configured with the desired properties for the
-image presentation:
+image presentation: 
 
  **LayoutParams** – this sets the height and width for the
 `View`. It ensures that no matter the size of the drawable, each image is resized
@@ -162,7 +162,7 @@ At the end of the `GetView()` method, the position integer passed into the
 method is used to select an image from the `thumbIds` array, which is set as the
 image resource for the `ImageView`.
 
--  Run the application. You should see the following:
+-  Run the application. You should see the following: 
 
 
  [ ![](Images/gridview.png)](Images/gridview.png)

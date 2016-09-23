@@ -1,7 +1,7 @@
 ---
-id:{F78194F3-00D2-6DA7-BBC1-FB34F51603C3}  
-title:Tables  
-subtitle:UITableViewController  
+id: {F78194F3-00D2-6DA7-BBC1-FB34F51603C3}  
+title: Tables  
+subtitle: UITableViewController  
 ---
 
 Tables are one of the single most important controls in iOS applications.

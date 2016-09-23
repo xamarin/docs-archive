@@ -1,8 +1,8 @@
 ---
-id:{B7BF4DCC-49BC-3C46-48C1-40B37223954A}  
-title:Set A Breakpoint  
-brief:This recipe shows how to set regular and conditional breakpoints.  
-article:[Debugging](/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios)  
+id: {B7BF4DCC-49BC-3C46-48C1-40B37223954A}  
+title: Set A Breakpoint  
+brief: This recipe shows how to set regular and conditional breakpoints.  
+article: [Debugging](/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -12,17 +12,17 @@ article:[Debugging](/guides/ios/deployment,_testing,_and_metrics/debugging_in_xa
 
 To begin debugging your project, put Xamarin Studio in its Debug view. This
 opens up a set of helpful tools that let you set breakpoints, watch variables,
-view the call stack, and more:
+view the call stack, and more: 
 
  [ ![](Images/breakpoint_00.png)](Images/breakpoint_00.png)
 
 You can configure which tools you see in the Debug
-view by selecting <span class="UIItem">View > Debug Windows</span>:
+view by selecting <span class="UIItem">View > Debug Windows</span>: 
 
  [ ![](Images/breakpoint_01.png)](Images/breakpoint_01.png)
 
 To set a breakpoint, simply click to the left of the line number at the
-place in your code that you need to troubleshoot. You will see the breakpoint appear in the <span class="UIItem">Breakpoints</span> window:
+place in your code that you need to troubleshoot. You will see the breakpoint appear in the <span class="UIItem">Breakpoints</span> window: 
 
  [ ![](Images/breakpoint_03.png)](Images/breakpoint_03.png)
 
@@ -33,7 +33,7 @@ debugger.
 
 When a breakpoint is hit, it will light up yellow. You can use the
 other debugging tools to get more information about what is happening in your
-code at that moment:
+code at that moment: 
 
  [ ![](Images/breakpoint_04.png)](Images/breakpoint_04.png)
 
@@ -48,19 +48,19 @@ setting a conditional breakpoint.
 
 To set a conditional
 breakpoint, you need to access the breakpoint properties window. There are
-several ways to toggle this:
+several ways to toggle this: 
 
-1.   Right click on the space to the left of the line number where you want to set the breakpoint, and select  <span class="uiitem">New Breakpoint</span> :
+1.   Right click on the space to the left of the line number where you want to set the breakpoint, and select  <span class="uiitem">New Breakpoint</span> : 
 
   [ ![](Images/breakpoint_05.png)](Images/breakpoint_05.png)
 
 
-1.   For an existing breakpoint, right click on the breakpoint and select  <span class="UIItem">Breakpoint Properties</span> :
+1.   For an existing breakpoint, right click on the breakpoint and select  <span class="UIItem">Breakpoint Properties</span> : 
 
   [ ![](Images/breakpoint_06.png)](Images/breakpoint_06.png)
 
 
-1.   For an existing breakpoint, select the breakpoint in the  <span class="UIItem">Breakpoints</span> window, and hit the wrench icon:
+1.   For an existing breakpoint, select the breakpoint in the  <span class="UIItem">Breakpoints</span> window, and hit the wrench icon: 
 
   [ ![](Images/breakpoint_02.png)](Images/breakpoint_02.png)
 
@@ -68,12 +68,12 @@ several ways to toggle this:
 
 
 This will
-bring up the breakpoint properties window:
+bring up the breakpoint properties window: 
 
  [ ![](Images/breakpoint_07.png)](Images/breakpoint_07.png)
 
 Add conditions to your breakpoint. In our case, our log window will
-print a message telling us when `count` has reached a certain value:
+print a message telling us when `count` has reached a certain value: 
 
  [ ![](Images/ios_cond_02.png)](Images/ios_cond_02.png)
 
@@ -81,4 +81,4 @@ print a message telling us when `count` has reached a certain value:
 
 # Additional Information
 
-To set a breakpoint in Visual Studio, refer to the [Visual Studio documentation](http://msdn.microsoft.com/en-us/library/ktf38f66%28v=vs.90%29.aspx).
+To set a breakpoint in Visual Studio, refer to the [Visual Studio documentation](http: //msdn.microsoft.com/en-us/library/ktf38f66%28v=vs.90%29.aspx).

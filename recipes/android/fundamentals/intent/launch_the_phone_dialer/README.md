@@ -1,10 +1,10 @@
 ---
-id:{5D149BD7-1936-3D36-8F71-50A9D13ED8AA}  
-title:Launch the Phone Dialer  
-brief:This recipe shows how to launch the phone dialer application.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/fundamentals/intent/launch_the_phone_dialer)  
-article:[Hello, Android Multiscreen](/guides/android/getting_started/hello,android_multiscreen)  
-sdk:[Initiate a phone call](http://developer.android.com/guide/components/intents-common.html#DialPhone)  
+id: {5D149BD7-1936-3D36-8F71-50A9D13ED8AA}  
+title: Launch the Phone Dialer  
+brief: This recipe shows how to launch the phone dialer application.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/fundamentals/intent/launch_the_phone_dialer)  
+article: [Hello, Android Multiscreen](/guides/android/getting_started/hello,android_multiscreen)  
+sdk: [Initiate a phone call](http: //developer.android.com/guide/components/intents-common.html#DialPhone)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -14,8 +14,8 @@ asynchronous message called an *intent* causes the system to load
 another activity (and another screen) to handle that type of intent. An
 intent that is created from a `Uri` causes the system to load an
 activity that can handle the `Uri` scheme. In this recipe, a `Uri`
-beginning with `tel:` loads an activity in the phone dialer
-application, and the number following the `tel:` prefix is
+beginning with `tel: ` loads an activity in the phone dialer
+application, and the number following the `tel: ` prefix is
 automatically loaded into the dialer.
 
 # Recipe
@@ -33,11 +33,11 @@ automatically loaded into the dialer.
 3.  Call `StartActivity` to launch the intent.
 
 The following code sample illustrates the updated `button.Click`
-handler:
+handler: 
 
 ```
 intent.button.Click += delegate {
-   var uri = Android.Net.Uri.Parse ("tel:1112223333");
+   var uri = Android.Net.Uri.Parse ("tel: 1112223333");
    var intent = new Intent (Intent.ActionDial, uri);
    StartActivity (intent);
 };

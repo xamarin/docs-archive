@@ -1,25 +1,25 @@
 ---
-id:{3EA5CD58-4281-43D7-8BD7-0B8830326294}
-title:Handle JavaScript Alerts
-brief:This recipe shows how to handle JavaScript alerts in a WKWebView by implementing WKUIDelegate.
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios//content_controls/web_view/handle_javascript_alerts)
-sdk:[WKUIDelegate Class Reference](https://developer.apple.com/library/ios/documentation/WebKit/Reference/WKUIDelegate_Ref/)
+id: {3EA5CD58-4281-43D7-8BD7-0B8830326294}
+title: Handle JavaScript Alerts
+brief: This recipe shows how to handle JavaScript alerts in a WKWebView by implementing WKUIDelegate.
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios//content_controls/web_view/handle_javascript_alerts)
+sdk: [WKUIDelegate Class Reference](https: //developer.apple.com/library/ios/documentation/WebKit/Reference/WKUIDelegate_Ref/)
 ---
 
 
 # Recipe
 
-To handle JavaScript alerts in a <code>WKWebView</code>:
+To handle JavaScript alerts in a <code>WKWebView</code>: 
 
 <ol><li>Add the html file (in this example <b>Alerts.html</b>) to your project. Set the <b>Build Action</b> to <b>BundleResource</b>. You can set the <b>Build Action</b> for a file by right-clicking on that file and and choosing <b>Build Action</b> in the menu.</li></ol>
 
-<ol start=2><li>Inherit from the <code>IWKUIDelegate</code> protocol:</li></ol>
+<ol start=2><li>Inherit from the <code>IWKUIDelegate</code> protocol: </li></ol>
 
 ```
-public partial class ViewController : UIViewController, IWKUIDelegate
+public partial class ViewController :  UIViewController, IWKUIDelegate
 ```
 
-<ol start=3><li>Create a <code>WKWebView</code> and add it to the <code>View</code>:</li></ol>
+<ol start=3><li>Create a <code>WKWebView</code> and add it to the <code>View</code>: </li></ol>
 
 ```
 webView = new WKWebView(View.Frame, new WKWebViewConfiguration());
@@ -44,7 +44,7 @@ Implement the <code>RunJavaScriptAlertPanel</code> method, which will handle a c
 </ol>
 
 ```		
-[Foundation.Export ("webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:")]
+[Foundation.Export ("webView: runJavaScriptAlertPanelWithMessage: initiatedByFrame: completionHandler: ")]
 public void RunJavaScriptAlertPanel (WebKit.WKWebView webView, string message, WebKit.WKFrameInfo frame, System.Action completionHandler)
 {
 	var alertController = UIAlertController.Create (null, message, UIAlertControllerStyle.Alert);
@@ -62,7 +62,7 @@ Implement <code>RunJavaScriptConfirmPanel</code>, which will handle a call to <c
 </ol>
 
 ```
-[Export ("webView:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:completionHandler:")]
+[Export ("webView: runJavaScriptConfirmPanelWithMessage: initiatedByFrame: completionHandler: ")]
 public void RunJavaScriptConfirmPanel (WKWebView webView, string message, WKFrameInfo frame, Action<bool> completionHandler)
 {
 	var alertController = UIAlertController.Create (null, message, UIAlertControllerStyle.Alert);
@@ -85,7 +85,7 @@ Implement <code>RunJavaScriptTextInputPanel</code>, which will handle a call to 
 </ol>
 
 ```
-[Foundation.Export ("webView:runJavaScriptTextInputPanelWithPrompt:defaultText:initiatedByFrame:completionHandler:")]
+[Foundation.Export ("webView: runJavaScriptTextInputPanelWithPrompt: defaultText: initiatedByFrame: completionHandler: ")]
 public void RunJavaScriptTextInputPanel (WebKit.WKWebView webView, string prompt, string defaultText, WebKit.WKFrameInfo frame, System.Action<string> completionHandler)
 {
 	var alertController = UIAlertController.Create (null, prompt, UIAlertControllerStyle.Alert);

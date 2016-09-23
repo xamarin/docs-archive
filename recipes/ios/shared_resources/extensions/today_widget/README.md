@@ -1,8 +1,8 @@
 ---
-id:{647756af-afea-44e7-a5c9-a3701f3506f3}  
-title:Today Widget  
-brief:This recipe shows you how to create a today widget in iOS 8
-sample:[ExtensionsDemo](/samples/ExtensionsDemo)
+id: {647756af-afea-44e7-a5c9-a3701f3506f3}  
+title: Today Widget  
+brief: This recipe shows you how to create a today widget in iOS 8
+sample: [ExtensionsDemo](/samples/ExtensionsDemo)
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -29,11 +29,11 @@ sample:[ExtensionsDemo](/samples/ExtensionsDemo)
 
 - Add a new Unified API > Extensions > Today Extension project named EvolveCountdownWidget to the solution and reference it form the ExtensionsDemo project.
 
-- Update the Extension's Info.plist as follows:
+- Update the Extension's Info.plist as follows: 
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http: //www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
@@ -71,9 +71,9 @@ sample:[ExtensionsDemo](/samples/ExtensionsDemo)
 
 - In the Extension's MainStoryboard.storyboard wire up a `UILabel`, `UIButton` and `UIImageView` named WidgetTitle, WidgetButton and WidgetImage respectively.
 
-- Add an image to the project (compile action: BundleResource) and set the image view to that image.
+- Add an image to the project (compile action:  BundleResource) and set the image view to that image.
 
-- Open the EvolveCountdownViewController and add the following code:
+- Open the EvolveCountdownViewController and add the following code: 
 
 ```
 using System;
@@ -84,9 +84,9 @@ using CoreGraphics;
 
 namespace EvolveCountdownWidget
 {
-	public partial class EvolveCountdownViewController : UIViewController, INCWidgetProviding
+	public partial class EvolveCountdownViewController :  UIViewController, INCWidgetProviding
 	{
-		public EvolveCountdownViewController (IntPtr handle) : base (handle)
+		public EvolveCountdownViewController (IntPtr handle) :  base (handle)
 		{
 		}
 
@@ -103,7 +103,7 @@ namespace EvolveCountdownWidget
             WidgetButton.SetTitle ("Tap here to register", UIControlState.Normal);
 
             WidgetButton.TouchUpInside += (sender, e) =>
-            	UIApplication.SharedApplication.OpenUrl (new NSUrl ("evolveCountdown://"));
+            	UIApplication.SharedApplication.OpenUrl (new NSUrl ("evolveCountdown: //"));
 		}
 
 		public void WidgetPerformUpdate (Action<NCUpdateResult> completionHandler)
@@ -116,7 +116,7 @@ namespace EvolveCountdownWidget
 }
 ```
 
-- Back in the ExtensionsDemo project, open the `ExtensionsDemoViewController` and add the following code:
+- Back in the ExtensionsDemo project, open the `ExtensionsDemoViewController` and add the following code: 
 
 ```
 using System;
@@ -127,11 +127,11 @@ using WebKit;
 
 namespace ExtensionsDemo
 {
-	public partial class ExtensionsDemoViewController : UIViewController
+	public partial class ExtensionsDemoViewController :  UIViewController
 	{
         WKWebView webView;
 
-		public ExtensionsDemoViewController (IntPtr handle) : base (handle)
+		public ExtensionsDemoViewController (IntPtr handle) :  base (handle)
 		{
 		}
 
@@ -150,7 +150,7 @@ namespace ExtensionsDemo
             webView = new WKWebView (View.Frame, new WKWebViewConfiguration ());
             View.AddSubview (webView);
 
-            var url = new NSUrl ("https://evolve.xamarin.com");
+            var url = new NSUrl ("https: //evolve.xamarin.com");
             var request = new NSUrlRequest (url);
             webView.LoadRequest (request);
         }

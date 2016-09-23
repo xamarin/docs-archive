@@ -1,10 +1,10 @@
 ---
-id:{43B5B3F8-8258-1A69-38E1-C9FCE7681990}  
-title:Display a stream from the camera  
-brief:This recipe shows how to display a stream from the camera using a TextureView.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/textureview/display_a_stream_from_the_camera)  
-article:[Introduction to Ice Cream Sandwich](/guides/android/platform_features/introduction_to_ice_cream_sandwich)  
-sdk:[Android 4.0 Graphics and Animations](http://android-developers.blogspot.com/2011/11/android-40-graphics-and-animations.html)  
+id: {43B5B3F8-8258-1A69-38E1-C9FCE7681990}  
+title: Display a stream from the camera  
+brief: This recipe shows how to display a stream from the camera using a TextureView.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/other_ux/textureview/display_a_stream_from_the_camera)  
+article: [Introduction to Ice Cream Sandwich](/guides/android/platform_features/introduction_to_ice_cream_sandwich)  
+sdk: [Android 4.0 Graphics and Animations](http: //android-developers.blogspot.com/2011/11/android-40-graphics-and-animations.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -22,19 +22,19 @@ Follow these steps to display a camera stream with a TextureView.
 5.  Set the Minimum Android version to API Level 14 (Android 4.0).
 6.  Select Build &gt; General and set the Target framework to Android 4.0 (Ice Cream Sandwich).
 7.  Select OK to close the Project Options.
-8.  Under the Properties folder, open the AndroidManifest.xml and add the `android:hardwareAccelerated=”true”` attribute to the application element as shown below.
+8.  Under the Properties folder, open the AndroidManifest.xml and add the `android: hardwareAccelerated=”true”` attribute to the application element as shown below.
 
 
 ```
-<application android:label="TextureViewCameraStream"
-      android:hardwareAccelerated="true"/>
+<application android: label="TextureViewCameraStream"
+      android: hardwareAccelerated="true"/>
 ```
 <ol start="9">
   <li>Add <code>TextureView.ISurfaceTextureListener</code> to an <code>Activity</code> subclass.</li>
 </ol>
 
 ```
-public class Activity1 : Activity, TextureView.ISurfaceTextureListener
+public class Activity1 :  Activity, TextureView.ISurfaceTextureListener
 ```
 
 <ol start="10">

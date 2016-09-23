@@ -1,21 +1,21 @@
 ---
-id:{44631bab-7d39-42d8-b48a-8d352c7c1021}
-title:Perform map-based navigation
-subtitle:How to perform street-to-street navigation in each platforms native Maps app
-brief:This recipe shows how to open each platforms native maps app in order to perform navigation from the current location to an address entered in a Xamarin.Forms app.
-samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Maps/MapNavigation/)
-api:[Device](/api/type/Xamarin.Forms.Device/)
+id: {44631bab-7d39-42d8-b48a-8d352c7c1021}
+title: Perform map-based navigation
+subtitle: How to perform street-to-street navigation in each platforms native Maps app
+brief: This recipe shows how to open each platforms native maps app in order to perform navigation from the current location to an address entered in a Xamarin.Forms app.
+samplecode: [Browse on Github](https: //github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Maps/MapNavigation/)
+api: [Device](/api/type/Xamarin.Forms.Device/)
 ---
 
 # Overview
 
 The `OpenUri` method of the `Device` class can be used to trigger operations on the underlying platform. This approach can be used to open a URI in a native maps app in order to display a map and directions.
 
-The URI formats to open the native maps apps on each platform are:
+The URI formats to open the native maps apps on each platform are: 
 
-- iOS - `http://maps.apple.com/?q=my-street-address`
-- Android - `geo:0,0?q=my+street+address`
-- Windows/Windows Phone - `bingmaps:?where=my street address`
+- iOS - `http: //maps.apple.com/?q=my-street-address`
+- Android - `geo: 0,0?q=my+street+address`
+- Windows/Windows Phone - `bingmaps: ?where=my street address`
 
 ## Performing street-to-street navigation
 
@@ -25,18 +25,18 @@ In the code building the user interface for a page, use the `OpenURI` method to 
 var address = inputEntry.Text;
 
 switch (Device.OS) {
-case TargetPlatform.iOS:
+case TargetPlatform.iOS: 
   Device.OpenUri (
-    new Uri (string.Format ("http://maps.apple.com/?q={0}", WebUtility.UrlEncode(address))));
+    new Uri (string.Format ("http: //maps.apple.com/?q={0}", WebUtility.UrlEncode(address))));
   break;
-case TargetPlatform.Android:
+case TargetPlatform.Android: 
   Device.OpenUri (
-    new Uri (string.Format ("geo:0,0?q={0}", WebUtility.UrlEncode(address))));
+    new Uri (string.Format ("geo: 0,0?q={0}", WebUtility.UrlEncode(address))));
   break;
-case TargetPlatform.Windows:
-case TargetPlatform.WinPhone:
+case TargetPlatform.Windows: 
+case TargetPlatform.WinPhone: 
   Device.OpenUri (
-    new Uri (string.Format ("bingmaps:?where={0}", Uri.EscapeDataString(address))));
+    new Uri (string.Format ("bingmaps: ?where={0}", Uri.EscapeDataString(address))));
   break;
 }
 ```

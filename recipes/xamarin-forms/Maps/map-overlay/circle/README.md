@@ -1,21 +1,21 @@
 ---
-id:6ff8bd15-074e-4e6a-9522-f9e2be32ef12
-title:Highlight a Circular Area on a Map
-subtitle:How to add a circular overlay to a map
-brief:This recipe shows how to add a circular overlay to a map in order to highlight a circular area of the map.
-samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Maps/MapOverlay/Circle/)
-article:[Customizing a Map](/guides/xamarin-forms/custom-renderer/map/)
-api:[Xamarin.Forms.Maps](/api/namespace/Xamarin.Forms.Maps/)
-dateupdated:2016-04-27
+id: 6ff8bd15-074e-4e6a-9522-f9e2be32ef12
+title: Highlight a Circular Area on a Map
+subtitle: How to add a circular overlay to a map
+brief: This recipe shows how to add a circular overlay to a map in order to highlight a circular area of the map.
+samplecode: [Browse on Github](https: //github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Maps/MapOverlay/Circle/)
+article: [Customizing a Map](/guides/xamarin-forms/custom-renderer/map/)
+api: [Xamarin.Forms.Maps](/api/namespace/Xamarin.Forms.Maps/)
+dateupdated: 2016-04-27
 ---
 
 # Overview
 
-An overlay is a layered graphic on a map. Overlays support drawing graphical content that scales with the map as it is zoomed. The following screenshots show the result of adding a circular overlay to a map:
+An overlay is a layered graphic on a map. Overlays support drawing graphical content that scales with the map as it is zoomed. The following screenshots show the result of adding a circular overlay to a map: 
 
 ![](Images/screenshots.png)
 
-When a [`Map`](/api/type/Xamarin.Forms.Maps.Map/) control is rendered by a Xamarin.Forms application, in iOS the `MapRenderer` class is instantiated, which in turn instantiates a native `MKMapView` control. On the Android platform, the `MapRenderer` class instantiates a native `MapView` control. On the Universal Windows Platform (UWP), the `MapRenderer` class instantiates a native `MapControl`. The rendering process can be taken advantage of to implement platform-specific map customizations by creating a custom renderer for a `Map` on each platform. The process for doing this is as follows:
+When a [`Map`](/api/type/Xamarin.Forms.Maps.Map/) control is rendered by a Xamarin.Forms application, in iOS the `MapRenderer` class is instantiated, which in turn instantiates a native `MKMapView` control. On the Android platform, the `MapRenderer` class instantiates a native `MapView` control. On the Universal Windows Platform (UWP), the `MapRenderer` class instantiates a native `MapControl`. The rendering process can be taken advantage of to implement platform-specific map customizations by creating a custom renderer for a `Map` on each platform. The process for doing this is as follows: 
 
 1. [Create](#Creating_the_Custom_Map) a Xamarin.Forms custom map.
 1. [Consume](#Consuming_the_Custom_Map) the custom map from Xamarin.Forms.
@@ -27,7 +27,7 @@ For information about customizing a map using a custom renderer, see [Customizin
 
 ## Creating the Custom Map
 
-Create a `CustomCircle` class that has `Position` and `Radius` properties:
+Create a `CustomCircle` class that has `Position` and `Radius` properties: 
 
 ```
 public class CustomCircle
@@ -37,10 +37,10 @@ public class CustomCircle
 }
 ```
 
-Then, create a subclass of the [`Map`](/api/type/Xamarin.Forms.Maps.Map/) class, that adds a property of type `CustomCircle`:
+Then, create a subclass of the [`Map`](/api/type/Xamarin.Forms.Maps.Map/) class, that adds a property of type `CustomCircle`: 
 
 ```
-public class CustomMap : Map
+public class CustomMap :  Map
 {
   public CustomCircle Circle { get; set; }
 }
@@ -48,23 +48,23 @@ public class CustomMap : Map
 
 ## Consuming the Custom Map
 
-Consume the `CustomMap` control by declaring an instance of it in the XAML page instance:
+Consume the `CustomMap` control by declaring an instance of it in the XAML page instance: 
 
 ```
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-			 xmlns:local="clr-namespace:MapOverlay;assembly=MapOverlay"
-			 x:Class="MapOverlay.MapPage">
+<ContentPage xmlns="http: //xamarin.com/schemas/2014/forms"
+			 xmlns: x="http: //schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns: local="clr-namespace: MapOverlay;assembly=MapOverlay"
+			 x: Class="MapOverlay.MapPage">
 	<ContentPage.Content>
-		<local:CustomMap x:Name="customMap" MapType="Street" WidthRequest="{x:Static local:App.ScreenWidth}" HeightRequest="{x:Static local:App.ScreenHeight}" />
+		<local: CustomMap x: Name="customMap" MapType="Street" WidthRequest="{x: Static local: App.ScreenWidth}" HeightRequest="{x: Static local: App.ScreenHeight}" />
 	</ContentPage.Content>
 </ContentPage>
 ```
 
-Alternatively, consume the `CustomMap` control by declaring an instance of it in the C# page instance:
+Alternatively, consume the `CustomMap` control by declaring an instance of it in the C# page instance: 
 
 ```
-public class MapPageCS : ContentPage
+public class MapPageCS :  ContentPage
 {
 	public MapPageCS ()
 	{
@@ -79,10 +79,10 @@ public class MapPageCS : ContentPage
 }
 ```
 
-Initialize the `CustomMap` control as required:
+Initialize the `CustomMap` control as required: 
 
 ```
-public partial class MapPage : ContentPage
+public partial class MapPage :  ContentPage
 {
   public MapPage ()
   {
@@ -114,13 +114,13 @@ A custom renderer must now be added to each application project in order to add 
 
 ### Creating the Custom Renderer on iOS
 
-Create a subclass of the `MapRenderer` class and override its `OnElementChanged` method in order to add the circular overlay:
+Create a subclass of the `MapRenderer` class and override its `OnElementChanged` method in order to add the circular overlay: 
 
 ```
-[assembly:ExportRenderer (typeof(CustomMap), typeof(CustomMapRenderer))]
+[assembly: ExportRenderer (typeof(CustomMap), typeof(CustomMapRenderer))]
 namespace MapOverlay.iOS
 {
-	public class CustomMapRenderer : MapRenderer
+	public class CustomMapRenderer :  MapRenderer
 	{
 		MKCircleRenderer circleRenderer;
 
@@ -149,16 +149,16 @@ namespace MapOverlay.iOS
 }
 ```
 
-This method performs the following configuration, provided that the custom renderer is attached to a new Xamarin.Forms element:
+This method performs the following configuration, provided that the custom renderer is attached to a new Xamarin.Forms element: 
 
 - The `MKMapView.OverlayRenderer` property is set to a corresponding delegate.
 - The circle is created by setting a static `MKCircle` object that specifies the center of the circle, and the radius of the circle in meters.
 - The circle is added to the map by calling the `MKMapView.AddOverlay` method.
 
-Then, implement the `GetOverlayRenderer` method in order to customize the rendering of the overlay:
+Then, implement the `GetOverlayRenderer` method in order to customize the rendering of the overlay: 
 
 ```
-public class CustomMapRenderer : MapRenderer
+public class CustomMapRenderer :  MapRenderer
 {
   MKCircleRenderer circleRenderer;
   ...
@@ -177,13 +177,13 @@ public class CustomMapRenderer : MapRenderer
 
 ### Creating the Custom Renderer on Android
 
-Create a subclass of the `MapRenderer` class and override its `OnElementChanged` method in order to add the circular overlay:
+Create a subclass of the `MapRenderer` class and override its `OnElementChanged` method in order to add the circular overlay: 
 
 ```
-[assembly:ExportRenderer (typeof(CustomMap), typeof(CustomMapRenderer))]
+[assembly: ExportRenderer (typeof(CustomMap), typeof(CustomMapRenderer))]
 namespace MapOverlay.Droid
 {
-	public class CustomMapRenderer : MapRenderer, IOnMapReadyCallback
+	public class CustomMapRenderer :  MapRenderer, IOnMapReadyCallback
 	{
 		GoogleMap map;
 		CustomCircle circle;
@@ -208,10 +208,10 @@ namespace MapOverlay.Droid
 }
 ```
 
-This method calls the `MapView.GetMapAsync` method, which gets the underlying `GoogleMap` that is tied to the view, provided that the custom renderer is attached to a new Xamarin.Forms element. Once the `GoogleMap` instance is available, the `OnMapReady` method will be invoked, with the `IOnMapReadyCallback` interface specifying that this method must be provided:
+This method calls the `MapView.GetMapAsync` method, which gets the underlying `GoogleMap` that is tied to the view, provided that the custom renderer is attached to a new Xamarin.Forms element. Once the `GoogleMap` instance is available, the `OnMapReady` method will be invoked, with the `IOnMapReadyCallback` interface specifying that this method must be provided: 
 
 ```
-public class CustomMapRenderer : MapRenderer, IOnMapReadyCallback
+public class CustomMapRenderer :  MapRenderer, IOnMapReadyCallback
 {
   GoogleMap map;
   CustomCircle circle;
@@ -236,13 +236,13 @@ The circle is created by instantiating a `CircleOptions` object that specifies t
 
 ### Creating the Custom Renderer on the Universal Windows Platform
 
-Create a subclass of the `MapRenderer` class and override its `OnElementChanged` method in order to add the circular overlay:
+Create a subclass of the `MapRenderer` class and override its `OnElementChanged` method in order to add the circular overlay: 
 
 ```
-[assembly: ExportRenderer(typeof(CustomMap), typeof(CustomMapRenderer))]
+[assembly:  ExportRenderer(typeof(CustomMap), typeof(CustomMapRenderer))]
 namespace MapOverlay.UWP
 {
-    public class CustomMapRenderer : MapRenderer
+    public class CustomMapRenderer :  MapRenderer
     {
         const int EarthRadiusInMeteres = 6371000;
 
@@ -280,7 +280,7 @@ namespace MapOverlay.UWP
 }
 ```
 
-This method performs the following operations, provided that the custom renderer is attached to a new Xamarin.Forms element:
+This method performs the following operations, provided that the custom renderer is attached to a new Xamarin.Forms element: 
 
 - The circle position and radius are retrieved from the `CustomMap.Circle` property and passed to the `GenerateCircleCoordinates` method, which generates latitude and longitude coordinates for the circle perimeter.
 - The circle perimeter coordinates are converted into a `List` of `BasicGeoposition` coordinates.

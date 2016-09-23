@@ -1,10 +1,10 @@
 ---
-id:{D5AC9861-F18A-4AB1-4A10-87E98D40205E}  
-title:Read Contacts  
-brief:This recipe shows how to read contacts in Android and display the results in a list.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/data/contentproviders/read_contacts)  
-article:[Introduction to Ice Cream Sandwich](/guides/android/platform_features/introduction_to_ice_cream_sandwich)  
-sdk:[Contacts Provider](http://developer.android.com/guide/topics/providers/contacts-provider.html)  
+id: {D5AC9861-F18A-4AB1-4A10-87E98D40205E}  
+title: Read Contacts  
+brief: This recipe shows how to read contacts in Android and display the results in a list.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/data/contentproviders/read_contacts)  
+article: [Introduction to Ice Cream Sandwich](/guides/android/platform_features/introduction_to_ice_cream_sandwich)  
+sdk: [Contacts Provider](http: //developer.android.com/guide/topics/providers/contacts-provider.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -25,10 +25,10 @@ Follow these steps to query contacts.
 
 ```
 <?xml version="1.0" encoding="UTF-8" ?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
- android:padding="15dip"/>
+<TextView xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent"
+ android: padding="15dip"/>
 ```
 
 <ol start="6">

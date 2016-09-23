@@ -1,8 +1,8 @@
 ---
-id:{9EC744C2-E5A3-EC37-E413-1C8981E0F843}  
-title:Load a File  
-brief:This recipe shows how to load a file that you have bundled with your Xamarin.iOS application.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/general/file_system/load_a_file)  
+id: {9EC744C2-E5A3-EC37-E413-1C8981E0F843}  
+title: Load a File  
+brief: This recipe shows how to load a file that you have bundled with your Xamarin.iOS application.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/general/file_system/load_a_file)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -10,7 +10,7 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios
 
 # Recipe
 
-To load a file that is bundled in a Xamarin.iOS application:
+To load a file that is bundled in a Xamarin.iOS application: 
 
 -  Add the file to your Xamarin.iOS project and ensure the `Build Action` is set to BundleResource. The sample code has a file called **ReadMe.txt** in the **TestData** folder.
 -  Load the file’s contents into a variable using `ReadAllText`. Notice the path that is passed to the method is relative to the project’s root.
@@ -20,7 +20,7 @@ To load a file that is bundled in a Xamarin.iOS application:
 var text = System.IO.File.ReadAllText("TestData/ReadMe.txt");
 ```
 
--  Do something with the text, such as write to the Console or show in a `UITextView`:
+-  Do something with the text, such as write to the Console or show in a `UITextView`: 
 
 
 ```

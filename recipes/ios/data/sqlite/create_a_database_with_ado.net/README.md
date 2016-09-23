@@ -1,8 +1,8 @@
 ---
-id:{37D84956-B056-2A95-604C-DB14A9D655FC}  
-title:Create a Database with ADO.NET  
-brief:This recipe will demonstrate how to create an SQLite database with ADO.NET.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/data/sqlite/create_a_database_with_ado.net)  
+id: {37D84956-B056-2A95-604C-DB14A9D655FC}  
+title: Create a Database with ADO.NET  
+brief: This recipe will demonstrate how to create an SQLite database with ADO.NET.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/data/sqlite/create_a_database_with_ado.net)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -13,13 +13,13 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios
 Xamarin.iOS has an ADO.NET implementation of SQLite inside the assembly
 Mono.Data.SQLite
 
-<ol start="1"><li>Add a reference to <strong>System.Data</strong> and to <strong>Mono.Data.SQLite</strong>:</li></ol>
+<ol start="1"><li>Add a reference to <strong>System.Data</strong> and to <strong>Mono.Data.SQLite</strong>: </li></ol>
 
 
  ![](Images/Xam_Studio.png)
 
 <ol start="2"><li>To create a new database use the <code>SqliteConnection</code> class and call the static <code>CreateFile</code> method with the path to the database as a
-parameter, as shown in the following snippet:</li></ol>
+parameter, as shown in the following snippet: </li></ol>
 
 ```
 var documents = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
@@ -29,7 +29,7 @@ SqliteConnection.CreateFile(pathToDatabase);
 
 <ol start="3"><li>To create the schema for the SQLite database, create and execute DDL
 commands against an SQLite database connection. This snippet will create a new
-table called <strong>People</strong>:</li></ol>
+table called <strong>People</strong>: </li></ol>
 
 ```
 var connectionString = String.Format("Data Source={0};Version=3;", pathToDatabase);
@@ -46,6 +46,6 @@ using (var conn= new SqliteConnection(connectionString))
 ```
 
 When the button is pushed, a new database and table is created, and the user
-is notified:
+is notified: 
 
  ![](Images/iOS_ADONet.png)

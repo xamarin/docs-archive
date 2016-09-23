@@ -1,12 +1,12 @@
 ---
-id:{80F2C368-D381-2410-4C48-59051FC8D80C}  
-title:Handle a Row Click  
-brief:This recipe shows you how to handle a row being ‘clicked’ by the user.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/tables/handle_a_row_click)  
-sdk:[UITableView Class Reference](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableView_Class/Reference/Reference.html)  
-sdk:[UITableViewCell Class Reference](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewCell_Class/Reference/Reference.html)  
-sdk:[UITableViewDelegate](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDelegate_Protocol/Reference/Reference.html)  
-sdk:[UITableViewDataSource](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html)  
+id: {80F2C368-D381-2410-4C48-59051FC8D80C}  
+title: Handle a Row Click  
+brief: This recipe shows you how to handle a row being ‘clicked’ by the user.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/tables/handle_a_row_click)  
+sdk: [UITableView Class Reference](http: //developer.apple.com/library/ios/#documentation/uikit/reference/UITableView_Class/Reference/Reference.html)  
+sdk: [UITableViewCell Class Reference](http: //developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewCell_Class/Reference/Reference.html)  
+sdk: [UITableViewDelegate](http: //developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDelegate_Protocol/Reference/Reference.html)  
+sdk: [UITableViewDataSource](http: //developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -14,9 +14,9 @@ sdk:[UITableViewDataSource](http://developer.apple.com/library/ios/#documentatio
 
 # Recipe
 
-To respond to a user’s touch in a `UITableView`:
+To respond to a user’s touch in a `UITableView`: 
 
-* First, let's create an `AlertController` to display a message when the user click on a row by adding the following to the RowSelected method:
+* First, let's create an `AlertController` to display a message when the user click on a row by adding the following to the RowSelected method: 
 
 ```
 public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
@@ -29,13 +29,13 @@ public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 }
 ```
 
-* Next, create an instance of our View Controller:
+* Next, create an instance of our View Controller: 
 
 ```
 HomeScreen owner;
 ```
 
-* Add a constructor to your `UITableViewSource` class which takes a view controller as a parameter and saves it in a field:
+* Add a constructor to your `UITableViewSource` class which takes a view controller as a parameter and saves it in a field: 
 
 ```
 public TableSource (string[] items, HomeScreen owner)
@@ -46,13 +46,13 @@ public TableSource (string[] items, HomeScreen owner)
 }
 ```
 
-* Modify the ViewDidLoad method where the `UITableViewSource` class is created to pass the this reference:
+* Modify the ViewDidLoad method where the `UITableViewSource` class is created to pass the this reference: 
 
 ```
 table.Source = new TableSource(tableItems, this);
 ```
 
-* Finally, back in your `RowSelected` method, call `PresentViewController` on the cached field:
+* Finally, back in your `RowSelected` method, call `PresentViewController` on the cached field: 
 
 ```
 public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
@@ -64,7 +64,7 @@ public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 }
 ```
 
-Now the user can touch a row and an alert will appear:
+Now the user can touch a row and an alert will appear: 
 
  [ ![](Images/Handle_a_Row_Click1.png)](Images/Handle_a_Row_Click1.png) [ ![](Images/Handle_a_Row_Click2.png)](Images/Handle_a_Row_Click2.png)
 
@@ -73,10 +73,10 @@ Now the user can touch a row and an alert will appear:
 
 # Additional Information
 
-The complete `UITableViewSource` code is shown below for reference:
+The complete `UITableViewSource` code is shown below for reference: 
 
 ```
-public class TableSource : UITableViewSource {
+public class TableSource :  UITableViewSource {
 		
 		protected string[] tableItems;
 		protected string cellIdentifier = "TableCell";

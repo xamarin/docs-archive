@@ -1,9 +1,9 @@
 ---
-id:{0DCD1F4A-E228-FAA3-F67A-E82D6963362D}  
-title:Use Initial Screen in Tab Controller  
-brief:This recipe shows how include the initial screen in a tab controller after a user interacts with the screen.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/other_ux/use_initial_screen_in_tab_controller) 
-article: [Creating Tabbed Appliations](/guides/ios/user_interface/creating_tabbed_applications/) 
+id: {0DCD1F4A-E228-FAA3-F67A-E82D6963362D}  
+title: Use Initial Screen in Tab Controller  
+brief: This recipe shows how include the initial screen in a tab controller after a user interacts with the screen.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/other_ux/use_initial_screen_in_tab_controller) 
+article:  [Creating Tabbed Appliations](/guides/ios/user_interface/creating_tabbed_applications/) 
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -18,13 +18,13 @@ user.
 
 Add the following code
 to `ViewController1`, `aButton` is an
-outlet to a button created in Interface Builder:
+outlet to a button created in Interface Builder: 
 
 ```
-public partial class ViewController1 : UIViewController
+public partial class ViewController1 :  UIViewController
 {
     public event EventHandler InitialActionCompleted;
-    public ViewController1 () : base ("ViewController1", null)
+    public ViewController1 () :  base ("ViewController1", null)
     {
     }
     public override void ViewDidLoad ()
@@ -43,11 +43,11 @@ public partial class ViewController1 : UIViewController
 The event is used to call back to the app delegate when the user touches the
 button. The app delegate sets `ViewController1`’s view
 as a subview of the root initially and then handles creating
-the `UITabController` in the event handler:
+the `UITabController` in the event handler: 
 
 ```
 [Register ("AppDelegate")]
-public partial class AppDelegate : UIApplicationDelegate
+public partial class AppDelegate :  UIApplicationDelegate
 {
     UIWindow window;
     UIViewController root;

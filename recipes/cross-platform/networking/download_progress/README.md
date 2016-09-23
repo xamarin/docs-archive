@@ -1,15 +1,15 @@
 ---
-id:{3972CC35-7BCD-4394-B6F6-88A7E80B5C39}  
-title:Report Download Progress  
-subtitle:How to use Progress<T> in a Xamarin mobile application  
-brief:This recipe will demonstrate how to download a file in the background and report the download progress to the end user.  
-samplecode:[Browse On GitHub](https://github.com/xamarin/recipes/tree/master/cross-platform/networking/download_progress)  
-article:[Async Support Overview](http://docs.xamarin.com/guides/cross-platform/advanced/async_support_overview/)  
-api:[IProgress<T>](http://msdn.microsoft.com/en-us/library/hh138298(v=vs.110).aspx)  
-api:[Progress<T>](http://msdn.microsoft.com/en-us/library/hh193692(v=vs.110).aspx)  
-api:[ProgressBar](http://developer.android.com/reference/android/widget/ProgressBar.html)  
-api:[Task<T>](http://msdn.microsoft.com/en-us/library/dd321424(v=vs.110).aspx)  
-api:[UIProgressView](http://iosapi.xamarin.com/?link=T:MonoTouch.UIKit.UIProgressView)  
+id: {3972CC35-7BCD-4394-B6F6-88A7E80B5C39}  
+title: Report Download Progress  
+subtitle: How to use Progress<T> in a Xamarin mobile application  
+brief: This recipe will demonstrate how to download a file in the background and report the download progress to the end user.  
+samplecode: [Browse On GitHub](https: //github.com/xamarin/recipes/tree/master/cross-platform/networking/download_progress)  
+article: [Async Support Overview](http: //docs.xamarin.com/guides/cross-platform/advanced/async_support_overview/)  
+api: [IProgress<T>](http: //msdn.microsoft.com/en-us/library/hh138298(v=vs.110).aspx)  
+api: [Progress<T>](http: //msdn.microsoft.com/en-us/library/hh193692(v=vs.110).aspx)  
+api: [ProgressBar](http: //developer.android.com/reference/android/widget/ProgressBar.html)  
+api: [Task<T>](http: //msdn.microsoft.com/en-us/library/dd321424(v=vs.110).aspx)  
+api: [UIProgressView](http: //iosapi.xamarin.com/?link=T: MonoTouch.UIKit.UIProgressView)  
 ---
 
 <a name="Overview" class="injected"></a>
@@ -19,13 +19,13 @@ api:[UIProgressView](http://iosapi.xamarin.com/?link=T:MonoTouch.UIKit.UIProgres
 
 In order to retain a responsive UI, a mobile applications should perform long-running tasks - such as downloading a file -  in the background. This recipe will show how to asynchronously download a file while reporting progress to an Android or iOS application.
 
-There are two main parts to this recipe:
+There are two main parts to this recipe: 
 
 1.  **Downloading the File** - Downloading the file should be performed asynchronously and not block the UI thread. The code for download the file can be shared between Android and iOS.
 1.  **Display Progress** - Display download progress to the user is platform specific. This recipe has two separate projects (one for Xamarin.Android and another for Xamarin.iOS) that demonstrate how to display download progress to the user.
 
 
-The following screen shots show this recipe running on an Android and iOS device, respectively:
+The following screen shots show this recipe running on an Android and iOS device, respectively: 
 
  ![](Images/android-screenshot.png)
 
@@ -36,7 +36,7 @@ The following screen shots show this recipe running on an Android and iOS device
 
 # Downloading the File
 
-The code for downloading a file exists in the project `AsyncProgressReporting.Common`. The first and most important class is `AsyncProgressReporting.Common.DownloadHelper`. This class contains a single method, `CreateDownloadTask`. This method has the sole responsibility of creating a `Task<T>` instance that will perform the download on a background thread. The following code snippet shows how to encapsulate the logic for downloading the file in a `Task` object:
+The code for downloading a file exists in the project `AsyncProgressReporting.Common`. The first and most important class is `AsyncProgressReporting.Common.DownloadHelper`. This class contains a single method, `CreateDownloadTask`. This method has the sole responsibility of creating a `Task<T>` instance that will perform the download on a background thread. The following code snippet shows how to encapsulate the logic for downloading the file in a `Task` object: 
 
 ```
 public static async Task<int> CreateDownloadTask(string urlToDownload, IProgress<DownloadBytesProgress> progessReporter)
@@ -73,7 +73,7 @@ public static async Task<int> CreateDownloadTask(string urlToDownload, IProgress
 
 The first thing this method does is to get the size of the file to download. Then the `async`/ `await` API is used to download in a background thread, 4096 bytes at a time. After each block of 4096 bytes, the UI will be updated to show the progress of the download. When the download is done, we will return the number of bytes that were received.
 
-The download progress will be reported to the UI by an instance of `System.IProgress<T>`. This interface contains a single method, `Report(T value)` that called as appropriate to provide progress information to interested clients. It is the responsibility of the client app to do something with this information, such as update a progress bar with the number of bytes received. In this example, all of the information about the download and is progress is contained in an instance of the class `DownloadBytesProgress`. This class is shown in the following code snippet:
+The download progress will be reported to the UI by an instance of `System.IProgress<T>`. This interface contains a single method, `Report(T value)` that called as appropriate to provide progress information to interested clients. It is the responsibility of the client app to do something with this information, such as update a progress bar with the number of bytes received. In this example, all of the information about the download and is progress is contained in an instance of the class `DownloadBytesProgress`. This class is shown in the following code snippet: 
 
 ```
 public class DownloadBytesProgress
@@ -104,16 +104,16 @@ The next section will discuss how a mobile application will consume these two cl
 
 # Reporting Progress
 
-Visually, reporting progress is very specific to the the platform that the application is running on. Android provides a `ProgressBar` widget, while iOS uses the `UIProgressView` to display a progress bar to the user. In either case, the progress bar control will be updated by an instance of the [Progress&lt;T&gt;](http://msdn.microsoft.com/en-us/library/hh193692(v=vs.110).aspx) class from version 4.5 of the .NET framework. This class encapsulates a handler that is responsible for updating the widget/view is very similar.
+Visually, reporting progress is very specific to the the platform that the application is running on. Android provides a `ProgressBar` widget, while iOS uses the `UIProgressView` to display a progress bar to the user. In either case, the progress bar control will be updated by an instance of the [Progress&lt;T&gt;](http: //msdn.microsoft.com/en-us/library/hh193692(v=vs.110).aspx) class from version 4.5 of the .NET framework. This class encapsulates a handler that is responsible for updating the widget/view is very similar.
 
  <a name="Reporting Progress in Android" class="injected"></a>
 
 
 ## Reporting Progress in Android
 
-The download is started by the user clicking on the *Download File* button. The Xamarin.Android application utilizes a [ProgressBar](http://developer.android.com/reference/android/widget/ProgressBar.html) widget to display the download progress.
+The download is started by the user clicking on the *Download File* button. The Xamarin.Android application utilizes a [ProgressBar](http: //developer.android.com/reference/android/widget/ProgressBar.html) widget to display the download progress.
 
-The button that begins the download has the following asynchronous event handler assigned to it's `Click` event:
+The button that begins the download has the following asynchronous event handler assigned to it's `Click` event: 
 
 ```
 async void StartDownloadHandler(object sender, System.EventArgs e)
@@ -137,7 +137,7 @@ The next section will examine the iOS project.
 
 ## Reporting Progress in iOS
 
-Similar to the Android project, the iOS project uses an instance of the `Progress<T>` class that. The following event handler is attached to the `TouchUpInside` event of a `UIButton`:
+Similar to the Android project, the iOS project uses an instance of the `Progress<T>` class that. The following event handler is attached to the `TouchUpInside` event of a `UIButton`: 
 
 ```
 async void StartDownloadHandler(object sender, EventArgs e)

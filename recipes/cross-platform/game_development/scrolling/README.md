@@ -1,7 +1,7 @@
 ---
-id:{e6a3644b-3f75-4afa-a657-d43db0869460}  
-title:Scrolling a CCLayer  
-brief:How to create a scrolling effect  
+id: {e6a3644b-3f75-4afa-a657-d43db0869460}  
+title: Scrolling a CCLayer  
+brief: How to create a scrolling effect  
 ---
 
 # Recipe
@@ -14,21 +14,21 @@ Many games require a scrolling environment. CocosSharp supports scrolling throug
 
 A layer's `CCCamera` can be adjusted to create a scrolling effect. This approach to scrolling should be used if the user is moving through an environment, such as the camera following a character throughout a large world.
 
-The following shows how to scroll a layer at a constant rate by adjusting a the `CCLayer.Camera`. First, `Schedule` must be called:
+The following shows how to scroll a layer at a constant rate by adjusting a the `CCLayer.Camera`. First, `Schedule` must be called: 
 
 ```
-// assuming this is called in an object that inherits from CCNode, such as an entity:
+// assuming this is called in an object that inherits from CCNode, such as an entity: 
 this.Schedule(PerformScrolling);
 ```
 
-`PerformScrolling` implements the scrolling logic as follows:
+`PerformScrolling` implements the scrolling logic as follows: 
 
 ```
 void PerformScrolling(float timeInSeconds)
 {
 	const float pixelsPerSecond = 100;
 
-	// This moves the location of the camera:
+	// This moves the location of the camera: 
 	var center = layerToScroll.Camera.CenterInWorldspace;
 	center.X += pixelsPerSecond * timeInSeconds;
 	layerToScroll.Camera.CenterInWorldspace = center;
@@ -36,7 +36,7 @@ void PerformScrolling(float timeInSeconds)
 	// This moves where the camera is looking.
 	// If we don't do this, the camera continues
 	// to look at its center location, resulting in
-	// perspective being applied to the scene:
+	// perspective being applied to the scene: 
 	var target = layerToScroll.Camera.TargetInWorldspace;
 	target.X = center.X;
 	target.Y = center.Y;
@@ -49,21 +49,21 @@ The code above assumes that `layerToScroll` is a valid layer which should scroll
 
 A layer's position values can be adjusted to create a scrolling effect. This approach to scrolling should be used if the objects contained in the layer are physically moving, such as clouds scrolling in the background.
 
-The following shows how to scroll a layer at a constant rate by adjusting the `CCLayer.Position`. First, `Schedule` must be called:
+The following shows how to scroll a layer at a constant rate by adjusting the `CCLayer.Position`. First, `Schedule` must be called: 
 
 ```
-// assuming this is called in an object that inherits from CCNode, such as an entity:
+// assuming this is called in an object that inherits from CCNode, such as an entity: 
 this.Schedule(PerformScrolling);
 ```
 
-`PerformScrolling` implements the scrolling logic as follows:
+`PerformScrolling` implements the scrolling logic as follows: 
 
 ```
 void TimeBasedMovement(float timeInSeconds)
 {
 	const float pixelsPerSecond = 100;
 
-    // We move the layer to the left to simulate the camera moving to the right:
+    // We move the layer to the left to simulate the camera moving to the right: 
 	layerToScroll.PositionX -= pixelsPerSecond * timeInSeconds;
 }
 ```

@@ -1,9 +1,9 @@
 ---
-id:{2484D39E-41AD-E29E-AC9F-C40923876AFD}  
-title:Add a Nav Bar Bottom ToolBar  
-brief:This recipe illustrates how to add a toolbar to the bottom of a view.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/navigation_controller/add_a_nav_bar_bottom_toolbar)  
-sdk:[UINavigationBar Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
+id: {2484D39E-41AD-E29E-AC9F-C40923876AFD}  
+title: Add a Nav Bar Bottom ToolBar  
+brief: This recipe illustrates how to add a toolbar to the bottom of a view.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/navigation_controller/add_a_nav_bar_bottom_toolbar)  
+sdk: [UINavigationBar Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -11,9 +11,9 @@ sdk:[UINavigationBar Class Reference](https://developer.apple.com/library/ios/#d
 
 # Recipe
 
-To add a toolbar to the bottom of the view:
+To add a toolbar to the bottom of the view: 
 
-<ol><li>Create a toolbar by setting an array of UIBarButtonItems:</li></ol>
+<ol><li>Create a toolbar by setting an array of UIBarButtonItems: </li></ol>
 
 
 ```
@@ -28,7 +28,7 @@ this.SetToolbarItems( new UIBarButtonItem[] {
 }, false);
 ```
 
-<ol start="2"><li>Finally, to show the Toolbar: </li></ol>
+<ol start="2"><li>Finally, to show the Toolbar:  </li></ol>
 
 
 ```
@@ -42,7 +42,7 @@ this.NavigationController.ToolbarHidden = false;
 # Additional Information
 
 If you are creating a complex toolbar with many items, it might be easier to
-construct the buttons separately:
+construct the buttons separately: 
 
 ```
 var refreshButton = new UIBarButtonItem(UIBarButtonSystemItem.Refresh, (s, e) => {

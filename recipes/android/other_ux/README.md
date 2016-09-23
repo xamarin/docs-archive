@@ -1,6 +1,6 @@
 ---
-id:{7C52B31A-24C9-ED55-6C17-8703D5AB8E40}  
-title:Other UX  
+id: {7C52B31A-24C9-ED55-6C17-8703D5AB8E40}  
+title: Other UX  
 ---
 
 Assorted user interface topics.

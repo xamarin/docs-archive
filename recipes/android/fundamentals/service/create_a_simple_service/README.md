@@ -1,10 +1,10 @@
 ---
-id:{DCEC2052-373D-C101-30F0-6BFA78C498AB}  
-title:Create a Simple Service  
-brief:This recipe shows how to create a service.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/fundamentals/service/create_a_simple_service)  
-sdk:[Service Class Reference](http://developer.android.com/reference/android/app/Service.html)  
-dateupdated: 2016-01-04
+id: {DCEC2052-373D-C101-30F0-6BFA78C498AB}  
+title: Create a Simple Service  
+brief: This recipe shows how to create a service.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/fundamentals/service/create_a_simple_service)  
+sdk: [Service Class Reference](http: //developer.android.com/reference/android/app/Service.html)  
+dateupdated:  2016-01-04
 ---
 
 
@@ -19,7 +19,7 @@ This recipe will demonstrate how to start and stop an Android service using an I
 3.  Add the following code to SimpleService to create a timer in `OnStartCommand` when the service starts and dispose it in `OnDestroy` when the service stops. For demonstration, we’ll just write some text to the debug log.
 
 ```
-static readonly string TAG = "X:" + typeof (SimpleService).Name;
+static readonly string TAG = "X: " + typeof (SimpleService).Name;
 static readonly int TimerWait = 4000;
 Timer _timer;
 
@@ -56,7 +56,7 @@ public override IBinder OnBind(Intent intent)
 
 ```
 [Service]
-public class SimpleService : Service
+public class SimpleService :  Service
 ```
 
  <a name="Additional_Information" class="injected"></a>

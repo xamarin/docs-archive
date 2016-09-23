@@ -1,10 +1,10 @@
 ---
-id: {F5F09837-B45E-042F-B9D3-AEFDBD8F4027}  
-title: Update the User's Profile  
-brief: This recipe shows how to update and read the device owner's "ME" user profile in Android, as well as how to navigate to the profile in the Contacts application.  
-samplecode: [UpdateUsersProfile](/samples/monodroid/UpdateUsersProfile),
-article:[Using the Contacts ContentProvider](/guides/android/platform_features/intro_to_content_providers/part_2_-_using_the_contacts_contentprovier/)  
-sdk: [ContactsContract.Profile](http://developer.android.com/reference/android/provider/ContactsContract.Profile.html)  
+id:  {F5F09837-B45E-042F-B9D3-AEFDBD8F4027}  
+title:  Update the User's Profile  
+brief:  This recipe shows how to update and read the device owner's "ME" user profile in Android, as well as how to navigate to the profile in the Contacts application.  
+samplecode:  [UpdateUsersProfile](/samples/monodroid/UpdateUsersProfile),
+article: [Using the Contacts ContentProvider](/guides/android/platform_features/intro_to_content_providers/part_2_-_using_the_contacts_contentprovier/)  
+sdk:  [ContactsContract.Profile](http: //developer.android.com/reference/android/provider/ContactsContract.Profile.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -22,9 +22,9 @@ activity to view the updated profile.
 Before we can run this app, the user profile must be manually created 
 in our Android device or emulator. If your device does not yet have a 
 user profile, use the following steps (depending on your Android 
-version) to create the user profile: 
+version) to create the user profile:  
 
-In Android 4.x (Ice Cream Sandwich): 
+In Android 4.x (Ice Cream Sandwich):  
 
 - Start the **People** app. 
 - Tap <span class="uiitem">Create a new contact</span>.
@@ -39,7 +39,7 @@ In Android 4.x (Ice Cream Sandwich):
   number and email address.
 - Tap the check mark next to <span class="uiitem">Done</span>.
 
-In Android 5.x (Lollipop):
+In Android 5.x (Lollipop): 
 
 - Start the **Contacts** app. 
 - Tap <span class="uiitem">CREATE A NEW CONTACT</span>.
@@ -55,7 +55,7 @@ In Android 5.x (Lollipop):
 - Tap the check mark next to <span class="uiitem">Add new contact</span>.
 
 
-To update and query the user profile, follow these steps:
+To update and query the user profile, follow these steps: 
 
 -   Create a new Xamarin.Android application and name it 
     **UpdateUsersProfile**. 
@@ -67,7 +67,7 @@ To update and query the user profile, follow these steps:
     <span class="uiitem">Solution Explorer</span> and select the <span 
     class="uiitem">Application</span> page. In the drop-down menu under 
     <span class="uiitem">Minimum Android to target</span> you can 
-    select the minimum Android version for your project: 
+    select the minimum Android version for your project:  
 
     ![](Images/vs-minimum.png)
 
@@ -77,7 +77,7 @@ To update and query the user profile, follow these steps:
     class="uiitem">Build > Android Application</span>. Using the 
     drop-down menu to the right of <span class="uiitem">Minimum Android 
     version</span>, you can set the minimum Android version for your
-    project:
+    project: 
 
     ![](Images/xs-minimum.png)
 
@@ -87,7 +87,7 @@ To update and query the user profile, follow these steps:
     21). In Visual Studio, go to the project's <span 
     class="uiitem">Application</span> page. Set the target framework by 
     selecting the API level in the drop-down menu under <span 
-    class="uiitem">Compile using Android version</span>:
+    class="uiitem">Compile using Android version</span>: 
 
     ![](Images/vs-target.png)
 
@@ -95,7 +95,7 @@ To update and query the user profile, follow these steps:
     Options</span> dialog. In this dialog, click <span 
     class="uiitem">Build > General</span>. Set the target framework by 
     selecting the API level in the drop-down menu to the right of <span 
-    class="uiitem">Target framework</span>:
+    class="uiitem">Target framework</span>: 
 
     ![](Images/xs-target.png)
 
@@ -104,12 +104,12 @@ To update and query the user profile, follow these steps:
     read and write contacts as well as read and write profile data. 
     In Visual Studio, open the project properties in <span 
     class="uiitem">Solution Explorer</span> and select the <span 
-    class="uiitem">Android Manifest</span> page: 
+    class="uiitem">Android Manifest</span> page:  
 
     ![](Images/vs-manifest.png)
 
     Enable the following permissions under <span 
-    class="uiitem">Required permissions</span>: 
+    class="uiitem">Required permissions</span>:  
 
     -  **READ_CONTACTS**
     -  **READ_PROFILE**
@@ -119,12 +119,12 @@ To update and query the user profile, follow these steps:
     In Xamarin Studio, click the gray gear icon to the right of the 
     project and select <span class="uiitem">Options</span>; this opens 
     the <span class="uiitem">Project Options</span> dialog. Click <span 
-    class="uiitem">Build > Android Application</span>: 
+    class="uiitem">Build > Android Application</span>:  
 
     ![](Images/xs-manifest.png)
 
     Enable the following permissions in the <span 
-    class="uiitem">Required permissions</span> section: 
+    class="uiitem">Required permissions</span> section:  
 
     -  **ReadContacts**
     -  **ReadProfile**
@@ -133,7 +133,7 @@ To update and query the user profile, follow these steps:
 
 
 -   Edit **Resources/values/Strings.xml** and modify the button text
-    string to "Update Profile" as follows:
+    string to "Update Profile" as follows: 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -144,20 +144,20 @@ To update and query the user profile, follow these steps:
 ```
 
 -   Edit **Resources/layout/Main.axml** and modify the `Button` layout 
-    so that its text value is set from the `buttonText` string resource:
+    so that its text value is set from the `buttonText` string resource: 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+<LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: orientation="vertical"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent"
     >
 <Button
-    android:id="@+id/MyButton"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/buttonText"
+    android: id="@+id/MyButton"
+    android: layout_width="fill_parent"
+    android: layout_height="wrap_content"
+    android: text="@string/buttonText"
     />
 </LinearLayout>
 ```
@@ -215,7 +215,7 @@ bool ReadBackName()
 ```
 
 -   Add another `MainActivity` method called `ViewProfile` that 
-    launches the contacts app to view the user profile: 
+    launches the contacts app to view the user profile:  
 
 ```
 void ViewProfile ()
@@ -228,7 +228,7 @@ void ViewProfile ()
 ```
 
 -   Modify the `button.Click` hander in **MainActivity.cs** to call these
-    three methods as illustrated in the following example: 
+    three methods as illustrated in the following example:  
 
 ```
 button.Click += delegate {
@@ -241,14 +241,14 @@ button.Click += delegate {
 -   Build and run the app; it displays an <span class="uiitem">UPDATE 
     PROFILE</span> button as seen below in the screenshot on the left. When 
     we tap this button to cause the button click handler to run, the 
-    following sequence takes place: 
+    following sequence takes place:  
     -   The call to `NameOwner` updates the profile's display 
         name to "John Doe". 
     -   The call to `ReadBackName` reads the display name from
         the user profile, writes it to the console (for debug), and 
         returns `true` if the user profile was read successfully.
     -   The call to the `ViewProfile` method opens the contacts app, 
-        as seen in the screenshot on the right:
+        as seen in the screenshot on the right: 
 
     ![](Images/update-users-profile.png)
 
@@ -261,5 +261,5 @@ Sandwich) and later. Before the user profile can be updated, it must be
 created manually using the **People** (or **Contacts**) app as 
 described in the recipe. For more about using
 `ContactContracts.Profile`, see the 
-[ContactsContract.Profile](http://developer.android.com/reference/android/provider/ContactsContract.Profile.html) 
+[ContactsContract.Profile](http: //developer.android.com/reference/android/provider/ContactsContract.Profile.html) 
 class reference. 

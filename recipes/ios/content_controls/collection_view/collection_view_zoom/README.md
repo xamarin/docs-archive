@@ -1,9 +1,9 @@
 ---
-id:{4538054f-6c77-40cc-9dbb-7285053e4029}  
-title:Zoom a Collection View  
-brief:This recipe shows how to use a gesture recognizer to allow the user to zoom in a Collection View.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/collection_view/collection_view_zoom)  
-sdk:[Collection View Programming Guide](https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/CollectionViewPGforIOS/Introduction/Introduction.html)  
+id: {4538054f-6c77-40cc-9dbb-7285053e4029}  
+title: Zoom a Collection View  
+brief: This recipe shows how to use a gesture recognizer to allow the user to zoom in a Collection View.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/collection_view/collection_view_zoom)  
+sdk: [Collection View Programming Guide](https: //developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/CollectionViewPGforIOS/Introduction/Introduction.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -12,7 +12,7 @@ sdk:[Collection View Programming Guide](https://developer.apple.com/library/ios/
 # Recipe
 
 To allow a user to zoom in a Collection View, you first need to add a gesture
-	recognizer to your View:
+	recognizer to your View: 
 
 ```
 public override void ViewDidLoad ()
@@ -24,7 +24,7 @@ public override void ViewDidLoad ()
 	}
 ```
 
-Then add a handler method to respond to the gesture:
+Then add a handler method to respond to the gesture: 
 
 ```
 public void handlePinchGesture (UIPinchGestureRecognizer gesture)
@@ -43,7 +43,7 @@ public void handlePinchGesture (UIPinchGestureRecognizer gesture)
 ```
 
 Finally, in the Collection View's delegate, you will need to override
-	the GetSizeForItem() method to apply the zoom's scale factor to the size of each item:
+	the GetSizeForItem() method to apply the zoom's scale factor to the size of each item: 
 
 ```
 public override System.Drawing.CGSize GetSizeForItem (UICollectionView collectionView, UICollectionViewLayout layout, NSIndexPath indexPath)

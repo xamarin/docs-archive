@@ -1,18 +1,18 @@
 ---
-id:{63F83DDE-0E45-4483-AFE9-7BF446A7CAC2}  
-title:Detect the GSM Signal Strength  
-brief:This recipe will demonstrate how to detect the GSM signal strength in Xamarin.Android.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/networking/gsm_strength)
-sdk:[PhoneStateListener](https://developer.android.com/reference/android/telephony/PhoneStateListener.html)  
-sdk:[SignalStrength](http://developer.android.com/reference/android/telephony/SignalStrength.html)  
-sdk:[TelephonyManager](http://developer.android.com/reference/android/telephony/TelephonyManager.html)  
+id: {63F83DDE-0E45-4483-AFE9-7BF446A7CAC2}  
+title: Detect the GSM Signal Strength  
+brief: This recipe will demonstrate how to detect the GSM signal strength in Xamarin.Android.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/networking/gsm_strength)
+sdk: [PhoneStateListener](https: //developer.android.com/reference/android/telephony/PhoneStateListener.html)  
+sdk: [SignalStrength](http: //developer.android.com/reference/android/telephony/SignalStrength.html)  
+sdk: [TelephonyManager](http: //developer.android.com/reference/android/telephony/TelephonyManager.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
 
 # Recipe
 
-This recipe will show one way to check the strength of the GSM signal received by the phone. The following screenshot shows a sample application that will listen for the GSM signal strength and display it in an activity:
+This recipe will show one way to check the strength of the GSM signal received by the phone. The following screenshot shows a sample application that will listen for the GSM signal strength and display it in an activity: 
 
  ![](Images/gsm_signal_strength_2.png)
 
@@ -20,10 +20,10 @@ Android provides the `PhoneStateListener` class that will monitor changes in the
 
 To determine the GSM signal strength, it is necessary to subclass `PhoneStateListener` and override the `OnSignalStrengthsChanged` callback. This method is invoked whenever the network signal strength changes.
 
-The following code snippet is one possible implementation of a `PhoneStateListener`:
+The following code snippet is one possible implementation of a `PhoneStateListener`: 
 
 ```
-public class GsmSignalStrengthListener : PhoneStateListener
+public class GsmSignalStrengthListener :  PhoneStateListener
 {
 	public delegate void SignalStrengthChangedDelegate(int strength);
 
@@ -42,7 +42,7 @@ public class GsmSignalStrengthListener : PhoneStateListener
 }
 ```
 
-In this recipe, the class above is used by an `Activity` which contains a `Button`, a `TextView`, and an `ImageView`. The `Activity` has the following UI:
+In this recipe, the class above is used by an `Activity` which contains a `Button`, a `TextView`, and an `ImageView`. The `Activity` has the following UI: 
 
  ![](Images/gsm_signal_strength_1.png)
 
@@ -52,7 +52,7 @@ The `GsmSignalStrengthListener` subclass will check to see if the new `SignalStr
 
 `SignalStrength.GsmSignalStrength` is a value in the range of 0 to 31 and 99. A value of 99 is used for when the signal is *not known* or *not detectable*. The unit of measure for the GSM signal string is know as the *Arbitrary Strength Unit* ( *ASU*).
 
-The `OnCreate` method of the Activity will obtain a reference to the `TelephonyManager` and instantiate a `GsmSignalStrengthListener` object. The following code shows the `OnCreate` method for the Activity:
+The `OnCreate` method of the Activity will obtain a reference to the `TelephonyManager` and instantiate a `GsmSignalStrengthListener` object. The following code shows the `OnCreate` method for the Activity: 
 
 ```
 protected override void OnCreate(Bundle bundle)
@@ -73,7 +73,7 @@ protected override void OnCreate(Bundle bundle)
 }
 ```
 
-When the user clicks the `Button`, the Activity will instruct the `_telephonyManager` to listen for changes in signal strength using the `_signalStrengthListener`, as shown in the following code snippet:
+When the user clicks the `Button`, the Activity will instruct the `_telephonyManager` to listen for changes in signal strength using the `_signalStrengthListener`, as shown in the following code snippet: 
 
 ```
 void DisplaySignalStrength(object sender, EventArgs e)
@@ -83,7 +83,7 @@ void DisplaySignalStrength(object sender, EventArgs e)
 }
 ```
 
-The following method is the event handler that the Activity uses to respond `SignalStrengthChanged` events:
+The following method is the event handler that the Activity uses to respond `SignalStrengthChanged` events: 
 
 ```
 void HandleSignalStrengthChanged(int strength)
@@ -94,13 +94,13 @@ void HandleSignalStrengthChanged(int strength)
 
 	// Update the UI with text and an image.
 	_gmsStrengthImageView.SetImageLevel(strength);
-	_gmsStrengthTextView.Text = string.Format("GPS Signal Strength ({0}):", strength);
+	_gmsStrengthTextView.Text = string.Format("GPS Signal Strength ({0}): ", strength);
 }
 ```
 
 The `SignalStrengthChanged` event handler displayed above will update the UI with the signal strength that was received as well as de-register the event handler for `_signalStrengthListener.SignalStrengthClosed`. Notice as well the call to `_telephonyManager.Listen` with the `PhoneStateListenerFlags.None`. In addition to de-register the event handler it is necessary to explicitly tell `TelephonyManager` that this application is no longer interested in signal strength changes.
 
-<div class="note"><strong>Note:</strong><p> The <code>PhoneStateListener</code> also provides the callback method <code>OnSignalStrengthChanged</code> which has been deprecated since API level 5 (Android 2.0). This method should be avoided.</p></div>
+<div class="note"><strong>Note: </strong><p> The <code>PhoneStateListener</code> also provides the callback method <code>OnSignalStrengthChanged</code> which has been deprecated since API level 5 (Android 2.0). This method should be avoided.</p></div>
 
  <a name="Summary" class="injected"></a>
 

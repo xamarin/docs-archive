@@ -1,6 +1,6 @@
 ---
-id:{D4020C06-7A61-84D3-02EB-E7DED4073262}  
-title:Geocoder  
+id: {D4020C06-7A61-84D3-02EB-E7DED4073262}  
+title: Geocoder  
 ---
 
 [Geocode an Address](/recipes/android/os_device_resources/geocoder/geocode_an_address)

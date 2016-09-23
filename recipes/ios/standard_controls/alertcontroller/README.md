@@ -1,22 +1,22 @@
 ---
-id:[cc4170e2-bbdd-46c1-bac7-70739f2f7a5a]  
-title:AlertController
-brief: UIAlertController is now the class that should be used for displaying alerts in iOS 8
-samplecode: [Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/standard_controls/alertcontroller/)  
+id: [cc4170e2-bbdd-46c1-bac7-70739f2f7a5a]  
+title: AlertController
+brief:  UIAlertController is now the class that should be used for displaying alerts in iOS 8
+samplecode:  [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/standard_controls/alertcontroller/)  
 ---
 
 Starting with iOS 8, `UIAlertController` has completely replaced `UIActionSheet` and `UIAlertView`, both of which are now deprecated.
 
 Unlike the classes it replaced, which are subclasses of `UIView`, `UIAlertController` is a subclass of `UIViewController`.
 
-Use `UIAlertControllerStyle` to indicate the type of alert to display. These alerts types are:
+Use `UIAlertControllerStyle` to indicate the type of alert to display. These alerts types are: 
 
 - **UIAlertControllerStyleActionSheet**
 	* pre iOS 8 this would have been a UIActionSheet
 - **UIAlertControllerStyleAlert**
 	* Pre iOS 8 this would have been UIAlertView
 
-There are three steps to take when creating an AlertController:
+There are three steps to take when creating an AlertController: 
 
 - Create and configure the Alert
 	* title

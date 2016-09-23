@@ -1,10 +1,10 @@
 ---
-id:ffc8a717-915a-4a07-bd4f-cf63d7b7f168
-title:Securely store credentials
-subtitle:Using Xamarin.Auth to store data in the account store
-brief:This recipe shows how to securely store data in an account store that's backed by Keychain services in iOS, and the KeyStore class in Android.
-samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/General/StoreCredentials/)
-sdk:[Xamarin.Auth](https://components.xamarin.com/view/xamarin.auth)
+id: ffc8a717-915a-4a07-bd4f-cf63d7b7f168
+title: Securely store credentials
+subtitle: Using Xamarin.Auth to store data in the account store
+brief: This recipe shows how to securely store data in an account store that's backed by Keychain services in iOS, and the KeyStore class in Android.
+samplecode: [Browse on Github](https: //github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/General/StoreCredentials/)
+sdk: [Xamarin.Auth](https: //components.xamarin.com/view/xamarin.auth)
 ---
 
 # Overview
@@ -13,7 +13,7 @@ Xamarin.Auth is a cross-platform SDK for authenticating users and storing their 
 
 ## Storing Account Information
 
-The following code example shows how an `Account` object is securely saved on the iOS platform:
+The following code example shows how an `Account` object is securely saved on the iOS platform: 
 
 ```
 public void SaveCredentials (string userName, string password)
@@ -28,7 +28,7 @@ public void SaveCredentials (string userName, string password)
 }
 ```
 
-The following code example shows how an `Account` object is securely saved on the Android platform:
+The following code example shows how an `Account` object is securely saved on the Android platform: 
 
 ```
 public void SaveCredentials (string userName, string password)
@@ -49,38 +49,38 @@ If an `Account` was previously saved, calling the `Save` method again will overw
 
 ## Retrieving Account Information
 
-`Account` objects can be retrieved by calling the `FindAccountsForService` method, as shown in the following code example for the iOS platform:
+`Account` objects can be retrieved by calling the `FindAccountsForService` method, as shown in the following code example for the iOS platform: 
 
 ```
 public string UserName {
   get {
     var account = AccountStore.Create ().FindAccountsForService (App.AppName).FirstOrDefault ();
-    return (account != null) ? account.Username : null;
+    return (account != null) ? account.Username :  null;
   }
 }
 
 public string Password {
   get {
     var account = AccountStore.Create ().FindAccountsForService (App.AppName).FirstOrDefault ();
-    return (account != null) ? account.Properties ["Password"] : null;
+    return (account != null) ? account.Properties ["Password"] :  null;
   }
 }
 ```
 
-The following code example shows how `Account` objects can be retrieved on the Android platform:
+The following code example shows how `Account` objects can be retrieved on the Android platform: 
 
 ```
 public string UserName {
   get {
     var account = AccountStore.Create (Forms.Context).FindAccountsForService (App.AppName).FirstOrDefault ();
-    return (account != null) ? account.Username : null;
+    return (account != null) ? account.Username :  null;
   }
 }
 
 public string Password {
   get {
     var account = AccountStore.Create (Forms.Context).FindAccountsForService (App.AppName).FirstOrDefault ();
-    return (account != null) ? account.Properties ["Password"] : null;
+    return (account != null) ? account.Properties ["Password"] :  null;
   }
 }
 ```
@@ -89,7 +89,7 @@ The `FindAccountsForService` method returns an `IEnumerable` collection of `Acco
 
 ## Deleting Account Information
 
-`Account` objects can be deleted by calling the `Delete` method, as shown in the following code example for the iOS platform:
+`Account` objects can be deleted by calling the `Delete` method, as shown in the following code example for the iOS platform: 
 
 ```
 public void DeleteCredentials ()
@@ -101,7 +101,7 @@ public void DeleteCredentials ()
 }
 ```
 
-The following code example shows how `Account` objects can be deleted on the Android platform:
+The following code example shows how `Account` objects can be deleted on the Android platform: 
 
 ```
 public void DeleteCredentials ()

@@ -1,23 +1,23 @@
 ---
-id:{4e1ad66b-4902-4f85-a886-c03716ba2b87}
-title:Multi-select ListView
-brief:Add the ability to track multiple selections in a ListView
-samplecode:[Multiselect Sample](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/multiselect)
+id: {4e1ad66b-4902-4f85-a886-c03716ba2b87}
+title: Multi-select ListView
+brief: Add the ability to track multiple selections in a ListView
+samplecode: [Multiselect Sample](https: //github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/multiselect)
 ---
 
 The Xamarin.Forms [`ListView`](/api/type/Xamarin.Forms.ListView/)
 control only has a single `SelectedItem`, and cannot represent selection of
 mulitple rows.
 
-To extend `ListView` to support multiple-selection we need:
+To extend `ListView` to support multiple-selection we need: 
 * a way to represent the *selection* of multiple rows,
 * a way to track which rows are selected, and
 * a control to select and deselect rows.
 
-The [code sample](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/multiselect)
+The [code sample](https: //github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/multiselect)
 for this recipe includes a simple base class
 [`SelectMultipleBasePage<T>`](#source)
-that renders a `ListView` which adds these features:
+that renders a `ListView` which adds these features: 
 * selection state is stored in a `WrappedSelection<T>` object for each
   data item in your list,
 * the selected rows can be queried using the `GetSelection` method,
@@ -27,7 +27,7 @@ that renders a `ListView` which adds these features:
 
 To use the `SelectMultipleBasePage<T>` pass in a `List<T>` of the
 objects you want to list (by default the `Name` property is used for the
-row text) to a new instance, and push it onto a `NavigationPage` stack:
+row text) to a new instance, and push it onto a `NavigationPage` stack: 
 
 ```
 var items = new List<CheckItem>();
@@ -40,7 +40,7 @@ multiPage = new SelectMultipleBasePage<CheckItem> (items){ Title = "Check all th
 await Navigation.PushAsync (multiPage);
 ```
 
-To find out which rows have been selected, call the `GetSelection` method:
+To find out which rows have been selected, call the `GetSelection` method: 
 
 ```
 var answers = multiPage.GetSelection();
@@ -54,7 +54,7 @@ update the code so that selecting an item in the list automatically sets
 a `bool` property on your model.
 
 The `WrappedItemSelectionTemplate` is provided as the default rendering
-for each row: it binds a `Name` property (if found) to display in each row,
+for each row:  it binds a `Name` property (if found) to display in each row,
 along with a `Switch` control. You can edit this template to change the
 way each row is displayed.
 
@@ -81,7 +81,7 @@ This recipe provides a simple base class to build a multi-select-capable
 <a name="source" />
 ## Complete Source
 
-The complete source for `SelectMultipleBasePage<T>` is shown below:
+The complete source for `SelectMultipleBasePage<T>` is shown below: 
 
 ```
 using System;
@@ -95,11 +95,11 @@ namespace Multiselect
 {
 	/*
 	* based on
-	* https://gist.github.com/glennstephens/76e7e347ca6c19d4ef15
+	* https: //gist.github.com/glennstephens/76e7e347ca6c19d4ef15
 	*/
-	public class SelectMultipleBasePage<T> : ContentPage
+	public class SelectMultipleBasePage<T> :  ContentPage
 	{
-		public class WrappedSelection<T> : INotifyPropertyChanged
+		public class WrappedSelection<T> :  INotifyPropertyChanged
 		{
 			public T Item { get; set; }
 			bool isSelected = false;
@@ -118,9 +118,9 @@ namespace Multiselect
 			}
 			public event PropertyChangedEventHandler PropertyChanged = delegate {};
 		}
-		public class WrappedItemSelectionTemplate : ViewCell
+		public class WrappedItemSelectionTemplate :  ViewCell
 		{
-			public WrappedItemSelectionTemplate() : base ()
+			public WrappedItemSelectionTemplate() :  base ()
 			{
 				Label name = new Label();
 				name.SetBinding(Label.TextProperty, new Binding("Item.Name"));

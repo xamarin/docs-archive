@@ -1,6 +1,6 @@
 ---
-id:{D9BF23F2-F201-D26A-24E4-488237E01B03}  
-title:General  
+id: {D9BF23F2-F201-D26A-24E4-488237E01B03}  
+title: General  
 ---
 
 This section provides some general recipes for Android in general.

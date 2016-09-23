@@ -1,7 +1,7 @@
 ---
-id:{f4df2f5f-6c44-426b-bbc1-c224829b7ae4}  
-title:Text Field  
-subtitle:UITextField  
+id: {f4df2f5f-6c44-426b-bbc1-c224829b7ae4}  
+title: Text Field  
+subtitle: UITextField  
 ---
 
 The UITextField control serves as the canonical control for text input. As such,

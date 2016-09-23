@@ -1,6 +1,6 @@
 ---
-id:{7622f708-b6fc-4abe-9e97-85abc8002a1a}
-title:Outline View
+id: {7622f708-b6fc-4abe-9e97-85abc8002a1a}
+title: Outline View
 ---
 
 NSOutlineView derives from NSTableView and adds functionality to render hierarchal

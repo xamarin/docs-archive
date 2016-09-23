@@ -1,9 +1,9 @@
 ---
-id: {51755CB1-1052-4830-A103-6C5BABA9CF4C}
-title: Call a REST Web Service
-brief: This recipe shows how to call a RESTful service using HTTP, parse JSON results, and display the results on the screen.
-samplecode: [WeatherREST](/samples/monodroid/WeatherREST)
-article: [Introduction to Web Services](/guides/cross-platform/application_fundamentals/web_services/)
+id:  {51755CB1-1052-4830-A103-6C5BABA9CF4C}
+title:  Call a REST Web Service
+brief:  This recipe shows how to call a RESTful service using HTTP, parse JSON results, and display the results on the screen.
+samplecode:  [WeatherREST](/samples/monodroid/WeatherREST)
+article:  [Introduction to Web Services](/guides/cross-platform/application_fundamentals/web_services/)
 ---
 
 # Recipe
@@ -45,80 +45,80 @@ screen.
     with the XML example below. This code begins the GUI layout with 
     two `EditText` elements. These elements allow the user to enter 
     longitude and latitude values. Let's use the id's `latText` and 
-    `longText` for these `EditBox` elements: 
+    `longText` for these `EditBox` elements:  
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+<LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: orientation="vertical"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent">
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:id="@+id/latSection">
+        android: orientation="horizontal"
+        android: layout_marginTop="10dp"
+        android: layout_width="match_parent"
+        android: layout_height="wrap_content"
+        android: gravity="center_horizontal"
+        android: id="@+id/latSection">
         <TextView
-            android:text="Enter Latitude:"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="140dp"
-            android:layout_height="40dp"
-            android:gravity="right"
-            android:id="@+id/latLabel" />
+            android: text="Enter Latitude: "
+            android: textAppearance="?android: attr/textAppearanceMedium"
+            android: layout_width="140dp"
+            android: layout_height="40dp"
+            android: gravity="right"
+            android: id="@+id/latLabel" />
         <EditText
-            android:text="47.7"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:id="@+id/latText"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_marginLeft="5dp" />
+            android: text="47.7"
+            android: layout_width="150dp"
+            android: layout_height="50dp"
+            android: id="@+id/latText"
+            android: textAppearance="?android: attr/textAppearanceMedium"
+            android: layout_marginLeft="5dp" />
     </LinearLayout>
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:id="@+id/longSection">
+        android: orientation="horizontal"
+        android: layout_marginTop="10dp"
+        android: layout_width="match_parent"
+        android: layout_height="wrap_content"
+        android: gravity="center_horizontal"
+        android: id="@+id/longSection">
         <TextView
-            android:text="Enter Longitude:"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="140dp"
-            android:layout_height="40dp"
-            android:gravity="right"
-            android:id="@+id/longLabel" />
+            android: text="Enter Longitude: "
+            android: textAppearance="?android: attr/textAppearanceMedium"
+            android: layout_width="140dp"
+            android: layout_height="40dp"
+            android: gravity="right"
+            android: id="@+id/longLabel" />
         <EditText
-            android:text="-122.5"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:id="@+id/longText"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_marginLeft="5dp" />
+            android: text="-122.5"
+            android: layout_width="150dp"
+            android: layout_height="50dp"
+            android: id="@+id/longText"
+            android: textAppearance="?android: attr/textAppearanceMedium"
+            android: layout_marginLeft="5dp" />
     </LinearLayout>
 ```
 
 -   Next, let's add a button that the user can press to get the 
     weather. Let's give this button the id `getWeatherButton`. Append 
     the following XML to layout in **Resources/layout/Main.axml** 
-    (started above): 
+    (started above):  
 
 ```xml
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_marginTop="28dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:id="@+id/getSection">
+        android: orientation="vertical"
+        android: layout_marginTop="28dp"
+        android: layout_width="match_parent"
+        android: layout_height="wrap_content"
+        android: gravity="center_horizontal"
+        android: id="@+id/getSection">
         <Button
-            android:id="@+id/getWeatherButton"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Get Weather" />
+            android: id="@+id/getWeatherButton"
+            android: layout_width="300dp"
+            android: layout_height="wrap_content"
+            android: gravity="center_horizontal"
+            android: textAppearance="?android: attr/textAppearanceLarge"
+            android: text="Get Weather" />
     </LinearLayout>
 ```
 
@@ -126,106 +126,106 @@ screen.
     temperature, humidity, and current conditions; let's assign 
     the id's `locationText`, `tempText`, `humidText`, and `condText`, 
     respectively. Append the following XML to 
-    **Resources/layout/Main.axml**: 
+    **Resources/layout/Main.axml**:  
 
 ```xml
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/locSection">
+        android: orientation="horizontal"
+        android: layout_marginTop="30dp"
+        android: layout_marginLeft="40dp"
+        android: layout_marginRight="40dp"
+        android: layout_width="match_parent"
+        android: layout_height="wrap_content"
+        android: id="@+id/locSection">
         <TextView
-            android:text="Location:"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="120dp"
-            android:layout_height="30dp"
-            android:gravity="left"
-            android:id="@+id/locLabel" />
+            android: text="Location: "
+            android: textAppearance="?android: attr/textAppearanceMedium"
+            android: layout_width="120dp"
+            android: layout_height="30dp"
+            android: gravity="left"
+            android: id="@+id/locLabel" />
         <TextView
-            android:text=""
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:gravity="left"
-            android:id="@+id/locationText" />
+            android: text=""
+            android: textAppearance="?android: attr/textAppearanceMedium"
+            android: layout_width="wrap_content"
+            android: layout_height="60dp"
+            android: gravity="left"
+            android: id="@+id/locationText" />
     </LinearLayout>
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tempSection">
+        android: orientation="horizontal"
+        android: layout_marginTop="10dp"
+        android: layout_marginLeft="40dp"
+        android: layout_marginRight="40dp"
+        android: layout_width="match_parent"
+        android: layout_height="wrap_content"
+        android: id="@+id/tempSection">
         <TextView
-            android:text="Temperature:"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="120dp"
-            android:layout_height="30dp"
-            android:gravity="left"
-            android:id="@+id/tempLabel" />
+            android: text="Temperature: "
+            android: textAppearance="?android: attr/textAppearanceMedium"
+            android: layout_width="120dp"
+            android: layout_height="30dp"
+            android: gravity="left"
+            android: id="@+id/tempLabel" />
         <TextView
-            android:text=""
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:gravity="left"
-            android:id="@+id/tempText" />
+            android: text=""
+            android: textAppearance="?android: attr/textAppearanceMedium"
+            android: layout_width="wrap_content"
+            android: layout_height="30dp"
+            android: gravity="left"
+            android: id="@+id/tempText" />
     </LinearLayout>
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/humidSection">
+        android: orientation="horizontal"
+        android: layout_marginTop="10dp"
+        android: layout_marginLeft="40dp"
+        android: layout_marginRight="40dp"
+        android: layout_width="match_parent"
+        android: layout_height="wrap_content"
+        android: id="@+id/humidSection">
         <TextView
-            android:text="Humidity:"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="120dp"
-            android:layout_height="30dp"
-            android:gravity="left"
-            android:id="@+id/humidLabel" />
+            android: text="Humidity: "
+            android: textAppearance="?android: attr/textAppearanceMedium"
+            android: layout_width="120dp"
+            android: layout_height="30dp"
+            android: gravity="left"
+            android: id="@+id/humidLabel" />
         <TextView
-            android:text=""
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:gravity="left"
-            android:id="@+id/humidText" />
+            android: text=""
+            android: textAppearance="?android: attr/textAppearanceMedium"
+            android: layout_width="wrap_content"
+            android: layout_height="30dp"
+            android: gravity="left"
+            android: id="@+id/humidText" />
     </LinearLayout>
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/condSection">
+        android: orientation="horizontal"
+        android: layout_marginTop="10dp"
+        android: layout_marginLeft="40dp"
+        android: layout_marginRight="40dp"
+        android: layout_width="match_parent"
+        android: layout_height="wrap_content"
+        android: id="@+id/condSection">
         <TextView
-            android:text="Conditions:"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="120dp"
-            android:layout_height="30dp"
-            android:gravity="left"
-            android:id="@+id/condLabel" />
+            android: text="Conditions: "
+            android: textAppearance="?android: attr/textAppearanceMedium"
+            android: layout_width="120dp"
+            android: layout_height="30dp"
+            android: gravity="left"
+            android: id="@+id/condLabel" />
         <TextView
-            android:text=""
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:gravity="left"
-            android:id="@+id/condText" />
+            android: text=""
+            android: textAppearance="?android: attr/textAppearanceMedium"
+            android: layout_width="wrap_content"
+            android: layout_height="60dp"
+            android: gravity="left"
+            android: id="@+id/condText" />
     </LinearLayout>
 </LinearLayout>
 ```
 
 -   Let's save our layout and exit the designer. Here is an example of how
-    the UI looks after we add the above XML code sections: 
+    the UI looks after we add the above XML code sections:  
 
     [ ![](Images/2-display-elements-sml.png)](Images/2-display-elements.png)
 
@@ -241,7 +241,7 @@ screen.
 // Set our view from the "main" layout resource
 SetContentView(Resource.Layout.Main);
 
-// Get the latitude/longitude EditBox and button resources:
+// Get the latitude/longitude EditBox and button resources: 
 EditText latitude = FindViewById<EditText>(Resource.Id.latText);
 EditText longitude = FindViewById<EditText>(Resource.Id.longText);
 Button button = FindViewById<Button>(Resource.Id.getWeatherButton);
@@ -250,14 +250,14 @@ Button button = FindViewById<Button>(Resource.Id.getWeatherButton);
 button.Click += async (sender, e) => {
 
     // Get the latitude and longitude entered by the user and create a query.
-    string url = "http://api.geonames.org/findNearByWeatherJSON?lat=" +
+    string url = "http: //api.geonames.org/findNearByWeatherJSON?lat=" +
                  latitude.Text +
                  "&lng=" +
                  longitude.Text +
                  "&username=demo";
 
     // Fetch the weather information asynchronously, 
-    // parse the results, then update the screen:
+    // parse the results, then update the screen: 
     JsonValue json = await FetchWeatherAsync (url);
     // ParseAndDisplay (json);
 };
@@ -277,28 +277,28 @@ button.Click += async (sender, e) => {
 
     Let's add the following method after the `OnCreate` method. This 
     method issues the HTTP request, waits for a response, and returns
-    the response to the caller:
+    the response to the caller: 
 
 ```
 // Gets weather data from the passed URL.
 private async Task<JsonValue> FetchWeatherAsync (string url)
 {
-    // Create an HTTP web request using the URL:
+    // Create an HTTP web request using the URL: 
     HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create (new Uri (url));
     request.ContentType = "application/json";
     request.Method = "GET";
 
-    // Send the request to the server and wait for the response:
+    // Send the request to the server and wait for the response: 
     using (WebResponse response = await request.GetResponseAsync ())
     {
-        // Get a stream representation of the HTTP web response:
+        // Get a stream representation of the HTTP web response: 
         using (Stream stream = response.GetResponseStream ())
         {
-            // Use this stream to build a JSON document object:
+            // Use this stream to build a JSON document object: 
             JsonValue jsonDoc = await Task.Run (() => JsonObject.Load (stream));
-            Console.Out.WriteLine("Response: {0}", jsonDoc.ToString ());
+            Console.Out.WriteLine("Response:  {0}", jsonDoc.ToString ());
 
-            // Return the JSON document:
+            // Return the JSON document: 
             return jsonDoc;
         }
     }
@@ -309,7 +309,7 @@ private async Task<JsonValue> FetchWeatherAsync (string url)
     `JsonValue` object &mdash; this makes it easier for us to extract the 
     weather information that we will need in later steps. Because we 
     will be using `System.Json` to parse the response, we must add a 
-    reference to `System.Json` to our project: 
+    reference to `System.Json` to our project:  
 
     -   In Xamarin Studio, right-click the project's **References** 
         node, select **Edit References&hellip;**, click the **All** tab, 
@@ -334,28 +334,28 @@ private async Task<JsonValue> FetchWeatherAsync (string url)
     coordinates) and press the **Get Weather** button. If the HTTP 
     request and response succeeds, we should get a JSON-formatted HTTP 
     response that resembles the following example (the JSON response 
-    string should be visible in the IDE debug output): 
+    string should be visible in the IDE debug output):  
 
 ```
 {
-    "weatherObservation": {
-        "ICAO": "KBFI",
-        "clouds": "broken clouds",
-        "cloudsCode": "BKN",
-        "countryCode": "US",
-        "datetime": "2014-12-05 22:53:00",
-        "dewPoint": "8.3",
-        "elevation": 4,
-        "humidity": 79,
-        "lat": 47.55,
-        "lng": -122.31666666666666,
-        "observation": "KBFI 052253Z 32003KT 10SM BKN070 BKN090 12/08 A2989 RMK AO2 SLP122 T01170083",
-        "seaLevelPressure": 1012.2,
-        "stationName": "Seattle, Seattle Boeing Field",
-        "temperature": "11.7",
-        "weatherCondition": "n/a",
-        "windDirection": 320,
-        "windSpeed": "03"
+    "weatherObservation":  {
+        "ICAO":  "KBFI",
+        "clouds":  "broken clouds",
+        "cloudsCode":  "BKN",
+        "countryCode":  "US",
+        "datetime":  "2014-12-05 22: 53: 00",
+        "dewPoint":  "8.3",
+        "elevation":  4,
+        "humidity":  79,
+        "lat":  47.55,
+        "lng":  -122.31666666666666,
+        "observation":  "KBFI 052253Z 32003KT 10SM BKN070 BKN090 12/08 A2989 RMK AO2 SLP122 T01170083",
+        "seaLevelPressure":  1012.2,
+        "stationName":  "Seattle, Seattle Boeing Field",
+        "temperature":  "11.7",
+        "weatherCondition":  "n/a",
+        "windDirection":  320,
+        "windSpeed":  "03"
     }
 }
 ```
@@ -367,14 +367,14 @@ private async Task<JsonValue> FetchWeatherAsync (string url)
     `temperature`, `humidity`, `clouds`, and `weatherCondition` 
     name/value pairs, using this information to fill out the bottom 
     portion of the weather app display. Let's add the following method 
-    after the `FetchWeatherAsync` method: 
+    after the `FetchWeatherAsync` method:  
 
 ```
 // Parse the weather data, then write temperature, humidity, 
 // conditions, and location to the screen.
 private void ParseAndDisplay (JsonValue json)
 {
-    // Get the weather reporting fields from the layout resource:
+    // Get the weather reporting fields from the layout resource: 
     TextView location = FindViewById<TextView>(Resource.Id.locationText);
     TextView temperature = FindViewById<TextView>(Resource.Id.tempText);
     TextView humidity = FindViewById<TextView>(Resource.Id.humidText);
@@ -383,22 +383,22 @@ private void ParseAndDisplay (JsonValue json)
     // Extract the array of name/value results for the field name "weatherObservation". 
     JsonValue weatherResults = json["weatherObservation"];
 
-    // Extract the "stationName" (location string) and write it to the location TextBox:
+    // Extract the "stationName" (location string) and write it to the location TextBox: 
     location.Text = weatherResults["stationName"];
 
-    // The temperature is expressed in Celsius:
+    // The temperature is expressed in Celsius: 
     double temp = weatherResults["temperature"];
-    // Convert it to Fahrenheit:
+    // Convert it to Fahrenheit: 
     temp = ((9.0 / 5.0) * temp) + 32;
-    // Write the temperature (one decimal place) to the temperature TextBox:
-    temperature.Text = String.Format("{0:F1}", temp) + "° F";
+    // Write the temperature (one decimal place) to the temperature TextBox: 
+    temperature.Text = String.Format("{0: F1}", temp) + "° F";
 
-    // Get the percent humidity and write it to the humidity TextBox:
+    // Get the percent humidity and write it to the humidity TextBox: 
     double humidPercent = weatherResults["humidity"];
     humidity.Text = humidPercent.ToString() + "%";
 
     // Get the "clouds" and "weatherConditions" strings and 
-    // combine them. Ignore strings that are reported as "n/a":
+    // combine them. Ignore strings that are reported as "n/a": 
     string cloudy = weatherResults["clouds"];
     if (cloudy.Equals ("n/a"))
         cloudy = "";
@@ -406,7 +406,7 @@ private void ParseAndDisplay (JsonValue json)
     if (cond.Equals ("n/a"))
         cond = "";
 
-    // Write the result to the conditions TextBox:
+    // Write the result to the conditions TextBox: 
     conditions.Text = cloudy + " " + cond;
 }
 ``` 

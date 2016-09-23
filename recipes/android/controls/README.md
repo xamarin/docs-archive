@@ -1,7 +1,7 @@
 ---
-id:{D6E08445-B012-92CA-F979-26B2F256D864}  
-title:Android Control Recipes  
-dateupdated: 2016-03-14
+id: {D6E08445-B012-92CA-F979-26B2F256D864}  
+title: Android Control Recipes  
+dateupdated:  2016-03-14
 ---
 
 User interface controls including buttons, text inputs, maps, etc.

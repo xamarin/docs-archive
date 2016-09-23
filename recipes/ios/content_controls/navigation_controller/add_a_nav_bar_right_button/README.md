@@ -1,8 +1,8 @@
 ---
-id:{79698AE6-8B70-7189-D52D-2D1801EEB833}  
-title:Add a Nav Bar Right Button  
-brief:This recipe shows how to add a right button to a navigation bar.  
-sdk:[UINavigationBar Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
+id: {79698AE6-8B70-7189-D52D-2D1801EEB833}  
+title: Add a Nav Bar Right Button  
+brief: This recipe shows how to add a right button to a navigation bar.  
+sdk: [UINavigationBar Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -11,7 +11,7 @@ sdk:[UINavigationBar Class Reference](https://developer.apple.com/library/ios/#d
 # Recipe
 
 To add a button to the `UINavigationBar` using a built-in icon from the
-`UIBarButtonSystemItem` enumeration:
+`UIBarButtonSystemItem` enumeration: 
 
 ```
 this.NavigationItem.SetRightBarButtonItem(
@@ -21,7 +21,7 @@ this.NavigationItem.SetRightBarButtonItem(
 , true);
 ```
 
-To add a button to the `UINavigationBar` using a custom image:
+To add a button to the `UINavigationBar` using a custom image: 
 
 ```
 this.NavigationItem.SetRightBarButtonItem(
@@ -38,7 +38,7 @@ this.NavigationItem.SetRightBarButtonItem(
 
 # Additional Information
 
-To remove the button:
+To remove the button: 
 
 ```
 this.NavigationItem.SetRightBarButtonItem(null, true);

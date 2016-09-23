@@ -1,10 +1,10 @@
 ---
-id:{92fba356-314e-4971-8e64-8f31379422d1}  
-title:Drag and Rotate an Image  
-brief:This recipe shows how to use gesture recognizers to drag and rotate an image.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/input/touch/drag_rotate_image)  
-sdk:[UIRotateGestureRecognizer](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIRotateGestureRecognizer_Class/Reference/Reference.html)  
-sdk:[UIPanGestureRecognizer](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIPanGestureRecognizer_Class/Reference/Reference.html)  
+id: {92fba356-314e-4971-8e64-8f31379422d1}  
+title: Drag and Rotate an Image  
+brief: This recipe shows how to use gesture recognizers to drag and rotate an image.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/input/touch/drag_rotate_image)  
+sdk: [UIRotateGestureRecognizer](http: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UIRotateGestureRecognizer_Class/Reference/Reference.html)  
+sdk: [UIPanGestureRecognizer](http: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UIPanGestureRecognizer_Class/Reference/Reference.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -14,7 +14,7 @@ sdk:[UIPanGestureRecognizer](http://developer.apple.com/library/ios/#documentati
 
  [ ![](Images/DragRotateImage.png)](Images/DragRotateImage.png)
 
-The following code assigns a `UIRotationGestureRecognizer` and a `UIPanGestureRecognizer` to a `UIImageView`, with implementations that enable image dragging and rotation via touch:
+The following code assigns a `UIRotationGestureRecognizer` and a `UIPanGestureRecognizer` to a `UIImageView`, with implementations that enable image dragging and rotation via touch: 
 
 ```
 UIRotationGestureRecognizer rotateGesture;

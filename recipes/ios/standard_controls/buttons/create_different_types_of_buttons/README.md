@@ -1,10 +1,10 @@
 ---
-id:{A9935042-877B-4CD1-8193-7D075439B7A7}  
-title:Create Different Types of Buttons  
-brief:This recipe shows you how to create the six different types of UIButton.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/standard_controls/buttons/create_different_types_of_buttons/)  
-article:[Handle clicks](/recipes/ios/standard_controls/buttons/handle_clicks)  
-sdk:[UIButton Class Reference](http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIButton_Class/UIButton/UIButton.html)  
+id: {A9935042-877B-4CD1-8193-7D075439B7A7}  
+title: Create Different Types of Buttons  
+brief: This recipe shows you how to create the six different types of UIButton.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/standard_controls/buttons/create_different_types_of_buttons/)  
+article: [Handle clicks](/recipes/ios/standard_controls/buttons/handle_clicks)  
+sdk: [UIButton Class Reference](http: //developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIButton_Class/UIButton/UIButton.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -12,7 +12,7 @@ sdk:[UIButton Class Reference](http://developer.apple.com/library/ios/#DOCUMENTA
 
 # Recipe
 
-There are six different types of UIButton, enumerated in UIButtonType:
+There are six different types of UIButton, enumerated in UIButtonType: 
 
  **System**
 
@@ -27,21 +27,21 @@ There are six different types of UIButton, enumerated in UIButtonType:
  **Custom**
 
 This screenshot shows the different types, along with two different custom
-buttons: one with an image and one with formatted text. There is no real visual difference between some of these button types in iOS 7 and later.
+buttons:  one with an image and one with formatted text. There is no real visual difference between some of these button types in iOS 7 and later.
 
  [ ![](Images/Buttons1.png)](Images/Buttons1.png)
 
-The sample code includes two different ViewControllers: one using an XIB file
+The sample code includes two different ViewControllers:  one using an XIB file
 and the other creating all the controls in C# code.
 
--  To create a button in code, use the `UIButton.FromType` static method like this:
+-  To create a button in code, use the `UIButton.FromType` static method like this: 
 
 
 ```
 var buttonRect = UIButton.FromType(UIButtonType.System);
 ```
 
--  If a text label is required, it is set using the `SetTitle` method:
+-  If a text label is required, it is set using the `SetTitle` method: 
 
 
 ```

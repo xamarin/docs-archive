@@ -1,9 +1,9 @@
 ---
-id:{D60C5A6A-FC9E-6AF2-7A70-81FF6249E7C4}  
-title: Create an Animation Block  
-brief:This recipe shows how to animate using blocks from Xamarin.iOS.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/create_an_animation_block)  
-sdk:[Core Animation Programming Guide](http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)  
+id: {D60C5A6A-FC9E-6AF2-7A70-81FF6249E7C4}  
+title:  Create an Animation Block  
+brief: This recipe shows how to animate using blocks from Xamarin.iOS.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/create_an_animation_block)  
+sdk: [Core Animation Programming Guide](http: //developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -13,10 +13,10 @@ sdk:[Core Animation Programming Guide](http://developer.apple.com/library/mac/#d
 
  [ ![](Images/Group.png)](Images/Group.png)
 
- Follow these steps to create the animation:
+ Follow these steps to create the animation: 
 
--  Add an image named `Icon.png` to the project with a [*Build Action*](http://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/) of **Content**.
--  Add the following using directives:
+-  Add an image named `Icon.png` to the project with a [*Build Action*](http: //developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/) of **Content**.
+-  Add the following using directives: 
 
 ```
 using CoreGraphics;

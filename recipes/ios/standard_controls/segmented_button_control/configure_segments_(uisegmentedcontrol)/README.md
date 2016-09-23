@@ -1,8 +1,8 @@
 ---
-id:{13B08892-8DDC-CDDE-63A1-9994E1569249}  
-title:Configure Segments (UISegmentedControl)  
-brief:This recipe shows how to create a UISegmentedControl.  
-sdk:[UISegmentedControl Class Reference](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UISegmentedControl_Class/)  
+id: {13B08892-8DDC-CDDE-63A1-9994E1569249}  
+title: Configure Segments (UISegmentedControl)  
+brief: This recipe shows how to create a UISegmentedControl.  
+sdk: [UISegmentedControl Class Reference](https: //developer.apple.com/library/ios/documentation/UIKit/Reference/UISegmentedControl_Class/)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -12,9 +12,9 @@ sdk:[UISegmentedControl Class Reference](https://developer.apple.com/library/ios
 
 <div class="note">On iOS 7 and above, the UISegmentedControl styling has been deprecated.</div>
 
-To create a `UISegementedControl`:
+To create a `UISegementedControl`: 
 
-1.  Create and position the control:
+1.  Create and position the control: 
 
 
 ```
@@ -23,7 +23,7 @@ segmentControl.Frame = new CGRect(20,20,280,40);
 ```
 
 <ol start="2">
-  <li>Add the segments and select the default:</li>
+  <li>Add the segments and select the default: </li>
 </ol>
 
 
@@ -34,7 +34,7 @@ segmentControl.SelectedSegment = 1;
 ```
 
 <ol srart="3">
-  <li>Optionally handle the <code>ValueChanged</code> event:</li>
+  <li>Optionally handle the <code>ValueChanged</code> event: </li>
 </ol>
 
 

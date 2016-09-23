@@ -1,10 +1,10 @@
 ---
-id:{F743415E-9120-34FA-452C-3B7D54AA33CD}  
-title:Add a Badge to a Tab Item  
-brief:This recipe shows how to display a badge on a tab.  
-article:[Create a Tab Bar](/recipes/ios/content_controls/tab_bar/create_a_tab_bar)  
-sdk:[UINavigationBar Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
-sdk:[UITabBarItem Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarItem_Class/Reference/Reference.html)  
+id: {F743415E-9120-34FA-452C-3B7D54AA33CD}  
+title: Add a Badge to a Tab Item  
+brief: This recipe shows how to display a badge on a tab.  
+article: [Create a Tab Bar](/recipes/ios/content_controls/tab_bar/create_a_tab_bar)  
+sdk: [UINavigationBar Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
+sdk: [UITabBarItem Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarItem_Class/Reference/Reference.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -19,14 +19,14 @@ in the App Store).
 
  ![](Images/Picture_1.png)
 
-A badge will appear on a tab if the BadgeValue property is set:
+A badge will appear on a tab if the BadgeValue property is set: 
 
 ```
 tab.TabBarItem.BadgeValue = "3";
 ```
 
 To remove a badge that has been previously displayed, set the property to
-null:
+null: 
 
 ```
 tab.TabBarItem.BadgeValue = null;

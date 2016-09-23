@@ -1,7 +1,7 @@
 ---
-id:{16bd8ca4-2320-4ccc-a1d9-f032920978f2}  
-title:Collision in CocosSharp  
-brief:How to test for collision in CocosSharp  
+id: {16bd8ca4-2320-4ccc-a1d9-f032920978f2}  
+title: Collision in CocosSharp  
+brief: How to test for collision in CocosSharp  
 ---
 
 
@@ -9,7 +9,7 @@ brief:How to test for collision in CocosSharp
 
 ## Detecting Collisions
 
-`CCSprite` provides a `BoundingBox` property which can be used to detect collision. For example, detecting a collision between a bullet `CCSprite` and an enemy `CCSprite` could be done as follows:
+`CCSprite` provides a `BoundingBox` property which can be used to detect collision. For example, detecting a collision between a bullet `CCSprite` and an enemy `CCSprite` could be done as follows: 
 
 ```
 if (bulletSprite.BoundingBox.IntersectsRect (enemySprite.BoundingBox))
@@ -18,7 +18,7 @@ if (bulletSprite.BoundingBox.IntersectsRect (enemySprite.BoundingBox))
 }
 ```
 
-If the sprites are attached to different `CCNode` parents, then using `BoundingBox` property (which is relative to the parent of the `CCSprite`) may cause unexpected results. The `BoundingBoxTransformedToWorld` property will detect collision correctly regardless even if `CCSprite` instances have different parents:
+If the sprites are attached to different `CCNode` parents, then using `BoundingBox` property (which is relative to the parent of the `CCSprite`) may cause unexpected results. The `BoundingBoxTransformedToWorld` property will detect collision correctly regardless even if `CCSprite` instances have different parents: 
 
 ```
 if (bulletSprite.BoundingBoxTransformedToWorld.IntersectsRect (enemySprite.BoundingBoxTransformedToWorld))
@@ -32,7 +32,7 @@ if (bulletSprite.BoundingBoxTransformedToWorld.IntersectsRect (enemySprite.Bound
 
 Some games include collidable objects which should not overlap, such as a player object and walls in a maze. In some cases one of the objects will be static (such as an immovable wall), while in other cases both objects can be moved. To enable this the first step is to find the *separation vector*, which contains an X and Y value that an object should be moved by to separate the colliding objects. Once the reposition vector is obtained, it can be applied wholly to one of the two colliding objects (making the other static), or the vector can be applied proportionally according to desired relative mass.
 
-The following shows how to obtain the separation vector from two `CCRect` instances:
+The following shows how to obtain the separation vector from two `CCRect` instances: 
 
 ```
 // Returns the vector that the 'first' should be moved by
@@ -50,7 +50,7 @@ CCVector2 GetSeparatingVector(CCRect first, CCRect second)
 		var intersectionRect = first.Intersection (second);
 
 		// Separation should occur by moving the minimum distance
-		// possible. We do this by checking which is smaller: width or height?
+		// possible. We do this by checking which is smaller:  width or height?
 		bool separateHorizontally = intersectionRect.Size.Width < intersectionRect.Size.Height;
 
 		if (separateHorizontally)
@@ -82,17 +82,17 @@ CCVector2 GetSeparatingVector(CCRect first, CCRect second)
 
 ```
 
-The following shows how a player can collide against a solid wall:
+The following shows how a player can collide against a solid wall: 
 
 ```
-// Assuming player and wall are both CCSprite instances:
+// Assuming player and wall are both CCSprite instances: 
 var separatingVector = GetSeparatingVector( player.BoundingBoxTransformedToWorld, wall.BoundingBoxTransformedToWorld);
 
 player.PositionX += separatingVector.X;
 player.PositionY += separatingVector.Y;
 ```
 
-The following shows how a player can collide against a movable block. The code is written such that the block is twice as massive as the player:
+The following shows how a player can collide against a movable block. The code is written such that the block is twice as massive as the player: 
 
 ```
 var separatingVector = GetSeparatingVector( player.BoundingBoxTransformedToWorld, block.BoundingBoxTransformedToWorld);

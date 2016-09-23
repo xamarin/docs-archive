@@ -1,13 +1,13 @@
 ---
-id:{30EFAE6F-8AF4-4D5D-9F06-328D76423581}  
-title:App Links for iOS  
-subtitle:How to Link to other apps and Handle Incoming links using App Links  
-dateupdated:2016-06-08
-brief:This recipe will show you how to link to other apps using App Links, as well as register your app to receive and parse incoming App Links.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/cross-platform/app-links/app-links-ios)  
-article:[Creating Connected App Experiences with App Links](http://blog.xamarin.com/creating-connected-app-experiences-with-app-links-and-rivets-with-xamarin/)  
-article:[Rivets Xamarin Component](http://components.xamarin.com/view/rivets)  
-article:[Official App Links Documentation](http://applinks.org/documentation/)  
+id: {30EFAE6F-8AF4-4D5D-9F06-328D76423581}  
+title: App Links for iOS  
+subtitle: How to Link to other apps and Handle Incoming links using App Links  
+dateupdated: 2016-06-08
+brief: This recipe will show you how to link to other apps using App Links, as well as register your app to receive and parse incoming App Links.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/cross-platform/app-links/app-links-ios)  
+article: [Creating Connected App Experiences with App Links](http: //blog.xamarin.com/creating-connected-app-experiences-with-app-links-and-rivets-with-xamarin/)  
+article: [Rivets Xamarin Component](http: //components.xamarin.com/view/rivets)  
+article: [Official App Links Documentation](http: //applinks.org/documentation/)  
 ---
 
 <a name="Overview" class="injected"></a>
@@ -29,11 +29,11 @@ There are two main parts to implementing App Links in your apps
 # Linking to other Apps
 
 -  Install the  **Rivets** component from the Component Store.
--  Find any instances where you navigate to a URL in your app (either by  `UIApplication.OpenUrl` or by loading the page into a custom web view) and replace them with this:
+-  Find any instances where you navigate to a URL in your app (either by  `UIApplication.OpenUrl` or by loading the page into a custom web view) and replace them with this: 
 
 
 ```
-Rivets.AppLinks.Navigator.Navigate(&quot;http://any.old.url&quot;)
+Rivets.AppLinks.Navigator.Navigate(&quot;http: //any.old.url&quot;)
 ```
 
 -  Your app will now attempt to Navigate to another installed app for the URL using App Links, or will fall back to using  `UIApplication.OpenUrl` if no App Link meta data is found, or no apps for the metadata are installed.
@@ -47,7 +47,7 @@ Rivets.AppLinks.Navigator.Navigate(&quot;http://any.old.url&quot;)
 -  Install the  **Rivets** component from the Component Store if you haven&#39;t already done so.
 
 
--  <ide name="xs">Open your app&#39;s  `Info.plist` file, and under the  **Advanced** tab, in the  **URL Types** section, add a new URL Type like:<br/> ![Image of Info.plist configuration](Images/app-links-incoming-ios-infoplist.png)</ide><ide name="vs">Manually edit your <code>Info.plist</code> file and add the following section:<br/><pre><code>
+-  <ide name="xs">Open your app&#39;s  `Info.plist` file, and under the  **Advanced** tab, in the  **URL Types** section, add a new URL Type like: <br/> ![Image of Info.plist configuration](Images/app-links-incoming-ios-infoplist.png)</ide><ide name="vs">Manually edit your <code>Info.plist</code> file and add the following section: <br/><pre><code>
 &lt;key&gt;CFBundleURLTypes&lt;/key&gt;
 	&lt;array&gt;
 		&lt;dict&gt;
@@ -63,7 +63,7 @@ Rivets.AppLinks.Navigator.Navigate(&quot;http://any.old.url&quot;)
 	&lt;/array&gt;
 </code></pre></ide>
 
--  In your  `AppDelegate` , setup your app to have a Navigation controller which is your window&#39;s root view controller, like this:
+-  In your  `AppDelegate` , setup your app to have a Navigation controller which is your window&#39;s root view controller, like this: 
   
 ```
 UINavigationController navController;
@@ -80,13 +80,13 @@ public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 }
 ```
 
--  Create a view controller to display your product:
+-  Create a view controller to display your product: 
 
 
 ```
-public partial class ProductViewController : UIViewController
+public partial class ProductViewController :  UIViewController
 {
-    public ProductViewController (string productId) : base ()
+    public ProductViewController (string productId) :  base ()
     {
         ProductId = productId;
     }
@@ -103,7 +103,7 @@ public partial class ProductViewController : UIViewController
 }
 ```
 
--  In your  `AppDelegate` add the following code:
+-  In your  `AppDelegate` add the following code: 
 
 
 ```
@@ -127,10 +127,10 @@ public override bool OpenUrl (UIApplication app, NSUrl url, string sourceApp, NS
 }
 ```
 
--  When your app is opened with the url  `example://products?id=12345` the product view controller will be displayed and you should see the id  `12345` from the query string displayed.
+-  When your app is opened with the url  `example: //products?id=12345` the product view controller will be displayed and you should see the id  `12345` from the query string displayed.
 
 
--  Create an HTML page with the following HTML:
+-  Create an HTML page with the following HTML: 
 
 
 
@@ -139,7 +139,7 @@ public override bool OpenUrl (UIApplication app, NSUrl url, string sourceApp, NS
 <html>
  <head>
   <title>Product 12345</title>
-  <meta property=&quot;al:ios:url&quot; content=&quot;example://products?id=12345&quot; />
+  <meta property=&quot;al: ios: url&quot; content=&quot;example: //products?id=12345&quot; />
  </head>
  <body>
   <h1>Product 12345</h1>
@@ -151,13 +151,13 @@ public override bool OpenUrl (UIApplication app, NSUrl url, string sourceApp, NS
 -  Publish this page somewhere on the internet, or at a location your iOS app can reach.
 
 
--  Test navigating using App Links from your iOS app by calling this method somewhere:
+-  Test navigating using App Links from your iOS app by calling this method somewhere: 
 
 
 
 
 ```
-Rivets.AppLinks.Navigator.Navigate(&quot;http://location/of/your/html/file.html&quot;);
+Rivets.AppLinks.Navigator.Navigate(&quot;http: //location/of/your/html/file.html&quot;);
 ```
 
  <a name="Summary" class="injected"></a>

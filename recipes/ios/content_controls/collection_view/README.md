@@ -1,7 +1,7 @@
 ---
-id:{acea92d3-01e4-4439-9362-38be88511050}  
-title:Collection View  
-subtitle:UICollectionView Control  
+id: {acea92d3-01e4-4439-9362-38be88511050}  
+title: Collection View  
+subtitle: UICollectionView Control  
 ---
 
 The Collection View is a way to present a set of data in a flexible layout.  The

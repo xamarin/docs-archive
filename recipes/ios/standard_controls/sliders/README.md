@@ -1,6 +1,6 @@
 ---
-id:{32E5A9A4-DD7B-0312-F224-BE43F49977F6}  
-title:Sliders  
+id: {32E5A9A4-DD7B-0312-F224-BE43F49977F6}  
+title: Sliders  
 ---
 
 Sliders are a horizontal UI control that display a single value to the user

@@ -1,9 +1,9 @@
 ---
-id:{735DF15C-218B-EC0F-3663-DCFF372CE93A}  
-title:Specify Segment Sizes  
-brief:This recipe shows how to create a UISegmentedControl with different sized segments.  
-article:[Configure Segments](/recipes/ios/standard_controls/segmented_button_control/configure_segments_(uisegmentedcontrol))  
-sdk:[UISegmentedControl Class Reference](http://developer.apple.com/library/ios/#documentation/uikit/reference/UISegmentedControl_Class/Reference/UISegmentedControl.html)  
+id: {735DF15C-218B-EC0F-3663-DCFF372CE93A}  
+title: Specify Segment Sizes  
+brief: This recipe shows how to create a UISegmentedControl with different sized segments.  
+article: [Configure Segments](/recipes/ios/standard_controls/segmented_button_control/configure_segments_(uisegmentedcontrol))  
+sdk: [UISegmentedControl Class Reference](http: //developer.apple.com/library/ios/#documentation/uikit/reference/UISegmentedControl_Class/Reference/UISegmentedControl.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -11,9 +11,9 @@ sdk:[UISegmentedControl Class Reference](http://developer.apple.com/library/ios/
 
 # Recipe
 
-To create a `UISegementedControl` where the segments are different widths:
+To create a `UISegementedControl` where the segments are different widths: 
 
--  Create and position the control:
+-  Create and position the control: 
 
 
 ```
@@ -21,7 +21,7 @@ var segmentControl = new UISegmentedControl();
 segmentControl.Frame = new CGRect(20,20,200,40);
 ```
 
--  Add the segments and select the default:
+-  Add the segments and select the default: 
 
 
 ```

@@ -1,8 +1,8 @@
 ---
-id:{9A6AF59E-BAEE-03B3-03A4-94A235C27CBF}  
-title:Create a Database with SQLiteNET  
-brief:This recipe will demonstrate how to create an SQLite database with SQLite-NET.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/data/sqlite/create_a_database_with_sqlitenet)  
+id: {9A6AF59E-BAEE-03B3-03A4-94A235C27CBF}  
+title: Create a Database with SQLiteNET  
+brief: This recipe will demonstrate how to create an SQLite database with SQLite-NET.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/data/sqlite/create_a_database_with_sqlitenet)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -29,7 +29,7 @@ highlighting the relevant parts.
  [![](Images/nuget_install.png)](Images/nuget_install_big.png) ![](Images/nuget_result.png)
 
 <ol start="4">
-  <li>Create a <code>Person</code> class that will represent a row inside an SQLite table named <code>Person</code> table:</li>
+  <li>Create a <code>Person</code> class that will represent a row inside an SQLite table named <code>Person</code> table: </li>
 </ol>
 
 ```
@@ -47,7 +47,7 @@ in the table for each of the properties in the Person class. The <code>ID</code>
 
 <ol start="5">
 
-  <li>The snippet for creating the database with a <code>Person</code> table can be see in the file <strong>CreateDatabaseWithSqliteNet.cs</strong>, lines 82-85:</li>
+  <li>The snippet for creating the database with a <code>Person</code> table can be see in the file <strong>CreateDatabaseWithSqliteNet.cs</strong>, lines 82-85: </li>
 </ol>
 
 ```
@@ -57,7 +57,7 @@ using (var conn= new SQLite.SQLiteConnection(_pathToDatabase))
 }
 ```
 <ol start="6">
-  <li>The code for inserting a new <code>Person</code> row into the person table can be the file <strong>CreateDatabaseWithSqliteNet.cs</strong>, lines 98-102:</li>
+  <li>The code for inserting a new <code>Person</code> row into the person table can be the file <strong>CreateDatabaseWithSqliteNet.cs</strong>, lines 98-102: </li>
 </ol>
 
 ```
@@ -69,13 +69,13 @@ using (var db = new SQLite.SQLiteConnection(_pathToDatabase ))
 ```
 
 <ol start="7">
-  <li>Run the application. First click on the <strong>Create Database</strong> button to create the database and the schema:</li>
+  <li>Run the application. First click on the <strong>Create Database</strong> button to create the database and the schema: </li>
 </ol>
 
  ![](Images/data_create.png)
 
 <ol start="8">
-  <li>Now each time the <strong>Insert User</strong> button is clicked, another row is added to the <span class="s1">Person</span> table:</li>
+  <li>Now each time the <strong>Insert User</strong> button is clicked, another row is added to the <span class="s1">Person</span> table: </li>
 </ol>
 
  ![](Images/data_multi_users.png)

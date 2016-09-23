@@ -1,12 +1,12 @@
 ---
-id:1fd0aba3-95a1-4830-b279-36cdb7e2b5ad
-title:Call JavaScript from C#
-subtitle:Evaluating JavaScript hosted in a WebView
-brief:This recipe shows how to call a JavaScript function from C#, where the JavaScript function is defined in a web page hosted by the WebView control.
-samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/CallJavaScript/)
-article:[WebView](/guides/xamarin-forms/user-interface/webview/)
-api:[WebView](/api/type/Xamarin.Forms.WebView/)
-api:[HtmlWebViewSource](/api/type/Xamarin.Forms.HtmlWebViewSource/)
+id: 1fd0aba3-95a1-4830-b279-36cdb7e2b5ad
+title: Call JavaScript from C#
+subtitle: Evaluating JavaScript hosted in a WebView
+brief: This recipe shows how to call a JavaScript function from C#, where the JavaScript function is defined in a web page hosted by the WebView control.
+samplecode: [Browse on Github](https: //github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/CallJavaScript/)
+article: [WebView](/guides/xamarin-forms/user-interface/webview/)
+api: [WebView](/api/type/Xamarin.Forms.WebView/)
+api: [HtmlWebViewSource](/api/type/Xamarin.Forms.HtmlWebViewSource/)
 ---
 
 # Overview
@@ -15,7 +15,7 @@ The Xamarin.Forms [`WebView`](/api/type/Xamarin.Forms.WebView/) control displays
 
 ## Calling JavaScript
 
-The following code example shows how a JavaScript function can be invoked from C#:
+The following code example shows how a JavaScript function can be invoked from C#: 
 
 ```
 void OnCallJavaScriptButtonClicked (object sender, EventArgs e)
@@ -30,14 +30,14 @@ void OnCallJavaScriptButtonClicked (object sender, EventArgs e)
 
 The [`WebView.Eval`](/api/member/Xamarin.Forms.WebView.Eval/p/System.String/) method evaluates the JavaScript that's specified as the method argument. In this example the `printMultiplicationTable` JavaScript function is invoked, which in turn displays a multiplication table for the passed parameters.
 
-<div class="note"><p>There is currently a bug in Xamarin.Forms where Windows Phone 8.1 (WinRT) will throw a <code>NotImplementedException</code> when the <code>WebView.Eval</code> method is invoked. See <a href="https://bugzilla.xamarin.com/show_bug.cgi?id=35529">Bugzilla</a> for more information as well as the latest status.</p></div>
+<div class="note"><p>There is currently a bug in Xamarin.Forms where Windows Phone 8.1 (WinRT) will throw a <code>NotImplementedException</code> when the <code>WebView.Eval</code> method is invoked. See <a href="https: //bugzilla.xamarin.com/show_bug.cgi?id=35529">Bugzilla</a> for more information as well as the latest status.</p></div>
 
-The `printMultiplicationTable` JavaScript function is defined in the local HTML file that the `WebView` control loads, as shown in the following code example:
+The `printMultiplicationTable` JavaScript function is defined in the local HTML file that the `WebView` control loads, as shown in the following code example: 
 
 ```
 <html>
 <body>
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http: //code.jquery.com/jquery-2.1.4.min.js"></script>
 <div id='multiplicationtable'></div>
 <script type="text/javascript">
 function printMultiplicationTable(num, stop)

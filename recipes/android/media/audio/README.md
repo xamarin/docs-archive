@@ -1,6 +1,6 @@
 ---
-id:{94811333-33FB-1578-BA11-E10F08D3D950}  
-title:Audio  
+id: {94811333-33FB-1578-BA11-E10F08D3D950}  
+title: Audio  
 ---
 
 Android includes classes that make it easy to work with audio such as the

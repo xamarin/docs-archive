@@ -1,6 +1,6 @@
 ---
-id:{2DD5F954-DED9-D0A8-1493-D9961D97A376}  
-title:TextureView  
+id: {2DD5F954-DED9-D0A8-1493-D9961D97A376}  
+title: TextureView  
 ---
 
 A TextureView is a specialized view for a hardware accelerated window that is

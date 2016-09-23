@@ -1,12 +1,12 @@
 ---
-id:{CB9D9E60-6DC2-A16A-8730-0AEE11DCB300}  
-title:Creating an Unwind Segue  
-brief:This recipe shows how to use the iOS Designer to create an Unwind Segue between Scenes in a Storyboard.  
-samplecode:[Unwind](https://github.com/xamarin/recipes/tree/master/ios/general/storyboard/unwind_segue)  
-article:[Introduction to Storybords](/guides/ios/user_interface/introduction_to_storyboards/)  
-article:[Xamarin Designer for iOS](/guides/ios/user_interface/designer/)  
-sdk:[UIStoryboard Class Reference&nbsp;](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html)  
-sdk:[UIStoryboardSegue Class Reference &nbsp;](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboardSegue_Class/Reference/Reference.html)  
+id: {CB9D9E60-6DC2-A16A-8730-0AEE11DCB300}  
+title: Creating an Unwind Segue  
+brief: This recipe shows how to use the iOS Designer to create an Unwind Segue between Scenes in a Storyboard.  
+samplecode: [Unwind](https: //github.com/xamarin/recipes/tree/master/ios/general/storyboard/unwind_segue)  
+article: [Introduction to Storybords](/guides/ios/user_interface/introduction_to_storyboards/)  
+article: [Xamarin Designer for iOS](/guides/ios/user_interface/designer/)  
+sdk: [UIStoryboard Class Reference&nbsp;](http: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html)  
+sdk: [UIStoryboardSegue Class Reference &nbsp;](http: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboardSegue_Class/Reference/Reference.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -16,9 +16,9 @@ sdk:[UIStoryboardSegue Class Reference &nbsp;](http://developer.apple.com/librar
 
 An unwind Segue can be used to navigate back through a push or modal segue - for example by dismissing the modally presented view controller. In addition to this, you can unwind through not only one, but a series of push and modal segues and go back multiple steps in your navigation heirarchy with a single unwind action.
 
-To create an unwind Segue in the Xamarin Designer for iOS:
+To create an unwind Segue in the Xamarin Designer for iOS: 
 
--  Create a new  <span class="UIItem">iPhone > Single View Application</span> with Xamarin Studio or Visual Studio:
+-  Create a new  <span class="UIItem">iPhone > Single View Application</span> with Xamarin Studio or Visual Studio: 
 
 
  [ ![](Images/unwindSegue2.png)](Images/unwindSegue2.png)
@@ -43,9 +43,9 @@ To create an unwind Segue in the Xamarin Designer for iOS:
 
  [ ![](Images/BackgroundColour.png)](Images/BackgroundColour.png)
 
--  Select each UIViewController and change the  <span class="UIItem">Identity > Class</span> in the  <span class="UIItem">Properties Pad</span> to reflect the background color. -   Yellow Background: YellowViewController
--   Magenta Background: PinkViewController
--   Green Background: GreenViewController
+-  Select each UIViewController and change the  <span class="UIItem">Identity > Class</span> in the  <span class="UIItem">Properties Pad</span> to reflect the background color. -   Yellow Background:  YellowViewController
+-   Magenta Background:  PinkViewController
+-   Green Background:  GreenViewController
 
 
 
@@ -53,9 +53,9 @@ To create an unwind Segue in the Xamarin Designer for iOS:
 
  [ ![](Images/NameViewControllers.png)](Images/NameViewControllers.png)
 
--  To finish creating the UI use the  <span class="UIItem">Toolbox</span> and add  <span class="UIItem">Buttons</span> to your View as follows. -   YellowViewController : 1  <span class="UIItem">Button</span>  with title "Go To Pink"
--   PinkViewController: 2  <span class="UIItem">Buttons</span>  , one with title "Go To Green", the other "Unwind to Yellow"
--   GreenViewController: 2  <span class="UIItem">Buttons</span>  , one with title "Unwind to Pink", the other "Unwind to Yellow"
+-  To finish creating the UI use the  <span class="UIItem">Toolbox</span> and add  <span class="UIItem">Buttons</span> to your View as follows. -   YellowViewController :  1  <span class="UIItem">Button</span>  with title "Go To Pink"
+-   PinkViewController:  2  <span class="UIItem">Buttons</span>  , one with title "Go To Green", the other "Unwind to Yellow"
+-   GreenViewController:  2  <span class="UIItem">Buttons</span>  , one with title "Unwind to Pink", the other "Unwind to Yellow"
 
 
 
@@ -63,7 +63,7 @@ To create an unwind Segue in the Xamarin Designer for iOS:
 
  [ ![](Images/AddButtons.png)](Images/AddButtons.png)
 
--  The Storyboard should now look like this:
+-  The Storyboard should now look like this: 
 
 
  [ ![](Images/finishedui.png)](Images/finishedui.png)
@@ -88,22 +88,22 @@ To create an unwind Segue in the Xamarin Designer for iOS:
 -  Repeat the previous step, this time between the 'Go To Green' and the GreenViewController.
 
 
--  We now need to specify an  *Action* method in the View Controllers we wish to unwind to. The method takes a  `segue` paramater and can be called anything you wish. Make sure the Action String and method name match. Add the following code to YellowViewController:
+-  We now need to specify an  *Action* method in the View Controllers we wish to unwind to. The method takes a  `segue` paramater and can be called anything you wish. Make sure the Action String and method name match. Add the following code to YellowViewController: 
 
 
 ```
-[Action ("UnwindToYellowViewController:")]
+[Action ("UnwindToYellowViewController: ")]
 public void UnwindToYellowViewController (UIStoryboardSegue segue)
 {
     Console.WriteLine ("We've unwinded to Yellow!");
 }
 ```
 
--  Add a similar method to the PinkViewController:
+-  Add a similar method to the PinkViewController: 
 
 
 ```
-[Action ("UnwindToPinkViewController:")]
+[Action ("UnwindToPinkViewController: ")]
 public void UnwindToPinkViewController (UIStoryboardSegue segue)
 {
     Console.WriteLine ("We've unwinded to Pink!");
@@ -128,7 +128,7 @@ public void UnwindToPinkViewController (UIStoryboardSegue segue)
 -  Move to the GreenViewController and repeat the steps above to add an unwind Segue to both buttons. The 'Unwind To Yellow' Button should map to  `UnwindToYellowViewController` , and the 'Unwind To Pink' Button should map to  `UnwindToPinkViewController` .
 
 
-The application should now navigate as illustrated in the screenshot below:
+The application should now navigate as illustrated in the screenshot below: 
 
  [ ![](Images/unwind.png)](Images/unwind.png)
 

@@ -1,6 +1,6 @@
 ---
-id:{E59764F6-D1E8-8D8F-1A1E-ADA215319660}  
-title:Segmented Button Control  
+id: {E59764F6-D1E8-8D8F-1A1E-ADA215319660}  
+title: Segmented Button Control  
 ---
 
 The segmented button control is a horizontal control consisting of multiple

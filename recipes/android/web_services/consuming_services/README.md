@@ -1,7 +1,7 @@
 ---
-id:{9D2ABF86-067F-227A-59C4-DFDDBC66AD08}  
-title:Consuming Services  
-subtitle:Interacting with the Cloud  
+id: {9D2ABF86-067F-227A-59C4-DFDDBC66AD08}  
+title: Consuming Services  
+subtitle: Interacting with the Cloud  
 ---
 
 Very few mobile applications today exist in a vacuum. Many need to interact

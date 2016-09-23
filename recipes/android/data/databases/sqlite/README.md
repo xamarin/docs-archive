@@ -1,10 +1,10 @@
 ---
-id:{539DA850-8AE3-4F11-9572-263CEB28858F}
-title:Create a Database with SQLite
-brief:This recipe will demonstrate how to create an SQLite database.
-article:[Create a Database with SQLite - iOS](/recipes/ios/data/sqlite/create_a_database_with_sqlitenet/)
-article:[Create a Database with SQLite Component](/recipes/android/data/databases/sqlite-component/)
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/data/databases/sqlite)  
+id: {539DA850-8AE3-4F11-9572-263CEB28858F}
+title: Create a Database with SQLite
+brief: This recipe will demonstrate how to create an SQLite database.
+article: [Create a Database with SQLite - iOS](/recipes/ios/data/sqlite/create_a_database_with_sqlitenet/)
+article: [Create a Database with SQLite Component](/recipes/android/data/databases/sqlite-component/)
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/data/databases/sqlite)  
 ---
 
 # Recipe
@@ -14,7 +14,7 @@ platform, but the associated downloads show how to incorporate them within your 
 
 1. Create your application.
 2. Add the Sqlite-Net nuget package by Frank Kreuger.
-3. Create a file called Person.cs. This will contain the table for the database. The following code snippet demonstrates how to set up the table:
+3. Create a file called Person.cs. This will contain the table for the database. The following code snippet demonstrates how to set up the table: 
 
 ```
 public class Person
@@ -28,7 +28,7 @@ public class Person
 
      public override string ToString()
      {
-        return string.Format("[Person: ID={0}, FirstName={1}, LastName={2}]", ID, FirstName, LastName);
+        return string.Format("[Person:  ID={0}, FirstName={1}, LastName={2}]", ID, FirstName, LastName);
      }
 }
 ```
@@ -41,12 +41,12 @@ of the source file.
 The SQLite table class cannot contain a number of commonly used types (including arrays, all generic classes and GUIDs).
 If you wish to include these in your table classes, place `[Ignore]` before the property.
 
-Your file tree should look like this:
+Your file tree should look like this: 
 
  <img src="Images/Create.png" />
 
 1. The first step in the creation of the database is to create a connection. The following snippet shows how to connect using
-the `createDatabase` method:
+the `createDatabase` method: 
 
 ```
 private string createDatabase(string path)

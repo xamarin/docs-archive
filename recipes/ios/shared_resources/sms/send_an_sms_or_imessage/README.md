@@ -1,9 +1,9 @@
 ---
-id:{3E0CD68A-800E-A5CD-62DF-4E4DB09EF367}  
-title:Send an SMS or iMessage  
-brief:This recipe shows how to send an SMS or iMessage.  
-sdk:[UIApplication Class Reference](http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIApplication_Class/Reference/Reference.html)  
-sdk:[Apple URL Scheme Reference](http://developer.apple.com/library/ios/#featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html)  
+id: {3E0CD68A-800E-A5CD-62DF-4E4DB09EF367}  
+title: Send an SMS or iMessage  
+brief: This recipe shows how to send an SMS or iMessage.  
+sdk: [UIApplication Class Reference](http: //developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIApplication_Class/Reference/Reference.html)  
+sdk: [Apple URL Scheme Reference](http: //developer.apple.com/library/ios/#featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -14,14 +14,14 @@ sdk:[Apple URL Scheme Reference](http://developer.apple.com/library/ios/#feature
 To send an SMS using the `UIApplication.SharedApplication.OpenUrl` method,
 follow these steps.
 
--  Create an `NSUrl` containing the telephone number to send the SMS to:
+-  Create an `NSUrl` containing the telephone number to send the SMS to: 
 
 
 ```
-var smsTo = NSUrl.FromString("sms:18015551234");
+var smsTo = NSUrl.FromString("sms: 18015551234");
 ```
 
--  Call `OpenUrl` with the `NSUrl`:
+-  Call `OpenUrl` with the `NSUrl`: 
 
 
 ```
@@ -30,10 +30,10 @@ UIApplication.SharedApplication.OpenUrl(smsTo);
 
 The Messages application will detect if the number you requested has iMessage
 enabled and will automatically switch to iMessage if possible. To trigger an
-iMessage to an Apple ID, replace the telephone number with the Apple ID:
+iMessage to an Apple ID, replace the telephone number with the Apple ID: 
 
 ```
-var imessageTo = NSUrl.FromString("sms:john@doe.com");
+var imessageTo = NSUrl.FromString("sms: john@doe.com");
 UIApplication.SharedApplication.OpenUrl(imessageTo);
 ```
 
@@ -44,10 +44,10 @@ UIApplication.SharedApplication.OpenUrl(imessageTo);
 
 The `OpenUrl` method returns a bool which is false if there is no application
 to handle the request. You can detect whether an application is present using
-the `CanOpenUrl` method like this:
+the `CanOpenUrl` method like this: 
 
 ```
-var smsTo = NSUrl.FromString("sms:18015551234");
+var smsTo = NSUrl.FromString("sms: 18015551234");
 if (UIApplication.SharedApplication.CanOpenUrl(smsTo)) {
     UIApplication.SharedApplication.OpenUrl(smsTo);
 } else {

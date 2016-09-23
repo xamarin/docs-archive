@@ -1,24 +1,24 @@
 ---
-id:{3BF2B1FB-B4D3-4986-9630-7DC7B19E55D7}  
-title:Blur an Image with Renderscript  
-subtitle:Apply a Gaussian Blur with Renderscript  
-brief:This recipe shows how to apply a Gaussian blur an image using the class Android.Renderscripts.ScriptIntrinsicBlur, which is first available in Android 4.2.2 (API level 17).  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/drawing/blur_an_image_with_renderscript)  
-article:[Blurring Images on Android](http://blog.neteril.org/blog/2013/08/12/blurring-images-on-android/)  
-recipe:[Blur an Image with Managed Code](/recipes/android/other_ux/drawing/blur_an_image_with_managed_code/)  
-api:[ScriptIntrinsicBlur](http://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlur.html)  
-sdk:[Renderscript Computation](http://developer.android.com/guide/topics/renderscript/compute.html)  
+id: {3BF2B1FB-B4D3-4986-9630-7DC7B19E55D7}  
+title: Blur an Image with Renderscript  
+subtitle: Apply a Gaussian Blur with Renderscript  
+brief: This recipe shows how to apply a Gaussian blur an image using the class Android.Renderscripts.ScriptIntrinsicBlur, which is first available in Android 4.2.2 (API level 17).  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/other_ux/drawing/blur_an_image_with_renderscript)  
+article: [Blurring Images on Android](http: //blog.neteril.org/blog/2013/08/12/blurring-images-on-android/)  
+recipe: [Blur an Image with Managed Code](/recipes/android/other_ux/drawing/blur_an_image_with_managed_code/)  
+api: [ScriptIntrinsicBlur](http: //developer.android.com/reference/android/renderscript/ScriptIntrinsicBlur.html)  
+sdk: [Renderscript Computation](http: //developer.android.com/guide/topics/renderscript/compute.html)  
 ---
 
-This recipe shows one way to blur an image using an API that was introduced in Android 4.2.2 (API level 17) - `Android.Renderscripts.ScriptIntrinsicBlur`. This class will apply a [Gaussian blur](http://en.wikipedia.org/wiki/Gaussian_blur). `ScriptIntrinsicBlur` is a pre-implemented graphics
-    filter that runs at the native level for maximum performance. Because this class uses [Renderscript](http://developer.android.com/guide/topics/renderscript/compute.html), it can spread out the
+This recipe shows one way to blur an image using an API that was introduced in Android 4.2.2 (API level 17) - `Android.Renderscripts.ScriptIntrinsicBlur`. This class will apply a [Gaussian blur](http: //en.wikipedia.org/wiki/Gaussian_blur). `ScriptIntrinsicBlur` is a pre-implemented graphics
+    filter that runs at the native level for maximum performance. Because this class uses [Renderscript](http: //developer.android.com/guide/topics/renderscript/compute.html), it can spread out the
     workload over all the CPU cores on the device for maximum performance.
 
 The recipe [Blur an Image with Managed Code]() is a example of how to apply a blur effect on all Android API levels.
 
-This application will display a picture and a [SeekBar](http://developer.android.com/reference/android/widget/SeekBar.html).
+This application will display a picture and a [SeekBar](http: //developer.android.com/reference/android/widget/SeekBar.html).
     The value of the <span class="uiitem">SeekBar</span> will determine how much the image should be blurred. You can see
-    this application running in the following screenshots:
+    this application running in the following screenshots: 
 
  ![](Images/image01.png) ![](Images/image03.png)
 
@@ -36,30 +36,30 @@ This recipe will only work with Android 4.2.2 (API level 17) or higher.
 
 
 
-The UI for this recipe is contained in the following XML layout file:
+The UI for this recipe is contained in the following XML layout file: 
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  android:orientation="vertical"
-                  android:layout_width="fill_parent"
-                  android:layout_height="fill_parent">
+    <LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+                  android: orientation="vertical"
+                  android: layout_width="fill_parent"
+                  android: layout_height="fill_parent">
         <SeekBar
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/seekBar1"
-                android:max="25" />
+                android: layout_width="fill_parent"
+                android: layout_height="wrap_content"
+                android: id="@+id/seekBar1"
+                android: max="25" />
         <ImageView
-                android:src="@drawable/dog_and_monkeys"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:id="@+id/originalImageView" />
+                android: src="@drawable/dog_and_monkeys"
+                android: layout_width="fill_parent"
+                android: layout_height="fill_parent"
+                android: id="@+id/originalImageView" />
     </LinearLayout>
 ```
 
 This is a very simple UI that has an `ImageView` and a `SeekBar`. We inflate this layout and
 wire up an event handler to the `SeekBar` in `OnCreate` method of our activity, as shown in the
-following code:
+following code: 
 
 ```
 protected override void OnCreate (Bundle bundle)
@@ -76,7 +76,7 @@ protected override void OnCreate (Bundle bundle)
 
 When the user stops sliding their finger along the `SeekBar`, the `StopTrackingTouch` event
 will be fired and the `BlurImageHandler` method invoked. The contents of this handler maybe seen in the
-following snippet:
+following snippet: 
 
 ```
 private void BlurImageHandler (object sender, SeekBar.StopTrackingTouchEventArgs e)
@@ -92,7 +92,7 @@ private void BlurImageHandler (object sender, SeekBar.StopTrackingTouchEventArgs
 ```
 
 If the `SeekBar` has a value greater than zero, then we will need to apply a blur filter. If the value
-of the `SeekBar` is zero, then no blur needs to be applied. The code inside `DisplayBlurredImage` can be seen below:
+of the `SeekBar` is zero, then no blur needs to be applied. The code inside `DisplayBlurredImage` can be seen below: 
 
 ```
 private void DisplayBlurredImage (int radius)
@@ -124,7 +124,7 @@ that we created to do this work has a continuation that will update the UI with 
 progress dialog. This continuation is scheduled to run in the UI thread of our application.
 
 The final piece of code we need to examine will perform the actual blurring of the image.  The code for this is contained
-in the method `CreateBlurredImage`. This code has comments inline to help explain the relevant parts of code:
+in the method `CreateBlurredImage`. This code has comments inline to help explain the relevant parts of code: 
 
 ```
 private Bitmap CreateBlurredImage (int radius)

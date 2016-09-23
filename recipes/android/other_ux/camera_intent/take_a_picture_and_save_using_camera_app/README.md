@@ -1,8 +1,8 @@
 ---
-id:{8CB9984C-0856-AE4D-CBFC-9C2D87168275}  
-title:Take a Picture and Save Using Camera App  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/camera_intent/take_a_picture_and_save_using_camera_app)  
-sdk:[Camera](http://developer.android.com/reference/android/hardware/Camera.html)  
+id: {8CB9984C-0856-AE4D-CBFC-9C2D87168275}  
+title: Take a Picture and Save Using Camera App  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/other_ux/camera_intent/take_a_picture_and_save_using_camera_app)  
+sdk: [Camera](http: //developer.android.com/reference/android/hardware/Camera.html)  
 ---
 
 This recipe shows how to launch the built-in camera application to take
@@ -18,25 +18,25 @@ a picture, save it to a file, and display it in an ImageView.
 
 -   Add the `CAMERA` and `WRITE_EXTERNAL_STORAGE` permissions to **AndroidManifest.xml**.
 
--   Add the following XML to **Main.axml**:
+-   Add the following XML to **Main.axml**: 
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+<LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: orientation="vertical"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent">
     <Button
-        android:id="@+id/myButton"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/openCamera" />
+        android: id="@+id/myButton"
+        android: layout_width="fill_parent"
+        android: layout_height="wrap_content"
+        android: text="@string/openCamera" />
     <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
-        android:layout_width="fill_parent"
-        android:layout_height="300.0dp"
-        android:id="@+id/imageView1"
-        android:adjustViewBounds="true" />
+        android: src="@android: drawable/ic_menu_gallery"
+        android: layout_width="fill_parent"
+        android: layout_height="300.0dp"
+        android: id="@+id/imageView1"
+        android: adjustViewBounds="true" />
 </LinearLayout>
 ```
 
@@ -46,7 +46,7 @@ a picture, save it to a file, and display it in an ImageView.
 <string name="openCamera">Open Camera</string>
 ```
 
--  In **MainActivity.cs**, declare the following static class with variables:
+-  In **MainActivity.cs**, declare the following static class with variables: 
 
 
 ```
@@ -58,7 +58,7 @@ public static class App {
 ```
 
 -   Next we need to update the `OnCreate` method to match the following
-    snippet:
+    snippet: 
 
 ```
 protected override void OnCreate (Bundle bundle)
@@ -78,7 +78,7 @@ protected override void OnCreate (Bundle bundle)
 
 ```
 
--   Add the following helper methods to `MainActivity`:
+-   Add the following helper methods to `MainActivity`: 
 
 ```
 private void CreateDirectoryForPictures ()
@@ -104,7 +104,7 @@ private bool IsThereAnAppToTakePictures ()
 
 -   Next we need to implement the event handler for the `Click` event
     on the button. In this example we will create a method that will
-    handle the event:
+    handle the event: 
 
 ```
 private void TakeAPicture (object sender, EventArgs eventArgs)
@@ -124,7 +124,7 @@ application. Notice that in the `Intent` we provide the location of where
 the Camera application should the picture. When the Camera activity
 has finished taking the picture, Android will call `OnActivityResult`
 in our Activity. Go ahead and implement `OnActivityResult` as shown in
-the following snippet of code:
+the following snippet of code: 
 
 
 ```
@@ -163,11 +163,11 @@ call `GC.Collect()` to dispose of the Java side bitmap (which is no
 longer referenced) - this is necessary to avoid `OutOfMemory` 
 exceptions. For more information about managing bitmap memory in
 Android, see
-[Managing Bitmap Memory](https://developer.android.com/training/displaying-bitmaps/manage-memory.html).
+[Managing Bitmap Memory](https: //developer.android.com/training/displaying-bitmaps/manage-memory.html).
 
 -   Finally, we need to create the helper method to resize the picture.
     The following class is one example of how to do so using an
-    extension method:
+    extension method: 
 
 ```
 public static class BitmapHelpers
@@ -188,7 +188,7 @@ public static class BitmapHelpers
         {
             inSampleSize = outWidth > outHeight
                                ? outHeight / height
-                               : outWidth / width;
+                               :  outWidth / width;
         }
 
         // Now we will load the image and have BitmapFactory resize it for us.

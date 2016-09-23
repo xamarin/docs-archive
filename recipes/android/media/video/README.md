@@ -1,6 +1,6 @@
 ---
-id:{6E00A475-8131-0AE8-837C-F7FF68BD2BB3}  
-title:Video  
+id: {6E00A475-8131-0AE8-837C-F7FF68BD2BB3}  
+title: Video  
 ---
 
 Android includes support for working with video. Using classes such as the

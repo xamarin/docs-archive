@@ -1,12 +1,12 @@
 ---
-id:{36244106-F6EA-8F5B-D2F4-12B4069C9723}  
-title:Show and Hide the Master View Button  
-brief:This recipe shows how to add a button and popover to a UISplitViewController to display the master view in portrait orientation.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/split_view/show_and_hide_the_master_view_button)  
-article:[Using a Split View to Show Two Controllers](/recipes/ios/content_controls/split_view/use_split_view_to_show_two_controllers)  
-article:[Communicating Between Detail and Master Controllers](/recipes/ios/content_controls/split_view/communicate_between_master_and_detail_controllers)  
-sdk:[UISplitViewController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UISplitViewController_class/Reference/Reference.html)  
-sdk:[Split View Controllers](https://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/SplitViewControllers.html)  
+id: {36244106-F6EA-8F5B-D2F4-12B4069C9723}  
+title: Show and Hide the Master View Button  
+brief: This recipe shows how to add a button and popover to a UISplitViewController to display the master view in portrait orientation.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/split_view/show_and_hide_the_master_view_button)  
+article: [Using a Split View to Show Two Controllers](/recipes/ios/content_controls/split_view/use_split_view_to_show_two_controllers)  
+article: [Communicating Between Detail and Master Controllers](/recipes/ios/content_controls/split_view/communicate_between_master_and_detail_controllers)  
+sdk: [UISplitViewController Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UISplitViewController_class/Reference/Reference.html)  
+sdk: [Split View Controllers](https: //developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/SplitViewControllers.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -22,13 +22,13 @@ to the detail view and implement the popover button.
 
  [ ![](Images/SplitViewController2.png)](Images/SplitViewController2.png)
 
-To show and hide the master view:
+To show and hide the master view: 
 
 <ol>
   <li>Start with an existing implementation of <code>UISplitViewController</code>, such as the [Using a Split View to Show Two Controllers](/recipes/ios/content_controls/split_view/use_split_view_to_show_two_controllers) recipe.</li>
 </ol>
 <ol start="2">
-  <li>Add a toolbar the <code>DetailViewController</code> so that there is a host for the popover button (when it is required):</li>
+  <li>Add a toolbar the <code>DetailViewController</code> so that there is a host for the popover button (when it is required): </li>
 </ol>
 
 
@@ -64,12 +64,12 @@ public void RemoveContentsButton ()
 ```
 
 <ol start="4">
-  <li>Implement a <code>UISplitViewControllerDelegate</code> the <code>SplitViewController</code> to control when the button is shown or hidden:</li>
+  <li>Implement a <code>UISplitViewControllerDelegate</code> the <code>SplitViewController</code> to control when the button is shown or hidden: </li>
 </ol>
 
 
 ```
-public class SplitViewDelegate : UISplitViewControllerDelegate {
+public class SplitViewDelegate :  UISplitViewControllerDelegate {
     public override bool ShouldHideViewController (UISplitViewController svc, UIViewController viewController, UIInterfaceOrientation inOrientation)
     {
         return inOrientation == UIInterfaceOrientation.Portrait
@@ -91,7 +91,7 @@ public class SplitViewDelegate : UISplitViewControllerDelegate {
 ```
 
 <ol start="5">
-  <li>Set the <code>Delegate</code> in the <code>SplitViewController's</code> constructor:</li>
+  <li>Set the <code>Delegate</code> in the <code>SplitViewController's</code> constructor: </li>
 </ol>
 
 

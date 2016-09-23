@@ -1,12 +1,12 @@
 ---
-id:{1994B006-1995-F7D3-2162-44A462E8BACC}  
-title:Specify Customizable Tab Bar Buttons  
-brief:This recipe illustrates how to enable tab bar customization so that users can change the order of tabs.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/tab_bar/specify_customizable_tab_bar_buttons)  
-article:[Create a Tab Bar](/recipes/ios/content_controls/tab_bar/create_a_tab_bar)  
-article:[Add a Badge to a Tab Item](/recipes/ios/content_controls/tab_bar/add_a_badge_to_a_tab_item)  
-article:[Persist Customized Tab Bar Buttons](/recipes/ios/content_controls/tab_bar/persist_customized_tab_bar_buttons)  
-sdk:[UITabBarController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarController_Class/Reference/Reference.html)  
+id: {1994B006-1995-F7D3-2162-44A462E8BACC}  
+title: Specify Customizable Tab Bar Buttons  
+brief: This recipe illustrates how to enable tab bar customization so that users can change the order of tabs.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/tab_bar/specify_customizable_tab_bar_buttons)  
+article: [Create a Tab Bar](/recipes/ios/content_controls/tab_bar/create_a_tab_bar)  
+article: [Add a Badge to a Tab Item](/recipes/ios/content_controls/tab_bar/add_a_badge_to_a_tab_item)  
+article: [Persist Customized Tab Bar Buttons](/recipes/ios/content_controls/tab_bar/persist_customized_tab_bar_buttons)  
+sdk: [UITabBarController Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarController_Class/Reference/Reference.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -19,10 +19,10 @@ user to edit the order of the tabs.
 
  [ ![](Images/Picture_1.png)](Images/Picture_1.png)
 
-To enable Tab Bar customization:
+To enable Tab Bar customization: 
 
 <ol start="1">
-	<li>Create a tab bar and create more tabs than your device can display (five on an iPhone/iPod, eight on an iPad). For example: </li>
+	<li>Create a tab bar and create more tabs than your device can display (five on an iPhone/iPod, eight on an iPad). For example:  </li>
 </ol>
 
 ```

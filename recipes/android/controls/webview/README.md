@@ -1,6 +1,6 @@
 ---
-id:{E42FE19A-D15F-24C4-9327-F43A97D3EA73}  
-title:WebView  
+id: {E42FE19A-D15F-24C4-9327-F43A97D3EA73}  
+title: WebView  
 ---
 
 The WebView is a specialize view that displays web pages. It allows

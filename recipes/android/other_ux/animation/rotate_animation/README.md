@@ -1,10 +1,10 @@
 ---
-id:{EFCBA08A-6069-9EB4-2D88-65D3B7FF92DF}  
-title:Rotate Animation  
-brief:This tutorial will show how to rotate an animation.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/animation/rotate_animation)  
-sdk:[View Animation](http://developer.android.com/guide/topics/graphics/view-animation.html)  
-sdk:[Tween Animation](http://developer.android.com/guide/topics/resources/animation-resource.html#Tween)  
+id: {EFCBA08A-6069-9EB4-2D88-65D3B7FF92DF}  
+title: Rotate Animation  
+brief: This tutorial will show how to rotate an animation.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/other_ux/animation/rotate_animation)  
+sdk: [View Animation](http: //developer.android.com/guide/topics/graphics/view-animation.html)  
+sdk: [Tween Animation](http: //developer.android.com/guide/topics/resources/animation-resource.html#Tween)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -14,80 +14,80 @@ sdk:[Tween Animation](http://developer.android.com/guide/topics/resources/animat
 
 -  Create a new Xamarin.Android project named RotationAnimation.
 -  Create the directory Resource/Anim in the project.
--  Create a new resource file Resource/Anim/rotate_centre.xml and modify it to contain the following:
+-  Create a new resource file Resource/Anim/rotate_centre.xml and modify it to contain the following: 
 
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android"
-    android:interpolator="@android:anim/linear_interpolator">
+<set xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: interpolator="@android: anim/linear_interpolator">
   <rotate
-      android:fromDegrees="0"
-      android:toDegrees="360"
-      android:pivotX="50%"
-      android:pivotY="50%"
-      android:duration="2000"
-      android:startOffset="0"/>
+      android: fromDegrees="0"
+      android: toDegrees="360"
+      android: pivotX="50%"
+      android: pivotY="50%"
+      android: duration="2000"
+      android: startOffset="0"/>
 </set>
 ```
 
 This declares an animation that will rotate from 0 to 360 degrees. The
-`android:pivotX` and `android:pivotY` specify the point on the image to rotate
+`android: pivotX` and `android: pivotY` specify the point on the image to rotate
 about.
 
--  Create a new resource file Resources/Anim/rotate_corner.axml and modify it to contain the following:
+-  Create a new resource file Resources/Anim/rotate_corner.axml and modify it to contain the following: 
 
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android"
-    android:interpolator="@android:anim/linear_interpolator">
+<set xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: interpolator="@android: anim/linear_interpolator">
   <rotate
-      android:fromDegrees="0"
-      android:toDegrees="360"
-      android:pivotX="0%"
-      android:pivotY="0%"
-      android:duration="2000"
-      android:startOffset="0"/>
+      android: fromDegrees="0"
+      android: toDegrees="360"
+      android: pivotX="0%"
+      android: pivotY="0%"
+      android: duration="2000"
+      android: startOffset="0"/>
 </set>
 ```
 
--  Open up Layout/Main.axml, and modify it to the following:
+-  Open up Layout/Main.axml, and modify it to the following: 
 
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
+<LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent"
+    android: orientation="vertical" >
 
   <Button
-      android:id="@+id/rotate_center_button"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:text="Rotate around center"/>
+      android: id="@+id/rotate_center_button"
+      android: layout_width="fill_parent"
+      android: layout_height="wrap_content"
+      android: text="Rotate around center"/>
   <Button
-      android:id="@+id/rotate_corner_button"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:text="Rotate around corner"/>
+      android: id="@+id/rotate_corner_button"
+      android: layout_width="fill_parent"
+      android: layout_height="wrap_content"
+      android: text="Rotate around corner"/>
   <LinearLayout
-      android:layout_width="fill_parent"
-      android:layout_height="fill_parent"
-      android:orientation="vertical"
-      android:gravity="center">
+      android: layout_width="fill_parent"
+      android: layout_height="fill_parent"
+      android: orientation="vertical"
+      android: gravity="center">
     <ImageView
-        android:id="@+id/floating_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/icon" />
+        android: id="@+id/floating_image"
+        android: layout_width="wrap_content"
+        android: layout_height="wrap_content"
+        android: src="@drawable/icon" />
   </LinearLayout>
 
 </LinearLayout>
 ```
 
--  Open MainActivity.cs, and insert the following code for the `OnCreate()` method:
+-  Open MainActivity.cs, and insert the following code for the `OnCreate()` method: 
 
 
 protected override void OnCreate(Bundle bundle)
@@ -111,17 +111,17 @@ protected override void OnCreate(Bundle bundle)
 }
 ```
 
--  Run the application. You should initially see the following screen:
+-  Run the application. You should initially see the following screen: 
 
 
  [ ![](Images/screen1.png)](Images/screen1.png)
 
--  Click on the “Rotate around center”. The image should rotate about the center:
+-  Click on the “Rotate around center”. The image should rotate about the center: 
 
 
  [ ![](Images/screen2.png)](Images/screen2.png)
 
--  Click on the “Rotate around corner”. The image should rotate about the upper left hand corner:
+-  Click on the “Rotate around corner”. The image should rotate about the upper left hand corner: 
 
 
  [ ![](Images/screen3.png)](Images/screen3.png)

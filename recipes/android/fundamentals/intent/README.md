@@ -1,7 +1,7 @@
 ---
-id:{C05CCF0F-CD4D-25FA-E269-8078F7C7A3E4}  
-title:Intent  
-subtitle:Android.Content.Intent  
+id: {C05CCF0F-CD4D-25FA-E269-8078F7C7A3E4}  
+title: Intent  
+subtitle: Android.Content.Intent  
 ---
 
 An Intent is an abstract concept for some sort of operation that should be

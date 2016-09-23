@@ -1,11 +1,11 @@
 ---
-id:{776535D4-B422-BC44-9167-73767A22D441}  
-title:Create a Fragment  
-brief:Fragments are a new UI component originally introduced in Android 3.0 (API level 11) and later and require Mono for Android 4.0 or higher. To use Fragments in older versions of Android requires the Android Support Package and Xamarin.Android 4.2, which is covered in an another HOW-TO. This recipe will show how to create a simple Fragment.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/fragment/create_a_fragment)  
-article:[Fragments](/guides/android/platform_features/fragments)  
-article:[Fragments Walkthrough](/guides/android/platform_features/fragments/fragments_walkthrough)  
-sdk:[Fragments](http://developer.android.com/guide/topics/fundamentals/fragments.html)  
+id: {776535D4-B422-BC44-9167-73767A22D441}  
+title: Create a Fragment  
+brief: Fragments are a new UI component originally introduced in Android 3.0 (API level 11) and later and require Mono for Android 4.0 or higher. To use Fragments in older versions of Android requires the Android Support Package and Xamarin.Android 4.2, which is covered in an another HOW-TO. This recipe will show how to create a simple Fragment.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/other_ux/fragment/create_a_fragment)  
+article: [Fragments](/guides/android/platform_features/fragments)  
+article: [Fragments Walkthrough](/guides/android/platform_features/fragments/fragments_walkthrough)  
+sdk: [Fragments](http: //developer.android.com/guide/topics/fundamentals/fragments.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -23,17 +23,17 @@ Follow these steps to update and query the device profile.
 6.  Set the Minimum Android version to API Level 12 (Android 3.1).
 7.  Select OK to close the Project Options.
 8.  Select File &gt; New &gt; Android &gt; Android Class, and name the class MyFragment, and click New.
-9.  Edit the new class you created, inheriting from Android.App.Fragment:
+9.  Edit the new class you created, inheriting from Android.App.Fragment: 
 
 
 ```
-public class MyFragment : Fragment
+public class MyFragment :  Fragment
 {
 }
 ```
 
 <ol start="10">
-  <li>Edit the new class, and override <code>OnCreateView</code> to inflate the layout file that the fragment will use, and to display some text in the layout:</li>
+  <li>Edit the new class, and override <code>OnCreateView</code> to inflate the layout file that the fragment will use, and to display some text in the layout: </li>
 </ol>
 
 ```
@@ -49,28 +49,28 @@ public override View OnCreateView(LayoutInflater inflater, ViewGroup container, 
 ```
 
 Now it is time to display the fragment inside of an Activity. There are two
-ways to do so: programmatically or via the layout file.
+ways to do so:  programmatically or via the layout file.
 
 -   **Adding the fragment programmatically -** go to step #11 below.
 -   **Adding the fragment via a layout -** proceed directly to step #13 below. Skip steps #11 and #12.
 
 
 <ol start="11">
-  <li>To add a fragment programmatically, first edit the layout file Main.axml, and add a FrameLayout to host MyFragment:</li>
+  <li>To add a fragment programmatically, first edit the layout file Main.axml, and add a FrameLayout to host MyFragment: </li>
 </ol>
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fragment_container"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<FrameLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: id="@+id/fragment_container"
+    android: orientation="horizontal"
+    android: layout_width="match_parent"
+    android: layout_height="match_parent">
 </FrameLayout>
 ```
 
 <ol start="12">
-  <li>Edit the file MainActivity.cs, and modify <code>OnCreate</code> to instantiate a new instance of MyFragment and then add that instance to the FrameLayout that was declared above in step # inside of a FragmentTransaction:</li>
+  <li>Edit the file MainActivity.cs, and modify <code>OnCreate</code> to instantiate a new instance of MyFragment and then add that instance to the FrameLayout that was declared above in step # inside of a FragmentTransaction: </li>
 </ol>
 
 
@@ -94,20 +94,20 @@ protected override void OnCreate (Bundle bundle)
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fragment_container"
-    android:orientation="horizontal"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+<LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: id="@+id/fragment_container"
+    android: orientation="horizontal"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent">
     <fragment class="createafragment.MyFragment"
-          android:id="@+id/my_fragment"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent" />
+          android: id="@+id/my_fragment"
+          android: layout_width="match_parent"
+          android: layout_height="match_parent" />
 </LinearLayout>
 ```
 
 <ol start="15">
-  <li>Run the application. It should now look something like:</li>
+  <li>Run the application. It should now look something like: </li>
 </ol>
 
  [ ![](Images/CreateAFragment.png)](Images/CreateAFragment.png)

@@ -1,10 +1,10 @@
 ---
-id:{A522BA96-61C4-684A-BBE8-48A8812F9973}  
-title:Display An Image
-brief:This recipe shows how to display an image using an ImageView.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/controls/imageview/display_an_image)  
-article:[MultiResolution Sample](https://github.com/xamarin/monodroid-samples/tree/master/MultiResolution)  
-sdk:[ImageView Class Reference](http://developer.android.com/reference/android/widget/ImageView.html)  
+id: {A522BA96-61C4-684A-BBE8-48A8812F9973}  
+title: Display An Image
+brief: This recipe shows how to display an image using an ImageView.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/controls/imageview/display_an_image)  
+article: [MultiResolution Sample](https: //github.com/xamarin/monodroid-samples/tree/master/MultiResolution)  
+sdk: [ImageView Class Reference](http: //developer.android.com/reference/android/widget/ImageView.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -17,31 +17,31 @@ sdk:[ImageView Class Reference](http://developer.android.com/reference/android/w
 <ol>
   <li>Create a new Xamarin.Android application named DisplayAnImage.</li>
   <li>Add two images named *sample1.png* and *sample2.png* respectively under the Resources -&gt; drawable folder in your IDE.</li>
-  <li>Replace the contents of Main.axml with the following:</li>
+  <li>Replace the contents of Main.axml with the following: </li>
 </ol>
 
 ```
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"&gt;
+&lt;LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: orientation="vertical"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent"&gt;
     &lt;Button
-        android:id="@+id/myButton"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/changeImage"/&gt;  
+        android: id="@+id/myButton"
+        android: layout_width="fill_parent"
+        android: layout_height="wrap_content"
+        android: text="@string/changeImage"/&gt;  
     &lt;ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/demoImageView"
-        android:src="@drawable/sample1"
-        android:scaleType="fitCenter"/&gt;
+        android: layout_width="fill_parent"
+        android: layout_height="fill_parent"
+        android: id="@+id/demoImageView"
+        android: src="@drawable/sample1"
+        android: scaleType="fitCenter"/&gt;
 &lt;/LinearLayout&gt;
 ```
 
 <ol start="4">
-  <li>Add the following string to Strings.xml:</li>
+  <li>Add the following string to Strings.xml: </li>
 </ol>
 
 
@@ -68,4 +68,4 @@ button.Click += delegate {
 # Additional Information
 
 The `ImageView` class allows you to display an image either declaratively in
-XML using the `android:src` attribute, or in code by calling `SetImageResource`.
+XML using the `android: src` attribute, or in code by calling `SetImageResource`.

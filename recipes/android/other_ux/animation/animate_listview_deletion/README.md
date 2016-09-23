@@ -1,10 +1,10 @@
 ---
-id:{5FDEEA86-E1CA-47F3-B121-5847757165B3}  
-title:Animate a ListView Deletion  
-brief:This recipe will show how to animate the deletion of a ListView row in Jellybean.  
-api:[ListView](http://developer.android.com/reference/android/widget/ListView.html)  
-api:[ValueAnimator](http://developer.android.com/reference/android/animation/ValueAnimator.html)  
-api:[ViewPropertyAnimator](http://developer.android.com/reference/android/view/ViewPropertyAnimator.html)  
+id: {5FDEEA86-E1CA-47F3-B121-5847757165B3}  
+title: Animate a ListView Deletion  
+brief: This recipe will show how to animate the deletion of a ListView row in Jellybean.  
+api: [ListView](http: //developer.android.com/reference/android/widget/ListView.html)  
+api: [ValueAnimator](http: //developer.android.com/reference/android/animation/ValueAnimator.html)  
+api: [ViewPropertyAnimator](http: //developer.android.com/reference/android/view/ViewPropertyAnimator.html)  
 ---
 
 <a name="Overview" class="injected"></a>
@@ -12,9 +12,9 @@ api:[ViewPropertyAnimator](http://developer.android.com/reference/android/view/V
 
 # Recipe
 
-A visually pleasant effect when deleting items from a ListView is to animate the row being deleted by gradually changing the `.Alpha` value of the view from 1.0 to 0.0, causing the row to fade out of existence before being completely removed. If you've tried to animate the deletion of a row from a ListView in a Xamarin.Android application, you may observe some curious behavior when rapidly scrolling through a ListView with many rows: the animation may appear on rows other than then one that is being deleted.
+A visually pleasant effect when deleting items from a ListView is to animate the row being deleted by gradually changing the `.Alpha` value of the view from 1.0 to 0.0, causing the row to fade out of existence before being completely removed. If you've tried to animate the deletion of a row from a ListView in a Xamarin.Android application, you may observe some curious behavior when rapidly scrolling through a ListView with many rows:  the animation may appear on rows other than then one that is being deleted.
 
-This happens because the ListView will recycle views for each row - the content changes but not the view itself. The side-effect of this is that the animation is transferred along with the recycled view. What is necessary is to convince the ListView not to recycle the view in while the animation is still in progress. There are two ways to handle this in Xamarin.Android when you're targeting Android 4.2 (API level 16) or higher:
+This happens because the ListView will recycle views for each row - the content changes but not the view itself. The side-effect of this is that the animation is transferred along with the recycled view. What is necessary is to convince the ListView not to recycle the view in while the animation is still in progress. There are two ways to handle this in Xamarin.Android when you're targeting Android 4.2 (API level 16) or higher: 
 
 -  Use a ViewPropertyAnimator
 -  Use a ValueAnimator
@@ -41,7 +41,7 @@ This code is deceptively simple - animate the value of `e.View.Alpha` from 1.0 t
 
 ## Using A ValueAnimator
 
-The other technique is to use a `ValueAnimator` and provide handlers for the `.Update` and `.AnimationEnded` events. To prevent the framework from recycling the view while the animation is in progress, the `HasTransientState` property on the view must be set to `true`. The following code snippet is an example of how to do:
+The other technique is to use a `ValueAnimator` and provide handlers for the `.Update` and `.AnimationEnded` events. To prevent the framework from recycling the view while the animation is in progress, the `HasTransientState` property on the view must be set to `true`. The following code snippet is an example of how to do: 
 
 ```
 private void HandleItemClick(object sender, AdapterView.ItemClickEventArgs e)

@@ -1,7 +1,7 @@
 ---
-id:{a73f899c-42ac-49b2-93c4-a317ff38eb73}  
-title:Coloring a CCSprite  
-brief:How to use the CCSprite Color value to color sprites at runtime.  
+id: {a73f899c-42ac-49b2-93c4-a317ff38eb73}  
+title: Coloring a CCSprite  
+brief: How to use the CCSprite Color value to color sprites at runtime.  
 ---
 
 
@@ -11,7 +11,7 @@ The `CCSprite` class contains a `Color` property which can be used to color or *
 
 ## Code Example
 
-The following code creates a `CCSprite` grid, as might be used in a block breaking game:
+The following code creates a `CCSprite` grid, as might be used in a block breaking game: 
 
 ```
 CCColor3B[] rowColors = new CCColor3B[]
@@ -39,11 +39,11 @@ for(int row = 0; row < rowColors.Length; row++)
 }
 ```
 
-The code above produces the following result:
+The code above produces the following result: 
 
 ![](Images/coloredgrid.png)
 
-The code above uses the grayscale.png image:
+The code above uses the grayscale.png image: 
 
 ![](Images/grayscale.png)
 

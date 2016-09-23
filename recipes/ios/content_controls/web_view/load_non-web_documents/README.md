@@ -1,10 +1,10 @@
 ---
-id:{5747077E-47CC-CAED-B07F-48668FBA0AAF}  
-title:Load Non-Web Documents  
-brief:This recipe shows how to load a web page in a UIWebView control.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/web_view/load_non-web_documents)  
-sdk:[UIWebView Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIWebView_Class/Reference/Reference.html)  
-sdk:[Using UIWebView to display select document types](https://developer.apple.com/library/ios/#qa/qa1630/_index.html)  
+id: {5747077E-47CC-CAED-B07F-48668FBA0AAF}  
+title: Load Non-Web Documents  
+brief: This recipe shows how to load a web page in a UIWebView control.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/web_view/load_non-web_documents)  
+sdk: [UIWebView Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UIWebView_Class/Reference/Reference.html)  
+sdk: [Using UIWebView to display select document types](https: //developer.apple.com/library/ios/#qa/qa1630/_index.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -12,12 +12,12 @@ sdk:[Using UIWebView to display select document types](https://developer.apple.c
 
 # Recipe
 
-To show a document type other than HTML in a UIWebView:
+To show a document type other than HTML in a UIWebView: 
 
 <ol>
   <li>Add the document (for example, a PDF) to your Xamarin.iOS project. Set the Build Action to <strong>BundleResource</strong>. You can set the build action for a file by right-clicking on that file and and choosing Build Action in the menu that opens.</li>
 </ol>
-<ol start="2"><li>Create a <code>UIWebView</code> and add it to a view:</li></ol>
+<ol start="2"><li>Create a <code>UIWebView</code> and add it to a view: </li></ol>
 
 
 ```
@@ -25,7 +25,7 @@ webView = new UIWebView (View.Bounds);
 View.AddSubview(webView);
 ```
 
-<ol start="3"><li>Load the file using <code>NSUrl</code> and <code>NSUrlRequest</code> classes: </li></ol>
+<ol start="3"><li>Load the file using <code>NSUrl</code> and <code>NSUrlRequest</code> classes:  </li></ol>
 
 
 ```
@@ -40,7 +40,7 @@ webView.ScalesPageToFit = true;
 
 # Additional Information
 
-iOS can display the following document types:
+iOS can display the following document types: 
 
 -  Excel (.xls &amp; .xlsx)
 -  Keynote (.key.zip)
@@ -52,5 +52,5 @@ iOS can display the following document types:
 -  Word (.doc &amp; .docx)
 
 
-See [Technical Q&amp;A 1630](https://developer.apple.com/library/ios/#qa/qa1630/_index.html) for details on other supported file
+See [Technical Q&amp;A 1630](https: //developer.apple.com/library/ios/#qa/qa1630/_index.html) for details on other supported file
 types.

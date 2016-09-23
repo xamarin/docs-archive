@@ -1,9 +1,9 @@
 ---
-id:{C26D0663-B770-0A32-6DCD-B56160384092}  
-title:Create a Custom Adapter for Contacts  
-brief:This recipe shows how to implement a custom adapter to retrieve contacts and show them in list, displaying both the contact’s image and name.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/data/adapters/create_a_custom_adapter_for_contacts)  
-sdk:[ContactsContract Class Reference](http://developer.android.com/reference/android/provider/ContactsContract.html)  
+id: {C26D0663-B770-0A32-6DCD-B56160384092}  
+title: Create a Custom Adapter for Contacts  
+brief: This recipe shows how to implement a custom adapter to retrieve contacts and show them in list, displaying both the contact’s image and name.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/data/adapters/create_a_custom_adapter_for_contacts)  
+sdk: [ContactsContract Class Reference](http: //developer.android.com/reference/android/provider/ContactsContract.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -15,18 +15,18 @@ sdk:[ContactsContract Class Reference](http://developer.android.com/reference/an
 
 -  Create a new Xamarin.Android application named ContactsAdapterDemo.
 -  Open AndroidManifest.xml (in the Properties folder) and set the READ_CONTACTS permission.
--  Add the following markup to Main.axml (located in the Resources&gt;layout folder):
+-  Add the following markup to Main.axml (located in the Resources&gt;layout folder): 
 
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-    <ListView android:id="@+id/ContactsListView"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
+<LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+        android: orientation="vertical"
+        android: layout_width="fill_parent"
+        android: layout_height="fill_parent">
+    <ListView android: id="@+id/ContactsListView"
+            android: layout_width="fill_parent"
+            android: layout_height="fill_parent" />
 </LinearLayout>
 ```
 
@@ -49,26 +49,26 @@ protected override void OnCreate (Bundle bundle)
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+<LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+        android: layout_width="fill_parent"
+        android: layout_height="fill_parent">
     <ImageView
-        android:id="@+id/ContactImage"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_margin="5dp" />
+        android: id="@+id/ContactImage"
+        android: layout_width="50dp"
+        android: layout_height="50dp"
+        android: layout_margin="5dp" />
     <TextView
-        android:id="@+id/ContactName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_marginLeft="5dp" />
+        android: id="@+id/ContactName"
+        android: layout_width="wrap_content"
+        android: layout_height="wrap_content"
+        android: textAppearance="?android: attr/textAppearanceLarge"
+        android: layout_marginLeft="5dp" />
 </LinearLayout>
 ```
 
 -  Add a new C# class named ContactsAdapter to the project and set its base class to `BaseAdapter`.
 
--  Add the following usings:
+-  Add the following usings: 
 
 ```
 using System;
@@ -80,11 +80,11 @@ using Android.Views;
 using Android.Widget;
 ```
 -
-  Add the following code to `ContactsAdaper` to retrieve contacts:
+  Add the following code to `ContactsAdaper` to retrieve contacts: 
 
 
 ```
-public class ContactsAdapter : BaseAdapter
+public class ContactsAdapter :  BaseAdapter
 {
     List<Contact> _contactList;
     Activity _activity;
@@ -133,7 +133,7 @@ public class ContactsAdapter : BaseAdapter
 }
 ```
 
--  Implement the abstract methods from `BaseAdapter`:
+-  Implement the abstract methods from `BaseAdapter`: 
 
 
 ```

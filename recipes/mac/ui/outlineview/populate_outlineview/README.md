@@ -1,11 +1,11 @@
 ---
-id:{166287c4-9caa-4082-853a-b66c3aa09704} 
-title:Populate an Outline View 
-brief:This recipe illustrates how to populate an Outline View using a custom NSOutlineViewDataSource from a hierarchal object graph.
-dateupdated:2016-05-31 
-related:[NSOutlineView Class Reference](https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Classes/NSOutlineView_Class/Reference/Reference.html) 
-related:[NSOutlineViewDataSource Class Reference](https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSOutlineViewDataSource_Protocol/Reference/Reference.html#//apple_ref/occ/intf/NSOutlineViewDataSource) 
-related:[Outline View Programming Topics](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/OutlineView/OutlineView.html#//apple_ref/doc/uid/10000023i)
+id: {166287c4-9caa-4082-853a-b66c3aa09704} 
+title: Populate an Outline View 
+brief: This recipe illustrates how to populate an Outline View using a custom NSOutlineViewDataSource from a hierarchal object graph.
+dateupdated: 2016-05-31 
+related: [NSOutlineView Class Reference](https: //developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Classes/NSOutlineView_Class/Reference/Reference.html) 
+related: [NSOutlineViewDataSource Class Reference](https: //developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSOutlineViewDataSource_Protocol/Reference/Reference.html#//apple_ref/occ/intf/NSOutlineViewDataSource) 
+related: [Outline View Programming Topics](https: //developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/OutlineView/OutlineView.html#//apple_ref/doc/uid/10000023i)
 ---
 
 # Recipe
@@ -14,10 +14,10 @@ Typically, populating an Outline View consists of either sub-classing `NSOutline
 
 ## Animal Class
 
-First, we need to create a backing class for our items. In this example, let's create an Animal class that inherits from `NSObject`, and has a Children property that contains `IList`:
+First, we need to create a backing class for our items. In this example, let's create an Animal class that inherits from `NSObject`, and has a Children property that contains `IList`: 
 
 ```
-public class Animal : NSObject
+public class Animal :  NSObject
 {
 	public string Name { get; set; }
 
@@ -44,22 +44,22 @@ public class Animal : NSObject
 
 ## Custom NSOutlineViewDataSource
 
-Next, we need to sub-class the `NSOutlineViewDataSource` class and implement the following methods:
+Next, we need to sub-class the `NSOutlineViewDataSource` class and implement the following methods: 
 
 * `GetChildrenCount` - Called when the outline view needs to know how many children an item has. The item is passed as the item parameter and is of type of `NSObject`, so it should be cast to to the type necessary (in this case Animal) and the number of children should be returned.
 * `ItemExpandable` - Specifies whether or not the item should be expandable, i.e., whether or not it has children.
 * `GetObjectValue` - Called to get the text of the node. In this case, it should return the name of the _Animal_.
 * `GetChild` - Called to get the child at the specified index of the passed item. For example, if an Animal had 3 child nodes, it would be called three times, passing 0, 1, and 2 as the index.
 
-Therefore, our custom `NSOutlineViewDataSource` should look something like this:
+Therefore, our custom `NSOutlineViewDataSource` should look something like this: 
 
 ```
-public class AnimalsOutlineDataSource : NSOutlineViewDataSource
+public class AnimalsOutlineDataSource :  NSOutlineViewDataSource
 {
 	// declarations
 	protected Animal animalsTree;
 
-	public AnimalsOutlineDataSource (Animal animalsTree) : base()
+	public AnimalsOutlineDataSource (Animal animalsTree) :  base()
 	{
 		this.animalsTree = animalsTree;
 	}
@@ -139,7 +139,7 @@ public class AnimalsOutlineDataSource : NSOutlineViewDataSource
 
 ## Initializing the Data Hierarchy
 
-Next, we need to new up our data:
+Next, we need to new up our data: 
 
 ```
 animalTree = new Animal() { Name = "My Animals", Children =
@@ -192,7 +192,7 @@ animalTree = new Animal() { Name = "My Animals", Children =
 
 ## Instantiate and Assign DataSource
 
-Finally, once we've got an object hierarchy, we create our custom datasource and apply it to the Outline View. This would typically be done in `AwakeFromNib`:
+Finally, once we've got an object hierarchy, we create our custom datasource and apply it to the Outline View. This would typically be done in `AwakeFromNib`: 
 
 ```
 public override void AwakeFromNib ()
@@ -205,6 +205,6 @@ public override void AwakeFromNib ()
 }
 ```
 
-That's it! We should now have a working Outline View:
+That's it! We should now have a working Outline View: 
 
 [ ![](Images/Expanded_OutlineView.png)](Images/Expanded_OutlineView.png)

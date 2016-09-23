@@ -1,9 +1,9 @@
 ---
-id:{4C7C6048-2E6E-0CB9-8A8B-E0E3E6F7F332}  
-title:Create an Implicit Animation  
-brief:This recipe shows how to create an implicit animation using Core Animation.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/create_an_implicit_animation)  
-sdk:[Core Animation Programming Guide](https://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)  
+id: {4C7C6048-2E6E-0CB9-8A8B-E0E3E6F7F332}  
+title: Create an Implicit Animation  
+brief: This recipe shows how to create an implicit animation using Core Animation.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/create_an_implicit_animation)  
+sdk: [Core Animation Programming Guide](https: //developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -11,10 +11,10 @@ sdk:[Core Animation Programming Guide](https://developer.apple.com/library/ios/#
 
 # Recipe
 
-Follow these steps to create the animation:
+Follow these steps to create the animation: 
 
 -  Add an image named `sample.png` to the project with a *Build Action* of **Content**.
-- Add the following Using directives:
+- Add the following Using directives: 
 
 ```
 using CoreAnimation;

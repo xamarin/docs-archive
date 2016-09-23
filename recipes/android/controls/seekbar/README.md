@@ -1,11 +1,11 @@
 ---
-id:{B620BDFA-8377-4FD0-AC9E-7BB0D4289863}  
-title:SeekBar  
-brief:This recipe demonstrates how to use the SeekBar control. The SeekBar control is visually similar to the ProgressBar but it has a draggable slider that will allow the user to change the value displayed by the control. This will provide an example showing how to respond to changes in the SeekBar using .NET events or the SeekBar.IOnSeekBarrChangeListenerinterface.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/controls/seekbar)  
-article:[Seek Bars and Sliders](http://developer.android.com/design/building-blocks/seek-bars.html)  
-sdk:[SeekBar](http://developer.android.com/reference/android/widget/SeekBar.html)  
-sdk:[OnSeekBarChangeListener](http://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html)  
+id: {B620BDFA-8377-4FD0-AC9E-7BB0D4289863}  
+title: SeekBar  
+brief: This recipe demonstrates how to use the SeekBar control. The SeekBar control is visually similar to the ProgressBar but it has a draggable slider that will allow the user to change the value displayed by the control. This will provide an example showing how to respond to changes in the SeekBar using .NET events or the SeekBar.IOnSeekBarrChangeListenerinterface.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/controls/seekbar)  
+article: [Seek Bars and Sliders](http: //developer.android.com/design/building-blocks/seek-bars.html)  
+sdk: [SeekBar](http: //developer.android.com/reference/android/widget/SeekBar.html)  
+sdk: [OnSeekBarChangeListener](http: //developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -13,19 +13,19 @@ sdk:[OnSeekBarChangeListener](http://developer.android.com/reference/android/wid
 
 # Recipe
 
-The `SeekBar` widget is an interactive slider that allows the user to select one value from a range of values. As the user moves the slider left or right, the value of the `SeekBar` will change. The following image shows an example of the `SeekBar`:
+The `SeekBar` widget is an interactive slider that allows the user to select one value from a range of values. As the user moves the slider left or right, the value of the `SeekBar` will change. The following image shows an example of the `SeekBar`: 
 
  ![](images/seekbar.png)
 
-A `SeekBar` is added to the layout of an Activity or a Fragment. The following snippet is an example of the `SeekBar` XML:
+A `SeekBar` is added to the layout of an Activity or a Fragment. The following snippet is an example of the `SeekBar` XML: 
 
 ```
-<SeekBar android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/seekBar1" android:layout_marginTop="@dimen/seekbar_margin" android:layout_marginBottom="@dimen/seekbar_margin"/>
+<SeekBar android: layout_width="fill_parent" android: layout_height="wrap_content" android: id="@+id/seekBar1" android: layout_marginTop="@dimen/seekbar_margin" android: layout_marginBottom="@dimen/seekbar_margin"/>
 ```
 
 Xamarin.Android provides some events that allow applications to respond to changes in the value of the `SeekBar`, the most significant of these is the `ProgressChanged` event.
 
-This code snippet shows an example of attaching a lambda to the `SeekBar.ProgressChanged` event:
+This code snippet shows an example of attaching a lambda to the `SeekBar.ProgressChanged` event: 
 
 ```
 _seekBar = FindViewById<SeekBar>(Resource.Id.seekBar1);
@@ -39,7 +39,7 @@ _seekBar.ProgressChanged += (object sender, SeekBar.ProgressChangedEventArgs e) 
 };
 ```
 
-This lambda will update a `TextView` widget with the value of the `SeekBar` when the change is triggered by the user. The following screen shot is an example of what an Activity might look like after the user has moved the slider:
+This lambda will update a `TextView` widget with the value of the `SeekBar` when the change is triggered by the user. The following screen shot is an example of what an Activity might look like after the user has moved the slider: 
 
  ![](images/seekbar2.png)
 
@@ -48,10 +48,10 @@ This lambda will update a `TextView` widget with the value of the `SeekBar` when
 
 ## Using A Listener
 
-As an alternative to using event handlers, classes that implement the interface `SeekBar.IOnSeekBarChangeListener` may act as listeners to the `SeekBar` events. The following code snippet shows an example of an Activity that implements `SeekBar.IOnSeekBarChangeListener`:
+As an alternative to using event handlers, classes that implement the interface `SeekBar.IOnSeekBarChangeListener` may act as listeners to the `SeekBar` events. The following code snippet shows an example of an Activity that implements `SeekBar.IOnSeekBarChangeListener`: 
 
 ```
-public class MainActivity : Activity, SeekBar.IOnSeekBarChangeListener
+public class MainActivity :  Activity, SeekBar.IOnSeekBarChangeListener
 {
     SeekBar _seekBar;
     TextView _textView;

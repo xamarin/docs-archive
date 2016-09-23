@@ -1,23 +1,23 @@
 ---
-id:[cc4170e2-bbdd-46c1-bac7-70739f2f7a5a]  
-title:SearchController
-brief: UISearchController is used to display and manage searching in your application
-samplecode: [MapDemo](/samples/monotouch/MapDemo/)
-samplecode: [Table Search with UISearchController](/samples/monotouch/ios8/TableSearch/)
+id: [cc4170e2-bbdd-46c1-bac7-70739f2f7a5a]  
+title: SearchController
+brief:  UISearchController is used to display and manage searching in your application
+samplecode:  [MapDemo](/samples/monotouch/MapDemo/)
+samplecode:  [Table Search with UISearchController](/samples/monotouch/ios8/TableSearch/)
 ---
 
 # Overview
 `UISearchController` has replaced `UISearchDisplayController` as a way to manage the presentation of a search bar and search results starting with iOS 8. `UISearchDisplayController` is now deprecated.
 
-`UISearchController` is a View Controller that manages all aspects of searching in your application: the search bar, displaying the search results, and updating search results as the user interacts with the search bar:
+`UISearchController` is a View Controller that manages all aspects of searching in your application:  the search bar, displaying the search results, and updating search results as the user interacts with the search bar: 
 
  ![](Images/SearchController.png)
 
-All three of these elements can be configured through properties on the UISearchController:
+All three of these elements can be configured through properties on the UISearchController: 
 
 * `SearchBar`
 	- This is created automatically and exposed through a readonly property.
-	- You are responsible for placing the SearchBar. For example, if your first View Controller is a TableViewController, you could place it in the header by using the following code:
+	- You are responsible for placing the SearchBar. For example, if your first View Controller is a TableViewController, you could place it in the header by using the following code: 
 	```
 	TableView.TableHeaderView = SearchController.SearchBar;
 	```
@@ -38,7 +38,7 @@ This is example is taken from the MapDemo sample, and relates to implementing a 
 
 ## Adding a Local Search UI
 
-The following code adds a `UISearchController` (which has a search bar property) in the `ViewDidLoad` method of `MapViewController`:
+The following code adds a `UISearchController` (which has a search bar property) in the `ViewDidLoad` method of `MapViewController`: 
 
 
 ```
@@ -71,10 +71,10 @@ NavigationItem.TitleView = searchController.SearchBar;
 
 ##Displaying the Search Results
 
-The following code is an example of how to create the search result custom View Controller:
+The following code is an example of how to create the search result custom View Controller: 
 
 ```
-public class SearchResultsViewController : UITableViewController
+public class SearchResultsViewController :  UITableViewController
 {
     static readonly string mapItemCellId = "mapItemCellId";
     MKMapView map;
@@ -133,7 +133,7 @@ public class SearchResultsViewController : UITableViewController
                 this.MapItems = response.MapItems.ToList ();
                 this.TableView.ReloadData ();
             } else {
-                Console.WriteLine ("local search error: {0}", error);
+                Console.WriteLine ("local search error:  {0}", error);
             }
         });
 
@@ -144,7 +144,7 @@ public class SearchResultsViewController : UITableViewController
 
 ## Updating the Search Results
 
-The following code shows the first step of creating the search method in the `SearchResultsViewController`:
+The following code shows the first step of creating the search method in the `SearchResultsViewController`: 
 
 ```
 public void Search (string forSearchString)
@@ -162,7 +162,7 @@ public void Search (string forSearchString)
             this.MapItems = response.MapItems.ToList ();
             this.TableView.ReloadData ();
         } else {
-            Console.WriteLine ("local search error: {0}", error);
+            Console.WriteLine ("local search error:  {0}", error);
         }
     });
 
@@ -170,10 +170,10 @@ public void Search (string forSearchString)
 }
 ```
 
-Then creating a custom implementation of `UISearchResultsUpdating`:
+Then creating a custom implementation of `UISearchResultsUpdating`: 
 
 ```
-public class SearchResultsUpdator : UISearchResultsUpdating
+public class SearchResultsUpdator :  UISearchResultsUpdating
 {
     public event Action<string> UpdateSearchResults = delegate {};
 

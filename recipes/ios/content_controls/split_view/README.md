@@ -1,6 +1,6 @@
 ---
-id:{72A427DD-ABB2-3145-B655-B332F5682440}  
-title:Split View  
+id: {72A427DD-ABB2-3145-B655-B332F5682440}  
+title: Split View  
 ---
 
 The Split View controller is a content control that can be used to display

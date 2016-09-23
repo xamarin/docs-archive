@@ -1,7 +1,7 @@
 ---
-id:{862d8299-099d-474b-9604-c869e31f4b0e}  
-title:Async CCActions  
-brief:How to use async CCActions to script behavior  
+id: {862d8299-099d-474b-9604-c869e31f4b0e}  
+title: Async CCActions  
+brief: How to use async CCActions to script behavior  
 ---
 
 # Recipe
@@ -12,24 +12,24 @@ The `CCAction` class simplifies common animated behaviors such as moving, scalin
 
 ## Using RunActionsAsync
 
-The following code shows how to move a CCNode named player in a square. The await keyword is used so that each RunAsyncAction call waits until the previous finishes before it begins. The end result is that the player moves in a square four times:
+The following code shows how to move a CCNode named player in a square. The await keyword is used so that each RunAsyncAction call waits until the previous finishes before it begins. The end result is that the player moves in a square four times: 
 
 ```
-// Set the initial position:
+// Set the initial position: 
 player.PositionX = 100;
 player.PositionY = 100;
 
-// Define the four parts of the animation, which are move up:
-var moveTo1 = new CCMoveTo(duration:3, position:new CCPoint(100, 300));
+// Define the four parts of the animation, which are move up: 
+var moveTo1 = new CCMoveTo(duration: 3, position: new CCPoint(100, 300));
 
-// move right:
-var moveTo2 = new CCMoveTo(duration:3, position:new CCPoint(300, 300));
+// move right: 
+var moveTo2 = new CCMoveTo(duration: 3, position: new CCPoint(300, 300));
 
-// move down:
-var moveTo3 = new CCMoveTo(duration:3, position:new CCPoint(300, 100));
+// move down: 
+var moveTo3 = new CCMoveTo(duration: 3, position: new CCPoint(300, 100));
 
-// move left (back to the original position):
-var moveTo4 = new CCMoveTo(duration:3, position:new CCPoint(100, 100));
+// move left (back to the original position): 
+var moveTo4 = new CCMoveTo(duration: 3, position: new CCPoint(100, 100));
 
 // We can call RunActionAsync to play these in sequence. Doing so with
 // the await keyword results in the animation playing 4 times

@@ -1,9 +1,9 @@
 ---
-id:{06C52730-D00A-8F10-D42B-DBED9C85CC17}  
-title:Load Local Content  
-brief:This recipe shows how to load a local Html file into a WebView.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/controls/webview/load_local_content)  
-sdk:[WebView Class Reference](http://developer.android.com/reference/android/webkit/WebView.html)  
+id: {06C52730-D00A-8F10-D42B-DBED9C85CC17}  
+title: Load Local Content  
+brief: This recipe shows how to load a local Html file into a WebView.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/controls/webview/load_local_content)  
+sdk: [WebView Class Reference](http: //developer.android.com/reference/android/webkit/WebView.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -11,15 +11,15 @@ sdk:[WebView Class Reference](http://developer.android.com/reference/android/web
 
 # Recipe
 
--  Create a layout file that contains a WebView, such as Main.axml in the example code:
+-  Create a layout file that contains a WebView, such as Main.axml in the example code: 
 
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<WebView xmlns:android="http://schemas.android.com/apk/res/android"
- android:layout_width="fill_parent"
- android:layout_height="fill_parent"
- android:id="@+id/LocalWebView">
+<WebView xmlns: android="http: //schemas.android.com/apk/res/android"
+ android: layout_width="fill_parent"
+ android: layout_height="fill_parent"
+ android: id="@+id/LocalWebView">
 </WebView>
 ```
 
@@ -33,11 +33,11 @@ SetContentView (Resource.Layout.Main);
 WebView localWebView = FindViewById<WebView>(Resource.Id.LocalWebView);
 ```
 
--  Use the LoadUrl method with the " `file:///android_asset/` " prefix to display the Html to the user:
+-  Use the LoadUrl method with the " `file: ///android_asset/` " prefix to display the Html to the user: 
 
 
 ```
-localWebView.LoadUrl("file:///android_asset/Content/Home.html");
+localWebView.LoadUrl("file: ///android_asset/Content/Home.html");
 ```
 
  [ ![](Images/LoadLocalContent.png)](Images/LoadLocalContent.png)

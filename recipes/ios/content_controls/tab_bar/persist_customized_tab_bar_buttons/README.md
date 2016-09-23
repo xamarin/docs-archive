@@ -1,12 +1,12 @@
 ---
-id:{8882FBE4-084A-7759-EED7-FE9EABBFEEBF}  
-title:Persist Customized Tab Bar Buttons  
-brief:This recipe provides one possible solution for how to save and reload a customized tab bar.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/tab_bar/persist_customized_tab_bar_buttons)  
-article:[Create a Tab Bar](/recipes/ios/content_controls/tab_bar/create_a_tab_bar)  
-article:[Add a Badge to a Tab Item](/recipes/ios/content_controls/tab_bar/add_a_badge_to_a_tab_item)  
-article:[Specify Customizable Tab Bar Buttons](/recipes/ios/content_controls/tab_bar/specify_customizable_tab_bar_buttons)  
-sdk:[UITabBarController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarController_Class/Reference/Reference.html)  
+id: {8882FBE4-084A-7759-EED7-FE9EABBFEEBF}  
+title: Persist Customized Tab Bar Buttons  
+brief: This recipe provides one possible solution for how to save and reload a customized tab bar.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/tab_bar/persist_customized_tab_bar_buttons)  
+article: [Create a Tab Bar](/recipes/ios/content_controls/tab_bar/create_a_tab_bar)  
+article: [Add a Badge to a Tab Item](/recipes/ios/content_controls/tab_bar/add_a_badge_to_a_tab_item)  
+article: [Specify Customizable Tab Bar Buttons](/recipes/ios/content_controls/tab_bar/specify_customizable_tab_bar_buttons)  
+sdk: [UITabBarController Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarController_Class/Reference/Reference.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -17,7 +17,7 @@ sdk:[UITabBarController Class Reference](https://developer.apple.com/library/ios
 When a Tab Bar has more options than can fit on the screen, you can allow the
 user to edit the order of the tabs. The changes are not automatically saved.
 
-To save the changes made when a tab bar is edited:
+To save the changes made when a tab bar is edited: 
 <ol start="1">
 	<li>Implement a tab bar. See the [Specifying Customizable Tab Bar Buttons] recipe. Ensure that the Tag is set on each TabBarItem to match its position in the default ViewControllers array.</li>
 </ol>

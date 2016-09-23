@@ -1,8 +1,8 @@
 ---
-id:{8e58a6ae-8518-4fe6-9f3b-94cc98e2c302}  
-title:Style Text  
-subtitle:with NSAttributedString  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/standard_controls/text_field/style-text)  
+id: {8e58a6ae-8518-4fe6-9f3b-94cc98e2c302}  
+title: Style Text  
+subtitle: with NSAttributedString  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/standard_controls/text_field/style-text)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -17,7 +17,7 @@ Text can be styled in the `UITextField` (and also the `UILabel`) using the `NSMu
 
 ## Create String Attributes
 
-String attributes objects contain a style definition that will be applied to some text. Here are three different examples of `UIStringAttributes` objects:
+String attributes objects contain a style definition that will be applied to some text. Here are three different examples of `UIStringAttributes` objects: 
 
 ```
 var firstAttributes = new UIStringAttributes {
@@ -43,7 +43,7 @@ var thirdAttributes = new UIStringAttributes {
 
 ## Apply to Text Field
 
-The same styling can be applied to the entire contents of the text field by creating a single `NSAttributedString` object:
+The same styling can be applied to the entire contents of the text field by creating a single `NSAttributedString` object: 
 
 ```
 textField1.AttributedText = new NSAttributedString("UITextField is pretty!", firstAttributes);
@@ -67,6 +67,6 @@ prettyString.SetAttributes (thirdAttributes.Dictionary, new NSRange (19, 6));
 textField1.AttributedText = prettyString;
 ```
 
-The result is the following:
+The result is the following: 
 
  [ ![](Images/01-styled-text.png "Styled text in UITextView and UILabel")](Images/01-styled-text.png)

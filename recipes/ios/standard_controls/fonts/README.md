@@ -1,7 +1,7 @@
 ---
-id:{3CC1F8CB-C304-CD9F-7925-13CDC9171FA5}  
-title:Fonts  
-subtitle:UIFont  
+id: {3CC1F8CB-C304-CD9F-7925-13CDC9171FA5}  
+title: Fonts  
+subtitle: UIFont  
 ---
 
 iOS ships a number of high-quality fonts that can be used in your

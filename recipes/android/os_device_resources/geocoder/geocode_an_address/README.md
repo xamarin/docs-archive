@@ -1,10 +1,10 @@
 ---
-id:{CCB6BC87-C475-6B73-3B68-B52249C9481B}  
-title:Geocode an Address  
-brief:This recipe shows how use the Geocoder to get a latitude and longitude for an address.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/os_device_resources/geocoder/geocode_an_address)  
-article:[Maps and Location](/guides/android/platform_features/maps_and_location)  
-sdk:[Geocoder API](http://developer.android.com/reference/android/location/Geocoder.html)  
+id: {CCB6BC87-C475-6B73-3B68-B52249C9481B}  
+title: Geocode an Address  
+brief: This recipe shows how use the Geocoder to get a latitude and longitude for an address.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/os_device_resources/geocoder/geocode_an_address)  
+article: [Maps and Location](/guides/android/platform_features/maps_and_location)  
+sdk: [Geocoder API](http: //developer.android.com/reference/android/location/Geocoder.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -19,21 +19,21 @@ Follow these steps to geocode an address.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+<LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: orientation="vertical"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent"
     >
 <Button
-    android:id="@+id/geocodeButton"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/geocodeButtonText"
+    android: id="@+id/geocodeButton"
+    android: layout_width="fill_parent"
+    android: layout_height="wrap_content"
+    android: text="@string/geocodeButtonText"
     />
  <TextView
-    android:id="@+id/addressText"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android: id="@+id/addressText"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent"
    />
 </LinearLayout>
 ```

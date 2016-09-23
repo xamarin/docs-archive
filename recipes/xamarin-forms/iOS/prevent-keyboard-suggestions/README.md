@@ -1,11 +1,11 @@
 ---
-id:{6dcc758a-ac8a-48ae-afb3-a480d6905f49}
-title:Prevent capitalization and spelling correction (on iOS)
-subtitle:How to make data entry easier by turning off auto-capitalization and spelling correction
-brief:This recipe shows how to build a custom renderer for an Entry that prevents iOS from changing what the user types.
-article:[Customizing Controls for Each Platform](/guides/xamarin-forms/custom-renderer/)
-api:[Entry](/api/type/Xamarin.Forms.Entry/)
-dateupdated:2016-02-11
+id: {6dcc758a-ac8a-48ae-afb3-a480d6905f49}
+title: Prevent capitalization and spelling correction (on iOS)
+subtitle: How to make data entry easier by turning off auto-capitalization and spelling correction
+brief: This recipe shows how to build a custom renderer for an Entry that prevents iOS from changing what the user types.
+article: [Customizing Controls for Each Platform](/guides/xamarin-forms/custom-renderer/)
+api: [Entry](/api/type/Xamarin.Forms.Entry/)
+dateupdated: 2016-02-11
 ---
 
 # Overview
@@ -27,12 +27,12 @@ common code does not affect the rendering in any way (until a custom renderer is
 /// <summary>
 /// Required for Custom Renderer to target just this Type
 /// </summary>
-public class NoHelperEntry : Entry
+public class NoHelperEntry :  Entry
 {
 }
 ```
 
-In the code building the user interface for a page, create an instance of the subclass:
+In the code building the user interface for a page, create an instance of the subclass: 
 
 ```
 var myEntry = new NoHelperEntry {
@@ -40,21 +40,21 @@ var myEntry = new NoHelperEntry {
 };
 ```
 
-If the user interface is defined in XAML then a custom `xmlns` must be declared that references the common code assembly, and then the custom prefix used when declaring the new control:
+If the user interface is defined in XAML then a custom `xmlns` must be declared that references the common code assembly, and then the custom prefix used when declaring the new control: 
 
 ```
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:YOUR_APP_NAMESPACE;assembly=YOUR_APP_ASSEMBLY"
-             x:Class="YOUR_APP_NAMESPACE.SomeItemPage">
-    <local:NoHelperEntry x:Name="myEntry" />
+<ContentPage xmlns="http: //xamarin.com/schemas/2014/forms"
+             xmlns: x="http: //schemas.microsoft.com/winfx/2009/xaml"
+             xmlns: local="clr-namespace: YOUR_APP_NAMESPACE;assembly=YOUR_APP_ASSEMBLY"
+             x: Class="YOUR_APP_NAMESPACE.SomeItemPage">
+    <local: NoHelperEntry x: Name="myEntry" />
 </ContentPage>
 ```
 
 
 ## iOS application project
 
-In the iOS project implement a custom renderer as shown (remember to update the namespace to reflect your project):
+In the iOS project implement a custom renderer as shown (remember to update the namespace to reflect your project): 
 
 ```
 using System;
@@ -65,10 +65,10 @@ using CoreGraphics;
 using YOUR_APP_NAMESPACE.iOS;
 using YOUR_APP_NAMESPACE;
 
-[assembly: ExportRenderer(typeof(NoHelperEntry), typeof(NoHelperEntryRenderer))]
+[assembly:  ExportRenderer(typeof(NoHelperEntry), typeof(NoHelperEntryRenderer))]
 namespace YOUR_APP_NAMESPACE.iOS
 {
-	public class NoHelperEntryRenderer : EntryRenderer
+	public class NoHelperEntryRenderer :  EntryRenderer
 	{
 		protected override void OnElementChanged (ElementChangedEventArgs<Entry> e)
 		{
@@ -84,11 +84,11 @@ namespace YOUR_APP_NAMESPACE.iOS
 ```
 
 The custom entry control is shown below, note that no spelling corrections,
-auto-capitalization or other suggestions appear to impede the user:
+auto-capitalization or other suggestions appear to impede the user: 
 
 ![](Images/ios.png)
 
-If you are using an `EntryCell` in a list or table, refer to [this related forum post](https://forums.xamarin.com/discussion/comment/83751/#Comment_83751)
+If you are using an `EntryCell` in a list or table, refer to [this related forum post](https: //forums.xamarin.com/discussion/comment/83751/#Comment_83751)
 that shows how to create a cell renderer and use `NoHelperEntry`.
 
 

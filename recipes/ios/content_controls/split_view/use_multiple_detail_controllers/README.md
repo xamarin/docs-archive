@@ -1,8 +1,8 @@
 ---
-id:{4AA231B2-45A9-8D2A-90D1-3F676CF3ACC1}
-title:Use Multiple Detail Controllers
-brief:This recipe shows how to use multiple detail controllers, where the controller that is loaded changes based upon the row that is selected in the master controller’s table.
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/split_view/use_multiple_detail_controllers)
+id: {4AA231B2-45A9-8D2A-90D1-3F676CF3ACC1}
+title: Use Multiple Detail Controllers
+brief: This recipe shows how to use multiple detail controllers, where the controller that is loaded changes based upon the row that is selected in the master controller’s table.
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/split_view/use_multiple_detail_controllers)
 ---
 
 
@@ -18,11 +18,11 @@ then ensure the **MonoTouch.Dialog-1** assembly is ticked.
 </ol>
 
 <ol start="2">
-  <li>Set the <code>RootViewController</code> of the window to a <code>UISplitViewController</code>, which we’ll implement next, in the <code>AppDelegate</code>:</li>
+  <li>Set the <code>RootViewController</code> of the window to a <code>UISplitViewController</code>, which we’ll implement next, in the <code>AppDelegate</code>: </li>
 </ol>
 
 ```
-public partial class AppDelegate : UIApplicationDelegate
+public partial class AppDelegate :  UIApplicationDelegate
 {
       UIWindow window;
       SplitViewContoller splitController;
@@ -38,17 +38,17 @@ public partial class AppDelegate : UIApplicationDelegate
 ```
 
 <ol start="3">
-  <li>Add a class called <code>SpiltViewController</code> that inherits from <code>UISplitViewController</code> containing the following implementation:</li>
+  <li>Add a class called <code>SpiltViewController</code> that inherits from <code>UISplitViewController</code> containing the following implementation: </li>
 </ol>
 
 ```
-public class SplitViewContoller : UISplitViewController
+public class SplitViewContoller :  UISplitViewController
 {
       SplitDelegate sd;
       ColorsController colorsController;
       UIViewController redVC, greenVC;
       UIViewController detailContainer;
-      public SplitViewContoller () : base()
+      public SplitViewContoller () :  base()
       {
               sd = new SplitDelegate ();
               Delegate = sd;
@@ -80,7 +80,7 @@ public class SplitViewContoller : UISplitViewController
       {
               base.ViewDidLoad ();
       }
-      class SplitDelegate : UISplitViewControllerDelegate
+      class SplitDelegate :  UISplitViewControllerDelegate
       {
               public override bool ShouldHideViewController (UISplitViewController svc,
         UIViewController viewController, UIInterfaceOrientation inOrientation)
@@ -96,12 +96,12 @@ public class SplitViewContoller : UISplitViewController
   (you may need to add <code>using MonoTouch.Dialog;</code> to the top of the page, and ensure the
   <b>MonoTouch.Dialog-1</b> assembly is referenced, as described at the top of this page).
   This class will be the master controller in the master-detail scenario.</li>
-  <li>Add the following code for the <code>ColorsController</code>:</li>
+  <li>Add the following code for the <code>ColorsController</code>: </li>
 </ol>
 ```
 using MonoTouch.Dialog;
 ...
-public class ColorsController : DialogViewController
+public class ColorsController :  DialogViewController
 {
       public event EventHandler<ColorSelectedEventArgs> ColorSelected;
       List<string> colors = new List<string>{"Red", "Green"};
@@ -110,7 +110,7 @@ public class ColorsController : DialogViewController
                      return colors;
               }
       }
-      public ColorsController () : base (null)
+      public ColorsController () :  base (null)
       {
               Root = new RootElement ("Colors") {
         new Section () {
@@ -123,7 +123,7 @@ public class ColorsController : DialogViewController
     };
       }
 }
-public class ColorSelectedEventArgs : EventArgs
+public class ColorSelectedEventArgs :  EventArgs
 {
       public string Color { get; set; }
 }

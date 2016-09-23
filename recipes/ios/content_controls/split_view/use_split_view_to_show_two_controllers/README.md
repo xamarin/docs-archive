@@ -1,12 +1,12 @@
 ---
-id:{63306365-7DD4-BC9F-8104-88813E7081EC}  
-title:Use Split View to Show two Controllers  
-brief:This recipe illustrates how to use the UISplitViewController to display two view controllers with a master-detail relationship. This controller can only be used on the iPad.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/split_view/use_split_view_to_show_two_controllers)  
-article:[Show and Hide the Master View Button](/recipes/ios/content_controls/split_view/show_and_hide_the_master_view_button)  
-article:[Communicate Between Detail and Master Controllers](/recipes/ios/content_controls/split_view/communicate_between_master_and_detail_controllers)  
-sdk:[UISplitViewController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UISplitViewController_class/Reference/Reference.html)  
-sdk:[Split View Controllers](https://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/SplitViewControllers.html)  
+id: {63306365-7DD4-BC9F-8104-88813E7081EC}  
+title: Use Split View to Show two Controllers  
+brief: This recipe illustrates how to use the UISplitViewController to display two view controllers with a master-detail relationship. This controller can only be used on the iPad.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/split_view/use_split_view_to_show_two_controllers)  
+article: [Show and Hide the Master View Button](/recipes/ios/content_controls/split_view/show_and_hide_the_master_view_button)  
+article: [Communicate Between Detail and Master Controllers](/recipes/ios/content_controls/split_view/communicate_between_master_and_detail_controllers)  
+sdk: [UISplitViewController Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UISplitViewController_class/Reference/Reference.html)  
+sdk: [Split View Controllers](https: //developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/SplitViewControllers.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -14,21 +14,21 @@ sdk:[Split View Controllers](https://developer.apple.com/library/ios/#documentat
 
 # Recipe
 
-There are three components required to make a split view work: the master
+There are three components required to make a split view work:  the master
 view, the detail view and the split view that encapsulates them both.
 
  [ ![](Images/Picture_1.png)](Images/Picture_1.png)
 
-To create these views and wire them up:
+To create these views and wire them up: 
 
 <ol>
-  <li>Create a subclass of <code>DialogViewController</code> for the master view:</li>
+  <li>Create a subclass of <code>DialogViewController</code> for the master view: </li>
 </ol>
 
 
 ```
-public class MasterViewController : DialogViewController {
-    public MasterViewController () : base (null)
+public class MasterViewController :  DialogViewController {
+    public MasterViewController () :  base (null)
     {
        Root = new RootElement ("Items") {
           new Section () {
@@ -47,15 +47,15 @@ public class MasterViewController : DialogViewController {
 ```
 
 <ol start="2">
-  <li>Create a subclass of <code>UIViewController</code> for the detail view:</li>
+  <li>Create a subclass of <code>UIViewController</code> for the detail view: </li>
 </ol>
 
 
 ```
-public class DetailViewController : UIViewController
+public class DetailViewController :  UIViewController
 {
     UILabel label;
-    public DetailViewController () : base()
+    public DetailViewController () :  base()
     {
         View.BackgroundColor = UIColor.White;
         label = new UILabel(new CGRect(100,100,300,50));
@@ -76,11 +76,11 @@ public class DetailViewController : UIViewController
 
 
 ```
-public class SplitViewContoller : UISplitViewController
+public class SplitViewContoller :  UISplitViewController
 {
     UIViewController masterView, detailView;
 
-    public SplitViewContoller () : base()
+    public SplitViewContoller () :  base()
     {
         // create our master and detail views
         masterView = new MasterViewController ();
@@ -100,7 +100,7 @@ public class SplitViewContoller : UISplitViewController
 ```
 
 <ol start="4">
-  <li>Finally create and assign the <code>SplitViewController</code> in the <code>AppDelegate</code>:</li>
+  <li>Finally create and assign the <code>SplitViewController</code> in the <code>AppDelegate</code>: </li>
 </ol>
 
 
@@ -121,7 +121,7 @@ the [Showing and Hiding the Master View Button (SplitView)] recipe.
 
 You can also force the master view to appear in portrait
 orientation, by implementing the following delegate in the
-`SplitViewController`:
+`SplitViewController`: 
 
 ```
 ShouldHideViewController = (svc, viewController, inOrientation) => {

@@ -1,9 +1,9 @@
 ---
-id:{1CAC14D3-0FCB-286B-DC5C-C50E1271595C}  
-title:Display Device Location  
-brief:This recipe shows how to display the current location of the device on a map.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/display_device_location)  
-sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)  
+id: {1CAC14D3-0FCB-286B-DC5C-C50E1271595C}  
+title: Display Device Location  
+brief: This recipe shows how to display the current location of the device on a map.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/display_device_location)  
+sdk: [MKMapView Class Reference](https: //developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -11,12 +11,12 @@ sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documen
 
 # Recipe
 
-To show device location on a map in a MKMapView:&nbsp;
+To show device location on a map in a MKMapView: &nbsp;
 
 -  Create a MKMapView and add it to a view.
 -  Set an NSLocationWhenInUseUsageDescription in Info.plist.
 -  On iOS 8.0 and above, Create an instance of the `CLLocationManager` class and call `RequestLocationWhenInUse`.
--  To display the ‘blue dot’ that indicates the device’s location, set the `ShowsUserLocation` property to true:
+-  To display the ‘blue dot’ that indicates the device’s location, set the `ShowsUserLocation` property to true: 
 
 
 ```
@@ -25,7 +25,7 @@ locationManager.RequestWhenInUseAuthorization();
 mapView.ShowsUserLocation = true;
 ```
 
-Accessing the user's location also requires modifications to Info.plist. The following keys relating to location data should be set:
+Accessing the user's location also requires modifications to Info.plist. The following keys relating to location data should be set: 
 
 * **NSLocationWhenInUseUsageDescription** - For when you are accessing the user's location while they are interacting with your app.
 * **NSLocationAlwaysUsageDescription** - For when your app accesses the user's location in the background.

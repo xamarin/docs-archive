@@ -1,10 +1,10 @@
 ---
-id:{B7DAA598-B6AD-6FBF-8E0E-BD53E99322B3}  
-title:Reverse Geocode a Location  
-brief:This recipe shows how use the Geocoder to get an address from a latitude and longitude.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/os_device_resources/geocoder/reverse_geocode_a_location)  
-article:[Maps and Location](/guides/android/platform_features/maps_and_location)  
-sdk:[Geocoder API](http://developer.android.com/reference/android/location/Geocoder.html)  
+id: {B7DAA598-B6AD-6FBF-8E0E-BD53E99322B3}  
+title: Reverse Geocode a Location  
+brief: This recipe shows how use the Geocoder to get an address from a latitude and longitude.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/os_device_resources/geocoder/reverse_geocode_a_location)  
+article: [Maps and Location](/guides/android/platform_features/maps_and_location)  
+sdk: [Geocoder API](http: //developer.android.com/reference/android/location/Geocoder.html)  
 <a name="Recipe" class="injected"></a>
 ---
 
@@ -19,21 +19,21 @@ Follow these steps to reverse geocode a location.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+<LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: orientation="vertical"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent"
     >
 <Button
-    android:id="@+id/revGeocodeButton"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/revGeocodeButtonText"
+    android: id="@+id/revGeocodeButton"
+    android: layout_width="fill_parent"
+    android: layout_height="wrap_content"
+    android: text="@string/revGeocodeButtonText"
     />
  <TextView
-    android:id="@+id/addressText"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android: id="@+id/addressText"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent"
    />
 </LinearLayout>
 ```
@@ -58,7 +58,7 @@ button.Click += async (sender, e) => { … }
 Notice that this is using an `async` lambda to perform the work when the button is clicked. This will cause the work to performed asynchronously and not block the UI thread.
 
 <ol start="4">
-  <li>Next add the following code to the click event handler:</li>
+  <li>Next add the following code to the click event handler: </li>
 </ol>
 
 ```

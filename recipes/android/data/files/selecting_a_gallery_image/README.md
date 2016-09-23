@@ -1,9 +1,9 @@
 ---
-id:{E43B67D6-25DA-87AF-1046-E9ACB6FE4110}  
-title:Selecting a Gallery Image  
-brief:This recipe shows how to read an image from the gallery and display it in an ImageView.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/data/files/selecting_a_gallery_image)  
-sdk:[Activity onActivtyResult](http://developer.android.com/reference/android/app/Activity.html)  
+id: {E43B67D6-25DA-87AF-1046-E9ACB6FE4110}  
+title: Selecting a Gallery Image  
+brief: This recipe shows how to read an image from the gallery and display it in an ImageView.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/data/files/selecting_a_gallery_image)  
+sdk: [Activity onActivtyResult](http: //developer.android.com/reference/android/app/Activity.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -13,23 +13,23 @@ sdk:[Activity onActivtyResult](http://developer.android.com/reference/android/ap
 
  [ ![](Images/PickGalleryImage.png)](Images/PickGalleryImage.png)
 
-1. Add an ImageView to Main.axml:
+1. Add an ImageView to Main.axml: 
 
 ```
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"&gt;
+&lt;LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: orientation="vertical"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent"&gt;
  &lt;Button  
-    android:id="@+id/myButton"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Pick an image from the gallery"/&gt;
+    android: id="@+id/myButton"
+    android: layout_width="fill_parent"
+    android: layout_height="wrap_content"
+    android: text="Pick an image from the gallery"/&gt;
  &lt;ImageView
-    android:id="@+id/myImageView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/&gt;
+    android: id="@+id/myImageView"
+    android: layout_width="wrap_content"
+    android: layout_height="wrap_content"/&gt;
 &lt;/LinearLayout&gt;</code></pre>
 ```
 <ol start="2">

@@ -1,11 +1,11 @@
 ---
-id:{9057932F-7CFB-FBF7-C558-DB8B8BEED81C}  
-title:Passing Data Between Activities  
-brief:This recipe shows how to use intents to pass data between activities.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/fundamentals/activity/pass_data_between_activity)  
-article:[Activity Lifecycle](/guides/android/application_fundamentals/activity_lifecycle)  
-article:[Hello, Multiscreen Applications](/guides/android/getting_started/hello,_multi-screen_applications)  
-sdk:[Activity Class Reference](http://developer.android.com/reference/android/app/Activity.html)  
+id: {9057932F-7CFB-FBF7-C558-DB8B8BEED81C}  
+title: Passing Data Between Activities  
+brief: This recipe shows how to use intents to pass data between activities.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/fundamentals/activity/pass_data_between_activity)  
+article: [Activity Lifecycle](/guides/android/application_fundamentals/activity_lifecycle)  
+article: [Hello, Multiscreen Applications](/guides/android/getting_started/hello,_multi-screen_applications)  
+sdk: [Activity Class Reference](http: //developer.android.com/reference/android/app/Activity.html)  
 ---
 
 <a name="Recipe" class="injected"></a>

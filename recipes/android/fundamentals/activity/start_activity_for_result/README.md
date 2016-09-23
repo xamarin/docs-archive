@@ -1,11 +1,11 @@
 ---
-id:{867ac718-85e4-4750-9362-cb031ec02d84}  
-title:Start Activity For Result  
-brief:In the Hello, Multiscreen Applications guide, we learned how to navigate and pass data from one Activity to the next. This recipe augments the sample application built in the Hello, Multiscreen guide to pass data from from the second Activity back to the starting Activity using StartActivityForResult.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/fundamentals/activity/start_activity_for_result/HelloMultiScreen)  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/fundamentals/activity/start_activity_for_result/HelloMultiScreenFinal)  
-article:[Hello, Multiscreen Applications](http://docs.xamarin.com/guides/android/getting_started/hello,_multi-screen_applications)  
-sdk:[Android Activity](http://developer.android.com/reference/android/app/Activity.html)  
+id: {867ac718-85e4-4750-9362-cb031ec02d84}  
+title: Start Activity For Result  
+brief: In the Hello, Multiscreen Applications guide, we learned how to navigate and pass data from one Activity to the next. This recipe augments the sample application built in the Hello, Multiscreen guide to pass data from from the second Activity back to the starting Activity using StartActivityForResult.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/fundamentals/activity/start_activity_for_result/HelloMultiScreen)  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/fundamentals/activity/start_activity_for_result/HelloMultiScreenFinal)  
+article: [Hello, Multiscreen Applications](http: //docs.xamarin.com/guides/android/getting_started/hello,_multi-screen_applications)  
+sdk: [Android Activity](http: //developer.android.com/reference/android/app/Activity.html)  
 ---
 
 # Recipe
@@ -18,19 +18,19 @@ with the expectation of getting some result back. We can do with with `StartActi
 In our example, we will pass a greeting string from the second Activity back to the first.
 Let's begin by launching the designer and adding a few extra elements to our layout. Open up `Main.axml`
 and add a label right under the title. We will use this label to display the greeting text sent over from the second Activity.
-Call this label *helloText*:
+Call this label *helloText*: 
 
  [ ![](Images/05.png)](Images/05.png)
 
-Next, add a button called *resultButton*. We will use this button to launch the second Activity with `StartActivityForResult`:
+Next, add a button called *resultButton*. We will use this button to launch the second Activity with `StartActivityForResult`: 
 
  [ ![](Images/06.png)](Images/06.png)
 
-Finally, open up `Second.axml` and add a button called *helloButton*:
+Finally, open up `Second.axml` and add a button called *helloButton*: 
 
  [ ![](Images/07.png)](Images/07.png)
 
-Next, add the following code to the `OnCreate` method of the `FirstActivity` to wire up the *resultButton* click to launching the second Activity with `StartActivityForResult`:
+Next, add the following code to the `OnCreate` method of the `FirstActivity` to wire up the *resultButton* click to launching the second Activity with `StartActivityForResult`: 
 
 ```
 var resultButton = FindViewById<Button> (Resource.Id.resultButton);
@@ -41,7 +41,7 @@ resultButton.Click += delegate {
 };
 ```
 
-In `SecondActivity`, wire up the *helloButton* in the `OnCreate` button:
+In `SecondActivity`, wire up the *helloButton* in the `OnCreate` button: 
 
 ```
 var helloButton = FindViewById<Button> (Resource.Id.helloButton);
@@ -56,7 +56,7 @@ helloButton.Click += delegate {
 
 Set the data to be sent back to the first Activity with `SetResult`, passing in the result status and the data (in this case, our Intent). When you're through with passing the data, let Android know you're done by calling `Finish`.
 
-To handle the result in the first Activity, we will override a method called `OnActivityResult`. This will listen for our result code and the Intent that we passed into `SetResult` in the second Activity:
+To handle the result in the first Activity, we will override a method called `OnActivityResult`. This will listen for our result code and the Intent that we passed into `SetResult` in the second Activity: 
 
 ```
 protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)

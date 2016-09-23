@@ -1,13 +1,13 @@
 ---
-id:{8F0A8F14-11AF-4B75-A697-FA21AB9B522D}  
-title:Select A Date in a Fragment  
-brief:This recipe will show how to use a DatePickerDialog inside of a Fragment.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/fragment/select_a_date_in_a_fragment)  
-article:[Create a Fragment](/recipes/android/other_ux/fragment/create_a_fragment)  
-article:[Fragments](/guides/android/platform_features/fragments)  
-article:[Fragments Walkthrough](/guides/android/platform_features/fragments/fragments_walkthrough)  
-sdk:[DatePickerDialog](http://developer.android.com/reference/android/app/DialogFragment.html)  
-sdk:[Dialog Fragment](http://developer.android.com/reference/android/app/DialogFragment.html)  
+id: {8F0A8F14-11AF-4B75-A697-FA21AB9B522D}  
+title: Select A Date in a Fragment  
+brief: This recipe will show how to use a DatePickerDialog inside of a Fragment.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/other_ux/fragment/select_a_date_in_a_fragment)  
+article: [Create a Fragment](/recipes/android/other_ux/fragment/create_a_fragment)  
+article: [Fragments](/guides/android/platform_features/fragments)  
+article: [Fragments Walkthrough](/guides/android/platform_features/fragments/fragments_walkthrough)  
+sdk: [DatePickerDialog](http: //developer.android.com/reference/android/app/DialogFragment.html)  
+sdk: [Dialog Fragment](http: //developer.android.com/reference/android/app/DialogFragment.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -15,10 +15,10 @@ sdk:[Dialog Fragment](http://developer.android.com/reference/android/app/DialogF
 
 # Recipe
 
-Follow these steps to use a DatePickerDialog inside a Fragment:
+Follow these steps to use a DatePickerDialog inside a Fragment: 
 
 1.  Create a Fragment in your Xamarin.Android project, and have the Fragment implement `Android.App.DatePickerDialog.IOnDateSetListener`.
-2.  Implement the method required by the interface:
+2.  Implement the method required by the interface: 
 
 
 ```
@@ -30,11 +30,11 @@ public void OnDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth
 ```
 
 <ol start="3">
-  <li>Create a new class that inherits from <code>DialogFragment</code>:</li>
+  <li>Create a new class that inherits from <code>DialogFragment</code>: </li>
 </ol>
 
 ```
-public class DatePickerDialogFragment : DialogFragment
+public class DatePickerDialogFragment :  DialogFragment
 {
     private readonly Context _context;
     private  DateTime _date;
@@ -56,7 +56,7 @@ public class DatePickerDialogFragment : DialogFragment
 ```
 
 <ol start="4">
-  <li>In the Fragment that was created in step one, modify it so that it will use the <code>DialogFragment</code> subclass:</li>
+  <li>In the Fragment that was created in step one, modify it so that it will use the <code>DialogFragment</code> subclass: </li>
 </ol>
 
 ```

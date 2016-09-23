@@ -1,14 +1,14 @@
 ---
-id:{F8E49029-1D3F-4A60-BB9D-B38702D501EC}
-title:Create a Database with ADO.NET  
-brief:This recipe will demonstrate how to create an SQLite database with ADO.NET.
-article:[Create an SQLite database with ADO.NET for iOS](recipes/ios/data/sqlite/create_a_database_with_ado.net)
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/data/databases/adonet)  
+id: {F8E49029-1D3F-4A60-BB9D-B38702D501EC}
+title: Create a Database with ADO.NET  
+brief: This recipe will demonstrate how to create an SQLite database with ADO.NET.
+article: [Create an SQLite database with ADO.NET for iOS](recipes/ios/data/sqlite/create_a_database_with_ado.net)
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/data/databases/adonet)  
 <a name="Requirements" class="injected"></a>
 # Requirements
 There are no special requirements for this recipe, but you may need to set the correct permission if you have your phone set to save applications, or data, to the SDCard.
 You can find this by going into <uiitem>Project -> CreateDatabaseWithAdoNet Options -> Android Application</uiitem>. In the
-required permissions box, select <uiitem>WriteExternalStorage</uiitem>, as illustrated below:
+required permissions box, select <uiitem>WriteExternalStorage</uiitem>, as illustrated below: 
 ---
 
 ![](Images/permissions.png)
@@ -22,7 +22,7 @@ required permissions box, select <uiitem>WriteExternalStorage</uiitem>, as illus
 Xamarin.Android has an ADO.NET implementation of SQLite inside the assembly
 `Mono.Data.SQLite`
 
-1. Add a reference to `System.Data` and to Mono.Data.SQLite:
+1. Add a reference to `System.Data` and to Mono.Data.SQLite: 
 
  ![](Images/References.png)
 
@@ -35,7 +35,7 @@ need to explicitly state the use of `System.IO`, as `Android.Graphics` also cont
 has a class called `Environment`, so again, the `System` namespace will need to be explicitly used if you are using the
 `Android.Environment` namespace.
 
-The following snippet demonstrates both set ups:
+The following snippet demonstrates both set ups: 
 
 ```
 // with Android.Graphics & Android.Environment
@@ -51,7 +51,7 @@ var pathToDatabase = Path.Combine(docsFolder, "db_adonet.db");
 SqliteConnection.CreateFile(pathToDatabase);
 ```
 <ol start="3">
-  <li> It is important to test to ensure the file has been created. This can be achieved using either a <code>try</code>/<code>catch</code> or to simply use <code>if (!File.Exists)</code> and test the return value. The following snippet demonstrates both:</li>
+  <li> It is important to test to ensure the file has been created. This can be achieved using either a <code>try</code>/<code>catch</code> or to simply use <code>if (!File.Exists)</code> and test the return value. The following snippet demonstrates both: </li>
 </ol>
 ```
 // with try / catch
@@ -102,6 +102,6 @@ catch (Exception ex)
 ```
 
 The sample code for this recipe creates a database with the result displayed, when the button is pressed. This is
-illustrated below:
+illustrated below: 
 
 [![](Images/completed.png)]

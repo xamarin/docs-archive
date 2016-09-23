@@ -1,10 +1,10 @@
 ---
-id:{06249BAE-8BB7-F128-B8BC-348F703941F0}  
-title:Add an Image to a Nav Bar Button  
-brief:This recipe shows how to add an image to UIBarButtonItem that is added to a navigation bar.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/navigation_controller/add_an_image_to_a_nav_bar_button)  
-sdk:[UINavigationBar Class Reference](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
-sdk:[UIBarButtonItem Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIBarButtonItem_Class/Reference/Reference.html)  
+id: {06249BAE-8BB7-F128-B8BC-348F703941F0}  
+title: Add an Image to a Nav Bar Button  
+brief: This recipe shows how to add an image to UIBarButtonItem that is added to a navigation bar.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/navigation_controller/add_an_image_to_a_nav_bar_button)  
+sdk: [UINavigationBar Class Reference](http: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
+sdk: [UIBarButtonItem Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UIBarButtonItem_Class/Reference/Reference.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -13,16 +13,16 @@ sdk:[UIBarButtonItem Class Reference](https://developer.apple.com/library/ios/#d
 # Recipe
 
 We’re going to add a button with a checkmark as shown in the screenshot
-below:
+below: 
 
  [ ![](Images/UIBarButtonItemWithImage.png)](Images/UIBarButtonItemWithImage.png)
 
 <ol>
-  <li>First, create a <code>UINavigationController</code> and add a <code>UIViewController</code> subclass to it in the <code>FinishedLaunching</code> method of the <code>AppDelegate</code>. The example below sets the RootViewController to an instance of <code>UIBarButtonItemWithImageViewController</code> – a [class](https://github.com/xamarin/recipes/blob/master/ios/content_controls/navigation_controller/add_an_image_to_a_nav_bar_button/UIBarButtonItemWithImage/UIBarButtonItemWithImageViewController.cs) which we implemented in our project :</li>
+  <li>First, create a <code>UINavigationController</code> and add a <code>UIViewController</code> subclass to it in the <code>FinishedLaunching</code> method of the <code>AppDelegate</code>. The example below sets the RootViewController to an instance of <code>UIBarButtonItemWithImageViewController</code> – a [class](https: //github.com/xamarin/recipes/blob/master/ios/content_controls/navigation_controller/add_an_image_to_a_nav_bar_button/UIBarButtonItemWithImage/UIBarButtonItemWithImageViewController.cs) which we implemented in our project : </li>
 </ol>
 
 ```
-public partial class AppDelegate : UIApplicationDelegate
+public partial class AppDelegate :  UIApplicationDelegate
 {
     UIWindow window;
     UIBarButtonItemWithImageViewController viewController;
@@ -42,7 +42,7 @@ public partial class AppDelegate : UIApplicationDelegate
 <ol start="2">
   <li>Add an image to the solution (named “image.png” in this case) to be used in the button.</li>
 
-  <li>In the implementation of the <code>UIBarButtonItemWithImageViewController</code>, add a class variable for the <code>UIBarButtonItem</code>. Create the <code>UIBarButtonItem</code> instance passing it a <code>UIImage</code> created from the “image.png” file:</li>
+  <li>In the implementation of the <code>UIBarButtonItemWithImageViewController</code>, add a class variable for the <code>UIBarButtonItem</code>. Create the <code>UIBarButtonItem</code> instance passing it a <code>UIImage</code> created from the “image.png” file: </li>
 </ol>
 
 ```

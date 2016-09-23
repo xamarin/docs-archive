@@ -1,20 +1,20 @@
 ---
-id:{356ba06a-5be9-4f4c-88a4-1dabd3b5c54f }  
-title:Track Significant Location Change  
-brief:The Significant Location Changes API tracks major changes in the user's location by keeping track of changes in cell towers. This API requires a device with a cellular radio.  
+id: {356ba06a-5be9-4f4c-88a4-1dabd3b5c54f }  
+title: Track Significant Location Change  
+brief: The Significant Location Changes API tracks major changes in the user's location by keeping track of changes in cell towers. This API requires a device with a cellular radio.  
 ---
 
 [ ![](Images/01.png)](Images/01.png)
 
 # Recipe
 
-1. The Significant Location Changes API requires the **CoreLocation** library, so we'll start by adding the using directive:
+1. The Significant Location Changes API requires the **CoreLocation** library, so we'll start by adding the using directive: 
 ```
 using CoreLocation;
 ```
 
 <ol start="2">
-  <li>Next, create an instance of a <code>CLLocationManager</code>. The location manager listens to the system's location service:</li>
+  <li>Next, create an instance of a <code>CLLocationManager</code>. The location manager listens to the system's location service: </li>
 </ol>
 
 ```
@@ -47,16 +47,16 @@ if (CLLocationManager.LocationServicesEnabled) {
 ```
 
 <ol start="6">
-  <li>When the service receives a location update, the system will wake the application in the background to handle the location changed event. To run your code, subscribe to the location service's <code>LocationsUpdated</code> event, and add a custom handler:</li>
+  <li>When the service receives a location update, the system will wake the application in the background to handle the location changed event. To run your code, subscribe to the location service's <code>LocationsUpdated</code> event, and add a custom handler: </li>
 </ol>
 
 ```
 LocMgr.LocationsUpdated += (o, e) =&gt; Console.WriteLine ("Location change received");
 ```
-  <div class="note">Note: The application has approximately 10 seconds after the <code>LocationsUpdated</code> event fires to run code in the background. If you want to run a process that takes more than 10 seconds, wrap it in a <a href="/guides/cross-platform/application_fundamentals/backgrounding/part_3_ios_backgrounding_techniques/ios_backgrounding_with_tasks" target="_blank">Background Task</a>.</div>
+  <div class="note">Note:  The application has approximately 10 seconds after the <code>LocationsUpdated</code> event fires to run code in the background. If you want to run a process that takes more than 10 seconds, wrap it in a <a href="/guides/cross-platform/application_fundamentals/backgrounding/part_3_ios_backgrounding_techniques/ios_backgrounding_with_tasks" target="_blank">Background Task</a>.</div>
 
 <ol start="7">
-  <li>Call the following method to stop monitoring location:</li>
+  <li>Call the following method to stop monitoring location: </li>
 </ol>
 
 ```
@@ -64,7 +64,7 @@ LocMgr.StopMonitoringSignificantLocationChanges ();
 ```
 
 <ol start="8">
-  <li>The application output should resemble the following:</li>
+  <li>The application output should resemble the following: </li>
 </ol>
 
 ![]("Images/02.png")

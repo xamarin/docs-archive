@@ -1,6 +1,6 @@
 ---
-id:{BB85EC80-EF96-376E-0A56-6A25B5ABC596}  
-title:Debugging  
+id: {BB85EC80-EF96-376E-0A56-6A25B5ABC596}  
+title: Debugging  
 ---
 
 Debugging applications is a common part of the application development

@@ -1,9 +1,9 @@
 ---
-id:{6468AABB-C81A-D68E-C315-0654E4234BC3}  
-title:Dismiss the Keyboard  
-brief:This recipe will show how to hide the keyboard.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/input/keyboards/dismiss_the_keyboard)  
-sdk:[Responder Object](http://developer.apple.com/library/ios/#documentation/general/conceptual/Devpedia-CocoaApp/Responder.html)  
+id: {6468AABB-C81A-D68E-C315-0654E4234BC3}  
+title: Dismiss the Keyboard  
+brief: This recipe will show how to hide the keyboard.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/input/keyboards/dismiss_the_keyboard)  
+sdk: [Responder Object](http: //developer.apple.com/library/ios/#documentation/general/conceptual/Devpedia-CocoaApp/Responder.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -16,7 +16,7 @@ and may cover or obscure certain parts of the UI. To dismiss the keyboard, send
 the UIResponder.ResignFirstResponder message to the text field that is currently
 the first responder.
 
-1.  Provide  `ShouldReturn` with a delegate or anonymous method that will call  `ResignFirstResponder` on the field:
+1.  Provide  `ShouldReturn` with a delegate or anonymous method that will call  `ResignFirstResponder` on the field: 
 
 
 ```

@@ -1,6 +1,6 @@
 ---
-id:{47B65331-5FDC-FA48-7A1D-7678A9B25544}  
-title:EditText  
+id: {47B65331-5FDC-FA48-7A1D-7678A9B25544}  
+title: EditText  
 ---
 
 The EditText control allows a user to enter text into an application.

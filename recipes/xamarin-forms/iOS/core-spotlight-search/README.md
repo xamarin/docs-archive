@@ -1,28 +1,28 @@
 ---
-id:92174323-56cf-47a7-8d10-8c9180257f8d
-title:Search a Xamarin.Forms App with Core Spotlight (on iOS)
-subtitle:Making an app searchable through Spotlight search
-brief:This recipe shows how to use the iOS 9 Core Spotlight framework to make Xamarin.Forms app content searchable through Spotlight search.
-samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/iOS/CoreSpotlightSearch/)
-article:[Search with Core Spotlight](/guides/ios/platform_features/introduction_to_ios9/search/corespotlight/)
-api:[CoreSpotlight](/api/namespace/CoreSpotlight/)
+id: 92174323-56cf-47a7-8d10-8c9180257f8d
+title: Search a Xamarin.Forms App with Core Spotlight (on iOS)
+subtitle: Making an app searchable through Spotlight search
+brief: This recipe shows how to use the iOS 9 Core Spotlight framework to make Xamarin.Forms app content searchable through Spotlight search.
+samplecode: [Browse on Github](https: //github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/iOS/CoreSpotlightSearch/)
+article: [Search with Core Spotlight](/guides/ios/platform_features/introduction_to_ios9/search/corespotlight/)
+api: [CoreSpotlight](/api/namespace/CoreSpotlight/)
 ---
 
 # Overview
 
-Core Spotlight is a framework introduced in iOS 9 that provides a database-like API to add, edit, or delete links to content within an app. Items that have been added using Core Spotlight will then be available in Spotlight search on the device. The framework is typically used to provide searchability for private data stored on a device. For more information, see [Search with Core Spotlight](http://developer.xamarin.com/guides/ios/platform_features/introduction_to_ios9/search/corespotlight/).
+Core Spotlight is a framework introduced in iOS 9 that provides a database-like API to add, edit, or delete links to content within an app. Items that have been added using Core Spotlight will then be available in Spotlight search on the device. The framework is typically used to provide searchability for private data stored on a device. For more information, see [Search with Core Spotlight](http: //developer.xamarin.com/guides/ios/platform_features/introduction_to_ios9/search/corespotlight/).
 
-The sample app demonstrates a Todo list application where the data is stored in an in-memory collection. When the sample app starts it indexes the `TodoItem` data in the app. The search index is then updated as `TodoItem` instances are added and deleted in the app. Spotlight search can then be used to locate indexed data from the app, as shown in the following screenshot:
+The sample app demonstrates a Todo list application where the data is stored in an in-memory collection. When the sample app starts it indexes the `TodoItem` data in the app. The search index is then updated as `TodoItem` instances are added and deleted in the app. Spotlight search can then be used to locate indexed data from the app, as shown in the following screenshot: 
 
 ![](Images/Spotlight.png)
 
 When the user taps on a search result item for the app that was added via Core Spotlight, the app is launched and the user is shown the `TodoItem` data on the `TodoItemPage`.
 
-The indexing functionality is contained in the `SpotlightSearch` class in the iOS project, and is invoked via the Xamarin.Forms [`DependencyService`](/api/type/Xamarin.Forms.DependencyService/) from the Portable Class Library (PCL) project. For more information about the `DependencyService` class, see [Accessing Native Features with DependencyService](https://developer.xamarin.com/guides/xamarin-forms/dependency-service/).
+The indexing functionality is contained in the `SpotlightSearch` class in the iOS project, and is invoked via the Xamarin.Forms [`DependencyService`](/api/type/Xamarin.Forms.DependencyService/) from the Portable Class Library (PCL) project. For more information about the `DependencyService` class, see [Accessing Native Features with DependencyService](https: //developer.xamarin.com/guides/xamarin-forms/dependency-service/).
 
 ## Indexing Items
 
-The following code example shows how app content is indexed for Spotlight search:
+The following code example shows how app content is indexed for Spotlight search: 
 
 ```
 void ReIndexSearchItems (List<TodoItem> items)
@@ -54,7 +54,7 @@ A [`CSSearchableItem`](/api/type/CoreSpotlight.CSSearchableItem/) instance is cr
 
 ## Creating and Updating an item
 
-The following code example show how to create a single searchable item and index it using Core Spotlight:
+The following code example show how to create a single searchable item and index it using Core Spotlight: 
 
 ```
 public void CreateSearchItem (TodoItem item)
@@ -84,7 +84,7 @@ The `CreateSearchItem` method can also be used to update an existing searchable 
 
 ## Restoring an Item
 
-When the user taps on an item added to the search result via Core Spotlight for the app, the [`AppDelegate.ContinueUserActivity`](/api/member/UIKit.UIApplicationDelegate.ContinueUserActivity/) method is called, as shown in the following code example:
+When the user taps on an item added to the search result via Core Spotlight for the app, the [`AppDelegate.ContinueUserActivity`](/api/member/UIKit.UIApplicationDelegate.ContinueUserActivity/) method is called, as shown in the following code example: 
 
 ```
 public override bool ContinueUserActivity (UIApplication application, NSUserActivity userActivity, UIApplicationRestorationHandler completionHandler)
@@ -99,7 +99,7 @@ public override bool ContinueUserActivity (UIApplication application, NSUserActi
 }
 ```
 
-Provided that the activity has an [`ActivityType`](/api/property/Foundation.NSUserActivity.ActivityType/) of [`CSSearchableItem.ActionType`](/api/property/CoreSpotlight.CSSearchableItem.ActionType/), the identifier of the activity is restored. This identifier is the `TodoItem.ID` property value that was previously stored as the identifier of a [`CSSearchableItem`](/api/type/CoreSpotlight.CSSearchableItem/) instance, prior to indexing. The identifier is then sent as a `ShowItem` message using the Xamarin.Forms [`MessagingCenter`](/api/type/Xamarin.Forms.MessagingCenter/). In response, the registered callback for the `ShowItem` message is executed, as shown in the following code example:
+Provided that the activity has an [`ActivityType`](/api/property/Foundation.NSUserActivity.ActivityType/) of [`CSSearchableItem.ActionType`](/api/property/CoreSpotlight.CSSearchableItem.ActionType/), the identifier of the activity is restored. This identifier is the `TodoItem.ID` property value that was previously stored as the identifier of a [`CSSearchableItem`](/api/type/CoreSpotlight.CSSearchableItem/) instance, prior to indexing. The identifier is then sent as a `ShowItem` message using the Xamarin.Forms [`MessagingCenter`](/api/type/Xamarin.Forms.MessagingCenter/). In response, the registered callback for the `ShowItem` message is executed, as shown in the following code example: 
 
 ```
 public App ()
@@ -123,7 +123,7 @@ For more information about using the [`MessagingCenter`](/api/type/Xamarin.Forms
 
 ## Deleting an Item
 
-The following code example shows how to delete an indexed item by its identifier:
+The following code example shows how to delete an indexed item by its identifier: 
 
 ```
 public void DeleteSearchItem (TodoItem item)

@@ -1,9 +1,9 @@
 ---
-id:{6216de35-0cdf-42e5-8719-4a01c90f659c}
-title:Choose a keyboard for an Entry
-subtitle:How to display the correct virtual keyboard for an Entry
-brief:This recipe shows how to display a virtual keyboard that is appropriate for the input text type, and how to specify additional keyboard options such as capitalization, spellcheck, and suggestions.
-api:[Entry](/api/type/Xamarin.Forms.Entry/)
+id: {6216de35-0cdf-42e5-8719-4a01c90f659c}
+title: Choose a keyboard for an Entry
+subtitle: How to display the correct virtual keyboard for an Entry
+brief: This recipe shows how to display a virtual keyboard that is appropriate for the input text type, and how to specify additional keyboard options such as capitalization, spellcheck, and suggestions.
+api: [Entry](/api/type/Xamarin.Forms.Entry/)
 ---
 
 # Overview
@@ -12,7 +12,7 @@ The `Entry` control defines a `Keyboard` property that allows an app to select t
 
 ## Specifying a virtual Keyboard
 
-The `Keyboard` property is of type `Keyboard`. This class defines read-only properties that are appropriate for different keyboard uses:
+The `Keyboard` property is of type `Keyboard`. This class defines read-only properties that are appropriate for different keyboard uses: 
 
 - `Default`
 - `Text`

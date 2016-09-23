@@ -1,7 +1,7 @@
 ---
-id:{23C4ECC9-538D-A9D5-8777-5D14617FAE7F}  
-title:Buttons  
-subtitle:UIButton  
+id: {23C4ECC9-538D-A9D5-8777-5D14617FAE7F}  
+title: Buttons  
+subtitle: UIButton  
 ---
 
 The UIButton control is a very common control that's both easy to use and

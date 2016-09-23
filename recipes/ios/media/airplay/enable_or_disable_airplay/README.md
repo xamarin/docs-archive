@@ -1,9 +1,9 @@
 ---
-id:{2388137F-B8F4-1AE3-75A0-B1026D9D915E}  
-title:Enable or Disable Airplay  
-brief:This recipe shows how to enable (or disable) AirPlay when playing a video using MPMoviePlayerController.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/media/airplay/enable_or_disable_airplay)  
-sdk:[MPMoviePlayerController Class References](http://developer.apple.com/library/ios/#documentation/mediaplayer/reference/MPMoviePlayerController_Class/Reference/Reference.html)  
+id: {2388137F-B8F4-1AE3-75A0-B1026D9D915E}  
+title: Enable or Disable Airplay  
+brief: This recipe shows how to enable (or disable) AirPlay when playing a video using MPMoviePlayerController.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/media/airplay/enable_or_disable_airplay)  
+sdk: [MPMoviePlayerController Class References](http: //developer.apple.com/library/ios/#documentation/mediaplayer/reference/MPMoviePlayerController_Class/Reference/Reference.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -12,10 +12,10 @@ sdk:[MPMoviePlayerController Class References](http://developer.apple.com/librar
 # Recipe
 
 <div class="note">
-<strong>Note:</strong> In iOS 8 and above, the airplay button will no longer appear in playback controls. Airplay can be enabled or disabled in the control center.
+<strong>Note: </strong> In iOS 8 and above, the airplay button will no longer appear in playback controls. Airplay can be enabled or disabled in the control center.
 </div>
 
--  Add the following class variable in a `UIViewController` subclass:
+-  Add the following class variable in a `UIViewController` subclass: 
 
 
 ```
@@ -24,7 +24,7 @@ MPMoviePlayerController moviePlayer;
 
 -  Add a movie file named sample.m4v to the project in Xamarin or Visual Studio. There is a sample file included in the example project.
 -  Ensure that the __Build Action__ property of the file is set to __Content__. 
--  In the `ViewDidLoad` method, create the `MPMoviePlayer`:
+-  In the `ViewDidLoad` method, create the `MPMoviePlayer`: 
 
 
 ```
@@ -34,14 +34,14 @@ moviePlayer.ShouldAutoplay = true; // starts automatically
 moviePlayer.PrepareToPlay (); //required to enable the control to start playing
 ```
 
--  To enable AirPlay for this movie, set `AllowsAirPlay` to true:
+-  To enable AirPlay for this movie, set `AllowsAirPlay` to true: 
 
 
 ```
 moviePlayer.AllowsAirPlay = true;
 ```
 
--  To disable AirPlay, set `AllowsAirPlay` to false:
+-  To disable AirPlay, set `AllowsAirPlay` to false: 
 
 
 ```

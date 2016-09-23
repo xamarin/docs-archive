@@ -1,14 +1,14 @@
 ---
-id:{9e6d1a1b-1fff-4718-9580-820eeb2f9d2d}  
-title: Call C# from JavaScript  
-brief: This recipe illustrates how to call C# class methods from JavaScript.  
-article: [Jon Pryor's StackOverflow post](http://stackoverflow.com/questions/9745168/monodroid-javascript-call-back/9746911)  
-article: [WebView Tutorial](http://docs.xamarin.com/guides/android/user_interface/web_view)  
+id: {9e6d1a1b-1fff-4718-9580-820eeb2f9d2d}  
+title:  Call C# from JavaScript  
+brief:  This recipe illustrates how to call C# class methods from JavaScript.  
+article:  [Jon Pryor's StackOverflow post](http: //stackoverflow.com/questions/9745168/monodroid-javascript-call-back/9746911)  
+article:  [WebView Tutorial](http: //docs.xamarin.com/guides/android/user_interface/web_view)  
 ---
 
 # Recipe
 
-A screenshot of the demo app created by this recipe is shown below:
+A screenshot of the demo app created by this recipe is shown below: 
 
 [ ![](Images/screenshots.png)](Images/screenshots.png)
 
@@ -24,16 +24,16 @@ method with `[JavascriptInterface]` and `[Export]` as shown in the
 following example. If you are targeting Android API Level 16 or 
 earlier, this interface class must implement `Java.Lang.IRunnable` as 
 explained in [Android API Level 16 and Earlier](#userunnable) (later in this 
-recipe): 
+recipe):  
 
 
 -   Create a C# class that is derived from `Java.Lang.Object`. 
     In the following example, we name our class `MyJSInterface` and
     implement a method to display a toast when it is called from
-    JavaScript:
+    JavaScript: 
 
 ```
-class MyJSInterface : Java.Lang.Object
+class MyJSInterface :  Java.Lang.Object
 {
     Context context;
 
@@ -55,7 +55,7 @@ class MyJSInterface : Java.Lang.Object
     for more information about the `JavascriptInterface` annotation). 
     In the following example, the `ShowToast` method is annotated so 
     that it can be called from JavaScript. Note that you must include the 
-    `Java.Interop` and `Android.Webkit` using statements as shown in this example: 
+    `Java.Interop` and `Android.Webkit` using statements as shown in this example:  
 
 ```
 using Java.Interop;
@@ -70,7 +70,7 @@ public void ShowToast ()
 ```
 
 -   Add a project reference to **Mono.Android.Export** (so you can
-    use the `[Export]` annotation):
+    use the `[Export]` annotation): 
 
     1.  In Visual Studio, right-click **References** in the Solution Explorer and 
         select **Add Reference...**. In Xamarin Studio, right-click **References** in 
@@ -90,7 +90,7 @@ interface class to the `WebView` that displays this HTML content.
 
 -   In the Activity `OnCreate` method, create a `WebView` instance and 
     add it as the content view. Add the `MyJSInterface` class to this 
-    `WebView` instance as follows: 
+    `WebView` instance as follows:  
 
     1.  Set the `WebView`'s `JavaScriptEnabled` flag to `true`.
 
@@ -102,7 +102,7 @@ interface class to the `WebView` that displays this HTML content.
     in a simple HTML document to the `WebView`. Note that the call 
     to `AddJavaScriptInterface` associates the JavaScript name "**CSharp**"
     with an instance of the `MyJSInterface` class (here it is called
-    "**CSharp**", but you can use any name you like): 
+    "**CSharp**", but you can use any name you like):  
 
 ```
 using Android.Webkit;
@@ -130,7 +130,7 @@ protected override void OnCreate(Bundle bundle)
 
 -   Call the C# `ShowToast` method from the HTML document. Add a button to
     the HTML document that invokes the JavaScript fragment `Csharp.ShowToast()` as
-    shown in this example:
+    shown in this example: 
 
 ```
 const string html = @"
@@ -159,10 +159,10 @@ as shown in the following example.
 -   Create a C# class that is derived from `Java.Lang.Object` and 
     `Java.Lang.IRunnable`; this class implements a `Run` method that 
     can be called from JavaScript. In the following example, we name 
-    our class `MyJSInterface`: 
+    our class `MyJSInterface`:  
 
 ```
-class MyJSInterface : Java.Lang.Object, Java.Lang.IRunnable
+class MyJSInterface :  Java.Lang.Object, Java.Lang.IRunnable
 {
     Context context;
 
@@ -182,7 +182,7 @@ class MyJSInterface : Java.Lang.Object, Java.Lang.IRunnable
     to create a `WebView` instance, adding the `MyJSInterface` JavaScript 
     interface class to this instance. However, in order to invoke our 
     C# method from JavaScript, we must call the `run` method as shown in 
-    this example: 
+    this example:  
 
 ```
 const string html = @"
@@ -205,7 +205,7 @@ bound to the C# class with the `Run` method (uppercase 'R').
 # Additional Information
 
 Jon Pryor's 
-[StackOverflow post](http://stackoverflow.com/questions/9745168/monodroid-javascript-call-back/9746911) 
+[StackOverflow post](http: //stackoverflow.com/questions/9745168/monodroid-javascript-call-back/9746911) 
 provides more detailed information about how Xamarin.Android (referred 
 to as *Mono for Android* in the post) uses Android Callable Wrappers to 
 make "JavaScript-within-Android" functionality possible. 

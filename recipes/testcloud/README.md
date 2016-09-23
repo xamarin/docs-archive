@@ -1,9 +1,9 @@
 ---
-id:{6CB3EFAC-0555-431D-A702-58AB4F4ADEA6}  
-title:How Do I  
-subtitle:Tips and Tricks for Xamarin Test Cloud  
-brief:How to accomplish common tasks with Xamarin Test Cloud.  
-dateupdated: 2016-03-22
+id: {6CB3EFAC-0555-431D-A702-58AB4F4ADEA6}  
+title: How Do I  
+subtitle: Tips and Tricks for Xamarin Test Cloud  
+brief: How to accomplish common tasks with Xamarin Test Cloud.  
+dateupdated:  2016-03-22
 ---
 
 

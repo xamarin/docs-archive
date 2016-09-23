@@ -1,7 +1,7 @@
 ---
-id:{BF3749F7-1921-726A-417E-D9018D048923}  
-title:Multitasking & Location  
-brief:Quick guides to performing tasks while the app is in the background and tracking the user's location.  
+id: {BF3749F7-1921-726A-417E-D9018D048923}  
+title: Multitasking & Location  
+brief: Quick guides to performing tasks while the app is in the background and tracking the user's location.  
 ---
 
 -   [Detect Multitasking](/recipes/ios/multitasking/detect_if_multitasking_is_available) - Detect if multitasking is available on the device, and enabled for your application. 

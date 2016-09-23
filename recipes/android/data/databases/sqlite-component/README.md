@@ -1,17 +1,17 @@
 ---
-id:{26172BD6-0F3D-48B8-B396-2033F654D76E}
-title:Create a Database with SQLite Component
-brief:This recipe will demonstrate how to create an SQLite database with the SQLite component.
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/data/databases/sqlite-component)  
-article:[Walkthough – Including a Component in your Project](/guides/cross-platform/application_fundamentals/components_walkthrough/)  
-article:[Create a Database with SQLite - iOS](/recipes/ios/data/sqlite/create_a_database_with_sqlitenet/)  
-article:[Create a Database with SQLite - Android](/recipes/android/data/databases/sqlite/)
-sample:[SQLite Component](http://components.xamarin.com/view/sqlite-net)
+id: {26172BD6-0F3D-48B8-B396-2033F654D76E}
+title: Create a Database with SQLite Component
+brief: This recipe will demonstrate how to create an SQLite database with the SQLite component.
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/data/databases/sqlite-component)  
+article: [Walkthough – Including a Component in your Project](/guides/cross-platform/application_fundamentals/components_walkthrough/)  
+article: [Create a Database with SQLite - iOS](/recipes/ios/data/sqlite/create_a_database_with_sqlitenet/)  
+article: [Create a Database with SQLite - Android](/recipes/android/data/databases/sqlite/)
+sample: [SQLite Component](http: //components.xamarin.com/view/sqlite-net)
 ---
 
 <a name="Requirements" class="injected"></a>
 # Requirements
-You will need to download the <a href="http://components.xamarin.com/view/sqlite-net">SQLite component</a> from the component store. At the time of writing, it is at v1.0.8.3
+You will need to download the <a href="http: //components.xamarin.com/view/sqlite-net">SQLite component</a> from the component store. At the time of writing, it is at v1.0.8.3
 
 
 <a name="Recipe" class="injected"></a>
@@ -39,7 +39,7 @@ public class Person
 
      public override string ToString()
      {
-        return string.Format("[Person: ID={0}, FirstName={1}, LastName={2}]", ID, FirstName, LastName);
+        return string.Format("[Person:  ID={0}, FirstName={1}, LastName={2}]", ID, FirstName, LastName);
      }
 }
 ```

@@ -1,9 +1,9 @@
 ---
-id:{D8C547E3-6671-2680-6163-E0B21414A022}  
-title:Create An ImageButton  
-brief:This recipe shows how to create an ImageButton.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/controls/imagebutton/create_an_imagebutton)  
-sdk:[ImageButton Class Reference](http://developer.android.com/reference/android/widget/ImageButton.html)  
+id: {D8C547E3-6671-2680-6163-E0B21414A022}  
+title: Create An ImageButton  
+brief: This recipe shows how to create an ImageButton.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/controls/imagebutton/create_an_imagebutton)  
+sdk: [ImageButton Class Reference](http: //developer.android.com/reference/android/widget/ImageButton.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -19,13 +19,13 @@ sdk:[ImageButton Class Reference](http://developer.android.com/reference/android
 
 
 ```
-<ImageButton android:id="@+id/myButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dip"
-        android:layout_marginLeft="50dip"
-        android:padding="100dip"
-        android:src="@drawable/myButtonImage" />
+<ImageButton android: id="@+id/myButton"
+        android: layout_width="wrap_content"
+        android: layout_height="wrap_content"
+        android: layout_marginTop="50dip"
+        android: layout_marginLeft="50dip"
+        android: padding="100dip"
+        android: src="@drawable/myButtonImage" />
 ```
 
 <ol start="4">

@@ -1,6 +1,6 @@
 ---
-id:{F4D6F2C3-0B5C-1977-00BA-E38AAB660FC3}  
-title:Environment Checks  
+id: {F4D6F2C3-0B5C-1977-00BA-E38AAB660FC3}  
+title: Environment Checks  
 ---
 
 This recipe shows how to make various environment checks from your code
@@ -12,7 +12,7 @@ to handle different runtime environments.
 ### Check Simulator vs. Device
 
 You can detect whether you are running on the simulator or device by looking
-up the value of the [ObjCRuntime.Runtime.Arch](http://iosapi.xamarin.com/?link=F%3aMonoTouch.ObjCRuntime.Runtime.Arch) field. If the value is [ARCH.Device](http://iosapi.xamarin.com/?link=T%3aMonoTouch.ObjCRuntime.Arch), you are running on the physical hardware,
+up the value of the [ObjCRuntime.Runtime.Arch](http: //iosapi.xamarin.com/?link=F%3aMonoTouch.ObjCRuntime.Runtime.Arch) field. If the value is [ARCH.Device](http: //iosapi.xamarin.com/?link=T%3aMonoTouch.ObjCRuntime.Arch), you are running on the physical hardware,
 otherwise you are running on the simulator.
 
  <a name="Check_your_iOS_Version" class="injected"></a>
@@ -20,7 +20,7 @@ otherwise you are running on the simulator.
 
 ### Check the iOS Version
 
-The iOS operating system version can be checked like this:
+The iOS operating system version can be checked like this: 
 
 ```
 if (UIDevice.CurrentDevice.CheckSystemVersion (7,0))
@@ -36,8 +36,8 @@ if (UIDevice.CurrentDevice.CheckSystemVersion (7,0))
 
 ### Check your Xamarin.iOS Version
 
-The version of Xamarin.iOS is stored in the field [ObjCRuntime.Constants.Version](http://iosapi.xamarin.com/?link=F%3aObjCRuntime.Constants.Version). This is a string, you can turn this
-into a Version object with code like this:
+The version of Xamarin.iOS is stored in the field [ObjCRuntime.Constants.Version](http: //iosapi.xamarin.com/?link=F%3aObjCRuntime.Constants.Version). This is a string, you can turn this
+into a Version object with code like this: 
 
 ```
 Version version = new Version (ObjCRuntime.Constants.Version);

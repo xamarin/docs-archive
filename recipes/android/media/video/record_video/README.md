@@ -1,9 +1,9 @@
 ---
-id:{3510AD02-2FC1-A034-9362-B5B0BF1B8EE1}  
-title:Record Video  
-brief:This recipe shows how to record video using the MediaRecorder class and play it back with the MediaPlayer class.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/media/video/record_video)  
-sdk:[MediaRecorder Class Reference](http://developer.android.com/reference/android/media/MediaRecorder.html)  
+id: {3510AD02-2FC1-A034-9362-B5B0BF1B8EE1}  
+title: Record Video  
+brief: This recipe shows how to record video using the MediaRecorder class and play it back with the MediaPlayer class.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/media/video/record_video)  
+sdk: [MediaRecorder Class Reference](http: //developer.android.com/reference/android/media/MediaRecorder.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -14,35 +14,35 @@ sdk:[MediaRecorder Class Reference](http://developer.android.com/reference/andro
 
 -  Create a new Xamarin.Android application named RecordVideo.
 -  Add the `CAMERA`, `RECORD_AUDIO`, and `WRITE_EXTERNAL_STORAGE` permissions to the AndroidManifest.xml.
--  Add the buttons to the Main.axml file to start, stop and play the recording. Also add a `VideoView` for video preview while recording and for playback:
+-  Add the buttons to the Main.axml file to start, stop and play the recording. Also add a `VideoView` for video preview while recording and for playback: 
 
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+<LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: orientation="vertical"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent">
 
     <Button  
-        android:id="@+id/Record"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Record"/>
+        android: id="@+id/Record"
+        android: layout_width="fill_parent"
+        android: layout_height="wrap_content"
+        android: text="Record"/>
      <Button  
-        android:id="@+id/Stop"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Stop"/>
+        android: id="@+id/Stop"
+        android: layout_width="fill_parent"
+        android: layout_height="wrap_content"
+        android: text="Stop"/>
       <Button  
-        android:id="@+id/Play"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Play"/>
+        android: id="@+id/Play"
+        android: layout_width="fill_parent"
+        android: layout_height="wrap_content"
+        android: text="Play"/>
      <VideoView
-        android:id="@+id/SampleVideoView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"/>
+        android: id="@+id/SampleVideoView"
+        android: layout_width="fill_parent"
+        android: layout_height="fill_parent"/>
 </LinearLayout>
 ```
 

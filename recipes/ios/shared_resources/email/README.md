@@ -1,6 +1,6 @@
 ---
-id:{7319B165-137D-DF40-92F4-FE7C11BB6F1B}  
-title:Email  
+id: {7319B165-137D-DF40-92F4-FE7C11BB6F1B}  
+title: Email  
 ---
 
 iOS applications can use the MFMailComposeViewController, which is part of

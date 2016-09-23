@@ -1,10 +1,10 @@
 ---
-id:{0E44C0E9-241F-506F-9358-36BEA3DB4665}  
-title:Rotate An Image  
-brief:This recipe shows how to rotate an image on the screen using a UIImageView and a CGAffineTransform.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/media/images/rotate_an_image)  
-article:[Working with Images](/guides/ios/application_fundamentals/working_with_images)  
-sdk:[Quartz 2D Programming Guide](https://developer.apple.com/library/mac/#documentation/graphicsimaging/conceptual/drawingwithquartz2d/Introduction/Introduction.html)  
+id: {0E44C0E9-241F-506F-9358-36BEA3DB4665}  
+title: Rotate An Image  
+brief: This recipe shows how to rotate an image on the screen using a UIImageView and a CGAffineTransform.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/media/images/rotate_an_image)  
+article: [Working with Images](/guides/ios/application_fundamentals/working_with_images)  
+sdk: [Quartz 2D Programming Guide](https: //developer.apple.com/library/mac/#documentation/graphicsimaging/conceptual/drawingwithquartz2d/Introduction/Introduction.html)  
 ---
 
 <a name="Recipe" class="injected"></a>

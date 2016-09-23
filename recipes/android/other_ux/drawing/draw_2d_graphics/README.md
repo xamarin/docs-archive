@@ -1,15 +1,15 @@
 ---
-id:{6EFBBBBF-2B2B-2F77-E796-03392B93A2F2}  
-title:Draw 2D Graphics  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/drawing/draw_2d_graphics)  
-sdk:[ShapeDrawable](http://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html)  
+id: {6EFBBBBF-2B2B-2F77-E796-03392B93A2F2}  
+title: Draw 2D Graphics  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/other_ux/drawing/draw_2d_graphics)  
+sdk: [ShapeDrawable](http: //developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html)  
 ---
 
 This recipe will provide an example of drawing a simple 2-D object.
 
  [ ![](Images/oval.png)](Images/oval.png)
 
- **Related Google Documentation:**
+ **Related Google Documentation: **
 
  <a name="Recipe" class="injected"></a>
 
@@ -18,18 +18,18 @@ This recipe will provide an example of drawing a simple 2-D object.
 
 1.  Create a new Xamarin.Android application named  `TwoDDrawing` . Notice that the project name does not start with a number.
 2.  Delete  `Main.axml` , it is not necessary for this recipe.
-3.  Create a new class in the project named  `MyOvalShape` , have it extend  `Android.Views.View` , and implement a constructor that takes a  `Android.Content.Context` :
+3.  Create a new class in the project named  `MyOvalShape` , have it extend  `Android.Views.View` , and implement a constructor that takes a  `Android.Content.Context` : 
 
 
 ```
-public class MyOvalShape : View
+public class MyOvalShape :  View
 {
-    public MyOvalShape(Context context) : base(context) { }
+    public MyOvalShape(Context context) :  base(context) { }
 }
 ```
 
 <ol start="4">
-  <li>Add an instance variable to the class:</li>
+  <li>Add an instance variable to the class: </li>
 </ol>
 
 ```
@@ -37,11 +37,11 @@ private readonly ShapeDrawable _shape;
 ```
 
 <ol start="5">
-  <li>Add the following code into the constructor of <code>MyOvalShape</code> to create the shape that is to be drawn:</li>
+  <li>Add the following code into the constructor of <code>MyOvalShape</code> to create the shape that is to be drawn: </li>
 </ol>
 
 ```
-public MyOvalShape(Context context) : base(context)
+public MyOvalShape(Context context) :  base(context)
 {
     var paint = new Paint();
     paint.SetARGB(255, 200, 255, 0);
@@ -56,7 +56,7 @@ public MyOvalShape(Context context) : base(context)
 ```
 
 <ol start="6">
-  <li>Override <code>OnDraw</code> inside <code>MyOvalShape</code>, this will draw the oval:</li>
+  <li>Override <code>OnDraw</code> inside <code>MyOvalShape</code>, this will draw the oval: </li>
 </ol>
 
 ```
@@ -67,7 +67,7 @@ protected override void OnDraw(Canvas canvas)
 ```
 
 <ol start="7">
-  <li>Modify <code>Activity1.OnCreate</code> so that the oval will be drawn when the application starts:</li>
+  <li>Modify <code>Activity1.OnCreate</code> so that the oval will be drawn when the application starts: </li>
 </ol>
 
 ```
@@ -79,7 +79,7 @@ protected override void OnCreate(Bundle bundle)
 ```
 
 <ol start="8">
-  <li>Run the application on a device, and an oval shape will be drawn:</li>
+  <li>Run the application on a device, and an oval shape will be drawn: </li>
 </ol>
 
  [ ![](Images/oval.png)](Images/oval.png)

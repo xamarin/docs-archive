@@ -1,7 +1,7 @@
 ---
-id:{6DC7A80E-C8F0-4E73-AFC1-8664DB58F47F}  
-title:Tab Bar  
-subtitle:UITabBarController  
+id: {6DC7A80E-C8F0-4E73-AFC1-8664DB58F47F}  
+title: Tab Bar  
+subtitle: UITabBarController  
 ---
 
 The UITabBarController is an indispensible control for splitting applications

@@ -1,6 +1,6 @@
 ---
-id:{6BEB9B5E-DBF5-8E66-0B32-C5A0A6B72B3E}  
-title:Standard Controls  
+id: {6BEB9B5E-DBF5-8E66-0B32-C5A0A6B72B3E}  
+title: Standard Controls  
 ---
 
 -   [ActionSheet](/recipes/ios/standard_controls/actionsheet) 

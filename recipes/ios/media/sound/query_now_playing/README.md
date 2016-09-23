@@ -1,10 +1,10 @@
 ---
-id:{7c9d42c9-c8b5-43ea-a905-b0235ba51d70}  
-title:Query Now Playing  
-brief:Get information about the song playing in the Music Player.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/media/sound/query_now_playing)  
-sdk:[iPod Library Access Guide](https://developer.apple.com/library/ios/documentation/Audio/Conceptual/iPodLibraryAccess_Guide/UsingTheiPodLibrary/UsingTheiPodLibrary.html)  
-sdk:[MPMusicPlayerController Class Reference](https://developer.apple.com/library/ios/documentation/mediaplayer/reference/MPMusicPlayerController_ClassReference/Reference/Reference.html)  
+id: {7c9d42c9-c8b5-43ea-a905-b0235ba51d70}  
+title: Query Now Playing  
+brief: Get information about the song playing in the Music Player.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/media/sound/query_now_playing)  
+sdk: [iPod Library Access Guide](https: //developer.apple.com/library/ios/documentation/Audio/Conceptual/iPodLibraryAccess_Guide/UsingTheiPodLibrary/UsingTheiPodLibrary.html)  
+sdk: [MPMusicPlayerController Class Reference](https: //developer.apple.com/library/ios/documentation/mediaplayer/reference/MPMusicPlayerController_ClassReference/Reference/Reference.html)  
 ---
 
 # Recipe
@@ -20,7 +20,7 @@ sdk:[MPMusicPlayerController Class Reference](https://developer.apple.com/librar
   MPMusicPlayerController MyPlayer = new MPMusicPlayerController();
 ```
 <ol start="3">
-  <li>To get information about the currently playing song, use the <code>NowPlaying</code> property:</li>
+  <li>To get information about the currently playing song, use the <code>NowPlaying</code> property: </li>
 </ol>
 
 ```

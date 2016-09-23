@@ -1,16 +1,16 @@
 ---
-id:{055FA463-E40B-6A58-7E19-4C47393B4884}  
-title:Load Local Content  
-brief:This recipe shows how to load a local web page in a UIWebView control.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/web_view/load_local_content)  
-sdk:[UIWebView Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIWebView_Class/Reference/Reference.html)  
-sdk:[Using UIWebView to display select document types](https://developer.apple.com/library/ios/#qa/qa1630/_index.html)  
+id: {055FA463-E40B-6A58-7E19-4C47393B4884}  
+title: Load Local Content  
+brief: This recipe shows how to load a local web page in a UIWebView control.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/web_view/load_local_content)  
+sdk: [UIWebView Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UIWebView_Class/Reference/Reference.html)  
+sdk: [Using UIWebView to display select document types](https: //developer.apple.com/library/ios/#qa/qa1630/_index.html)  
 ---
 
 
 # Recipe
 
-To show local Html content in a `UIWebView`:
+To show local Html content in a `UIWebView`: 
 
 <ol start="1">
   <li>Add the files to your Xamarin.iOS project - in this example the HTML, images and style sheets
@@ -22,7 +22,7 @@ To show local Html content in a `UIWebView`:
 ![](Images/content-folder.png)
 
 <ol start="2">
-  <li>Create a <code>UIWebView</code> and add it to a view:</li>
+  <li>Create a <code>UIWebView</code> and add it to a view: </li>
 </ol>
 
 
@@ -32,7 +32,7 @@ View.AddSubview(webView);
 ```
 
 <ol start="3">
-  <li>Load the file using <code>NSUrlRequest</code> and <code>NSUrl</code> classes:</li>
+  <li>Load the file using <code>NSUrlRequest</code> and <code>NSUrl</code> classes: </li>
 </ol>
 
 

@@ -1,11 +1,11 @@
 ---
-id:{CB9D9E60-6DC2-A16A-8730-0AEE11DCB300}  
-title:Storyboard a TableView  
-brief:This recipe shows how to use the Storyboard to build a user interface with a UITableView using Xamarin Studio.  
-samplecode:[Storyboard Table](/samples/monotouch/StoryboardTable/)
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/general/storyboard/storyboard_a_tableview)
-sdk:[UIStoryboard Class Reference&nbsp;](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html)  
-sdk:[UIStoryboardSegue Class Reference &nbsp;](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboardSegue_Class/Reference/Reference.html)  
+id: {CB9D9E60-6DC2-A16A-8730-0AEE11DCB300}  
+title: Storyboard a TableView  
+brief: This recipe shows how to use the Storyboard to build a user interface with a UITableView using Xamarin Studio.  
+samplecode: [Storyboard Table](/samples/monotouch/StoryboardTable/)
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/general/storyboard/storyboard_a_tableview)
+sdk: [UIStoryboard Class Reference&nbsp;](http: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html)  
+sdk: [UIStoryboardSegue Class Reference &nbsp;](http: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboardSegue_Class/Reference/Reference.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -17,17 +17,17 @@ It is possible to use a Storyboard to create custom Table Views. This recipe dem
 
 # Recipe
 
-To create a Storyboard-based application using a TableView:
+To create a Storyboard-based application using a TableView: 
 
 Create a new solution in Xamarin Studio using <span class="UIItem">File > Solution > iOS > iPhone Storyboard > Master-Detail Application</span>.
 
  [ ![Create Project](Images/image14a.png "")](Images/image14a.png)
 
-Double-click the `.storyboard` file to open it in the iOS Designer:
+Double-click the `.storyboard` file to open it in the iOS Designer: 
 
  [ ![](Images/image20a.png)](Images/image20a.png)
 
-We will modify the storyboard in three steps:
+We will modify the storyboard in three steps: 
 
 -  First, we will layout the required view controllers and set their properties.
 
@@ -44,7 +44,7 @@ Once the storyboard is complete, code can be added to run the table.
 
 # Layout The View Controllers
 
-Let's follow these steps to delete the existing Detail view and replace it with a UITableViewController:
+Let's follow these steps to delete the existing Detail view and replace it with a UITableViewController: 
 
 -  Select the black bar at the bottom of the Detail View and delete it.
 
@@ -55,17 +55,17 @@ Let's follow these steps to delete the existing Detail view and replace it with 
 -  Create a segue from the Master View Controller to the View Controller that was just added. To create the segue, Control+drag from the Detail cell to the newly added UITableViewController. Choose the option Push under Segue Selection
 
 
--  Select the new segue you created and give it an identifier to reference this segue in code. Click on the segue and enter “TaskSegue” for the Identifier in the  <span class="UIItem">Properties Pad</span> , like this:
+-  Select the new segue you created and give it an identifier to reference this segue in code. Click on the segue and enter “TaskSegue” for the Identifier in the  <span class="UIItem">Properties Pad</span> , like this: 
 
 
 
 
  [ ![](Images/image16a.png)](Images/image16a.png)
 
--  Change the Master View to be  *Content: Dynamic Prototypes* (the View on the Design Surface will be labelled  *Prototype Content* ).
+-  Change the Master View to be  *Content:  Dynamic Prototypes* (the View on the Design Surface will be labelled  *Prototype Content* ).
 
 
--  Change the new UITableViewController to be  *Content: Static Cells* .
+-  Change the new UITableViewController to be  *Content:  Static Cells* .
 
 
 -  Select the View Controller and type  *TaskDetailViewController* for the Class in the Properties Pad.
@@ -78,22 +78,22 @@ Let's follow these steps to delete the existing Detail view and replace it with 
 
  [ ![](Images/image18a.png)](Images/image18a.png)
 
-Once we change the Master view's title to "Choreboard", the storyboard design surface should look like this:
+Once we change the Master view's title to "Choreboard", the storyboard design surface should look like this: 
 
  [ ![](Images/image20a.png)](Images/image20a.png)
 
 # Create the UI
 
-First, select the prototype cell in the Master View Controller and set the Identifier as *taskcell*, as illustrated below:
+First, select the prototype cell in the Master View Controller and set the Identifier as *taskcell*, as illustrated below: 
 
  [ ![](Images/image22a.png)](Images/image22a.png)
 
-Next, follow these steps to create a button that will add new tasks:
+Next, follow these steps to create a button that will add new tasks: 
 
 -  Drag a Bar Button Item from the Toolbox into the navigation bar
 
 
--  In the Properties Pad, under Bar Button Item select Identifier: Add (to make it a "+" button).
+-  In the Properties Pad, under Bar Button Item select Identifier:  Add (to make it a "+" button).
 
 
 -  Enter "AddButton" as the Name. This will enable us to refer to it in code at a later stage.
@@ -101,52 +101,52 @@ Next, follow these steps to create a button that will add new tasks:
 
 
 
-Now we must build the DetailView. The screenshot below shows the finished UI:
+Now we must build the DetailView. The screenshot below shows the finished UI: 
 
  [ ![](Images/image24a.png)](Images/image24a.png)
 
-To build the complete layout, first select the table view and open the Property Pad. Update the following properties as follows:
+To build the complete layout, first select the table view and open the Property Pad. Update the following properties as follows: 
 
--  Sections:  *2*
-
-
--  Style:  *Grouped*
+-  Sections:   *2*
 
 
--  Seperator:  *None*
+-  Style:   *Grouped*
 
 
--  Selection:  *No Selection*
+-  Seperator:   *None*
+
+
+-  Selection:   *No Selection*
 
 
 
 
-Now, select the top section of the DetailView and under <span class="UIItem">Properties > Table View Section</span> change rows to '3', as illustrated below:
+Now, select the top section of the DetailView and under <span class="UIItem">Properties > Table View Section</span> change rows to '3', as illustrated below: 
 
  [ ![](Images/image29.png)](Images/image29.png)
 
-For each cell in Section 1 open the <span class="UIItem">Properties Pad</span> and set:
+For each cell in Section 1 open the <span class="UIItem">Properties Pad</span> and set: 
 
--  Style:  *Custom*
+-  Style:   *Custom*
 
 
--  Identifier: choose a unique identifier for each cell (eg. “title”, “notes”, “done”).
+-  Identifier:  choose a unique identifier for each cell (eg. “title”, “notes”, “done”).
 
 
 -  Drag the required controls to produce the layout shown in the screenshot (place UILabel, UITextField and UISwitch on the correct cells, and set the labels appropriately, ie. Title, Notes and Done).
 
 
--  Selection:  *No Selection*
+-  Selection:   *No Selection*
 
 
 
 
-In the second section, set the number of Rows to 1 and grab the bottom resize handle to make it taller. Select the cell in the <span class="UIItem">Properties pad</span> and set:
+In the second section, set the number of Rows to 1 and grab the bottom resize handle to make it taller. Select the cell in the <span class="UIItem">Properties pad</span> and set: 
 
--  Identifier:  *to a unique value in the Property Pad(eg. “save”)* .
+-  Identifier:   *to a unique value in the Property Pad(eg. “save”)* .
 
 
--  Background:  *Clear Color*
+-  Background:   *Clear Color*
 
 
 -  Drag two buttons onto the cell and set their titles appropriately (i.e. Save and Delete).
@@ -154,21 +154,21 @@ In the second section, set the number of Rows to 1 and grab the bottom resize ha
 
 
 
-The last step in creating our Storyboard is giving each of our controls a name under <span class="UIItem">Identity > Name</span>. Name these as follows:
+The last step in creating our Storyboard is giving each of our controls a name under <span class="UIItem">Identity > Name</span>. Name these as follows: 
 
--  Title UITextField: TitleText
-
-
--  Notes UITextField: NotesText
+-  Title UITextField:  TitleText
 
 
--  UISwitch: DoneSwitch
+-  Notes UITextField:  NotesText
 
 
--  Delete UIButton: DeleteButton
+-  UISwitch:  DoneSwitch
 
 
--  Save UIButton: SaveButton
+-  Delete UIButton:  DeleteButton
+
+
+-  Save UIButton:  SaveButton
 
 
 
@@ -177,7 +177,7 @@ The last step in creating our Storyboard is giving each of our controls a name u
 
 Our storyboard is now complete, now we must add code to run the application.
 
-First, create a Chores class and add the following code:
+First, create a Chores class and add the following code: 
 
 ```
 public class Chore {
@@ -195,10 +195,10 @@ public bool Done { get; set; }
 }
 ```
 
-Next, create a `RootTableSource` class that inheirits from `UITableViewSource`. Populate the class with the following code:
+Next, create a `RootTableSource` class that inheirits from `UITableViewSource`. Populate the class with the following code: 
 
 ```
-public class RootTableSource : UITableViewSource {
+public class RootTableSource :  UITableViewSource {
 
 // there is NO database or storage of Tasks in this example, just an in-memory List<>
 Chore[] tableItems;
@@ -231,7 +231,7 @@ public Chore GetItem(nint id) {
 }
 ```
 
-Next, replace the code in the `MasterViewController` with the following code:
+Next, replace the code in the `MasterViewController` with the following code: 
 
 ```
 using System;
@@ -243,11 +243,11 @@ using UIKit;
 
 namespace StoryboardTable
 {
-    public partial class MasterViewController : UITableViewController
+    public partial class MasterViewController :  UITableViewController
     {
         List<Chore> chores;
 
-    public MasterViewController (IntPtr handle) : base (handle)
+    public MasterViewController (IntPtr handle) :  base (handle)
     {
         Title = "ChoreBoard";
 
@@ -350,7 +350,7 @@ namespace StoryboardTable
 }
 ```
 
-Next, replace the `TaskDetailViewController` with the following code:
+Next, replace the `TaskDetailViewController` with the following code: 
 
 ```
 using System;
@@ -360,12 +360,12 @@ using System.CodeDom.Compiler;
 
 namespace StoryboardTable
 {
-    partial class TaskDetailViewController : UITableViewController
+    partial class TaskDetailViewController :  UITableViewController
     {
         Chore currentTask {get;set;}
         public MasterViewController Delegate {get;set;} // will be used to Save, Delete later</p>
 
-    public TaskDetailViewController (IntPtr handle) : base (handle)
+    public TaskDetailViewController (IntPtr handle) :  base (handle)
     {
 
     }
@@ -405,6 +405,6 @@ namespace StoryboardTable
 
 
 
-When run, the app should look as follows:
+When run, the app should look as follows: 
 
  [ ![](Images/image28a.png)](Images/image28a.png)

@@ -1,31 +1,31 @@
 ---
-id:{D538BA83-B65E-07C4-7B72-664FADCEEC8E}
-title:Display a Loading Message
-brief:This recipe shows how to display a modal “Loading…” message while long-running operations are in progress.
-samplecode:[DisplayLoadingMessage](https://github.com/xamarin/recipes/tree/master/ios/standard_controls/popovers/DisplayLoadingMessage)
-dateupdated:2015-12-17
+id: {D538BA83-B65E-07C4-7B72-664FADCEEC8E}
+title: Display a Loading Message
+brief: This recipe shows how to display a modal “Loading…” message while long-running operations are in progress.
+samplecode: [DisplayLoadingMessage](https: //github.com/xamarin/recipes/tree/master/ios/standard_controls/popovers/DisplayLoadingMessage)
+dateupdated: 2015-12-17
 ---
 
 # Recipe
 
 A “Loading...” message while performing a network operation (or other
-long-running task) looks like this:
+long-running task) looks like this: 
 
  ![](Images/Loading.png)
 
 
 
- To display the overlay, follow these steps:
+ To display the overlay, follow these steps: 
 
-<ol><li>Add this&nbsp; <code>LoadingOverlay</code>&nbsp;class to your project:</li></ol>
+<ol><li>Add this&nbsp; <code>LoadingOverlay</code>&nbsp;class to your project: </li></ol>
 
 ```
-	public class LoadingOverlay : UIView {
+	public class LoadingOverlay :  UIView {
 		// control declarations
 		UIActivityIndicatorView activitySpinner;
 		UILabel loadingLabel;
 
-		public LoadingOverlay (CGRect frame) : base (frame)
+		public LoadingOverlay (CGRect frame) :  base (frame)
 		{
 			// configurable bits
 			BackgroundColor = UIColor.Black;
@@ -81,13 +81,13 @@ long-running task) looks like this:
 ```
 
 <ol start="2"><li>Create a field in your class to store a reference to the overlay
-control:</li></ol>
+control: </li></ol>
 
 ```
 LoadingOverlay loadingOverlay;
 ```
 
-<ol start="3"><li>Before starting a long-running task, create the overlay and add it to the current view:</li></ol>
+<ol start="3"><li>Before starting a long-running task, create the overlay and add it to the current view: </li></ol>
 
 ```
 var bounds = UIScreen.MainScreen.Bounds;
@@ -97,7 +97,7 @@ loadPop = new LoadingOverlay (bounds);
 View.Add (loadPop);
 ```
 
-<ol start="4"><li>When the long-running task is complete, call&nbsp; <code>Hide()</code>:</li></ol>
+<ol start="4"><li>When the long-running task is complete, call&nbsp; <code>Hide()</code>: </li></ol>
 
 ```
 loadingOverlay.Hide ();

@@ -1,9 +1,9 @@
 ---
-id:{041A249C-F116-E49E-DB3C-1DCCE6378BC9}  
-title:Animate a UIView using UIKit  
-brief:This recipe shows how to animate a UIView using UIKit. In this case it shows how to animate a UIImageView, but the same technique can be applied to any UIView.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/animate_a_uiview_using_uikit)  
-sdk:[Core Animation Programming Guide](https://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)  
+id: {041A249C-F116-E49E-DB3C-1DCCE6378BC9}  
+title: Animate a UIView using UIKit  
+brief: This recipe shows how to animate a UIView using UIKit. In this case it shows how to animate a UIImageView, but the same technique can be applied to any UIView.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/animate_a_uiview_using_uikit)  
+sdk: [Core Animation Programming Guide](https: //developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -11,9 +11,9 @@ sdk:[Core Animation Programming Guide](https://developer.apple.com/library/ios/#
 
 # Recipe
 
-Follow these steps to create the animation:
+Follow these steps to create the animation: 
 
--  Add an image named `Sample.png` to the project with the [*Build Action*](http://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/) set to **Content**.
+-  Add an image named `Sample.png` to the project with the [*Build Action*](http: //developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/) set to **Content**.
 
 -  In a UIViewController subclass create class variables for a *UIImageView*, *UIImage* and *CGPoint*.
 
@@ -58,7 +58,7 @@ UIView.SetAnimationRepeatAutoreverses (true);
 
 ```
 UIView.SetAnimationDelegate (this);
-UIView.SetAnimationDidStopSelector (new Selector ("animationDidStop:finished:context:"));
+UIView.SetAnimationDidStopSelector (new Selector ("animationDidStop: finished: context: "));
 ```
 
 -  Set the Center property of the UIImageView to the point where it will animate to and call `UIView.CommitAnimations`.
@@ -75,7 +75,7 @@ imageView.Center = new CGPoint (xpos, ypos);
 
 
 ```
-[Export("animationDidStop:finished:context:")]
+[Export("animationDidStop: finished: context: ")]
 void SlideStopped (NSString animationID, NSNumber finished, NSObject context)
 {
 	imageView.Center = pt;

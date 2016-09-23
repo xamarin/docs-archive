@@ -1,9 +1,9 @@
 ---
-id:{1C61F57E-E1F5-8287-3356-387067A85247}  
-title:Create a Tab Bar  
-brief:This recipe shows you how to create a Tab Bar in your Xamarin.iOS application.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/tab_bar/create_a_tab_bar)  
-sdk:[UITabBarController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarController_Class/Reference/Reference.html)  
+id: {1C61F57E-E1F5-8287-3356-387067A85247}  
+title: Create a Tab Bar  
+brief: This recipe shows you how to create a Tab Bar in your Xamarin.iOS application.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/tab_bar/create_a_tab_bar)  
+sdk: [UITabBarController Class Reference](https: //developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarController_Class/Reference/Reference.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -11,13 +11,13 @@ sdk:[UITabBarController Class Reference](https://developer.apple.com/library/ios
 
 # Recipe
 
-To add a tab bar to your Xamarin.iOS application:
+To add a tab bar to your Xamarin.iOS application: 
 
 <ol start="1">
-	<li>Create a subclass of <code>UITabBarController</code>:</li>
+	<li>Create a subclass of <code>UITabBarController</code>: </li>
 </ol>
 ```
-public class TabBarController : UITabBarController {}
+public class TabBarController :  UITabBarController {}
 ```
 <ol start="2">
 	<li>Create class-level fields for each <code>UIViewController</code> that corresponds to a tab.</li>
@@ -50,7 +50,7 @@ var tabs = new UIViewController []{
 ViewControllers = tabs;
 ```
 <ol start="5">
-	<li>Set which tab is selected when the tab bar is displayed: </li>
+	<li>Set which tab is selected when the tab bar is displayed:  </li>
 </ol>
 ```
 SelectedViewController = tab2;
@@ -88,13 +88,13 @@ This automatically sets the tab’s image and text.
 tab1.TabBarItem = new UITabBarItem (UITabBarSystemItem.History, 0);
 ```
 
-Custom images can be set using a different `UITabBarItem` constructor:
+Custom images can be set using a different `UITabBarItem` constructor: 
 
 ```
 tab2.TabBarItem = new UITabBarItem ("l'orange", UIImage.FromFile("Images/first.png"), 1);
 ```
 
-The `TabBarItem`’s properties can also be set directly, like this:
+The `TabBarItem`’s properties can also be set directly, like this: 
 
 ```
 tab3.TabBarItem = new UITabBarItem();
@@ -108,13 +108,13 @@ tab3.TabBarItem.Title = "Rouge";
 ### Other Properties
 
 The `TabBarItem` also exposes other properties, such as `BadgeValue` (which sets
-the little red and white number/circle):
+the little red and white number/circle): 
 
 ```
 tab3.TabBarItem.BadgeValue = "4";
 ```
 
-and Enabled, which allows you to disable the tab if required:
+and Enabled, which allows you to disable the tab if required: 
 
 ```
 tab3.TabBarItem.Enabled = false;

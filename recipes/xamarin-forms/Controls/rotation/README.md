@@ -1,9 +1,9 @@
 ---
-id:{adaad566-516d-45a6-8dca-9d2303ef9ea9}
-title:Rotation in Xamarin.Forms
-samplecode: [ScaleAndRotate](/samples/xamarin-forms/ScaleAndRotate/)
-samplecode:[Layout](/samples/xamarin-forms/UserInterface/Layout/)
-subtitle:Rotate views in Xamarin.Forms about the X, Y, and Z axes
+id: {adaad566-516d-45a6-8dca-9d2303ef9ea9}
+title: Rotation in Xamarin.Forms
+samplecode:  [ScaleAndRotate](/samples/xamarin-forms/ScaleAndRotate/)
+samplecode: [Layout](/samples/xamarin-forms/UserInterface/Layout/)
+subtitle: Rotate views in Xamarin.Forms about the X, Y, and Z axes
 ---
 
 Xamarin.Forms includes first-class support for rotating views in three dimensions. Every `View` instance exposes `Rotation`, `RotationX`, and `RotationY` as values that can be set or bound. 
@@ -12,25 +12,25 @@ Xamarin.Forms includes first-class support for rotating views in three dimension
 
 `View`s have [`AnchorX`](/api/property/Xamarin.Forms.VisualElement.AnchorX/) and [`AnchorY`](/api/property/Xamarin.Forms.VisualElement.AnchorY/) properties that define how a view is positioned. Rotation is applied relative to the anchor values. Rotation is interpreted as a degree value rather than a radian or gradian value. 
 
-Rotation values apply to the axes as follows:
+Rotation values apply to the axes as follows: 
 
 - **[`Rotation`](#Rotation)** &ndash; rotates around the Z-axis. When holding a phone normally, the Z-axis extends out towards the user. 
 - **[`RotationX`](#RotationX)** &ndash; rotates around the X-axis. When holding a phone normally, the X-axis extends out towards the user's left and right.
 - **[`RotationY`](#RotationY)** &ndash; rotates around the Y-axis. When holding a phone normally, the Y-axis extends down towards the ground and up towards the sky.
 
-See the following illustration to better understand how objects are rotated around the axes:
+See the following illustration to better understand how objects are rotated around the axes: 
 
 ![](Images/axis.png)
 
 ## Rotation
 
-The `Rotation` property rotates the view around the z-axis. Consider the following XAML that rotates a label 52 degrees about the z-axis:
+The `Rotation` property rotates the view around the z-axis. Consider the following XAML that rotates a label 52 degrees about the z-axis: 
 
 ```
 <Label Text="Rotation" Rotation="52" />
 ```
 
-In C#:
+In C#: 
 
 ```
 var label = new Label { Text = "Rotation", Rotation = 52 };
@@ -40,13 +40,13 @@ var label = new Label { Text = "Rotation", Rotation = 52 };
 
 ## RotationX
 
-The `RotationX` property rotates the view around the x-axis. Consider the following XAML that rotates a label 73 degrees about the x-axis:
+The `RotationX` property rotates the view around the x-axis. Consider the following XAML that rotates a label 73 degrees about the x-axis: 
 
 ```
 <Label Text="RotationX" RotationX="73" />
 ```
 
-In C#:
+In C#: 
 
 ```
 var label = new Label { Text = "RotationX", RotationX = 73 };
@@ -56,13 +56,13 @@ var label = new Label { Text = "RotationX", RotationX = 73 };
 
 ## RotationY
 
-The `RotationY` property rotates the view around the y-axis. Consider the following XAML that rotates a label 122 degrees about the y-axis:
+The `RotationY` property rotates the view around the y-axis. Consider the following XAML that rotates a label 122 degrees about the y-axis: 
 
 ```
 <Label Text="RotationY" RotationY="122" />
 ```
 
-In C#:
+In C#: 
 
 ```
 var label = new Label { Text = "RotationY", RotationY = 122 };

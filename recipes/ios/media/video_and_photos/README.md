@@ -1,6 +1,6 @@
 ---
-id:{3D0B358B-01FB-BF3C-CCDE-6D5C73B82C8B}  
-title:Video and Photos  
+id: {3D0B358B-01FB-BF3C-CCDE-6D5C73B82C8B}  
+title: Video and Photos  
 ---
 
 iOS includes several media APIs such AVFoundation as well as helper classes

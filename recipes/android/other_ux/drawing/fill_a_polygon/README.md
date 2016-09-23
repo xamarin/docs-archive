@@ -1,11 +1,11 @@
 ---
-id:{69740674-4B3C-6D23-134B-4FFA3C17FE0D}  
-title:Fill A Polygon  
-brief:This recipe shows one way of drawing a filled polygon using Android.Graphics.Path and Android.Graphics.Canvas.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/drawing/fill_a_polygon)  
-sdk:[Canvas](http://developer.android.com/reference/android/graphics/Canvas.html)  
-sdk:[Paint](http://developer.android.com/reference/android/graphics/Paint.html)  
-sdk:[Path](http://developer.android.com/reference/android/graphics/Path.html)  
+id: {69740674-4B3C-6D23-134B-4FFA3C17FE0D}  
+title: Fill A Polygon  
+brief: This recipe shows one way of drawing a filled polygon using Android.Graphics.Path and Android.Graphics.Canvas.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/other_ux/drawing/fill_a_polygon)  
+sdk: [Canvas](http: //developer.android.com/reference/android/graphics/Canvas.html)  
+sdk: [Paint](http: //developer.android.com/reference/android/graphics/Paint.html)  
+sdk: [Path](http: //developer.android.com/reference/android/graphics/Path.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -13,12 +13,12 @@ sdk:[Path](http://developer.android.com/reference/android/graphics/Path.html)
 
 # Recipe
 
-The [Canvas](http://developer.android.com/reference/android/graphics/Canvas.html) class in Android can be used to perform specialized drawing
+The [Canvas](http: //developer.android.com/reference/android/graphics/Canvas.html) class in Android can be used to perform specialized drawing
 of graphics. A canvas provides a context that holds the various “drawing”
-calls. To draw on a Canvas, three things are required:
+calls. To draw on a Canvas, three things are required: 
 
--  A  [Paint](http://developer.android.com/reference/android/graphics/Paint.html) object that describes the colors and styles being drawn
--  A drawing primitive such as a  [Rect](http://developer.android.com/reference/android/graphics/Rect.html) ,  [Path](http://developer.android.com/reference/android/graphics/Path.html) , or a  [Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) to that describes what is being drawn.
+-  A  [Paint](http: //developer.android.com/reference/android/graphics/Paint.html) object that describes the colors and styles being drawn
+-  A drawing primitive such as a  [Rect](http: //developer.android.com/reference/android/graphics/Rect.html) ,  [Path](http: //developer.android.com/reference/android/graphics/Path.html) , or a  [Bitmap](http: //developer.android.com/reference/android/graphics/Bitmap.html) to that describes what is being drawn.
 -  A bitmap or a view to hold the pixels that will be drawn.
 
 
@@ -27,7 +27,7 @@ A Path object is instantiated. The Path is initiated with a call to `.MoveTo`–
 this sets the starting location of the Path. Then corresponding calls to the
 `.LineTo` method are made.
 
-For example, consider the following collection of points:
+For example, consider the following collection of points: 
 
 ```
 private readonly PointF[] _points = new[]
@@ -42,7 +42,7 @@ private readonly PointF[] _points = new[]
 ```
 
 The example assembles a Path object that holds the primitives that make up
-the polygon, as shown in the following snippet:
+the polygon, as shown in the following snippet: 
 
 ```
 var path = new Path();
@@ -55,7 +55,7 @@ for (var i = 1; i < _points.Length; i++)
 }
 ```
 
-The next step is to describe the paint for the polygon:
+The next step is to describe the paint for the polygon: 
 
 ```
 var paint = new Paint
@@ -68,17 +68,17 @@ paint.SetStyle(Paint.Style.Fill);
 ```
 
 Finally, the path and the paint are used in together to draw the polygon on a
-Canvas:
+Canvas: 
 
 ```
 canvas.DrawPath(path, paint);
 ```
 
 For this example, the above snippets have been encapsulate in a class called
-`FilledPolygon`, which is a subclass of a `View`:
+`FilledPolygon`, which is a subclass of a `View`: 
 
 ```
-public class FilledPolygon : View
+public class FilledPolygon :  View
 {
     private readonly PointF[] _points = new[]
                                             {
@@ -90,7 +90,7 @@ public class FilledPolygon : View
                                                 new PointF(100, 100)
                                             };
    public FilledPolygon(Context context)
-        : base(context)
+        :  base(context)
     {
     }
     protected override void OnDraw(Canvas canvas)
@@ -117,6 +117,6 @@ public class FilledPolygon : View
 In this case, when the view is render, the `OnDraw` method will be invoked, and
 the hosting activity will pass in a canvas instance.
 
-When the application is run it will look like:
+When the application is run it will look like: 
 
  [ ![](Images/image1.png)](Images/image1.png)

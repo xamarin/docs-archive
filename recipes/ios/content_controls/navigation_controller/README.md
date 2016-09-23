@@ -1,7 +1,7 @@
 ---
-id:{036C978D-29B4-90D2-7B41-63C48B5EF159}  
-title:Navigation Controller  
-subtitle:UINavigationController  
+id: {036C978D-29B4-90D2-7B41-63C48B5EF159}  
+title: Navigation Controller  
+subtitle: UINavigationController  
 ---
 
 The Navigation Controller (UINavigationController) is a fundamental part of

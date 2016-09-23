@@ -1,14 +1,14 @@
 ---
-id:{88F5827B-0B37-5B34-8685-E4D55B53E6B3}  
-title:Add Permissions to Android Manifest  
-brief:This recipe shows how to add permissions to the Android Manifest (Manifest.xml).  
+id: {88F5827B-0B37-5B34-8685-E4D55B53E6B3}  
+title: Add Permissions to Android Manifest  
+brief: This recipe shows how to add permissions to the Android Manifest (Manifest.xml).  
 ---
 
 <a name="Recipe" class="injected"></a>
 
 # Recipe
 
-To edit Android Manifest permissions for your project:
+To edit Android Manifest permissions for your project: 
 <ide name="vs">
   <ol>
     <li>Right-click on your android project and select <span class="UIItem">Properties</span>.</li>
@@ -36,7 +36,7 @@ You should only request permissions that your application requires to run.
 Users will be prompted to allow these permissions when they download your
 application from the Google Play Store.
 
-Common permissions include:
+Common permissions include: 
 
  `INTERNET` – for accessing network resources.
 

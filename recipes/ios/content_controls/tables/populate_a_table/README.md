@@ -1,12 +1,12 @@
 ---
-id:{414980AA-64C0-3D0D-7306-71595C749B50}  
-title:Populate a Table  
-brief:This recipe shows you how to populate a UITableView with rows of data.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/tables/populate_a_table)  
-sdk:[UITableView Class Reference](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableView_Class/Reference/Reference.html)  
-sdk:[UITableViewCell Class Reference](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewCell_Class/Reference/Reference.html)  
-sdk:[UITableViewDelegate](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDelegate_Protocol/Reference/Reference.html)  
-sdk:[UITableViewDataSource](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html)  
+id: {414980AA-64C0-3D0D-7306-71595C749B50}  
+title: Populate a Table  
+brief: This recipe shows you how to populate a UITableView with rows of data.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/content_controls/tables/populate_a_table)  
+sdk: [UITableView Class Reference](http: //developer.apple.com/library/ios/#documentation/uikit/reference/UITableView_Class/Reference/Reference.html)  
+sdk: [UITableViewCell Class Reference](http: //developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewCell_Class/Reference/Reference.html)  
+sdk: [UITableViewDelegate](http: //developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDelegate_Protocol/Reference/Reference.html)  
+sdk: [UITableViewDataSource](http: //developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -17,9 +17,9 @@ sdk:[UITableViewDataSource](http://developer.apple.com/library/ios/#documentatio
 A table in iOS requires both a `UITableView` to present the data and a
 `UITableViewSource` to supply to the data.
 
-To create and populate a table:
+To create and populate a table: 
 
--  First create a `UITableView` instance and add it to a view (see the *HomeScreen.cs* `ViewDidLoad` method in the sample):
+-  First create a `UITableView` instance and add it to a view (see the *HomeScreen.cs* `ViewDidLoad` method in the sample): 
 
 
 ```
@@ -27,11 +27,11 @@ table = new UITableView(View.Bounds);
 Add (table);
 ```
 
--  Create a subclass of `UITableViewSource` that accepts an array of strings. Override the `RowsInSection` and `GetCell` methods as shown (in the *TableSource.cs* sample file):
+-  Create a subclass of `UITableViewSource` that accepts an array of strings. Override the `RowsInSection` and `GetCell` methods as shown (in the *TableSource.cs* sample file): 
 
 
 ```
-public class TableSource : UITableViewSource {
+public class TableSource :  UITableViewSource {
     protected string[] tableItems;
     protected string cellIdentifier = "TableCell";
     public TableSource (string[] items)
@@ -55,7 +55,7 @@ public class TableSource : UITableViewSource {
 }
 ```
 
--  Create an array of strings:
+-  Create an array of strings: 
 
 
 ```

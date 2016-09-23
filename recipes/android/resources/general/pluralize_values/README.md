@@ -1,9 +1,9 @@
 ---
-id:{5D57C4A5-6173-9F11-0B7A-ED81F2A5BF39}  
-title:Pluralize Values  
-brief:This recipe shows how to use string resources to deal with the different ways languages handle plural values.  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/resources/general/pluralize_values)  
-sdk:[Quantity Strings](http://developer.android.com/guide/topics/resources/string-resource.html#Plurals)  
+id: {5D57C4A5-6173-9F11-0B7A-ED81F2A5BF39}  
+title: Pluralize Values  
+brief: This recipe shows how to use string resources to deal with the different ways languages handle plural values.  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/android/resources/general/pluralize_values)  
+sdk: [Quantity Strings](http: //developer.android.com/guide/topics/resources/string-resource.html#Plurals)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -17,21 +17,21 @@ sdk:[Quantity Strings](http://developer.android.com/guide/topics/resources/strin
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+<LinearLayout xmlns: android="http: //schemas.android.com/apk/res/android"
+    android: orientation="vertical"
+    android: layout_width="fill_parent"
+    android: layout_height="fill_parent"
     >
   <Button
-      android:id="@+id/MyButton"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:text="Hello"
+      android: id="@+id/MyButton"
+      android: layout_width="fill_parent"
+      android: layout_height="wrap_content"
+      android: text="Hello"
     />
 </LinearLayout>
 ```
 
--  Edit the file **Resource/Strings/values.xml**:
+-  Edit the file **Resource/Strings/values.xml**: 
 
 
 ```
@@ -44,7 +44,7 @@ sdk:[Quantity Strings](http://developer.android.com/guide/topics/resources/strin
 </resources>
 ```
 
--  Modify the `OnCreate` method **Activity1.cs**:
+-  Modify the `OnCreate` method **Activity1.cs**: 
 
 
 ```
@@ -68,11 +68,11 @@ to pass the value of count in twice. The first parameter is what Android will
 use to select the correct quantity string. The second value of count is the
 actual value that will be provided.
 
--  Run the application:
+-  Run the application: 
 
 [ ![](Images/EN_us_one.png)](Images/EN_us_one.png) [ ![](Images/EN_us_two.png)](Images/EN_us_two.png)
 
--  Add a new resource file for Polish, **Layout/values-pl/strings.xml**:
+-  Add a new resource file for Polish, **Layout/values-pl/strings.xml**: 
 
 
 ```
@@ -87,7 +87,7 @@ actual value that will be provided.
 ```
 
 -  Change the locale to Polish (Polski) (Settings &gt; Language &amp; Input).
--  Run the application:
+-  Run the application: 
 
 
 [ ![](Images/PL_one.png)](Images/PL_one.png) [ ![](Images/PL_two.png)](Images/PL_two.png)

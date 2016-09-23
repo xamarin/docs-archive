@@ -1,8 +1,8 @@
 ---
-id:{40066284-0d92-4f3c-888d-7f08d381f8b2}  
-title:Validate Text Input  
-subtitle:And Show Errors  
-samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/standard_controls/text_field/validate_input)  
+id: {40066284-0d92-4f3c-888d-7f08d381f8b2}  
+title: Validate Text Input  
+subtitle: And Show Errors  
+samplecode: [Browse on GitHub](https: //github.com/xamarin/recipes/tree/master/ios/standard_controls/text_field/validate_input)  
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -21,7 +21,7 @@ the user has entered text, or via a button press.
 
 The `EditingDidEnd` event is raised when a user moves focus from a control,
 either from selecting the next control, or from clicking the <span class="UIItem">Done</span>
-button. The border properties on the text field can be accessed via the underlying `Layer` object:
+button. The border properties on the text field can be accessed via the underlying `Layer` object: 
 
 ```
 // to validate after the user has entered text and moved away from that
@@ -41,7 +41,7 @@ this.FirstText.EditingDidEnd += (object sender, EventArgs e) => {
 };
 ```
 
-The result is the following:
+The result is the following: 
 
  [ ![](Images/01_-_EditingDidEnd.png)](Images/01_-_EditingDidEnd.png)
 
@@ -50,7 +50,7 @@ The result is the following:
 
 ## Via a Button
 
-Validation can also be done at the push of a button:
+Validation can also be done at the push of a button: 
 
 ```
 // we can also validate on the touch of a button
@@ -66,6 +66,6 @@ this.ValidateButton.TouchUpInside += (object sender, EventArgs e) => {
 };
 ```
 
-The result is the following:
+The result is the following: 
 
  [ ![](Images/02_-_ButtonSubmit.png)](Images/02_-_ButtonSubmit.png)

@@ -1,6 +1,6 @@
 ---
-id:{363724C4-6B2C-62C0-09D4-0184C2C53961}  
-title:ActionSheet  
+id: {363724C4-6B2C-62C0-09D4-0184C2C53961}  
+title: ActionSheet  
 ---
 
 A UIActionSheet displays a list of buttons along with an optional title

@@ -1,22 +1,22 @@
 ---
-id:{0cdc62dd-9ae0-4b11-9c85-49188382d58d}
-title:Customize Tab Bar on iOS
-brief:How to change the appearance of Xamarin.Forms tabs on iOS
-samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/iOS/customize-tabs/)
-dateupdated:2016-01-29
+id: {0cdc62dd-9ae0-4b11-9c85-49188382d58d}
+title: Customize Tab Bar on iOS
+brief: How to change the appearance of Xamarin.Forms tabs on iOS
+samplecode: [Browse on Github](https: //github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/iOS/customize-tabs/)
+dateupdated: 2016-01-29
 ---
 
 By default the Xamarin.Forms `TabbedPage` will render on iOS devices
-with the default colors and font styles:
+with the default colors and font styles: 
 
 [ ![](Images/tabs-default-sml.png)](Images/tabs-default.png)
 
-This example shows how to customize:
+This example shows how to customize: 
 
 * tab color, and
 * tab font face, size, and style.
 
-The following screenshot shows the tab bar after it has been customized:
+The following screenshot shows the tab bar after it has been customized: 
 
 [ ![](Images/tabs-custom-sml.png)](Images/tabs-custom.png)
 
@@ -28,7 +28,7 @@ setting [iOS-specific styles](/guides/xamarin-forms/platform-features/ios/theme/
 with Xamarin.Forms.
 
 The following code is added to the **AppDelegate.cs** file in the
-`FinishedLaunching` method to achieve a brown tint on the selected tab:
+`FinishedLaunching` method to achieve a brown tint on the selected tab: 
 
 ```
 UITabBar.Appearance.SelectedImageTintColor = UIColor.Brown;
@@ -56,10 +56,10 @@ using Xamarin.Forms.Platform.iOS;
 using UIKit;
 using TabbedPageDemo.iOS;
 
-[assembly: ExportRenderer(typeof(TabbedPage), typeof(ExtendedTabbedPageRenderer))]
+[assembly:  ExportRenderer(typeof(TabbedPage), typeof(ExtendedTabbedPageRenderer))]
 namespace TabbedPageDemo.iOS
 {
-	public class ExtendedTabbedPageRenderer : TabbedRenderer
+	public class ExtendedTabbedPageRenderer :  TabbedRenderer
 	{
 		protected override void OnElementChanged (VisualElementChangedEventArgs e)
 		{
@@ -98,9 +98,9 @@ namespace TabbedPageDemo.iOS
 }
 ```
 
-Download and run the [sample](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/iOS/customize-tabs/)
+Download and run the [sample](https: //github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/iOS/customize-tabs/)
 to try different combinations of font, size, style, and color.
 
-Refer to this [blog post](http://motzcod.es/post/138225183932/tintcolor-selectedimage-xamarin-forms-ios)
+Refer to this [blog post](http: //motzcod.es/post/138225183932/tintcolor-selectedimage-xamarin-forms-ios)
 for details on how to use a different *image* for the selected and unselected
 tab states.
