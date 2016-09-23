@@ -1,8 +1,10 @@
+---
 id:{1CAC14D3-0FCB-286B-DC5C-C50E1271595C}  
 title:Display Device Location  
 brief:This recipe shows how to display the current location of the device on a map.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/display_device_location)  
 sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

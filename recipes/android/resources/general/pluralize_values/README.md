@@ -1,8 +1,10 @@
+---
 id:{5D57C4A5-6173-9F11-0B7A-ED81F2A5BF39}  
 title:Pluralize Values  
 brief:This recipe shows how to use string resources to deal with the different ways languages handle plural values.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/resources/general/pluralize_values)  
 sdk:[Quantity Strings](http://developer.android.com/guide/topics/resources/string-resource.html#Plurals)  
+---
 
 <a name="Recipe" class="injected"></a>
 

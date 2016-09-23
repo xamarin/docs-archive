@@ -1,3 +1,4 @@
+---
 id:{2A2483B6-A8D4-4B2D-E874-AD1FBC9814F9}
 title:Adjust Contrast and Brightness of an Image
 brief:This recipe shows how to use a CoreImage filter to adjust the contrast, saturation and brightness of an image.
@@ -7,6 +8,7 @@ article:[Save Photo to Album with Metadata](/recipes/ios/media/video_and_photos/
 article:[Introduction to Core Image](/guides/ios/platform_features/introduction_to_coreimage)
 sdk:[CIFilter Class Reference](http://developer.apple.com/library/ios/#documentation/GraphicsImaging/Reference/QuartzCoreFramework/Classes/CIFilter_Class/Reference/Reference.html)
 dateupdated:2015-12-11
+---
 
 # Recipe
 

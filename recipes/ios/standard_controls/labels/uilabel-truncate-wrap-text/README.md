@@ -1,8 +1,10 @@
+---
 id:{8ddfde78-64b1-4334-b4f5-5aaf9ce40d3f}
 title: How to Truncate and Wrap Text in a UILabel
 brief:It is possible to change how text appears when it is too long for a given UILabel. This recipe illustrates the possible ways to truncate text using UILineBreakMode.
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/standard_controls/labels/uilabel-truncate-wrap-text)  
 sdk:[UILabel](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UILabel_Class/)
+---
 
 
 <a name="Recipe" class="injected"></a>

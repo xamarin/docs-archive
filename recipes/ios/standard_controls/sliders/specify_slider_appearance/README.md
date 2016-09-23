@@ -1,9 +1,11 @@
+---
 id:{C3E20584-4062-0062-8377-CB87BAB3E6E5}  
 title:Specify Slider Appearance  
 brief:This recipe shows how to specify the appearance of a slider, either with a custom image or colors.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/standard_controls/sliders/specify_slider_appearance)  
 article:[Specify Slider Value](/recipes/ios/standard_controls/sliders/specify_slider_value)  
 sdk:[UISlider Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UISlider_Class/Reference/Reference.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

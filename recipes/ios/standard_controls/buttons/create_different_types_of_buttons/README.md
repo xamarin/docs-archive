@@ -1,9 +1,11 @@
+---
 id:{A9935042-877B-4CD1-8193-7D075439B7A7}  
 title:Create Different Types of Buttons  
 brief:This recipe shows you how to create the six different types of UIButton.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/standard_controls/buttons/create_different_types_of_buttons/)  
 article:[Handle clicks](/recipes/ios/standard_controls/buttons/handle_clicks)  
 sdk:[UIButton Class Reference](http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIButton_Class/UIButton/UIButton.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

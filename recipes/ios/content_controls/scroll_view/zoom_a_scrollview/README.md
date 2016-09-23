@@ -1,3 +1,4 @@
+---
 id:{8C76A43F-B864-4315-9D27-10B13D110FAC}  
 title:Zoom a ScrollView  
 brief:This recipe shows how to load a large image into a scroll view and allow the user to pinch-zoom.  
@@ -6,6 +7,7 @@ article:[Use a ScrollView](/recipes/ios/content_controls/scroll_view/use_a_scrol
 article:[Load an Image](/recipes/ios/standard_controls/image_view/load_an_image)  
 sdk:[UIScrollView Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIScrollView_Class/Reference/UIScrollView.html)  
 sdk:[Scroll View Programming Guide](https://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/UIScrollView_pg/Introduction/Introduction.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

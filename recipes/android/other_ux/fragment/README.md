@@ -1,5 +1,7 @@
+---
 id:{C382A74D-3ED6-6FCC-02B1-4FD848FA4D76}  
 title:Fragment  
+---
 
 Fragments are a UI technology that was introduced with Android 3.0 to allow
 design flexibility across tables and phones. They allow portions on the user

@@ -1,3 +1,4 @@
+---
 id:{29896080-808C-7524-EB98-EFBCF4F9C27A}  
 title:Style a Button  
 brief:This recipe will show how to change the appearance of a button with the use of a style and a state selector list.  
@@ -5,6 +6,7 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/and
 sdk:[Style and Themes](http://developer.android.com/guide/topics/ui/themes.html)  
 sdk:[Shape Drawable Resources](http://developer.android.com/guide/topics/resources/drawable-resource.html#Shape)  
 sdk:[ShapeDrawable](http://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

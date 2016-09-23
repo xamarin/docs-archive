@@ -1,7 +1,9 @@
+---
 id:{7AAA95E0-6B6C-27AE-A682-7CB7451D70AB}  
 title:Create an Android Project  
 brief:This recipe shows how to create a new Android project in Xamarin and Visual Studio.  
 article:[Hello, Android](/guides/android/getting_started/hello,_world)  
+---
 
 <a name="Recipe" class="injected"></a>
 

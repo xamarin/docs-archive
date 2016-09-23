@@ -1,8 +1,10 @@
+---
 id: {51755CB1-1052-4830-A103-6C5BABA9CF4C}
 title: Call a REST Web Service
 brief: This recipe shows how to call a RESTful service using HTTP, parse JSON results, and display the results on the screen.
 samplecode: [WeatherREST](/samples/monodroid/WeatherREST)
 article: [Introduction to Web Services](/guides/cross-platform/application_fundamentals/web_services/)
+---
 
 # Recipe
 

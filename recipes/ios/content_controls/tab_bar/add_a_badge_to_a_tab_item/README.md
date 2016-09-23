@@ -1,9 +1,11 @@
+---
 id:{F743415E-9120-34FA-452C-3B7D54AA33CD}  
 title:Add a Badge to a Tab Item  
 brief:This recipe shows how to display a badge on a tab.  
 article:[Create a Tab Bar](/recipes/ios/content_controls/tab_bar/create_a_tab_bar)  
 sdk:[UINavigationBar Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
 sdk:[UITabBarItem Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarItem_Class/Reference/Reference.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

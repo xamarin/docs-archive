@@ -1,5 +1,7 @@
+---
 id:{A34F19CE-2AF7-1B48-3E17-630CFF7533DA}  
 title:Table Layout  
+---
 
 An Android Table Layout allows layout via rows and columns similar to an HTML
 table.

@@ -1,6 +1,8 @@
+---
 id:{dacc6699-76bf-4f8c-8c72-afa7021b3a00}  
 title:Check Background Refresh Settings  
 brief:The Background App Refresh Setting gives the user more control over what our application can do in the background. Let's see how changing this setting affects the backgrounded behavior of our location app.  
+---
 
 # Recipe
 

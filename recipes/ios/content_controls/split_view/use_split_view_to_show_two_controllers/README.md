@@ -1,3 +1,4 @@
+---
 id:{63306365-7DD4-BC9F-8104-88813E7081EC}  
 title:Use Split View to Show two Controllers  
 brief:This recipe illustrates how to use the UISplitViewController to display two view controllers with a master-detail relationship. This controller can only be used on the iPad.  
@@ -6,6 +7,7 @@ article:[Show and Hide the Master View Button](/recipes/ios/content_controls/spl
 article:[Communicate Between Detail and Master Controllers](/recipes/ios/content_controls/split_view/communicate_between_master_and_detail_controllers)  
 sdk:[UISplitViewController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UISplitViewController_class/Reference/Reference.html)  
 sdk:[Split View Controllers](https://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/SplitViewControllers.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

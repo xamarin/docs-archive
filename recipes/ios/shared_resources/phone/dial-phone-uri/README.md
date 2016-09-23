@@ -1,8 +1,10 @@
+---
 id:{cd0ee2d2-f5dc-48f1-b859-37200a39abd0}
 title:Dialing the Phone by URI
 brief:iOS apps utilize uniform resource locators (URLs), a form of uniform resource identifiers (URIs), to access schemes that integrate with system apps. The tel URL scheme launches the Phone app and dials the number contained in the NSUrl.
 sdk:[NSUrl Class Reference](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/Reference/Reference.html)
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/shared_resources/phone/dial-phone-uri)
+---
 
 <a name="Recipe" class="injected"></a>
 

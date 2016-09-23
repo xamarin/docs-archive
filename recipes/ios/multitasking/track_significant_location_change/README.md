@@ -1,6 +1,8 @@
+---
 id:{356ba06a-5be9-4f4c-88a4-1dabd3b5c54f }  
 title:Track Significant Location Change  
 brief:The Significant Location Changes API tracks major changes in the user's location by keeping track of changes in cell towers. This API requires a device with a cellular radio.  
+---
 
 [ ![](Images/01.png)](Images/01.png)
 

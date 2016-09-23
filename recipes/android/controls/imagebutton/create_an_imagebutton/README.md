@@ -1,8 +1,10 @@
+---
 id:{D8C547E3-6671-2680-6163-E0B21414A022}  
 title:Create An ImageButton  
 brief:This recipe shows how to create an ImageButton.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/controls/imagebutton/create_an_imagebutton)  
 sdk:[ImageButton Class Reference](http://developer.android.com/reference/android/widget/ImageButton.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

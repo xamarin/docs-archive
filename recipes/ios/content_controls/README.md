@@ -1,5 +1,7 @@
+---
 id:{25575C99-B12B-AA9E-58F6-91E2167E4074}  
 title:Content Controls  
+---
 
 -   [Collection View](/recipes/ios/content_controls/collection_view) 
 -   [Map View](/recipes/ios/content_controls/map_view) 

@@ -1,7 +1,9 @@
+---
 id:{1E3C41E8-1DBA-9867-7250-AF0BC390B3F9}  
 title:CoreAnimation  
 subtitle:Use Animation to Create Cinematic UIs
 samplecode: [Core Animation](https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation)  
+---
 
 iOS includes very sophisticated animation APIs that can make your application
 feel much more immersive and cinematic, giving that feel of quality users have

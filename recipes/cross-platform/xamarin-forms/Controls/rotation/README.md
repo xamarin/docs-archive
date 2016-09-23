@@ -1,8 +1,10 @@
+---
 id:{adaad566-516d-45a6-8dca-9d2303ef9ea9}
 title:Rotation in Xamarin.Forms
 samplecode: [ScaleAndRotate](/samples/xamarin-forms/ScaleAndRotate/)
 samplecode:[Layout](/samples/xamarin-forms/UserInterface/Layout/)
 subtitle:Rotate views in Xamarin.Forms about the X, Y, and Z axes
+---
 
 Xamarin.Forms includes first-class support for rotating views in three dimensions. Every `View` instance exposes `Rotation`, `RotationX`, and `RotationY` as values that can be set or bound. 
 

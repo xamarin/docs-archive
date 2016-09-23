@@ -1,9 +1,11 @@
+---
 id:{5081B5B0-0FC0-BFCC-B4F7-056D8FD9F82D}  
 title:Use CoreMotion with Accelerometer  
 brief:This recipe shows how to use the Core Motion framework to receive data from the accelerometer.  
 samplecode:[CoreMotion](https://github.com/xamarin/recipes/tree/master/ios/input/accelerometer/use_coremotion_with_accelerometer)  
 sdk:[CMMotionManager](http://developer.apple.com/library/ios/#documentation/CoreMotion/Reference/CMMotionManager_Class/Reference/Reference.html)  
 sdk:[CMAccelerometerData](http://docs.go-mono.com/?link=T%3aMonoTouch.CoreMotion.CMAccelerometerData)  
+---
 
 <a name="Recipe" class="injected"></a>
 

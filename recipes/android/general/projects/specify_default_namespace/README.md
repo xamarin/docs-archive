@@ -1,6 +1,8 @@
+---
 id:{0AEEAD94-B3E9-FD01-A470-C09DD3DAD970}  
 title:Specify Default Namespace  
 brief:This recipe shows where to set the default namespace for a project.  
+---
 
 <a name="Recipe" class="injected"></a>
 

@@ -1,8 +1,10 @@
+---
 id:{7E4AC573-02D6-D998-D552-7521229C3715}  
 title:Choose a Photo From the Gallery  
 brief:This recipe shows how to let the user choose a photo from their gallery.  
 samplecode:[Choose_a_Photo_from_the_Gallery](https://github.com/xamarin/recipes/tree/master/ios/media/video_and_photos/choose_a_photo_from_the_gallery)  
 sdk:[UIImagePickerController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIImagePickerController_Class/UIImagePickerController/UIImagePickerController.html)  
+---
 
 # iOS Recipe
 

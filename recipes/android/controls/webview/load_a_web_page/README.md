@@ -1,9 +1,11 @@
+---
 id:{7836FE10-1097-FAA8-898E-AE4853E48FE8}  
 title:Load a Web Page  
 brief:This recipe shows how to load a web page in a WebView.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/controls/webview/load_a_web_page)  
 article:[Load Local Content](/recipes/android/controls/webview/load_local_content)  
 sdk:[WebView Class Reference](http://developer.android.com/reference/android/webkit/WebView.html)  
+---
 
 # Recipe
 

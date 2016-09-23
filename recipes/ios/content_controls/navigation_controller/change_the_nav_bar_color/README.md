@@ -1,6 +1,8 @@
+---
 id:{7DCBFD4E-B6CB-1AE3-62B3-6469BFBC73E5}  
 title:Change the Nav Bar Color  
 sdk:[UINavigationBar Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
+---
 
 There are two properties in the UINavigationBar class which will allow you to change colors. `TintColor` will change the color of the back indicator image, button titles and button Images. `barTintColor` will change the color of the bar itself. This recipe shows how to change the the tint and background colors of a navigation bar.
 

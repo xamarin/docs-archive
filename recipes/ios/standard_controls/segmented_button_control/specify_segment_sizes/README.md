@@ -1,8 +1,10 @@
+---
 id:{735DF15C-218B-EC0F-3663-DCFF372CE93A}  
 title:Specify Segment Sizes  
 brief:This recipe shows how to create a UISegmentedControl with different sized segments.  
 article:[Configure Segments](/recipes/ios/standard_controls/segmented_button_control/configure_segments_(uisegmentedcontrol))  
 sdk:[UISegmentedControl Class Reference](http://developer.apple.com/library/ios/#documentation/uikit/reference/UISegmentedControl_Class/Reference/UISegmentedControl.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

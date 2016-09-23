@@ -1,8 +1,10 @@
+---
 id:{0cdc62dd-9ae0-4b11-9c85-49188382d58d}
 title:Customize Tab Bar on iOS
 brief:How to change the appearance of Xamarin.Forms tabs on iOS
 samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/iOS/customize-tabs/)
 dateupdated:2016-01-29
+---
 
 By default the Xamarin.Forms `TabbedPage` will render on iOS devices
 with the default colors and font styles:

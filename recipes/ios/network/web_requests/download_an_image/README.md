@@ -1,8 +1,10 @@
+---
 id:{47F1C480-5914-2C3D-B7F0-FF6CE66DDFC1}  
 title:Download an Image  
 brief:This recipe shows how to download an image file using the WebClient class in Xamarin.iOS.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/network/web_requests/download_an_image)  
 article:[Download a File](/recipes/ios/network/web_requests/download_a_file)  
+---
 
 <a name="Recipe" class="injected"></a>
 

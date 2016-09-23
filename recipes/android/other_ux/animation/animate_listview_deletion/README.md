@@ -1,9 +1,11 @@
+---
 id:{5FDEEA86-E1CA-47F3-B121-5847757165B3}  
 title:Animate a ListView Deletion  
 brief:This recipe will show how to animate the deletion of a ListView row in Jellybean.  
 api:[ListView](http://developer.android.com/reference/android/widget/ListView.html)  
 api:[ValueAnimator](http://developer.android.com/reference/android/animation/ValueAnimator.html)  
 api:[ViewPropertyAnimator](http://developer.android.com/reference/android/view/ViewPropertyAnimator.html)  
+---
 
 <a name="Overview" class="injected"></a>
 

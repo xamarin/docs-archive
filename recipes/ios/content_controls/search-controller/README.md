@@ -1,8 +1,10 @@
+---
 id:[cc4170e2-bbdd-46c1-bac7-70739f2f7a5a]  
 title:SearchController
 brief: UISearchController is used to display and manage searching in your application
 samplecode: [MapDemo](/samples/monotouch/MapDemo/)
 samplecode: [Table Search with UISearchController](/samples/monotouch/ios8/TableSearch/)
+---
 
 # Overview
 `UISearchController` has replaced `UISearchDisplayController` as a way to manage the presentation of a search bar and search results starting with iOS 8. `UISearchDisplayController` is now deprecated.
@@ -183,4 +185,3 @@ public class SearchResultsUpdator : UISearchResultsUpdating
 ```
 
  ![](Images/SearchResults.png)
-

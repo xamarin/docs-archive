@@ -1,8 +1,10 @@
+---
 id:{A88F34E5-EF29-0F57-9505-1D9AF21E8BE6}  
 title:Play a Video Using AVPlayer  
 brief:This recipe shows how to play a video using an AVPlayer and AVPlayerLayer.  
 samplecode:[AVPlayerDemo](https://github.com/xamarin/recipes/tree/master/ios/media/video_and_photos/play_a_video_using_avplayer)  
 sdk:[AVFoundation Programming Guide](https://developer.apple.com/library/ios/#documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

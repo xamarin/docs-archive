@@ -1,9 +1,11 @@
+---
 id:{539DA850-8AE3-4F11-9572-263CEB28858F}
 title:Create a Database with SQLite
 brief:This recipe will demonstrate how to create an SQLite database.
 article:[Create a Database with SQLite - iOS](/recipes/ios/data/sqlite/create_a_database_with_sqlitenet/)
 article:[Create a Database with SQLite Component](/recipes/android/data/databases/sqlite-component/)
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/data/databases/sqlite)  
+---
 
 # Recipe
 

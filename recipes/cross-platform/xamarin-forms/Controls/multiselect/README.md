@@ -1,7 +1,9 @@
+---
 id:{4e1ad66b-4902-4f85-a886-c03716ba2b87}
 title:Multi-select ListView
 brief:Add the ability to track multiple selections in a ListView
 samplecode:[Multiselect Sample](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/multiselect)
+---
 
 The Xamarin.Forms [`ListView`](/api/type/Xamarin.Forms.ListView/)
 control only has a single `SelectedItem`, and cannot represent selection of

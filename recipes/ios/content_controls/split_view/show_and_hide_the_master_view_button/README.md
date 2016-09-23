@@ -1,3 +1,4 @@
+---
 id:{36244106-F6EA-8F5B-D2F4-12B4069C9723}  
 title:Show and Hide the Master View Button  
 brief:This recipe shows how to add a button and popover to a UISplitViewController to display the master view in portrait orientation.  
@@ -6,6 +7,7 @@ article:[Using a Split View to Show Two Controllers](/recipes/ios/content_contro
 article:[Communicating Between Detail and Master Controllers](/recipes/ios/content_controls/split_view/communicate_between_master_and_detail_controllers)  
 sdk:[UISplitViewController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UISplitViewController_class/Reference/Reference.html)  
 sdk:[Split View Controllers](https://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/SplitViewControllers.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

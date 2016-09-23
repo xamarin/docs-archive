@@ -1,8 +1,10 @@
+---
 id:{B805993C-671E-286C-5C82-4004BFD65C1C}  
 title: Using the View .xib Template 
 brief:The iOS View XIB template in allows adding a stand-alone .xib file that can be attached to some backing class. This allows a reusable views to be designed in Xamarin Designer for iOS. However, to use such a view requires manually creating a backing view class. This recipe demonstrates creating a view in the iOS Designer and connecting it to a backing C# class in your IDE.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/general/templates/using_the_ios_view_xib_template)  
 xamu: [Creating a XIB-based Launch Screen](https://university.xamarin.com/lightninglectures/using-the-ios-designer-to-create-a-launch-screen)
+---
 
 <a name="Recipe" class="injected"></a>
 

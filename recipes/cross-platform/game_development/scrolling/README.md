@@ -1,6 +1,8 @@
+---
 id:{e6a3644b-3f75-4afa-a657-d43db0869460}  
 title:Scrolling a CCLayer  
 brief:How to create a scrolling effect  
+---
 
 # Recipe
 

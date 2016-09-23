@@ -1,3 +1,4 @@
+---
 id:833fd59d-1aea-46e7-9478-003c576d813c
 title:Display a Local PDF File in a WebView
 subtitle:Rendering a PDF using the HTML5 canvas element
@@ -8,6 +9,7 @@ article:[Implementing a View](/guides/xamarin-forms/custom-renderer/view/)
 article:[Implementing a HybridWebView](/guides/xamarin-forms/custom-renderer/hybridwebview/)
 api:[WebView](/api/type/Xamarin.Forms.WebView/)
 dateupdated:2016-01-18
+---
 
 # Overview
 

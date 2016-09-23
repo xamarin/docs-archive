@@ -1,6 +1,8 @@
+---
 id:{98BFE003-F1B3-D4FF-30FF-FEBF63C83020}  
 title:Change the Nav Bar Title  
 sdk:[UINavigationBar Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
+---
 
 This recipe shows how to change the title displayed in a navigation bar.
 

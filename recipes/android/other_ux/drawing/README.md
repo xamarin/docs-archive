@@ -1,5 +1,7 @@
+---
 id:{ACF6629C-DEE2-1CBD-A9C0-22F7DF5EB360}  
 title:Drawing  
+---
 
 Android includes drawing APIs that allow 2D graphics to be created and manipulated programmatically. This allows aspects of drawing such as stroke style, color and width to be controlled when drawable arbitrary shapes.
 

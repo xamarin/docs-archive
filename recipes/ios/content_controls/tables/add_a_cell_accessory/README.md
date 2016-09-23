@@ -1,3 +1,4 @@
+---
 id:{D46015D4-83E4-4C26-63C5-12FAE181772B}  
 title:Add a Cell Accessory  
 brief:This recipe shows you how to set an accessory to display on the right side of a row.  
@@ -6,6 +7,7 @@ sdk:[UITableView Class Reference](http://developer.apple.com/library/ios/#docume
 sdk:[UITableViewCell Class Reference](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewCell_Class/Reference/Reference.html)  
 sdk:[UITableViewDelegate](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDelegate_Protocol/Reference/Reference.html)  
 sdk:[UITableViewDataSource](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

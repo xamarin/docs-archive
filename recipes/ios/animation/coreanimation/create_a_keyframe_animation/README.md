@@ -1,8 +1,10 @@
+---
 id:{79EB2AC9-4242-EF49-5DBF-35D5B9284DC1}  
 title:Create a Keyframe Animation  
 brief:This recipe shows how to create a keyframe animation using Core Animation.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/create_a_keyframe_animation)  
 sdk:[Core Animation Programming Guide](https://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

@@ -1,5 +1,7 @@
+---
 id:{F4D6F2C3-0B5C-1977-00BA-E38AAB660FC3}  
 title:Environment Checks  
+---
 
 This recipe shows how to make various environment checks from your code
 to handle different runtime environments.

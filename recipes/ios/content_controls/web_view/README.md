@@ -1,6 +1,8 @@
+---
 id:{8925EF9D-A30A-0AE7-47C7-2CF42FCE1EF2}
 title:Web View
 subtitle:UIWebViewController
+---
 
 The Web View control allows you to easily add a web browser to you
 application. In addition to pages hosted on the web, you can also use it to

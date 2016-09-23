@@ -1,3 +1,4 @@
+---
 id:{A61CF22F-B15D-4824-A472-48DBF4DBF185}  
 title:App Links for Android  
 subtitle:How to Link to other apps and Handle Incoming links using App Links  
@@ -6,6 +7,7 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/cro
 article:[Creating Connected App Experiences with App Links](http://blog.xamarin.com/creating-connected-app-experiences-with-app-links-and-rivets-with-xamarin/)  
 article:[Rivets Xamarin Component](http://components.xamarin.com/view/rivets)  
 article:[Official App Links Documentation](http://applinks.org/documentation/)  
+---
 
 <a name="Overview" class="injected"></a>
 

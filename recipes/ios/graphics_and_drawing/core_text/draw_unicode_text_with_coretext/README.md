@@ -1,8 +1,10 @@
+---
 id:{42E062A0-761A-4C3F-00D0-D8A2E1D1BA0C}  
 title:Draw Unicode Text with CoreText  
 brief:This recipe shows how to draw text using Core Text.  
 samplecode:[Draw Unicode Text with Core Text](https://github.com/xamarin/recipes/tree/master/ios/graphics_and_drawing/core_text/draw_unicode_text_with_coretext/)  
 sdk:[Core Text Programming Guide](https://developer.apple.com/library/mac/#documentation/StringsTextFonts/Conceptual/CoreText_Programming/Introduction/Introduction.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

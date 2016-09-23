@@ -1,9 +1,11 @@
+---
 id:{43B5B3F8-8258-1A69-38E1-C9FCE7681990}  
 title:Display a stream from the camera  
 brief:This recipe shows how to display a stream from the camera using a TextureView.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/textureview/display_a_stream_from_the_camera)  
 article:[Introduction to Ice Cream Sandwich](/guides/android/platform_features/introduction_to_ice_cream_sandwich)  
 sdk:[Android 4.0 Graphics and Animations](http://android-developers.blogspot.com/2011/11/android-40-graphics-and-animations.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

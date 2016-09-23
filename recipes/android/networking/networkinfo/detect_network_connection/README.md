@@ -1,3 +1,4 @@
+---
 id:{38C9FC4E-D563-5B6E-A5E7-DA4DDD91F5A3}  
 title:Detect Network Connection  
 brief:This recipe provides some quick snippets on how detect the type of network connection in use or how to query a specific type of network connection.  
@@ -6,6 +7,7 @@ sdk:[ConnectivityManager](/api/type/Android.Net.ConnectivityManager/)
 sdk:[NetworkInfo](/api/type/Android.Net.NetworkInfo/)  
 sdk:[ConnectivityType](/api/type/Android.Net.ConnectivityType/)
 sdk:[NetworkInfo.State](/api/type/Android.Net.NetworkInfo+State/)
+---
 
 <!-- Updated: 2015-09-30 -->
 

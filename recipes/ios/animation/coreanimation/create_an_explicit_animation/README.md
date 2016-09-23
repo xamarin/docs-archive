@@ -1,8 +1,10 @@
+---
 id:{D45B584A-4619-A966-A036-320F139448D4}  
 title:Create An Explicit Animation  
 brief:This recipe shows how to create an explicit animation using Core Animation.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/create_an_explicit_animation)  
 sdk:[Core Animation Programming Guide](http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

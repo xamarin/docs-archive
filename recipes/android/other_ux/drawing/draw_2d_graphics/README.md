@@ -1,7 +1,9 @@
+---
 id:{6EFBBBBF-2B2B-2F77-E796-03392B93A2F2}  
 title:Draw 2D Graphics  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/drawing/draw_2d_graphics)  
 sdk:[ShapeDrawable](http://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html)  
+---
 
 This recipe will provide an example of drawing a simple 2-D object.
 

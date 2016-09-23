@@ -1,5 +1,7 @@
+---
 id:{C85C9F5C-A10D-B6E6-2C82-CADD45F9EBA8}  
 title:Web Requests  
+---
 
 Provides some recipes for some common web tasks using C# and Xamarin.iOS.
 

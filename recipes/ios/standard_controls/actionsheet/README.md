@@ -1,5 +1,7 @@
+---
 id:{363724C4-6B2C-62C0-09D4-0184C2C53961}  
 title:ActionSheet  
+---
 
 A UIActionSheet displays a list of buttons along with an optional title
 to the user, animated from the bottom of the screen. They allow an application

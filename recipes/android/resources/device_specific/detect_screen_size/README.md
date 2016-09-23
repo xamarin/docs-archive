@@ -1,9 +1,11 @@
+---
 id:{AC297FB9-C012-4D0C-744C-7E9D1F6FDF83}  
 title:Detect Screen Size  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/resources/device_specific/detect_screen_size)  
 article:[Creating Resources for Varying Screens](/guides/android/application_fundamentals/resources_in_android/part_4_-_creating_resources_for_varying_screens)  
 sdk:[Supporting Multiple Screens](http://developer.android.com/guide/practices/screens_support.html)  
 sdk:[Display Metrics<](http://developer.android.com/reference/android/util/DisplayMetrics.html)  
+---
 
 This recipe will show how to detect the screen size of a device, in
 density-independent pixels.

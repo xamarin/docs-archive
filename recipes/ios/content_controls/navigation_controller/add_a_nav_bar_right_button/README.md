@@ -1,7 +1,9 @@
+---
 id:{79698AE6-8B70-7189-D52D-2D1801EEB833}  
 title:Add a Nav Bar Right Button  
 brief:This recipe shows how to add a right button to a navigation bar.  
 sdk:[UINavigationBar Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

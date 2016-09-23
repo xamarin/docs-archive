@@ -1,8 +1,10 @@
+---
 id:{A45FA9B0-6155-5841-CBB5-5732B211A944}  
 title:Get Accelerometer Readings  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/os_device_resources/accelerometer/get_accelerometer_readings)  
 sdk:[SensorManager](http://developer.android.com/reference/android/hardware/SensorManager.html)  
 dateupdated: 2016-01-04
+---
 
 This recipe will show how to use the accelerometer to measure a device’s motion
 in three dimensions.

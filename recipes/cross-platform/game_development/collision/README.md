@@ -1,6 +1,8 @@
+---
 id:{16bd8ca4-2320-4ccc-a1d9-f032920978f2}  
 title:Collision in CocosSharp  
 brief:How to test for collision in CocosSharp  
+---
 
 
 # Recipe
@@ -117,4 +119,3 @@ block.PositionX -= separatingVector.X * blockMovementRatio;
 block.PositionY -= separatingVector.Y * blockMovementRatio;
 
 ```
-

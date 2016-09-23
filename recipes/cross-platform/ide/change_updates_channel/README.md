@@ -1,6 +1,8 @@
+---
 id:{a2867023-e58a-4114-aafe-8e2e938afb11}
 title:Change the Updates Channel
 brief:This recipe illustrates how to change the updates (releases) channel in Xamarin Studio and Visual Studio.
+---
 
 
 ## Change the Updates Channel in Xamarin Studio on Mac

@@ -1,9 +1,11 @@
+---
 id:{E921D8BC-5FAA-D4EB-2755-5F14CCDDACEA}  
 title:Detect a Touch  
 brief:This recipe will show how to detect and response to a touch event. The user can touch a Button on the screen and then slide it left or right.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/gestures/detect_a_touch)  
 sdk:[View.OnTouchListener](http://developer.android.com/reference/android/view/View.OnTouchListener.html)  
 sdk:[MotionEvent](http://developer.android.com/reference/android/view/MotionEvent.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

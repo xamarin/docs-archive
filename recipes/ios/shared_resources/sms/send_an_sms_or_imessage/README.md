@@ -1,8 +1,10 @@
+---
 id:{3E0CD68A-800E-A5CD-62DF-4E4DB09EF367}  
 title:Send an SMS or iMessage  
 brief:This recipe shows how to send an SMS or iMessage.  
 sdk:[UIApplication Class Reference](http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIApplication_Class/Reference/Reference.html)  
 sdk:[Apple URL Scheme Reference](http://developer.apple.com/library/ios/#featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

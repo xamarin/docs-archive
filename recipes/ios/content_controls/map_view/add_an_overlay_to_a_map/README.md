@@ -1,3 +1,4 @@
+---
 id:{316BE54A-5E70-440A-4B5E-4F32DAFF6224}  
 title:Add an Overlay to a Map  
 brief:This recipe shows how to add an overlay to a map.  
@@ -6,6 +7,7 @@ article:[Displaying a Location](/recipes/ios/content_controls/map_view/display_d
 article:[Add an Annotation](/recipes/ios/content_controls/map_view/add_an_annotation_to_a_map)  
 sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)  
 sdk:[MKMapViewDelegate Protocol Reference](https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapViewDelegate_Protocol/MKMapViewDelegate/MKMapViewDelegate.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

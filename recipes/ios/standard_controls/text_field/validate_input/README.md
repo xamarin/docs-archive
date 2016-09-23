@@ -1,7 +1,9 @@
+---
 id:{40066284-0d92-4f3c-888d-7f08d381f8b2}  
 title:Validate Text Input  
 subtitle:And Show Errors  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/standard_controls/text_field/validate_input)  
+---
 
 <a name="Recipe" class="injected"></a>
 

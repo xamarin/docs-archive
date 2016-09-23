@@ -1,8 +1,10 @@
+---
 id:{06C52730-D00A-8F10-D42B-DBED9C85CC17}  
 title:Load Local Content  
 brief:This recipe shows how to load a local Html file into a WebView.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/controls/webview/load_local_content)  
 sdk:[WebView Class Reference](http://developer.android.com/reference/android/webkit/WebView.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

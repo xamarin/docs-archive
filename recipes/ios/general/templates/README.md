@@ -1,5 +1,7 @@
+---
 id:{458AD0B6-B374-BA81-8218-0E7376F35B5E}  
 title:Templates  
+---
 
 Xamarin Studio includes many templates and a helpful wizard to help you get started with your application.  includes various file templates specific to iOS applications,
 such as the iOS view, view controller or property list templates.

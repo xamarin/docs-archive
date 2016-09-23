@@ -1,6 +1,8 @@
+---
 id:{DEB1C7E8-22C4-17A8-0D37-C089CD23B4C4}  
 title:Service  
 subtitle:Android.App.Service  
+---
 
 A service in Android represents a process who's lifecycle is not necessarily
 tied to the lifecycle of an activity and has no UI. As such, it's used to

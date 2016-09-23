@@ -1,6 +1,8 @@
+---
 id:{BE09FD47-1AC9-4104-AF8E-DEF3A9F541CE}  
 title:Create a Custom TableViewCell using a .xib  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/tables/custom-tableviewcell)
+---
 
 ### Referencing the Custom Cell
 
@@ -64,5 +66,4 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios
 		<li>Run the application and test it, you should notice that the background color of the cell, matches the background color of the cell in your .xib.</li>
 	</ol>
 </ide>
-
 

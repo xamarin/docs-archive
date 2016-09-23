@@ -1,9 +1,11 @@
+---
 id:{6578B301-90E8-F7CF-FB34-7D4C0F280422}  
 title:Open a Webpage in the Browser Application  
 brief:This recipe shows how to launch a web page in the built-in browser application.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/fundamentals/intent/open_a_webpage_in_the_browser_application)  
 article:[Hello, Multiscreen Applications](/guides/android/getting_started/hello,_multi-screen_applications)  
 sdk:[Invoking Google Applications on Android Devices](http://developer.android.com/guide/appendix/g-app-intents.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

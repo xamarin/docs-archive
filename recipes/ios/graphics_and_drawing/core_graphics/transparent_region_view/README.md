@@ -1,9 +1,11 @@
+---
 id:{9ad2acd2-6477-4b8d-8ccc-b80b658b6866}  
 title:Create a Transparent Region in a View  
 brief:This recipe shows how to create a transparent region within a view.  
 samplecode:[TransparentRegionInView](https://github.com/xamarin/recipes/tree/master/ios/graphics_and_drawing/core_graphics/transparent_region_view/  
 article: [Core Graphics guide](/guides/ios/application_fundamentals/graphics_animation_ios/core_graphics/)
 sdk:[Quartz 2D Programming Guide](https://developer.apple.com/library/ios/#documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html)  
+---
 
 
 # Recipe

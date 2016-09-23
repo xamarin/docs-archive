@@ -1,3 +1,4 @@
+---
 id:{D037BC0A-EEFB-7EAA-F023-4D8993EABFF6}
 title:Get Current Device Location  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/os_device_resources/gps/get_current_device_location)  
@@ -7,6 +8,7 @@ article:[Geocode an Address](/recipes/android/os_device_resources/geocoder/geoco
 sdk:[Obtaining User Location](http://developer.android.com/guide/topics/location/obtaining-user-location.html)  
 sdk:[LocationManager](http://developer.android.com/reference/android/location/LocationManager.html)
 dateupdated: 2016-01-04
+---
 
 This recipe will show how to get the location of the device. When a button on the activity is clicked by the user, then a street address that is close to the location will also be displayed.
 

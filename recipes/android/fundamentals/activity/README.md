@@ -1,6 +1,8 @@
+---
 id:{91A1FAFA-C769-F785-0B60-DB12D908E081}  
 title:Activity  
 subtitle:Android.App.Activity  
+---
 
 Activity might be one of the single most important concepts in Android
 development. At it's simplest, an Activity represents a screen in an

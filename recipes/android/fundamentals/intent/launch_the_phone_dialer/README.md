@@ -1,9 +1,11 @@
+---
 id:{5D149BD7-1936-3D36-8F71-50A9D13ED8AA}  
 title:Launch the Phone Dialer  
 brief:This recipe shows how to launch the phone dialer application.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/fundamentals/intent/launch_the_phone_dialer)  
 article:[Hello, Android Multiscreen](/guides/android/getting_started/hello,android_multiscreen)  
 sdk:[Initiate a phone call](http://developer.android.com/guide/components/intents-common.html#DialPhone)  
+---
 
 <a name="Recipe" class="injected"></a>
 

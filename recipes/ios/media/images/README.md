@@ -1,5 +1,7 @@
+---
 id:{13AC2032-E072-B2E1-5C5D-82455F7C43F2}  
 title:Images  
+---
 
 iOS has a rich API for manipulating and accessing images.
 

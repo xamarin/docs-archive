@@ -1,7 +1,9 @@
+---
 id:{8CB9984C-0856-AE4D-CBFC-9C2D87168275}  
 title:Take a Picture and Save Using Camera App  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/camera_intent/take_a_picture_and_save_using_camera_app)  
 sdk:[Camera](http://developer.android.com/reference/android/hardware/Camera.html)  
+---
 
 This recipe shows how to launch the built-in camera application to take
 a picture, save it to a file, and display it in an ImageView.

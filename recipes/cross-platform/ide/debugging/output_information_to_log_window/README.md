@@ -1,7 +1,9 @@
+---
 id:{8049271B-C772-4E25-7EB5-DCD6713FFDB8}  
 title:Output Information to Log Window  
 brief:This recipe shows how to debug using the log window.  
 article:[Debugging](/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios)  
+---
 
 <a name="Recipe" class="injected"></a>
 

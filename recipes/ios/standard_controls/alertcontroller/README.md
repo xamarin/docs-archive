@@ -1,7 +1,9 @@
+---
 id:[cc4170e2-bbdd-46c1-bac7-70739f2f7a5a]  
 title:AlertController
 brief: UIAlertController is now the class that should be used for displaying alerts in iOS 8
 samplecode: [Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/standard_controls/alertcontroller/)  
+---
 
 Starting with iOS 8, `UIAlertController` has completely replaced `UIActionSheet` and `UIAlertView`, both of which are now deprecated.
 

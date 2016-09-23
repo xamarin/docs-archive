@@ -1,6 +1,8 @@
+---
 id:{2acfc981-107f-4cab-9d68-9f090a9fa533}  
 title:Time Based Movement in CocosSharp  
 brief:How to move an object independent of frame rate  
+---
 
 # Recipe
 
@@ -22,4 +24,3 @@ void PerformMovement(float timeInSeconds)
 	this.PositionX += velocity * timeInSeconds;
 }
 ```
-

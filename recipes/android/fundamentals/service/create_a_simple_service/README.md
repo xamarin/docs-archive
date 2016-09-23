@@ -1,9 +1,11 @@
+---
 id:{DCEC2052-373D-C101-30F0-6BFA78C498AB}  
 title:Create a Simple Service  
 brief:This recipe shows how to create a service.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/fundamentals/service/create_a_simple_service)  
 sdk:[Service Class Reference](http://developer.android.com/reference/android/app/Service.html)  
 dateupdated: 2016-01-04
+---
 
 
 # Recipe

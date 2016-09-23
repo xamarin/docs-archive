@@ -1,9 +1,11 @@
+---
 id:{A522BA96-61C4-684A-BBE8-48A8812F9973}  
 title:Display An Image
 brief:This recipe shows how to display an image using an ImageView.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/controls/imageview/display_an_image)  
 article:[MultiResolution Sample](https://github.com/xamarin/monodroid-samples/tree/master/MultiResolution)  
 sdk:[ImageView Class Reference](http://developer.android.com/reference/android/widget/ImageView.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

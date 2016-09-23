@@ -1,3 +1,4 @@
+---
 id:{4ed7ea00-1b24-4962-b2a4-fe9bffc1e652}
 title:Fixing ListView and TableView width on iPad
 samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/iOS/ipad-listview/)
@@ -5,6 +6,7 @@ article:[Custom Renderers](/guides/xamarin-forms/custom-renderer/)
 api:[ListView](/api/type/Xamarin.Forms.ListView/)
 api:[TableView](/api/type/Xamarin.Forms.TableView/)
 dateupdated:2015-12-18
+---
 
 In iOS 9 Apple introduced a new feature in `UITableView` that prevents
 cells from stretching to the full width of the screen to aid in readability.

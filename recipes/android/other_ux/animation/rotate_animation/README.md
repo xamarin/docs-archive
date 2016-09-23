@@ -1,9 +1,11 @@
+---
 id:{EFCBA08A-6069-9EB4-2D88-65D3B7FF92DF}  
 title:Rotate Animation  
 brief:This tutorial will show how to rotate an animation.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/animation/rotate_animation)  
 sdk:[View Animation](http://developer.android.com/guide/topics/graphics/view-animation.html)  
 sdk:[Tween Animation](http://developer.android.com/guide/topics/resources/animation-resource.html#Tween)  
+---
 
 <a name="Recipe" class="injected"></a>
 

@@ -1,3 +1,4 @@
+---
 id:{CB9D9E60-6DC2-A16A-8730-0AEE11DCB300}  
 title:Storyboard a TableView  
 brief:This recipe shows how to use the Storyboard to build a user interface with a UITableView using Xamarin Studio.  
@@ -5,6 +6,7 @@ samplecode:[Storyboard Table](/samples/monotouch/StoryboardTable/)
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/general/storyboard/storyboard_a_tableview)
 sdk:[UIStoryboard Class Reference&nbsp;](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html)  
 sdk:[UIStoryboardSegue Class Reference &nbsp;](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboardSegue_Class/Reference/Reference.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

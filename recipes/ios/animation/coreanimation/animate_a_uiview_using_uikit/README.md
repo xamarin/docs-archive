@@ -1,8 +1,10 @@
+---
 id:{041A249C-F116-E49E-DB3C-1DCCE6378BC9}  
 title:Animate a UIView using UIKit  
 brief:This recipe shows how to animate a UIView using UIKit. In this case it shows how to animate a UIImageView, but the same technique can be applied to any UIView.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/animate_a_uiview_using_uikit)  
 sdk:[Core Animation Programming Guide](https://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

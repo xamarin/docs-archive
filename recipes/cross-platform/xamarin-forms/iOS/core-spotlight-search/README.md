@@ -1,3 +1,4 @@
+---
 id:92174323-56cf-47a7-8d10-8c9180257f8d
 title:Search a Xamarin.Forms App with Core Spotlight (on iOS)
 subtitle:Making an app searchable through Spotlight search
@@ -5,6 +6,7 @@ brief:This recipe shows how to use the iOS 9 Core Spotlight framework to make Xa
 samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/iOS/CoreSpotlightSearch/)
 article:[Search with Core Spotlight](/guides/ios/platform_features/introduction_to_ios9/search/corespotlight/)
 api:[CoreSpotlight](/api/namespace/CoreSpotlight/)
+---
 
 # Overview
 

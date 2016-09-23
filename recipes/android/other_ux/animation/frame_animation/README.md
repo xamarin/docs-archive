@@ -1,8 +1,10 @@
+---
 id:{408CDC0C-9F35-C30B-B4EC-DFB37F57A245}  
 title:Frame Animation  
 brief:This tutorial will show how to create a Frame Animation.  
 samplecode:[Frame Animation](/samples/FrameAnimation/)  
 sdk:[DrawableAnimation](http://developer.android.com/guide/topics/graphics/drawable-animation.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

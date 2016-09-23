@@ -1,3 +1,4 @@
+---
 id:6ff8bd15-074e-4e6a-9522-f9e2be32ef12
 title:Highlight a Circular Area on a Map
 subtitle:How to add a circular overlay to a map
@@ -6,6 +7,7 @@ samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cro
 article:[Customizing a Map](/guides/xamarin-forms/custom-renderer/map/)
 api:[Xamarin.Forms.Maps](/api/namespace/Xamarin.Forms.Maps/)
 dateupdated:2016-04-27
+---
 
 # Overview
 

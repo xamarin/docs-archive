@@ -1,3 +1,4 @@
+---
 id:{C4E7F103-C464-472D-A48D-E2063ED309F5}
 title: Programmatically Selecting a ListView Row 
 recipe: [Select a Row](/recipes/android/controls/listview/select-row/)
@@ -6,6 +7,7 @@ link: [Color State List Resource](http://developer.android.com/guide/topics/reso
 link: [State List Drawable](http://developer.android.com/guide/topics/resources/drawable-resource.html#StateList)
 link: [Explanation of StateListDrawable for ListView](http://stackoverflow.com/questions/13634259/explanation-of-state-activated-state-selected-state-pressed-state-focused-for)
 dateupdated: 2016-03-18
+---
 
 # Overview
 

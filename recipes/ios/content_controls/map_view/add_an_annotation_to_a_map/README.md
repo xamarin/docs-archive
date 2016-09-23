@@ -1,3 +1,4 @@
+---
 id:{E5EEB812-C303-3B50-5C05-929C66B41390}
 title:Add an Annotation to a Map
 brief:This recipe shows how to add an annotation to a map.
@@ -5,6 +6,7 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios
 article:[Displaying a Location](/recipes/ios/content_controls/map_view/display_device_location)
 sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)
 sdk:[MKAnnotation Protocol Reference](https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKAnnotation_Protocol/)
+---
 
 <a name="Recipe" class="injected"></a>
 

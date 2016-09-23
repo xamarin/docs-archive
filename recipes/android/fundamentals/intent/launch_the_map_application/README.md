@@ -1,3 +1,4 @@
+---
 id:{1BB89467-078D-32F0-58E9-4347D9A719FD}  
 title:Launch the Map Application  
 brief:This recipe shows how to launch the maps application at a specified location.  
@@ -5,6 +6,7 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/and
 article:[Hello, Multiscreen Applications](/guides/android/getting_started/hello,_multi-screen_applications)  
 article:[Maps and Location – Part 1](/guides/android/platform_features/maps_and_location/part_1_-_maps_application)  
 sdk:[Invoking Google Applications on Android Devices](http://developer.android.com/guide/appendix/g-app-intents.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

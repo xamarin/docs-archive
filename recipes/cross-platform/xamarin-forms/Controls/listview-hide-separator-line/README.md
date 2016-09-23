@@ -1,3 +1,4 @@
+---
 id:{5edb69db-a5d5-40b2-8fd4-14013a815700}
 title:Hide separator lines in TableView
 subtitle:How to remove the lines between rows in a Xamarin.Forms table view
@@ -6,6 +7,7 @@ article:[Customizing Controls for Each Platform](http://docs.xamarin.com/guides/
 api:[ListView](http://developer.xamarin.com/api/type/Xamarin.Forms.ListView/)
 api:[TableView](http://developer.xamarin.com/api/type/Xamarin.Forms.TableView/)
 dateupdated:2015-12-11
+---
 
 # Overview
 

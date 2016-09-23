@@ -1,3 +1,4 @@
+---
 id:{E5C73826-9DDF-2EDB-DA9B-2AD93BBBA825}  
 title:Browse Files  
 brief:This recipe shows how to create a simple file browser using Xamarin.Android. When the application is run, a ListView will display the contents of a directory on the device, starting with the root directory. When the user taps on an item in the list, one of two things will happen: If the item is a file, then a Toast will appear showing the name of the file that was selected. If the item is a directory, then the ListView will be repopulated to show the contents of the selected directory.  
@@ -10,6 +11,7 @@ sdk:[ListFragment](http://developer.android.com/reference/android/app/ListFragme
 sdk:[ListView](http://developer.android.com/reference/android/widget/ListView.html)  
 sdk:[DirectoryInfo](http://msdn.microsoft.com/en-us/library/system.io.directoryinfo.aspx)  
 sdk:[FileSystemInfo](http://msdn.microsoft.com/en-us/library/system.io.filesysteminfo.aspx)  
+---
 
 <a name="Recipe" class="injected"></a>
 

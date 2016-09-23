@@ -1,7 +1,9 @@
+---
 title:Playing Sound with AVAudioPlayer
 dateupdated:2016-02-01
 brief:This sample shows how to use a helper class to control the playback of sound using an AVAudioPlayer. 
 sdk:[AVAudioPlayer Reference](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVAudioPlayerClassReference/)
+---
 
 # About the AVAudioPlayer
 

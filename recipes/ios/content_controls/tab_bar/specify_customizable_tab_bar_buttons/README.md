@@ -1,3 +1,4 @@
+---
 id:{1994B006-1995-F7D3-2162-44A462E8BACC}  
 title:Specify Customizable Tab Bar Buttons  
 brief:This recipe illustrates how to enable tab bar customization so that users can change the order of tabs.  
@@ -6,6 +7,7 @@ article:[Create a Tab Bar](/recipes/ios/content_controls/tab_bar/create_a_tab_ba
 article:[Add a Badge to a Tab Item](/recipes/ios/content_controls/tab_bar/add_a_badge_to_a_tab_item)  
 article:[Persist Customized Tab Bar Buttons](/recipes/ios/content_controls/tab_bar/persist_customized_tab_bar_buttons)  
 sdk:[UITabBarController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarController_Class/Reference/Reference.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

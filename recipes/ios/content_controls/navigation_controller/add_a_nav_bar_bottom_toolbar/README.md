@@ -1,8 +1,10 @@
+---
 id:{2484D39E-41AD-E29E-AC9F-C40923876AFD}  
 title:Add a Nav Bar Bottom ToolBar  
 brief:This recipe illustrates how to add a toolbar to the bottom of a view.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/navigation_controller/add_a_nav_bar_bottom_toolbar)  
 sdk:[UINavigationBar Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

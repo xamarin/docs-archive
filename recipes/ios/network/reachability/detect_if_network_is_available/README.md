@@ -1,8 +1,10 @@
+---
 id:{5FB6747E-70A7-0410-2C5C-60870D775100}  
 title:Detect if Network is Available  
 brief:This recipe shows how to detect the type of network connection that is in use.  
 sample:[Reachability Sample](/samples/ReachabilitySample)  
 sdk:[Reachability Sample](http://developer.apple.com/library/ios/#samplecode/Reachability/Introduction/Intro.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

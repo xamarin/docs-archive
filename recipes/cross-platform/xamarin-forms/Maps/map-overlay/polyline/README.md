@@ -1,3 +1,4 @@
+---
 id:fbfdc715-1654-4188-82a0-fc522548bcff
 title:Highlight a Route on a Map
 subtitle:How to add a polyline overlay to a map
@@ -6,6 +7,7 @@ samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cro
 article:[Customizing a Map](/guides/xamarin-forms/custom-renderer/map/)
 api:[Xamarin.Forms.Maps](/api/namespace/Xamarin.Forms.Maps/)
 dateupdated:2016-04-27
+---
 
 # Overview
 

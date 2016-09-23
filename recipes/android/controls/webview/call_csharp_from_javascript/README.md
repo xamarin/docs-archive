@@ -1,8 +1,10 @@
+---
 id:{9e6d1a1b-1fff-4718-9580-820eeb2f9d2d}  
 title: Call C# from JavaScript  
 brief: This recipe illustrates how to call C# class methods from JavaScript.  
 article: [Jon Pryor's StackOverflow post](http://stackoverflow.com/questions/9745168/monodroid-javascript-call-back/9746911)  
 article: [WebView Tutorial](http://docs.xamarin.com/guides/android/user_interface/web_view)  
+---
 
 # Recipe
 

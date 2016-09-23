@@ -1,9 +1,11 @@
+---
 id:{B05B5D58-E25F-A234-45BF-BB9BF3604AC8}  
 title:Start an Activity  
 brief:This recipe shows how to start an activity defined within an application.  
 article:[Activity Lifecycle](/guides/android/application_fundamentals/activity_lifecycle)  
 article:[Hello, Multiscreen Applications](/guides/android/getting_started/hello,_multi-screen_applications)  
 sdk:[Activity Class Reference](http://developer.android.com/reference/android/app/Activity.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

@@ -1,7 +1,9 @@
+---
 id:489036d7-d1c5-4919-bbda-d49d4539f0e1
 title:Xamarin.Forms Map Recipes
 article:[Customizing a Map](/guides/xamarin-forms/custom-renderer/map/)
 pdftype:none
+---
 
 # Basics
 

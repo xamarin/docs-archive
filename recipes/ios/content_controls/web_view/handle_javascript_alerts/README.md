@@ -1,8 +1,10 @@
+---
 id:{3EA5CD58-4281-43D7-8BD7-0B8830326294}
 title:Handle JavaScript Alerts
 brief:This recipe shows how to handle JavaScript alerts in a WKWebView by implementing WKUIDelegate.
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios//content_controls/web_view/handle_javascript_alerts)
 sdk:[WKUIDelegate Class Reference](https://developer.apple.com/library/ios/documentation/WebKit/Reference/WKUIDelegate_Ref/)
+---
 
 
 # Recipe

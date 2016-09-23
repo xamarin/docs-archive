@@ -1,6 +1,8 @@
+---
 id:{2FC1FE4E-635C-3F2D-877F-CA2D2C40D737}  
 title:Map View  
 subtitle:UIMapView Control  
+---
 
 The Map View is a powerful, yet easy to use control that provides a
 sophisticated turn-key mapping experience for your application. Additionally, it

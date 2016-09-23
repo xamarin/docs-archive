@@ -1,3 +1,4 @@
+---
 id:{E60826BD-B318-6DEB-BCB0-2E62744E868F}  
 title:Create a Dismissible ActionSheet Date Picker  
 brief:This recipe shows how to pop up an Action Sheet that contains a Date Picker.  
@@ -5,6 +6,7 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios
 article:[Display an ActionSheet](/recipes/ios/standard_controls/actionsheet/display_an_actionsheet)  
 sdk:[UIActionSheet Class Reference](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIActionSheet_Class/Reference/Reference.html)  
 sdk:[UIDatePicker Class Reference](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIDatePicker_Class/)  
+---
 
 <div class="note">WARNING: <code>UIActionSheet</code> is <a href="https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIActionSheet_Class/">deprecated in iOS 8</a>, and has been replaced with UIAlertController. You can find a recipe on how to implement an Action Sheet in iOS <a href="/recipes/ios/standard_controls/alertcontroller/">here</a>.</br></br> <a href="https://developer.apple.com/library/ios/documentation/uikit/reference/uiactionsheet_class/index.html">Apple says:</a> "To create and manage action sheets in iOS 8 and later, instead use <code>UIAlertController</code> with a <code>preferredStyle</code> of <code>UIAlertControllerStyleActionSheet</code>."</div>
 

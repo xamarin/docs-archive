@@ -1,6 +1,8 @@
+---
 id:{036C978D-29B4-90D2-7B41-63C48B5EF159}  
 title:Navigation Controller  
 subtitle:UINavigationController  
+---
 
 The Navigation Controller (UINavigationController) is a fundamental part of
 the iOS navigation story. It provides automatic navigation controls as well as

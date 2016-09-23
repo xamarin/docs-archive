@@ -1,8 +1,10 @@
+---
 id:{3510AD02-2FC1-A034-9362-B5B0BF1B8EE1}  
 title:Record Video  
 brief:This recipe shows how to record video using the MediaRecorder class and play it back with the MediaPlayer class.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/media/video/record_video)  
 sdk:[MediaRecorder Class Reference](http://developer.android.com/reference/android/media/MediaRecorder.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

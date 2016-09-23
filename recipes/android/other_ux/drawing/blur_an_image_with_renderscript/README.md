@@ -1,3 +1,4 @@
+---
 id:{3BF2B1FB-B4D3-4986-9630-7DC7B19E55D7}  
 title:Blur an Image with Renderscript  
 subtitle:Apply a Gaussian Blur with Renderscript  
@@ -7,6 +8,7 @@ article:[Blurring Images on Android](http://blog.neteril.org/blog/2013/08/12/blu
 recipe:[Blur an Image with Managed Code](/recipes/android/other_ux/drawing/blur_an_image_with_managed_code/)  
 api:[ScriptIntrinsicBlur](http://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlur.html)  
 sdk:[Renderscript Computation](http://developer.android.com/guide/topics/renderscript/compute.html)  
+---
 
 This recipe shows one way to blur an image using an API that was introduced in Android 4.2.2 (API level 17) - `Android.Renderscripts.ScriptIntrinsicBlur`. This class will apply a [Gaussian blur](http://en.wikipedia.org/wiki/Gaussian_blur). `ScriptIntrinsicBlur` is a pre-implemented graphics
     filter that runs at the native level for maximum performance. Because this class uses [Renderscript](http://developer.android.com/guide/topics/renderscript/compute.html), it can spread out the

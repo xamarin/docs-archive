@@ -1,9 +1,11 @@
+---
 id:{055FA463-E40B-6A58-7E19-4C47393B4884}  
 title:Load Local Content  
 brief:This recipe shows how to load a local web page in a UIWebView control.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/web_view/load_local_content)  
 sdk:[UIWebView Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIWebView_Class/Reference/Reference.html)  
 sdk:[Using UIWebView to display select document types](https://developer.apple.com/library/ios/#qa/qa1630/_index.html)  
+---
 
 
 # Recipe

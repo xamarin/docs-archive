@@ -1,3 +1,4 @@
+---
 id:e79eb2cf-8dd6-44a8-b47d-5f0a94fb0a63
 title:Highlight a Region on a Map
 subtitle:How to add a polygon overlay to a map
@@ -6,6 +7,7 @@ samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cro
 article:[Customizing a Map](/guides/xamarin-forms/custom-renderer/map/)
 api:[Xamarin.Forms.Maps](/api/namespace/Xamarin.Forms.Maps/)
 dateupdated:2016-04-27
+---
 
 # Overview
 

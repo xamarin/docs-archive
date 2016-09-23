@@ -1,3 +1,4 @@
+---
 id:{166287c4-9caa-4082-853a-b66c3aa09704} 
 title:Populate an Outline View 
 brief:This recipe illustrates how to populate an Outline View using a custom NSOutlineViewDataSource from a hierarchal object graph.
@@ -5,6 +6,7 @@ dateupdated:2016-05-31
 related:[NSOutlineView Class Reference](https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Classes/NSOutlineView_Class/Reference/Reference.html) 
 related:[NSOutlineViewDataSource Class Reference](https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Protocols/NSOutlineViewDataSource_Protocol/Reference/Reference.html#//apple_ref/occ/intf/NSOutlineViewDataSource) 
 related:[Outline View Programming Topics](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/OutlineView/OutlineView.html#//apple_ref/doc/uid/10000023i)
+---
 
 # Recipe
 

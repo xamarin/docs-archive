@@ -1,3 +1,4 @@
+---
 id:{26172BD6-0F3D-48B8-B396-2033F654D76E}
 title:Create a Database with SQLite Component
 brief:This recipe will demonstrate how to create an SQLite database with the SQLite component.
@@ -6,6 +7,7 @@ article:[Walkthough – Including a Component in your Project](/guides/cross-pla
 article:[Create a Database with SQLite - iOS](/recipes/ios/data/sqlite/create_a_database_with_sqlitenet/)  
 article:[Create a Database with SQLite - Android](/recipes/android/data/databases/sqlite/)
 sample:[SQLite Component](http://components.xamarin.com/view/sqlite-net)
+---
 
 <a name="Requirements" class="injected"></a>
 # Requirements

@@ -1,3 +1,4 @@
+---
 id:{414980AA-64C0-3D0D-7306-71595C749B50}  
 title:Populate a Table  
 brief:This recipe shows you how to populate a UITableView with rows of data.  
@@ -6,6 +7,7 @@ sdk:[UITableView Class Reference](http://developer.apple.com/library/ios/#docume
 sdk:[UITableViewCell Class Reference](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewCell_Class/Reference/Reference.html)  
 sdk:[UITableViewDelegate](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDelegate_Protocol/Reference/Reference.html)  
 sdk:[UITableViewDataSource](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

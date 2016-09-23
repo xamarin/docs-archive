@@ -1,8 +1,10 @@
+---
 id:{145134BE-FD78-42DB-139D-FE4F54505499}  
 title:Merge Images  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/media/images/merge_images)  
 article:[Working with Images](/guides/ios/application_fundamentals/working_with_images)  
 sdk:[Quartz 2D Programming Guide](https://developer.apple.com/library/mac/#documentation/graphicsimaging/conceptual/drawingwithquartz2d/Introduction/Introduction.html)  
+---
 
 This recipe shows how to merge images together using an image context.
 

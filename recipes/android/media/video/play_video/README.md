@@ -1,8 +1,10 @@
+---
 id:{4A25B2A3-4CEF-0668-9974-24D17DC88550}  
 title:Play Video  
 brief:This recipe shows how to play a video using the VideoView class.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/media/video/play_video)  
 sdk:[VideoView Class Reference](http://developer.android.com/reference/android/widget/VideoView.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

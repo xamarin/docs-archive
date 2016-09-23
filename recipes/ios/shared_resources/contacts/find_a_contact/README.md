@@ -1,8 +1,10 @@
+---
 id:{0ED963F7-8955-A19E-5863-07974B82C75A}  
 title:Find a Contact  
 brief:This recipe shows how to find a contact using the ABAddressBook class.  
 dateupdated:2016-06-08  
 article:[Contacts and ContactUI](/guides/ios/platform_features/introduction_to_ios9/contacts/)    
+---
 
 <a name="Recipe" class="injected"></a>
 # Recipe

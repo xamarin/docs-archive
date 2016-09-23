@@ -1,5 +1,7 @@
+---
 id:{11C11ABA-B8EA-DD38-6879-C9845B08F890}  
 title:Projects  
+---
 
 Xamarin Studio and Visual Studio include a variety of project templates that make it easy to get
 started developing iOS applications. Projects also include support for various

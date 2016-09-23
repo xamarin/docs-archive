@@ -1,3 +1,4 @@
+---
 id:{1921124B-EA2B-1D63-D3D0-C5883471AEF8}  
 title:Specify the Cell Type  
 brief:This recipe shows you how to change the cell type and therefore the appearance of the table.  
@@ -6,6 +7,7 @@ sdk:[UITableView Class Reference](http://developer.apple.com/library/ios/#docume
 sdk:[UITableViewCell Class Reference](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewCell_Class/Reference/Reference.html)  
 sdk:[UITableViewDelegate](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDelegate_Protocol/Reference/Reference.html)  
 sdk:[UITableViewDataSource](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

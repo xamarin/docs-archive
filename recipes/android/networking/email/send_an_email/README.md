@@ -1,8 +1,10 @@
+---
 id:{9D90FCAD-FB7B-D4C0-C65E-8EC2364FFC52}  
 title:Send an Email  
 brief:This recipe shows how to send an email using an Intent.
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/networking/email/send_an_email)  
 article:[Hello, Multiscreen Applications](/guides/android/getting_started/hello,_multi-screen_applications)  
+---
 
 <a name="Recipe" class="injected"></a>
 

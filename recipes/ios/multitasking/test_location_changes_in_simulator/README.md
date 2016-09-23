@@ -1,6 +1,8 @@
+---
 id:{8e393aee-2cef-44f1-9706-e681c39616f4}  
 title:Test Location Changes in Simulator  
 brief:Some location APIs such as Significant Location Change and Geofences require big changes in location to trigger events. The iOS Simulator offers an easy way to test location APIs without leaving your desk.  
+---
 
 # Recipe
 

@@ -1,9 +1,11 @@
+---
 id:{F3FAE55E-2FF9-37BB-280C-37987E83D1D4}  
 title:Use an Image for a Button  
 brief:This recipe shows you how to create an image button.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/standard_controls/buttons/Use_an_Image_for_a_Button)  
 article:[Set Button Text](/recipes/ios/standard_controls/buttons/set_button_text)  
 sdk:[UIButton Class Reference](http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIButton_Class/UIButton/UIButton.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

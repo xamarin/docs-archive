@@ -1,8 +1,10 @@
+---
 id:{50148A91-C52C-E9C1-B83C-610274A6FF28}  
 title:Choose a Contact  
 brief:This recipe shows how to select a contact using the CNContactPickerViewController.
 dateupdated:2016-06-08  
 article:[Contacts and ContactUI](/guides/ios/platform_features/introduction_to_ios9/contacts/)  
+---
 
 <a name="Recipe" class="injected"></a>
 # Recipe

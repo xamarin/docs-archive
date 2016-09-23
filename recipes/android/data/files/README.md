@@ -1,5 +1,7 @@
+---
 id:{321736F6-9B74-80D7-8FF1-5984439EEB71}  
 title:Files  
+---
 
 Working with different file types, including loading, saving and displaying
 them.

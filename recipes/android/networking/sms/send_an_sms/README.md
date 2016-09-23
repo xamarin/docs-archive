@@ -1,9 +1,11 @@
+---
 id:{ABDD6F9D-BA78-ECD5-3D2A-7E8A5CB8E6E1}  
 title:Send an SMS  
 brief:This recipe shows how to send an SMS message using the SMSManager or an Intent.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/networking/sms/send_an_sms)  
 sdk:[SmsManager Class Reference](http://developer.android.com/reference/android/telephony/gsm/SmsManager.html)  
 <a name="Recipe" class="injected"></a>
+---
 
 # Recipe
 

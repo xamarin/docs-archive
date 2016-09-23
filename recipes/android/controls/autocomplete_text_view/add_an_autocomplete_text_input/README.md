@@ -1,8 +1,10 @@
+---
 id:{7BC14587-2E35-7F42-50D0-29F303BD0210}  
 title:Add an Autocomplete Text Input  
 brief:This recipe shows how to use the AutoCompleteTextView.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/controls/autocomplete_text_view/add_an_autocomplete_text_input)  
 sdk:[AutoCompleteTextView Class Reference](http://developer.android.com/reference/android/widget/AutoCompleteTextView.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

@@ -1,3 +1,4 @@
+---
 id:{3972CC35-7BCD-4394-B6F6-88A7E80B5C39}  
 title:Report Download Progress  
 subtitle:How to use Progress<T> in a Xamarin mobile application  
@@ -9,6 +10,7 @@ api:[Progress<T>](http://msdn.microsoft.com/en-us/library/hh193692(v=vs.110).asp
 api:[ProgressBar](http://developer.android.com/reference/android/widget/ProgressBar.html)  
 api:[Task<T>](http://msdn.microsoft.com/en-us/library/dd321424(v=vs.110).aspx)  
 api:[UIProgressView](http://iosapi.xamarin.com/?link=T:MonoTouch.UIKit.UIProgressView)  
+---
 
 <a name="Overview" class="injected"></a>
 

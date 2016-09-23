@@ -1,3 +1,4 @@
+---
 id:{058BB883-0550-FAD7-15EC-D4EE88B734E6}  
 title:ActionSheet Date Picker  
 brief:This recipe shows how to pop up an Action Sheet that contains a Date Picker.  
@@ -5,6 +6,7 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios
 article:[Display an ActionSheet](/recipes/ios/standard_controls/actionsheet/display_an_actionsheet)  
 sdk:[UIActionSheet Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIActionSheet_Class/Reference/Reference.html)  
 sdk:[UIDatePicker Class Reference](http://developer.apple.com/library/ios/#documentation/uikit/reference/UIDatePicker_Class/Reference/UIDatePicker.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

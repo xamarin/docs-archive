@@ -1,9 +1,11 @@
+---
 id:{D5AC9861-F18A-4AB1-4A10-87E98D40205E}  
 title:Read Contacts  
 brief:This recipe shows how to read contacts in Android and display the results in a list.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/data/contentproviders/read_contacts)  
 article:[Introduction to Ice Cream Sandwich](/guides/android/platform_features/introduction_to_ice_cream_sandwich)  
 sdk:[Contacts Provider](http://developer.android.com/guide/topics/providers/contacts-provider.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

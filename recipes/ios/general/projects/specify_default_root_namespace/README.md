@@ -1,6 +1,8 @@
+---
 id:{F218D026-D3CC-C8C2-B726-C01B8E0E93A9}  
 title:Specify Default Root Namespace  
 brief:This recipe shows where to set the default namespace for a project.  
+---
 
 <a name="Recipe" class="injected"></a>
 

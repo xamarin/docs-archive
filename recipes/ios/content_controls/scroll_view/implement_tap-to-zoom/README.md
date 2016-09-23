@@ -1,3 +1,4 @@
+---
 id:{3DE8385B-075C-3B7F-33D4-9CA048E26DE6}  
 title:Implement Tap-to-Zoom  
 brief:This recipe shows how to load an image into a scroll view and allow the user to double-tap to zoom.  
@@ -7,6 +8,7 @@ article:[Load an Image](/recipes/ios/standard_controls/image_view/load_an_image)
 article:[Zoom a ScrollView](/recipes/ios/content_controls/scroll_view/zoom_a_scrollview)  
 sdk:[UIScrollView Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIScrollView_Class/Reference/UIScrollView.html)  
 sdk:[Scroll View Programming Guide](https://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/UIScrollView_pg/Introduction/Introduction.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

@@ -1,6 +1,8 @@
+---
 id:{862d8299-099d-474b-9604-c869e31f4b0e}  
 title:Async CCActions  
 brief:How to use async CCActions to script behavior  
+---
 
 # Recipe
 

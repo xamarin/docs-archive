@@ -1,7 +1,9 @@
+---
 id:{13B08892-8DDC-CDDE-63A1-9994E1569249}  
 title:Configure Segments (UISegmentedControl)  
 brief:This recipe shows how to create a UISegmentedControl.  
 sdk:[UISegmentedControl Class Reference](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UISegmentedControl_Class/)  
+---
 
 <a name="Recipe" class="injected"></a>
 

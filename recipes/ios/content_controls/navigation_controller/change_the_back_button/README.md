@@ -1,7 +1,9 @@
+---
 id:{DE7F5B11-E7E5-AD46-1BA2-BD53D3465901}  
 title:Change the Back Button  
 brief:This recipe shows how to change the Back button that appears in a navigation controller.  
 sdk:[UINavigationBar Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

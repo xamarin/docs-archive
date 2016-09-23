@@ -1,6 +1,8 @@
+---
 id:{5D0C5AE0-C13D-2746-7B4C-2A47BB059622}  
 title:Change the Nav Bar Style  
 sdk:[UINavigationBar Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html)  
+---
 
 This recipe shows how to change the style of a navigation bar.
 

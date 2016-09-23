@@ -1,3 +1,4 @@
+---
 id:{D6D866A3-95F9-9005-A018-A6A1345D5D5C}  
 title:Save Documents  
 brief:This recipe shows how to save a text file to the Documents folder.  
@@ -5,6 +6,7 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios
 article:[Load a File](/recipes/ios/general/file_system/load_a_file)  
 article:[Enumerate Directories](/recipes/ios/general/file_system/enumerate_directories)  
 article:[Load an Image](/recipes/ios/standard_controls/image_view/load_an_image)  
+---
 
 <a name="Recipe" class="injected"></a>
 

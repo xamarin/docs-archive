@@ -1,8 +1,10 @@
+---
 id:{C26D0663-B770-0A32-6DCD-B56160384092}  
 title:Create a Custom Adapter for Contacts  
 brief:This recipe shows how to implement a custom adapter to retrieve contacts and show them in list, displaying both the contact’s image and name.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/data/adapters/create_a_custom_adapter_for_contacts)  
 sdk:[ContactsContract Class Reference](http://developer.android.com/reference/android/provider/ContactsContract.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

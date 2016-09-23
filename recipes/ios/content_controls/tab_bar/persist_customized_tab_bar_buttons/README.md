@@ -1,3 +1,4 @@
+---
 id:{8882FBE4-084A-7759-EED7-FE9EABBFEEBF}  
 title:Persist Customized Tab Bar Buttons  
 brief:This recipe provides one possible solution for how to save and reload a customized tab bar.  
@@ -6,6 +7,7 @@ article:[Create a Tab Bar](/recipes/ios/content_controls/tab_bar/create_a_tab_ba
 article:[Add a Badge to a Tab Item](/recipes/ios/content_controls/tab_bar/add_a_badge_to_a_tab_item)  
 article:[Specify Customizable Tab Bar Buttons](/recipes/ios/content_controls/tab_bar/specify_customizable_tab_bar_buttons)  
 sdk:[UITabBarController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarController_Class/Reference/Reference.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

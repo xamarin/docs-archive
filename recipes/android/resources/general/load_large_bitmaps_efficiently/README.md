@@ -1,9 +1,11 @@
+---
 id:{94A1BAFE-812F-CC0B-7D77-9FFA03FB1C1C}  
 title:Load Large Bitmaps Efficiently  
 brief:This recipe shows you how you can load large images into memory without the application throwing an OutOfMemoryException by loading a smaller subsampled version in memory.  
 samplecode:[LoadingLargeBitmaps](/Samples/LoadingLargeBitmaps/)
 article:[Garbage Collection](/guides/android/advanced_topics/garbage_collection)  
 sdk:[Load Large Bitmaps Efficiently](http://developer.android.com/training/displaying-bitmaps/load-bitmap.html)
+---
 
 # Recipe
 

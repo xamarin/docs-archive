@@ -1,9 +1,11 @@
+---
 id:{5747077E-47CC-CAED-B07F-48668FBA0AAF}  
 title:Load Non-Web Documents  
 brief:This recipe shows how to load a web page in a UIWebView control.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/web_view/load_non-web_documents)  
 sdk:[UIWebView Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIWebView_Class/Reference/Reference.html)  
 sdk:[Using UIWebView to display select document types](https://developer.apple.com/library/ios/#qa/qa1630/_index.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

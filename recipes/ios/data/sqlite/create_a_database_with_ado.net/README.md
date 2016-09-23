@@ -1,7 +1,9 @@
+---
 id:{37D84956-B056-2A95-604C-DB14A9D655FC}  
 title:Create a Database with ADO.NET  
 brief:This recipe will demonstrate how to create an SQLite database with ADO.NET.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/data/sqlite/create_a_database_with_ado.net)  
+---
 
 <a name="Recipe" class="injected"></a>
 

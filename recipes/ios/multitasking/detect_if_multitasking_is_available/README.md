@@ -1,6 +1,8 @@
+---
 id:{F9255BC7-4F5D-F237-8629-D7FCDDCC265E}  
 title:Detect if Multitasking is Available  
 brief:Not all versions of iOS or iPhone support multi-tasking. This recipe will show how to detect if multi-tasking is supported on the device.  
+---
 
 <a name="Recipe" class="injected"></a>
 

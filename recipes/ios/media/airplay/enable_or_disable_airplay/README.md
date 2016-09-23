@@ -1,8 +1,10 @@
+---
 id:{2388137F-B8F4-1AE3-75A0-B1026D9D915E}  
 title:Enable or Disable Airplay  
 brief:This recipe shows how to enable (or disable) AirPlay when playing a video using MPMoviePlayerController.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/media/airplay/enable_or_disable_airplay)  
 sdk:[MPMoviePlayerController Class References](http://developer.apple.com/library/ios/#documentation/mediaplayer/reference/MPMoviePlayerController_Class/Reference/Reference.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

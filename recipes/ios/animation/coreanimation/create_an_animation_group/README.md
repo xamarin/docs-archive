@@ -1,8 +1,10 @@
+---
 id:{CC85CDF8-974D-68CF-B0C5-56B60562FA82}  
 title:Create an Animation Group  
 brief:This recipe shows how to create an animation that groups multiple animations together using Core Animation.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/create_an_animation_group)
 sdk:[Core Animation Programming Guide](http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

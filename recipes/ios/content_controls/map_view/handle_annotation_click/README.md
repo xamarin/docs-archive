@@ -1,3 +1,4 @@
+---
 id:{EDB7429B-839E-7E9F-19A2-133E442C145C}  
 title:Handle Annotation Click  
 brief:This recipe shows how to add an annotation with a clickable button to a map.  
@@ -6,6 +7,7 @@ article:[Add an Annotation](/recipes/ios/content_controls/map_view/add_an_annota
 article:[Displaying a Location](/recipes/ios/content_controls/map_view/display_device_location)  
 sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)  
 sdk:[MKAnnotation Protocol Reference](https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKAnnotation_Protocol/)  
+---
 
 <a name="Recipe" class="injected"></a>
 

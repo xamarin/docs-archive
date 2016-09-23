@@ -1,3 +1,4 @@
+---
 id:{47A7FC7B-30FB-227E-0A67-4CD7134FA34B}  
 title:Communicate Between Master and Detail Controllers  
 brief:This recipe shows how to wire up the master view in a UISplitViewController so that a new selection will change the contents of the detail view.  
@@ -6,6 +7,7 @@ article:[Using a Split View to Show Two Controllers](/recipes/ios/content_contro
 article:[Showing and Hiding the Master View Button](/recipes/ios/content_controls/split_view/show_and_hide_the_master_view_button)  
 sdk:[UISplitViewController Class Reference](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UISplitViewController_class/Reference/Reference.html)  
 sdk:[Split View Controllers](https://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/SplitViewControllers.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

@@ -1,8 +1,10 @@
+---
 id:{8ED75DF3-C409-C97E-E5DB-AB92F1953BE8}  
 title:Create a New Contact  
 brief:This recipe shows how to create a new contact using a CNContactViewController and a CNMutableContact.  
 dateupdated:2016-06-08  
 article:[Contacts and ContactUI](/guides/ios/platform_features/introduction_to_ios9/contacts/)   
+---
 
 <a name="Recipe" class="injected"></a>
 # Recipe

@@ -1,3 +1,4 @@
+---
 id:1fd0aba3-95a1-4830-b279-36cdb7e2b5ad
 title:Call JavaScript from C#
 subtitle:Evaluating JavaScript hosted in a WebView
@@ -6,6 +7,7 @@ samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cro
 article:[WebView](/guides/xamarin-forms/user-interface/webview/)
 api:[WebView](/api/type/Xamarin.Forms.WebView/)
 api:[HtmlWebViewSource](/api/type/Xamarin.Forms.HtmlWebViewSource/)
+---
 
 # Overview
 

@@ -1,7 +1,9 @@
+---
 id:{60CB8D6D-3E26-BD8D-88F0-3B63FE1BC8F7}  
 title:Create an iOS Project  
 brief:This recipe shows how to create a new iOS project.  
 article:[Hello, iPhone](/guides/ios/getting_started/hello,_world)  
+---
 
 <a name="Recipe" class="injected"></a>
 

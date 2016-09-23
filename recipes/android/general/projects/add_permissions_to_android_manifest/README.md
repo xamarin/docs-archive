@@ -1,6 +1,8 @@
+---
 id:{88F5827B-0B37-5B34-8685-E4D55B53E6B3}  
 title:Add Permissions to Android Manifest  
 brief:This recipe shows how to add permissions to the Android Manifest (Manifest.xml).  
+---
 
 <a name="Recipe" class="injected"></a>
 

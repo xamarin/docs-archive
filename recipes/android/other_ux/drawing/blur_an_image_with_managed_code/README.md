@@ -1,3 +1,4 @@
+---
 id:{f3bf0d4e-73b1-469e-91ce-9a90438fc73b}  
 title:Blur an Image with Managed Code  
 subtitle:Apply a Gaussian Blur with Managed Code  
@@ -6,6 +7,7 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/and
 article:[Stack Blur: Fast But Goodlooking](http://incubator.quasimondo.com/processing/fast_blur_deluxe.php)  
 recipe:[Blur an Image with Renderscript](/recipes/android/other_ux/drawing/blur_an_image_with_renderscript/)  
 recipe:[Load Large Bitmaps Efficiently](/recipes/android/resources/general/load_large_bitmaps_efficiently/)  
+---
 
 This recipe demonstrates one way to blur an image using only C# code. This is not as quick as [using RenderScript](http://docs.xamarin.com/recipes/android/other_ux/drawing/blur_an_image_with_renderscript/). The code in this recipe should work on all Android API levels.
 

@@ -1,8 +1,10 @@
+---
 id:{DF2AC5D0-D400-A876-7480-810A76E819C2}  
 title:Display a Location  
 brief:This recipe shows how to display a location on a map.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/display_a_location)  
 sdk:[MKMapView Class Reference](https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

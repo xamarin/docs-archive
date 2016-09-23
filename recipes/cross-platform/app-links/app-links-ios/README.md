@@ -1,3 +1,4 @@
+---
 id:{30EFAE6F-8AF4-4D5D-9F06-328D76423581}  
 title:App Links for iOS  
 subtitle:How to Link to other apps and Handle Incoming links using App Links  
@@ -7,6 +8,7 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/cro
 article:[Creating Connected App Experiences with App Links](http://blog.xamarin.com/creating-connected-app-experiences-with-app-links-and-rivets-with-xamarin/)  
 article:[Rivets Xamarin Component](http://components.xamarin.com/view/rivets)  
 article:[Official App Links Documentation](http://applinks.org/documentation/)  
+---
 
 <a name="Overview" class="injected"></a>
 

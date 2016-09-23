@@ -1,6 +1,8 @@
+---
 id:{c0b4b42f-6c76-4c38-b0d2-e1042c583850}  
 title:Launch the SDK Manager from Xamarin Studio  
 brief:This recipe shows how to launch the Android SDK Manager from Xamarin Studio on Mac and Windows.  
+---
 
 <a name="Recipe" class="injected"></a>
 

@@ -1,3 +1,4 @@
+---
 id:{015068A0-D66E-484D-8772-6036A39D29F0}  
 title:Select An Image  
 subtitle:How to Pick an Image  
@@ -5,6 +6,7 @@ brief:This recipe will show how to pick an image that is stored on the device an
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/other_ux/pick_image)  
 api:[Intent](http://developer.android.com/reference/android/content/Intent.html)  
 dateupdated: 2016-03-29
+---
 
 This recipe will show how to pick a image stored on the device, display it in an `ImageView` and obtain the path the file on the device. This recipe accomplishes this by firing off an `Intent` to start an application (of the users choice) to select the image. The selection will be sent back to our application via a URI that is wrapped in an Intent. The following screenshots shows the sample application included with this recipe.
 

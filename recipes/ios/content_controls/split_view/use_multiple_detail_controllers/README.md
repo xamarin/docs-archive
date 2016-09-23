@@ -1,7 +1,9 @@
+---
 id:{4AA231B2-45A9-8D2A-90D1-3F676CF3ACC1}
 title:Use Multiple Detail Controllers
 brief:This recipe shows how to use multiple detail controllers, where the controller that is loaded changes based upon the row that is selected in the master controller’s table.
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/ios/content_controls/split_view/use_multiple_detail_controllers)
+---
 
 
 # Recipe

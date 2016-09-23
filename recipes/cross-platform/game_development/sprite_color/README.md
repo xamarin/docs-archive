@@ -1,6 +1,8 @@
+---
 id:{a73f899c-42ac-49b2-93c4-a317ff38eb73}  
 title:Coloring a CCSprite  
 brief:How to use the CCSprite Color value to color sprites at runtime.  
+---
 
 
 # Recipe

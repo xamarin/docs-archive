@@ -1,5 +1,7 @@
+---
 id:{F453F104-BCC6-B4A2-EEE0-4BA8F4F81622}  
 title:ContentProviders  
+---
 
 Encapsulate data and provide internal or inter-app access with
 ContentProviders.

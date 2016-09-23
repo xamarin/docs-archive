@@ -1,7 +1,9 @@
+---
 id:{647756af-afea-44e7-a5c9-a3701f3506f3}  
 title:Today Widget  
 brief:This recipe shows you how to create a today widget in iOS 8
 sample:[ExtensionsDemo](/samples/ExtensionsDemo)
+---
 
 <a name="Recipe" class="injected"></a>
 

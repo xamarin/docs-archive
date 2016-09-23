@@ -1,5 +1,7 @@
+---
 id:{E52E60E9-4BEE-1EE2-850F-99D66D3BDD6F}  
 title:Core Text  
+---
 
 The Core Text framework is a high-performance, low-level API for laying out
 text.

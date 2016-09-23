@@ -1,7 +1,9 @@
+---
 id:{6DD7B2FE-201E-F353-E80A-080992F43334}  
 title:Handle Clicks  
 brief:This recipe shows how to write code that is triggered by a button ‘click’.  
 sdk:[UIButton Class Reference](http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIButton_Class/UIButton/UIButton.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

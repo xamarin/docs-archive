@@ -1,3 +1,4 @@
+---
 id:{06b6826f-5d6d-4210-87e7-634f3639695e}  
 title:Add 'Done' to keyboard (on iOS)
 subtitle:How to dismiss the keyboard on iOS
@@ -5,6 +6,7 @@ brief:This recipe shows how to build a custom renderer for an Entry that include
 article:[Customizing Controls for Each Platform](http://docs.xamarin.com/guides/xamarin-forms/custom-renderer)  
 api:[Entry](http://iosapi.xamarin.com/?link=T:Xamarin.Forms.Entry)  
 dateupdated:2015-12-09
+---
 
 # Overview
 

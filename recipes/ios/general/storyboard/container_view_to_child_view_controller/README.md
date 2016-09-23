@@ -1,7 +1,9 @@
+---
 id:{2a051e34-aa36-446e-9df8-fe393bca8fa9}
 title:Retrieve a strongly-typed destination View Controller embedded in a Container View
 brief:This recipe shows the preferred method for retrieving a `UIViewController` embedded in a "Container View" in a Storyboard.
 samplecode:[Sample Code](https://github.com/xamarin/recipes/tree/master/ios/general/storyboard/container_view_to_child_view_controller) 
+---
 
 Container views are used in Storyboards to embed `UIView`s that are controlled by children `UIViewController` objects. Such "container views" are strictly a Storyboard concept: there is not an iOS class or interface that distinguishes such container views from any other view. Since a container view is just a normal `UIView`, it does not have a property named, for instance, `EmbeddedController` to retrieve the child `UIViewController`. There are several potential strategies for the parent `UIViewController` to retrieve a reference to a child `UIViewController`, but the most robust method, described here, is to use a named embed segue.
 

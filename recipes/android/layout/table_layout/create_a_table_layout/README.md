@@ -1,8 +1,10 @@
+---
 id:{CD938076-F68F-BC4D-7AEE-567AB3C95527}  
 title:Create a Table Layout  
 brief:This recipe shows how to programmatically set up a TableLayout to display rows and columns.  
 samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/android/layout/table_layout/create_a_table_layout)  
 sdk:[Table Layout](http://developer.android.com/resources/tutorials/views/hello-tablelayout.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

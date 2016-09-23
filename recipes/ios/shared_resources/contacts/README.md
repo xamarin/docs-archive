@@ -1,7 +1,9 @@
+---
 id:{F94677EC-2474-A40E-FC85-CC9551FBE628}  
 title:Contacts  
 dateupdated:2016-06-08
 article:[Contacts and ContactUI](/guides/ios/platform_features/introduction_to_ios9/contacts/) 
+---
 
 With the introduction of iOS 9, Apple has released two new frameworks, Contacts and ContactsUI, that replace the existing Address Book and Address Book UI frameworks used by iOS 8 and earlier.
 

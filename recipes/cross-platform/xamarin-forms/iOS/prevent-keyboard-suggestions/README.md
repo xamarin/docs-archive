@@ -1,3 +1,4 @@
+---
 id:{6dcc758a-ac8a-48ae-afb3-a480d6905f49}
 title:Prevent capitalization and spelling correction (on iOS)
 subtitle:How to make data entry easier by turning off auto-capitalization and spelling correction
@@ -5,6 +6,7 @@ brief:This recipe shows how to build a custom renderer for an Entry that prevent
 article:[Customizing Controls for Each Platform](/guides/xamarin-forms/custom-renderer/)
 api:[Entry](/api/type/Xamarin.Forms.Entry/)
 dateupdated:2016-02-11
+---
 
 # Overview
 

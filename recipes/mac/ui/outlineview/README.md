@@ -1,5 +1,7 @@
+---
 id:{7622f708-b6fc-4abe-9e97-85abc8002a1a}
 title:Outline View
+---
 
 NSOutlineView derives from NSTableView and adds functionality to render hierarchal
 data, as opposed to just grids. Out of the box, it provides indenting and expansion/collapse

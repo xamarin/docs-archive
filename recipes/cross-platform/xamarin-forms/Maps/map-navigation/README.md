@@ -1,9 +1,11 @@
+---
 id:{44631bab-7d39-42d8-b48a-8d352c7c1021}
 title:Perform map-based navigation
 subtitle:How to perform street-to-street navigation in each platforms native Maps app
 brief:This recipe shows how to open each platforms native maps app in order to perform navigation from the current location to an address entered in a Xamarin.Forms app.
 samplecode:[Browse on Github](https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Maps/MapNavigation/)
 api:[Device](/api/type/Xamarin.Forms.Device/)
+---
 
 # Overview
 

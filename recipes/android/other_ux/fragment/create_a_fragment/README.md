@@ -1,3 +1,4 @@
+---
 id:{776535D4-B422-BC44-9167-73767A22D441}  
 title:Create a Fragment  
 brief:Fragments are a new UI component originally introduced in Android 3.0 (API level 11) and later and require Mono for Android 4.0 or higher. To use Fragments in older versions of Android requires the Android Support Package and Xamarin.Android 4.2, which is covered in an another HOW-TO. This recipe will show how to create a simple Fragment.  
@@ -5,6 +6,7 @@ samplecode:[Browse on GitHub](https://github.com/xamarin/recipes/tree/master/and
 article:[Fragments](/guides/android/platform_features/fragments)  
 article:[Fragments Walkthrough](/guides/android/platform_features/fragments/fragments_walkthrough)  
 sdk:[Fragments](http://developer.android.com/guide/topics/fundamentals/fragments.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 

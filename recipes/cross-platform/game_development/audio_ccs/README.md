@@ -1,6 +1,8 @@
+---
 id:{eeef63af-44a6-4f84-82dd-caa44cacad39}  
 title:Audio in CocosSharp  
 brief:How to play sound and music in CocosSharp  
+---
 
 # Recipe
 

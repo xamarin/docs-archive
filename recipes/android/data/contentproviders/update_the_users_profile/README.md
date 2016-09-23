@@ -1,9 +1,11 @@
+---
 id: {F5F09837-B45E-042F-B9D3-AEFDBD8F4027}  
 title: Update the User's Profile  
 brief: This recipe shows how to update and read the device owner's "ME" user profile in Android, as well as how to navigate to the profile in the Contacts application.  
 samplecode: [UpdateUsersProfile](/samples/monodroid/UpdateUsersProfile),
 article:[Using the Contacts ContentProvider](/guides/android/platform_features/intro_to_content_providers/part_2_-_using_the_contacts_contentprovier/)  
 sdk: [ContactsContract.Profile](http://developer.android.com/reference/android/provider/ContactsContract.Profile.html)  
+---
 
 <a name="Recipe" class="injected"></a>
 
