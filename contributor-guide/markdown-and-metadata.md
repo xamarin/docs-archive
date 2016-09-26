@@ -22,11 +22,11 @@ The very minimum amount of data that needs to be added is the follows:
 
 Other _optional_ metadata: 
 
-* article: [name](urn) Link to other relevant Xamarin guides. 
-* video: [name](urn) Link to relevant videos 
-* sample: [name](urn) Link to Xamarin samples. 
-* api: [name](urn) Link to Xamarin API docs 
-* link: [name](urn) Link to any relevant external page 
+* article: `[name](urn)` Link to other relevant Xamarin guides. 
+* video: `[name](urn)` Link to relevant videos 
+* sample: `[name](urn)` Link to Xamarin samples. 
+* api: `[name](urn)` Link to Xamarin API docs 
+* link: `[name](urn)` Link to any relevant external page 
 
 ### Resource/Related Item Example 
 
@@ -37,5 +37,6 @@ URN - This is an link to content. Where possible, try and link to the original c
 Name - This is the friendly name of the item as it will be shown to the user. 
 For example, the following snippet illustrates two related articles links: 
 
-article:[Introduction to Mobile Developments](/ios/guides/getting-started/introduction-to-mobile-development) 
-Link:[Channel 9](https://channel9.msdn.com/)
+`article:[Introduction to Mobile Developments](/ios/guides/getting-started/introduction-to-mobile-development)`
+
+`Link:[Channel 9](https://channel9.msdn.com/)`

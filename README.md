@@ -30,20 +30,23 @@ Thank you for taking the time to contribute, we appreciate your help in helping 
 
 The information below will guide you through the organisation of this repository and will advise of the structure needed for naming folders, and how your recipe directory should be organised.
 
-Please also visit the articles in the [Contibutor guide](), which will give detailed and practical help with the following:
+Please also visit the articles in the [Contibutor guide](https://github.com/xamarin/recipes/tree/open-recipes/contributor-guide), which will give detailed and practical help with the following:
 
-* [Content Layout]()
-* [Style Guide]()
-* [Markdown and metadata]()
-* [Templates]()
+* [Content Layout](https://github.com/xamarin/recipes/blob/open-recipes/contributor-guide/content-layout.md)
+* [Style Guide](https://github.com/xamarin/recipes/contributor-guide/style-guide.md)
+* [Markdown and metadata](https://github.com/xamarin/recipes/contributor-guide/markdown-and-metadata.md)
+* [Templates](https://github.com/xamarin/recipes/contributor-guide/recipe-templates)
 
 Repository Structure
 ---------------------
 
-All recipes are contained within with \recipes directory. The structure follows the organization of recipes on https://developer.xamarin.com/recipes/, splitting content into Platform, General topic, and then providing the recipe. For example, the recipe at this location: ()[], will be displayed in the navigation as follows:
+All recipes are contained within with `\recipes` directory. The structure follows the organization of recipes on https://developer.xamarin.com/recipes/, splitting content into Platform, General topic, and then providing the recipe. For example, the recipe at this location: (https://github.com/xamarin/recipes/recipes/ios/content_controls/map_view/add_an_overlay_to_a_map)[https://github.com/xamarin/recipes/recipes/ios/content_controls/map_view/add_an_overlay_to_a_map], will be displayed in the navigation as follows:
 
+![Structure](/Images/structure.png)
 
 The repository structure will look like the following: 
+
+```
 \recipes 
     \xamarin-forms
         \maps 
@@ -51,6 +54,7 @@ The repository structure will look like the following:
                 README.md 
                 \Images 
                 \source 
+```
 
 Folder naming standards 
 -----------------------

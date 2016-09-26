@@ -11,5 +11,6 @@ Recipes are a short form way to explain how to use a certain feature. To enable 
 
 Good recipe examples: 
 
-[Launch Screen](https://developer.xamarin.com/recipes/ios/general/templates/launchscreen-xib/)
-[Pick Image](https://developer.xamarin.com/recipes/android/other_ux/pick_image/)
+* [Launch Screen](https://developer.xamarin.com/recipes/ios/general/templates/launchscreen-xib/)
+
+* [Pick Image](https://developer.xamarin.com/recipes/android/other_ux/pick_image/)
