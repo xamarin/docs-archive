@@ -43,5 +43,7 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app needs to use your microphone.</string>
 </dict>
 </plist>
