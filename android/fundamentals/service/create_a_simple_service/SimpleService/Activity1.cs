@@ -5,26 +5,50 @@ using Android.Widget;
 
 namespace SimpleService
 {
-    [Activity(Label = "SimpleService", MainLauncher = true)]
+    [Activity(Label = "Simple Service Demo", MainLauncher = true)]
     public class Activity1 : Activity
     {
-        protected override void OnCreate(Bundle bundle)
+		bool isServiceRunning = false;
+		Button startButton;
+		Button stopButton;
+		protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(bundle);
+            base.OnCreate(savedInstanceState);
+
             SetContentView(Resource.Layout.Main);
 
-            Button start = FindViewById<Button>(Resource.Id.startService);
-            start.Click += (sender, args) => { StartService(new Intent(this, typeof(SimpleService))); };
+			startButton = FindViewById<Button>(Resource.Id.startService);
+			startButton.Click += Start_Click; 
 
-            Button stop = FindViewById<Button>(Resource.Id.stopService);
-            stop.Click += (sender, args) => { StopService(new Intent(this, typeof(SimpleService))); };
+			stopButton = FindViewById<Button>(Resource.Id.stopService);
+			stopButton.Click += Stop_Click;
+			stopButton.Enabled = false;
         }
 
-        protected override void OnStop()
-        {
-            base.OnStop();
-            // Clean up: shut down the service when the Activity is no longer visible.
-            StopService(new Intent(this, typeof (SimpleService)));
-        }
-    }
+		protected override void OnPause()
+		{
+			// Clean up: shut down the service when the Activity is no longer visible.
+			StopService(new Intent(this, typeof(SimpleStartedService)));
+			base.OnPause();
+		}
+
+		void Start_Click(object sender, System.EventArgs e)
+		{
+			StartService(new Intent(this, typeof(SimpleStartedService)));
+			isServiceRunning = true;
+			startButton.Enabled = false;
+			stopButton.Enabled = true;
+		}
+
+
+		void Stop_Click(object sender, System.EventArgs e)
+		{
+			StopService(new Intent(this, typeof(SimpleStartedService)));
+			isServiceRunning = false;
+			startButton.Enabled = true;
+			stopButton.Enabled = false;
+		}
+
+	
+	}
 }
