@@ -16,7 +16,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

@@ -21,7 +21,7 @@ namespace MotionDetector
         {
             lock (syncLock)
             {
-                sensorTextView.Text = string.Format("x={0:f}, y={1:f}, y={2:f}", e.Values[0], e.Values[1], e.Values[2]);
+                sensorTextView.Text = string.Format("x={0:f}, y={1:f}, z={2:f}", e.Values[0], e.Values[1], e.Values[2]);
             }
         }
 
