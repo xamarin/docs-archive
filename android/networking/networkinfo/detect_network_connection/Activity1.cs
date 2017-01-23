@@ -1,16 +1,13 @@
-﻿using Android.Telephony;
-using Android.Renderscripts;
+﻿using Android.App;
+using Android.Net;
+using Android.OS;
+using Android.Widget;
 using Android.Util;
-using Android.Nfc;
 
 namespace NetworkDetection
 {
-    using Android.App;
-    using Android.Net;
-    using Android.OS;
-    using Android.Widget;
 
-    [Activity(Label = "Network Detection", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity(Label = "Network Detection", MainLauncher = true, Icon = "@drawable/icon")]
     public class Activity1 : Activity
     {
 		static readonly string TAG = typeof(Activity1).FullName;
@@ -20,9 +17,9 @@ namespace NetworkDetection
         private ImageView _wifiImage;
 		TextView _connectionType;
 
-        protected override void OnCreate(Bundle bundle)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(bundle);
+            base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Main);
 
             _wifiImage = FindViewById<ImageView>(Resource.Id.wifi_image);
@@ -40,22 +37,22 @@ namespace NetworkDetection
         private void DetectNetwork()
         {
 			ConnectivityManager connectivityManager = (ConnectivityManager)GetSystemService(ConnectivityService);
-            NetworkInfo activeConnection = connectivityManager.ActiveNetworkInfo;
+			NetworkInfo info = connectivityManager.ActiveNetworkInfo;
+			bool isOnline = info.IsConnected;
 
-			bool isOnline = (activeConnection != null) && activeConnection.IsConnected;
 			Log.Debug(TAG, "IsOnline = {0}", isOnline);
 
 			if (isOnline)
 			{
 				_isConnectedImage.SetImageResource(Resource.Drawable.green_square);
 
-				// Display the type of connection
-				NetworkInfo.State activeState = activeConnection.GetState();
-				_connectionType.Text = activeConnection.TypeName;
+				// Display the type of connectionn
+				NetworkInfo.State activeState = info.GetState();
+				_connectionType.Text = info.TypeName;
 
 				// Check for a WiFi connection
-				NetworkInfo wifiInfo = connectivityManager.GetNetworkInfo(ConnectivityType.Wifi);
-				if(wifiInfo.IsConnected)
+				bool isWifi = info.Type == ConnectivityType.Wifi;
+				if(isWifi)
 				{
 					Log.Debug(TAG, "Wifi connected.");
 					_wifiImage.SetImageResource(Resource.Drawable.green_square);
@@ -66,8 +63,7 @@ namespace NetworkDetection
 				}
 
 				// Check if roaming
-				NetworkInfo mobileInfo = connectivityManager.GetNetworkInfo(ConnectivityType.Mobile);
-				if(mobileInfo.IsRoaming && mobileInfo.IsConnected)
+				if (info.IsRoaming)
 				{
 					Log.Debug(TAG, "Roaming.");
 					_roamingImage.SetImageResource(Resource.Drawable.green_square);
