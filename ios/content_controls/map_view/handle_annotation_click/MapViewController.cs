@@ -104,7 +104,14 @@ namespace MapView {
 			/// </summary>
 			public override MKAnnotationView GetViewForAnnotation (MKMapView mapView, IMKAnnotation annotation)
 			{
-
+				// check if annotation is ours
+				// it could be default user location annotation or something else
+				// we can't check for MKUserLocation class or mapView.UserLocation, because in this case annotation of type MKAnnotationWrapper
+				// remove the check if you want to customize user location marker
+				if (!(annotation is BasicMapAnnotation)) {
+					return null;
+				}
+				
 				// try and dequeue the annotation view
 				MKAnnotationView annotationView = mapView.DequeueReusableAnnotation(annotationIdentifier);
 				
