@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace EditTextDemo
 {
-    [Activity (Label = "EditTextDemo", MainLauncher = true)]
+    [Activity (Label = "EditTextDemo", MainLauncher = true, Theme="@style/AppTheme")]
     public class Activity1 : Activity
     {
 

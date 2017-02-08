@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">TextInputLayout example</string>
+	<string name="form_username">User Name</string>
+	<string name="form_password">Password</string>
+	<string name="form_submitbutton">Submit</string>
+
+	<string name="username_required_error_message">The username is required.</string>
+	<string name="password_required_error_message">The password is required.</string>
+	<string name="enter_required_fields_error_message">Please fill in the required fields.</string>
+	<string name="enter_required_fields_thank_you">Thank you for filling in the required fields.</string>
+</resources>
