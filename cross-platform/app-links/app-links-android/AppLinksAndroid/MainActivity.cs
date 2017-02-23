@@ -12,7 +12,7 @@ namespace AppLinksAndroid
 	[Activity (Label = "App Links Sample", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
-		const string YOUR_URL = "http://location/of/your/html/file.html";
+		const string YOUR_URL = "URL TO YOUR PAGE HERE";
 
 		protected override void OnCreate (Bundle bundle)
 		{

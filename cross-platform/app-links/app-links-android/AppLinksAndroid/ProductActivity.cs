@@ -13,33 +13,34 @@ using Android.Widget;
 
 namespace AppLinksAndroid
 {
-	[Activity (Label = "Product Details")]
-	[IntentFilter(new [] {Android.Content.Intent.ActionView },
-		DataScheme="example",
-		DataHost="products",
-		Categories=new [] { Android.Content.Intent.CategoryDefault })]
+	[Activity(Label = "Product Details")]
+	[IntentFilter(new[] { Android.Content.Intent.ActionView },
+		DataScheme = "example",
+		DataHost = "products",
+				  Categories = new[] { Android.Content.Intent.CategoryDefault, Android.Content.Intent.CategoryBrowsable })]
 	public class ProductActivity : Activity
 	{
-		protected override void OnCreate (Bundle bundle)
+		protected override void OnCreate(Bundle bundle)
 		{
-			base.OnCreate (bundle);
+			base.OnCreate(bundle);
 
-			SetContentView (Resource.Layout.ProductLayout);
+			SetContentView(Resource.Layout.ProductLayout);
 
 			var id = "No Product ID Found";
 
-			if (Intent.HasExtra ("al_applink_data")) {
+			if (Intent.HasExtra("al_applink_data"))
+			{
 
-				var appLinkData = Intent.GetStringExtra ("al_applink_data");
+				var appLinkData = Intent.GetStringExtra("al_applink_data");
 
-				var alUrl = new Rivets.AppLinkUrl (Intent.Data.ToString (), appLinkData);
+				var alUrl = new Rivets.AppLinkUrl(Intent.Data.ToString(), appLinkData);
 
 				// InputQueryParameters will contain our product id
-				if (alUrl != null && alUrl.InputQueryParameters.ContainsKey ("id"))
-					id = alUrl.InputQueryParameters ["id"];
+				if (alUrl != null && alUrl.InputQueryParameters.ContainsKey("id"))
+					id = alUrl.InputQueryParameters["id"];
 			}
 
-			FindViewById<TextView> (Resource.Id.textViewProductId).Text = id;
+			FindViewById<TextView>(Resource.Id.textViewProductId).Text = id;
 		}
 	}
 }
