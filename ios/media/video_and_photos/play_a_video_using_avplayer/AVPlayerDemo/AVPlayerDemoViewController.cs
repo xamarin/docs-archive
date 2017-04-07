@@ -8,10 +8,10 @@ namespace AVPlayerDemo
 {
     public partial class AVPlayerDemoViewController : UIViewController
     {
-        AVPlayer _player;
-        AVPlayerLayer _playerLayer;
-        AVAsset _asset;
-        AVPlayerItem _playerItem;
+		AVPlayer player;
+		AVPlayerLayer playerLayer;
+        AVAsset asset;
+		AVPlayerItem playerItem;
         
         public AVPlayerDemoViewController () : base ("AVPlayerDemoViewController", null)
         {
@@ -29,16 +29,16 @@ namespace AVPlayerDemo
         {
             base.ViewDidLoad ();
             
-            _asset = AVAsset.FromUrl (NSUrl.FromFilename ("sample.m4v"));
-            _playerItem = new AVPlayerItem (_asset);   
+            asset = AVAsset.FromUrl (NSUrl.FromFilename ("sample.m4v"));
+            playerItem = new AVPlayerItem (asset);   
             
-            _player = new AVPlayer (_playerItem);  
-            _playerLayer = AVPlayerLayer.FromPlayer (_player);
-            _playerLayer.Frame = View.Frame;
+            player = new AVPlayer (playerItem);  
+            playerLayer = AVPlayerLayer.FromPlayer (player);
+            playerLayer.Frame = View.Frame;
             
-            View.Layer.AddSublayer (_playerLayer);
+            View.Layer.AddSublayer (playerLayer);
             
-            _player.Play ();
+            player.Play ();
         }
         
         public override void ViewDidUnload ()
