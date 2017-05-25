@@ -3,6 +3,7 @@ using CoreGraphics;
 using CoreLocation;
 using MapKit;
 using UIKit;
+using Foundation; // if NSObject is required for handling annotation click events
 
 namespace MapView {
 
