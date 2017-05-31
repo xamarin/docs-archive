@@ -18,7 +18,7 @@ namespace RecognizeGesture
             SetContentView(Resource.Layout.Main);
             _textView = FindViewById<TextView>(Resource.Id.velocity_text_view);
             _textView.Text = "Fling Velocity: ";
-            _gestureDetector = new GestureDetector(this);
+            _gestureDetector = new GestureDetector(BaseContext, this);
         }
 
         public override bool OnTouchEvent(MotionEvent e)
@@ -38,7 +38,10 @@ namespace RecognizeGesture
             return true;
         }
 
-        public void OnLongPress(MotionEvent e) {}
+        public void OnLongPress(MotionEvent e)
+        {
+            System.Diagnostics.Debug.WriteLine("LongPress detected");
+        }
 
         public bool OnScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY)
         {
