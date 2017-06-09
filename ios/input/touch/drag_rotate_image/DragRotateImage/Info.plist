@@ -15,8 +15,16 @@
 		<string>Icon-72</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>8.3</string>
+	<string>10.0</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
+	<key>CFBundleName</key>
+	<string>DragRotateImage</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.xamarin.dragrotateimage</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
 </dict>
 </plist>
