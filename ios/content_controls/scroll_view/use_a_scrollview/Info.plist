@@ -26,6 +26,8 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>5.1.1</string>
+	<string>10.3</string>
+	<key>CFBundleName</key>
+	<string>ScrollView</string>
 </dict>
 </plist>

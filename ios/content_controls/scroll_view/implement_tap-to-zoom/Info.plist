@@ -12,7 +12,6 @@
 		<string>Images/Icons/29_icon.png</string>
 		<string>Images/Icons/58_icon.png</string>
 		<string>Images/Icons/50_icon.png</string>
-		<string>Images/Icons/512_icon.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.xamarin.recipe.scrollview</string>
@@ -27,6 +26,8 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>5.1.1</string>
+	<string>10.3</string>
+	<key>CFBundleName</key>
+	<string>ScrollView</string>
 </dict>
 </plist>
