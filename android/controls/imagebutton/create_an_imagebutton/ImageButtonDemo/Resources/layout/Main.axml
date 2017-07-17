@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
-
-    <ImageButton android:id="@+id/myButton"
-        android:layout_width="wrap_content" 
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dip"
-        android:layout_marginLeft="50dip"         
-        android:padding="100dip"         
+        android:text="@string/png_button" />
+    <ImageButton
+        android:id="@+id/myButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
         android:src="@drawable/myButtonImage"
-     />
-
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:text="@string/svg_button" />
+    <ImageButton
+        android:id="@+id/myButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_android"
+        android:layout_marginTop="6dip"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp" />
+    <TextView
+        android:id="@+id/dynamic_load_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip" />
+    <ImageButton
+        android:id="@+id/myButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dip"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp" />
 </LinearLayout>
-

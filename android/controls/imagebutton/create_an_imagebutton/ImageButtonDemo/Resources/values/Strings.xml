@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Image Button Demo</string>
+	<string name="dynamically_loaded_image">SVG Dynamically Loaded</string>
+	<string name="dynamically_loaded_image_compat">SVG Dynamically Loaded (ContextCompat)</string>
+	<string name="svg_button">Image Button with SVG (app:srcCompat)</string>
+	<string name="png_button">Image Button with PNG (android:src)</string>
 </resources>
