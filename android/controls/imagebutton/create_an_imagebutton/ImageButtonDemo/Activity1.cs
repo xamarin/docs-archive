@@ -30,14 +30,15 @@ namespace ImageButtonDemo
                 // Android 5.0 and higher can load the SVG image from resources.
                 var image = ContextCompat.GetDrawable(ApplicationContext, Resource.Drawable.ic_mood_black);
 				button.SetImageDrawable(image);
+                tv.SetText(Resource.String.dynamically_loaded_image);
 			}
             else 
             {
                 // Devices running < Android 5.0 should use the VectorDrawableCompat
                 var image = Android.Support.Graphics.Drawable.VectorDrawableCompat.Create(this.Resources, Resource.Drawable.ic_sentiment_neutral_black_24dp, null);
 				button.SetImageDrawable(image);
+                tv.SetText(Resource.String.dynamically_loaded_image_compat);
 			}
-
         }
     }
 }
