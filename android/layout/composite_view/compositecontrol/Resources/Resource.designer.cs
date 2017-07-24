@@ -332,6 +332,9 @@ namespace com.xamarin.recipes.compositecontrol
 			// aapt resource value: 0x7f01000f
 			public const int customNavigationLayout = 2130771983;
 			
+			// aapt resource value: 0x7f0100e4
+			public const int date = 2130772196;
+			
 			// aapt resource value: 0x7f0100b9
 			public const int defaultQueryHint = 2130772153;
 			
@@ -4173,6 +4176,12 @@ namespace com.xamarin.recipes.compositecontrol
 			
 			// aapt resource value: 2
 			public const int CompoundButton_buttonTintMode = 2;
+			
+			public static int[] DatePicker = new int[] {
+					2130772196};
+			
+			// aapt resource value: 0
+			public const int DatePicker_date = 0;
 			
 			public static int[] DrawerArrowToggle = new int[] {
 					2130772129,

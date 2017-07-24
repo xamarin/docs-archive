@@ -60,6 +60,7 @@ namespace com.xamarin.recipes.compositecontrol
         void Initialize(Tuple<Context, IAttributeSet, int> values)
         {
             InitializeLinearLayoutProperties();
+            InitializeStyleAttributeProperties(values);
 
             var inflater = LayoutInflater.FromContext(values.Item1);
             inflater.Inflate(Resource.Layout.date_picker_layout, this);
@@ -83,6 +84,29 @@ namespace com.xamarin.recipes.compositecontrol
             int paddingStartEnd = Convert.ToInt32(Resources.GetDimension(Resource.Dimension.datepicker_padding_startend));
             int paddingTopBottom = Convert.ToInt32(Context.Resources.GetDimension(Resource.Dimension.datepicker_padding_topbottom));
             SetPadding(paddingStartEnd, paddingTopBottom, paddingStartEnd, paddingTopBottom);
+        }
+
+        void InitializeStyleAttributeProperties(Tuple<Context, IAttributeSet, int> values)
+        {
+            if (values.Item2 == null)
+            {
+                return;
+            }
+
+            var typedArray = values.Item1.ObtainStyledAttributes(values.Item2, Resource.Styleable.DatePicker);
+            InitializeDateFromCustomViewAttributes(typedArray);
+        }
+
+        void InitializeDateFromCustomViewAttributes(Android.Content.Res.TypedArray typedArray)
+        {
+            string newDateValue = typedArray.GetString(Resource.Styleable.DatePicker_date);
+            if (!string.IsNullOrWhiteSpace(newDateValue))
+            {
+                if (!DateTime.TryParse(newDateValue, out theDate))
+                {
+                    throw new ArgumentException("Could not parse the `date` value from the widget attributes for the DatePickerTextView.");
+                }
+            }
         }
 
         void DateButton_Click(object sender, EventArgs e)

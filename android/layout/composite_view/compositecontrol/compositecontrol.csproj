@@ -100,6 +100,7 @@
     <AndroidResource Include="Resources\drawable\datebutton_background.xml" />
     <AndroidResource Include="Resources\layout\date_picker_layout.axml" />
     <AndroidResource Include="Resources\values\dimen.xml" />
+    <AndroidResource Include="Resources\values\attrs.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
