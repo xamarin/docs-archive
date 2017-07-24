@@ -76,7 +76,7 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DatePickerTextView.cs" />
-    <Compile Include="DatePickerChangedArgs.cs" />
+    <Compile Include="DatePickerTextViewChangedArgs.cs" />
     <Compile Include="ViewHelpers.cs" />
   </ItemGroup>
   <ItemGroup>

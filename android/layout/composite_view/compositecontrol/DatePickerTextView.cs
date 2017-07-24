@@ -11,14 +11,14 @@ namespace com.xamarin.recipes.compositecontrol
 {
     public class DatePickerTextView : LinearLayout
     {
-        public EventHandler<DatePickerChangedArgs> DateChanged = (sender, e) => { };
+        public EventHandler<DatePickerTextViewChangedArgs> DateChanged = (sender, e) => { };
 
+        static readonly string DEFAULT_DATE_FORMAT = "yyyy-MMM-dd";
         static readonly string KEY_PARENT_STATE = "datepicker_parent_state";
         static readonly string KEY_DATEPICKER_STATE = "datepicker_state";
         TextView textView;
         ImageButton dateButton;
         DateTime theDate = DateTime.Now;
-
 
         public DatePickerTextView(Context context) : base(context)
         {
@@ -27,19 +27,19 @@ namespace com.xamarin.recipes.compositecontrol
 
         public DatePickerTextView(Context context, IAttributeSet attrs) : base(context, attrs)
         {
-            Initialize(Tuple.Create<Context, IAttributeSet, int>(context, attrs, 0));
+            Initialize(Tuple.Create(context, attrs, 0));
         }
 
         public DatePickerTextView(Context context, IAttributeSet attrs, int defStyle) : base(context, attrs)
         {
-            Initialize(Tuple.Create<Context, IAttributeSet, int>(context, attrs, defStyle));
+            Initialize(Tuple.Create(context, attrs, defStyle));
         }
 
         protected override IParcelable OnSaveInstanceState()
         {
             Bundle bundle = new Bundle();
             bundle.PutParcelable(KEY_PARENT_STATE, base.OnSaveInstanceState());
-            bundle.PutString(KEY_DATEPICKER_STATE, textView.Text);
+            bundle.PutString(KEY_DATEPICKER_STATE, theDate.ToString(DEFAULT_DATE_FORMAT));
             return bundle;
         }
 
@@ -48,8 +48,17 @@ namespace com.xamarin.recipes.compositecontrol
             var bundle = state as Bundle;
             if (bundle == null)
             {
-                base.OnRestoreInstanceState(state);
-                textView.Text = bundle.GetString(KEY_DATEPICKER_STATE, "");
+                // Make sure to call the base class OnRestoreInstanceState
+                base.OnRestoreInstanceState(state); 
+                string date = bundle.GetString(KEY_DATEPICKER_STATE, "");
+                if (string.IsNullOrWhiteSpace(date))
+                {
+                    theDate = DateTime.Now;
+                }
+                else
+                {
+                    SetDateInternal(date);
+                }
             }
             else
             {
@@ -60,21 +69,25 @@ namespace com.xamarin.recipes.compositecontrol
         void Initialize(Tuple<Context, IAttributeSet, int> values)
         {
             InitializeLinearLayoutProperties();
-            InitializeStyleAttributeProperties(values);
-
-            var inflater = LayoutInflater.FromContext(values.Item1);
-            inflater.Inflate(Resource.Layout.date_picker_layout, this);
-            dateButton = FindViewById<ImageButton>(Resource.Id.pick_date_button);
-            textView = FindViewById<TextView>(Resource.Id.date_text_view);
-
-            dateButton.Click += DateButton_Click;
-
+            InitializeStyleAttributeProperties(values.Item1, values.Item2);
+            InflateLayout(values.Item1);
             UpdateDisplayedDate();
         }
 
+        void InflateLayout(Context context)
+        {
+            var inflater = LayoutInflater.FromContext(context);
+            inflater.Inflate(Resource.Layout.date_picker_layout, this);
+
+			textView = FindViewById<TextView>(Resource.Id.date_text_view);
+		
+            dateButton = FindViewById<ImageButton>(Resource.Id.pick_date_button);
+			dateButton.Click += DateButton_Click;
+		}
+
         void UpdateDisplayedDate()
         {
-            textView.Text = theDate.ToString("yyyy-MMM-dd");
+            textView.Text = theDate.ToString(DEFAULT_DATE_FORMAT);
         }
 
         void InitializeLinearLayoutProperties()
@@ -86,14 +99,14 @@ namespace com.xamarin.recipes.compositecontrol
             SetPadding(paddingStartEnd, paddingTopBottom, paddingStartEnd, paddingTopBottom);
         }
 
-        void InitializeStyleAttributeProperties(Tuple<Context, IAttributeSet, int> values)
+        void InitializeStyleAttributeProperties(Context context, IAttributeSet attrs)
         {
-            if (values.Item2 == null)
+            if (context == null)
             {
                 return;
             }
 
-            var typedArray = values.Item1.ObtainStyledAttributes(values.Item2, Resource.Styleable.DatePicker);
+            var typedArray = context.ObtainStyledAttributes(attrs, Resource.Styleable.DatePicker);
             InitializeDateFromCustomViewAttributes(typedArray);
         }
 
@@ -102,10 +115,15 @@ namespace com.xamarin.recipes.compositecontrol
             string newDateValue = typedArray.GetString(Resource.Styleable.DatePicker_date);
             if (!string.IsNullOrWhiteSpace(newDateValue))
             {
-                if (!DateTime.TryParse(newDateValue, out theDate))
-                {
-                    throw new ArgumentException("Could not parse the `date` value from the widget attributes for the DatePickerTextView.");
-                }
+                SetDateInternal(newDateValue);
+            }
+        }
+
+        void SetDateInternal(string newDateValue)
+        {
+            if (!DateTime.TryParse(newDateValue, out theDate))
+            {
+                throw new ArgumentException("Could not parse the `date` value from the widget attributes for the DatePickerTextView.");
             }
         }
 
@@ -119,7 +137,7 @@ namespace com.xamarin.recipes.compositecontrol
         {
             theDate = e.Date;
             UpdateDisplayedDate();
-            DateChanged(this, new DatePickerChangedArgs(e.Date));
+            DateChanged(this, new DatePickerTextViewChangedArgs(e.Date));
         }
 
         public DateTime Date
