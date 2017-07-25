@@ -1,9 +1,9 @@
 ﻿using System;
 namespace com.xamarin.recipes.compositecontrol
 {
-    public class DatePickerChangedArgs : EventArgs
+    public class DatePickerTextViewChangedArgs : EventArgs
     {
-        public DatePickerChangedArgs(DateTime date)
+        public DatePickerTextViewChangedArgs(DateTime date)
         {
             this.Date = date;
         }

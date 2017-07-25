@@ -17,7 +17,7 @@ namespace com.xamarin.recipes.compositecontrol
 
         }
 
-        void DatePicker_DateChanged(object sender, DatePickerChangedArgs e)
+        void DatePicker_DateChanged(object sender, DatePickerTextViewChangedArgs e)
         {
             Log.Debug("MainActivity", "The date changed to " + e.Date);
         }
