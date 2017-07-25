@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">Composite Control</string>
+	<string name="app_name">Custom Compound View</string>
 </resources>

@@ -7,7 +7,7 @@
     <ProjectGuid>{F4228B0F-C39A-4B91-8CDE-5857C8EDA59D}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>com.xamarin.recipes.compositecontrol</RootNamespace>
+    <RootNamespace>com.xamarin.recipes.customcompoundview</RootNamespace>
     <AssemblyName>compositecontrol</AssemblyName>
     <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>

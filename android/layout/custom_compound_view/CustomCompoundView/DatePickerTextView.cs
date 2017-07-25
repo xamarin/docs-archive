@@ -7,7 +7,7 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 
-namespace com.xamarin.recipes.compositecontrol
+namespace com.xamarin.recipes.customcompoundview
 {
     public class DatePickerTextView : LinearLayout
     {

@@ -2,7 +2,7 @@
 using Android.OS;
 using Android.Util;
 
-namespace com.xamarin.recipes.compositecontrol
+namespace com.xamarin.recipes.customcompoundview
 {
     [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/icon")]
     public class MainActivity : Activity

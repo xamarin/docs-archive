@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("com.xamarin.recipes.compositecontrol.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("com.xamarin.recipes.customcompoundview.Resource", IsApplication=true)]
 
-namespace com.xamarin.recipes.compositecontrol
+namespace com.xamarin.recipes.customcompoundview
 {
 	
 	

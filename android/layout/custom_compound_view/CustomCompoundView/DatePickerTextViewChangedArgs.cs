@@ -1,5 +1,5 @@
 ﻿using System;
-namespace com.xamarin.recipes.compositecontrol
+namespace com.xamarin.recipes.customcompoundview
 {
     public class DatePickerTextViewChangedArgs : EventArgs
     {

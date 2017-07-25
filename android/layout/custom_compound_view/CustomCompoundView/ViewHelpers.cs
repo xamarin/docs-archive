@@ -3,7 +3,7 @@ using Android.App;
 using Android.Content;
 using Android.Views;
 
-namespace com.xamarin.recipes.compositecontrol
+namespace com.xamarin.recipes.customcompoundview
 {
     public static class ViewHelpers
     {
