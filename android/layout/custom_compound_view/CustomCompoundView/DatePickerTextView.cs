@@ -129,7 +129,7 @@ namespace com.xamarin.recipes.customcompoundview
 
         void DateButton_Click(object sender, EventArgs e)
         {
-            var dialog = MyDatePickerDialog.Create(this);
+            var dialog = DatePickerTextViewCalendarDialogFragment.Create(this);
             dialog.Show(this.HostActivity().FragmentManager, "date_picker_dialog");
         }
 
@@ -154,23 +154,24 @@ namespace com.xamarin.recipes.customcompoundview
             }
         }
 
-        class MyDatePickerDialog : DialogFragment
+        /// <summary>
+        /// A DialogFragment that will host/display the DatePickerDialog
+        /// for the DatePickerTextView.
+        /// </summary>
+        class DatePickerTextViewCalendarDialogFragment : DialogFragment
         {
-            void HandleEventHandler(object sender, DatePickerDialog.DateSetEventArgs e)
-            {
-            }
+            DatePickerTextView hostWidget;
 
-            DatePickerTextView hostWidget = null;
-            public static MyDatePickerDialog Create(DatePickerTextView view)
+            public static DatePickerTextViewCalendarDialogFragment Create(DatePickerTextView view)
             {
-                var frag = new MyDatePickerDialog()
+                var frag = new DatePickerTextViewCalendarDialogFragment()
                 {
                     hostWidget = view ?? throw new NullReferenceException("Must have a valid DatePickerTextView for the host.")
                 };
                 return frag;
             }
 
-            public override Android.App.Dialog OnCreateDialog(Bundle savedInstanceState)
+            public override Dialog OnCreateDialog(Bundle savedInstanceState)
             {
                 int year = hostWidget.theDate.Year;
                 int month = hostWidget.theDate.Month - 1; // DatePickerDialog months go from 0 - 11

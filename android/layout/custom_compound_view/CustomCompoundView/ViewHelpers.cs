@@ -7,7 +7,12 @@ namespace com.xamarin.recipes.customcompoundview
 {
     public static class ViewHelpers
     {
-
+        /// <summary>
+        /// This helper method will obain a reference to the Android activity
+        /// that is host a given control.
+        /// </summary>
+        /// <returns>A reference to the activity hosting the view.</returns>
+        /// <param name="view">View.</param>
         public static Activity HostActivity(this View view)
         {
             if (view == null)
