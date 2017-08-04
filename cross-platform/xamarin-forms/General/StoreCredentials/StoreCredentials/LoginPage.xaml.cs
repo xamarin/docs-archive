@@ -3,40 +3,40 @@ using Xamarin.Forms;
 
 namespace StoreCredentials
 {
-	public partial class LoginPage : ContentPage
-	{
-		ICredentialsService storeService;
+    public partial class LoginPage : ContentPage
+    {
+        public LoginPage()
+        {
+            InitializeComponent();
+        }
 
-		public LoginPage ()
-		{
-			InitializeComponent ();
+        async void OnLoginButtonClicked(object sender, EventArgs e)
+        {
+            string userName = usernameEntry.Text;
+            string password = passwordEntry.Text;
 
-			storeService = DependencyService.Get<ICredentialsService> ();
-		}
+            var isValid = AreCredentialsCorrect(userName, password);
+            if (isValid)
+            {
+                bool doCredentialsExist = App.CredentialsService.DoCredentialsExist();
+                if (!doCredentialsExist)
+                {
+                    App.CredentialsService.SaveCredentials(userName, password);
+                }
 
-		async void OnLoginButtonClicked (object sender, EventArgs e)
-		{
-			string userName = usernameEntry.Text;
-			string password = passwordEntry.Text;
+                Navigation.InsertPageBefore(new HomePage(), this);
+                await Navigation.PopAsync();
+            }
+            else
+            {
+                messageLabel.Text = "Login failed";
+                passwordEntry.Text = string.Empty;
+            }
+        }
 
-			var isValid = AreCredentialsCorrect (userName, password);
-			if (isValid) {
-				bool doCredentialsExist = storeService.DoCredentialsExist ();
-				if (!doCredentialsExist) {
-					storeService.SaveCredentials (userName, password);
-				}
-
-				Navigation.InsertPageBefore (new HomePage (), this);
-				await Navigation.PopAsync ();
-			} else {
-				messageLabel.Text = "Login failed";
-				passwordEntry.Text = string.Empty;
-			}
-		}
-
-		bool AreCredentialsCorrect (string username, string password)
-		{
-			return username == Constants.Username && password == Constants.Password;
-		}
-	}
+        bool AreCredentialsCorrect(string username, string password)
+        {
+            return username == Constants.Username && password == Constants.Password;
+        }
+    }
 }
