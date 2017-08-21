@@ -22,17 +22,17 @@ namespace com.xamarin.recipes.customcompoundview
 
         public DatePickerTextView(Context context) : base(context)
         {
-            Initialize(Tuple.Create<Context, IAttributeSet, int>(context, null, 0));
+            Initialize(Tuple.Create<IAttributeSet, int>(null, 0));
         }
 
         public DatePickerTextView(Context context, IAttributeSet attrs) : base(context, attrs)
         {
-            Initialize(Tuple.Create(context, attrs, 0));
+            Initialize(Tuple.Create(attrs, 0));
         }
 
         public DatePickerTextView(Context context, IAttributeSet attrs, int defStyle) : base(context, attrs)
         {
-            Initialize(Tuple.Create(context, attrs, defStyle));
+            Initialize(Tuple.Create(attrs, defStyle));
         }
 
         protected override IParcelable OnSaveInstanceState()
@@ -66,17 +66,17 @@ namespace com.xamarin.recipes.customcompoundview
             }
         }
 
-        void Initialize(Tuple<Context, IAttributeSet, int> values)
+        void Initialize(Tuple<IAttributeSet, int> values)
         {
             InitializeLinearLayoutProperties();
-            InitializeStyleAttributeProperties(values.Item1, values.Item2);
-            InflateLayout(values.Item1);
+            InitializeStyleAttributeProperties(values.Item1);
+            InflateLayout();
             UpdateDisplayedDate();
         }
 
-        void InflateLayout(Context context)
+        void InflateLayout()
         {
-            var inflater = LayoutInflater.FromContext(context);
+            var inflater = LayoutInflater.FromContext(this.Context);
             inflater.Inflate(Resource.Layout.date_picker_layout, this);
 
 			textView = FindViewById<TextView>(Resource.Id.date_text_view);
@@ -99,14 +99,10 @@ namespace com.xamarin.recipes.customcompoundview
             SetPadding(paddingStartEnd, paddingTopBottom, paddingStartEnd, paddingTopBottom);
         }
 
-        void InitializeStyleAttributeProperties(Context context, IAttributeSet attrs)
+        void InitializeStyleAttributeProperties( IAttributeSet attrs)
         {
-            if (context == null)
-            {
-                return;
-            }
 
-            var typedArray = context.ObtainStyledAttributes(attrs, Resource.Styleable.DatePicker);
+            var typedArray = this.Context.ObtainStyledAttributes(attrs, Resource.Styleable.DatePicker);
             InitializeDateFromCustomViewAttributes(typedArray);
         }
 
