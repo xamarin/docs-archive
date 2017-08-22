@@ -121,7 +121,7 @@ namespace AndroidWithComponent
 
                 return count;
             }
-            catch (SQLiteException ex)
+            catch (SQLiteException)
             {
                 return -1;
             }
