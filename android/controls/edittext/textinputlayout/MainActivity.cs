@@ -1,22 +1,21 @@
 ﻿using Android.App;
-using Android.Widget;
 using Android.OS;
 using Android.Support.Design.Widget;
-using Android.Support.V7.App;
 using Android.Views;
+using Android.Widget;
 
 namespace TextInputLayout
 {
-	[Activity(Label = "TextInputLayout", MainLauncher = true)]
+    [Activity(Label = "TextInputLayout", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
 
 		Android.Support.Design.Widget.TextInputLayout usernameLayout;
-		Android.Support.Design.Widget.TextInputEditText userNameView;
+		TextInputEditText userNameView;
 
 		Android.Support.Design.Widget.TextInputLayout passwordLayout;
-
 		TextInputEditText passwordView;
+
 		Button submitButton;
 		View rootView;
 		protected override void OnCreate(Bundle savedInstanceState)
