@@ -74,7 +74,7 @@ namespace ImageView
 			Console.Write("Reference URL: [" + UIImagePickerController.ReferenceUrl + "]");
 			
 			// get common info (shared between images and video)
-			NSUrl referenceURL = e.Info[new NSString("UIImagePickerControllerReferenceUrl")] as NSUrl;
+			NSUrl referenceURL = e.Info[new NSString("UIImagePickerControllerReferenceURL")] as NSUrl;
 			if(referenceURL != null)
 				Console.WriteLine(referenceURL.ToString());
 			
