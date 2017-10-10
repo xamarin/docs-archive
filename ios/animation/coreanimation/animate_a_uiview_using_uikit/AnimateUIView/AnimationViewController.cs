@@ -1,15 +1,12 @@
 ﻿
 using System;
-using System.Drawing;
-
-using Foundation;
+using System.Threading;
 using UIKit;
-using ObjCRuntime;
 using CoreGraphics;
 
 namespace AnimateUIView
 {
-	public partial class AnimationViewController : UIViewController
+    public partial class AnimationViewController : UIViewController
 	{
 		UIImageView imageView;
 		UIImage image;
@@ -18,53 +15,52 @@ namespace AnimateUIView
 		{
 		}
 
-        public override void ViewDidLoad ()
-		{
-			base.ViewDidLoad ();
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
 
-			Action setCenterRight = () => {
-				var xpos = UIScreen.MainScreen.Bounds.Right - imageView.Frame.Width / 2;
-				var ypos = imageView.Center.Y;
+            Action setCenterRight = () =>
+            {
+                var xpos = UIScreen.MainScreen.Bounds.Right - imageView.Frame.Width / 2;
+                var ypos = imageView.Center.Y;
 
-				imageView.Center = new CGPoint(xpos, ypos);
-			};
+                imageView.Center = new CGPoint(xpos, ypos);
+            };
 
-			Action setCenterLeft = () =>
-			{
-				var xpos = UIScreen.MainScreen.Bounds.Left + imageView.Frame.Width / 2;
-				var ypos = imageView.Center.Y;
-				imageView.Center = new CGPoint(xpos, ypos);
-			};
+            Action setCenterLeft = () =>
+            {
+                
+               var xpos = UIScreen.MainScreen.Bounds.Left + imageView.Frame.Width / 2;
+               var ypos = imageView.Center.Y;
+               imageView.Center = new CGPoint(xpos, ypos);
+                   
+            };
 
-			Action[] setEnds = new Action[2];
-
-            int repeatCount = 5;
-
-            setEnds[(repeatCount + 1) % 2] = setCenterLeft;
-            setEnds[repeatCount % 2] = setCenterRight;
+            Action setOpacity = () =>
+            {
+                imageView.Alpha = 1;
+            };
 
 			imageView = new UIImageView(new CGRect(0, 100, 50, 50));
 			image = UIImage.FromFile("Sample.png");
 			imageView.Image = image;
             setCenterLeft();
+            imageView.Alpha = 0.25f;
 			View.AddSubview(imageView);
 
-            UIViewPropertyAnimator propertyAnimator = new UIViewPropertyAnimator(2, UIViewAnimationCurve.EaseInOut, setEnds[repeatCount % 2]);
+            UIViewPropertyAnimator propertyAnimator = new UIViewPropertyAnimator(4, UIViewAnimationCurve.EaseInOut, setCenterRight);
+            propertyAnimator.AddAnimations(setOpacity);
 
-            Action<UIViewAnimatingPosition> animationCompletion = null;
-            animationCompletion = (UIViewAnimatingPosition obj) =>
-            {
-                repeatCount--;
-                if (repeatCount > 0)
-                {
-                    propertyAnimator = new UIViewPropertyAnimator(2, UIViewAnimationCurve.EaseInOut, setEnds[repeatCount % 2]);
-                    propertyAnimator.AddCompletion(animationCompletion);
-                    propertyAnimator.StartAnimation();
+            Action<object> reversePosition = (o) =>
+			{
+                InvokeOnMainThread(() => {
+                    propertyAnimator.AddAnimations(setCenterLeft);
+                });
+			};
 
-                }
-            };
+			TimerCallback abortPositionDelegate = new TimerCallback(reversePosition);
+            Timer abortPosition = new Timer(abortPositionDelegate, null, 3000, Timeout.Infinite);
 
-            propertyAnimator.AddCompletion(animationCompletion);
             propertyAnimator.StartAnimation();
 		}
 
