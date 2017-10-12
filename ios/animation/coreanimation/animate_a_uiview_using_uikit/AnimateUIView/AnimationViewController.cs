@@ -1,59 +1,65 @@
 ﻿
 using System;
-using System.Drawing;
-
-using Foundation;
+using System.Threading;
 using UIKit;
-using ObjCRuntime;
 using CoreGraphics;
 
 namespace AnimateUIView
 {
-	public partial class AnimationViewController : UIViewController
+    public partial class AnimationViewController : UIViewController
 	{
 		UIImageView imageView;
 		UIImage image;
-		CGPoint pt;
 
 		public AnimationViewController () : base ("AnimationViewController", null)
 		{
 		}
 
-		public override void ViewDidLoad ()
-		{
-			base.ViewDidLoad ();
-			
-			imageView = new UIImageView(new CGRect(0, 100, 50, 50));
-			image = UIImage.FromFile("Sample.png");
-			imageView.Image = image;
-			View.AddSubview(imageView);
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
 
-			pt = imageView.Center;
+            imageView = new UIImageView(new CGRect(0, 100, 50, 50));
+            image = UIImage.FromFile("Sample.png");
+            imageView.Image = image;
+            imageView.Alpha = 0.25f;
+            View.AddSubview(imageView);
 
-			UIView.BeginAnimations ("slideAnimation");
+            Action setCenterRight = () =>
+            {
+                var xpos = UIScreen.MainScreen.Bounds.Right - imageView.Frame.Width / 2;
+                var ypos = imageView.Center.Y;
+                imageView.Center = new CGPoint(xpos, ypos);
+            };
 
-			UIView.SetAnimationDuration (2);
-			UIView.SetAnimationCurve (UIViewAnimationCurve.EaseInOut);
-			UIView.SetAnimationRepeatCount (2);
-			UIView.SetAnimationRepeatAutoreverses (true);
+            Action setCenterLeft = () =>
+            {
+               var xpos = UIScreen.MainScreen.Bounds.Left + imageView.Frame.Width / 2;
+               var ypos = imageView.Center.Y;
+               imageView.Center = new CGPoint(xpos, ypos);
+            };
 
-			UIView.SetAnimationDelegate (this);
-			UIView.SetAnimationDidStopSelector (new Selector ("animationDidStop:finished:context:"));
+            Action setOpacity = () =>
+            {
+                imageView.Alpha = 1;
+            };
 
-			var xpos = UIScreen.MainScreen.Bounds.Right - imageView.Frame.Width / 2;
-			var ypos = imageView.Center.Y;
+            UIViewPropertyAnimator propertyAnimator = new UIViewPropertyAnimator(4, UIViewAnimationCurve.EaseInOut, setCenterRight);
+            propertyAnimator.AddAnimations(setOpacity);
 
-			imageView.Center = new CGPoint (xpos, ypos);
+            Action<object> reversePosition = (o) =>
+			{
+                InvokeOnMainThread(() => {
+                    propertyAnimator.AddAnimations(setCenterLeft);
+                });
+			};
 
-			UIView.CommitAnimations ();
+			TimerCallback abortPositionDelegate = new TimerCallback(reversePosition);
+            Timer abortPosition = new Timer(abortPositionDelegate, null, 3000, Timeout.Infinite);
 
+            propertyAnimator.StartAnimation();
 		}
 
-		[Export("animationDidStop:finished:context:")]
-		void SlideStopped (NSString animationID, NSNumber finished, NSObject context)
-		{
-			imageView.Center = pt;
-		}
 	}
 }
 
