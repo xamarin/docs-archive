@@ -13,7 +13,7 @@ using System.Collections.Generic;
 namespace ReadContacts
 {
     [Activity (Label = "ReadContacts", MainLauncher = true)]
-    public class Activity1 : ListActivity
+    public class MainActivity : ListActivity
     {
         protected override void OnCreate (Bundle bundle)
         {
@@ -24,8 +24,8 @@ namespace ReadContacts
             string[] projection = { 
                 ContactsContract.Contacts.InterfaceConsts.Id, ContactsContract.Contacts.InterfaceConsts.DisplayName };
             
-            var cursor = ManagedQuery (uri, projection, null, null, null);
-            
+            var cursor = ContentResolver.Query(uri, projection, null, null, null);
+
             var contactList = new List<string> ();    
             
             if (cursor.MoveToFirst ()) {
