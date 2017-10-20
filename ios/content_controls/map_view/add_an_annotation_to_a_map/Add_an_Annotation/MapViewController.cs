@@ -22,7 +22,7 @@ namespace MapView {
 			mapView.AutoresizingMask = UIViewAutoresizing.FlexibleDimensions;
 			View.AddSubview(mapView);
 			
-			// create our location and zoom for los angeles
+			// create our location and zoom for Paris
 			var coords = new CLLocationCoordinate2D(48.857, 2.351); // paris
 			var span = new MKCoordinateSpan(MilesToLatitudeDegrees (2), MilesToLongitudeDegrees (2, coords.Latitude));
 
@@ -37,7 +37,11 @@ namespace MapView {
 			#region Not related to this sample
 			int typesWidth=260, typesHeight=30, distanceFromBottom=60;
 			mapTypes = new UISegmentedControl(new CGRect((View.Bounds.Width-typesWidth)/2, View.Bounds.Height-distanceFromBottom, typesWidth, typesHeight));
-			mapTypes.InsertSegment("Road", 0, false);
+            mapTypes.BackgroundColor = UIColor.White;
+            mapTypes.BackgroundColor = UIColor.White;
+            mapTypes.Layer.CornerRadius = 5;
+            mapTypes.ClipsToBounds = true;
+            mapTypes.InsertSegment("Road", 0, false);
 			mapTypes.InsertSegment("Satellite", 1, false);
 			mapTypes.InsertSegment("Hybrid", 2, false);
 			mapTypes.SelectedSegment = 0; // Road is the default
