@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Media;
 using System.IO;
+using Android;
 
 namespace RecordAudio
 {
@@ -28,7 +29,17 @@ namespace RecordAudio
             _start = FindViewById<Button> (Resource.Id.start);
             _stop = FindViewById<Button> (Resource.Id.stop);
                     
-            string path = "/sdcard/test.3gpp";
+			string path = $"{Android.OS.Environment.ExternalStorageDirectory.AbsolutePath}/test.3gpp";
+
+			//Explicit permissions
+			if (Build.VERSION.SdkInt > BuildVersionCodes.M)
+			{
+				if (CheckSelfPermission(Manifest.Permission.WriteExternalStorage) != Android.Content.PM.Permission.Granted
+				|| CheckSelfPermission(Manifest.Permission.RecordAudio) != Android.Content.PM.Permission.Granted)
+				{
+					RequestPermissions(new[] { Manifest.Permission.WriteExternalStorage, Manifest.Permission.RecordAudio }, 0);
+				}
+			}
          
             _start.Click += delegate {
                 _stop.Enabled = !_stop.Enabled;

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="RecordAudio.RecordAudio">
-	<application android:label="RecordAudio">
-	</application>
-	<uses-sdk />
+	<application android:label="RecordAudio"></application>
+	<uses-sdk android:minSdkVersion="24" android:targetSdkVersion="24" />
 	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>
