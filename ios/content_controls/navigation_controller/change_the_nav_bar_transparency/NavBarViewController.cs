@@ -27,6 +27,8 @@ namespace NavBarTrans
 			lblTransparent.Text = "Nav Bar Transparency";
 			lblTransparent.TextColor = UIColor.Yellow;
 			swchTransparent = new UISwitch (new CGRect(220,45, 50, 40));
+            swchTransparent.On = false;
+            this.NavigationController.NavigationBar.Translucent = this.swchTransparent.On;
 			View.AddSubview(lblTransparent);
 			View.AddSubview(swchTransparent);
 

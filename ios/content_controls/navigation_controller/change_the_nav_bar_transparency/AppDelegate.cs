@@ -37,9 +37,10 @@ namespace NavBarTrans
 
 			// If you have defined a view, add it here:
 			window.AddSubview (navigationController.View);
-			
-			// make the window visible
-			window.MakeKeyAndVisible ();
+            window.RootViewController = navigationController;
+
+            // make the window visible
+            window.MakeKeyAndVisible();
 			
 			return true;
 		}
