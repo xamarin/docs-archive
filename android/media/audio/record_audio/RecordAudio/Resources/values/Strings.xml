@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources> 
     <string name="app_name">RecordAudio</string>
+    <string name="ok">Ok</string>
+	<string name="permissions_rationale">This recipes requires permission to record sound with the microphone and to write the recording to external storage. Please grant those permissions.</string>
 </resources>
