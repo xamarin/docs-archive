@@ -2,5 +2,5 @@
 <resources> 
     <string name="app_name">RecordAudio</string>
     <string name="ok">Ok</string>
-	<string name="permissions_rationale">This recipes requires permission to record sound with the microphone and to write the recording to external storage. Please grant those permissions.</string>
+	<string name="permissions_rationale">You must grant the permissions for this app to work.</string>
 </resources>

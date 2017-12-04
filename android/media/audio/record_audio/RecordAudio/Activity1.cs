@@ -3,12 +3,15 @@ using System.IO;
 using Android.App;
 using Android.Media;
 using Android.OS;
+using Android.Support.V7.App;
+using Android.Util;
 using Android.Widget;
+using Java.Lang;
 
 namespace RecordAudio
 {
     [Activity(Label = "RecordAudio", MainLauncher = true)]
-    public class Activity1 : Activity
+    public class Activity1 : AppCompatActivity
     {
         static readonly string TAG = typeof(Activity1).FullName;
         MediaRecorder _recorder;
@@ -50,12 +53,14 @@ namespace RecordAudio
                 {
                     File.Delete(filenameOfRecording);
                 }
+
+                _stopButton.Enabled = true;
+                _startButton.Enabled = false;
+
                 StartRecordingAudioTo(filenameOfRecording);
             }
             else
             {
-                _recorder = null;
-                _player = null;
                 throw new ApplicationException("External storage is not available, cannot write to " + filenameOfRecording);
             }
         }
@@ -68,13 +73,6 @@ namespace RecordAudio
         /// <param name="fileName">Name of the file for the recording.</param>
         void StartRecordingAudioTo(string fileName)
         {
-            _stopButton.Enabled = true;
-            _startButton.Enabled = false;
-
-            if (_recorder == null)
-            {
-                _recorder = new MediaRecorder();
-            }
 
             _recorder.SetAudioSource(AudioSource.Mic);
             _recorder.SetOutputFormat(OutputFormat.ThreeGpp);
@@ -88,19 +86,37 @@ namespace RecordAudio
 
         void StopRecording_ClickHandler(object sender, EventArgs e)
         {
-            _stopButton.Enabled = false;
-            _startButton.Enabled = true;
+            if (_recorder == null)
+            {
+                return;
+            }
 
-            _recorder.Stop();
+            bool playback = true;
+            try
+            {
+                _recorder.Stop();
+            }
+            catch (IllegalStateException ise) 
+            {
+                Log.Debug(TAG, "Seems that we're trying to stop the recording before it's started?");
+                playback = false;
+            }
             _recorder.Reset();
 
             string file = this.GetFileNameForRecording();
-            if (File.Exists(file))
+            if (File.Exists(file) && playback)
             {
                 _player.SetDataSource(this.GetFileNameForRecording());
                 _player.Prepare();
                 _player.Start();
             }
+        }
+
+        void ResetAudioPlayer_Handler(object sender, EventArgs e)
+        {
+            _player.Reset();
+            _stopButton.Enabled = false;
+            _startButton.Enabled = true;
         }
 
         protected override void OnResume()
@@ -109,12 +125,7 @@ namespace RecordAudio
 
             _recorder = new MediaRecorder();
             _player = new MediaPlayer();
-
-            _player.Completion += (sender, e) =>
-            {
-                _player.Reset();
-                _startButton.Enabled = !_startButton.Enabled;
-            };
+            _player.Completion+= ResetAudioPlayer_Handler;
         }
 
         protected override void OnPause()
@@ -123,8 +134,10 @@ namespace RecordAudio
 
             if (_player != null)
             {
+                _player.Completion -= ResetAudioPlayer_Handler;
                 _player.Release();
                 _player.Dispose();
+
             }
 
             if (_recorder != null)
