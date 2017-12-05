@@ -3242,14 +3242,35 @@ namespace RecordAudio
 			// aapt resource value: 0x7f080028
 			public const int path_password_strike_through = 2131230760;
 			
-			// aapt resource value: 0x7f08002b
-			public const int permissions_rationale = 2131230763;
+			// aapt resource value: 0x7f080030
+			public const int permissions_rationale = 2131230768;
+			
+			// aapt resource value: 0x7f08002f
+			public const int record_sound_first = 2131230767;
 			
 			// aapt resource value: 0x7f080013
 			public const int search_menu_title = 2131230739;
 			
+			// aapt resource value: 0x7f08002d
+			public const int start_playing = 2131230765;
+			
+			// aapt resource value: 0x7f08002b
+			public const int start_recording = 2131230763;
+			
 			// aapt resource value: 0x7f080014
 			public const int status_bar_notification_info_overflow = 2131230740;
+			
+			// aapt resource value: 0x7f08002e
+			public const int stop_playing = 2131230766;
+			
+			// aapt resource value: 0x7f08002c
+			public const int stop_recording = 2131230764;
+			
+			// aapt resource value: 0x7f080031
+			public const int unexpected_playback_error = 2131230769;
+			
+			// aapt resource value: 0x7f080032
+			public const int unexpected_recording_error = 2131230770;
 			
 			static String()
 			{

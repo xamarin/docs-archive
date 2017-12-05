@@ -14,10 +14,137 @@ namespace RecordAudio
     public class Activity1 : AppCompatActivity
     {
         static readonly string TAG = typeof(Activity1).FullName;
+
+        Button _recordButton;
         MediaRecorder _recorder;
+
+        Button _playbackButton;
         MediaPlayer _player;
-        Button _startButton;
-        Button _stopButton;
+
+        bool _permissionsAccepted = false;
+        bool _startPlaying = false;
+        bool _startRecording = true;
+
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
+        {
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            bool b2 = this.HasPermissionToRecord();
+
+            if (requestCode == PermissionExtensions.REQUEST_ALL_PERMISSIONS)
+            {
+                if (grantResults.AllPermissionsGranted())
+                {
+                    _permissionsAccepted = true;
+                }
+                else
+                {
+                    _permissionsAccepted = false;
+                }
+            }
+
+            if (!_permissionsAccepted)
+            {
+                Finish();
+            }
+        }
+
+        void OnRecord(bool start)
+        {
+            if (start)
+            {
+                StartRecording();
+            }
+            else
+            {
+                StopRecording();
+            }
+        }
+
+        void OnPlay(bool start)
+        {
+            if (start)
+            {
+                if (File.Exists(this.GetFileNameForRecording()))
+                {
+                    StartPlaying();
+                }
+                else
+                {
+                    _startPlaying = false;
+                    _startRecording = true;
+                    Toast.MakeText(this, Resource.String.record_sound_first, ToastLength.Long).Show();
+                }
+            }
+            else
+            {
+                StopPlaying();
+            }
+        }
+
+
+        void StartPlaying()
+        {
+            _player = new MediaPlayer();
+            try
+            {
+                _player.SetDataSource(this.GetFileNameForRecording());
+                _player.Prepare();
+                _player.Start();
+            }
+            catch (IOException e)
+            {
+                Log.Error(TAG, "There was an error trying to start the MediaPlayer!");
+                Toast.MakeText(this, Resource.String.unexpected_playback_error, ToastLength.Long).Show();
+            }
+        }
+
+        void StopPlaying()
+        {
+            if (_player == null)
+            {
+                return;
+            }
+            _player.Release();
+            _player = null;
+        }
+
+        void StartRecording()
+        {
+            _recorder = new MediaRecorder();
+            _recorder.SetAudioSource(AudioSource.Mic);
+            _recorder.SetOutputFormat(OutputFormat.ThreeGpp);
+            _recorder.SetOutputFile(this.GetFileNameForRecording());
+            _recorder.SetAudioEncoder((AudioEncoder.AmrNb));
+
+            try
+            {
+                _recorder.Prepare();
+            }
+            catch (IOException ioe)
+            {
+                Log.Error(TAG, ioe.ToString());
+            }
+
+            _recorder.Start();
+        }
+
+
+        void StopRecording()
+        {
+            if (_recorder == null)
+            {
+                return;
+            }
+            _recorder.Stop();
+            _recorder.Release();
+            _recorder = null;
+
+            if (File.Exists(this.GetFileNameForRecording()))
+            {
+                _startPlaying = true;
+            }
+        }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -25,18 +152,47 @@ namespace RecordAudio
 
             SetContentView(Resource.Layout.Main);
 
-            _startButton = FindViewById<Button>(Resource.Id.start);
-            _startButton.Click += StartRecording_ClickHandler;
+            _recordButton = FindViewById<Button>(Resource.Id.start);
+            _recordButton.Click += OnRecordButtonClick;
 
-            _stopButton = FindViewById<Button>(Resource.Id.stop);
-            _stopButton.Click += StopRecording_ClickHandler;
+            _playbackButton = FindViewById<Button>(Resource.Id.stop);
+            _playbackButton.Click += OnPlayButtonClick;
         }
 
-        void StartRecording_ClickHandler(object sender, EventArgs e)
+        protected override void OnStop()
+        {
+            base.OnStop();
+            if (_recorder != null)
+            {
+                _recorder.Release();
+                _recorder = null;
+            }
+            if (_player != null)
+            {
+                _player.Release();
+                _player = null;
+            }
+        }
+
+        void OnRecordButtonClick(object sender, EventArgs e)
         {
             if (this.HasPermissionToRecord())
             {
-                RecordAudio();
+                string file = this.GetFileNameForRecording();
+                if (File.Exists(file))
+                {
+                    File.Delete(file);
+                }
+                OnRecord(_startRecording);
+                if (_startRecording)
+                {
+                    _recordButton.SetText(Resource.String.stop_recording);
+                }
+                else
+                {
+                    _recordButton.SetText(Resource.String.start_recording);
+                }
+                _startRecording = !_startRecording;
             }
             else
             {
@@ -44,122 +200,19 @@ namespace RecordAudio
             }
         }
 
-        void RecordAudio()
+        void OnPlayButtonClick(object sender, EventArgs e)
         {
-            string filenameOfRecording = this.GetFileNameForRecording();
-            if (this.IsExternalStorageWriteable())
+            OnPlay(_startPlaying);
+            if (_startPlaying)
             {
-                if (File.Exists(filenameOfRecording))
-                {
-                    File.Delete(filenameOfRecording);
-                }
-
-                _stopButton.Enabled = true;
-                _startButton.Enabled = false;
-
-                StartRecordingAudioTo(filenameOfRecording);
+                _playbackButton.SetText(Resource.String.stop_playing);
             }
             else
             {
-                throw new ApplicationException("External storage is not available, cannot write to " + filenameOfRecording);
+                _playbackButton.SetText(Resource.String.start_playing);
             }
-        }
-
-        /// <summary>
-        /// This method will start the recording. It assumes that 
-        /// Permissions have been granted and that it is possible to write to 
-        /// the specificied location.
-        /// </summary>
-        /// <param name="fileName">Name of the file for the recording.</param>
-        void StartRecordingAudioTo(string fileName)
-        {
-
-            _recorder.SetAudioSource(AudioSource.Mic);
-            _recorder.SetOutputFormat(OutputFormat.ThreeGpp);
-            _recorder.SetAudioEncoder(AudioEncoder.AmrNb);
-            _recorder.SetOutputFile(fileName);
-
-            _recorder.Prepare();
-            _recorder.Start();
-
-        }
-
-        void StopRecording_ClickHandler(object sender, EventArgs e)
-        {
-            if (_recorder == null)
-            {
-                return;
-            }
-
-            bool playback = true;
-            try
-            {
-                _recorder.Stop();
-            }
-            catch (IllegalStateException ise) 
-            {
-                Log.Debug(TAG, "Seems that we're trying to stop the recording before it's started?");
-                playback = false;
-            }
-            _recorder.Reset();
-
-            string file = this.GetFileNameForRecording();
-            if (File.Exists(file) && playback)
-            {
-                _player.SetDataSource(this.GetFileNameForRecording());
-                _player.Prepare();
-                _player.Start();
-            }
-        }
-
-        void ResetAudioPlayer_Handler(object sender, EventArgs e)
-        {
-            _player.Reset();
-            _stopButton.Enabled = false;
-            _startButton.Enabled = true;
-        }
-
-        protected override void OnResume()
-        {
-            base.OnResume();
-
-            _recorder = new MediaRecorder();
-            _player = new MediaPlayer();
-            _player.Completion+= ResetAudioPlayer_Handler;
-        }
-
-        protected override void OnPause()
-        {
-            base.OnPause();
-
-            if (_player != null)
-            {
-                _player.Completion -= ResetAudioPlayer_Handler;
-                _player.Release();
-                _player.Dispose();
-
-            }
-
-            if (_recorder != null)
-            {
-                _recorder.Release();
-                _recorder.Dispose();
-            }
-
-            _player = null;
-            _recorder = null;
-        }
-
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
-        {
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-            if (requestCode == PermissionExtensions.REQUEST_ALL_PERMISSIONS)
-            {
-                if (grantResults.AllPermissionsGranted())
-                {
-                    RecordAudio();
-                }
-            }
+            _startPlaying = !_startPlaying;
         }
     }
+
 }
