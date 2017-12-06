@@ -1,85 +1,223 @@
 using System;
-
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
-using Android.Media;
 using System.IO;
+using Android.App;
+using Android.Media;
+using Android.OS;
+using Android.Support.Design.Widget;
+using Android.Support.V7.App;
+using Android.Util;
+using Android.Widget;
+using Java.Lang;
 
 namespace RecordAudio
 {
-    [Activity (Label = "RecordAudio", MainLauncher = true)]
-    public class Activity1 : Activity
+    [Activity(Label = "RecordAudio", MainLauncher = true)]
+    public class Activity1 : AppCompatActivity
     {
+        static readonly string TAG = typeof(Activity1).FullName;
+
+        Button _recordButton;
         MediaRecorder _recorder;
+
+        Button _playbackButton;
         MediaPlayer _player;
-        Button _start;
-        Button _stop;
-     
-        protected override void OnCreate (Bundle bundle)
-        {
-            base.OnCreate (bundle);
 
-            SetContentView (Resource.Layout.Main);
-         
-            _start = FindViewById<Button> (Resource.Id.start);
-            _stop = FindViewById<Button> (Resource.Id.stop);
-                    
-            string path = "/sdcard/test.3gpp";
-         
-            _start.Click += delegate {
-                _stop.Enabled = !_stop.Enabled;
-                _start.Enabled = !_start.Enabled;
-                
-                _recorder.SetAudioSource (AudioSource.Mic);      
-                _recorder.SetOutputFormat (OutputFormat.ThreeGpp);            
-                _recorder.SetAudioEncoder (AudioEncoder.AmrNb);           
-                _recorder.SetOutputFile (path);
-                _recorder.Prepare ();               
-                _recorder.Start ();
-            };
-         
-            _stop.Click += delegate {
-                _stop.Enabled = !_stop.Enabled;
-    
-                _recorder.Stop ();
-                _recorder.Reset ();
-             
-                _player.SetDataSource (path);
-                _player.Prepare ();
-                _player.Start ();
-            };       
-        }
-     
-        protected override void OnResume ()
+        bool _startPlaying = false;
+        bool _startRecording = true;
+
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
         {
-            base.OnResume ();
-            
-            _recorder = new MediaRecorder ();
-            _player = new MediaPlayer ();
-         
-            _player.Completion += (sender, e) => {
-                _player.Reset ();
-                _start.Enabled = !_start.Enabled;
-            };
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            bool permissionsGranted = false;
+
+            if (requestCode == RecordAudioExtensions.REQUEST_ALL_PERMISSIONS)
+            {
+                if (grantResults.AllPermissionsGranted())
+                {
+                    permissionsGranted = true;
+                }
+                else
+                {
+                    permissionsGranted = false;
+                }
+
+                if (permissionsGranted)
+                {
+                    OnRecord(_startRecording);
+                }
+                else
+                {
+                    var snackbar = Snackbar.Make(this.GetLayoutForSnackbar(), Resource.String.missing_permissions, Snackbar.LengthIndefinite);
+                    snackbar.SetAction(Resource.String.ok, (obj) => { Finish(); });
+                }
+            }
         }
 
-        protected override void OnPause ()
+        void OnRecord(bool start)
         {
-            base.OnPause ();
-            
-            _player.Release ();
-            _recorder.Release ();
-         
-            _player.Dispose ();
-            _recorder.Dispose ();
-            _player = null;
+            if (start)
+            {
+                StartRecording();
+            }
+            else
+            {
+                StopRecording();
+            }
+        }
+
+        void StartRecording()
+        {
+            _recorder = new MediaRecorder();
+            _recorder.SetAudioSource(AudioSource.Mic);
+            _recorder.SetOutputFormat(OutputFormat.ThreeGpp);
+            _recorder.SetOutputFile(this.GetFileNameForRecording());
+            _recorder.SetAudioEncoder((AudioEncoder.AmrNb));
+
+            try
+            {
+                _recorder.Prepare();
+            }
+            catch (IOException ioe)
+            {
+                Log.Error(TAG, ioe.ToString());
+            }
+
+            _recorder.Start();
+        }
+
+
+        void StopRecording()
+        {
+            if (_recorder == null)
+            {
+                return;
+            }
+            _recorder.Stop();
+            _recorder.Release();
             _recorder = null;
+
+            if (File.Exists(this.GetFileNameForRecording()))
+            {
+                _startPlaying = true;
+            }
+        }
+
+        void OnPlay(bool start)
+        {
+            if (start)
+            {
+                if (File.Exists(this.GetFileNameForRecording()))
+                {
+                    StartPlaying();
+                }
+                else
+                {
+                    _startPlaying = false;
+                    _startRecording = true;
+                    Toast.MakeText(this, Resource.String.record_sound_first, ToastLength.Long).Show();
+                }
+            }
+            else
+            {
+                StopPlaying();
+            }
+        }
+
+
+        void StartPlaying()
+        {
+            _player = new MediaPlayer();
+            try
+            {
+                _player.SetDataSource(this.GetFileNameForRecording());
+                _player.Prepare();
+                _player.Start();
+            }
+            catch (IOException e)
+            {
+                Log.Error(TAG, "There was an error trying to start the MediaPlayer!");
+                Toast.MakeText(this, Resource.String.unexpected_playback_error, ToastLength.Long).Show();
+            }
+        }
+
+        void StopPlaying()
+        {
+            if (_player == null)
+            {
+                return;
+            }
+            _player.Release();
+            _player = null;
+        }
+
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+
+            SetContentView(Resource.Layout.Main);
+
+            _recordButton = FindViewById<Button>(Resource.Id.start);
+            _recordButton.Click += OnRecordButtonClick;
+
+            _playbackButton = FindViewById<Button>(Resource.Id.stop);
+            _playbackButton.Click += OnPlayButtonClick;
+        }
+
+        protected override void OnPause()
+        {
+            base.OnPause();
+            if (_recorder != null)
+            {
+                _recorder.Release();
+                _recorder = null;
+            }
+            if (_player != null)
+            {
+                _player.Release();
+                _player = null;
+            }
+        }
+
+        void OnRecordButtonClick(object sender, EventArgs e)
+        {
+            if (this.HasPermissionToRecord())
+            {
+                string file = this.GetFileNameForRecording();
+                if (File.Exists(file))
+                {
+                    File.Delete(file);
+                }
+                OnRecord(_startRecording);
+                if (_startRecording)
+                {
+                    _recordButton.SetText(Resource.String.stop_recording);
+                }
+                else
+                {
+                    _recordButton.SetText(Resource.String.start_recording);
+                }
+                _startRecording = !_startRecording;
+            }
+            else
+            {
+                this.PerformRuntimePermissionsCheckForRecording();
+            }
+        }
+
+        void OnPlayButtonClick(object sender, EventArgs e)
+        {
+            OnPlay(_startPlaying);
+            if (_startPlaying)
+            {
+                _playbackButton.SetText(Resource.String.stop_playing);
+            }
+            else
+            {
+                _playbackButton.SetText(Resource.String.start_playing);
+            }
+            _startPlaying = !_startPlaying;
         }
     }
+
 }
-
-
