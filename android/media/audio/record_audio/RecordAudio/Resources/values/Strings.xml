@@ -7,6 +7,7 @@
 	<string name="start_playing">Start Playing</string>
 	<string name="stop_playing">Stop Playing</string>
 	<string name="record_sound_first">Please record something before playing back.</string>
+    <string name="missing_permissions">Missing the necessary permissions - stopping the app.</string>
 	<string name="permissions_rationale">You must grant the permissions for this app to work.</string>
 	<string name="unexpected_playback_error">An unexpected error occurred using the MediaPlayer!</string>
 	<string name="unexpected_recording_error">An unexpected error occurred using the MediaRecorder!</string>

@@ -15,7 +15,7 @@ namespace RecordAudio
     /// Encapsulate the business of checking for permissions and such as much as possible, so that we can focus on 
     /// the recording APIs.
     /// </summary>
-    static class PermissionExtensions
+    static class RecordAudioExtensions
     {
         public static readonly string[] REQUIRED_PERMISSIONS = { Manifest.Permission.WriteExternalStorage, Manifest.Permission.RecordAudio };
         public static readonly int REQUEST_ALL_PERMISSIONS = 1200;

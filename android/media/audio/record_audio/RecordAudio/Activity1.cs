@@ -3,6 +3,7 @@ using System.IO;
 using Android.App;
 using Android.Media;
 using Android.OS;
+using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Util;
 using Android.Widget;
@@ -21,7 +22,6 @@ namespace RecordAudio
         Button _playbackButton;
         MediaPlayer _player;
 
-        bool _permissionsAccepted = false;
         bool _startPlaying = false;
         bool _startRecording = true;
 
@@ -29,23 +29,28 @@ namespace RecordAudio
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
         {
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-            bool b2 = this.HasPermissionToRecord();
+            bool permissionsGranted = false;
 
-            if (requestCode == PermissionExtensions.REQUEST_ALL_PERMISSIONS)
+            if (requestCode == RecordAudioExtensions.REQUEST_ALL_PERMISSIONS)
             {
                 if (grantResults.AllPermissionsGranted())
                 {
-                    _permissionsAccepted = true;
+                    permissionsGranted = true;
                 }
                 else
                 {
-                    _permissionsAccepted = false;
+                    permissionsGranted = false;
                 }
-            }
 
-            if (!_permissionsAccepted)
-            {
-                Finish();
+                if (permissionsGranted)
+                {
+                    OnRecord(_startRecording);
+                }
+                else
+                {
+                    var snackbar = Snackbar.Make(this.GetLayoutForSnackbar(), Resource.String.missing_permissions, Snackbar.LengthIndefinite);
+                    snackbar.SetAction(Resource.String.ok, (obj) => { Finish(); });
+                }
             }
         }
 
@@ -58,6 +63,43 @@ namespace RecordAudio
             else
             {
                 StopRecording();
+            }
+        }
+
+        void StartRecording()
+        {
+            _recorder = new MediaRecorder();
+            _recorder.SetAudioSource(AudioSource.Mic);
+            _recorder.SetOutputFormat(OutputFormat.ThreeGpp);
+            _recorder.SetOutputFile(this.GetFileNameForRecording());
+            _recorder.SetAudioEncoder((AudioEncoder.AmrNb));
+
+            try
+            {
+                _recorder.Prepare();
+            }
+            catch (IOException ioe)
+            {
+                Log.Error(TAG, ioe.ToString());
+            }
+
+            _recorder.Start();
+        }
+
+
+        void StopRecording()
+        {
+            if (_recorder == null)
+            {
+                return;
+            }
+            _recorder.Stop();
+            _recorder.Release();
+            _recorder = null;
+
+            if (File.Exists(this.GetFileNameForRecording()))
+            {
+                _startPlaying = true;
             }
         }
 
@@ -109,43 +151,6 @@ namespace RecordAudio
             _player = null;
         }
 
-        void StartRecording()
-        {
-            _recorder = new MediaRecorder();
-            _recorder.SetAudioSource(AudioSource.Mic);
-            _recorder.SetOutputFormat(OutputFormat.ThreeGpp);
-            _recorder.SetOutputFile(this.GetFileNameForRecording());
-            _recorder.SetAudioEncoder((AudioEncoder.AmrNb));
-
-            try
-            {
-                _recorder.Prepare();
-            }
-            catch (IOException ioe)
-            {
-                Log.Error(TAG, ioe.ToString());
-            }
-
-            _recorder.Start();
-        }
-
-
-        void StopRecording()
-        {
-            if (_recorder == null)
-            {
-                return;
-            }
-            _recorder.Stop();
-            _recorder.Release();
-            _recorder = null;
-
-            if (File.Exists(this.GetFileNameForRecording()))
-            {
-                _startPlaying = true;
-            }
-        }
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -159,9 +164,9 @@ namespace RecordAudio
             _playbackButton.Click += OnPlayButtonClick;
         }
 
-        protected override void OnStop()
+        protected override void OnPause()
         {
-            base.OnStop();
+            base.OnPause();
             if (_recorder != null)
             {
                 _recorder.Release();
