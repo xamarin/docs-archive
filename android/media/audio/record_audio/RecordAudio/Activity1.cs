@@ -183,11 +183,6 @@ namespace RecordAudio
         {
             if (this.HasPermissionToRecord())
             {
-                string file = this.GetFileNameForRecording();
-                if (File.Exists(file))
-                {
-                    File.Delete(file);
-                }
                 OnRecord(_startRecording);
                 if (_startRecording)
                 {
