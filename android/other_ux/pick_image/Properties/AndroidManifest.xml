@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="PickImageFromGallery.PickImageFromGallery">
-	<uses-sdk />
-	<application android:label="PickImageFromGallery">
-	</application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="1.1" package="PickImageFromGallery.PickImageFromGallery">
+	<uses-sdk android:minSdkVersion="21" />
+	<application android:label="PickImageFromGallery"></application>
 </manifest>
