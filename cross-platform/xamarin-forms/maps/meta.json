@@ -1,0 +1,7 @@
+{
+  "order":{
+    "geocode": "Geocode a Street Address",
+    "reverse-geocode": "Reverse Geocode a Street Address",
+    "map-navigation": "Perform Map-Based Navigation"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "order":{
+    "detect-network-connection":"Detect Network Connection",
+    "email":"Email",
+    "gsm_strength":"Detect Strength of GSM Signal",
+    "sms":"SMS"
+  }
+}

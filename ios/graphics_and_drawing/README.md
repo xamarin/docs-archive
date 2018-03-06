@@ -1,3 +1,0 @@
-Graphics and Drawing Recipes
-===============
-

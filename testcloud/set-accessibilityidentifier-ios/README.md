@@ -1,3 +1,0 @@
-TestCloud Recipes
-===============
-

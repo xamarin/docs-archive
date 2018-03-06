@@ -1,0 +1,7 @@
+{
+  "order":{
+    "compound_view": "Compound View",
+    "grid_view":"Grid View",
+    "table_layout":"Table Layout"
+  }
+}
