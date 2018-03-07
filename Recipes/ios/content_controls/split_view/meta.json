@@ -1,8 +1,0 @@
-{
-  "order":{
-    "communicate_between_master_and_detail_controllers.html":"Communicate Between Master and Detail Controllers",
-    "show_and_hide_the_master_view_button.html":"Show and Hide the Master View Button",
-    "use_multiple_detail_controllers.html":"Use Multiple Detail Controllers",
-    "use_split_view_to_show_two_controllers.html":"Use Split View to Show two Controllers"
-  }
-}

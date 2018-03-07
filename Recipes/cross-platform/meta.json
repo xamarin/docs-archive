@@ -1,9 +1,0 @@
-{
-  "order":{
-    "xamarin-forms": "Xamarin.Forms",
-    "ide": "IDE",
-    "game_development":"Game Development",
-    "networking": "Networking",
-    "app-links" : "App Links"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "order":{
-    "detect_if_multitasking_is_available.html":"Detect Multitasking",
-    "track_significant_location_change.html":"Track Significant Location Change",
-    "check_background_refresh_setting.html":"Check Background Refresh Setting",
-    "geofencing.html":"Create Geofence",
-    "test_location_changes_in_simulator.html":"Test Location Changes in Simulator"
-  }
-}

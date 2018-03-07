@@ -1,9 +1,0 @@
-{
-  "order":{
-    "adapters":"Adapters",
-    "contentproviders":"ContentProviders",
-    "files":"Files",
-    "databases":"Databases"
-    
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "order":{
-    "accelerometer":"Accelerometer",
-    "geocoder":"Geocoder",
-    "gps":"GPS"
-  }
-}

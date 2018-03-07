@@ -1,7 +1,0 @@
-{
-  "order":{
-    "activity":"Activity",
-    "intent":"Intent",
-    "service":"Service"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "order":{
-    "load_a_web_page":"Load a Web Page",
-    "load_local_content":"Load Local Content",
-    "load_non-web_documents":"Load Non-Web Documents",
-    "handle_javascript_alerts":"Handle JavaScript Alerts"
-  }
-}

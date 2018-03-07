@@ -1,9 +1,0 @@
-{
-  "order":{
-    "contacts":"Contacts",
-    "email":"Email",
-    "extensions":"Extensions",
-    "sms":"SMS",
-    "phone":"Phone"
-  }
-}

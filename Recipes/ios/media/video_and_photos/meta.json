@@ -1,9 +1,0 @@
-{
-  "order":{
-    "choose_a_photo_from_the_gallery.html":"Choose a Photo From the Gallery",
-    "play_a_video_using_avplayer.html":"Play a Video Using AVPlayer",
-    "play_a_video_using_mpmovieplayercontroller.html":"Play a Video Using MPMoviePlayerController",
-    "save_photo_to_album_with_metadata.html":"Save Photo to Album with Metadata",
-    "save_photo_to_app_directory.html":"Save Photo to App Directory"
-  }
-}
