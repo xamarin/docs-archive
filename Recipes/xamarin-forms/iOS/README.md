@@ -10,4 +10,5 @@ pdftype: none
 - [Prevent keyboard suggestions during data-entry](prevent-keyboard-suggestions/)
 - [Search a Xamarin.Forms app with Core Spotlight](core-spotlight-search/)
 - [Search a Xamarin.Forms app with Activities](nsuseractivity-search/)
+- [Fixing ListView and TableView width on iPad](ipad-listview)
 

@@ -7,8 +7,8 @@ pdftype: none
 
 # Xamarin.Forms
 
-- [Controls](controls/)
-- [General](general/)
-- [iOS](ios/)
-- [Maps](maps/)
+- [Controls](Controls/)
+- [General](General/)
+- [iOS](iOS/)
+- [Maps](Maps/)
 
