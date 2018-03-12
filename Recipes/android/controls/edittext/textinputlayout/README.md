@@ -12,9 +12,6 @@ link:
     url: https://developer.android.com/training/material/design-library.html
   - title: Material Design - Text Fields
     url: https://material.io/guidelines/components/text-fields.html
-samplecode:
-  - title: "Browse on GitHub"
-    url: https://github.com/xamarin/recipes/tree/master/android/controls/edittext/textinputlayout
 dateupdated: 2017-08-28
 ---
 

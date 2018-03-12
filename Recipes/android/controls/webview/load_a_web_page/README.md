@@ -2,12 +2,9 @@
 id: 7836FE10-1097-FAA8-898E-AE4853E48FE8
 title: "Load a Web Page"
 brief: "This recipe shows how to load a web page in a WebView."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/controls/webview/load_a_web_page
 article:
   - title: "Load Local Content" 
-    url: /recipes/android/controls/webview/load_local_content
+    url: /Recipes/android/controls/webview/load_local_content
 sdk:
   - title: "WebView Class Reference" 
     url: http://developer.android.com/reference/android/webkit/WebView.html

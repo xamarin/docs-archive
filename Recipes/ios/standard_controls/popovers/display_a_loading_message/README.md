@@ -4,7 +4,7 @@ title: "Display a Loading Message"
 brief: "This recipe shows how to display a modal “Loading…” message while long-running operations are in progress."
 samplecode:
   - title: "DisplayLoadingMessage" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/standard_controls/popovers/DisplayLoadingMessage
+    url: https://github.com/xamarin/Recipes/tree/master/ios/standard_controls/popovers/DisplayLoadingMessage
 dateupdated: 2015-05-04
 ---
 
@@ -103,5 +103,5 @@ control:
 
 		loadPop.Hide ();
 
-Download the [DisplayLoadingMessage sample code](https://github.com/xamarin/recipes/tree/master/ios/standard_controls/popovers/DisplayLoadingMessage) to see a complete working example.
+Download the [DisplayLoadingMessage sample code](https://github.com/xamarin/Recipes/tree/master/ios/standard_controls/popovers/DisplayLoadingMessage) to see a complete working example.
 

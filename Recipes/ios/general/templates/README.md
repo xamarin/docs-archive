@@ -8,5 +8,5 @@ such as the iOS view, view controller or property list templates.
 
  [ ![](Images/NewFile.png)](Images/NewFile.png)
  
--   [Using the iOS View XIB Template](/recipes/ios/general/templates/using_the_ios_view_xib_template)
+-   [Using the iOS View XIB Template](/Recipes/ios/general/templates/using_the_ios_view_xib_template)
 

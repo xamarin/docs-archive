@@ -15,5 +15,5 @@ customizability.
 
 # Basic Tasks
 
--   [Change the Font](/recipes/ios/standard_controls/labels/change_the_font)
--   [Truncate and Wrap Text ](/recipes/ios/standard_controls/labels/uilabel-truncate-wrap-text)
+-   [Change the Font](/Recipes/ios/standard_controls/labels/change_the_font)
+-   [Truncate and Wrap Text ](/Recipes/ios/standard_controls/labels/uilabel-truncate-wrap-text)

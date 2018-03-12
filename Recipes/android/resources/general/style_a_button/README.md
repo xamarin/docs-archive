@@ -2,9 +2,6 @@
 id: 29896080-808C-7524-EB98-EFBCF4F9C27A
 title: "Style a Button"
 brief: "This recipe will show how to change the appearance of a button with the use of a style and a state selector list."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/resources/general/style_a_button
 sdk:
   - title: "Style and Themes" 
     url: http://developer.android.com/guide/topics/ui/themes.html

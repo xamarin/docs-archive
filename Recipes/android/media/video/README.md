@@ -9,5 +9,5 @@ recording and playback.
 
  [ ![](Images/recordvideo.png)](Images/recordvideo.png)
 
--   <span class="noChildren"><a href="/recipes/android/media/video/play_video">Play Video</a></span> 
--   <span class="noChildren"><a href="/recipes/android/media/video/record_video">Record Video</a></span>
+-   <span class="noChildren"><a href="/Recipes/android/media/video/play_video">Play Video</a></span> 
+-   <span class="noChildren"><a href="/Recipes/android/media/video/record_video">Record Video</a></span>

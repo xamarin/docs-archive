@@ -2,9 +2,6 @@
 id: B7DAA598-B6AD-6FBF-8E0E-BD53E99322B3
 title: "Reverse Geocode a Location"
 brief: "This recipe shows how use the Geocoder to get an address from a latitude and longitude."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/os_device_resources/geocoder/reverse_geocode_a_location
 article:
   - title: "Maps and Location" 
     url: /guides/android/platform_features/maps_and_location

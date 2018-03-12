@@ -2,9 +2,6 @@
 id: 06249BAE-8BB7-F128-B8BC-348F703941F0
 title: "Add an Image to a Nav Bar Button"
 brief: "This recipe shows how to add an image to UIBarButtonItem that is added to a navigation bar."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/navigation_controller/add_an_image_to_a_nav_bar_button
 sdk:
   - title: "UINavigationBar Class Reference" 
     url: http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html

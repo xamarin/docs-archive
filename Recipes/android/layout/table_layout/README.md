@@ -8,4 +8,4 @@ table.
 
  ![](Images/TableLayout.png)
 
--   [Create a Table Layout](/recipes/android/layout/table_layout/create_a_table_layout)
+-   [Create a Table Layout](/Recipes/android/layout/table_layout/create_a_table_layout)

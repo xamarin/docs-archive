@@ -1,9 +1,6 @@
 ---
 id: 145134BE-FD78-42DB-139D-FE4F54505499
 title: "Merge Images"
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/media/images/merge_images
 article:
   - title: "Working with Images" 
     url: /guides/ios/application_fundamentals/working_with_images

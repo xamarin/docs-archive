@@ -3,9 +3,6 @@ id: 1FD0ABA3-95A1-4830-B279-36CDB7E2B5AD
 title: "Call JavaScript from C#"
 subtitle: "Evaluating JavaScript hosted in a WebView"
 brief: "This recipe shows how to call a JavaScript function from C#, where the JavaScript function is defined in a web page hosted by the WebView control."
-samplecode:
-  - title: "Browse on Github" 
-    url: https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/CallJavaScript/
 article:
   - title: "WebView" 
     url: /guides/xamarin-forms/user-interface/webview/

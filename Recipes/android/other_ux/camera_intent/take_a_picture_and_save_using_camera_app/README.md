@@ -1,9 +1,6 @@
 ---
 id: 8CB9984C-0856-AE4D-CBFC-9C2D87168275
 title: "Take a Picture and Save Using Camera App"
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/other_ux/camera_intent/take_a_picture_and_save_using_camera_app
 sdk:
   - title: "Camera" 
     url: http://developer.android.com/reference/android/hardware/Camera.html

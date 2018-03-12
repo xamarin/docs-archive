@@ -1,9 +1,6 @@
 ---
 id: 6EFBBBBF-2B2B-2F77-E796-03392B93A2F2
 title: "Draw 2D Graphics"
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/other_ux/drawing/draw_2d_graphics
 sdk:
   - title: "ShapeDrawable" 
     url: http://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html

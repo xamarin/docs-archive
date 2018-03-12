@@ -4,9 +4,9 @@ title: "Keyboards"
 ---
 
 iOS provides a system keyboard that is controllable based upon the control
-that present it, such as a `UITextField`. This section includes keyboard-related recipes.
+that present it, such as a `UITextField`. This section includes keyboard-related Recipes.
 
  [ ![](Images/26.png)](Images/26.png)
 
--   [Dismiss the Keyboard](/recipes/ios/input/keyboards/dismiss_the_keyboard)
+-   [Dismiss the Keyboard](/Recipes/ios/input/keyboards/dismiss_the_keyboard)
 

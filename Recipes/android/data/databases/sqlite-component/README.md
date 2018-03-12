@@ -3,10 +3,6 @@
 id: 26172BD6-0F3D-48B8-B396-2033F654D76E
 title: "Create a Database with SQLite.NET"
 brief: "This recipe will demonstrate how to create an SQLite database with the SQLite.NET PCL library."
-  - title: Browse on GitHub 
-    url: http://github.com/xamarin/recipes/tree/master/android/data/databases/sqlite-component
-  - title: "SQLite.NET PCL NuGet"
-    url: https://www.nuget.org/packages/SQLite.Net-PCL/
 dateupdated: 2018-01-19
 --
 ---

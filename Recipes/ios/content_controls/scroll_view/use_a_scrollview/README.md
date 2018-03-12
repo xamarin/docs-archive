@@ -2,12 +2,6 @@
 id: 2D35598D-04B2-BE01-C1A0-5C17810C77E0
 title: "Use a ScrollView"
 brief: "This recipe shows how to load a large image into a scroll view."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/scroll_view/use_a_scrollview
-article:
-  - title: "Load an Image" 
-    url: /recipes/ios/standard_controls/image_view/load_an_image
 sdk:
   - title: "UIScrollView Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIScrollView_Class/Reference/UIScrollView.html
@@ -54,7 +48,7 @@ scrollView.AddSubview (imageView);
 
 Only a portion of the image will appear on the iPhone screen, as we set the `ContentSize` of the Scroll View to the full size of the image, which is large than the size of the display. The user can
 pan around the image by dragging. By default, the image cannot be zoomed (see
-the [Zoom a Scroll View](/recipes/ios/content_controls/scroll_view/zoom_a_scrollview) recipe).
+the [Zoom a Scroll View](/Recipes/ios/content_controls/scroll_view/zoom_a_scrollview) recipe).
 
 This screenshot shows how the remainder of the image is outside the viewable
 area on the device.

@@ -2,14 +2,9 @@
 id: 2A2483B6-A8D4-4B2D-E874-AD1FBC9814F9
 title: "Adjust Contrast and Brightness of an Image"
 brief: "This recipe shows how to use a CoreImage filter to adjust the contrast, saturation and brightness of an image."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image/color_controls
-  - title: "Browse Pro on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image/color_controls_pro
 article:
   - title: "Save Photo to Album with Metadata" 
-    url: /recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata
+    url: /Recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata
   - title: "Introduction to Core Image" 
     url: /guides/ios/platform_features/introduction_to_coreimage
 sdk:
@@ -128,7 +123,7 @@ someImage.SaveToPhotosAlbum((image, error) => {
 });
 ```
 
-The [Adjust Image Pro](https://github.com/xamarin/recipes/tree/master/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image/color_controls_pro)
+The [Adjust Image Pro](https://github.com/xamarin/Recipes/tree/master/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image/color_controls_pro)
 recipe sample includes additional code to take an picture with
 the camera, resize it for manipulation then save the original size with the
 color changes applied.

@@ -5,9 +5,6 @@ brief: "iOS apps utilize uniform resource locators (URLs), a form of uniform res
 sdk:
   - title: "NSUrl Class Reference" 
     url: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/Reference/Reference.html
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/shared_resources/phone/dial-phone-uri
 ---
 
 <a name="Recipe" class="injected"></a>

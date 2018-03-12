@@ -11,5 +11,5 @@ application.
 
 Basic Font Usage
 
--   [Enumerate Fonts](/recipes/ios/standard_controls/fonts/enumerate_fonts)
+-   [Enumerate Fonts](/Recipes/ios/standard_controls/fonts/enumerate_fonts)
 

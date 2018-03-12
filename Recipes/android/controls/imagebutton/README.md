@@ -4,4 +4,4 @@ title: "ImageButton"
 dateupdated: 2017-07-17
 ---
 
--   [Create An ImageButton](/recipes/android/controls/imagebutton/create_an_imagebutton)
+-   [Create An ImageButton](/Recipes/android/controls/imagebutton/create_an_imagebutton)

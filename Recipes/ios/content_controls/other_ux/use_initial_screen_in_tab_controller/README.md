@@ -2,9 +2,6 @@
 id: 0DCD1F4A-E228-FAA3-F67A-E82D6963362D
 title: "Use Initial Screen in Tab Controller"
 brief: "This recipe shows how include the initial screen in a tab controller after a user interacts with the screen."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/other_ux/use_initial_screen_in_tab_controller
 article:
   - title: "Creating Tabbed Appliations" 
     url: /guides/ios/user_interface/creating_tabbed_applications/

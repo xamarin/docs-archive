@@ -2,9 +2,6 @@
 id: 0CDC62DD-9AE0-4B11-9C85-49188382D58D
 title: "Customize Tab Bar on iOS"
 brief: "How to change the appearance of Xamarin.Forms tabs on iOS"
-samplecode:
-  - title: "Browse on Github" 
-    url: https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/iOS/customize-tabs/
 dateupdated: 2016-01-29
 ---
 

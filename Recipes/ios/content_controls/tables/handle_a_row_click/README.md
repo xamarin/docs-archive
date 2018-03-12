@@ -2,9 +2,6 @@
 id: 80F2C368-D381-2410-4C48-59051FC8D80C
 title: "Handle a Row Click"
 brief: "This recipe shows you how to handle a row being ‘clicked’ by the user."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/tables/handle_a_row_click
 sdk:
   - title: "UITableView Class Reference" 
     url: http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableView_Class/Reference/Reference.html

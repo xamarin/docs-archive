@@ -12,11 +12,11 @@ where and when to store things.
 
  ![](Images/EnumerateDirectories.png)
 
--   [Enumerate Directories](/recipes/ios/general/file_system/enumerate_directories)
+-   [Enumerate Directories](/Recipes/ios/general/file_system/enumerate_directories)
 
 
--   [Load a File](/recipes/ios/general/file_system/load_a_file)
+-   [Load a File](/Recipes/ios/general/file_system/load_a_file)
 
 
--   [Save Documents](/recipes/ios/general/file_system/save_documents)
+-   [Save Documents](/Recipes/ios/general/file_system/save_documents)
 

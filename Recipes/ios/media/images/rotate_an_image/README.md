@@ -2,9 +2,6 @@
 id: 0E44C0E9-241F-506F-9358-36BEA3DB4665
 title: "Rotate An Image View"
 brief: "This recipe shows how to rotate an image on the screen using a UIImageView and a CGAffineTransform."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/media/images/rotate_an_image
 article:
   - title: "Working with Images" 
     url: /guides/ios/application_fundamentals/working_with_images

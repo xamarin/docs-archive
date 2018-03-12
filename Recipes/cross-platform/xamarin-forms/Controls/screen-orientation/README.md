@@ -3,9 +3,6 @@ id: CC372492-D4F2-471E-A88D-BAF602383A73
 title: "Display an Image based on Screen Orientation"
 subtitle: "Handling the SizeChanged event"
 brief: "This recipe shows how to use Xamarin.Forms to detect the screen orientation and display an image based on the orientation."
-samplecode:
-  - title: "Browse on Github" 
-    url: https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/ScreenOrientation/
 api:
   - title: "SizeChanged" 
     url: /api/event/Xamarin.Forms.VisualElement.SizeChanged/

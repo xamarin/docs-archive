@@ -2,9 +2,6 @@
 id: 4A25B2A3-4CEF-0668-9974-24D17DC88550
 title: "Play Video"
 brief: "This recipe shows how to play a video using the VideoView class."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/media/video/play_video
 sdk:
   - title: "VideoView Class Reference" 
     url: http://developer.android.com/reference/android/widget/VideoView.html

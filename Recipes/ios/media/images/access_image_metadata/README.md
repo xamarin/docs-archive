@@ -2,12 +2,9 @@
 id: F459CB11-570C-F3EB-6445-F825AE580E44
 title: "Access Image Metadata"
 brief: "This recipe shows how to access image properties such as height, width, DPI, EXIF data, etc."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/media/images/access_image_metadata
 article:
   - title: "Save Photo to Album with Metadata" 
-    url: /recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata
+    url: /Recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata
 sdk:
   - title: "Accessing image properties with ImageIO" 
     url: http://developer.apple.com/library/ios/#qa/qa1654/_index.html

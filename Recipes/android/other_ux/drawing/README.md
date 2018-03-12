@@ -13,7 +13,7 @@ Android includes drawing APIs that allow 2D graphics to be created and manipulat
    
 
 
--  [Blur an Image with RenderScript](/recipes/android/other_ux/drawing/blur_an_image_with_renderscript)
--  [Blur an Image with Managed Code](/recipes/android/other_ux/drawing/blur_an_image_with_managed_code)
--  [Draw 2D Graphics](/recipes/android/other_ux/drawing/draw_2d_graphics)
--  [Fill a Polygon](/recipes/android/other_ux/drawing/fill_a_polygon)
+-  [Blur an Image with RenderScript](/Recipes/android/other_ux/drawing/blur_an_image_with_renderscript)
+-  [Blur an Image with Managed Code](/Recipes/android/other_ux/drawing/blur_an_image_with_managed_code)
+-  [Draw 2D Graphics](/Recipes/android/other_ux/drawing/draw_2d_graphics)
+-  [Fill a Polygon](/Recipes/android/other_ux/drawing/fill_a_polygon)

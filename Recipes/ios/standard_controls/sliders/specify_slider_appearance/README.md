@@ -2,12 +2,9 @@
 id: C3E20584-4062-0062-8377-CB87BAB3E6E5
 title: "Specify Slider Appearance"
 brief: "This recipe shows how to specify the appearance of a slider, either with a custom image or colors."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/standard_controls/sliders/specify_slider_appearance
 article:
   - title: "Specify Slider Value" 
-    url: /recipes/ios/standard_controls/sliders/specify_slider_value
+    url: /Recipes/ios/standard_controls/sliders/specify_slider_value
 sdk:
   - title: "UISlider Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UISlider_Class/Reference/Reference.html
@@ -23,7 +20,7 @@ drag-able portion, or by changing the colors of the control, like this:
 
  ![](Images/SliderAppearance.png)
 
-See the [Specify Slider Value](/recipes/ios/standard_controls/sliders/specify_slider_value) recipe for instructions on creating slider controls. To change the
+See the [Specify Slider Value](/Recipes/ios/standard_controls/sliders/specify_slider_value) recipe for instructions on creating slider controls. To change the
 appearance of a slider:
 
 1. To set the slider’s “thumb” to an image:

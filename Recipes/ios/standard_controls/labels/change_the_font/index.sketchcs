@@ -6,7 +6,7 @@
 </Manifest>
 ```
 title: Change The Font  
-article: [Enumerate Fonts](/recipes/ios/standard_controls/fonts/enumerate_fonts/)  
+article: [Enumerate Fonts](/Recipes/ios/standard_controls/fonts/enumerate_fonts/)  
 sdk: [UILabel Class Reference](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UILabel_Class/index.html)  
 brief: This recipe shows how to change the font of a UILabel.  
 
@@ -47,7 +47,7 @@ RootView.AddSubview(customLabel);
 
 # Additional Information
 
-A list of fonts available on iOS 5 (refer to the [Enumerate Fonts](/recipes/ios/standard_controls/fonts/enumerate_fonts) recipe to see how to
+A list of fonts available on iOS 5 (refer to the [Enumerate Fonts](/Recipes/ios/standard_controls/fonts/enumerate_fonts) recipe to see how to
 generate this list):
 
 AcademyEngravedLetPlain

@@ -9,7 +9,7 @@ capabilities of the Android database system.
 ---
 
 
--   [Create a Database using ADO.NET](/recipes/android/data/databases/adonet) 
--   [Create a Database using SQLite](/recipes/android/data/databases/sqlite)
--   [Create a Database using SQLite.NET PCL](/recipes/android/data/databases/sqlite-component)
+-   [Create a Database using ADO.NET](/Recipes/android/data/databases/adonet) 
+-   [Create a Database using SQLite](/Recipes/android/data/databases/sqlite)
+-   [Create a Database using SQLite.NET PCL](/Recipes/android/data/databases/sqlite-component)
 

@@ -2,9 +2,6 @@
 id: 1B4B92C7-3A0C-6678-167C-F042E0B3B5B2
 title: "Play Audio"
 brief: "This recipe shows how to play audio from a raw resource using the MediaPlayer class."
-sample:
-  - title: Browse on GitHub
-  - url: https://github.com/xamarin/recipes/tree/master/android/media/audio/play_audio
 sdk:
   - title: MediaPlayer Class Reference
   - url: http://developer.android.com/reference/android/media/MediaRecorder.html

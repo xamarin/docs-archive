@@ -5,9 +5,6 @@ brief: "Code can manually change the focus of a view to bring up the keyboard fo
 sdk:
   - title: "UITextField" 
     url: https://developer.apple.com/LIBRARY/ios/documentation/UIKit/Reference/UITextField_Class/index.html
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/standard_controls/text_field/set-uitextfield-focus
 ---
 
 

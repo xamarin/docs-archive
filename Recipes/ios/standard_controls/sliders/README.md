@@ -8,5 +8,5 @@ between a given range.&nbsp;
 
  ![](Images/SliderAppearance.png)
 
--   [Specify Slider Appearance](/recipes/ios/standard_controls/sliders/specify_slider_appearance) 
--   [Specify Slider Value](/recipes/ios/standard_controls/sliders/specify_slider_value)
+-   [Specify Slider Appearance](/Recipes/ios/standard_controls/sliders/specify_slider_appearance) 
+-   [Specify Slider Value](/Recipes/ios/standard_controls/sliders/specify_slider_value)

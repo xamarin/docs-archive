@@ -7,5 +7,5 @@ Smartphones introduced gestures as a powerful new way to interact with
 applications. Gestures allow a user to interact with a devices that have a touch
 screen by using swipes, flings, and pinches.
 
--   [Create a Gesture Listener](/recipes/android/other_ux/gestures/create_a_gesture_listener) 
--   [Detect a Touch](/recipes/android/other_ux/gestures/detect_a_touch)
+-   [Create a Gesture Listener](/Recipes/android/other_ux/gestures/create_a_gesture_listener) 
+-   [Detect a Touch](/Recipes/android/other_ux/gestures/detect_a_touch)

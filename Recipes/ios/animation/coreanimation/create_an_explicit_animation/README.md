@@ -2,9 +2,6 @@
 id: D45B584A-4619-A966-A036-320F139448D4
 title: "Create An Explicit Animation"
 brief: "This recipe shows how to create an explicit animation using Core Animation."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/create_an_explicit_animation
 sdk:
   - title: "Core Animation Programming Guide" 
     url: http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html

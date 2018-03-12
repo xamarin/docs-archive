@@ -9,6 +9,6 @@ content in an Activity.
 
  [ ![](Images/LoadWebPage.png)](Images/LoadWebPage.png)
 
--   [Call C# from JavaScript](/recipes/android/controls/webview/call_csharp_from_javascript) 
--   [Load a Web Page](/recipes/android/controls/webview/load_a_web_page/) 
--   [Load Local Content](/recipes/android/controls/webview/load_local_content)
+-   [Call C# from JavaScript](/Recipes/android/controls/webview/call_csharp_from_javascript) 
+-   [Load a Web Page](/Recipes/android/controls/webview/load_a_web_page/) 
+-   [Load Local Content](/Recipes/android/controls/webview/load_local_content)

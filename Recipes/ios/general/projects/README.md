@@ -10,9 +10,9 @@ name.
 
  [ ![](Images/ios_project_01.png)](Images/ios_project_01.png)
 
--   <span class="noChildren"><a href="/recipes/ios/general/projects/create_an_ios_project">Create an iOS
+-   <span class="noChildren"><a href="/Recipes/ios/general/projects/create_an_ios_project">Create an iOS
     Project</a></span> 
--   <span class="noChildren"><a href="/recipes/ios/general/projects/environment_checks">Environment
+-   <span class="noChildren"><a href="/Recipes/ios/general/projects/environment_checks">Environment
     Checks</a></span> 
--   <span class="noChildren"><a href="/recipes/ios/general/projects/specify_default_root_namespace">Specify
+-   <span class="noChildren"><a href="/Recipes/ios/general/projects/specify_default_root_namespace">Specify
     Default Root Namespace</a></span>

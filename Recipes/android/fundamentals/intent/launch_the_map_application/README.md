@@ -2,9 +2,6 @@
 id: 1BB89467-078D-32F0-58E9-4347D9A719FD
 title: "Launch the Map Application"
 brief: "This recipe shows how to launch the maps application at a specified location."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/fundamentals/intent/launch_the_map_application
 article:
   - title: "Hello, Multiscreen Applications" 
     url: /guides/android/getting_started/hello,_multi-screen_applications

@@ -6,5 +6,5 @@ title: "Resources"
 Resources are Android's way of organizing and embedding things like layouts,
 strings, sounds, pictures, and videos in an application.&nbsp;
 
--   [Device Specific](/recipes/android/resources/device_specific) 
--  [General](/recipes/android/general)
+-   [Device Specific](/Recipes/android/resources/device_specific) 
+-  [General](/Recipes/android/general)

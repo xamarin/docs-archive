@@ -7,4 +7,4 @@ Core Graphics is a low-level 2D graphics framework that allows drawing device in
 
  [ ![](Images/Core_Graphics.png)](Images/Core_Graphics.png)
 
--   [Create a Transparent Region in a View](/recipes/ios/graphics_and_drawing/core_graphics/transparent_region_view)
+-   [Create a Transparent Region in a View](/Recipes/ios/graphics_and_drawing/core_graphics/transparent_region_view)

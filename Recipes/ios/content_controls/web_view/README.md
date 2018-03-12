@@ -11,8 +11,8 @@ interact with JavaScript in pages it has loaded.
 
  [ ![](Images/WebView_1.png)](Images/WebView_1.png)
 
-- [Load a Web Page](/recipes/ios/content_controls/web_view/load_a_web_page)
-- [Load Local Content](/recipes/ios/content_controls/web_view/load_local_content)
-- [Load Non-Web Documents](/recipes/ios/content_controls/web_view/load_non-web_documents)
+- [Load a Web Page](/Recipes/ios/content_controls/web_view/load_a_web_page)
+- [Load Local Content](/Recipes/ios/content_controls/web_view/load_local_content)
+- [Load Non-Web Documents](/Recipes/ios/content_controls/web_view/load_non-web_documents)
 - [Handle JavaScript Alerts](handle_javascript_alerts/)
 

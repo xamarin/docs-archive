@@ -13,4 +13,4 @@ The Collection View is a way to present a set of data in a flexible layout.  The
 
 # Collection View Basics
 
--   [Zoom a Collection View](/recipes/ios/content_controls/collection_view/collection_view_zoom)
+-   [Zoom a Collection View](/Recipes/ios/content_controls/collection_view/collection_view_zoom)

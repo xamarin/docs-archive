@@ -15,7 +15,7 @@ types available.
 
 ## Basic Usage
 
--   [Set Button Text](/recipes/ios/standard_controls/buttons/set_button_text) 
+-   [Set Button Text](/Recipes/ios/standard_controls/buttons/set_button_text) 
 
 
  <a name="Interaction" class="injected"></a>
@@ -23,7 +23,7 @@ types available.
 
 ## Interaction
 
--   [Handle Clicks](/recipes/ios/standard_controls/buttons/handle_clicks) 
+-   [Handle Clicks](/Recipes/ios/standard_controls/buttons/handle_clicks) 
 
 
  <a name="Customization" class="injected"></a>
@@ -31,5 +31,5 @@ types available.
 
 ## Customization
 
--   [Create Different Types of Buttons](/recipes/ios/standard_controls/buttons/create_different_types_of_buttons) 
--   [Use an Image for a Button](/recipes/ios/standard_controls/buttons/use_an_image_for_a_button)
+-   [Create Different Types of Buttons](/Recipes/ios/standard_controls/buttons/create_different_types_of_buttons) 
+-   [Use an Image for a Button](/Recipes/ios/standard_controls/buttons/use_an_image_for_a_button)

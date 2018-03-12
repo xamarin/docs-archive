@@ -2,9 +2,6 @@
 id: 30D6D826-11A0-30FA-D781-077C26EA28D4
 title: "Enumerate Directories"
 brief: "This recipe shows how to list directories in the iOS file system using Xamarin.iOS."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/general/file_system/enumerate_directories
 ---
 
 <a name="Recipe" class="injected"></a>

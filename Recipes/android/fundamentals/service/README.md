@@ -16,5 +16,5 @@ as well as a song queue, etc.
 
 # Service Basics
 
--   [Create a Simple Service](/recipes/android/fundamentals/service/create_a_simple_service) & ndash; This is an example of a very basic started service.
+-   [Create a Simple Service](/Recipes/android/fundamentals/service/create_a_simple_service) & ndash; This is an example of a very basic started service.
 

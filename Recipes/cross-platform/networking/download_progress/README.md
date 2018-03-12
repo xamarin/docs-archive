@@ -3,9 +3,6 @@ id: 3972CC35-7BCD-4394-B6F6-88A7E80B5C39
 title: "Report Download Progress"
 subtitle: "How to use Progress<T> in a Xamarin mobile application"
 brief: "This recipe will demonstrate how to download a file in the background and report the download progress to the end user."
-samplecode:
-  - title: "Browse On GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/cross-platform/networking/download_progress
 article:
   - title: "Async Support Overview" 
     url: http://docs.xamarin.com/guides/cross-platform/advanced/async_support_overview/

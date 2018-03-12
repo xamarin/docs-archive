@@ -7,4 +7,4 @@ In iOS 8 Apple introduced app extensions to allow iOS applications to add variou
 
  [ ![](Images/todaywidget.png)](Images/todaywidget.png)
 
--   [Today Widget](/recipes/ios/shared_resources/extensions/today_widget)
+-   [Today Widget](/Recipes/ios/shared_resources/extensions/today_widget)

@@ -2,9 +2,6 @@
 id: 9EC744C2-E5A3-EC37-E413-1C8981E0F843
 title: "Load a File"
 brief: "This recipe shows how to load a file that you have bundled with your Xamarin.iOS application."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/general/file_system/load_a_file
 ---
 
 <a name="Recipe" class="injected"></a>

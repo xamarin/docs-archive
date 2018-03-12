@@ -16,8 +16,8 @@ free.
 
 # Table Basics
 
--   [Populate a Table](/recipes/ios/content_controls/tables/populate_a_table) 
--   [Handle a Row Click](/recipes/ios/content_controls/tables/handle_a_row_click) 
+-   [Populate a Table](/Recipes/ios/content_controls/tables/populate_a_table) 
+-   [Handle a Row Click](/Recipes/ios/content_controls/tables/handle_a_row_click) 
 
 
  <a name="Customization" class="injected"></a>
@@ -25,8 +25,8 @@ free.
 
 # Customization
 
--   [Specify the Cell Type](/recipes/ios/content_controls/tables/specify_the_cell_type) 
--   [Add a Cell Accessory](/recipes/ios/content_controls/tables/add_a_cell_accessory) 
+-   [Specify the Cell Type](/Recipes/ios/content_controls/tables/specify_the_cell_type) 
+-   [Add a Cell Accessory](/Recipes/ios/content_controls/tables/add_a_cell_accessory) 
 
 
  <a name="Other" class="injected"></a>
@@ -34,4 +34,4 @@ free.
 
 # Other
 
--   [Create a Login Window Using MonoTouch.Dialog](/recipes/ios/content_controls/tables/create_a_login_window_using_monotouch.dialog)
+-   [Create a Login Window Using MonoTouch.Dialog](/Recipes/ios/content_controls/tables/create_a_login_window_using_monotouch.dialog)

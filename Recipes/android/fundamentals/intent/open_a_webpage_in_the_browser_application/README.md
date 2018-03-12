@@ -2,9 +2,6 @@
 id: 6578B301-90E8-F7CF-FB34-7D4C0F280422
 title: "Open a Webpage in the Browser Application"
 brief: "This recipe shows how to launch a web page in the built-in browser application."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/fundamentals/intent/open_a_webpage_in_the_browser_application
 article:
   - title: "Hello, Multiscreen Applications" 
     url: /guides/android/getting_started/hello,_multi-screen_applications

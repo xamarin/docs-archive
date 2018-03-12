@@ -2,9 +2,6 @@
 id: FF97701A-984A-44A2-8AAF-C2F821F0FE07
 title: "Make the Nav Bar Disappear"
 brief: "This recipe shows how to hide the navigation bar."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/navigation_controller/make_the_nav_bar_disappear
 sdk:
   - title: "UINavigationBar Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html

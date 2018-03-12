@@ -2,12 +2,9 @@
 id: A9935042-877B-4CD1-8193-7D075439B7A7
 title: "Create Different Types of Buttons"
 brief: "This recipe shows you how to create the six different types of UIButton."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/standard_controls/buttons/create_different_types_of_buttons/
 article:
   - title: "Handle clicks" 
-    url: /recipes/ios/standard_controls/buttons/handle_clicks
+    url: /Recipes/ios/standard_controls/buttons/handle_clicks
 sdk:
   - title: "UIButton Class Reference" 
     url: http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIButton_Class/UIButton/UIButton.html
@@ -68,5 +65,5 @@ appropriately.
 Buttons have multiple states (including Disabled, Selected and Highlighted).
 In the example above the properties are only set for the Normal state, however
 properties such as `Title` and `TitleColor` can be set independently for each state.
-See the [Set Button Text](/recipes/ios/standard_controls/buttons/set_button_text) recipe for an example.
+See the [Set Button Text](/Recipes/ios/standard_controls/buttons/set_button_text) recipe for an example.
 

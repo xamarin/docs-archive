@@ -2,12 +2,9 @@
 id: D01169DB-BC0D-3DDA-1D37-D1873EA1688A
 title: "Set Button Text"
 brief: "This recipe shows you how to set the text on a UIButton."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/standard_controls/buttons/set_button_text/
 article:
   - title: "Create Different Types of Button" 
-    url: /recipes/ios/standard_controls/buttons/create_different_types_of_buttons
+    url: /Recipes/ios/standard_controls/buttons/create_different_types_of_buttons
 sdk:
   - title: "UIButton Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIButton_Class/UIButton/UIButton.html

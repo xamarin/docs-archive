@@ -2,9 +2,6 @@
 id: BDC026CA-1810-E853-419B-7B23AF94EE83
 title: Load an Image
 brief: This recipe shows how to load and display an image.
-sample:
-  - title: Browse on GitHub
-    url: https://github.com/xamarin/recipes/tree/master/ios/standard_controls/image_view/load_an_image
 sdk:
   - title: UIImageView Class Reference
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIImageView_Class/Reference/Reference.html

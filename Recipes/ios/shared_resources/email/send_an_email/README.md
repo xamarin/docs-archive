@@ -2,9 +2,6 @@
 id: F2D2C19F-BBF3-541F-40CA-33E41E42B3D3
 title: "Send an Email"
 brief: "This recipe shows how to send an email using the MFMailComposeViewController."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/shared_resources/email/send_an_email/
 sdk:
   - title: "MFMailComposeViewController Class Reference" 
     url: http://developer.apple.com/library/ios/#documentation/MessageUI/Reference/MFMailComposeViewController_class/Reference/Reference.html

@@ -5,9 +5,9 @@ title: "Data"
 
 Loading and displaying data and images
 
--  [Adapters](/recipes/android/data/adapters)
--  [ContentProviders](/recipes/android/data/contentproviders) 
--  [Files](/recipes/android/data/files)
--  [Databases](/recipes/android/data/databases)
+-  [Adapters](/Recipes/android/data/adapters)
+-  [ContentProviders](/Recipes/android/data/contentproviders) 
+-  [Files](/Recipes/android/data/files)
+-  [Databases](/Recipes/android/data/databases)
 
 

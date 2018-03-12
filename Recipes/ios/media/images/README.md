@@ -7,7 +7,7 @@ iOS has a rich API for manipulating and accessing images.
 
  [ ![](Images/MergedImage.png)](Images/MergedImage.png)
 
--   [Access Image Metadata](/recipes/ios/media/images/access_image_metadata)
--  [Merge Images](/recipes/ios/media/images/merge_images)
--   [Rotate An Image](/recipes/ios/media/images/rotate_an_image)
+-   [Access Image Metadata](/Recipes/ios/media/images/access_image_metadata)
+-  [Merge Images](/Recipes/ios/media/images/merge_images)
+-   [Rotate An Image](/Recipes/ios/media/images/rotate_an_image)
 

@@ -2,9 +2,6 @@
 id: D454FB2C-4676-C01B-F1F6-297BB226A28D
 title: "Create a Grid View"
 brief: "This tutorial will show how to create a Grid View."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/layout/grid_view/create_a_grid_view
 sdk:
   - title: "GridView" 
     url: http://developer.android.com/reference/android/widget/GridView.html

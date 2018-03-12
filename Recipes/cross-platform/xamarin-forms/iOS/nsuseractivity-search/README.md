@@ -3,9 +3,6 @@ id: A566038D-C712-4798-BCEB-29379C13FC5D
 title: "Search a Xamarin.Forms App with Activities (on iOS)"
 subtitle: "Making an app searchable through Spotlight search and Siri"
 brief: "This recipe shows how to use the iOS 9 NSUserActivity class to make Xamarin.Forms app content searchable through Spotlight search and Siri."
-samplecode:
-  - title: "Browse on Github" 
-    url: https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/iOS/NSUserActivitySearch/
 article:
   - title: "Search with NSUSerActivity" 
     url: /guides/ios/platform_features/introduction_to_ios9/search/nsuseractivity/

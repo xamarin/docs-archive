@@ -2,9 +2,6 @@
 id: 9A6AF59E-BAEE-03B3-03A4-94A235C27CBF
 title: "Create a Database with SQLiteNET"
 brief: "This recipe will demonstrate how to create an SQLite database with SQLite-NET."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/data/sqlite/create_a_database_with_sqlitenet
 ---
 
 <a name="Recipe" class="injected"></a>

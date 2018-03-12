@@ -3,9 +3,6 @@ id: 833FD59D-1AEA-46E7-9478-003C576D813C
 title: "Display a Local PDF File in a WebView"
 subtitle: "Rendering a PDF using the HTML5 canvas element"
 brief: "This recipe shows how to display a local PDF file in a WebView control on each platform."
-samplecode:
-  - title: "Browse on Github" 
-    url: https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/DisplayPDF/
 article:
   - title: "WebView" 
     url: /guides/xamarin-forms/user-interface/webview/

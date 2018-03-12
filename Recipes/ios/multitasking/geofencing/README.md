@@ -2,9 +2,6 @@
 id: 7074E47A-D2A3-4035-8BD3-57045E48B9D2
 title: "Create Geofence"
 brief: "Geofences let you track a user's movement in and out of a geographical region. This recipe explains how to set up a simple geofence."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/multitasking/geofencing
 ---
 
 [ ![](Images/00.png)](Images/00.png)
@@ -95,7 +92,7 @@ Now monitoring region CLCircularRegion (identifier:'Cupertino', center:&lt;+37.2
       Just left CLCircularRegion (identifier:'Cupertino', center:&lt;+37.29430502,-122.09423697&gt;, radius:10129.46m)
 ```
 
-To test geofences in the iOS simulator, refer to the <a href="/recipes/ios/multitasking/test_location_changes_in_simulator" target="_blank">Test Location Changes in Simulator recipe</a>.</li>
+To test geofences in the iOS simulator, refer to the <a href="/Recipes/ios/multitasking/test_location_changes_in_simulator" target="_blank">Test Location Changes in Simulator recipe</a>.</li>
 </ol>
 
 # Additional Information

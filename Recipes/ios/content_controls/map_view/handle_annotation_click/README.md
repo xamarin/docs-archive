@@ -2,14 +2,11 @@
 id: EDB7429B-839E-7E9F-19A2-133E442C145C
 title: "Handle Annotation Click"
 brief: "This recipe shows how to add an annotation with a clickable button to a map."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/handle_annotation_click
 article:
   - title: "Add an Annotation" 
-    url: /recipes/ios/content_controls/map_view/add_an_annotation_to_a_map
+    url: /Recipes/ios/content_controls/map_view/add_an_annotation_to_a_map
   - title: "Displaying a Location" 
-    url: /recipes/ios/content_controls/map_view/display_device_location
+    url: /Recipes/ios/content_controls/map_view/display_device_location
 sdk:
   - title: "MKMapView Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html
@@ -26,8 +23,8 @@ To add an annotation and respond to touching a button within the
 annotation:
 
 1.  Start with an existing `MKMapView` or review the
-  [Displaying a Location](/recipes/ios/content_controls/map_view/display_device_location) and
-  [Add an Annotation](/recipes/ios/content_controls/map_view/add_an_annotation_to_a_map) recipes.
+  [Displaying a Location](/Recipes/ios/content_controls/map_view/display_device_location) and
+  [Add an Annotation](/Recipes/ios/content_controls/map_view/add_an_annotation_to_a_map) Recipes.
 
 2.  Add an annotation as you normally would:
 

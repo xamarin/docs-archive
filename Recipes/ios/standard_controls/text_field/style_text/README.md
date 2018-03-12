@@ -2,9 +2,6 @@
 id: 8E58A6AE-8518-4FE6-9F3B-94CC98E2C302
 title: "Style Text"
 subtitle: "with NSAttributedString"
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/standard_controls/text_field/style-text
 ---
 
 <a name="Recipe" class="injected"></a>

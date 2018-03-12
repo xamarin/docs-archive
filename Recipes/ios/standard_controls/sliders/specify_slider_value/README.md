@@ -2,9 +2,6 @@
 id: 416B02DC-AA38-B2CD-27C7-0E4FB007BEAA
 title: "Specify Slider Value"
 brief: "This recipe shows how to specify the range of a slider and access its value."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/standard_controls/sliders/specify_slider_value
 sdk:
   - title: "UISlider Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UISlider_Class/Reference/Reference.html

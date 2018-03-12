@@ -9,5 +9,5 @@ buttons together.
 
  ![](Images/UISegmentedControl_styles.png)
 
--   [Configure Segments (UISegmentedControl)](/recipes/ios/standard_controls/segmented_button_control/configure_segments_(uisegmentedcontrol)) 
--   [Specify Segment Size](/recipes/ios/standard_controls/segmented_button_control/specify_segment_sizes)
+-   [Configure Segments (UISegmentedControl)](/Recipes/ios/standard_controls/segmented_button_control/configure_segments_(uisegmentedcontrol)) 
+-   [Specify Segment Size](/Recipes/ios/standard_controls/segmented_button_control/specify_segment_sizes)

@@ -2,12 +2,9 @@
 id: 2690BBD5-0ACB-DDA3-7808-CBB0094165F8
 title: Animate an ImageView
 brief: This recipe shows how to animate a UIImageView with an array of image frames.
-sample:
-  - title: Browse on GitHub
-    url: https://github.com/xamarin/recipes/tree/master/ios/standard_controls/image_view/animate_an_imageview
 article:
   - title: Load an Image
-    url: /recipes/ios/standard_controls/image_view/load_an_image
+    url: /Recipes/ios/standard_controls/image_view/load_an_image
 sdk:
   - title: UIImageView Class Reference
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIImageView_Class/Reference/Reference.html

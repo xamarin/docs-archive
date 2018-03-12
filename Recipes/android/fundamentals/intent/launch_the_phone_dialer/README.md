@@ -2,9 +2,6 @@
 id: 5D149BD7-1936-3D36-8F71-50A9D13ED8AA
 title: "Launch the Phone Dialer"
 brief: "This recipe shows how to launch the phone dialer application."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/fundamentals/intent/launch_the_phone_dialer
 article:
   - title: "Hello, Android Multiscreen" 
     url: /guides/android/getting_started/hello,android_multiscreen

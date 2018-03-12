@@ -9,7 +9,7 @@ also supports loading an animated series of images.
 
  ![](Images/ImageView1.png)
 
--   <span class="noChildren"><a href="/recipes/ios/standard_controls/image_view/animate_an_imageview">Animate an
+-   <span class="noChildren"><a href="/Recipes/ios/standard_controls/image_view/animate_an_imageview">Animate an
     ImageView</a></span> 
--   <span class="noChildren"><a href="/recipes/ios/standard_controls/image_view/load_an_image">Load an
+-   <span class="noChildren"><a href="/Recipes/ios/standard_controls/image_view/load_an_image">Load an
     Image</a></span>

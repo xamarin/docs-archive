@@ -2,9 +2,6 @@
 id: 91CBE1C6-82DE-3200-C24A-60B5BCAD4F0E
 title: "Load a Web Page"
 brief: "This recipe shows how to load a web page in a UIWebView control."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/web_view/load_a_web_page
 sdk:
   - title: "UIWebView Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIWebView_Class/Reference/Reference.html

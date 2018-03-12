@@ -2,9 +2,6 @@
 id: A522BA96-61C4-684A-BBE8-48A8812F9973
 title: "Display An Image"
 brief: "This recipe shows how to display an image using an ImageView."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/controls/imageview/display_an_image
 article:
   - title: "MultiResolution Sample" 
     url: /samples/monodroid/MultiResolution/

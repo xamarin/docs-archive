@@ -12,6 +12,6 @@ it's a very common control.
 
 # Basic Tasks
 
--   [Validate input and show errors.](/recipes/ios/standard_controls/text_field/validate_input) 
--   [Style text with fonts, colors, underline, and more.](/recipes/ios/standard_controls/text_field/style_text)
--   [Set the focus to a UITextField.](/recipes/ios/standard_controls/text_field/set-uitextfield-focus)
+-   [Validate input and show errors.](/Recipes/ios/standard_controls/text_field/validate_input) 
+-   [Style text with fonts, colors, underline, and more.](/Recipes/ios/standard_controls/text_field/style_text)
+-   [Set the focus to a UITextField.](/Recipes/ios/standard_controls/text_field/set-uitextfield-focus)

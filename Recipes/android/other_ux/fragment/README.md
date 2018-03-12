@@ -10,8 +10,8 @@ runtime.
 
  [ ![](Images/CreateAFragment.png)](Images/CreateAFragment.png)
 
--   <span class="noChildren"><a href="/recipes/android/other_ux/fragment/create_a_fragment">Create a
+-   <span class="noChildren"><a href="/Recipes/android/other_ux/fragment/create_a_fragment">Create a
     Fragment</a></span> 
--   <span class="noChildren"><a href="/recipes/android/other_ux/fragment/select_a_date_in_a_fragment">Select A
+-   <span class="noChildren"><a href="/Recipes/android/other_ux/fragment/select_a_date_in_a_fragment">Select A
     Date in a Fragment</a></span>
 

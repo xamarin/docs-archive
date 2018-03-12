@@ -2,9 +2,6 @@
 id: 1426450D-F53B-6708-2D79-DAC055668532
 title: "Record Audio"
 brief: "This recipe shows how to record audio using the MediaRecorder class and play it back with the MediaPlayer class."
-sample:
-  - title: Browse on GitHub
-  - url: https://github.com/xamarin/recipes/tree/master/android/media/audio/record_audio
 sdk:
   - title: MediaRecorder Class Reference
   - url: http://developer.android.com/reference/android/media/MediaRecorder.html

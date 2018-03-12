@@ -4,7 +4,7 @@ title: "Airplay"
 ---
 
 Airplay is a technology that allows iOS to wirelessly stream music and video
-to other devices. This section provides some recipes for controlling AirPlay in
+to other devices. This section provides some Recipes for controlling AirPlay in
 Xamarin.iOS.
 
--   [Enable or Disable Airplay](/recipes/ios/media/airplay/enable_or_disable_airplay)
+-   [Enable or Disable Airplay](/Recipes/ios/media/airplay/enable_or_disable_airplay)

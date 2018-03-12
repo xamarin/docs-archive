@@ -2,9 +2,6 @@
 id: 4538054F-6C77-40CC-9DBB-7285053E4029
 title: "Zoom a Collection View"
 brief: "This recipe shows how to use a gesture recognizer to allow the user to zoom in a Collection View."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/collection_view/collection_view_zoom
 sdk:
   - title: "Collection View Programming Guide" 
     url: https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/CollectionViewPGforIOS/Introduction/Introduction.html

@@ -3,9 +3,6 @@ id: 015068A0-D66E-484D-8772-6036A39D29F0
 title: "Select An Image"
 subtitle: "How to Pick an Image"
 brief: "This recipe will show how to pick an image that is stored on the device and display it in an ImageView widget."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/other_ux/pick_image
 api:
   - title: "Intent" 
     url: http://developer.android.com/reference/android/content/Intent.html

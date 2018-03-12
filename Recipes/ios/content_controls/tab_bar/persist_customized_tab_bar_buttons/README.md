@@ -2,16 +2,13 @@
 id: 8882FBE4-084A-7759-EED7-FE9EABBFEEBF
 title: "Persist Customized Tab Bar Buttons"
 brief: "This recipe provides one possible solution for how to save and reload a customized tab bar."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/tab_bar/persist_customized_tab_bar_buttons
 article:
   - title: "Create a Tab Bar" 
-    url: /recipes/ios/content_controls/tab_bar/create_a_tab_bar
+    url: /Recipes/ios/content_controls/tab_bar/create_a_tab_bar
   - title: "Add a Badge to a Tab Item" 
-    url: /recipes/ios/content_controls/tab_bar/add_a_badge_to_a_tab_item
+    url: /Recipes/ios/content_controls/tab_bar/add_a_badge_to_a_tab_item
   - title: "Specify Customizable Tab Bar Buttons" 
-    url: /recipes/ios/content_controls/tab_bar/specify_customizable_tab_bar_buttons
+    url: /Recipes/ios/content_controls/tab_bar/specify_customizable_tab_bar_buttons
 sdk:
   - title: "UITabBarController Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarController_Class/Reference/Reference.html

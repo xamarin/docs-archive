@@ -8,5 +8,5 @@ them.
 
  [ ![](Images/PickGalleryImage.png)](Images/PickGalleryImage.png)
 
--   [Browse Files](/recipes/android/data/files/browse_files) 
--   [Selecting a Gallery Image](/recipes/android/data/files/selecting_a_gallery_image)
+-   [Browse Files](/Recipes/android/data/files/browse_files) 
+-   [Selecting a Gallery Image](/Recipes/android/data/files/selecting_a_gallery_image)

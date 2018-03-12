@@ -9,9 +9,9 @@ with images and video.
 
  [ ![](Images/Image_Picker.png)](Images/Image_Picker.png)
 
--   [Choose a Photo From the Gallery](/recipes/ios/media/video_and_photos/choose_a_photo_from_the_gallery)
--   [Play a Video Using AVPlayer](/recipes/ios/media/video_and_photos/play_a_video_using_avplayer)
--   [Save Photo to Album with Metadata](/recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata)
--   [Save Photo to App Directory](/recipes/ios/media/video_and_photos/save_photo_to_app_directory)
--   [Play a Video Using MPMoviePlayerController](/recipes/ios/media/video_and_photos/play_a_video_using_mpmovieplayercontroller)
+-   [Choose a Photo From the Gallery](/Recipes/ios/media/video_and_photos/choose_a_photo_from_the_gallery)
+-   [Play a Video Using AVPlayer](/Recipes/ios/media/video_and_photos/play_a_video_using_avplayer)
+-   [Save Photo to Album with Metadata](/Recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata)
+-   [Save Photo to App Directory](/Recipes/ios/media/video_and_photos/save_photo_to_app_directory)
+-   [Play a Video Using MPMoviePlayerController](/Recipes/ios/media/video_and_photos/play_a_video_using_mpmovieplayercontroller)
 

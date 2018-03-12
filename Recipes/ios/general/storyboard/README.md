@@ -10,7 +10,7 @@ interface.
 
  [ ![](Images/BackgroundColour.png)](Images/BackgroundColour.png)
 
--   [Storyboard a TableView](/recipes/ios/general/storyboard/storyboard_a_tableview) 
+-   [Storyboard a TableView](/Recipes/ios/general/storyboard/storyboard_a_tableview) 
 
 
--   [Create an unwind Segue](/recipes/ios/general/storyboard/unwind_segue)
+-   [Create an unwind Segue](/Recipes/ios/general/storyboard/unwind_segue)

@@ -4,7 +4,7 @@ title: "Add a Badge to a Tab Item"
 brief: "This recipe shows how to display a badge on a tab."
 article:
   - title: "Create a Tab Bar" 
-    url: /recipes/ios/content_controls/tab_bar/create_a_tab_bar
+    url: /Recipes/ios/content_controls/tab_bar/create_a_tab_bar
 sdk:
   - title: "UINavigationBar Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html

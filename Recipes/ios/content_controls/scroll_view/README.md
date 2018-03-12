@@ -12,7 +12,7 @@ different parts of the content.
 
 &nbsp;
 
--   [Create a Horizontal Scrolling Button List](/recipes/ios/content_controls/scroll_view/create_a_horizontal_scrolling_button_list) 
--   [Implement Tap-to-Zoom](/recipes/ios/content_controls/scroll_view/implement_tap-to-zoom) 
--   [Use a ScrollView](/recipes/ios/content_controls/scroll_view/use_a_scrollview) 
--   [Zoom a ScrollView](/recipes/ios/content_controls/scroll_view/zoom_a_scrollview)
+-   [Create a Horizontal Scrolling Button List](/Recipes/ios/content_controls/scroll_view/create_a_horizontal_scrolling_button_list) 
+-   [Implement Tap-to-Zoom](/Recipes/ios/content_controls/scroll_view/implement_tap-to-zoom) 
+-   [Use a ScrollView](/Recipes/ios/content_controls/scroll_view/use_a_scrollview) 
+-   [Zoom a ScrollView](/Recipes/ios/content_controls/scroll_view/zoom_a_scrollview)

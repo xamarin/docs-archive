@@ -2,14 +2,6 @@
 id: 8C76A43F-B864-4315-9D27-10B13D110FAC
 title: "Zoom a ScrollView"
 brief: "This recipe shows how to load a large image into a scroll view and allow the user to pinch-zoom."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/scroll_view/zoom_a_scrollview
-article:
-  - title: "Use a ScrollView" 
-    url: /recipes/ios/content_controls/scroll_view/use_a_scrollview
-  - title: "Load an Image" 
-    url: /recipes/ios/standard_controls/image_view/load_an_image
 sdk:
   - title: "UIScrollView Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIScrollView_Class/Reference/UIScrollView.html

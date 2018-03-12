@@ -2,9 +2,6 @@
 id: 041A249C-F116-E49E-DB3C-1DCCE6378BC9
 title: "Animate a UIView using UIKit"
 brief: "This recipe shows how to implement and dynamically update simultaneous animations for a UIView using the UIViewPropertyAnimator class in UIKit. This recipe shows how to animate a UIImageView, but the same technique can be applied to any UIView."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/animate_a_uiview_using_uikit
 sdk:
   - title: "Core Animation Programming Guide" 
     url: https://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html

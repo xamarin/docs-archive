@@ -2,9 +2,6 @@
 id: 414980AA-64C0-3D0D-7306-71595C749B50
 title: "Populate a Table"
 brief: "This recipe shows you how to populate a UITableView with rows of data."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/tables/populate_a_table
 sdk:
   - title: "UITableView Class Reference" 
     url: http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableView_Class/Reference/Reference.html
@@ -87,5 +84,5 @@ table.Source = new TableSource(tableItems);
 # Additional Information
 
 The steps above only display a table, it does not accept user input. To show
-an alert when the user touches a row, refer to the recipe [Handle a Row Click](/recipes/ios/content_controls/tables/handle_a_row_click/).
+an alert when the user touches a row, refer to the recipe [Handle a Row Click](/Recipes/ios/content_controls/tables/handle_a_row_click/).
 

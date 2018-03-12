@@ -2,9 +2,6 @@
 id: 6468AABB-C81A-D68E-C315-0654E4234BC3
 title: "Dismiss the Keyboard"
 brief: "This recipe will show how to hide the keyboard."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/input/keyboards/dismiss_the_keyboard
 sdk:
   - title: "Responder Object" 
     url: http://developer.apple.com/library/ios/#documentation/general/conceptual/Devpedia-CocoaApp/Responder.html

@@ -8,4 +8,4 @@ processing, as well as face detection support.
 
  [ ![](Images/ColorControls.png)](Images/ColorControls.png)
 
--   [Adjust Contrast and Brightness of an Image](/recipes/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image)
+-   [Adjust Contrast and Brightness of an Image](/Recipes/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image)

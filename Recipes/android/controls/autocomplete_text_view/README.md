@@ -8,4 +8,4 @@ suggestions automatically as the user begins typing.
 
  [ ![](Images/AutoCompleteTextView.png)](Images/AutoCompleteTextView.png)
 
--   [Add an Autocomplete Text Input](/recipes/android/controls/autocomplete_text_view/add_an_autocomplete_text_input) &nbsp;
+-   [Add an Autocomplete Text Input](/Recipes/android/controls/autocomplete_text_view/add_an_autocomplete_text_input) &nbsp;

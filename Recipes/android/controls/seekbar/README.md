@@ -2,9 +2,6 @@
 id: B620BDFA-8377-4FD0-AC9E-7BB0D4289863
 title: "SeekBar"
 brief: "This recipe demonstrates how to use the SeekBar control. The SeekBar control is visually similar to the ProgressBar but it has a draggable slider that will allow the user to change the value displayed by the control. This will provide an example showing how to respond to changes in the SeekBar using .NET events or the SeekBar.IOnSeekBarrChangeListenerinterface."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/controls/seekbar
 article:
   - title: "Seek Bars and Sliders" 
     url: http://developer.android.com/design/building-blocks/seek-bars.html

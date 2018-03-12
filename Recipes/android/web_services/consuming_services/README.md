@@ -13,5 +13,5 @@ actions.
 
 # Service Basics
 
--   [Call a REST Web Service](/recipes/android/web_services/consuming_services/call_a_rest_web_service)
+-   [Call a REST Web Service](/Recipes/android/web_services/consuming_services/call_a_rest_web_service)
 

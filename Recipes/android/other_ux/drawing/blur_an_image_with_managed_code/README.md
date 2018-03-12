@@ -3,20 +3,17 @@ id: F3BF0D4E-73B1-469E-91CE-9A90438FC73B
 title: "Blur an Image with Managed Code"
 subtitle: "Apply a Gaussian Blur with Managed Code"
 brief: "This recipe shows how to apply a Gaussian blur an image using managed code. This is managed code and will work on projects that must support Android 2.2 (API level 8)."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/other_ux/drawing/blur_an_image_with_managed_code
 article:
   - title: "Stack Blur: Fast But Goodlooking" 
     url: http://incubator.quasimondo.com/processing/fast_blur_deluxe.php
 recipe:
   - title: "Blur an Image with Renderscript" 
-    url: /recipes/android/other_ux/drawing/blur_an_image_with_renderscript/
+    url: /Recipes/android/other_ux/drawing/blur_an_image_with_renderscript/
   - title: "Load Large Bitmaps Efficiently" 
-    url: /recipes/android/resources/general/load_large_bitmaps_efficiently/
+    url: /Recipes/android/resources/general/load_large_bitmaps_efficiently/
 ---
 
-This recipe demonstrates one way to blur an image using only C# code. This is not as quick as [using RenderScript](/recipes/android/other_ux/drawing/blur_an_image_with_renderscript/). The code in this recipe should work on all Android API levels.
+This recipe demonstrates one way to blur an image using only C# code. This is not as quick as [using RenderScript](/Recipes/android/other_ux/drawing/blur_an_image_with_renderscript/). The code in this recipe should work on all Android API levels.
 
 The code can be found inside the class `StackBlur`. It has a single method, described in the following interface:
 
@@ -86,7 +83,7 @@ public async Task<Bitmap> GetBlurryResizedImageAsync(string path, int width, int
 }
 ```
 
-Scaling the image to a smaller size is [covered by another recipe](/recipes/android/resources/general/load_large_bitmaps_efficiently/).
+Scaling the image to a smaller size is [covered by another recipe](/Recipes/android/resources/general/load_large_bitmaps_efficiently/).
 
  <a name="Summary" class="injected"></a>
 

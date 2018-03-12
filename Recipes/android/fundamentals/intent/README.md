@@ -17,6 +17,6 @@ perform the intention.
 
 # Specific Intents
 
--   [Launch the Phone Dialer](/recipes/android/fundamentals/intent/launch_the_phone_dialer) 
--   [Open a Webpage in the Browser Application](/recipes/android/fundamentals/intent/open_a_webpage_in_the_browser_application) 
--   [Launch the Map Application](/recipes/android/fundamentals/intent/launch_the_map_application)
+-   [Launch the Phone Dialer](/Recipes/android/fundamentals/intent/launch_the_phone_dialer) 
+-   [Open a Webpage in the Browser Application](/Recipes/android/fundamentals/intent/open_a_webpage_in_the_browser_application) 
+-   [Launch the Map Application](/Recipes/android/fundamentals/intent/launch_the_map_application)

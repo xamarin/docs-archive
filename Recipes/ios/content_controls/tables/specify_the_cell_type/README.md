@@ -2,9 +2,6 @@
 id: 1921124B-EA2B-1D63-D3D0-C5883471AEF8
 title: "Specify the Cell Type"
 brief: "This recipe shows you how to change the cell type and therefore the appearance of the table."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/tables/specify_the_cell_type
 sdk:
   - title: "UITableView Class Reference" 
     url: http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableView_Class/Reference/Reference.html

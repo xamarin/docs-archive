@@ -2,9 +2,6 @@
 id: 9707C196-E076-CB01-79A5-7EEC11186497
 title: "Enumerate Fonts"
 brief: "This recipe shows how to list the fonts available on iOS."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/standard_controls/fonts/enumerate_fonts
 sdk:
   - title: "UIFont Class Reference" 
     url: https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIFont_Class/

@@ -2,9 +2,6 @@
 id: 1C61F57E-E1F5-8287-3356-387067A85247
 title: "Create a Tab Bar"
 brief: "This recipe shows you how to create a Tab Bar in your Xamarin.iOS application."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/tab_bar/create_a_tab_bar
 sdk:
   - title: "UITabBarController Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UITabBarController_Class/Reference/Reference.html

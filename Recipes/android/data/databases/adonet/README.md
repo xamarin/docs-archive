@@ -4,16 +4,14 @@ title: "Create a Database with ADO.NET"
 brief: "This recipe will demonstrate how to create an SQLite database with ADO.NET."
 article:
   - title: "Create an SQLite database with ADO.NET for iOS" 
-    url: recipes/ios/data/sqlite/create_a_database_with_ado.net
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/data/databases/adonet
-<a name="Requirements" class="injected"></a>
+    url: Recipes/ios/data/sqlite/create_a_database_with_ado.net
+---
+
 # Requirements
 There are no special requirements for this recipe, but you may need to set the correct permission if you have your phone set to save applications, or data, to the SDCard.
 You can find this by going into <uiitem>Project -> CreateDatabaseWithAdoNet Options -> Android Application</uiitem>. In the
 required permissions box, select <uiitem>WriteExternalStorage</uiitem>, as illustrated below:
----
+
 
 ![](Images/permissions.png)
 

@@ -1,9 +1,6 @@
 ---
 id: 028146D1-A315-42CD-9A3E-0D64F8E539DC
 title: Create a Custom Compound View
-samplecode:
-  - title: Browse on GitHub
-    url: https://github.com/xamarin/recipes/tree/master/android/layout/custom_compound_view
 dateupdated: 2017-07-25
 ---
 

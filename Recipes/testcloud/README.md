@@ -10,13 +10,14 @@ dateupdated: 2016-03-22
 # iOS
 
 <a name="Set_Accessibility_Identififer_in_iOS" class="injected"></a>
-## [Set the Accessibility Identifier for iOS](/recipes/testcloud/set-accessibilityidentifier-ios)
 
-This recipe discusses how to programatically set the accessibility identifier on views in iOS.
+## [Set the Accessibility Identifier for iOS](/Recipes/testcloud/set-accessibilityidentifier-ios)
+
+This recipe discusses how to programmatically set the accessibility identifier on views in iOS.
 
 # Android
 
-## [Start Activity with A Backdoor ](/recipes/testcloud/start-activity-with-backdoor)
+## [Start Activity with A Backdoor ](/Recipes/testcloud/start-activity-with-backdoor)
 
 This recipe will demonstrate how to start a Activity in Android using a backdoor. 
 

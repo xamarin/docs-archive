@@ -2,9 +2,6 @@
 id: EFCBA08A-6069-9EB4-2D88-65D3B7FF92DF
 title: "Rotate Animation"
 brief: "This tutorial will show how to rotate an animation."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/other_ux/animation/rotate_animation
 sdk:
   - title: "View Animation" 
     url: http://developer.android.com/guide/topics/graphics/view-animation.html

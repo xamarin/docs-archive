@@ -2,9 +2,6 @@
 id: 7C9D42C9-C8B5-43EA-A905-B0235BA51D70
 title: "Query Now Playing"
 brief: "Get information about the song playing in the Music Player."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/media/sound/query_now_playing
 sdk:
   - title: "iPod Library Access Guide" 
     url: https://developer.apple.com/library/ios/documentation/Audio/Conceptual/iPodLibraryAccess_Guide/UsingTheiPodLibrary/UsingTheiPodLibrary.html

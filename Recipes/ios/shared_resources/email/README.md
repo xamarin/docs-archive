@@ -9,4 +9,4 @@ html in the message body, as well as attachments.
 
  [ ![](Images/Send_an_Email.png)](Images/Send_an_Email.png)
 
--   [Send an Email](/recipes/ios/shared_resources/email/send_an_email)
+-   [Send an Email](/Recipes/ios/shared_resources/email/send_an_email)

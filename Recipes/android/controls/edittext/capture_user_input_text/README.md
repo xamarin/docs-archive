@@ -2,9 +2,6 @@
 id: EC009100-EAE0-0BDA-3AC9-60BBF78854EB
 title: Capture User Input Text
 brief: This recipe shows how to use EditText control to capture text entered by a user.
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/controls/edittext/capture_user_input_text
 article:
   - title: "EditText Tutorial" 
     url: /guides/android/user_interface/form_elements/edit_text

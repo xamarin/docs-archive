@@ -4,7 +4,7 @@ title: "CoreAnimation"
 subtitle: "Use Animation to Create Cinematic UIs"
 samplecode:
   - title: "Core Animation" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation
+    url: https://github.com/xamarin/Recipes/tree/master/ios/animation/coreanimation
 ---
 
 iOS includes very sophisticated animation APIs that can make your application
@@ -18,8 +18,8 @@ changes. For more complex animations, there's a very sophisticated API.
 
 ## View-Based Animation
 
--   [Animate a UIView using UIKit](/recipes/ios/animation/coreanimation/animate_a_uiview_using_uikit) 
--   [Create an Animation Block](/recipes/ios/animation/coreanimation/create_an_animation_block) 
+-   [Animate a UIView using UIKit](/Recipes/ios/animation/coreanimation/animate_a_uiview_using_uikit) 
+-   [Create an Animation Block](/Recipes/ios/animation/coreanimation/create_an_animation_block) 
 
 
  <a name="Advanced_Animation&nbsp;" class="injected"></a>
@@ -27,7 +27,7 @@ changes. For more complex animations, there's a very sophisticated API.
 
 ## Advanced Animation&nbsp;
 
--   [Create a Keyframe Animation](/recipes/ios/animation/coreanimation/create_a_keyframe_animation) 
--   [Create an Animation Group](/recipes/ios/animation/coreanimation/create_an_animation_group) 
--   [Create an Implicit Animation](/recipes/ios/animation/coreanimation/create_an_implicit_animation) 
--   [Create An Explicit Animation](/recipes/ios/animation/coreanimation/create_an_explicit_animation)
+-   [Create a Keyframe Animation](/Recipes/ios/animation/coreanimation/create_a_keyframe_animation) 
+-   [Create an Animation Group](/Recipes/ios/animation/coreanimation/create_an_animation_group) 
+-   [Create an Implicit Animation](/Recipes/ios/animation/coreanimation/create_an_implicit_animation) 
+-   [Create An Explicit Animation](/Recipes/ios/animation/coreanimation/create_an_explicit_animation)

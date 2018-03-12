@@ -4,9 +4,6 @@ title: "App Links for iOS"
 subtitle: "How to Link to other apps and Handle Incoming links using App Links"
 dateupdated: 2017-10-05
 brief: "This recipe will show you how to link to other apps using App Links, as well as register your app to receive and parse incoming App Links."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/cross-platform/app-links/app-links-ios
 article:
   - title: "Creating Connected App Experiences with App Links" 
     url: http://blog.xamarin.com/creating-connected-app-experiences-with-app-links-and-rivets-with-xamarin/

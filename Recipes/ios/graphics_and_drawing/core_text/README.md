@@ -8,4 +8,4 @@ text.
 
  [ ![](Images/Core_Text.png)](Images/Core_Text.png)
 
--   [Draw Unicode Text with CoreText](/recipes/ios/graphics_and_drawing/core_text/draw_unicode_text_with_coretext)
+-   [Draw Unicode Text with CoreText](/Recipes/ios/graphics_and_drawing/core_text/draw_unicode_text_with_coretext)

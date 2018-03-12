@@ -2,9 +2,6 @@
 id: 63F83DDE-0E45-4483-AFE9-7BF446A7CAC2
 title: "Detect the GSM Signal Strength"
 brief: "This recipe will demonstrate how to detect the GSM signal strength in Xamarin.Android."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/networking/gsm_strength
 sdk:
   - title: "PhoneStateListener" 
     url: https://developer.android.com/reference/android/telephony/PhoneStateListener.html

@@ -9,4 +9,4 @@ cells arranging in rows and columns.
 
  [ ![](Images/gridview.png)](Images/gridview.png)
 
--   [Create a Grid View](/recipes/android/layout/grid_view/create_a_grid_view)
+-   [Create a Grid View](/Recipes/android/layout/grid_view/create_a_grid_view)

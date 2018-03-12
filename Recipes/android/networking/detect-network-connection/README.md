@@ -2,9 +2,6 @@
 id: 38C9FC4E-D563-5B6E-A5E7-DA4DDD91F5A3  
 title: Detect Network Connection  
 brief: This recipe provides some quick snippets on how detect the type of network connection in use or how to query a specific type of network connection.  
-samplecode:
-  - title: Browse on GitHub
-    url: https://github.com/xamarin/recipes/tree/master/android/networking/networkinfo/detect_network_connection
 sdk:
     - title: ConnectivityManager
       url: /api/type/Android.Net.ConnectivityManager/

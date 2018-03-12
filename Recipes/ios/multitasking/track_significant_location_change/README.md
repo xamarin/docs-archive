@@ -69,5 +69,5 @@ LocMgr.StopMonitoringSignificantLocationChanges ();
 
 ![]("Images/02.png")
 
-To test significant location changes in the iOS simulator, refer to the <a href="recipes/ios/multitasking/test_location_changes_in_simulator" target="_blank">Test Location Changes in Simulator recipe</a>.
+To test significant location changes in the iOS simulator, refer to the <a href="Recipes/ios/multitasking/test_location_changes_in_simulator" target="_blank">Test Location Changes in Simulator recipe</a>.
 

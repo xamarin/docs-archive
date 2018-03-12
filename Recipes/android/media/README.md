@@ -5,5 +5,5 @@ title: "Media"
 
 Playing and recording audio and video
 
--  [Audio](/recipes/android/media/audio)
--  [Video](/recipes/android/media/video)
+-  [Audio](/Recipes/android/media/audio)
+-  [Video](/Recipes/android/media/video)

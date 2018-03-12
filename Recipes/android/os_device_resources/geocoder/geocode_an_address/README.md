@@ -2,9 +2,6 @@
 id: CCB6BC87-C475-6B73-3B68-B52249C9481B
 title: "Geocode an Address"
 brief: "This recipe shows how use the Geocoder to get a latitude and longitude for an address."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/os_device_resources/geocoder/geocode_an_address
 article:
   - title: "Maps and Location" 
     url: /guides/android/platform_features/maps_and_location

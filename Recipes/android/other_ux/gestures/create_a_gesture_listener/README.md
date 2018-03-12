@@ -2,9 +2,6 @@
 id: 5D7E958B-287E-5D68-9BDD-E94E4B2FAFFB
 title: "Create a Gesture Listener"
 brief: "This recipe will show how to recognize a fling gesture. A fling gesture is when the user presses on the screen, and while maintaining contact with the screen moves their finger in a given direction."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/other_ux/gestures/create_a_gesture_listener
 sdk:
   - title: "GestureDetector" 
     url: http://developer.android.com/reference/android/view/GestureDetector.html

@@ -2,9 +2,6 @@
 id: D73A5C97-CB9C-0556-8D66-9AD37F178CFA
 title: "Record Sound"
 brief: "This recipe illustrates how to record a sound file from the active audio input (either the built-in microphone or the audio input) using the AVAudioRecorder class."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/media/sound/record_sound
 sdk:
   - title: "AVFoundation Programming Guide" 
     url: https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html

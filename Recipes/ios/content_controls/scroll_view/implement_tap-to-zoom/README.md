@@ -2,16 +2,6 @@
 id: 3DE8385B-075C-3B7F-33D4-9CA048E26DE6
 title: "Implement Tap-to-Zoom"
 brief: "This recipe shows how to load an image into a scroll view and allow the user to double-tap to zoom."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/scroll_view/implement_tap-to-zoom
-article:
-  - title: "Use a ScrollView" 
-    url: /recipes/ios/content_controls/scroll_view/use_a_scrollview
-  - title: "Load an Image" 
-    url: /recipes/ios/standard_controls/image_view/load_an_image
-  - title: "Zoom a ScrollView" 
-    url: /recipes/ios/content_controls/scroll_view/zoom_a_scrollview
 sdk:
   - title: "UIScrollView Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIScrollView_Class/Reference/UIScrollView.html

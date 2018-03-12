@@ -5,8 +5,6 @@ brief: "This recipe shows how to use the Storyboard to build a user interface wi
 samplecode:
   - title: "Storyboard Table" 
     url: /samples/monotouch/StoryboardTable/
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/general/storyboard/storyboard_a_tableview
 sdk:
   - title: "UIStoryboard Class Reference&nbsp;" 
     url: http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html

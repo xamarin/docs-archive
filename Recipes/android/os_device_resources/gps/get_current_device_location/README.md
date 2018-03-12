@@ -2,9 +2,6 @@
 id: D037BC0A-EEFB-7EAA-F023-4D8993EABFF6
 title: "Get Current Device Location"
 brief: "This recipe shows how to get the location of a device using Android.Location.LocationManager."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/os_device_resources/gps/get_current_device_location
 article:
   - title: "Maps and Location" 
     url: /guides/android/platform_features/maps_and_location

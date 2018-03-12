@@ -7,4 +7,4 @@ A TextureView is a specialized view for a hardware accelerated window that is
 used to display a content stream (such as a video) from a local or a remote
 source.
 
--   [Display a stream from the camera](/recipes/android/other_ux/textureview/display_a_stream_from_the_camera)
+-   [Display a stream from the camera](/Recipes/android/other_ux/textureview/display_a_stream_from_the_camera)

@@ -2,12 +2,9 @@
 id: 8F0A8F14-11AF-4B75-A697-FA21AB9B522D
 title: "Select A Date in a Fragment"
 brief: "This recipe will show how to use a DatePickerDialog inside of a Fragment."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/other_ux/fragment/select_a_date_in_a_fragment
 article:
   - title: "Create a Fragment" 
-    url: /recipes/android/other_ux/fragment/create_a_fragment
+    url: /Recipes/android/other_ux/fragment/create_a_fragment
   - title: "Fragments" 
     url: /guides/android/platform_features/fragments
   - title: "Fragments Walkthrough" 

@@ -18,9 +18,9 @@ The two new frameworks contain the following functionality:
 
  [ ![](Images/Choose01.png)](Images/Choose01.png)
 
--   <span class="noChildren"><a href="/recipes/ios/shared_resources/contacts/choose_a_contact">Choose a
+-   <span class="noChildren"><a href="/Recipes/ios/shared_resources/contacts/choose_a_contact">Choose a
     Contact</a></span> 
--   <span class="noChildren"><a href="/recipes/ios/shared_resources/contacts/create_a_new_contact">Create a New
+-   <span class="noChildren"><a href="/Recipes/ios/shared_resources/contacts/create_a_new_contact">Create a New
     Contact</a></span> 
--   <span class="noChildren"><a href="/recipes/ios/shared_resources/contacts/find_a_contact">Find a
+-   <span class="noChildren"><a href="/Recipes/ios/shared_resources/contacts/find_a_contact">Find a
     Contact</a></span>

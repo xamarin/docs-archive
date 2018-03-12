@@ -6,4 +6,4 @@ title: "Phone"
 The Phone app can be launched using the tel URL scheme from another application.
 
 
--   [Dial Phone By URI](/recipes/ios/shared_resources/Phone/dial-phone-uri)
+-   [Dial Phone By URI](/Recipes/ios/shared_resources/Phone/dial-phone-uri)

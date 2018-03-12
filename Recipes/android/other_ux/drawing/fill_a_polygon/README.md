@@ -2,9 +2,6 @@
 id: 69740674-4B3C-6D23-134B-4FFA3C17FE0D
 title: "Fill A Polygon"
 brief: "This recipe shows one way of drawing a filled polygon using Android.Graphics.Path and Android.Graphics.Canvas."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/other_ux/drawing/fill_a_polygon
 sdk:
   - title: "Canvas" 
     url: http://developer.android.com/reference/android/graphics/Canvas.html

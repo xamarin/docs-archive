@@ -2,16 +2,13 @@
 id: D6D866A3-95F9-9005-A018-A6A1345D5D5C
 title: "Save Documents"
 brief: "This recipe shows how to save a text file to the Documents folder."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/general/file_system/save_documents
 article:
   - title: "Load a File" 
-    url: /recipes/ios/general/file_system/load_a_file
+    url: /Recipes/ios/general/file_system/load_a_file
   - title: "Enumerate Directories" 
-    url: /recipes/ios/general/file_system/enumerate_directories
+    url: /Recipes/ios/general/file_system/enumerate_directories
   - title: "Load an Image" 
-    url: /recipes/ios/standard_controls/image_view/load_an_image
+    url: /Recipes/ios/standard_controls/image_view/load_an_image
 ---
 
 <a name="Recipe" class="injected"></a>

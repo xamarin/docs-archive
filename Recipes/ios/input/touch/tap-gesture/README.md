@@ -2,9 +2,6 @@
 id: 754EDCD7-9555-4FF2-B031-9BA7A5B6E43F
 title: "Use a Tap Gesture"
 brief: "In iOS, tap gestures are registered with the UITapGestureRecognizer class. This recipe demonstrates how to use this class to recognize single and multiple tap gestures."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/input/touch/tap-gesture
 sdk:
   - title: "UITapGestureRecognizer" 
     url: https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITapGestureRecognizer_Class/

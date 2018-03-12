@@ -2,9 +2,6 @@
 id: 55EF1F02-57D2-4583-69BE-1F3470C7FCCE
 title: "Create a Login Window Using MonoTouch.Dialog"
 brief: "This recipe shows step-by-step how to create a login screen with MonoTouch.Dialog."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/tables/create_a_login_window_using_monotouch.dialog
 ---
 
 <a name="Recipe" class="injected"></a>

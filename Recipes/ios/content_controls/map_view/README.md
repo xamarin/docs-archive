@@ -16,9 +16,9 @@ display.
 
 # Map View Basics
 
--   [Display a Location](/recipes/ios/content_controls/map_view/display_a_location) 
--   [Display Device Location](/recipes/ios/content_controls/map_view/display_device_location) 
--   [Change Map Modes](/recipes/ios/content_controls/map_view/change_map_modes) 
+-   [Display a Location](/Recipes/ios/content_controls/map_view/display_a_location) 
+-   [Display Device Location](/Recipes/ios/content_controls/map_view/display_device_location) 
+-   [Change Map Modes](/Recipes/ios/content_controls/map_view/change_map_modes) 
 
 
  <a name="Overlays_and_Annotations" class="injected"></a>
@@ -26,6 +26,6 @@ display.
 
 # Overlays and Annotations
 
--   [Add an Overlay to a Map](/recipes/ios/content_controls/map_view/add_an_overlay_to_a_map) 
--   [Add an Annotation to a Map](/recipes/ios/content_controls/map_view/add_an_annotation_to_a_map) 
--   [Handle Annotation Click](/recipes/ios/content_controls/map_view/handle_annotation_click)
+-   [Add an Overlay to a Map](/Recipes/ios/content_controls/map_view/add_an_overlay_to_a_map) 
+-   [Add an Annotation to a Map](/Recipes/ios/content_controls/map_view/add_an_annotation_to_a_map) 
+-   [Handle Annotation Click](/Recipes/ios/content_controls/map_view/handle_annotation_click)

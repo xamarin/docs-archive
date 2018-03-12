@@ -2,9 +2,6 @@
 id: 92FBA356-314E-4971-8E64-8F31379422D1
 title: "Drag and Rotate an Image"
 brief: "This recipe shows how to use gesture recognizers to drag and rotate an image."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/input/touch/drag_rotate_image
 sdk:
   - title: "UIRotateGestureRecognizer" 
     url: http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIRotateGestureRecognizer_Class/Reference/Reference.html

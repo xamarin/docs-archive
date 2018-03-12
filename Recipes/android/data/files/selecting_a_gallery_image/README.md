@@ -2,9 +2,6 @@
 id: E43B67D6-25DA-87AF-1046-E9ACB6FE4110
 title: "Selecting a Gallery Image"
 brief: "This recipe shows how to read an image from the gallery and display it in an ImageView."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/data/files/selecting_a_gallery_image
 sdk:
   - title: "Activity onActivtyResult" 
     url: http://developer.android.com/reference/android/app/Activity.html

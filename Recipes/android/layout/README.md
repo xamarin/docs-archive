@@ -7,9 +7,9 @@ dateupdated: 2017-07-24
 --
 ---
 
-This section contains recipes on how layout Android Activities.
+This section contains Recipes on how layout Android Activities.
 
--  [Compound View](/recipes/android/layout/compound_view) &ndash; This receipe is an example of how to subclass an Android widget and create a custom view.
--  [Grid View](/recipes/android/layout/grid_view)
--  [Table Layout](/recipes/android/layout/table_layout)
+-  [Compound View](/Recipes/android/layout/compound_view) &ndash; This receipe is an example of how to subclass an Android widget and create a custom view.
+-  [Grid View](/Recipes/android/layout/grid_view)
+-  [Table Layout](/Recipes/android/layout/table_layout)
 

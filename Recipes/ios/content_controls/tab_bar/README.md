@@ -15,7 +15,7 @@ functionality for displaying more tabs, reordering, customizing, and more.
 
 # Basic Usage
 
--   [Create a Tab Bar](/recipes/ios/content_controls/tab_bar/create_a_tab_bar) 
+-   [Create a Tab Bar](/Recipes/ios/content_controls/tab_bar/create_a_tab_bar) 
 
 
  <a name="Customization" class="injected"></a>
@@ -23,6 +23,6 @@ functionality for displaying more tabs, reordering, customizing, and more.
 
 # Customization
 
--   [Add a Badge to a Tab Item](/recipes/ios/content_controls/tab_bar/add_a_badge_to_a_tab_item) 
--   [Specify Customizable Tab Bar Buttons](/recipes/ios/content_controls/tab_bar/specify_customizable_tab_bar_buttons) 
--   [Persist Customized Tab Bar Buttons](/recipes/ios/content_controls/tab_bar/persist_customized_tab_bar_buttons)
+-   [Add a Badge to a Tab Item](/Recipes/ios/content_controls/tab_bar/add_a_badge_to_a_tab_item) 
+-   [Specify Customizable Tab Bar Buttons](/Recipes/ios/content_controls/tab_bar/specify_customizable_tab_bar_buttons) 
+-   [Persist Customized Tab Bar Buttons](/Recipes/ios/content_controls/tab_bar/persist_customized_tab_bar_buttons)

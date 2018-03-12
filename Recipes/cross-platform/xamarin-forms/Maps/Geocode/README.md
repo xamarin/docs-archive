@@ -3,9 +3,6 @@ id: 5995F84C-8039-49D9-BEA6-7BF74D91C45E
 title: "Geocode a street address"
 subtitle: "How to convert a street address to latitude and longitude coordinates"
 brief: "This recipe shows how to geocode a user supplied street address to latitude and longitude coordinates by using the `Geocoder` class included in Xamarin.Forms.Maps."
-samplecode:
-  - title: "Browse on Github" 
-    url: https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Maps/Geocode/
 article:
   - title: "Working with Maps in Xamarin.Forms" 
     url: /guides/xamarin-forms/working-with/maps/

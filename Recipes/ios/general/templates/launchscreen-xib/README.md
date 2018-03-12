@@ -1,9 +1,6 @@
 ---
 id: 0E7383D8-C50A-40C9-9F15-0F17558721DA
 title: "Creating a Launch Screen using a .xib"
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/general/templates/launchscreen-xib
 article:
   - title: "Managing Launch Screens" 
     url: /guides/ios/application_fundamentals/working_with_images/launch-screens/#Managing_Launch_Screens

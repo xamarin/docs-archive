@@ -3,15 +3,12 @@ id: 3BF2B1FB-B4D3-4986-9630-7DC7B19E55D7
 title: "Blur an Image with Renderscript"
 subtitle: "Apply a Gaussian Blur with Renderscript"
 brief: "This recipe shows how to apply a Gaussian blur an image using the class Android.Renderscripts.ScriptIntrinsicBlur, which is first available in Android 4.2.2 (API level 17)."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/other_ux/drawing/blur_an_image_with_renderscript
 article:
   - title: "Blurring Images on Android" 
     url: http://blog.neteril.org/blog/2013/08/12/blurring-images-on-android/
 recipe:
   - title: "Blur an Image with Managed Code" 
-    url: /recipes/android/other_ux/drawing/blur_an_image_with_managed_code/
+    url: /Recipes/android/other_ux/drawing/blur_an_image_with_managed_code/
 api:
   - title: "ScriptIntrinsicBlur" 
     url: http://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlur.html

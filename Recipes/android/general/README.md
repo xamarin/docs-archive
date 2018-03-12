@@ -5,4 +5,4 @@ title: "General"
 
 Topics common throughout Android development
 
--  [Projects](/recipes/android/general/projects)
+-  [Projects](/Recipes/android/general/projects)

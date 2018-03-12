@@ -3,14 +3,6 @@
 id: D8C547E3-6671-2680-6163-E0B21414A022
 title: "Create An ImageButton"
 brief: "This recipe shows how to use an ImageButton in a Xamarin.Android application."
-  - title: "Browse on GitHub"
-    url: /samples/monodroid/controls/imagebutton/create_an_imagebutton  
-  - title: "ImageButton"
-    url: /api/type/Android.Widget.ImageButton/
-  - title: "VectorDrawable"
-    url: https://developer.android.com/reference/android/support/graphics/drawable/VectorDrawableCompat.html
-  - title: "ImageButton"
-    url: /api/type/Android.Widget.ImageButton/
 dateupdated: 2017-07-17
 --
 ---

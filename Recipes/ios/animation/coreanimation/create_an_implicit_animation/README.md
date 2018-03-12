@@ -2,9 +2,6 @@
 id: 4C7C6048-2E6E-0CB9-8A8B-E0E3E6F7F332
 title: "Create an Implicit Animation"
 brief: "This recipe shows how to create an implicit animation using Core Animation."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/create_an_implicit_animation
 sdk:
   - title: "Core Animation Programming Guide" 
     url: https://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html

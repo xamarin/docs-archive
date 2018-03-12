@@ -2,9 +2,6 @@
 id: D60C5A6A-FC9E-6AF2-7A70-81FF6249E7C4
 title: "Create an Animation Block"
 brief: "This recipe shows how to animate using blocks from Xamarin.iOS."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/animation/coreanimation/create_an_animation_block
 sdk:
   - title: "Core Animation Programming Guide" 
     url: http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html

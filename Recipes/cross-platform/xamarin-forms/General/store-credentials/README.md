@@ -3,9 +3,7 @@ id: FFC8A717-915A-4A07-BD4F-CF63D7B7F168
 title: "Securely store credentials"
 subtitle: "Using Xamarin.Auth to store data in the account store"
 brief: "This recipe shows how to securely store data in an account store that's backed by Keychain services in iOS, and the KeyStore class in Android."
-samplecode:
-  - title: "Browse on Github" 
-    url: https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/General/StoreCredentials/
+
 sdk:
   - title: "Xamarin.Auth" 
     url: https://www.nuget.org/packages/Xamarin.Auth

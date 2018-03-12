@@ -2,9 +2,6 @@
 id: D94E6E1C-A6AF-F274-5468-2ED601AC6FA1
 title: "Change the Nav Bar Transparency"
 brief: "This recipe shows how to change the transparency of the navigation bar."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/navigation_controller/change_the_nav_bar_transparency
 sdk:
   - title: "UINavigationBar Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UINavigationBar_Class/Reference/UINavigationBar.html

@@ -2,12 +2,9 @@
 id: E5EEB812-C303-3B50-5C05-929C66B41390
 title: "Add an Annotation to a Map"
 brief: "This recipe shows how to add an annotation to a map."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/map_view/add_an_annotation_to_a_map
 article:
   - title: "Displaying a Location" 
-    url: /recipes/ios/content_controls/map_view/display_device_location
+    url: /Recipes/ios/content_controls/map_view/display_device_location
 sdk:
   - title: "MKMapView Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html
@@ -24,7 +21,7 @@ A basic annotation consists of a pin marker added to map. When touched, the
 pin displays a small popup with more information. To add an annotation to a
 MKMapView:
 
-1. Start with an existing MKMapView or review the  [Displaying a Location (MapView)](http://docs.xamarin.com/recipes/ios/content_controls/map_view/display_a_location) recipe.
+1. Start with an existing MKMapView or review the  [Displaying a Location (MapView)](http://docs.xamarin.com/Recipes/ios/content_controls/map_view/display_a_location) recipe.
 
 <ol start="2">
 	<li>Create a subclass of MKAnnotation</li>
@@ -82,5 +79,5 @@ mapView.Region = new MKCoordinateRegion(coords, span);
 # Additional Information
 
 The MilesToLatitudeDegrees and MilesToLongitudeDegrees helper methods can be
-found in the [Displaying a Location](/recipes/ios/content_controls/map_view/display_device_location) recipe.
+found in the [Displaying a Location](/Recipes/ios/content_controls/map_view/display_device_location) recipe.
 

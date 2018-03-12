@@ -15,5 +15,5 @@ more activities.
 
 # Activity Basics
 
--   [Start an Activity](/recipes/android/fundamentals/activity/start_an_activity) 
--   [Pass Data Between Activity](/recipes/android/fundamentals/activity/pass_data_between_activity)
+-   [Start an Activity](/Recipes/android/fundamentals/activity/start_an_activity) 
+-   [Pass Data Between Activity](/Recipes/android/fundamentals/activity/pass_data_between_activity)

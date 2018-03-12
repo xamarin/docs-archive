@@ -2,11 +2,6 @@
 id: 867AC718-85E4-4750-9362-CB031EC02D84
 title: "Start Activity For Result"
 brief: "In the Hello, Multiscreen Applications guide, we learned how to navigate and pass data from one Activity to the next. This recipe augments the sample application built in the Hello, Multiscreen guide to pass data from from the second Activity back to the starting Activity using StartActivityForResult."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/fundamentals/activity/start_activity_for_result/HelloMultiScreen
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/fundamentals/activity/start_activity_for_result/HelloMultiScreenFinal
 article:
   - title: "Hello, Multiscreen Applications" 
     url: /guides/android/getting_started/hello,_multi-screen_applications

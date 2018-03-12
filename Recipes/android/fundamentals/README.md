@@ -6,6 +6,6 @@ title: "Fundamentals"
 How to perform basic actions in Android including activities, intents, and
 services
 
--  [Activity](/recipes/android/fundamentals/activity)
--  [Intent](/recipes/android/fundamentals/intent)
+-  [Activity](/Recipes/android/fundamentals/activity)
+-  [Intent](/Recipes/android/fundamentals/intent)
 -   [Service](/guides/android/application_fundamentals/services)

@@ -2,9 +2,6 @@
 id: F8D057EB-A890-4831-952C-3538862F04C5
 title: "Use an ArrayAdapter"
 brief: "This recipe shows how to bind an array to a list using an ArrayAdapter."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/data/adapters/use_an_arrayadapter
 sdk:
   - title: "ArrayAdapter Class Reference" 
     url: http://developer.android.com/reference/android/widget/ArrayAdapter.html

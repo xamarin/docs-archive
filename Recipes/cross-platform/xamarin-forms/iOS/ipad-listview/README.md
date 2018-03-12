@@ -1,9 +1,6 @@
 ---
 id: 4ED7EA00-1B24-4962-B2A4-FE9BFFC1E652
 title: "Fixing ListView and TableView width on iPad"
-samplecode:
-  - title: "Browse on Github" 
-    url: https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/iOS/ipad-listview/
 article:
   - title: "Custom Renderers" 
     url: /guides/xamarin-forms/custom-renderer/

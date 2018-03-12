@@ -2,9 +2,6 @@
 id: 9057932F-7CFB-FBF7-C558-DB8B8BEED81C
 title: "Passing Data Between Activities"
 brief: "This recipe shows how to use intents to pass data between activities."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/android/fundamentals/activity/pass_data_between_activity
 article:
   - title: "Activity Lifecycle" 
     url: /guides/android/application_fundamentals/activity_lifecycle

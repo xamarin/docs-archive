@@ -2,9 +2,6 @@
 id: C956274D-BD3A-D353-26EA-1C30097BF44A
 title: "Create a Horizontal Scrolling Button List"
 brief: "This recipe shows how to create a horizontal scrolling list of buttons."
-samplecode:
-  - title: "Browse on GitHub" 
-    url: https://github.com/xamarin/recipes/tree/master/ios/content_controls/scroll_view/create_a_horizontal_scrolling_button_list
 article:
   - title: "MonoTouch.UIKit.UIScrollView Class" 
     url: /api/type/UIKit.UIScrollView/

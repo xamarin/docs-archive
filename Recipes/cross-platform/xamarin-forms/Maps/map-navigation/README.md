@@ -3,9 +3,6 @@ id: 44631BAB-7D39-42D8-B48A-8D352C7C1021
 title: "Perform map-based navigation"
 subtitle: "How to perform street-to-street navigation in each platforms native Maps app"
 brief: "This recipe shows how to open each platforms native maps app to perform navigation from the current location to an address entered in a Xamarin.Forms app."
-samplecode:
-  - title: "Browse on Github" 
-    url: https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Maps/MapNavigation/
 api:
   - title: "Device" 
     url: /api/type/Xamarin.Forms.Device/

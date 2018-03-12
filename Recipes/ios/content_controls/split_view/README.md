@@ -13,6 +13,6 @@ When the split view is displayed on an iPad that is in a vertical orientation, t
 
  [ ![One vertical and one horizontal iPad, showing that the master view is shown when horizontal and hidden when vertical.](Images/Picture_1.png)](Images/Picture_1.png)
 
--   [Communicate Between Master and Detail Controllers](/recipes/ios/content_controls/split_view/communicate_between_master_and_detail_controllers) 
--   [Show and Hide the Master View Button](/recipes/ios/content_controls/split_view/show_and_hide_the_master_view_button) 
--   [Use Split View to Show Two Controllers](/recipes/ios/content_controls/split_view/use_split_view_to_show_two_controllers)
+-   [Communicate Between Master and Detail Controllers](/Recipes/ios/content_controls/split_view/communicate_between_master_and_detail_controllers) 
+-   [Show and Hide the Master View Button](/Recipes/ios/content_controls/split_view/show_and_hide_the_master_view_button) 
+-   [Use Split View to Show Two Controllers](/Recipes/ios/content_controls/split_view/use_split_view_to_show_two_controllers)

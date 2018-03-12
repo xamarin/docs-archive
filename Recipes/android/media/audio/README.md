@@ -9,5 +9,5 @@ for audio playback and recording.
 
  [ ![](Images/recordaudio.png)](Images/recordaudio.png)
 
--   <span class="noChildren"><a href="/recipes/android/media/audio/play_audio">Play Audio</a></span> 
--   <span class="noChildren"><a href="/recipes/android/media/audio/record_audio">Record Audio</a></span>
+-   <span class="noChildren"><a href="/Recipes/android/media/audio/play_audio">Play Audio</a></span> 
+-   <span class="noChildren"><a href="/Recipes/android/media/audio/record_audio">Record Audio</a></span>
