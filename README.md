@@ -28,9 +28,9 @@ Contributing
 
 Thank you for taking the time to contribute, we appreciate your help in helping the Xamarin community to learn and grow! All content submitted **must** be your own work.
 
-The information below will guide you through the organisation of this repository and will advise of the structure needed for naming folders, and how your recipe directory should be organised.
+The information below will guide you through the organization of this repository and will advise of the structure needed for naming folders, and how your recipe directory should be organized.
 
-Please also visit the articles in the [Contibutor guide](https://github.com/xamarin/recipes/tree/open-recipes/contributor-guide), which will give detailed and practical help with the following:
+Please also visit the articles in the [Contributor guide](https://github.com/xamarin/recipes/tree/open-recipes/contributor-guide), which will give detailed and practical help with the following:
 
 * [Content Layout](https://github.com/xamarin/recipes/blob/open-recipes/contributor-guide/content-layout.md)
 * [Style Guide](https://github.com/xamarin/recipes/contributor-guide/style-guide.md)
@@ -40,14 +40,12 @@ Please also visit the articles in the [Contibutor guide](https://github.com/xama
 Repository Structure
 ---------------------
 
-All recipes are contained within with `\recipes` directory. The structure follows the organization of recipes on https://developer.xamarin.com/recipes/, splitting content into Platform, General topic, and then providing the recipe. For example, the recipe at this location: (https://github.com/xamarin/recipes/recipes/ios/content_controls/map_view/add_an_overlay_to_a_map)[https://github.com/xamarin/recipes/recipes/ios/content_controls/map_view/add_an_overlay_to_a_map], will be displayed in the navigation as follows:
-
-![Structure](/Images/structure.png)
+All recipes are contained within with `\Recipes` directory. The structure follows the organization of recipes on https://developer.xamarin.com/recipes/, splitting content into Platform, General topic, and then providing the recipe. 
 
 The repository structure will look like the following: 
 
 ```
-\recipes 
+\Recipes 
     \xamarin-forms
         \maps 
             \recipe-name-here 
