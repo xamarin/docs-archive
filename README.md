@@ -28,19 +28,19 @@ Contributing
 
 Thank you for taking the time to contribute, we appreciate your help in helping the Xamarin community to learn and grow! All content submitted **must** be your own work.
 
-The information below will guide you through the organization of this repository and will advise of the structure needed for naming folders, and how your recipe directory should be organized.
+The information below guides you through the organization of this repository and advises of the structure needed for naming folders, and how your recipe directory should be organized.
 
-Please also visit the articles in the [Contributor guide](https://github.com/xamarin/recipes/tree/open-recipes/contributor-guide), which will give detailed and practical help with the following:
+Please also visit the articles in the [Contributor guide](/contributor-guide), which gives detailed and practical help with the following:
 
-* [Content Layout](https://github.com/xamarin/recipes/blob/open-recipes/contributor-guide/content-layout.md)
-* [Style Guide](https://github.com/xamarin/recipes/contributor-guide/style-guide.md)
-* [Markdown and metadata](https://github.com/xamarin/recipes/contributor-guide/markdown-and-metadata.md)
-* [Templates](https://github.com/xamarin/recipes/contributor-guide/recipe-templates)
+* [Content Layout](/contributor-guide/content-layout.md)
+* [Style Guide](/contributor-guide/style-guide.md)
+* [Markdown and metadata](/contributor-guide/markdown-and-metadata.md)
+* [Templates](/contributor-guide/recipe-templates)
 
 Repository Structure
 ---------------------
 
-All recipes are contained within with `\Recipes` directory. The structure follows the organization of recipes on https://developer.xamarin.com/recipes/, splitting content into Platform, General topic, and then providing the recipe. 
+All recipes are contained within with `\Recipes` directory. 
 
 The repository structure will look like the following: 
 
