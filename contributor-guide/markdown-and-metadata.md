@@ -1,13 +1,7 @@
 Markdown and Metadata
 =====================
 
-All guides should be written in markdown, as specified via [Daring Fireball](https://daringfireball.net/projects/markdown/).
-
-Some useful markdown that you may wish to use is shown below:
-
-Zoomable images (where you click to see a more detailed, larger version) 
-
-`[ ![](Images/small.png)](Images/large.png)`
+All guides should be written in [GitHub Flavored Markdown](https://github.github.com/gfm/).
 
 Metadata
 --------
@@ -23,20 +17,17 @@ The very minimum amount of data that needs to be added is the follows:
 Other _optional_ metadata: 
 
 * article: `[name](urn)` Link to other relevant Xamarin guides. 
-* video: `[name](urn)` Link to relevant videos 
+* video: `[name](urn)` Link to relevant videos. 
 * sample: `[name](urn)` Link to Xamarin samples. 
-* api: `[name](urn)` Link to Xamarin API docs 
-* link: `[name](urn)` Link to any relevant external page 
+* api: `[name](urn)` Link to Xamarin API docs. 
+* link: `[name](urn)` Link to any relevant external page. 
 
-### Resource/Related Item Example 
+For example:
 
-Each resource or related item can have multiple entries with the same name, with absolute links to particular content. Each item is required to be in markdown link format `[Name](URN)`
-
-URN - This is an link to content. Where possible, try and link to the original content on developer.xamarin.com.
-
-Name - This is the friendly name of the item as it will be shown to the user. 
-For example, the following snippet illustrates two related articles links: 
-
-`article:[Introduction to Mobile Developments](/ios/guides/getting-started/introduction-to-mobile-development)`
-
-`Link:[Channel 9](https://channel9.msdn.com/)`
+```
+---
+id: 30D6D826-11A0-30FA-D781-077C26EA28D4
+title: "Enumerate Directories"
+brief: "This recipe shows how to list directories in the iOS file system using Xamarin.iOS."
+---
+```
