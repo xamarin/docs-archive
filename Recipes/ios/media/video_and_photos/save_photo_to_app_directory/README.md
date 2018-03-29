@@ -7,7 +7,7 @@ samplecode:
     url: https://github.com/xamarin/recipes/tree/master/ios/media/video_and_photos/save_photo_to_app_directory
 article:
   - title: "Save Photo to Album with Metadata" 
-    url: /Recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata
 sdk:
   - title: "UIImagePickerControllerDelegate Protocol Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIImagePickerControllerDelegate_Protocol/UIImagePickerControllerDelegate/UIImagePickerControllerDelegate.html

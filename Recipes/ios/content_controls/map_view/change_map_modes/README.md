@@ -4,7 +4,7 @@ title: "Change Map Modes"
 brief: "This recipe shows how to change the type of map being displayed in an MKMapView to either Road, Satellite or Hybrid."
 article:
   - title: "Displaying a Location" 
-    url: /Recipes/ios/content_controls/map_view/display_device_location
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/content_controls/map_view/display_device_location
 sdk:
   - title: "MKMapView Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html

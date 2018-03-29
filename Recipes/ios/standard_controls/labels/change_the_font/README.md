@@ -4,7 +4,7 @@ title: Change The Font
 brief: "This recipe shows how to change the font of a UILabel"
 article: 
   - title: Enumerate Fonts
-    url: /Recipes/ios/standard_controls/fonts/enumerate_fonts/
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/fonts/enumerate_fonts/
 sdk:
   - title: UILabel Class Reference
     url: https://developer.apple.com/library/ios/documentation/UIKit/Reference/UILabel_Class/index.html

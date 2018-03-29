@@ -4,7 +4,7 @@ title: "Select A Date in a Fragment"
 brief: "This recipe will show how to use a DatePickerDialog inside of a Fragment."
 article:
   - title: "Create a Fragment" 
-    url: /Recipes/android/other_ux/fragment/create_a_fragment
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/android/other_ux/fragment/create_a_fragment
   - title: "Fragments" 
     url: https://developer.xamarin.com/guides/android/platform_features/fragments
   - title: "Fragments Walkthrough" 

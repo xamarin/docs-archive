@@ -4,7 +4,7 @@ title: "Download an Image"
 brief: "This recipe shows how to download an image file using the WebClient class in Xamarin.iOS."
 article:
   - title: "Download a File" 
-    url: /Recipes/ios/network/web_requests/download_a_file
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/network/web_requests/download_a_file
 ---
 
 <a name="Recipe" class="injected"></a>

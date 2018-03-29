@@ -4,7 +4,7 @@ title: "Adjust Contrast and Brightness of an Image"
 brief: "This recipe shows how to use a CoreImage filter to adjust the contrast, saturation and brightness of an image."
 article:
   - title: "Save Photo to Album with Metadata" 
-    url: /Recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata
   - title: "Introduction to Core Image" 
     url: https://developer.xamarin.com/guides/ios/platform_features/introduction_to_coreimage
 sdk:

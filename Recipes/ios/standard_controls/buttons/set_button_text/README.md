@@ -4,7 +4,7 @@ title: "Set Button Text"
 brief: "This recipe shows you how to set the text on a UIButton."
 article:
   - title: "Create Different Types of Button" 
-    url: /Recipes/ios/standard_controls/buttons/create_different_types_of_buttons
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/buttons/create_different_types_of_buttons
 sdk:
   - title: "UIButton Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIButton_Class/UIButton/UIButton.html

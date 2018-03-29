@@ -8,7 +8,7 @@ article:
     url: http://blog.neteril.org/blog/2013/08/12/blurring-images-on-android/
 recipe:
   - title: "Blur an Image with Managed Code" 
-    url: /Recipes/android/other_ux/drawing/blur_an_image_with_managed_code/
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/android/other_ux/drawing/blur_an_image_with_managed_code/
 api:
   - title: "ScriptIntrinsicBlur" 
     url: http://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlur.html

@@ -4,9 +4,9 @@ title: "Communicate Between Master and Detail Controllers"
 brief: "This recipe shows how to wire up the master view in a UISplitViewController so that a new selection will change the contents of the detail view."
 article:
   - title: "Using a Split View to Show Two Controllers" 
-    url: /Recipes/ios/content_controls/split_view/use_split_view_to_show_two_controllers
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/content_controls/split_view/use_split_view_to_show_two_controllers
   - title: "Showing and Hiding the Master View Button" 
-    url: /Recipes/ios/content_controls/split_view/show_and_hide_the_master_view_button
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/content_controls/split_view/show_and_hide_the_master_view_button
 sdk:
   - title: "UISplitViewController Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UISplitViewController_class/Reference/Reference.html

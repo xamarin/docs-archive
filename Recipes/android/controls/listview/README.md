@@ -3,7 +3,7 @@ id: C4E7F103-C464-472D-A48D-E2063ED309F5
 title: "Programmatically Selecting a ListView Row"
 recipe:
   - title: "Select a Row" 
-    url: /Recipes/android/controls/listview/select-row/
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/android/controls/listview/select-row/
 api:
   - title: "ListView" 
     url: https://developer.xamarin.com/api/type/Android.Widget.ListView/

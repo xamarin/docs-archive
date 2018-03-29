@@ -4,7 +4,7 @@ title: "Specify Slider Appearance"
 brief: "This recipe shows how to specify the appearance of a slider, either with a custom image or colors."
 article:
   - title: "Specify Slider Value" 
-    url: /Recipes/ios/standard_controls/sliders/specify_slider_value
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/sliders/specify_slider_value
 sdk:
   - title: "UISlider Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UISlider_Class/Reference/Reference.html

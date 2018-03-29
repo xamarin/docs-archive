@@ -4,11 +4,11 @@ title: "Save Documents"
 brief: "This recipe shows how to save a text file to the Documents folder."
 article:
   - title: "Load a File" 
-    url: /Recipes/ios/general/file_system/load_a_file
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/general/file_system/load_a_file
   - title: "Enumerate Directories" 
-    url: /Recipes/ios/general/file_system/enumerate_directories
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/general/file_system/enumerate_directories
   - title: "Load an Image" 
-    url: /Recipes/ios/standard_controls/image_view/load_an_image
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/image_view/load_an_image
 ---
 
 <a name="Recipe" class="injected"></a>

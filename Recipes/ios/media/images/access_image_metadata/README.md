@@ -4,7 +4,7 @@ title: "Access Image Metadata"
 brief: "This recipe shows how to access image properties such as height, width, DPI, EXIF data, etc."
 article:
   - title: "Save Photo to Album with Metadata" 
-    url: /Recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata
 sdk:
   - title: "Accessing image properties with ImageIO" 
     url: http://developer.apple.com/library/ios/#qa/qa1654/_index.html

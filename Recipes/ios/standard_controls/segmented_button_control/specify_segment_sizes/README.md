@@ -4,7 +4,7 @@ title: "Specify Segment Sizes"
 brief: "This recipe shows how to create a UISegmentedControl with different sized segments."
 article:
   - title: "Configure Segments" 
-    url: /Recipes/ios/standard_controls/segmented_button_control/configure_segments_(uisegmentedcontrol)
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/segmented_button_control/configure_segments_(uisegmentedcontrol)
 sdk:
   - title: "UISegmentedControl Class Reference" 
     url: http://developer.apple.com/library/ios/#documentation/uikit/reference/UISegmentedControl_Class/Reference/UISegmentedControl.html

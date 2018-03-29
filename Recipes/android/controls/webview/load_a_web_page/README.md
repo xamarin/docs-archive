@@ -4,7 +4,7 @@ title: "Load a Web Page"
 brief: "This recipe shows how to load a web page in a WebView."
 article:
   - title: "Load Local Content" 
-    url: /Recipes/android/controls/webview/load_local_content
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/android/controls/webview/load_local_content
 sdk:
   - title: "WebView Class Reference" 
     url: http://developer.android.com/reference/android/webkit/WebView.html

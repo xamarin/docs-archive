@@ -4,9 +4,9 @@ title: "Add an Overlay to a Map"
 brief: "This recipe shows how to add an overlay to a map."
 article:
   - title: "Displaying a Location" 
-    url: /Recipes/ios/content_controls/map_view/display_device_location
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/content_controls/map_view/display_device_location
   - title: "Add an Annotation" 
-    url: /Recipes/ios/content_controls/map_view/add_an_annotation_to_a_map
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/content_controls/map_view/add_an_annotation_to_a_map
 sdk:
   - title: "MKMapView Class Reference" 
     url: https://developer.apple.com/library/ios/#documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html

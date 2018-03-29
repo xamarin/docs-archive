@@ -4,7 +4,7 @@ title: "Create Different Types of Buttons"
 brief: "This recipe shows you how to create the six different types of UIButton."
 article:
   - title: "Handle clicks" 
-    url: /Recipes/ios/standard_controls/buttons/handle_clicks
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/buttons/handle_clicks
 sdk:
   - title: "UIButton Class Reference" 
     url: http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIButton_Class/UIButton/UIButton.html

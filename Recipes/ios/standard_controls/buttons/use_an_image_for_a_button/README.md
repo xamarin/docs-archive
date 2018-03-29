@@ -4,7 +4,7 @@ title: "Use an Image for a Button"
 brief: "This recipe shows you how to create an image button."
 article:
   - title: "Set Button Text" 
-    url: /Recipes/ios/standard_controls/buttons/set_button_text
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/buttons/set_button_text
 sdk:
   - title: "UIButton Class Reference" 
     url: http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIButton_Class/UIButton/UIButton.html

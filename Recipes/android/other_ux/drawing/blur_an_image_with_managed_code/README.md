@@ -8,9 +8,9 @@ article:
     url: http://incubator.quasimondo.com/processing/fast_blur_deluxe.php
 recipe:
   - title: "Blur an Image with Renderscript" 
-    url: /Recipes/android/other_ux/drawing/blur_an_image_with_renderscript/
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/android/other_ux/drawing/blur_an_image_with_renderscript/
   - title: "Load Large Bitmaps Efficiently" 
-    url: /Recipes/android/resources/general/load_large_bitmaps_efficiently/
+    url: https://github.com/xamarin/recipes/tree/master/Recipes/android/resources/general/load_large_bitmaps_efficiently/
 ---
 
 This recipe demonstrates one way to blur an image using only C# code. This is not as quick as [using RenderScript](/Recipes/android/other_ux/drawing/blur_an_image_with_renderscript/). The code in this recipe should work on all Android API levels.
