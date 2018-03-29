@@ -12,7 +12,7 @@ brief: This recipe shows how to change the font of a UILabel.
 
 ##Note
 
-This Recipe can be opened using [Sketches](/guides/cross-platform/sketches/). Clicking on the article link to the right, will automatically open a sketch in Xamarin Studio.
+This Recipe can be opened using [Sketches](https://developer.xamarin.com/guides/cross-platform/sketches/). Clicking on the article link to the right, will automatically open a sketch in Xamarin Studio.
 
 #Recipe
 This short recipe will first create a new label, and display some text in it. We will then set the font name and size, and lastly will add some aditional properties affecting how the label is displayed.

@@ -4,7 +4,7 @@ title: Capture User Input Text
 brief: This recipe shows how to use EditText control to capture text entered by a user.
 article:
   - title: "EditText Tutorial" 
-    url: /guides/android/user_interface/form_elements/edit_text
+    url: https://developer.xamarin.com/guides/android/user_interface/form_elements/edit_text
 sdk:
   - title: "EditText Class Reference" 
     url: http://developer.android.com/reference/android/widget/EditText.html

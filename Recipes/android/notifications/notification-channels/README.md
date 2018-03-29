@@ -4,7 +4,7 @@ title: "Moving to Notification Channels "
 brief: "This recipe demonstrates how to convert an existing Xamarin.Android app to use the notification channels feature introduced in Android Oreo."
 article:
   - title: "Notification Channels"
-    url: /guides/android/application_fundamentals/notifications/local_notifications_in_android/#Notification_Channels
+    url: https://developer.xamarin.com/guides/android/application_fundamentals/notifications/local_notifications_in_android/#Notification_Channels
 samplecode:
   - title: "Local Notifications"
     url: /samples/monodroid/LocalNotifications/
@@ -105,7 +105,7 @@ Try adding a second notification channel by doing the following:
    app permission **Categories** as **Important Alerts**.
 
 For more information about notification channels in Xamarin.Android, see
-[Notification Channels](/guides/android/application_fundamentals/notifications/local_notifications_in_android/#Notification_Channels).
+[Notification Channels](https://developer.xamarin.com/guides/android/application_fundamentals/notifications/local_notifications_in_android/#Notification_Channels).
    
 
 # Summary

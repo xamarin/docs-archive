@@ -4,7 +4,7 @@ title: "Step Through Code"
 brief: "This recipe shows how to step into, over, and out of functions."
 article:
   - title: "Debugging" 
-    url: /guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios
+    url: https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios
 ---
 
 <a name="Recipe" class="injected"></a>

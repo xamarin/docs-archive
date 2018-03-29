@@ -4,7 +4,7 @@ title: "Use Initial Screen in Tab Controller"
 brief: "This recipe shows how include the initial screen in a tab controller after a user interacts with the screen."
 article:
   - title: "Creating Tabbed Appliations" 
-    url: /guides/ios/user_interface/creating_tabbed_applications/
+    url: https://developer.xamarin.com/guides/ios/user_interface/creating_tabbed_applications/
 ---
 
 <a name="Recipe" class="injected"></a>

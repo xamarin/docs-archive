@@ -5,7 +5,7 @@ subtitle: "Evaluating JavaScript hosted in a WebView"
 brief: "This recipe shows how to call a JavaScript function from C#, where the JavaScript function is defined in a web page hosted by the WebView control."
 article:
   - title: "WebView" 
-    url: /guides/xamarin-forms/user-interface/webview/
+    url: https://developer.xamarin.com/guides/xamarin-forms/user-interface/webview/
 api:
   - title: "WebView" 
     url: /api/type/Xamarin.Forms.WebView/

@@ -7,7 +7,7 @@ samplecode:
     url: /samples/monodroid/UpdateUsersProfile
 article:
   - title: "Using the Contacts ContentProvider" 
-    url: /guides/android/platform_features/intro_to_content_providers/part_2_-_using_the_contacts_contentprovier/
+    url: https://developer.xamarin.com/guides/android/platform_features/intro_to_content_providers/part_2_-_using_the_contacts_contentprovier/
 sdk:
   - title: "ContactsContract.Profile" 
     url: http://developer.android.com/reference/android/provider/ContactsContract.Profile.html
@@ -68,7 +68,7 @@ To update and query the user profile, follow these steps:
 
 -   Set the minimum Android version to API level 15. 
     (For more information about Android version settings, see
-    [Understanding Android API levels](/guides/android/application_fundamentals/understanding_android_api_levels/).)
+    [Understanding Android API levels](https://developer.xamarin.com/guides/android/application_fundamentals/understanding_android_api_levels/).)
     In Visual Studio, open the project properties in
     <span class="uiitem">Solution Explorer</span> and select the <span 
     class="uiitem">Application</span> page. In the drop-down menu under 

@@ -22,6 +22,6 @@ The following code shows how to play a sound effect:
 CCAudioEngine.SharedEngine.PlayEffect (filename:"Electricity");
 ```
 
-CocosSharp supports the MonoGame content pipeline types (.xnb files) for music and sound effects. For information on using the content pipeline, see the [CocosSharp Content Pipeline Guide](/guides/cross-platform/game_development/cocossharp/content_pipeline/).
+CocosSharp supports the MonoGame content pipeline types (.xnb files) for music and sound effects. For information on using the content pipeline, see the [CocosSharp Content Pipeline Guide](https://developer.xamarin.com/guides/cross-platform/game_development/cocossharp/content_pipeline/).
 
 For a full example on playing audio, see the [CCAudioEngine sample](/samples/mobile/CCAudioEngine/).

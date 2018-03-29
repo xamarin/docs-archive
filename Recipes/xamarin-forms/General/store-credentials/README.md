@@ -12,7 +12,7 @@ dateupdated: 2017-08-04
 
 # Overview
 
-Xamarin.Auth is a cross-platform SDK for authenticating users and storing their accounts. It can be used to securely store `Account` objects in an account store so that applications do not always have to re-authenticate users. For information about using Xamarin.Auth to authenticate users, see [Authenticating Users with an Identity Provider](/guides/xamarin-forms/web-services/authentication/oauth/).
+Xamarin.Auth is a cross-platform SDK for authenticating users and storing their accounts. It can be used to securely store `Account` objects in an account store so that applications do not always have to re-authenticate users. For information about using Xamarin.Auth to authenticate users, see [Authenticating Users with an Identity Provider](https://developer.xamarin.com/guides/xamarin-forms/web-services/authentication/oauth/).
 
 ## Storing Account Information
 

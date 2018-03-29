@@ -4,7 +4,7 @@ title: "Contacts"
 dateupdated: 2016-06-08
 article:
   - title: "Contacts and ContactUI" 
-    url: /guides/ios/platform_features/introduction_to_ios9/contacts/
+    url: https://developer.xamarin.com/guides/ios/platform_features/introduction_to_ios9/contacts/
 ---
 
 With the introduction of iOS 9, Apple has released two new frameworks, Contacts and ContactsUI, that replace the existing Address Book and Address Book UI frameworks used by iOS 8 and earlier.

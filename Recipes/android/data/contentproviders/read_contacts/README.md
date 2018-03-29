@@ -4,7 +4,7 @@ title: "Read Contacts"
 subtitle: "How to read contacts in Android and display the results in a list"
 link:
   - title: "Introduction to Ice Cream Sandwich"
-    url: /guides/android/platform_features/introduction_to_ice_cream_sandwich
+    url: https://developer.xamarin.com/guides/android/platform_features/introduction_to_ice_cream_sandwich
 sample:
   - title: "ReadContacts"
     url: https://github.com/xamarin/recipes/tree/master/android/data/contentproviders/read_contacts

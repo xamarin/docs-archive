@@ -4,9 +4,9 @@ title: "Passing Data Between Activities"
 brief: "This recipe shows how to use intents to pass data between activities."
 article:
   - title: "Activity Lifecycle" 
-    url: /guides/android/application_fundamentals/activity_lifecycle
+    url: https://developer.xamarin.com/guides/android/application_fundamentals/activity_lifecycle
   - title: "Hello, Multiscreen Applications" 
-    url: /guides/android/getting_started/hello,_multi-screen_applications
+    url: https://developer.xamarin.com/guides/android/getting_started/hello,_multi-screen_applications
 sdk:
   - title: "Activity Class Reference" 
     url: http://developer.android.com/reference/android/app/Activity.html
@@ -48,5 +48,5 @@ string text = Intent.GetStringExtra ("MyData") ?? "Data not available";
 
 Each screen in an application is represented by an activity. Sending
 asynchronous messages called intents, which can include data payloads, as shown
-in this recipe, starts activities. For more information, see the [Getting Started](/guides/android/getting_started) series and the [Activity Lifecycle](/guides/android/application_fundamentals/activity_lifecycle) in the Xamarin.Android documentation.
+in this recipe, starts activities. For more information, see the [Getting Started](https://developer.xamarin.com/guides/android/getting_started) series and the [Activity Lifecycle](https://developer.xamarin.com/guides/android/application_fundamentals/activity_lifecycle) in the Xamarin.Android documentation.
 

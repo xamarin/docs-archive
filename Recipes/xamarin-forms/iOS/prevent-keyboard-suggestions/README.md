@@ -5,7 +5,7 @@ subtitle: "How to make data entry easier by turning off auto-capitalization and 
 brief: "This recipe shows how to build a custom renderer for an Entry that prevents iOS from changing what the user types."
 article:
   - title: "Customizing Controls for Each Platform" 
-    url: /guides/xamarin-forms/custom-renderer/
+    url: https://developer.xamarin.com/guides/xamarin-forms/custom-renderer/
 api:
   - title: "Entry" 
     url: /api/type/Xamarin.Forms.Entry/

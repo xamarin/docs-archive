@@ -7,7 +7,7 @@ samplecode:
     url: /Samples/LoadingLargeBitmaps/
 article:
   - title: "Garbage Collection" 
-    url: /guides/android/advanced_topics/garbage_collection
+    url: https://developer.xamarin.com/guides/android/advanced_topics/garbage_collection
 sdk:
   - title: "Load Large Bitmaps Efficiently" 
     url: http://developer.android.com/training/displaying-bitmaps/load-bitmap.html

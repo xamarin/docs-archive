@@ -5,7 +5,7 @@ brief: "This recipe shows how to select a contact using the CNContactPickerViewC
 dateupdated: 2016-06-08
 article:
   - title: "Contacts and ContactUI" 
-    url: /guides/ios/platform_features/introduction_to_ios9/contacts/
+    url: https://developer.xamarin.com/guides/ios/platform_features/introduction_to_ios9/contacts/
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -169,5 +169,5 @@ Let's look at this code in detail:
 <a name="Additional_Information" class="injected"></a>
 # Additional Information
 
-For more information, please see our [Contacts and ContactUI](/guides/ios/platform_features/introduction_to_ios9/contacts/) documentation.
+For more information, please see our [Contacts and ContactUI](https://developer.xamarin.com/guides/ios/platform_features/introduction_to_ios9/contacts/) documentation.
 

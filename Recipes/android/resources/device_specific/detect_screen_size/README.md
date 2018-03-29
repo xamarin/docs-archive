@@ -3,7 +3,7 @@ id: AC297FB9-C012-4D0C-744C-7E9D1F6FDF83
 title: "Detect Screen Size"
 article:
   - title: "Creating Resources for Varying Screens" 
-    url: /guides/android/application_fundamentals/resources_in_android/part_4_-_creating_resources_for_varying_screens
+    url: https://developer.xamarin.com/guides/android/application_fundamentals/resources_in_android/part_4_-_creating_resources_for_varying_screens
 sdk:
   - title: "Supporting Multiple Screens" 
     url: http://developer.android.com/guide/practices/screens_support.html

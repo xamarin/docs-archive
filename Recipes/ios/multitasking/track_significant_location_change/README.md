@@ -53,7 +53,7 @@ if (CLLocationManager.LocationServicesEnabled) {
 ```
 LocMgr.LocationsUpdated += (o, e) =&gt; Console.WriteLine ("Location change received");
 ```
-  > ℹ️ **Note**: The application has approximately 10 seconds after the `LocationsUpdated` event fires to run code in the background. If you want to run a process that takes more than 10 seconds, wrap it in a [Background Task](/guides/cross-platform/application_fundamentals/backgrounding/part_3_ios_backgrounding_techniques/ios_backgrounding_with_tasks).
+  > ℹ️ **Note**: The application has approximately 10 seconds after the `LocationsUpdated` event fires to run code in the background. If you want to run a process that takes more than 10 seconds, wrap it in a [Background Task](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/backgrounding/part_3_ios_backgrounding_techniques/ios_backgrounding_with_tasks).
 
 <ol start="7">
   <li>Call the following method to stop monitoring location:</li>

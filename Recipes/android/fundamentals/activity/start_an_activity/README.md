@@ -4,9 +4,9 @@ title: "Start an Activity"
 brief: "This recipe shows how to start an activity defined within an application."
 article:
   - title: "Activity Lifecycle" 
-    url: /guides/android/application_fundamentals/activity_lifecycle
+    url: https://developer.xamarin.com/guides/android/application_fundamentals/activity_lifecycle
   - title: "Hello, Multiscreen Applications" 
-    url: /guides/android/getting_started/hello,_multi-screen_applications
+    url: https://developer.xamarin.com/guides/android/getting_started/hello,_multi-screen_applications
 sdk:
   - title: "Activity Class Reference" 
     url: http://developer.android.com/reference/android/app/Activity.html
@@ -36,5 +36,5 @@ button.Click += delegate {
 # Additional Information
 
 Each screen in an application is represented by an activity. For more
-information on activities see the [Getting Started](/guides/android/getting_started) series and the [Activity Lifecycle](/guides/android/application_fundamentals/activity_lifecycle) in the Xamarin.Android documentation.
+information on activities see the [Getting Started](https://developer.xamarin.com/guides/android/getting_started) series and the [Activity Lifecycle](https://developer.xamarin.com/guides/android/application_fundamentals/activity_lifecycle) in the Xamarin.Android documentation.
 

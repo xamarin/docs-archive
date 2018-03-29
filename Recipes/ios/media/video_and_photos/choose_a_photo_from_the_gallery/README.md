@@ -92,7 +92,7 @@ To implement the photo picker:
 
   ![Select Privacy Key](Images/privacy-key.png)
 
-**Note** You must add the [key/value pair](/guides/ios/deployment,_testing,_and_metrics/provisioning/infoplist-reference/#Photos) into the Info.plist file. This allows the user to grant your app permission to use the Photo library. If you don't, your app will crash.
+**Note** You must add the [key/value pair](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/provisioning/infoplist-reference/#Photos) into the Info.plist file. This allows the user to grant your app permission to use the Photo library. If you don't, your app will crash.
 
 # Additional Information
 

@@ -4,7 +4,7 @@ title: "Rotate An Image View"
 brief: "This recipe shows how to rotate an image on the screen using a UIImageView and a CGAffineTransform."
 article:
   - title: "Working with Images" 
-    url: /guides/ios/application_fundamentals/working_with_images
+    url: https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images
 sdk:
   - title: "Quartz 2D Programming Guide" 
     url: https://developer.apple.com/library/mac/#documentation/graphicsimaging/conceptual/drawingwithquartz2d/Introduction/Introduction.html

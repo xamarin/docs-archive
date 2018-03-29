@@ -7,7 +7,7 @@ brief: "This recipe shows how to use multiple detail controllers, where the cont
 
 # Recipe
 
-This recipes uses [MonoTouch.Dialog](/guides/ios/user_interface/monotouch.dialog/)
+This recipes uses [MonoTouch.Dialog](https://developer.xamarin.com/guides/ios/user_interface/monotouch.dialog/)
 to build the user interface. To include **MonoTouch.Dialog** in your app,
 right click on the iOS project's **References** node and select **Edit References**,
 then ensure the **MonoTouch.Dialog-1** assembly is ticked.

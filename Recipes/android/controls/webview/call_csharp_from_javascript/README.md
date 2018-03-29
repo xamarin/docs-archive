@@ -6,7 +6,7 @@ article:
   - title: "Jon Pryor's StackOverflow post" 
     url: http://stackoverflow.com/questions/9745168/monodroid-javascript-call-back/9746911
   - title: "WebView Tutorial" 
-    url: /guides/android/user_interface/web_view
+    url: https://developer.xamarin.com/guides/android/user_interface/web_view
 ---
 
 # Recipe

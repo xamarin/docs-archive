@@ -6,9 +6,9 @@ article:
   - title: "Create a Fragment" 
     url: /Recipes/android/other_ux/fragment/create_a_fragment
   - title: "Fragments" 
-    url: /guides/android/platform_features/fragments
+    url: https://developer.xamarin.com/guides/android/platform_features/fragments
   - title: "Fragments Walkthrough" 
-    url: /guides/android/platform_features/fragments/fragments_walkthrough
+    url: https://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough
 sdk:
   - title: "DatePickerDialog" 
     url: http://developer.android.com/reference/android/app/DialogFragment.html

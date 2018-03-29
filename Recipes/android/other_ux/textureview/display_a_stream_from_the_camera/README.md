@@ -4,7 +4,7 @@ title: "Display a stream from the camera"
 brief: "This recipe shows how to display a stream from the camera using a TextureView."
 article:
   - title: "Introduction to Ice Cream Sandwich" 
-    url: /guides/android/platform_features/introduction_to_ice_cream_sandwich
+    url: https://developer.xamarin.com/guides/android/platform_features/introduction_to_ice_cream_sandwich
 sdk:
   - title: "Android 4.0 Graphics and Animations" 
     url: http://android-developers.blogspot.com/2011/11/android-40-graphics-and-animations.html

@@ -7,7 +7,7 @@ samplecode:
     url: /samples/monodroid/WeatherREST
 article:
   - title: "Introduction to Web Services" 
-    url: /guides/cross-platform/application_fundamentals/web_services/
+    url: https://developer.xamarin.com/guides/cross-platform/application_fundamentals/web_services/
 ---
 
 # Recipe
@@ -39,11 +39,11 @@ screen.
     Developer Preview, but an earlier Android version such as KitKat 
     (API level 19) can be used. If you are new to Android development 
     with Xamarin, see 
-    [Hello, Android](/guides/android/getting_started/hello,android/) 
+    [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) 
     to learn how to create Xamarin.Android applications. 
 
 -   Next, we'll use the Xamarin.Android Designer to create a UI (see 
-    [Designer Overview](/guides/android/user_interface/designer_overview/) if 
+    [Designer Overview](https://developer.xamarin.com/guides/android/user_interface/designer_overview/) if 
     you are not familiar with the Android interface designer). Let's 
     start by replacing the contents of **Resources/layout/Main.axml** 
     with the XML example below. This code begins the GUI layout with 
@@ -277,7 +277,7 @@ button.Click += async (sender, e) => {
     responsive to user input while the app waits for the HTTP request 
     and response to complete. For more about asynchronous programming 
     techniques, see 
-    [Writing Reponsive Applications](/guides/android/advanced_topics/writing_responsive_applications). 
+    [Writing Reponsive Applications](https://developer.xamarin.com/guides/android/advanced_topics/writing_responsive_applications). 
 
     Let's add the following method after the `OnCreate` method. This 
     method issues the HTTP request, waits for a response, and returns
@@ -439,7 +439,7 @@ asynchronously via `async`/`await`, the app is responsive to user
 input during network operations. 
 
 For more information about integrating with web services, 
-[Introduction to Web Services](/guides/cross-platform/application_fundamentals/web_services/) 
+[Introduction to Web Services](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/web_services/) 
 explains how to integrate REST, WCF, and SOAP web service technologies 
 with Xamarin mobile applications. 
 

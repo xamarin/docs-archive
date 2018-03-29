@@ -5,7 +5,7 @@ subtitle: "Making an app searchable through Spotlight search and Siri"
 brief: "This recipe shows how to use the iOS 9 NSUserActivity class to make Xamarin.Forms app content searchable through Spotlight search and Siri."
 article:
   - title: "Search with NSUSerActivity" 
-    url: /guides/ios/platform_features/introduction_to_ios9/search/nsuseractivity/
+    url: https://developer.xamarin.com/guides/ios/platform_features/introduction_to_ios9/search/nsuseractivity/
 api:
   - title: "NSUSerActivity" 
     url: /api/type/Foundation.NSUserActivity/
@@ -13,7 +13,7 @@ api:
 
 # Overview
 
-The [`NSUserActivity`](/api/type/Foundation.NSUserActivity/) class provides support for defining a user's activity so that it can potentially be continued on another of the user's devices, and is typically used to provide data for [Handoff](/guides/ios/platform_features/introduction_to_ios9/handoff/). In iOS 9, each activity can also be indexed and searched from Spotlight search, therefore making app interaction history searchable by the user. If the user selects a search result that belongs to an activity from an app, the app will be launched and the activity described by the `NSUserActivity` will be restarted and presented to the user. In addition, by adopting app search via activities, additional benefits become available such as Siri suggestions and smart reminders. For more information, see [Search with NSUserActivity](/guides/ios/platform_features/introduction_to_ios9/search/nsuseractivity/).
+The [`NSUserActivity`](/api/type/Foundation.NSUserActivity/) class provides support for defining a user's activity so that it can potentially be continued on another of the user's devices, and is typically used to provide data for [Handoff](https://developer.xamarin.com/guides/ios/platform_features/introduction_to_ios9/handoff/). In iOS 9, each activity can also be indexed and searched from Spotlight search, therefore making app interaction history searchable by the user. If the user selects a search result that belongs to an activity from an app, the app will be launched and the activity described by the `NSUserActivity` will be restarted and presented to the user. In addition, by adopting app search via activities, additional benefits become available such as Siri suggestions and smart reminders. For more information, see [Search with NSUserActivity](https://developer.xamarin.com/guides/ios/platform_features/introduction_to_ios9/search/nsuseractivity/).
 
 The sample app demonstrates a Todo list application where the data is stored in an in-memory collection. As each `TodoItem` is displayed on the `TodoItemPage`, the navigation point will be indexed so that it can be found by Spotlight search, as shown in the following screenshot:
 
@@ -77,7 +77,7 @@ The searchable activity is created as follows:
 
 > ℹ️ **Note**: Activities that are marked as the current activity by the `BecomeCurrent` method must later have the [`ResignCurrent`](/api/member/Foundation.NSUserActivity.ResignCurrent()/) method called. This method tells the activity that it should no longer be the activity currently in use by the user. In the sample app this occurs when the user navigates back to the `TodoListPage`.
 
-The `CreateActivity` method can be extended to create activities that are added to Apple's cloud-based index and presented to users (via search) who have not already installed the app on their device. For more information, see [Public Search Indexing](/guides/ios/platform_features/introduction_to_ios9/search/nsuseractivity/#Public_Search_Indexing).
+The `CreateActivity` method can be extended to create activities that are added to Apple's cloud-based index and presented to users (via search) who have not already installed the app on their device. For more information, see [Public Search Indexing](https://developer.xamarin.com/guides/ios/platform_features/introduction_to_ios9/search/nsuseractivity/#Public_Search_Indexing).
 
 ## Responding to an Activity
 
@@ -118,7 +118,7 @@ public App ()
 
 When the callback for the `ShowItem` message is executed, the `TodoItem` for the identifier is retrieved. Provided that it's not `null`, the `TodoItemPage` is then navigated to, where the `TodoItem` instance is displayed through data binding.
 
-For more information about using the [`MessagingCenter`](/api/type/Xamarin.Forms.MessagingCenter/) class, see [Publish and Subscribe with MessagingCenter](/guides/xamarin-forms/messaging-center/).
+For more information about using the [`MessagingCenter`](/api/type/Xamarin.Forms.MessagingCenter/) class, see [Publish and Subscribe with MessagingCenter](https://developer.xamarin.com/guides/xamarin-forms/messaging-center/).
 
 # Summary
 

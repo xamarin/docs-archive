@@ -4,7 +4,7 @@ title: "Create an iOS Project"
 brief: "This recipe shows how to create a new iOS project."
 article:
   - title: "Hello, iPhone" 
-    url: /guides/ios/getting_started/hello,_world
+    url: https://developer.xamarin.com/guides/ios/getting_started/hello,_world
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -24,7 +24,7 @@ article:
 <ide name="vs">
 <h2>Create an iOS Project in Visual Studio</h2>
 <ol>
-  <li><a href="/guides/ios/getting_started/introduction_to_xamarin_ios_for_visual_studio">Make sure Xamarin.iOS for Visual Studio is configured correctly</a>. Launch Visual Studio and choose <span class="UIItem">File > New > Project</span>: <im src="Images/ios_project_00_vs.png" /></li>
+  <li><a href="https://developer.xamarin.com/guides/ios/getting_started/introduction_to_xamarin_ios_for_visual_studio">Make sure Xamarin.iOS for Visual Studio is configured correctly</a>. Launch Visual Studio and choose <span class="UIItem">File > New > Project</span>: <im src="Images/ios_project_00_vs.png" /></li>
   <li>A window will pop up with a list of options for the types of projects available to you. To create an iOS project, choose the <span class="UIItem">Templates</span> and then the <span class="UIItem">Visual C#</span> category to open up the available sub-categories, then select <span class="UIItem">iOS</span>:<img src="Images/ios_project_01_vs.png" /></li>
   <li>Choose your device from the menu on the left. If you are new to Xamarin.iOS and unsure about what template to use, select <span class="UIItem">Single View Application</span> from the panel on the right. This will create an application with one view and one View Controller.</li>
 

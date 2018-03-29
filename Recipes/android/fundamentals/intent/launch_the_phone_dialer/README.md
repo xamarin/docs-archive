@@ -4,7 +4,7 @@ title: "Launch the Phone Dialer"
 brief: "This recipe shows how to launch the phone dialer application."
 article:
   - title: "Hello, Android Multiscreen" 
-    url: /guides/android/getting_started/hello,android_multiscreen
+    url: https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen
 sdk:
   - title: "Initiate a phone call" 
     url: http://developer.android.com/guide/components/intents-common.html#DialPhone

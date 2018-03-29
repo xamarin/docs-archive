@@ -3,7 +3,7 @@ id: 145134BE-FD78-42DB-139D-FE4F54505499
 title: "Merge Images"
 article:
   - title: "Working with Images" 
-    url: /guides/ios/application_fundamentals/working_with_images
+    url: https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images
 sdk:
   - title: "Quartz 2D Programming Guide" 
     url: https://developer.apple.com/library/mac/#documentation/graphicsimaging/conceptual/drawingwithquartz2d/Introduction/Introduction.html

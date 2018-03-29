@@ -4,7 +4,7 @@ title: "Open a Webpage in the Browser Application"
 brief: "This recipe shows how to launch a web page in the built-in browser application."
 article:
   - title: "Hello, Multiscreen Applications" 
-    url: /guides/android/getting_started/hello,_multi-screen_applications
+    url: https://developer.xamarin.com/guides/android/getting_started/hello,_multi-screen_applications
 sdk:
   - title: "Invoking Google Applications on Android Devices" 
     url: http://developer.android.com/guide/appendix/g-app-intents.html

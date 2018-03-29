@@ -4,7 +4,7 @@ title: "Create a Transparent Region in a View"
 brief: "This recipe shows how to create a transparent region within a view."
 article:
   - title: "Core Graphics guide" 
-    url: /guides/ios/application_fundamentals/graphics_animation_ios/core_graphics/
+    url: https://developer.xamarin.com/guides/ios/application_fundamentals/graphics_animation_ios/core_graphics/
 sdk:
   - title: "Quartz 2D Programming Guide" 
     url: https://developer.apple.com/library/ios/#documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html

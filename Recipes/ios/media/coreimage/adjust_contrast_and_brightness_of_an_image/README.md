@@ -6,7 +6,7 @@ article:
   - title: "Save Photo to Album with Metadata" 
     url: /Recipes/ios/media/video_and_photos/save_photo_to_album_with_metadata
   - title: "Introduction to Core Image" 
-    url: /guides/ios/platform_features/introduction_to_coreimage
+    url: https://developer.xamarin.com/guides/ios/platform_features/introduction_to_coreimage
 sdk:
   - title: "CIFilter Class Reference" 
     url: http://developer.apple.com/library/ios/#documentation/GraphicsImaging/Reference/QuartzCoreFramework/Classes/CIFilter_Class/Reference/Reference.html

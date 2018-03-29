@@ -13,7 +13,7 @@ dateupdated: 2017-03-02
 
 
 
-> ℹ️ **Note:** The `MPMoviePlayerController` class has been deprecated in iOS 9 and later. Use `AVPictureInPictureController` or `AVPlayerViewController` instead. Please see our [Picture in Picture](/guides/ios/platform_features/introduction_to_ios9/multitasking/#Picture_in_Picture) documentation.
+> ℹ️ **Note:** The `MPMoviePlayerController` class has been deprecated in iOS 9 and later. Use `AVPictureInPictureController` or `AVPlayerViewController` instead. Please see our [Picture in Picture](https://developer.xamarin.com/guides/ios/platform_features/introduction_to_ios9/multitasking/#Picture_in_Picture) documentation.
 
 
 # Recipe

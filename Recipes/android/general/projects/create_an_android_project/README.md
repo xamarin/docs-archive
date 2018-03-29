@@ -4,7 +4,7 @@ title: "Create an Android Project"
 brief: "This recipe shows how to create a new Android project in Xamarin and Visual Studio."
 article:
   - title: "Hello, Android" 
-    url: /guides/android/getting_started/hello,_world
+    url: https://developer.xamarin.com/guides/android/getting_started/hello,_world
 ---
 
 <a name="Recipe" class="injected"></a>

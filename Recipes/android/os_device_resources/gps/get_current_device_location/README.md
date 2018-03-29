@@ -4,7 +4,7 @@ title: "Get Current Device Location"
 brief: "This recipe shows how to get the location of a device using Android.Location.LocationManager."
 article:
   - title: "Maps and Location" 
-    url: /guides/android/platform_features/maps_and_location
+    url: https://developer.xamarin.com/guides/android/platform_features/maps_and_location
 samplecode:
   - title: "FusedLocationProvider" 
     url: /samples/FusedLocationProvider/
@@ -20,7 +20,7 @@ This recipe will show how to get the location of the device. When a button on th
 
 [ ![](Images/GetLocation1.png)](Images/GetLocation1.png)
 
-> 🚫 This recipe is deprecated but is retained to support those devices that do not have Google Play Services installed. Android applications should use the [Fused Location Provider](/guides/android/platform_features/maps_and_location/location/#Get_Location_with_Google_Location_Services_and_the_Fused_Location_Provider) that is available through Google Play Services.  
+> 🚫 This recipe is deprecated but is retained to support those devices that do not have Google Play Services installed. Android applications should use the [Fused Location Provider](https://developer.xamarin.com/guides/android/platform_features/maps_and_location/location/#Get_Location_with_Google_Location_Services_and_the_Fused_Location_Provider) that is available through Google Play Services.  
 
 # Recipe
 

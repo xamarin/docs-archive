@@ -5,11 +5,11 @@ subtitle: "Rendering a PDF using the HTML5 canvas element"
 brief: "This recipe shows how to display a local PDF file in a WebView control on each platform."
 article:
   - title: "WebView" 
-    url: /guides/xamarin-forms/user-interface/webview/
+    url: https://developer.xamarin.com/guides/xamarin-forms/user-interface/webview/
   - title: "Implementing a View" 
-    url: /guides/xamarin-forms/custom-renderer/view/
+    url: https://developer.xamarin.com/guides/xamarin-forms/custom-renderer/view/
   - title: "Implementing a HybridWebView" 
-    url: /guides/xamarin-forms/custom-renderer/hybridwebview/
+    url: https://developer.xamarin.com/guides/xamarin-forms/custom-renderer/hybridwebview/
 api:
   - title: "WebView" 
     url: /api/type/Xamarin.Forms.WebView/
@@ -30,7 +30,7 @@ When a [`WebView`](/api/type/Xamarin.Forms.WebView/) control is rendered by a Xa
 1. [Consume](#Consuming_the_Custom_Control) the custom control from Xamarin.Forms.
 1. [Create](#Creating_the_Custom_Renderer_on_Each_Platform) the custom renderer for the control on each platform.
 
-For information about customizing a [`WebView`](/api/type/Xamarin.Forms.WebView/) control using a custom renderer, see [Implementing a HybridWebView](/guides/xamarin-forms/custom-renderer/hybridwebview/).
+For information about customizing a [`WebView`](/api/type/Xamarin.Forms.WebView/) control using a custom renderer, see [Implementing a HybridWebView](https://developer.xamarin.com/guides/xamarin-forms/custom-renderer/hybridwebview/).
 
 ## Creating the Custom WebView Control
 
@@ -127,7 +127,7 @@ namespace DisplayPDF.iOS
 
 Provided that the custom renderer is attached to a new Xamarin.Forms element, the `LoadRequest` method loads the local PDF file that's specified by the `CustomWebView.Uri` property. The code assumes that the file is stored in the `Content` folder of the project. Pinch-to-zoom functionality is enabled by setting the `ScalesPageToFit` property to `true`.
 
-For more information about subclassing the `ViewRenderer<T1, T2>` class, see [Implementing a View](/guides/xamarin-forms/custom-renderer/view/).
+For more information about subclassing the `ViewRenderer<T1, T2>` class, see [Implementing a View](https://developer.xamarin.com/guides/xamarin-forms/custom-renderer/view/).
 
 ### Creating the Custom Renderer on Android
 

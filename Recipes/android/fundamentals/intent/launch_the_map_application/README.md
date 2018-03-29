@@ -4,9 +4,9 @@ title: "Launch the Map Application"
 brief: "This recipe shows how to launch the maps application at a specified location."
 article:
   - title: "Hello, Multiscreen Applications" 
-    url: /guides/android/getting_started/hello,_multi-screen_applications
+    url: https://developer.xamarin.com/guides/android/getting_started/hello,_multi-screen_applications
   - title: "Maps and Location – Part 1" 
-    url: /guides/android/platform_features/maps_and_location/part_1_-_maps_application
+    url: https://developer.xamarin.com/guides/android/platform_features/maps_and_location/part_1_-_maps_application
 sdk:
   - title: "Invoking Google Applications on Android Devices" 
     url: http://developer.android.com/guide/appendix/g-app-intents.html
@@ -43,6 +43,6 @@ Each screen in an application is represented by an activity. Using
 asynchronous messages called intents, when created from a Uri, causes the system
 to load an activity that can handle the Uri scheme. In this recipe a Uri
 beginning with geo: loads an activity from the maps application at the location
-specified. See the [Geo Uri Scheme](/guides/android/platform_features/maps_and_location/part_1_-_maps_application#Geo_Uri_Scheme) section in the [Maps and Location](/guides/android/platform_features/maps_and_location)
+specified. See the [Geo Uri Scheme](https://developer.xamarin.com/guides/android/platform_features/maps_and_location/part_1_-_maps_application#Geo_Uri_Scheme) section in the [Maps and Location](https://developer.xamarin.com/guides/android/platform_features/maps_and_location)
 article for the various formats supported by this scheme.
 

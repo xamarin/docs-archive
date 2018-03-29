@@ -4,7 +4,7 @@ title: "Send an Email"
 brief: "This recipe shows how to send an email using an Intent."
 article:
   - title: "Hello, Multiscreen Applications" 
-    url: /guides/android/getting_started/hello,_multi-screen_applications
+    url: https://developer.xamarin.com/guides/android/getting_started/hello,_multi-screen_applications
 ---
 
 <a name="Recipe" class="injected"></a>

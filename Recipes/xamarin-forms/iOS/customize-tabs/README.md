@@ -23,7 +23,7 @@ The following screenshot shows the tab bar after it has been customized:
 ## Tab Color
 
 To change the color used for the iOS tabs, follow the instructions for
-setting [iOS-specific styles](/guides/xamarin-forms/platform-features/ios/theme/)
+setting [iOS-specific styles](https://developer.xamarin.com/guides/xamarin-forms/platform-features/ios/theme/)
 with Xamarin.Forms.
 
 The following code is added to the **AppDelegate.cs** file in the
@@ -35,7 +35,7 @@ UITabBar.Appearance.SelectedImageTintColor = UIColor.Brown;
 
 ## Font
 
-A [custom renderer](/guides/xamarin-forms/custom-renderer/) is required to
+A [custom renderer](https://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) is required to
 customize the font face, style, and size. The complete custom renderer
 code is shown below. It uses the *Chalkboard* font in both *Light* and *Bold*
 styles, and 9 point font for unselected tabs with 12 point for the selected tab.

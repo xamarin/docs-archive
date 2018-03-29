@@ -4,7 +4,7 @@ title: "Set A Breakpoint"
 brief: "This recipe shows how to set regular and conditional breakpoints."
 article:
   - title: "Debugging" 
-    url: /guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios
+    url: https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios
 ---
 
 <a name="Recipe" class="injected"></a>

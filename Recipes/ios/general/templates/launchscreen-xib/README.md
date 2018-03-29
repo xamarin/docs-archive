@@ -3,10 +3,10 @@ id: 0E7383D8-C50A-40C9-9F15-0F17558721DA
 title: "Creating a Launch Screen using a .xib"
 article:
   - title: "Managing Launch Screens" 
-    url: /guides/ios/application_fundamentals/working_with_images/launch-screens/#Managing_Launch_Screens
+    url: https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#Managing_Launch_Screens
 ---
 
-Although Storyboard-based launch screens are most favored by Apple, they can also be created using either a .xib. Regardless of which way you choose, you can now add, design, and create your Launch Screen inside Visual Studio for Mac or Visual Studio using the Xamarin Designer for iOS. For more information on creating a Launch Screen as a Storyboard visit the [Launch Screen](/guides/ios/application_fundamentals/working_with_images/launch-screens/#Managing_Launch_Screens_with_Storyboards) guide.
+Although Storyboard-based launch screens are most favored by Apple, they can also be created using either a .xib. Regardless of which way you choose, you can now add, design, and create your Launch Screen inside Visual Studio for Mac or Visual Studio using the Xamarin Designer for iOS. For more information on creating a Launch Screen as a Storyboard visit the [Launch Screen](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/launch-screens/#Managing_Launch_Screens_with_Storyboards) guide.
 
 # Recipe
 

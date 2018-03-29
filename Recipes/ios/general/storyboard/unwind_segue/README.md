@@ -7,9 +7,9 @@ samplecode:
     url: https://github.com/xamarin/recipes/tree/master/ios/general/storyboard/unwind_segue
 article:
   - title: "Introduction to Storybords" 
-    url: /guides/ios/user_interface/introduction_to_storyboards/
+    url: https://developer.xamarin.com/guides/ios/user_interface/introduction_to_storyboards/
   - title: "Xamarin Designer for iOS" 
-    url: /guides/ios/user_interface/designer/
+    url: https://developer.xamarin.com/guides/ios/user_interface/designer/
 sdk:
   - title: "UIStoryboard Class Reference&nbsp;" 
     url: http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIStoryboard_Class/Reference/Reference.html

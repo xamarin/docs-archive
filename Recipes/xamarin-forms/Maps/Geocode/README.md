@@ -5,7 +5,7 @@ subtitle: "How to convert a street address to latitude and longitude coordinates
 brief: "This recipe shows how to geocode a user supplied street address to latitude and longitude coordinates by using the `Geocoder` class included in Xamarin.Forms.Maps."
 article:
   - title: "Working with Maps in Xamarin.Forms" 
-    url: /guides/xamarin-forms/working-with/maps/
+    url: https://developer.xamarin.com/guides/xamarin-forms/working-with/maps/
 api:
   - title: "Geocoder" 
     url: /api/type/Xamarin.Forms.Maps.Geocoder/
@@ -15,7 +15,7 @@ api:
 
 The Xamarin.Forms.Maps NuGet package is used to add maps to a Xamarin.Forms app, and uses the native map APIs on each platform. This NuGet package provides the `Geocoder` class that converts between string addresses and latitude and longitudes.
 
-> ℹ️ **Note**: By using the native map APIs on each platform Xamarin.Forms.Maps provides a fast, familiar maps experience for users, but means that some configuration steps are required to adhere to each platforms specific API requirements. For information about these configuration steps see [Working with Maps in Xamarin.Forms](/guides/xamarin-forms/working-with/maps/).
+> ℹ️ **Note**: By using the native map APIs on each platform Xamarin.Forms.Maps provides a fast, familiar maps experience for users, but means that some configuration steps are required to adhere to each platforms specific API requirements. For information about these configuration steps see [Working with Maps in Xamarin.Forms](https://developer.xamarin.com/guides/xamarin-forms/working-with/maps/).
 
 ## Geocoding a street address
 

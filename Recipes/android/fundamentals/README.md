@@ -8,4 +8,4 @@ services
 
 -  [Activity](/Recipes/android/fundamentals/activity)
 -  [Intent](/Recipes/android/fundamentals/intent)
--   [Service](/guides/android/application_fundamentals/services)
+-   [Service](https://developer.xamarin.com/guides/android/application_fundamentals/services)

@@ -4,7 +4,7 @@ title: "Reverse Geocode a Location"
 brief: "This recipe shows how use the Geocoder to get an address from a latitude and longitude."
 article:
   - title: "Maps and Location" 
-    url: /guides/android/platform_features/maps_and_location
+    url: https://developer.xamarin.com/guides/android/platform_features/maps_and_location
 sdk:
   - title: "Geocoder API" 
     url: http://developer.android.com/reference/android/location/Geocoder.html
