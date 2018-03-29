@@ -16,11 +16,11 @@ The very minimum amount of data that needs to be added is the follows:
 
 Other _optional_ metadata: 
 
-* article: `[name](urn)` Link to other relevant Xamarin guides. 
-* video: `[name](urn)` Link to relevant videos. 
-* sample: `[name](urn)` Link to Xamarin samples. 
-* api: `[name](urn)` Link to Xamarin API docs. 
-* link: `[name](urn)` Link to any relevant external page. 
+* article:
+* video:
+* sample:
+* api:
+* link:
 
 For example:
 
@@ -29,5 +29,14 @@ For example:
 id: 30D6D826-11A0-30FA-D781-077C26EA28D4
 title: "Enumerate Directories"
 brief: "This recipe shows how to list directories in the iOS file system using Xamarin.iOS."
+samplecode:
+  - title: XAML Basics
+    url: /link/to/sample/
+  - title: another sample
+    url: /another/link/here
+api:  
+  - title: Xamarin.Forms  
+    url: /api/namespace/Xamarin.Forms/
+
 ---
 ```

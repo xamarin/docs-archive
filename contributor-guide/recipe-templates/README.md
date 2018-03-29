@@ -1,10 +1,10 @@
 ---
-id: {this should be a guid}  
-title: 
-brief:  
-samplecode:[]()  
-article: []()
-sdk:[]()  
+id: {this-should-be-a-guid}  
+title: "My Title"
+brief: "Some brief information about the recipe"
+samplecode:
+  - title: XAML Basics  
+    url: /link/to/sample/ 
 ---
 
 # Overview
@@ -20,11 +20,12 @@ By the end of this recipe, we will be able to build and run an application on th
 
 1. First, do this, as illustrated below:
 
-2. Next, add the following code to thisMethod in thisClass.cs:
+2. Next, add the following code to `thisMethod` in **thisClass.cs**:
 
 ```
 Some code
 ```
+
 This code will give this expect result
 
 3. Run your app in the simulator.
