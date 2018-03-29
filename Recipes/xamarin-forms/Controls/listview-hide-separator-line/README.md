@@ -5,7 +5,7 @@ subtitle: "How to remove the lines between rows in a Xamarin.Forms table view"
 brief: "This recipe shows how to build a custom renderer for the TableView to hide the lines between each cell on iOS and Android."
 article:
   - title: "Customizing Controls for Each Platform" 
-    url: http://docs.xamarin.com/guides/xamarin-forms/custom-renderer
+    url: https://developer.xamarin.com/guides/xamarin-forms/custom-renderer
 api:
   - title: "ListView" 
     url: http://developer.xamarin.com/api/type/Xamarin.Forms.ListView/

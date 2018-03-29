@@ -19,12 +19,12 @@ view the call stack, and more:
  [ ![](Images/breakpoint_00.png)](Images/breakpoint_00.png)
 
 You can configure which tools you see in the Debug
-view by selecting <span class="UIItem">View > Debug Windows</span>:
+view by selecting **View > Debug Windows**:
 
  [ ![](Images/breakpoint_01.png)](Images/breakpoint_01.png)
 
 To set a breakpoint, simply click to the left of the line number at the
-place in your code that you need to troubleshoot. You will see the breakpoint appear in the <span class="UIItem">Breakpoints</span> window:
+place in your code that you need to troubleshoot. You will see the breakpoint appear in the **Breakpoints** window:
 
  [ ![](Images/breakpoint_03.png)](Images/breakpoint_03.png)
 
@@ -52,17 +52,17 @@ To set a conditional
 breakpoint, you need to access the breakpoint properties window. There are
 several ways to toggle this:
 
-1.   Right click on the space to the left of the line number where you want to set the breakpoint, and select  <span class="uiitem">New Breakpoint</span> :
+1.   Right click on the space to the left of the line number where you want to set the breakpoint, and select  **New Breakpoint** :
 
   [ ![](Images/breakpoint_05.png)](Images/breakpoint_05.png)
 
 
-1.   For an existing breakpoint, right click on the breakpoint and select  <span class="UIItem">Breakpoint Properties</span> :
+1.   For an existing breakpoint, right click on the breakpoint and select  **Breakpoint Properties** :
 
   [ ![](Images/breakpoint_06.png)](Images/breakpoint_06.png)
 
 
-1.   For an existing breakpoint, select the breakpoint in the  <span class="UIItem">Breakpoints</span> window, and hit the wrench icon:
+1.   For an existing breakpoint, select the breakpoint in the  **Breakpoints** window, and hit the wrench icon:
 
   [ ![](Images/breakpoint_02.png)](Images/breakpoint_02.png)
 

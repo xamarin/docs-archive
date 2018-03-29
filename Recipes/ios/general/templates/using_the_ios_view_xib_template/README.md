@@ -12,16 +12,12 @@ xamu:
 
 # Recipe
 
-First, create a new solution named `TestApp` using the <span class="UIItem">Single View Application</span> template, and add a new file to it called `SomeView` using the <span class="UIItem">View</span> file template,
+First, create a new solution named `TestApp` using the **Single View Application** template, and add a new file to it called `SomeView` using the **View** file template,
 as shown below:
 
-<ide name="xs">
-<a href="Images/image01.png"><img src="Images/image01.png"></a>
-</ide>
+[![](Images/image01.png)](Images/image01.png)
 
-<ide name="vs">
-<a href="Images/xib2.png"><img src="Images/xib2.png"></a>
-</ide>
+[![](Images/xib2.png)](Images/xib2.png)
 
 This creates a new file called `SomeView.xib`.
 
@@ -29,13 +25,10 @@ Double-click `SomeView.xib` to open it in the Xamarin Designer for iOS.
 
 At this point controls can be added to the .xib. As an example, search the toolbox for **label** drag a `UILabel` onto the design surface as shown below:
 
-<ide name="xs">
-<a href="Images/image02.png"><img src="Images/image02.png"></a>
-</ide>
+[![](Images/image02.png)](Images/image02.png)
 
-<ide name="vs">
-<a href="Images/xib3.png"><img src="Images/xib3.png"></a>
-</ide>
+[![](Images/xib3.png)](Images/xib3.png)
+
 
 However, since the .xib has not been connected to any backing class, we cannot
 yet manage properties nor handle events on the controls in the view. For example buttons should have behaviour that responds to the user's touch, and labels may need to be updated based on user input. To interact with the .xib programmatically we need to have two files:
@@ -45,23 +38,18 @@ yet manage properties nor handle events on the controls in the view. For example
 
 To connect these C# files to our .xib file, select the root view on the [design surface](https://developer.xamarin.com/guides/ios/user_interface/designer/introduction/#iOS_Designer_features), and under *Widget > Identity* set the **Class** to `SomeView` and press **Enter**:
 
-<ide name="xs">
-<a href="Images/image03.png"><img src="Images/image03.png"></a>
-</ide>
+[![](Images/image03.png)](Images/image03.png)
 
-<ide name="vs">
-<a href="Images/xib4.png"><img src="Images/xib4.png"></a>
-</ide>
+[![](Images/xib4.png)](Images/xib4.png)
+
 	
 This will create the two classes – `SomeView.cs` and `SomeView.designer.cs` – in our solution :
 
-<ide name="xs">
-<a href="Images/image04.png"><img src="Images/image04.png"></a>
-</ide>
 
-<ide name="vs">
-<a href="Images/xib5.png"><img src="Images/xib5.png"></a>
-</ide>
+[![](Images/image04.png)](Images/image04.png)
+
+[![](Images/xib5.png)](Images/xib5.png)
+
 
 The result will be a reusable view that can be included in any view hierarchy as with any other view.
 
@@ -69,13 +57,9 @@ This differs from the ViewController template, whose Storyboard file comes alrea
 
 We can now manage the properties of the controls in the view, such as the label we added earlier. To interact with our UILabel control using code, we must give it a unique identifier so that it can be accessed in the C# backing code for the view. To do this select the label on the designer surface, and under *Widget > Identity > Name* in the **Properties Pad** enter `MyLabel`:
 
-<ide name="xs">
-<a href="Images/image05.png"><img src="Images/image05.png"></a>
-</ide>
+[![](Images/image05.png)](Images/image05.png)
 
-<ide name="vs">
-<a href="Images/xib6.png"><img src="Images/xib6.png"></a>
-</ide>
+[![](Images/xib6.png)](Images/xib6.png)
 
 If we open **SomeView.designer.cs**, we can see that the label has been defined:
 
@@ -167,8 +151,6 @@ Run the application now and the view from the .xib is loaded and
 displayed:
 
 [ ![](Images/image06.png)](Images/image06.png)
-
- <a name="Summary" class="injected"></a>
 
 
 # Summary

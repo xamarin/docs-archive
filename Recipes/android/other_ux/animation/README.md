@@ -7,6 +7,6 @@ Android provides support for animating properties of any type as well as animati
 
  [ ![](Images/screen2.png)](Images/screen2.png)
 
--  <span class="noChildren"><a href="/Recipes/android/other_ux/animation/frame_animation">Frame Animation</a></span>
+-  <span class="noChildren"><a href="/Recipes/android/other_ux/animation/frame_animation">Frame Animation</a>**
 -  <span class="noChildren"><a href="/Recipes/android/other_ux/animation/rotate_animation">Rotate Animation</a></span>
 -  <span class="noChildren"><a href="/Recipes/android/other_ux/animation/animate_listview_deletion">Animate ListView Deletion</a></span>

@@ -21,7 +21,7 @@ A basic annotation consists of a pin marker added to map. When touched, the
 pin displays a small popup with more information. To add an annotation to a
 MKMapView:
 
-1. Start with an existing MKMapView or review the  [Displaying a Location (MapView)](http://docs.xamarin.com/Recipes/ios/content_controls/map_view/display_a_location) recipe.
+1. Start with an existing MKMapView or review the  [Displaying a Location (MapView)](https://developer.xamarin.com/Recipes/ios/content_controls/map_view/display_a_location) recipe.
 
 <ol start="2">
 	<li>Create a subclass of MKAnnotation</li>

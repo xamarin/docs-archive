@@ -5,7 +5,7 @@ subtitle: "How to use Progress<T> in a Xamarin mobile application"
 brief: "This recipe will demonstrate how to download a file in the background and report the download progress to the end user."
 article:
   - title: "Async Support Overview" 
-    url: http://docs.xamarin.com/guides/cross-platform/advanced/async_support_overview/
+    url: https://developer.xamarin.com/guides/cross-platform/advanced/async_support_overview/
 api:
   - title: "IProgress<T>" 
     url: http://msdn.microsoft.com/en-us/library/hh138298(v=vs.110).aspx

@@ -58,7 +58,7 @@ videoView.Start ();
 ```
 
 <ol start="6">
-  <li>Under <span class="UIItem">Project Options</span>, add an Android Manifest. Under Required permissions set the <code>INTERNET</code> permission and press <span class="UIItem">OK</span>.</li>
+  <li>Under **Project Options**, add an Android Manifest. Under Required permissions set the <code>INTERNET</code> permission and press **OK**.</li>
 </ol>
 
  <a name="Additional_Information" class="injected"></a>

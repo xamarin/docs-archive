@@ -19,7 +19,7 @@ the user has entered text, or via a button press.
 ## Via EditingDidEnd
 
 The `EditingDidEnd` event is raised when a user moves focus from a control,
-either from selecting the next control, or from clicking the <span class="UIItem">Done</span>
+either from selecting the next control, or from clicking the **Done**
 button. The border properties on the text field can be accessed via the underlying `Layer` object:
 
 ```

@@ -52,21 +52,34 @@ Rivets.AppLinks.Navigator.Navigate(&quot;http://any.old.url&quot;)
 -  Install the [Rivets](https://www.nuget.org/packages/Rivets/) package from
    the NuGet Gallery if you have not already done so.
 
--  <ide name="xs">Open your app&#39;s  `Info.plist` file, and under the  **Advanced** tab, in the  **URL Types** section, add a new URL Type like:<br/> ![Image of Info.plist configuration](Images/app-links-incoming-ios-infoplist.png)</ide><ide name="vs">Manually edit your <code>Info.plist</code> file and add the following section:<br/><pre><code>
-&lt;key&gt;CFBundleURLTypes&lt;/key&gt;
-	&lt;array&gt;
-		&lt;dict&gt;
-			&lt;key&gt;CFBundleURLName&lt;/key&gt;
-			&lt;string&gt;com.example.store&lt;/string&gt;
-			&lt;key&gt;CFBundleURLTypes&lt;/key&gt;
-			&lt;string&gt;Viewer&lt;/string&gt;
-			&lt;key&gt;CFBundleURLSchemes&lt;/key&gt;
-			&lt;array&gt;
-				&lt;string&gt;example&lt;/string&gt;
-			&lt;/array&gt;
-		&lt;/dict&gt;
-	&lt;/array&gt;
-</code></pre></ide>
+-    Edit the Info.plist
+
+## Visual Studio for Mac
+
+Open your app's  **Info.plist** file, and under the  **Advanced** tab, in the  **URL Types** section, add a new URL Type like:
+    ![Image of Info.plist configuration](Images/app-links-incoming-ios-infoplist.png)
+
+
+## Visual Studio
+
+Manually edit your **Info.plist** file and add the following section:
+
+```
+<key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>com.example.store</string>
+            <key>CFBundleURLTypes</key>
+            <string>Viewer</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>example</string>
+            </array>
+        </dict>
+    </array>
+```
+
 
 -  In your  `AppDelegate` , setup your app to have a Navigation controller which is your window&#39;s root view controller, like this:
   

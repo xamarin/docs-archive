@@ -6,17 +6,17 @@ brief: "Some location APIs such as Significant Location Change and Geofences req
 
 # Recipe
 
-1.  Launch the iOS Simulator. Then, open the iOS Simulator's  <span class="UIItem">Debug</span> menu and select  <span class="UIItem">Location > Freeway Drive</span> . This will simulate a coastal drive up California's highway 280:
+1.  Launch the iOS Simulator. Then, open the iOS Simulator's  **Debug** menu and select  **Location > Freeway Drive** . This will simulate a coastal drive up California's highway 280:
 
   [ ![](Images/00.png)](Images/00.png)
 
 
-2.   Deploy the application to the simulator. The simulator will begin feeding sample data to the application, which should respond appropriately. For example, running the  [Track Significant Location Change](http://docs.xamarin.com/recipes/ios/multitasking/track_significant_location_change/) code in the simulator produces the following application log:
+2.   Deploy the application to the simulator. The simulator will begin feeding sample data to the application, which should respond appropriately. For example, running the  [Track Significant Location Change](https://developer.xamarin.com/recipes/ios/multitasking/track_significant_location_change/) code in the simulator produces the following application log:
 
   [ ![](Images/02.png)](Images/02.png)
 
 
-3.  If your application requires a custom location to test, choose the  <span class="UIItem">Location > Custom Location...</span> option from the  <span class="UIItem">Debug</span> menu, and specify your own latitude and longitude to test:
+3.  If your application requires a custom location to test, choose the  **Location > Custom Location...** option from the  **Debug** menu, and specify your own latitude and longitude to test:
 
   [ ![](Images/03.png)](Images/03.png) [ ![](Images/04.png)](Images/04.png)
 

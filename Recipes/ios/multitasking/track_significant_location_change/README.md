@@ -29,7 +29,7 @@ var LocMgr = new CLLocationManager();
   LocMgr.requestWhenInUseAuthorization(); //to access user's location when the app is in use.
 ```
 <ol start="4">
-  <li>In addition to explicitly requesting access to the user's location, you must add two keys to the <strong>Info.plist</strong> file, by opening <strong>Info.plist</strong> and selecting <span class="UIItem">Source</span>. </li>
+  <li>In addition to explicitly requesting access to the user's location, you must add two keys to the <strong>Info.plist</strong> file, by opening <strong>Info.plist</strong> and selecting **Source**. </li>
 </ol>
 * **NSLocationWhenInUseUsageDescription** - A description of why your app wants to access the user's location in the foreground.
 * **NSLocationAlwaysInUsageDescription** - A description of why your app wants to access the user's location in the background.

@@ -33,32 +33,32 @@ version) to create the user profile:
 In Android 4.x (Ice Cream Sandwich): 
 
 - Start the **People** app. 
-- Tap <span class="uiitem">Create a new contact</span>.
-- Tap <span class="uiitem">Keep local</span>.
+- Tap **Create a new contact**.
+- Tap **Keep local**.
 - Enter a name for a temporary user, such as "Temp".
-- Tap the check mark next to <span class="uiitem">Done</span>. 
+- Tap the check mark next to **Done**. 
 - Tap the back arrow in the upper left hand corner of the screen.
-- Tap <span class="uiitem">Set up my profile</span> (under the
+- Tap **Set up my profile** (under the
   **ME** heading).
-- Under <span class="uiitem">My local profile</span>, enter your 
+- Under **My local profile**, enter your 
   name and, optionally, a phone 
   number and email address.
-- Tap the check mark next to <span class="uiitem">Done</span>.
+- Tap the check mark next to **Done**.
 
 In Android 5.x (Lollipop):
 
 - Start the **Contacts** app. 
-- Tap <span class="uiitem">CREATE A NEW CONTACT</span>.
-- Tap <span class="uiitem">KEEP LOCAL</span>.
+- Tap **CREATE A NEW CONTACT**.
+- Tap **KEEP LOCAL**.
 - Enter a name for a temporary user, such as "Temp".
-- Tap the check mark next to <span class="uiitem">Add new contact</span>. 
+- Tap the check mark next to **Add new contact**. 
 - Click the back button.
-- Tap <span class="uiitem">Set up my profile</span> (next to the
+- Tap **Set up my profile** (next to the
   **ME** heading).
-- Under <span class="uiitem">My local profile</span>, enter your 
+- Under **My local profile**, enter your 
   name and, optionally, a phone 
   number and email address.
-- Tap the check mark next to <span class="uiitem">Add new contact</span>.
+- Tap the check mark next to **Add new contact**.
 
 
 To update and query the user profile, follow these steps:
@@ -70,19 +70,19 @@ To update and query the user profile, follow these steps:
     (For more information about Android version settings, see
     [Understanding Android API levels](https://developer.xamarin.com/guides/android/application_fundamentals/understanding_android_api_levels/).)
     In Visual Studio, open the project properties in
-    <span class="uiitem">Solution Explorer</span> and select the <span 
-    class="uiitem">Application</span> page. In the drop-down menu under 
-    <span class="uiitem">Minimum Android to target</span> you can 
+    **Solution Explorer** and select the <span 
+    class="uiitem">Application** page. In the drop-down menu under 
+    **Minimum Android to target** you can 
     select the minimum Android version for your project: 
 
     ![](Images/vs-minimum.png)
 
     In Visual Studio for Mac, click the gray gear icon to the right of the 
-    project and select <span class="uiitem">Options</span>; this opens 
-    the <span class="uiitem">Project Options</span> dialog. Click <span 
-    class="uiitem">Build > Android Application</span>. Using the 
-    drop-down menu to the right of <span class="uiitem">Minimum Android 
-    version</span>, you can set the minimum Android version for your
+    project and select **Options**; this opens 
+    the **Project Options** dialog. Click <span 
+    class="uiitem">Build > Android Application**. Using the 
+    drop-down menu to the right of **Minimum Android 
+    version**, you can set the minimum Android version for your
     project:
 
     ![](Images/xs-minimum.png)
@@ -91,17 +91,17 @@ To update and query the user profile, follow these steps:
 -   Set the target framework to API level 15 or 
     later. In our example, we have it set to Android 5.0 (API level 
     21). In Visual Studio, go to the project's <span 
-    class="uiitem">Application</span> page. Set the target framework by 
+    class="uiitem">Application** page. Set the target framework by 
     selecting the API level in the drop-down menu under <span 
-    class="uiitem">Compile using Android version</span>:
+    class="uiitem">Compile using Android version**:
 
     ![](Images/vs-target.png)
 
-    In Visual Studio for Mac, open the <span class="uiitem">Project 
-    Options</span> dialog. In this dialog, click <span 
-    class="uiitem">Build > General</span>. Set the target framework by 
+    In Visual Studio for Mac, open the **Project 
+    Options** dialog. In this dialog, click <span 
+    class="uiitem">Build > General**. Set the target framework by 
     selecting the API level in the drop-down menu to the right of <span 
-    class="uiitem">Target framework</span>:
+    class="uiitem">Target framework**:
 
     ![](Images/xs-target.png)
 
@@ -109,13 +109,13 @@ To update and query the user profile, follow these steps:
 -   Add permissions to the Android manifest that enables the app to 
     read and write contacts as well as read and write profile data. 
     In Visual Studio, open the project properties in <span 
-    class="uiitem">Solution Explorer</span> and select the <span 
-    class="uiitem">Android Manifest</span> page: 
+    class="uiitem">Solution Explorer** and select the <span 
+    class="uiitem">Android Manifest** page: 
 
     ![](Images/vs-manifest.png)
 
     Enable the following permissions under <span 
-    class="uiitem">Required permissions</span>: 
+    class="uiitem">Required permissions**: 
 
     -  **READ_CONTACTS**
     -  **READ_PROFILE**
@@ -123,14 +123,14 @@ To update and query the user profile, follow these steps:
     -  **WRITE_PROFILE**
 
     In Visual Studio for Mac, click the gray gear icon to the right of the 
-    project and select <span class="uiitem">Options</span>; this opens 
-    the <span class="uiitem">Project Options</span> dialog. Click <span 
-    class="uiitem">Build > Android Application</span>: 
+    project and select **Options**; this opens 
+    the **Project Options** dialog. Click <span 
+    class="uiitem">Build > Android Application**: 
 
     ![](Images/xs-manifest.png)
 
     Enable the following permissions in the <span 
-    class="uiitem">Required permissions</span> section: 
+    class="uiitem">Required permissions** section: 
 
     -  **ReadContacts**
     -  **ReadProfile**
@@ -244,8 +244,8 @@ button.Click += delegate {
 };
 ```
 
--   Build and run the app; it displays an <span class="uiitem">UPDATE 
-    PROFILE</span> button as seen below in the screenshot on the left. When 
+-   Build and run the app; it displays an **UPDATE 
+    PROFILE** button as seen below in the screenshot on the left. When 
     we tap this button to cause the button click handler to run, the 
     following sequence takes place: 
     -   The call to `NameOwner` updates the profile's display 

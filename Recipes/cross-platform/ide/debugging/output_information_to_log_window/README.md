@@ -15,11 +15,11 @@ article:
 The log window is a useful debugging tool, and is simple to use.
 
 1. First, locate the log window. You can toggle it in Visual Studio for Mac by selecting
-the <span class="UIItem">Application Output</span> panel on the bottom right:
+the **Application Output** panel on the bottom right:
 
  [ ![](Images/ios_log_00.png)](Images/ios_log_00.png)
 
-In Visual Studio, select the <span class="UIItem">Output</span> panel on the bottom left:
+In Visual Studio, select the **Output** panel on the bottom left:
 
  [ ![](Images/ios_log_00_vs.png)](Images/ios_log_00_vs.png)
 

@@ -5,7 +5,7 @@ subtitle: "How to dismiss the keyboard on iOS"
 brief: "This recipe shows how to build a custom renderer for an Entry that includes a 'Done' button to dismiss the keyboard"
 article:
   - title: "Customizing Controls for Each Platform" 
-    url: http://docs.xamarin.com/guides/xamarin-forms/custom-renderer
+    url: https://developer.xamarin.com/guides/xamarin-forms/custom-renderer
 api:
   - title: "Entry" 
     url: https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/
@@ -14,7 +14,7 @@ dateupdated: 2015-12-09
 
 # Overview
 
-To dismiss a keyboard in Xamarin.Forms the user can normally just tap outside the input control, however this is unintuitive and may be difficult when using a `ListView` or `TableView` to host the input. A [custom-renderer](http://docs.xamarin.com/guides/xamarin-forms/custom-renderer) can be written for iOS that adds a toolbar and **Done** button to programmatically dismiss the keyboard.
+To dismiss a keyboard in Xamarin.Forms the user can normally just tap outside the input control, however this is unintuitive and may be difficult when using a `ListView` or `TableView` to host the input. A [custom-renderer](https://developer.xamarin.com/guides/xamarin-forms/custom-renderer) can be written for iOS that adds a toolbar and **Done** button to programmatically dismiss the keyboard.
 
 Any iOS keyboard type can have a toolbar added; this example shows the numeric keypad.
 

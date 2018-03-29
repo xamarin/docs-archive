@@ -28,7 +28,7 @@ The `GetBlurredBitmap` method will take a single `Android.Graphics.Bitmap` insta
 
 This code is a compromise between a Gaussian blur and a Box blur. The algorithm works by creating a moving stack of colors while scanning through the image. This "tower" controls the weights of the single pixels within the convolution kernel and gives the pixel in the center the highest weight.
 
-When the user clicks on the <span class="uiitem">Load Blurred Image</span> button the application will load a bitmap, scale it a size that is appropriate for the device, and then apply a Gaussian blur to it. Blurring the image takes a noticeable amount of time (approximately 6 seconds on a Nexus 5), so the work is performed on a background thread. After the image is blurred it is displayed to the user, as demonstrated in the following screenshots:
+When the user clicks on the **Load Blurred Image** button the application will load a bitmap, scale it a size that is appropriate for the device, and then apply a Gaussian blur to it. Blurring the image takes a noticeable amount of time (approximately 6 seconds on a Nexus 5), so the work is performed on a background thread. After the image is blurred it is displayed to the user, as demonstrated in the following screenshots:
 
  ![](Images/image00.png) ![](Images/image01.png)
 
@@ -37,7 +37,7 @@ When the user clicks on the <span class="uiitem">Load Blurred Image</span> butto
 
 # Recipe
 
-The event handler for the <span class="uiitem">Load Blurred Image</span> button is shown in the following code snippet:
+The event handler for the **Load Blurred Image** button is shown in the following code snippet:
 
 ```
 _blurImageButton.Click += async delegate{

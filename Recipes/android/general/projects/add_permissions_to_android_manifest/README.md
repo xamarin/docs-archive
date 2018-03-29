@@ -4,30 +4,27 @@ title: "Add Permissions to Android Manifest"
 brief: "This recipe shows how to add permissions to the Android Manifest (Manifest.xml)."
 ---
 
-<a name="Recipe" class="injected"></a>
 
 # Recipe
 
 To edit Android Manifest permissions for your project:
-<ide name="vs">
-  <ol>
-    <li>Right-click on your android project and select <span class="UIItem">Properties</span>.</li>
-    <li>Select <span class="UIItem">Android Manifest</span> in the window that opens.</li>
-    <li>Check the permissions that you want to require in the list of permissions.</li>
-  </ol>
-  <img src="Images/vis.png" />
-</ide>
 
-<ide name="xs">
-  <ol>
-    <li>Right-click on your android project and select <span class="UIItem">Options</span>.</li>
-    <li>Select <span class="UIItem">Android Application</span> in the window that opens.</li>
-    <li>Check the permissions that you want to require in the list of permissions.</li>
-  </ol>
-  <img src="Images/xam.png" />
-</ide>
+## Visual Studio
 
-<a name="Additional_Information" class="injected"></a>
+1.  Right-click on your android project and select <span class="UIItem">**Properties**</span>.
+2.  Select <span class="UIItem">**Android Manifest**</span> in the window that opens.
+3.  Check the permissions that you want to require in the list of permissions.
+
+![](Images/vis.png)
+
+## Visual Studio for Mac
+
+1.  Right-click on your android project and select <span class="UIItem">**Options**</span>.
+2.  Select <span class="UIItem">**Android Application**</span> in the window that opens.
+3.  Check the permissions that you want to require in the list of permissions.
+
+![](Images/xam.png)
+
 
 
 # Additional Information

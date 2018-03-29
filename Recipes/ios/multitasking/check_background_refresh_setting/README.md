@@ -23,7 +23,7 @@ if (application.BackgroundRefreshStatus == UIBackgroundRefreshStatus.Available) 
 </ol>
 ![]("Images/bg_start.png")
 <ol start="3">
-  <li>Let's see what happens when we change the refresh setting. While the app is running in the background, navigate to <span class="uiitem">Settings > General > Background App Refresh</span> on the device:</li>
+  <li>Let's see what happens when we change the refresh setting. While the app is running in the background, navigate to **Settings > General > Background App Refresh** on the device:</li>
 </ol>
 ![]("Images/3_.png")
 <ol start="4">

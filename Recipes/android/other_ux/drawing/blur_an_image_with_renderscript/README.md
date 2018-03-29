@@ -24,7 +24,7 @@ This recipe shows one way to blur an image using an API that was introduced in A
 The recipe [Blur an Image with Managed Code]() is a example of how to apply a blur effect on all Android API levels.
 
 This application will display a picture and a [SeekBar](http://developer.android.com/reference/android/widget/SeekBar.html).
-    The value of the <span class="uiitem">SeekBar</span> will determine how much the image should be blurred. You can see
+    The value of the **SeekBar** will determine how much the image should be blurred. You can see
     this application running in the following screenshots:
 
  ![](Images/image01.png) ![](Images/image03.png)

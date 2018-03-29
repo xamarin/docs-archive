@@ -26,7 +26,7 @@ An unwind Segue can be used to navigate back through a push or modal segue - for
 
 To create an unwind Segue in the Xamarin Designer for iOS:
 
--  Create a new  <span class="UIItem">iOS > Single View Application</span> with Visual Studio for Mac or Visual Studio:
+-  Create a new  **iOS > Single View Application** with Visual Studio for Mac or Visual Studio:
 
 
  [ ![](Images/unwindSegue2.png)](Images/unwindSegue2.png)
@@ -46,12 +46,12 @@ To create an unwind Segue in the Xamarin Designer for iOS:
 
  [ ![](Images/AddVC.png)](Images/AddVC.png)
 
--  Select each UIView and change the background colour using the  <span class="UIItem">Properties Pad</span> , as shown in the screenshot below.
+-  Select each UIView and change the background colour using the  **Properties Pad** , as shown in the screenshot below.
 
 
  [ ![](Images/BackgroundColour.png)](Images/BackgroundColour.png)
 
--  Select each UIViewController and change the  <span class="UIItem">Identity > Class</span> in the  <span class="UIItem">Properties Pad</span> to reflect the background color. -   Yellow Background: YellowViewController
+-  Select each UIViewController and change the  **Identity > Class** in the  **Properties Pad** to reflect the background color. -   Yellow Background: YellowViewController
 -   Magenta Background: PinkViewController
 -   Green Background: GreenViewController
 
@@ -61,9 +61,9 @@ To create an unwind Segue in the Xamarin Designer for iOS:
 
  [ ![](Images/NameViewControllers.png)](Images/NameViewControllers.png)
 
--  To finish creating the UI use the  <span class="UIItem">Toolbox</span> and add  <span class="UIItem">Buttons</span> to your View as follows. -   YellowViewController : 1  <span class="UIItem">Button</span>  with title "Go To Pink"
--   PinkViewController: 2  <span class="UIItem">Buttons</span>  , one with title "Go To Green", the other "Unwind to Yellow"
--   GreenViewController: 2  <span class="UIItem">Buttons</span>  , one with title "Unwind to Pink", the other "Unwind to Yellow"
+-  To finish creating the UI use the  **Toolbox** and add  **Buttons** to your View as follows. -   YellowViewController : 1  **Button**  with title "Go To Pink"
+-   PinkViewController: 2  **Buttons**  , one with title "Go To Green", the other "Unwind to Yellow"
+-   GreenViewController: 2  **Buttons**  , one with title "Unwind to Pink", the other "Unwind to Yellow"
 
 
 
@@ -118,7 +118,7 @@ public void UnwindToPinkViewController (UIStoryboardSegue segue)
 }
 ```
 
--  <span class="UIItem">Save All</span> and return to the MainStoryboard.storyboard, where the unwind segue will be added.
+-  **Save All** and return to the MainStoryboard.storyboard, where the unwind segue will be added.
 
 
 -  Create another Segue, this time from the 'Unwind to Yellow' Button in the PinkViewController to the Scene Exit

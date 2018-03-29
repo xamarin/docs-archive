@@ -4,26 +4,20 @@ title: "Specify Default Namespace"
 brief: "This recipe shows where to set the default namespace for a project."
 ---
 
-<a name="Recipe" class="injected"></a>
-
 
 # Recipe
 
-<ide name="xs">
-  <ol>
-    <li>Double click on the project in the <span class="UIItem">Solution Pad</span>, or right-click on the project and select <span class="UIItem">Options</span>: <img src="Images/DefaultNamespace1.png" /></li>
-    <li>Choose main settings and you'll be able to edit the default namespace: <img src="Images/DefaultNamespace4.png" /></li>
-    <li>This value will be automatically set as the root namespace in each new code file you create in your project.</li>
-  </ol>
-</ide>
-<ide name="vs">
-  <ol>
-    <li>Open the project <span class="UIItem">Properties</span>, and then choose the <span class="UIItem">Application</span> panel: <img src="Images/DefaultNamespace3.png" /></li>
-    <li>This value will be automatically set as the root namespace in each new code file you create in your project.</li>
-  </ol>
-</ide>
+## Visual Studio for Mac
 
-<a name="Additional_Information" class="injected"></a>
+1.  Double click on the project in the <span class="UIItem">**Solution Pad**</span>, or right-click on the project and select <span class="UIItem">**Options**</span>: ![](Images/DefaultNamespace1.png)
+2.  Choose main settings and you'll be able to edit the default namespace: ![](Images/DefaultNamespace4.png)
+3.  This value will be automatically set as the root namespace in each new code file you create in your project.
+
+## Visual Studio
+
+1.  Open the project <span class="UIItem">**Properties**</span>, and then choose the <span class="UIItem">**Application**</span> panel: ![](Images/DefaultNamespace3.png)
+2.  This value will be automatically set as the root namespace in each new code file you create in your project.
+
 
 
 # Additional Information

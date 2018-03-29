@@ -23,7 +23,7 @@ It is possible to use a Storyboard to create custom Table Views. This recipe dem
 
 To create a Storyboard-based application using a TableView:
 
-Create a new solution in Visual Studio for Mac using <span class="UIItem">File > Solution > iOS > iPhone Storyboard > Master-Detail Application</span>.
+Create a new solution in Visual Studio for Mac using **File > Solution > iOS > iPhone Storyboard > Master-Detail Application**.
 
  [ ![Create Project](Images/image14a.png "")](Images/image14a.png)
 
@@ -59,7 +59,7 @@ Let's follow these steps to delete the existing Detail view and replace it with 
 -  Create a segue from the Master View Controller to the View Controller that was just added. To create the segue, Control+drag from the Detail cell to the newly added UITableViewController. Choose the option Push under Segue Selection
 
 
--  Select the new segue you created and give it an identifier to reference this segue in code. Click on the segue and enter “TaskSegue” for the Identifier in the  <span class="UIItem">Properties Pad</span> , like this:
+-  Select the new segue you created and give it an identifier to reference this segue in code. Click on the segue and enter “TaskSegue” for the Identifier in the  **Properties Pad** , like this:
 
 
 
@@ -125,11 +125,11 @@ To build the complete layout, first select the table view and open the Property 
 
 
 
-Now, select the top section of the DetailView and under <span class="UIItem">Properties > Table View Section</span> change rows to '3', as illustrated below:
+Now, select the top section of the DetailView and under **Properties > Table View Section** change rows to '3', as illustrated below:
 
  [ ![](Images/image29.png)](Images/image29.png)
 
-For each cell in Section 1 open the <span class="UIItem">Properties Pad</span> and set:
+For each cell in Section 1 open the **Properties Pad** and set:
 
 -  Style:  *Custom*
 
@@ -145,7 +145,7 @@ For each cell in Section 1 open the <span class="UIItem">Properties Pad</span> a
 
 
 
-In the second section, set the number of Rows to 1 and grab the bottom resize handle to make it taller. Select the cell in the <span class="UIItem">Properties pad</span> and set:
+In the second section, set the number of Rows to 1 and grab the bottom resize handle to make it taller. Select the cell in the **Properties pad** and set:
 
 -  Identifier:  *to a unique value in the Property Pad(eg. “save”)* .
 
@@ -158,7 +158,7 @@ In the second section, set the number of Rows to 1 and grab the bottom resize ha
 
 
 
-The last step in creating our Storyboard is giving each of our controls a name under <span class="UIItem">Identity > Name</span>. Name these as follows:
+The last step in creating our Storyboard is giving each of our controls a name under **Identity > Name**. Name these as follows:
 
 -  Title UITextField: TitleText
 

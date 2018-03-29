@@ -7,30 +7,24 @@ article:
     url: https://developer.xamarin.com/guides/android/getting_started/hello,_world
 ---
 
-<a name="Recipe" class="injected"></a>
 
 # Recipe
 
-<ide name="xs">
-  <ol>
-    <li>First, launch Visual Studio for Mac and click on <span class="UIItem">New...</span> in the top
-    left corner: <img src="Images/project_00.png"</li>
-    <li>A window will pop up with a list of options for the types of projects
-    available to you. To create an Android project, select the Android>App category to open up
-    the available sub-categories, then choose Android App: <img src="Images/android_project_01.png" /></li>
-    <li>Choose a sensible name for your app and choose development targets: <img src="Images/app_name.png" /></li>
-    <li>Choose a project name, then click <span class="UIItem">OK</span>:<br /> <img src="Images/project_name.png" /></li>
-    <li>Visual Studio for Mac will create and populate a new project for you: <img src="Images/android_project_02.png" /></li>
-  </ol>
-</ide>
-<ide name="vs">
-  <ol>
-    <li>First, launch Visual Studio and click on <span class="UIItem">New Project...</span> in the top
-    left corner: <img src="Images/project_00_vs.png"</li>
-    <li>A window will pop up with a list of options for the types of projects
-    available to you. To create an Android project, select the Android then <span class="UIItem">Blank App (Android)</span>. Enter a project name: <img src="Images/android_project_01_vs.png" /></li>
-    <li>Visual Studio will create and populate a new project for you: <img src="Images/android_project_02_vs.png" /></li>
-  </ol>
+## Visual Studio for Mac
+
+1.  First, launch Visual Studio for Mac and click on <span class="UIItem">**New...**</span> in the top left corner: ![](Images/project_00.png)
+2.  A window will pop up with a list of options for the types of projects available to you. To create an Android project, select the Android>App category to open up the available sub-categories, then choose Android App: ![](Images/android_project_01.png)
+3.  Choose a sensible name for your app and choose development targets: ![](Images/app_name.png)
+4.  Choose a project name, then click <span class="UIItem">**OK**</span>:  
+    ![](Images/project_name.png)
+5.  Visual Studio for Mac will create and populate a new project for you: ![](Images/android_project_02.png)
+
+## Visual Studio
+
+1.  First, launch Visual Studio and click on <span class="UIItem">**New Project...**</span> in the top left corner: ![](Images/project_00_vs.png)
+2.  A window will pop up with a list of options for the types of projects available to you. To create an Android project, select the Android then <span class="UIItem">**Blank App (Android)**</span>. Enter a project name: ![](Images/android_project_01_vs.png)
+3.  Visual Studio will create and populate a new project for you: ![](Images/android_project_02_vs.png)
+
 </ide>
 
 ## Additional Information
