@@ -25,9 +25,9 @@ In this recipe we will cover how to load a scaled down version of an image so th
 
 ## Read Bitmap Dimensions and Type
 
-The [BitmapFactory](/api/type/Android.Graphics.BitmapFactory/) class provides several methods (such as [DecodeResourceAsync](/api/type/Android.Graphics.BitmapFactory/)) for creating a [Bitmap](/api/type/Android.Graphics.Bitmap/) from various sources. These methods attempt to allocate memory for the constructed bitmap and therefore can easily result in an [OutOfMemoryException](/api/type/System.OutOfMemoryException/). Each type of decode method has additional signatures that let you specify decoding options, such as loading a smaller version of the bitmap,  via the [BitmapFactory.Options](/api/type/Android.Graphics.BitmapFactory/%2bOptions) class.
+The [BitmapFactory](https://developer.xamarin.com/api/type/Android.Graphics.BitmapFactory/) class provides several methods (such as [DecodeResourceAsync](https://developer.xamarin.com/api/type/Android.Graphics.BitmapFactory/)) for creating a [Bitmap](https://developer.xamarin.com/api/type/Android.Graphics.Bitmap/) from various sources. These methods attempt to allocate memory for the constructed bitmap and therefore can easily result in an [OutOfMemoryException](https://developer.xamarin.com/api/type/System.OutOfMemoryException/). Each type of decode method has additional signatures that let you specify decoding options, such as loading a smaller version of the bitmap,  via the [BitmapFactory.Options](https://developer.xamarin.com/api/type/Android.Graphics.BitmapFactory/%2bOptions) class.
 
-Setting the [InJustDecodeBounds](/api/property/Android.Graphics.BitmapFactory+Options.InJustDecodeBounds/) property to `true` while decoding avoids memory allocation, returning `null` for the bitmap object but setting [OutWidth](/api/property/Android.Graphics.BitmapFactory+Options.OutWidth/), [ OutHeight](/api/property/Android.Graphics.BitmapFactory+Options.OutHeight/) and [ OutMimeType](/api/property/Android.Graphics.BitmapFactory+Options.OutMimeType/) . This technique allows you to read the dimensions and type of the image data prior to construction (and memory allocation) of the bitmap.
+Setting the [InJustDecodeBounds](https://developer.xamarin.com/api/property/Android.Graphics.BitmapFactory+Options.InJustDecodeBounds/) property to `true` while decoding avoids memory allocation, returning `null` for the bitmap object but setting [OutWidth](https://developer.xamarin.com/api/property/Android.Graphics.BitmapFactory+Options.OutWidth/), [ OutHeight](https://developer.xamarin.com/api/property/Android.Graphics.BitmapFactory+Options.OutHeight/) and [ OutMimeType](https://developer.xamarin.com/api/property/Android.Graphics.BitmapFactory+Options.OutMimeType/) . This technique allows you to read the dimensions and type of the image data prior to construction (and memory allocation) of the bitmap.
 
 The following code snippet shows a function that will asynchronously retrieve the height and width of a drawable:
 
@@ -55,10 +55,10 @@ Now that the image dimensions are known, they can be used to decide if the full 
 
 * Estimated memory usage of loading the full image in memory.
 * Amount of memory you are willing to commit to loading this image given any other memory requirements of your application.
-* Dimensions of the target  [ ImageView](/api/type/Android.Widget.ImageView/)  or UI component that the image is to be loaded into.
+* Dimensions of the target  [ ImageView](https://developer.xamarin.com/api/type/Android.Widget.ImageView/)  or UI component that the image is to be loaded into.
 * Screen size and density of the current device.
 
-For example, consider an image that is 4000x3000 pixels with a bitmap configuration of [Argb8888](/api/property/Android.Graphics.Bitmap+Config.Argb8888/). It would require approximately 46.8MB of RAM to load the full image into memory. It is better to load a smaller version of the image. To tell the decoder to subsample the image and load a smaller version into memory, set [InSampleSize](/api/property/Android.Graphics.BitmapFactory+Options.InSampleSize/) to a value that will be used to scale down the image. For example, setting `InSampleSize` to 2 will cause **BitmapFactory** to scale the image down by a factor of 2. Any value can be used, however `BitmapFactory` is optimized to use a value that is factor of 2.
+For example, consider an image that is 4000x3000 pixels with a bitmap configuration of [Argb8888](https://developer.xamarin.com/api/property/Android.Graphics.Bitmap+Config.Argb8888/). It would require approximately 46.8MB of RAM to load the full image into memory. It is better to load a smaller version of the image. To tell the decoder to subsample the image and load a smaller version into memory, set [InSampleSize](https://developer.xamarin.com/api/property/Android.Graphics.BitmapFactory+Options.InSampleSize/) to a value that will be used to scale down the image. For example, setting `InSampleSize` to 2 will cause **BitmapFactory** to scale the image down by a factor of 2. Any value can be used, however `BitmapFactory` is optimized to use a value that is factor of 2.
 
 Here’s a method to calculate the `InSampleSize` value as a power of 2 based on a target width and height:
 
@@ -117,5 +117,5 @@ The function `LoadScaledDownBitmapForDisplayAsync` is displayed in the following
     }
 
 
-You can follow a similar process to decode bitmaps from other sources, such as a file on the SD Card, by substituting the appropriate [BitmapFactory.DecodeXXX](/api/type/Android.Graphics.BitmapFactory/%2fM) method as needed.
+You can follow a similar process to decode bitmaps from other sources, such as a file on the SD Card, by substituting the appropriate [BitmapFactory.DecodeXXX](https://developer.xamarin.com/api/type/Android.Graphics.BitmapFactory/%2fM) method as needed.
 

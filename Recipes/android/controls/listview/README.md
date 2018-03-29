@@ -6,7 +6,7 @@ recipe:
     url: /Recipes/android/controls/listview/select-row/
 api:
   - title: "ListView" 
-    url: /api/type/Android.Widget.ListView/
+    url: https://developer.xamarin.com/api/type/Android.Widget.ListView/
 link:
   - title: "Color State List Resource" 
     url: http://developer.android.com/guide/topics/resources/color-list-resource.html

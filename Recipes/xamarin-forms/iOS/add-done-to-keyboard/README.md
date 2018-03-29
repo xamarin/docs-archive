@@ -8,7 +8,7 @@ article:
     url: http://docs.xamarin.com/guides/xamarin-forms/custom-renderer
 api:
   - title: "Entry" 
-    url: /api/type/Xamarin.Forms.Entry/
+    url: https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/
 dateupdated: 2015-12-09
 ---
 

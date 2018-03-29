@@ -12,25 +12,25 @@ article:
     url: https://developer.xamarin.com/guides/xamarin-forms/custom-renderer/hybridwebview/
 api:
   - title: "WebView" 
-    url: /api/type/Xamarin.Forms.WebView/
+    url: https://developer.xamarin.com/api/type/Xamarin.Forms.WebView/
 dateupdated: 2016-01-18
 ---
 
 # Overview
 
-The Xamarin.Forms [`WebView`](/api/type/Xamarin.Forms.WebView/) control displays HTML and other web content in an app. Unlike [`Device.OpenUri`](/api/member/Xamarin.Forms.Device.OpenUri/p/System.Uri/), which takes the user to the web browser on the device, the `WebView` control displays the web content inside the app. For more information about the `WebView` control, see [WebView](/api/type/Xamarin.Forms.WebView/).
+The Xamarin.Forms [`WebView`](https://developer.xamarin.com/api/type/Xamarin.Forms.WebView/) control displays HTML and other web content in an app. Unlike [`Device.OpenUri`](https://developer.xamarin.com/api/member/Xamarin.Forms.Device.OpenUri/p/System.Uri/), which takes the user to the web browser on the device, the `WebView` control displays the web content inside the app. For more information about the `WebView` control, see [WebView](https://developer.xamarin.com/api/type/Xamarin.Forms.WebView/).
 
-The [`WebView`](/api/type/Xamarin.Forms.WebView/) control can display PDF files on the iOS platform, but not on the Android and Windows Phone platforms due to lack of platform support. On the Android and Windows Phone platforms, Mozilla's [`pdf.js`](https://mozilla.github.io/pdf.js/) can be used to add this support. `pdf.js` is a JavaScript library for parsing and rendering PDFs using the HTML5 `canvas` element. The following screenshots show the result of displaying a PDF file in the `WebView` control on each platform:
+The [`WebView`](https://developer.xamarin.com/api/type/Xamarin.Forms.WebView/) control can display PDF files on the iOS platform, but not on the Android and Windows Phone platforms due to lack of platform support. On the Android and Windows Phone platforms, Mozilla's [`pdf.js`](https://mozilla.github.io/pdf.js/) can be used to add this support. `pdf.js` is a JavaScript library for parsing and rendering PDFs using the HTML5 `canvas` element. The following screenshots show the result of displaying a PDF file in the `WebView` control on each platform:
 
 ![](Images/screenshots.png)
 
-When a [`WebView`](/api/type/Xamarin.Forms.WebView/) control is rendered by a Xamarin.Forms application, in iOS the `WebViewRenderer` class is instantiated, which in turns instantiates a native `UIWebView` control. On the Android platform, the `WebViewRenderer` class instantiates a native `WebView` control. On the Windows Phone platform, the `WebViewRenderer` class instantiates a native `WebView` control. The rendering process can be taken advantage of to display a local PDF file in a `WebView`, by creating a custom renderer for the `WebView` on each platform. The process for doing this is as follows:
+When a [`WebView`](https://developer.xamarin.com/api/type/Xamarin.Forms.WebView/) control is rendered by a Xamarin.Forms application, in iOS the `WebViewRenderer` class is instantiated, which in turns instantiates a native `UIWebView` control. On the Android platform, the `WebViewRenderer` class instantiates a native `WebView` control. On the Windows Phone platform, the `WebViewRenderer` class instantiates a native `WebView` control. The rendering process can be taken advantage of to display a local PDF file in a `WebView`, by creating a custom renderer for the `WebView` on each platform. The process for doing this is as follows:
 
 1. [Create](#Creating_the_Custom_WebView_Control) a Xamarin.Forms custom control.
 1. [Consume](#Consuming_the_Custom_Control) the custom control from Xamarin.Forms.
 1. [Create](#Creating_the_Custom_Renderer_on_Each_Platform) the custom renderer for the control on each platform.
 
-For information about customizing a [`WebView`](/api/type/Xamarin.Forms.WebView/) control using a custom renderer, see [Implementing a HybridWebView](https://developer.xamarin.com/guides/xamarin-forms/custom-renderer/hybridwebview/).
+For information about customizing a [`WebView`](https://developer.xamarin.com/api/type/Xamarin.Forms.WebView/) control using a custom renderer, see [Implementing a HybridWebView](https://developer.xamarin.com/guides/xamarin-forms/custom-renderer/hybridwebview/).
 
 ## Creating the Custom WebView Control
 
@@ -193,5 +193,5 @@ Provided that the custom renderer is attached to a new Xamarin.Forms element, th
 
 # Summary
 
-This recipe showed how to display a local PDF file in a [`WebView`](/api/type/Xamarin.Forms.WebView/) control on each platform.
+This recipe showed how to display a local PDF file in a [`WebView`](https://developer.xamarin.com/api/type/Xamarin.Forms.WebView/) control on each platform.
 

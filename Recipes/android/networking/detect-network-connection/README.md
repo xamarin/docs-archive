@@ -4,13 +4,13 @@ title: Detect Network Connection
 brief: This recipe provides some quick snippets on how detect the type of network connection in use or how to query a specific type of network connection.  
 sdk:
     - title: ConnectivityManager
-      url: /api/type/Android.Net.ConnectivityManager/
+      url: https://developer.xamarin.com/api/type/Android.Net.ConnectivityManager/
     - title: NetworkInfo
-      url: /api/type/Android.Net.NetworkInfo/
+      url: https://developer.xamarin.com/api/type/Android.Net.NetworkInfo/
     - title: ConnectivityType
-      url: /api/type/Android.Net.ConnectivityType/
+      url: https://developer.xamarin.com/api/type/Android.Net.ConnectivityType/
     - title: NetworkInfo.State
-      url: /api/type/Android.Net.NetworkInfo+State/
+      url: https://developer.xamarin.com/api/type/Android.Net.NetworkInfo+State/
 dateupdated: 2017-01-23
 ---
 

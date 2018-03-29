@@ -11,7 +11,7 @@ dateupdated: 2017-07-17
 
 # Recipe
 
-The [`ImageButton`](/api/type/Android.Widget.ImageButton/) will display button with an image. The image can be a PNG or, under certain circumstances, an SVG resource.
+The [`ImageButton`](https://developer.xamarin.com/api/type/Android.Widget.ImageButton/) will display button with an image. The image can be a PNG or, under certain circumstances, an SVG resource.
 
 This recipe will discuss how to set the image displayed in an `ImageButton`, either declaratively in an Android layout file or programmatically in code.
 

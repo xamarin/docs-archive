@@ -16,7 +16,7 @@ api:
   - title: "Task<T>" 
     url: http://msdn.microsoft.com/en-us/library/dd321424(v=vs.110).aspx
   - title: "UIProgressView" 
-    url: /api/type/UIKit.UIProgressView/
+    url: https://developer.xamarin.com/api/type/UIKit.UIProgressView/
 ---
 
 <a name="Overview" class="injected"></a>

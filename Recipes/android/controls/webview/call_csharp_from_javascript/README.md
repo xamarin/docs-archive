@@ -54,7 +54,7 @@ class MyJSInterface : Java.Lang.Object
 
 -   Annotate each method that is to be exposed to JavaScript with
     `[Export]` and `[JavascriptInterface]` (see
-    [IJavascriptInterface](/api/type/Android.Webkit.IJavascriptInterface/)
+    [IJavascriptInterface](https://developer.xamarin.com/api/type/Android.Webkit.IJavascriptInterface/)
     for more information about the `JavascriptInterface` annotation).
     In the following example, the `ShowToast` method is annotated so
     that it can be called from JavaScript. Note that you must include the
@@ -97,7 +97,7 @@ interface class to the `WebView` that displays this HTML content.
 
     1.  Set the `WebView`'s `JavaScriptEnabled` flag to `true`.
 
-    2.  Use [AddJavascriptInterface](/api/member/Android.Webkit.WebView.AddJavascriptInterface) to add an instance of `MyJSInterface` to the `WebView` as its JavaScript interface.
+    2.  Use [AddJavascriptInterface](https://developer.xamarin.com/api/member/Android.Webkit.WebView.AddJavascriptInterface) to add an instance of `MyJSInterface` to the `WebView` as its JavaScript interface.
 
     3.  Load the HTML content into the `WebView`.
 

@@ -6,9 +6,9 @@ article:
     url: https://developer.xamarin.com/guides/xamarin-forms/custom-renderer/
 api:
   - title: "ListView" 
-    url: /api/type/Xamarin.Forms.ListView/
+    url: https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/
   - title: "TableView" 
-    url: /api/type/Xamarin.Forms.TableView/
+    url: https://developer.xamarin.com/api/type/Xamarin.Forms.TableView/
 dateupdated: 2015-12-18
 ---
 

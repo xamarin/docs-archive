@@ -13,7 +13,7 @@ Xamarin.Forms includes first-class support for rotating views in three dimension
 
 ## Understanding Rotation and Position
 
-`View`s have [`AnchorX`](/api/property/Xamarin.Forms.VisualElement.AnchorX/) and [`AnchorY`](/api/property/Xamarin.Forms.VisualElement.AnchorY/) properties that define how a view is positioned. Rotation is applied relative to the anchor values. Rotation is interpreted as a degree value rather than a radian or gradian value. 
+`View`s have [`AnchorX`](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.AnchorX/) and [`AnchorY`](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.AnchorY/) properties that define how a view is positioned. Rotation is applied relative to the anchor values. Rotation is interpreted as a degree value rather than a radian or gradian value. 
 
 Rotation values apply to the axes as follows:
 

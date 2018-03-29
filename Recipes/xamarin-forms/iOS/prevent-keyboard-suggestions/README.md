@@ -8,7 +8,7 @@ article:
     url: https://developer.xamarin.com/guides/xamarin-forms/custom-renderer/
 api:
   - title: "Entry" 
-    url: /api/type/Xamarin.Forms.Entry/
+    url: https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/
 dateupdated: 2016-02-11
 ---
 
@@ -19,7 +19,7 @@ be frustrating to use on iOS when the operating system attempts to capitalize
 or correct spelling.
 
 This behavior can be disabled with a custom renderer for the
-[`Entry`](/api/type/Xamarin.Forms.Entry/) control.
+[`Entry`](https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/) control.
 
 ## Common Xamarin.Forms code
 

@@ -7,7 +7,7 @@ samplecode:
     url: https://github.com/xamarin/recipes/tree/master/cross-platform/xamarin-forms/Controls/multiselect
 ---
 
-The Xamarin.Forms [`ListView`](/api/type/Xamarin.Forms.ListView/)
+The Xamarin.Forms [`ListView`](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/)
 control only has a single `SelectedItem`, and cannot represent selection of
 mulitple rows.
 

@@ -12,7 +12,7 @@ to handle different runtime environments.
 ### Check Simulator vs. Device
 
 You can detect whether you are running on the simulator or device by looking
-up the value of the [ObjCRuntime.Runtime.Arch](/api/field/ObjCRuntime.Runtime.Arch/) field. If the value is [ARCH.Device](/api/type/ObjCRuntime.Arch/), you are running on the physical hardware,
+up the value of the [ObjCRuntime.Runtime.Arch](https://developer.xamarin.com/api/field/ObjCRuntime.Runtime.Arch/) field. If the value is [ARCH.Device](https://developer.xamarin.com/api/type/ObjCRuntime.Arch/), you are running on the physical hardware,
 otherwise you are running on the simulator.
 
  <a name="Check_your_iOS_Version" class="injected"></a>

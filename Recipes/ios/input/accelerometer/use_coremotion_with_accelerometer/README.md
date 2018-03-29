@@ -9,7 +9,7 @@ sdk:
   - title: "CMMotionManager" 
     url: http://developer.apple.com/library/ios/#documentation/CoreMotion/Reference/CMMotionManager_Class/Reference/Reference.html
   - title: "CMAccelerometerData" 
-    url: /api/type/CoreMotion.CMAccelerometerData/
+    url: https://developer.xamarin.com/api/type/CoreMotion.CMAccelerometerData/
 ---
 
 <a name="Recipe" class="injected"></a>
@@ -34,7 +34,7 @@ motionManager.StartAccelerometerUpdates (NSOperationQueue.CurrentQueue, (data, e
 });
 ```
 
-The first parameter, `data` is a  [CMAccelerometerData](/api/type/CoreMotion.CMAccelerometerData/) instance holding the accelerometer data for the event.
+The first parameter, `data` is a  [CMAccelerometerData](https://developer.xamarin.com/api/type/CoreMotion.CMAccelerometerData/) instance holding the accelerometer data for the event.
 
 # Additional Information
 

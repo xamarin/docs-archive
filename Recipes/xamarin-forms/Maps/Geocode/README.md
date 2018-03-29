@@ -8,7 +8,7 @@ article:
     url: https://developer.xamarin.com/guides/xamarin-forms/working-with/maps/
 api:
   - title: "Geocoder" 
-    url: /api/type/Xamarin.Forms.Maps.Geocoder/
+    url: https://developer.xamarin.com/api/type/Xamarin.Forms.Maps.Geocoder/
 ---
 
 # Overview

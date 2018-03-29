@@ -5,7 +5,7 @@ subtitle: "How to perform street-to-street navigation in each platforms native M
 brief: "This recipe shows how to open each platforms native maps app to perform navigation from the current location to an address entered in a Xamarin.Forms app."
 api:
   - title: "Device" 
-    url: /api/type/Xamarin.Forms.Device/
+    url: https://developer.xamarin.com/api/type/Xamarin.Forms.Device/
 ---
 
 # Overview

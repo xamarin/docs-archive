@@ -5,7 +5,7 @@ subtitle: "How to display the correct virtual keyboard for an Entry"
 brief: "This recipe shows how to display a virtual keyboard that is appropriate for the input text type, and how to specify additional keyboard options such as capitalization, spellcheck, and suggestions."
 api:
   - title: "Entry" 
-    url: /api/type/Xamarin.Forms.Entry/
+    url: https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/
 ---
 
 # Overview
