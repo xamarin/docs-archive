@@ -122,7 +122,7 @@ public App ()
 
 When the callback for the `ShowItem` message is executed, the `TodoItem` for the identifier is retrieved. The `TodoItemPage` is then navigated to, where the `TodoItem` instance is displayed through data binding.
 
-For more information about using the [`MessagingCenter`](/api/type/Xamarin.Forms.MessagingCenter/) class, see [Publish and Subscribe with MessagingCenter](https://developer.xamarin.comhttps://developer.xamarin.com/guides/xamarin-forms/messaging-center/).
+For more information about using the [`MessagingCenter`](/api/type/Xamarin.Forms.MessagingCenter/) class, see [Publish and Subscribe with MessagingCenter](https://developer.xamarin.com/guides/xamarin-forms/messaging-center/).
 
 ## Deleting an Item
 
