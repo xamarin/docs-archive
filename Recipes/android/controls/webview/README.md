@@ -7,7 +7,7 @@ The WebView is a specialize view that displays web pages. It allows
 developers to embed a browser in their application or to display some online
 content in an Activity.
 
- [ ![](Images/LoadWebPage.png)](Images/LoadWebPage.png)
+ [ ![](index/Images/LoadWebPage.png)](index/Images/LoadWebPage.png)
 
 -   [Call C# from JavaScript](/Recipes/android/controls/webview/call_csharp_from_javascript) 
 -   [Load a Web Page](/Recipes/android/controls/webview/load_a_web_page/) 

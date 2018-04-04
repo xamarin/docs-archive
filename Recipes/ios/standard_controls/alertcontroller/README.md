@@ -1,5 +1,5 @@
 ---
-id: [CC4170E2-BBDD-46C1-BAC7-70739F2F7A5A]
+id: CC4170E2-BBDD-46C1-BAC7-70739F2F7A5
 title: "AlertController"
 brief: "UIAlertController is now the class that should be used for displaying alerts in iOS 8"
 ---

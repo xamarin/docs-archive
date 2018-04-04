@@ -9,7 +9,7 @@ application. In addition to pages hosted on the web, you can also use it to
 display local content (including various document formats), and you can even
 interact with JavaScript in pages it has loaded.
 
- [ ![](Images/WebView_1.png)](Images/WebView_1.png)
+ [ ![](index/Images/WebView_1.png)](index/Images/WebView_1.png)
 
 - [Load a Web Page](/Recipes/ios/content_controls/web_view/load_a_web_page)
 - [Load Local Content](/Recipes/ios/content_controls/web_view/load_local_content)

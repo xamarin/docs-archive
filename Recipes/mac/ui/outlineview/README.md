@@ -10,7 +10,7 @@ functionality, as well as item selection, etc.
 Working with the outline view is very similar to using a table view, except for the fact
 that it has child-node functionality, due to it's hierarchal nature.
 
-![](Images/Expanded_OutlineView.png)
+![](images/Expanded_OutlineView.png)
 
 * [Populate an Outline View](populate_outlineview/)
 

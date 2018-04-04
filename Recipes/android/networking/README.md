@@ -9,6 +9,5 @@ Using network related features like email and SMS.
 -  [Detect Network Connection](/Recipes/android/networking/detect-network-connection/)
 -  [Detect GSM Signal Strength](/Recipes/android/networking/gsm_strength/)
 -  [Email](/Recipes/android/networking/email)
--  [Network Connection](/Recipes/android/networking/detect-network-connection/)
 -  [SMS](/Recipes/android/networking/sms)
 

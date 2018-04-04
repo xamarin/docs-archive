@@ -1,10 +1,8 @@
 ---
---
 id: 26172BD6-0F3D-48B8-B396-2033F654D76E
 title: "Create a Database with SQLite.NET"
 brief: "This recipe will demonstrate how to create an SQLite database with the SQLite.NET PCL library."
 dateupdated: 2018-01-19
---
 ---
 
 # Recipe

@@ -7,7 +7,7 @@ article:
 sdk:
   - title: "Supporting Multiple Screens" 
     url: http://developer.android.com/guide/practices/screens_support.html
-  - title: "Display Metrics<" 
+  - title: "Display Metrics" 
     url: http://developer.android.com/reference/android/util/DisplayMetrics.html
 ---
 

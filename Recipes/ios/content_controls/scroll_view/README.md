@@ -8,7 +8,7 @@ that doesn't fit within the screen. They allow the user to zoom in and out of
 the content using pinch gestures and to drag the display area around to view
 different parts of the content.
 
- [ ![](Images/halloween_scrollview.jpg)](Images/halloween_scrollview.jpg)
+ [ ![](index/Images/halloween_scrollview.jpg)](index/Images/halloween_scrollview.jpg)
 
 &nbsp;
 

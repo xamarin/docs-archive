@@ -5,6 +5,6 @@ title: "Core Text"
 
 Core Graphics is a low-level 2D graphics framework that allows drawing device independent graphics.
 
- [ ![](Images/Core_Graphics.png)](Images/Core_Graphics.png)
+ [ ![](index/Images/Core_Graphics.png)](index/Images/Core_Graphics.png)
 
 -   [Create a Transparent Region in a View](/Recipes/ios/graphics_and_drawing/core_graphics/transparent_region_view)

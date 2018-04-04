@@ -7,6 +7,6 @@ subtitle: "Android.Widget.GridView"
 Android's GridView allows applications to lay out content in a grid using
 cells arranging in rows and columns.
 
- [ ![](Images/gridview.png)](Images/gridview.png)
+ [ ![](index/Images/gridview.png)](index/Images/gridview.png)
 
 -   [Create a Grid View](/Recipes/android/layout/grid_view/create_a_grid_view)

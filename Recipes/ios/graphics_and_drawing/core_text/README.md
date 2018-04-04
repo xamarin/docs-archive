@@ -6,6 +6,6 @@ title: "Core Text"
 The Core Text framework is a high-performance, low-level API for laying out
 text.
 
- [ ![](Images/Core_Text.png)](Images/Core_Text.png)
+ [ ![](index/Images/Core_Text.png)](index/Images/Core_Text.png)
 
 -   [Draw Unicode Text with CoreText](/Recipes/ios/graphics_and_drawing/core_text/draw_unicode_text_with_coretext)

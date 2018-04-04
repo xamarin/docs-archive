@@ -12,6 +12,5 @@ Platforms
 -  [Xamarin.Android](android) 
 -  [Xamarin.iOS](ios)
 -  [Xamarin.Mac](mac)
--  [Test Cloud](testcloud)
 
 

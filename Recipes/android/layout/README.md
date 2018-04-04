@@ -1,10 +1,8 @@
 ---
---
 id: 18F2141B-0499-6294-0357-510679496897
 title: "Layouts"
 subtitle: "How to build screen layouts."
 dateupdated: 2017-07-24
---
 ---
 
 This section contains Recipes on how layout Android Activities.

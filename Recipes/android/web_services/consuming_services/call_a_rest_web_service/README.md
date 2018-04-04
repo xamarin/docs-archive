@@ -4,7 +4,7 @@ title: "Call a REST Web Service"
 brief: "This recipe shows how to call a RESTful service using HTTP, parse JSON results, and display the results on the screen."
 samplecode:
   - title: "WeatherREST" 
-    url: /samples/monodroid/WeatherREST
+    url: https://developer.xamarin.com/samples/monodroid/WeatherREST
 article:
   - title: "Introduction to Web Services" 
     url: https://developer.xamarin.com/guides/cross-platform/application_fundamentals/web_services/

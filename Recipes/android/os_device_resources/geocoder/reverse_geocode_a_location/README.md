@@ -8,7 +8,6 @@ article:
 sdk:
   - title: "Geocoder API" 
     url: http://developer.android.com/reference/android/location/Geocoder.html
-<a name="Recipe" class="injected"></a>
 ---
 
 # Recipe

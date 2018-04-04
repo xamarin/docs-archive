@@ -5,7 +5,7 @@ title: "Animation"
 
 Android provides support for animating properties of any type as well as animating frame-by-frame with several Drawable objects. This section includes Recipes that cover various ways to work with animation in Android.
 
- [ ![](Images/screen2.png)](Images/screen2.png)
+ [ ![](index/Images/screen2.png)](index/Images/screen2.png)
 
 -  <span class="noChildren"><a href="/Recipes/android/other_ux/animation/frame_animation">Frame Animation</a>**
 -  <span class="noChildren"><a href="/Recipes/android/other_ux/animation/rotate_animation">Rotate Animation</a></span>

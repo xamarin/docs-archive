@@ -9,7 +9,7 @@ It's hard to find an application that doesn't use tables in some form. Tables in
 iOS are highly customizable and wrap a lot of functioality that we get for
 free.
 
- [ ![](Images/image1.png)](Images/image1.png)
+ [ ![](index/Images/image1.png)](index/Images/image1.png)
 
  <a name="Table_Basics" class="injected"></a>
 

@@ -6,7 +6,7 @@ title: "Sliders"
 Sliders are a horizontal UI control that display a single value to the user
 between a given range.&nbsp;
 
- ![](Images/SliderAppearance.png)
+ ![](index/Images/SliderAppearance.png)
 
 -   [Specify Slider Appearance](/Recipes/ios/standard_controls/sliders/specify_slider_appearance) 
 -   [Specify Slider Value](/Recipes/ios/standard_controls/sliders/specify_slider_value)

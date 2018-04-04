@@ -7,7 +7,7 @@ The segmented button control is a horizontal control consisting of multiple
 discrete buttons.&nbsp;The control provides a compact way to group several
 buttons together.
 
- ![](Images/UISegmentedControl_styles.png)
+ ![](index/Images/UISegmentedControl_styles.png)
 
 -   [Configure Segments (UISegmentedControl)](/Recipes/ios/standard_controls/segmented_button_control/configure_segments_(uisegmentedcontrol)) 
 -   [Specify Segment Size](/Recipes/ios/standard_controls/segmented_button_control/specify_segment_sizes)

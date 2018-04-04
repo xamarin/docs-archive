@@ -8,7 +8,7 @@ The UIButton control is a very common control that's both easy to use and
 customizable. Additionally, there are a number of different built-in button
 types available.
 
- [ ![](Images/05.png)](Images/05.png)
+ [ ![](index/Images/05.png)](index/Images/05.png)
 
  <a name="Basic_Usage" class="injected"></a>
 

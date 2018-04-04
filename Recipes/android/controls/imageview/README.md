@@ -5,6 +5,4 @@ title: "ImageView"
 
 The ImageView is a UI widget that can load and display images.
 
- [ ![](Images/DisplayImage.png)](Images/DisplayImage.png)
-
 -   [Display An Image](/Recipes/android/controls/imageview/display_an_image)

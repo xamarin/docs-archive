@@ -5,7 +5,6 @@ brief: "This recipe shows how to send an SMS message using the SMSManager or an 
 sdk:
   - title: "SmsManager Class Reference" 
     url: http://developer.android.com/reference/android/telephony/gsm/SmsManager.html
-<a name="Recipe" class="injected"></a>
 ---
 
 # Recipe
