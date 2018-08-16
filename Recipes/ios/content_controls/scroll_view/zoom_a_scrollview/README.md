@@ -28,7 +28,7 @@ UIImageView imageView;
 ```
 
 <ol start="3">
-  <li>Create a <code>UIScrollView</code> and it to the View Controller:</li>
+  <li>Create a <code>UIScrollView</code> and add it to the View Controller:</li>
 </ol>
 
 ```
@@ -39,7 +39,7 @@ View.AddSubview (scrollView);
 ```
 
 <ol start="4">
-  <li>Create a <code>UIImageView</code> and it to the Scroll View:</li>
+  <li>Create a <code>UIImageView</code> and add it to the Scroll View:</li>
 </ol>
 
 ```
