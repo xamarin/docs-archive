@@ -3,12 +3,14 @@ using System;
 using Android.App;
 using Android.Content;
 using Android.OS;
+using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
 
 namespace com.xamarin.recipes.customcompoundview
 {
+	[Register("com.xamarin.recipes.compositecontrol.DatePickerTextView")]
     public class DatePickerTextView : LinearLayout
     {
         public EventHandler<DatePickerTextViewChangedArgs> DateChanged = (sender, e) => { };
