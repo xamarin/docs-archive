@@ -3,15 +3,23 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-
-  <TextView
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"      android:text="Autocomplete example:"
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Autocomplete example:"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="24sp" 
     />
-  <AutoCompleteTextView
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/AutoCompleteInput"
+    <AutoCompleteTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AutoCompleteInput"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp" 
     />
 
 </LinearLayout>
