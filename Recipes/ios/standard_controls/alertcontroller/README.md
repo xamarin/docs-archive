@@ -28,7 +28,7 @@ There are three steps to take when creating an AlertController:
 
 # Alert with One Button
 
-![Images\okayalert.png](Images\okayalert.png)
+![Images/okayalert.png](Images/okayalert.png)
 
 
 ```
@@ -48,7 +48,7 @@ okayButton.TouchUpInside += (sender, e) => {
 
 # Alert with Two buttons
 
-![Images\okaycancel.png](Images\okaycancel.png)
+![Images/okaycancel.png](Images/okaycancel.png)
 
 ```
 okayCancelButton.TouchUpInside += ((sender, e) => {
@@ -67,7 +67,7 @@ okayCancelButton.TouchUpInside += ((sender, e) => {
 
 # Alert with Text Field
 
-![Images\textinput.png](Images\textinput.png)
+![Images/textinput.png](Images/textinput.png)
 
 
 ```
@@ -92,9 +92,9 @@ textInputButton.TouchUpInside += ((sender, e) => {
 			});
 ```
 
-#ActionSheet Alert
+# ActionSheet Alert
 
-![Images\actionsheet.png](Images\actionsheet.png)
+![Images/actionsheet.png](Images/actionsheet.png)
 
 
 ```
