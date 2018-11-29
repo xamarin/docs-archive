@@ -12,7 +12,7 @@ For more information see the Code of Conduct FAQ or contact opencode@microsoft.c
 
 Thank you for taking the time to contribute, we appreciate your help in helping the Xamarin community to learn and grow! All content submitted **must** be your own work.
 
-See the [Contributing guide](CONTRIBUTING.MD) for more information on how to contribute.
+See the [Contributing guide](CONTRIBUTING.md) for more information on how to contribute.
 
 ## Legal Notices
 
