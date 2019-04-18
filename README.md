@@ -1,6 +1,8 @@
-# Xamarin Recipes
+# Xamarin Docs Archive
  
-At Xamarin we are passionate about empowering developers to make beautiful cross-platform apps and having great education is one way in which we do that. We also realize that everyone learns in a different way–some prefer classes and videos, some prefer to get hands on with samples, and some prefer to read. That's where recipes come in. We have two types of guides available at Xamarin, conceptual guides and recipes. As you can see from the linked examples conceptual guides are long-form articles that cover various topics in depth, they explain the _why_ as well as the _how_. In contrast, recipes tend to be much shorter. **They usually only explain the _how_, through a mixture of step-by-step points, screenshots, and code blocks.**
+## Recipes
+
+The conceptual guides at [docs.microsoft.com/xamarin](https://docs.microsoft.com/xamarin) are longer articles that cover various topics in depth, they explain the _why_ as well as the _how_. In contrast, recipes in this archive tend to be much shorter. They usually only explain the _how_, through a mixture of step-by-step points, screenshots, and code blocks. The recipes have not been kept up-to-date, and occasionally will use features or APIs that have changed or been deprecated. Check the [docs](https://docs.microsoft.com/xamarin) for the latest information.
 
 ## Code of Conduct
 
