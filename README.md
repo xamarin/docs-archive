@@ -1,20 +1,16 @@
 # Xamarin Docs Archive
- 
-## Recipes
 
-The conceptual guides at [docs.microsoft.com/xamarin](https://docs.microsoft.com/xamarin) are longer articles that cover various topics in depth, they explain the _why_ as well as the _how_. In contrast, recipes in this archive tend to be much shorter. They usually only explain the _how_, through a mixture of step-by-step points, screenshots, and code blocks. The recipes have not been kept up-to-date, and occasionally will use features or APIs that have changed or been deprecated. Check the [docs](https://docs.microsoft.com/xamarin) for the latest information.
+The information in this repo has been archived. It is no longer current, nor is it supported or updated.
+
+## Current documentation
+
+Visit [docs.microsoft.com/xamarin](https://docs.microsoft.com/xamarin).
 
 ## Code of Conduct
 
 This project uses the [Microsoft Open Source Code of Conduct](https://github.com/xamarin/recipes/blob/master/code-of-conduct.md).
 
 For more information see the Code of Conduct FAQ or contact opencode@microsoft.com with any additional questions or comments.
-
-## Contributing
-
-Thank you for taking the time to contribute, we appreciate your help in helping the Xamarin community to learn and grow! All content submitted **must** be your own work.
-
-See the [Contributing guide](CONTRIBUTING.md) for more information on how to contribute.
 
 ## Legal Notices
 
