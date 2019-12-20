@@ -53,7 +53,7 @@ Each recipe that is submitted should include the following:
 
 ## Repository Structure
 
-All recipes are contained within with `\Recipes` directory. 
+All recipes are contained within `\Recipes` directory. 
 
 The repository structure will look like the following: 
 
@@ -69,7 +69,7 @@ The repository structure will look like the following:
 
 ## Folder naming standards 
 
-The folder name will be used as the URL slug and therefore it is important to use the suggestions below. This ensure it will be SEO optimized and relevant for other users: 
+The folder name will be used as the URL slug and therefore it is important to use the suggestions below. This ensures it will be SEO optimized and relevant for other users: 
 
 * Try to keep the folder name between 1-3 words.  
 * If more than one word, use hyphens (-), rather than underscores(_) 

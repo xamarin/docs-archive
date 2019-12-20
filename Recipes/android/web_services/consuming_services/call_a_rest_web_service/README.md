@@ -15,9 +15,9 @@ article:
 In this recipe, we'll create an app that reports weather information,
 such as temperature, humidity, and current conditions. This app issues 
 a request to a REST service to get weather data, parses the response, 
-and displays the results on the screen. The user keys in global 
+and displays the results on the screen. The user enters global 
 latitude and longitude coordinates before pressing a **Get Weather** 
-button to view information about the weather at that location. 
+button to display the weather at that location. 
 
 [ ![](Images/1-example-screenshot-sml.png)](Images/1-example-screenshot.png)
 
